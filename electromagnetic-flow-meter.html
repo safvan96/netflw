@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electromagnetic Flow Meter | DN3–DN3000 | ±0.2% | TÜRKAK Certified | Net Flow</title>
+<meta name="description" content="High-precision electromagnetic flow meter (NT-VMF) for water, wastewater and chemical processes. DN3–DN3000mm, ±0.2% accuracy, IP68, 4–20mA/HART/RS485. TÜRKAK-accredited calibration. Made in Türkiye.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/pmeters.css">
+<script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('pm_tweaks')||'{}');var A={blue:['#1E88E5','#1565C0'],cobalt:['#3B5BDB','#2C45B8'],teal:['#0E8C8C','#0A6E6E'],azure:['#2A6FDB','#1F54AB']};var R={sharp:['6px','10px','12px'],normal:['12px','16px','22px'],round:['16px','22px','30px']};var F={jakarta:'"Plus Jakarta Sans"',grotesk:'"Space Grotesk"'};var r=document.documentElement;if(t.accent&&A[t.accent]){r.style.setProperty('--accent',A[t.accent][0]);r.style.setProperty('--accent-700',A[t.accent][1]);}if(t.radius&&R[t.radius]){r.style.setProperty('--r',R[t.radius][0]);r.style.setProperty('--r-lg',R[t.radius][1]);r.style.setProperty('--r-xl',R[t.radius][2]);}if(t.font&&F[t.font]){r.style.setProperty('--f-head',F[t.font]+',-apple-system,sans-serif');}}catch(e){}})();</script>
+<style>
+  /* ---- product hero ---- */
+  .p-hero{background:var(--navy-900);color:#fff;position:relative;overflow:hidden}
+  .p-hero .blueprint{position:absolute;inset:0;opacity:.6}
+  .p-hero .hero-glow{top:-260px;left:-160px;right:auto}
+  .p-breadcrumb{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:#7f93a8;padding-top:22px;display:flex;gap:8px;position:relative}
+  .p-breadcrumb a:hover{color:#fff}
+  .p-hero-inner{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:36px clamp(40px,5vw,64px)}
+  .p-hero h1{font-size:clamp(32px,4.4vw,52px);margin-top:18px}
+  .p-hero .lede{color:#aebfd0;margin-top:18px;font-size:18px;max-width:48ch}
+  .p-badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+  .p-hero-cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+  /* quick spec strip */
+  .spec-strip{position:relative;border-top:1px solid var(--navy-line);background:rgba(255,255,255,.02)}
+  .spec-strip-inner{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--navy-line)}
+  .spec-strip .ss{background:var(--navy-900);padding:20px 22px;display:flex;flex-direction:column;gap:5px}
+  .spec-strip .ss .ic{color:var(--blue-300);width:22px;height:22px}
+  .spec-strip .ss b{font-family:var(--f-mono);font-size:17px;color:#fff;font-weight:600;letter-spacing:-.01em}
+  .spec-strip .ss span{font-size:11px;color:#7f93a8;text-transform:uppercase;letter-spacing:.08em}
+
+  /* ---- explorer ---- */
+  /* ===== SCROLL-DRIVEN EXPLORER (wheel) ===== */
+  .scrollex{position:relative;background:var(--navy-900);color:#fff}
+  .scrollex .blueprint{position:absolute;inset:0;opacity:.4}
+  .sx-track{position:relative;height:560vh}
+  .sx-pin{position:sticky;top:0;height:100vh;min-height:600px;display:grid;
+    grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(24px,4vw,56px);
+    max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);overflow:hidden}
+  .sx-stage{position:relative;display:grid;place-items:center;height:72vh}
+  .sx-spot{position:absolute;width:62%;height:62%;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle,rgba(66,165,245,.3),transparent 62%);
+    transition:transform 1s cubic-bezier(.45,0,.15,1),opacity .6s}
+  .sx-meter{position:relative;width:78%;max-width:460px;z-index:2;transition:transform 1.05s cubic-bezier(.45,0,.15,1)}
+  .sx-meter g[class^="tp-"]{transition:opacity .65s,filter .65s}
+  /* stages 0 & 5 = whole product (all bright). 1-4 = focus a part */
+  .sx-pin[data-stage="1"] .sx-meter g[class^="tp-"],
+  .sx-pin[data-stage="2"] .sx-meter g[class^="tp-"],
+  .sx-pin[data-stage="3"] .sx-meter g[class^="tp-"],
+  .sx-pin[data-stage="4"] .sx-meter g[class^="tp-"]{opacity:.28}
+  .sx-pin[data-stage="1"] .tp-body,
+  .sx-pin[data-stage="2"] .tp-physics,
+  .sx-pin[data-stage="3"] .tp-output,
+  .sx-pin[data-stage="4"] .tp-cal{opacity:1!important;filter:drop-shadow(0 0 11px rgba(66,165,245,.95))}
+  .sx-pin[data-stage="4"] .tp-cal{filter:drop-shadow(0 0 13px rgba(249,168,37,.95))}
+  .sx-pin[data-stage="0"] .sx-meter{transform:perspective(1200px) rotateY(-13deg) rotateX(6deg) scale(.92)}
+  .sx-pin[data-stage="1"] .sx-meter{transform:perspective(1100px) rotateY(-8deg) scale(1.32) translateY(13%)}
+  .sx-pin[data-stage="2"] .sx-meter{transform:perspective(1100px) rotateY(7deg) scale(1.5) translateY(7%)}
+  .sx-pin[data-stage="3"] .sx-meter{transform:perspective(1100px) rotateY(-7deg) scale(1.42) translateY(-20%)}
+  .sx-pin[data-stage="4"] .sx-meter{transform:perspective(1100px) rotateY(11deg) scale(1.2) translate(-6%,4%)}
+  .sx-pin[data-stage="5"] .sx-meter{transform:perspective(1300px) rotateY(8deg) rotateX(3deg) scale(.86)}
+  .sx-pin[data-stage="1"] .sx-spot{transform:translateY(20%) scale(.8)}
+  .sx-pin[data-stage="2"] .sx-spot{transform:translateY(6%) scale(.7)}
+  .sx-pin[data-stage="3"] .sx-spot{transform:translateY(-22%) scale(.7)}
+  .sx-pin[data-stage="4"] .sx-spot{transform:translate(-10%,4%) scale(.6)}
+  .sx-pin[data-stage="0"] .sx-spot,.sx-pin[data-stage="5"] .sx-spot{opacity:.55}
+  /* captions */
+  .sx-caps{position:relative;min-height:300px}
+  .sx-cap{position:absolute;inset:0;opacity:0;transform:translateY(22px);transition:opacity .55s,transform .55s;pointer-events:none;display:flex;flex-direction:column;justify-content:center}
+  .sx-cap.on{opacity:1;transform:none;pointer-events:auto}
+  .sx-cap .step{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;color:var(--blue-300);text-transform:uppercase}
+  .sx-cap h2{font-size:clamp(26px,3.3vw,42px);margin-top:14px;color:#fff}
+  .sx-cap p{color:#aebfd0;margin-top:14px;font-size:17px;max-width:42ch}
+  .sx-cap ul{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:11px}
+  .sx-cap li{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#cdd9e6}
+  .sx-cap li .dot{width:20px;height:20px;border-radius:6px;background:rgba(30,136,229,.18);color:var(--blue-300);display:grid;place-items:center;flex:none;margin-top:1px}
+  .sx-cap li .dot svg{width:13px;height:13px}
+  .sx-cap li b{color:#fff;font-family:var(--f-mono);font-weight:600}
+  .sx-progress{position:absolute;left:var(--gut);bottom:5vh;display:flex;gap:8px;z-index:5}
+  .sx-progress i{width:26px;height:4px;border-radius:3px;background:rgba(255,255,255,.18);transition:.3s}
+  .sx-progress i.on{background:var(--accent);width:38px}
+  .sx-hint{position:absolute;right:var(--gut);bottom:5vh;z-index:5;display:flex;align-items:center;gap:8px;
+    font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;color:#7f93a8;text-transform:uppercase}
+  .sx-hint svg{width:15px;height:22px}
+  .sx-hint .wheel{animation:sxWheel 1.8s ease-in-out infinite}
+  @keyframes sxWheel{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(4px);opacity:.4}}
+
+  /* ===== INTERACTIVE PRODUCT TOUR ===== */
+  .tour{position:relative;background:var(--navy-900);color:#fff;overflow:hidden}
+  .tour .blueprint{position:absolute;inset:0;opacity:.4}
+  .tour-inner{position:relative;padding-block:clamp(56px,8vw,104px)}
+  .tour-head{max-width:600px}
+  .tour-head h2{font-size:clamp(28px,3.6vw,46px);margin-top:16px;color:#fff}
+  .tour-head p{color:#aebfd0;margin-top:14px;font-size:17px}
+  .tour-body{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center;margin-top:clamp(32px,4vw,56px)}
+  .tour-stage{position:relative;aspect-ratio:1/.86;border-radius:var(--r-xl);overflow:hidden;
+    background:radial-gradient(120% 100% at 30% 20%,#16304f,#0a1626 70%);border:1px solid var(--navy-line);display:grid;place-items:center}
+  .tour-stage .blueprint{position:absolute;inset:0;opacity:.5}
+  .stage-spot{position:absolute;width:70%;height:70%;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle,rgba(66,165,245,.28),transparent 62%);
+    transition:transform .9s cubic-bezier(.45,0,.15,1),opacity .6s;opacity:.7}
+  .hero-mv{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .5s;background:transparent;z-index:4;--poster-color:transparent}
+  .hero-mv.mv-ready{opacity:1}
+  .hero-mv.mv-ready ~ .tour-meter,.hero-mv.mv-ready ~ .stage-spot{opacity:0}
+  .mv-badge{position:absolute;top:10px;right:10px;z-index:5;display:none;align-items:center;gap:6px;
+    font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;color:#cdd9e6;background:rgba(10,22,40,.55);
+    border:1px solid var(--navy-line);border-radius:999px;padding:6px 12px;backdrop-filter:blur(6px)}
+  .hero-mv.mv-ready ~ .mv-badge{display:inline-flex}
+  .tour-meter{position:relative;width:80%;max-width:430px;z-index:2;transition:transform 1s cubic-bezier(.45,0,.15,1)}
+  .tour-meter g[class^="tp-"]{transition:opacity .6s,filter .6s}
+  .tour-stage[data-focus] .tour-meter g[class^="tp-"]{opacity:.3}
+  .tour-stage[data-focus="body"] .tp-body,
+  .tour-stage[data-focus="physics"] .tp-physics,
+  .tour-stage[data-focus="output"] .tp-output,
+  .tour-stage[data-focus="cal"] .tp-cal{opacity:1;filter:drop-shadow(0 0 10px rgba(66,165,245,.95))}
+  .tour-stage[data-focus="cal"] .tp-cal{filter:drop-shadow(0 0 12px rgba(249,168,37,.95))}
+  .tour-stage[data-focus="body"] .tour-meter{transform:perspective(1100px) rotateY(-9deg) scale(1.02)}
+  .tour-stage[data-focus="physics"] .tour-meter{transform:perspective(1100px) rotateY(6deg) scale(1.36) translateY(7%)}
+  .tour-stage[data-focus="output"] .tour-meter{transform:perspective(1100px) rotateY(-7deg) scale(1.32) translateY(-17%)}
+  .tour-stage[data-focus="cal"] .tour-meter{transform:perspective(1100px) rotateY(10deg) scale(1.14) translate(-5%,4%)}
+  .tour-stage[data-focus="body"] .stage-spot{transform:translateY(16%)}
+  .tour-stage[data-focus="physics"] .stage-spot{transform:translateY(4%) scale(.7)}
+  .tour-stage[data-focus="output"] .stage-spot{transform:translateY(-22%) scale(.7)}
+  .tour-stage[data-focus="cal"] .stage-spot{transform:translate(-12%,4%) scale(.6)}
+  .hot{position:absolute;z-index:5;width:30px;height:30px;border-radius:50%;cursor:pointer;
+    border:2px solid rgba(124,192,255,.6);background:rgba(10,22,40,.55);color:#cfe2f6;
+    font-family:var(--f-mono);font-size:13px;font-weight:600;display:grid;place-items:center;
+    backdrop-filter:blur(4px);transition:.25s;transform:translate(-50%,-50%)}
+  .hot::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(124,192,255,.45);opacity:0}
+  .hot:hover{border-color:#7CC0FF;color:#fff}
+  .hot.on{background:var(--accent);border-color:var(--accent);color:#fff;transform:translate(-50%,-50%) scale(1.18)}
+  @media (prefers-reduced-motion:no-preference){
+    .hot.on::after{animation:hotPing 1.6s ease-out infinite}
+    @keyframes hotPing{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.9);opacity:0}}
+    .tour-meter.idle{animation:tourFloat 7s ease-in-out infinite}
+    @keyframes tourFloat{0%,100%{translate:0 -1.2%}50%{translate:0 1.4%}}
+  }
+  .tour-chips{display:flex;gap:8px;flex-wrap:wrap}
+  .tchip{font-family:var(--f-head);font-weight:600;font-size:13.5px;padding:9px 15px;border-radius:999px;
+    border:1.5px solid var(--navy-line);background:rgba(255,255,255,.04);color:#aebfd0;cursor:pointer;transition:.2s}
+  .tchip:hover{border-color:var(--blue-400);color:#fff}
+  .tchip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .tour-cards{position:relative;margin-top:22px;min-height:248px}
+  .tcard{position:absolute;inset:0;opacity:0;transform:translateY(16px);transition:opacity .55s,transform .55s;pointer-events:none}
+  .tcard.on{opacity:1;transform:none;pointer-events:auto;position:relative}
+  .tcard .step{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;color:var(--blue-300);text-transform:uppercase}
+  .tcard h3{font-size:clamp(22px,2.6vw,30px);margin-top:12px;color:#fff}
+  .tcard p{color:#aebfd0;margin-top:12px;font-size:16px;line-height:1.6;max-width:42ch}
+  .tcard ul{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-direction:column;gap:11px}
+  .tcard li{display:flex;gap:11px;align-items:flex-start;font-size:14.5px;color:#cdd9e6}
+  .tcard li .dot{width:20px;height:20px;border-radius:6px;background:rgba(30,136,229,.18);color:var(--blue-300);display:grid;place-items:center;flex:none;margin-top:1px}
+  .tcard li .dot svg{width:13px;height:13px}
+  .tcard li b{color:#fff;font-family:var(--f-mono);font-weight:600}
+  .tour-progress{margin-top:24px;height:3px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}
+  .tour-progress i{display:block;height:100%;width:0;background:var(--accent);border-radius:3px}
+  .tour-progress i.run{animation:tourBar 4600ms linear forwards}
+  @keyframes tourBar{from{width:0}to{width:100%}}
+  /* hero meter (product page top) */
+  .ex-stage{position:relative;display:grid;place-items:center}
+  .ex-meter{width:100%;max-width:520px}
+  .ex-photo{position:absolute;inset:5%;width:90%;height:90%;object-fit:contain;z-index:6;opacity:0;transition:opacity .6s;filter:drop-shadow(0 24px 48px rgba(0,0,0,.55))}
+  .ex-stage[data-photo="1"] .ex-photo{opacity:1}
+  .ex-stage[data-photo="1"] .ex-meter{opacity:.3;filter:blur(1px) saturate(.8)}
+  .p-hero .ex-stage .hero-mv{position:absolute;inset:0;width:100%;height:100%;z-index:4}
+  .p-hero .hero-mv.mv-ready ~ .ex-meter{opacity:0}
+
+  /* ---- content sections ---- */
+  .p-section{padding-block:clamp(56px,7vw,96px)}
+  .two-col{display:grid;grid-template-columns:1.55fr 1fr;gap:clamp(32px,5vw,64px);align-items:start}
+  .prose p{color:var(--ink-2);font-size:17px;margin-top:18px;line-height:1.7}
+  .prose p:first-child{margin-top:0}
+  .callout{margin-top:24px;padding:22px 24px;border-left:3px solid var(--accent);background:var(--bg-alt);border-radius:0 12px 12px 0}
+  .callout .ct{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .callout p{margin-top:8px;font-size:15px;color:var(--ink-2)}
+  /* sticky quote sidebar */
+  .quote-side{position:sticky;top:96px}
+  .quote-card{background:var(--navy-900);color:#fff;border-radius:var(--r-lg);padding:26px;box-shadow:var(--shadow-lg)}
+  .quote-card h3{font-size:20px}
+  .quote-card .qsub{color:#9fb1c4;font-size:13.5px;margin-top:6px}
+  .quote-card .field{margin-top:14px}
+  .quote-meta{margin-top:18px;padding-top:18px;border-top:1px solid var(--navy-line);display:flex;flex-direction:column;gap:10px}
+  .quote-meta a{display:flex;align-items:center;gap:10px;font-size:13.5px;color:#cdd9e6}
+  .quote-meta a svg{width:16px;height:16px;color:var(--blue-300)}
+
+  /* working principle */
+  .principle{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .principle-art{background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px;position:relative;overflow:hidden}
+
+  /* applications */
+  .app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+  .app{padding:24px;border:1px solid var(--line);border-radius:var(--r-lg);background:#fff;transition:.2s}
+  .app:hover{border-color:var(--accent);box-shadow:var(--shadow);transform:translateY(-3px)}
+  .app .a-ic{width:46px;height:46px;border-radius:11px;background:var(--bg-alt);color:var(--accent);display:grid;place-items:center;margin-bottom:16px}
+  .app h4{font-size:17px}
+  .app p{color:var(--ink-2);font-size:14px;margin-top:9px;line-height:1.55}
+
+  /* specs table */
+  .spec-table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:14.5px}
+  .spec-table th{background:var(--navy-900);color:#fff;text-align:left;padding:14px 18px;font-family:var(--f-head);font-size:13px;letter-spacing:.04em}
+  .spec-table td{padding:12px 18px;border-top:1px solid var(--line)}
+  .spec-table td:first-child{color:var(--ink-2);width:38%;font-weight:500}
+  .spec-table td:last-child{font-family:var(--f-mono);color:var(--navy-900);font-weight:500}
+  .spec-table tr:nth-child(even) td{background:var(--bg-alt)}
+
+  /* selector */
+  .selector{background:var(--navy-900);color:#fff;border-radius:var(--r-xl);padding:clamp(28px,4vw,46px);position:relative;overflow:hidden}
+  .selector .blueprint{position:absolute;inset:0;opacity:.4}
+  .sel-inner{position:relative}
+  .media-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+  .media-chip{font-family:var(--f-head);font-weight:600;font-size:14px;padding:11px 18px;border-radius:999px;border:1.5px solid var(--navy-line);background:rgba(255,255,255,.04);color:#cdd9e6;cursor:pointer;transition:.18s}
+  .media-chip:hover{border-color:var(--blue-400);color:#fff}
+  .media-chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .sel-result{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .sel-pick{background:rgba(255,255,255,.04);border:1px solid var(--navy-line);border-radius:var(--r-lg);padding:22px}
+  .sel-pick .pl{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-300)}
+  .sel-pick .pv{font-family:var(--f-head);font-size:24px;font-weight:700;margin-top:8px}
+  .sel-pick .pd{color:#9fb1c4;font-size:13.5px;margin-top:10px;line-height:1.55}
+  .sel-tables{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}
+  .mini-table{width:100%;border-collapse:collapse;font-size:13px}
+  .mini-table caption{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-300);text-align:left;margin-bottom:10px}
+  .mini-table td{padding:9px 10px;border-top:1px solid var(--navy-line);color:#cdd9e6}
+  .mini-table td:first-child{font-family:var(--f-mono);color:#fff;white-space:nowrap}
+  .mini-table tr.hot td{background:rgba(30,136,229,.16);color:#fff}
+
+  /* related */
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+
+  @media (max-width:1080px){
+    .p-hero-inner{grid-template-columns:1fr;gap:32px}
+    .spec-strip-inner{grid-template-columns:repeat(3,1fr)}
+    .sx-track{height:auto}
+    .sx-pin{position:static;height:auto;min-height:0;grid-template-columns:1fr;gap:24px;padding-block:clamp(40px,6vw,64px)}
+    .sx-stage{order:-1;height:auto}
+    .sx-meter{transform:none!important;max-width:340px}
+    .sx-meter g[class^="tp-"]{opacity:1!important;filter:none!important}
+    .sx-caps{min-height:0;display:flex;flex-direction:column;gap:34px}
+    .sx-cap{position:relative;opacity:1;transform:none;inset:auto;pointer-events:auto}
+    .sx-progress,.sx-hint{display:none}
+    .tour-body{grid-template-columns:1fr;gap:30px}
+    .tour-stage{order:-1;max-width:440px;width:100%;margin:0 auto}
+    .tour-cards{min-height:0}
+    .two-col{grid-template-columns:1fr}
+    .quote-side{position:static}
+    .principle{grid-template-columns:1fr;gap:28px}
+  }
+  @media (max-width:760px){
+    .spec-strip-inner{grid-template-columns:repeat(2,1fr)}
+    .app-grid,.related-grid{grid-template-columns:1fr}
+    .sel-result,.sel-tables{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header" id="hdr">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect class="mk-bg" x="1.5" y="1.5" width="37" height="37" rx="11"/><text class="mk-pm" x="20" y="17.5" text-anchor="middle" dominant-baseline="central">NF</text><path class="mk-wave" d="M9 28.5q3.6-4.2 7.2 0t7.2 0t7.2 0"/></svg></span><span>Net Flow<small>Industrial Instrumentation</small></span></a>
+      <div class="nav-links">
+        <a href="index.html#products">Products</a>
+        <a href="products.html#industries">Industries</a>
+        <a href="products.html#certs">Certifications</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <div class="lang"><button class="on">EN</button><button>AR</button><button>RU</button><button>TR</button></div>
+        <a href="#quote" class="btn btn-primary btn-sm">Request Quote</a>
+        <button class="hamburger" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="p-hero on-dark">
+  <div class="blueprint"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <div class="p-breadcrumb"><a href="index.html">Home</a> / <a href="products.html">Flow Meters</a> / <span style="color:#cdd9e6">Electromagnetic Flow Meter</span></div>
+    <div class="p-hero-inner">
+      <div>
+        <span class="eyebrow">Flow Meter · NT-VMF</span>
+        <h1>Electromagnetic Flow Meter</h1>
+        <p class="lede">Precision-engineered for any conductive liquid, no moving parts, no pressure drop, no maintenance. Configured to your media and calibrated under TÜRKAK accreditation.</p>
+        <div class="p-badges">
+          <span class="badge badge--star">★ Bestseller</span>
+          <span class="badge badge--turkey">Made in Türkiye</span>
+          <span class="badge badge--cert">TÜRKAK Certified</span>
+        </div>
+        <div class="p-hero-cta">
+          <a href="#quote" class="btn btn-primary btn-lg">Request a Quote</a>
+          <a href="#datasheet" class="btn btn-ghost btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Datasheet</a>
+        </div>
+      </div>
+      <div class="ex-stage" style="height:auto">
+        <model-viewer class="hero-mv" src="assets/flow-meter.glb" camera-controls auto-rotate auto-rotate-delay="0" rotation-per-second="22deg" interaction-prompt="none" shadow-intensity="0.7" exposure="1.15" ar ar-modes="webxr scene-viewer quick-look" alt="Electromagnetic flow meter 3D model"></model-viewer>
+        <span class="mv-badge">360° · 3D</span>
+        <img class="ex-photo" alt="Electromagnetic Flow Meter">
+        <svg class="ex-meter" viewBox="0 0 480 440" style="overflow:visible" aria-label="Electromagnetic flow meter">
+          <defs>
+            <linearGradient id="pp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d3552"/><stop offset="1" stop-color="#102236"/></linearGradient>
+            <linearGradient id="fl" x1="0" x2="1"><stop offset="0" stop-color="#1E88E5" stop-opacity="0"/><stop offset="1" stop-color="#42A5F5" stop-opacity=".55"/></linearGradient>
+            <clipPath id="bore2"><rect x="40" y="232" width="400" height="76" rx="6"/></clipPath>
+          </defs>
+          <g class="ex-dims" stroke="#3a587a" stroke-width="1"><line x1="40" y1="360" x2="440" y2="360"/><line x1="40" y1="352" x2="40" y2="368"/><line x1="440" y1="352" x2="440" y2="368"/><text x="240" y="382" fill="#7f98b3" font-family="JetBrains Mono,monospace" font-size="12" text-anchor="middle">DN3 – DN3000 · 316L body</text></g>
+          <rect x="30" y="218" width="22" height="104" rx="4" fill="url(#pp)" stroke="#3a587a"/>
+          <rect x="428" y="218" width="22" height="104" rx="4" fill="url(#pp)" stroke="#3a587a"/>
+          <rect class="ex-body-fill" x="48" y="224" width="384" height="92" rx="8" fill="url(#pp)" stroke="#3a587a" stroke-width="1.4"/>
+          <rect x="40" y="232" width="400" height="76" rx="6" fill="#0a1626"/>
+          <g clip-path="url(#bore2)"><rect x="40" y="232" width="400" height="76" fill="url(#fl)" opacity=".5"/>
+            <g class="flow-particles" fill="#7CC0FF"><circle class="fp" cx="60" cy="252" r="3"/><circle class="fp" cx="60" cy="270" r="3.4"/><circle class="fp" cx="60" cy="288" r="3"/><circle class="fp" cx="60" cy="262" r="2.4"/><circle class="fp" cx="60" cy="280" r="2.6"/></g>
+          </g>
+          <!-- cutaway: coils + electrodes -->
+          <g class="ex-cutaway">
+            <g stroke="#42A5F5" stroke-width="2.2" fill="none"><path d="M205 224 q-10 -16 0 -32 M222 224 q-10 -16 0 -32 M239 224 q-10 -16 0 -32 M256 224 q-10 -16 0 -32 M273 224 q-10 -16 0 -32"/><path d="M205 316 q-10 16 0 32 M222 316 q-10 16 0 32 M239 316 q-10 16 0 32 M256 316 q-10 16 0 32 M273 316 q-10 16 0 32"/></g>
+            <g stroke="#F9A825" stroke-width="2"><line x1="240" y1="232" x2="240" y2="252"/><line x1="240" y1="288" x2="240" y2="308"/></g>
+            <circle cx="240" cy="252" r="4" fill="#F9A825"/><circle cx="240" cy="288" r="4" fill="#F9A825"/>
+            <text x="300" y="206" fill="#9fb1c4" font-family="JetBrains Mono,monospace" font-size="10">FIELD COILS</text>
+            <text x="270" y="276" fill="#F9A825" font-family="JetBrains Mono,monospace" font-size="10">ELECTRODES</text>
+          </g>
+          <!-- transmitter head (round) -->
+          <rect x="222" y="160" width="36" height="68" fill="url(#pp)" stroke="#3a587a" stroke-width="1.2"/>
+          <g class="ex-head">
+            <rect x="226" y="22" width="28" height="20" rx="5" fill="url(#pp)" stroke="#3a587a"/>
+            <circle class="scan-ring" cx="240" cy="104" r="70" fill="none" stroke="#42A5F5" stroke-width="1.3" stroke-dasharray="5 13" opacity=".45"/>
+            <circle cx="240" cy="104" r="62" fill="url(#pp)" stroke="#3a587a" stroke-width="1.6"/>
+            <circle cx="240" cy="104" r="52" fill="none" stroke="#26456b" stroke-width="2" opacity=".6"/>
+            <rect x="202" y="84" width="76" height="42" rx="8" fill="#06121f" stroke="#1E88E5" stroke-width="1.3"/>
+            <text x="240" y="108" fill="#42A5F5" font-family="JetBrains Mono,monospace" font-size="17" font-weight="600" text-anchor="middle" class="lcd-val">128.4</text>
+            <text x="240" y="122" fill="#5b7a99" font-family="JetBrains Mono,monospace" font-size="9" text-anchor="middle" letter-spacing="2">m³/h</text>
+          </g>
+          <!-- outputs -->
+          <g class="ex-outputs" font-family="JetBrains Mono,monospace" font-size="10" fill="#cdd9e6"><circle cx="300" cy="92" r="2.6" fill="#00C853"/><text x="312" y="96">4–20mA</text><circle cx="300" cy="110" r="2.6" fill="#42A5F5"/><text x="312" y="114">RS485 Modbus</text><circle cx="300" cy="128" r="2.6" fill="#F9A825"/><text x="312" y="132">HART · Pulse</text></g>
+          <!-- calibration badge -->
+          <g class="ex-calib"><circle cx="360" cy="250" r="44" fill="#0c1c2e" stroke="#F9A825" stroke-width="1.5"/><circle cx="360" cy="250" r="36" fill="none" stroke="#F9A825" stroke-width=".6" stroke-dasharray="2 3"/><text x="360" y="240" fill="#F9A825" font-family="JetBrains Mono,monospace" font-size="11" font-weight="600" text-anchor="middle">TÜRKAK</text><text x="360" y="254" fill="#fff" font-family="JetBrains Mono,monospace" font-size="9" text-anchor="middle">AB-0354-K</text><text x="360" y="268" fill="#7CC0FF" font-family="JetBrains Mono,monospace" font-size="9" text-anchor="middle">±0.27%</text></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- quick spec strip -->
+  <div class="spec-strip">
+    <div class="wrap"><div class="spec-strip-inner">
+      <div class="ss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 12l4-4M3 12l4 4M21 12l-4-4M21 12l-4 4"/></svg><b>DN3–DN3000</b><span>Pipe diameter</span></div>
+      <div class="ss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg><b>±0.2%</b><span>Accuracy (opt.)</span></div>
+      <div class="ss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2s7 7 7 12a7 7 0 01-14 0c0-5 7-12 7-12z"/></svg><b>IP65 / 67 / 68</b><span>Protection</span></div>
+      <div class="ss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg><b>4–20mA / HART</b><span>Output</span></div>
+      <div class="ss"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><b>±0.27%</b><span>Calibration</span></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- SCROLL-DRIVEN EXPLORER -->
+<section class="scrollex" id="scrollex">
+  <div class="blueprint"></div>
+  <div class="sx-track" id="sxTrack">
+    <div class="sx-pin" id="sxPin" data-stage="0">
+      <div class="sx-caps" id="sxCaps">
+        <div class="sx-cap on" data-cap="0">
+          <span class="step">Product Tour</span>
+          <h2>Meet the electromagnetic flow meter</h2>
+          <p>Scroll to take the meter apart, body, sensor, transmitter and the calibration behind it, then see it whole again.</p>
+        </div>
+        <div class="sx-cap" data-cap="1">
+          <span class="step">01, Body &amp; Flanges</span>
+          <h2>316L stainless, sealed for the field</h2>
+          <ul>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Carbon or <b>304 / 316</b> stainless body</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>IP65 / IP67 / IP68</b> ingress protection</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>DN3 → DN3000mm</b> · DIN / ANSI / JIS</span></li>
+          </ul>
+        </div>
+        <div class="sx-cap" data-cap="2">
+          <span class="step">02, Sensor &amp; Physics</span>
+          <h2>Faraday's law, no moving parts</h2>
+          <p>Field coils create a magnetic field across the bore; the flowing liquid induces a voltage read by two electrodes.</p>
+          <ul>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Zero pressure drop, <b>no wear</b></span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Minimum conductivity <b>≥5 μS/cm</b></span></li>
+          </ul>
+        </div>
+        <div class="sx-cap" data-cap="3">
+          <span class="step">03, The Transmitter</span>
+          <h2>Round head, reads at a glance</h2>
+          <ul>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>4–20mA</b>, Pulse, RS485 Modbus</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>HART</b> &amp; Profibus optional</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>3-line LCD · instant + total</span></li>
+          </ul>
+        </div>
+        <div class="sx-cap" data-cap="4">
+          <span class="step">04, The Assurance</span>
+          <h2>TÜRKAK-accredited calibration</h2>
+          <ul>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>AB-0354-K</b> · ISO/IEC 17025:2017</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Uncertainty <b>±0.27%</b></span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Recognized in <b>100+ countries</b></span></li>
+          </ul>
+        </div>
+        <div class="sx-cap" data-cap="5">
+          <span class="step">Complete</span>
+          <h2>Engineered as one instrument</h2>
+          <p>Body, sensor, electronics and certificate, built and calibrated together in Konya, ready for your process.</p>
+          <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
+            <a href="#quote" class="btn btn-primary">Request a Quote</a>
+            <a href="#datasheet" class="btn btn-ghost">Download Datasheet</a>
+          </div>
+        </div>
+      </div>
+      <div class="sx-stage">
+        <div class="sx-spot"></div>
+        <svg class="sx-meter" viewBox="0 0 320 330" aria-label="Electromagnetic flow meter"></svg>
+      </div>
+      <div class="sx-progress" id="sxProg"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="sx-hint"><svg class="wheel" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="1" width="14" height="22" rx="7"/><line x1="8" y1="5" x2="8" y2="9"/></svg> Scroll</div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE PRODUCT TOUR -->
+<section class="tour" id="explore">
+  <div class="blueprint"></div>
+  <div class="wrap tour-inner">
+    <div class="tour-head">
+      <span class="eyebrow">Product Tour</span>
+      <h2>Engineered to measure, built to last</h2>
+      <p>Tap a part to explore it in 3D, or let the guided tour walk you through the meter, inside and out.</p>
+    </div>
+    <div class="tour-body">
+      <div class="tour-stage" id="tourStage" data-focus="body">
+        <div class="blueprint"></div>
+        <div class="stage-spot"></div>
+        <model-viewer class="hero-mv" src="assets/flow-meter.glb" camera-controls auto-rotate auto-rotate-delay="0" rotation-per-second="22deg" interaction-prompt="none" shadow-intensity="0.7" exposure="1.15" ar ar-modes="webxr scene-viewer quick-look" alt="Electromagnetic flow meter 3D model"></model-viewer>
+        <span class="mv-badge">360° · 3D</span>
+        <svg class="tour-meter idle" viewBox="0 0 320 330" aria-label="Electromagnetic flow meter">
+        <defs>
+          <linearGradient id="tBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#33597f"/><stop offset=".5" stop-color="#1d3552"/><stop offset="1" stop-color="#0e2138"/></linearGradient>
+          <linearGradient id="tHead" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3f6a98"/><stop offset=".55" stop-color="#22405f"/><stop offset="1" stop-color="#12283f"/></linearGradient>
+          <radialGradient id="tHeadGlow" cx=".38" cy=".34" r=".75"><stop offset="0" stop-color="#7CC0FF" stop-opacity=".5"/><stop offset="1" stop-color="#7CC0FF" stop-opacity="0"/></radialGradient>
+          <linearGradient id="tFlow" x1="0" x2="1"><stop offset="0" stop-color="#1E88E5" stop-opacity="0"/><stop offset="1" stop-color="#42A5F5" stop-opacity=".6"/></linearGradient>
+          <clipPath id="tBore"><rect x="52" y="232" width="216" height="40" rx="6"/></clipPath>
+        </defs>
+        <!-- BODY: pipe + flanges -->
+        <g class="tp-body">
+          <rect x="30" y="206" width="16" height="92" rx="4" fill="url(#tBody)" stroke="#3a587a"/>
+          <rect x="274" y="206" width="16" height="92" rx="4" fill="url(#tBody)" stroke="#3a587a"/>
+          <g fill="#0a1626"><circle cx="38" cy="224" r="2.4"/><circle cx="38" cy="252" r="2.4"/><circle cx="38" cy="280" r="2.4"/><circle cx="282" cy="224" r="2.4"/><circle cx="282" cy="252" r="2.4"/><circle cx="282" cy="280" r="2.4"/></g>
+          <rect x="44" y="214" width="232" height="76" rx="13" fill="url(#tBody)" stroke="#3a587a" stroke-width="1.3"/>
+          <rect x="58" y="221" width="204" height="6" rx="3" fill="#7CC0FF" opacity=".22"/>
+        </g>
+        <!-- PHYSICS: bore flow + electrodes + coils -->
+        <g class="tp-physics">
+          <rect x="52" y="232" width="216" height="40" rx="6" fill="#0a1626"/>
+          <g clip-path="url(#tBore)">
+            <rect x="52" y="232" width="216" height="40" fill="url(#tFlow)" opacity=".55"/>
+            <g class="flow-particles" fill="#7CC0FF">
+              <circle class="fp" cx="60" cy="244" r="2.6"/><circle class="fp" cx="60" cy="256" r="3"/><circle class="fp" cx="60" cy="262" r="2.2"/><circle class="fp" cx="60" cy="250" r="2.4"/><circle class="fp" cx="60" cy="266" r="2.6"/><circle class="fp" cx="60" cy="240" r="2"/>
+            </g>
+          </g>
+          <g stroke="#F9A825" stroke-width="2"><line x1="160" y1="232" x2="160" y2="246"/><line x1="160" y1="258" x2="160" y2="272"/></g>
+          <circle cx="160" cy="246" r="3.4" fill="#F9A825"/><circle cx="160" cy="258" r="3.4" fill="#F9A825"/>
+          <g class="coil-pulse" stroke="#42A5F5" stroke-width="2" fill="none"><path d="M140 232 q-6 -10 0 -20 M152 232 q-6 -10 0 -20 M164 232 q-6 -10 0 -20 M176 232 q-6 -10 0 -20"/></g>
+        </g>
+        <!-- OUTPUT: round head + neck + LCD -->
+        <g class="tp-output">
+          <path d="M146 188 h28 l-5 30 h-18 z" fill="url(#tBody)" stroke="#3a587a" stroke-width="1.1"/>
+          <rect x="148" y="30" width="24" height="16" rx="4" fill="url(#tBody)" stroke="#3a587a"/>
+          <circle class="scan-ring" cx="160" cy="118" r="64" fill="none" stroke="#42A5F5" stroke-width="1.2" stroke-dasharray="5 13" opacity=".5"/>
+          <circle cx="160" cy="118" r="58" fill="url(#tHead)" stroke="#3a587a" stroke-width="1.5"/>
+          <circle cx="160" cy="118" r="58" fill="url(#tHeadGlow)"/>
+          <circle cx="160" cy="118" r="48" fill="none" stroke="#26456b" stroke-width="2" opacity=".6"/>
+          <rect x="124" y="98" width="72" height="40" rx="8" fill="#06121f" stroke="#1E88E5" stroke-width="1.2"/>
+          <text x="160" y="121" fill="#42A5F5" font-family="JetBrains Mono,monospace" font-size="16" font-weight="600" text-anchor="middle" class="lcd-val">128.4</text>
+          <text x="160" y="134" fill="#5b7a99" font-family="JetBrains Mono,monospace" font-size="8" text-anchor="middle" letter-spacing="2">m³/h</text>
+        </g>
+        <!-- CALIBRATION seal -->
+        <g class="tp-cal">
+          <circle cx="246" cy="250" r="30" fill="#0c1c2e" stroke="#F9A825" stroke-width="1.4"/>
+          <circle cx="246" cy="250" r="24" fill="none" stroke="#F9A825" stroke-width=".5" stroke-dasharray="2 3"/>
+          <text x="246" y="244" fill="#F9A825" font-family="JetBrains Mono,monospace" font-size="8.5" font-weight="600" text-anchor="middle">TÜRKAK</text>
+          <text x="246" y="254" fill="#fff" font-family="JetBrains Mono,monospace" font-size="6.5" text-anchor="middle">AB-0354-K</text>
+          <text x="246" y="263" fill="#7CC0FF" font-family="JetBrains Mono,monospace" font-size="7" text-anchor="middle">±0.27%</text>
+        </g>
+      </svg>
+        <button class="hot" data-part="output" style="left:50%;top:25%">1</button>
+        <button class="hot" data-part="physics" style="left:50%;top:60%">2</button>
+        <button class="hot" data-part="body" style="left:31%;top:71%">3</button>
+        <button class="hot" data-part="cal" style="left:67%;top:67%">4</button>
+      </div>
+      <div class="tour-panel">
+        <div class="tour-chips" id="tourChips">
+          <button class="tchip on" data-part="output">Transmitter</button>
+          <button class="tchip" data-part="physics">Sensor &amp; physics</button>
+          <button class="tchip" data-part="body">Body &amp; flanges</button>
+          <button class="tchip" data-part="cal">Calibration</button>
+        </div>
+        <div class="tour-cards" id="tourCards">
+          <article class="tcard on" data-part="output">
+            <span class="step">01, The Transmitter</span>
+            <h3>Round head, reads at a glance</h3>
+            <p>The signal-conditioning electronics and 3-line LCD live in a sealed round transmitter head, mountable compact or remote.</p>
+            <ul>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>4–20mA</b>, Pulse, RS485 Modbus</span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>HART</b> &amp; Profibus optional</span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>3-line LCD · instant + total</span></li>
+            </ul>
+          </article>
+          <article class="tcard" data-part="physics">
+            <span class="step">02, Sensor &amp; Physics</span>
+            <h3>Faraday's law, no moving parts</h3>
+            <p>Field coils create a magnetic field across the bore; the flowing liquid induces a voltage read by two electrodes, proportional to flow.</p>
+            <ul>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Zero pressure drop, <b>no wear</b></span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Minimum conductivity <b>≥5 μS/cm</b></span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Six electrode alloys: <b>316L → Tantalum</b></span></li>
+            </ul>
+          </article>
+          <article class="tcard" data-part="body">
+            <span class="step">03, Body &amp; Flanges</span>
+            <h3>316L stainless, sealed for the field</h3>
+            <ul>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Carbon or <b>304 / 316</b> stainless body</span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>IP65 / IP67 / IP68</b> ingress protection</span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>DN3 → DN3000mm</b> · DIN / ANSI / JIS</span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Six liners: <b>Hard Rubber → PTFE / PFA</b></span></li>
+            </ul>
+          </article>
+          <article class="tcard" data-part="cal">
+            <span class="step">04, The Assurance</span>
+            <h3>TÜRKAK-accredited calibration</h3>
+            <p>Every meter is calibrated and certified before dispatch, with a traceable certificate that travels with the instrument.</p>
+            <ul>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span><b>AB-0354-K</b> · ISO/IEC 17025:2017</span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Uncertainty <b>±0.27%</b></span></li>
+              <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span>Recognized in <b>100+ countries</b></span></li>
+            </ul>
+          </article>
+        </div>
+        <div class="tour-progress"><i id="tourBar"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESCRIPTION + QUOTE SIDEBAR -->
+<section class="p-section" id="overview">
+  <div class="wrap two-col">
+    <div class="prose">
+      <span class="eyebrow">Overview</span>
+      <h2 style="font-size:clamp(26px,3vw,38px);margin-top:16px">The reference standard for conductive-liquid flow</h2>
+      <p>The NT-VMF electromagnetic flow meter measures the volumetric flow of any electrically conductive liquid, from clean drinking water to aggressive acids and abrasive slurries. Because measurement relies on Faraday's law of induction rather than a mechanical element, there are no moving parts inside the bore: nothing to wear, nothing to obstruct flow, and nothing to maintain.</p>
+      <p>An unobstructed bore makes it ideal for liquids carrying solids, fibres or sediment, where turbines and orifice plates clog. Liner and electrode materials are selected to match your media, six liners from economical hard rubber to chemical-grade PTFE and PFA, and six electrode alloys from standard 316L up to tantalum for nearly any corrosive.</p>
+      <div class="callout">
+        <div class="ct">TÜRKAK Calibration Assurance</div>
+        <p>Every meter is calibrated on our ISO/IEC 17025:2017 accredited rig (AB-0354-K) at ±0.27% uncertainty before dispatch, a traceable, internationally recognized certificate ships with the instrument.</p>
+      </div>
+    </div>
+    <aside class="quote-side" id="quote">
+      <div class="quote-card">
+        <h3>Request a quote</h3>
+        <div class="qsub">Electromagnetic Flow Meter · NT-VMF</div>
+        <form onsubmit="return false">
+          <div class="field"><label>Full name</label><input placeholder="Jane Engineer"></div>
+          <div class="field"><label>Email</label><input type="email" placeholder="you@company.com"></div>
+          <div class="field"><label>Pipe size / application</label><input placeholder="e.g. DN150 · wastewater"></div>
+          <div class="field"><label>Country</label><select><option value="">Select…</option><option>Iraq</option><option>Azerbaijan</option><option>United Arab Emirates</option><option>Jordan</option><option>Kazakhstan</option><option>Saudi Arabia</option><option>Other</option></select></div>
+          <button class="btn btn-primary" style="width:100%;margin-top:14px">Request a Quote</button>
+        </form>
+        <div class="quote-meta">
+          <a href="https://wa.me/"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg> Message us on WhatsApp</a>
+          <a href="tel:+903322351888"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> +90 332 235 1888</a>
+          <a href="#datasheet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Download PDF datasheet</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- WORKING PRINCIPLE -->
+<section class="p-section" style="background:var(--bg-alt);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="principle">
+      <div>
+        <span class="eyebrow">Working Principle</span>
+        <h2 style="font-size:clamp(26px,3vw,38px);margin-top:16px">Faraday's law of electromagnetic induction</h2>
+        <p class="prose" style="margin-top:18px;color:var(--ink-2);font-size:17px;line-height:1.7">Field coils above and below the bore generate a magnetic field across the pipe. As a conductive liquid flows through it, a voltage is induced proportional to the flow velocity. Two electrodes set flush in the pipe wall pick up this voltage and the transmitter converts it to volumetric flow.</p>
+        <p class="prose" style="margin-top:16px;color:var(--ink-2);font-size:17px;line-height:1.7">Because the bore is completely clear, there is no pressure loss, no obstruction and no part to wear, measurement stays accurate for years, even on dirty or fibrous liquids.</p>
+      </div>
+      <div class="principle-art">
+        <svg viewBox="0 0 420 280" width="100%" aria-label="Faraday induction diagram">
+          <rect x="20" y="120" width="380" height="60" rx="8" fill="#0a1626"/>
+          <rect x="20" y="120" width="380" height="60" rx="8" fill="url(#fl)" opacity=".4"/>
+          <g class="flow-particles" fill="#1E88E5"><circle class="fp2" cx="40" cy="140" r="4"/><circle class="fp2" cx="40" cy="160" r="4.5"/><circle class="fp2" cx="40" cy="150" r="3.5"/></g>
+          <!-- coils -->
+          <text x="210" y="40" fill="#546E7A" font-family="JetBrains Mono,monospace" font-size="11" text-anchor="middle">FIELD COIL (N)</text>
+          <path d="M150 60 q-12 -18 0 -36 M180 60 q-12 -18 0 -36 M210 60 q-12 -18 0 -36 M240 60 q-12 -18 0 -36 M270 60 q-12 -18 0 -36" stroke="#1E88E5" stroke-width="2.4" fill="none"/>
+          <line x1="150" y1="60" x2="270" y2="60" stroke="#1E88E5" stroke-width="2.4"/>
+          <path d="M150 240 q-12 18 0 36 M180 240 q-12 18 0 36 M210 240 q-12 18 0 36 M240 240 q-12 18 0 36 M270 240 q-12 18 0 36" stroke="#1E88E5" stroke-width="2.4" fill="none"/>
+          <line x1="150" y1="240" x2="270" y2="240" stroke="#1E88E5" stroke-width="2.4"/>
+          <text x="210" y="262" fill="#546E7A" font-family="JetBrains Mono,monospace" font-size="11" text-anchor="middle">FIELD COIL (S)</text>
+          <!-- field arrows -->
+          <line x1="210" y1="70" x2="210" y2="118" stroke="#7CC0FF" stroke-width="1.5" stroke-dasharray="4 4"/><path d="M210 118l-4-7h8z" fill="#7CC0FF"/>
+          <!-- electrodes -->
+          <circle cx="150" cy="150" r="6" fill="#F9A825"/><circle cx="270" cy="150" r="6" fill="#F9A825"/>
+          <line x1="150" y1="150" x2="120" y2="150" stroke="#F9A825" stroke-width="2"/><line x1="270" y1="150" x2="300" y2="150" stroke="#F9A825" stroke-width="2"/>
+          <text x="150" y="200" fill="#9a6a00" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">E−</text>
+          <text x="270" y="200" fill="#9a6a00" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="middle">E+</text>
+          <text x="356" y="146" fill="#1E88E5" font-family="JetBrains Mono,monospace" font-size="13" font-weight="600">U ∝ v</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="p-section">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Where &amp; How It's Used</span><h2 style="font-size:clamp(26px,3vw,38px);margin-top:16px">Proven across the process industries</h2></div>
+    <div class="app-grid">
+      <div class="app"><div class="a-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2s7 7 7 12a7 7 0 01-14 0c0-5 7-12 7-12z"/></svg></div><h4>Water Treatment</h4><p>Raw-water intake totals, filtration line monitoring and chlorine-dosing control, feeding SCADA over 4–20mA or Modbus.</p></div>
+      <div class="app"><div class="a-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div><h4>Wastewater</h4><p>Inlet flow, aeration feed and sludge pumping. The clear bore handles solids, fibres and grit with zero clogging risk.</p></div>
+      <div class="app"><div class="a-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-6 9 6v11a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg></div><h4>Municipal Networks</h4><p>Main-line metering and DMA stations for district monitoring and non-revenue-water leak detection.</p></div>
+      <div class="app"><div class="a-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3v6l-5 9a2 2 0 002 3h12a2 2 0 002-3l-5-9V3M9 3h6"/></svg></div><h4>Chemical Processing</h4><p>Acid/base dosing, reactor feed and cooling circuits, with Hastelloy or tantalum electrodes for aggressive media.</p></div>
+      <div class="app"><div class="a-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8M9 2v6l-5 11a2 2 0 002 3h12a2 2 0 002-3L15 8V2"/></svg></div><h4>Food &amp; Beverage</h4><p>Milk intake, juice and CIP wash lines using PTFE/PFA liners and 316L electrodes for hygienic transfer.</p></div>
+      <div class="app"><div class="a-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l6-10 4 5 2-3 4 8zM4 20h16"/></svg></div><h4>Power &amp; Energy</h4><p>Boiler feed water, condensate return and cooling-tower circuits, PTFE liner rated to +180°C.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIAL SELECTOR -->
+<section class="p-section" style="background:var(--bg-alt);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="selector">
+      <div class="blueprint"></div>
+      <div class="sel-inner on-dark">
+        <span class="eyebrow">Configure</span>
+        <h2 style="color:#fff;font-size:clamp(24px,2.8vw,34px);margin-top:14px">Which liner &amp; electrode do I need?</h2>
+        <p style="color:#aebfd0;margin-top:12px;max-width:56ch">Pick the liquid you're measuring, we'll recommend the right liner and electrode from our range, and highlight them in the tables below.</p>
+        <div class="media-chips" id="mediaChips">
+          <button class="media-chip on" data-m="cleanwater">Clean water</button>
+          <button class="media-chip" data-m="wastewater">Wastewater</button>
+          <button class="media-chip" data-m="food">Food &amp; dairy</button>
+          <button class="media-chip" data-m="acid">Non-oxidizing acid</button>
+          <button class="media-chip" data-m="oxidizer">Strong oxidizer</button>
+          <button class="media-chip" data-m="seawater">Seawater / brine</button>
+          <button class="media-chip" data-m="slurry">Abrasive slurry</button>
+        </div>
+        <div class="sel-result">
+          <div class="sel-pick"><div class="pl">Recommended Liner</div><div class="pv" id="pickLiner">Hard Rubber</div><div class="pd" id="pickLinerD">Economical, durable lining for clean and raw water at low temperature.</div></div>
+          <div class="sel-pick"><div class="pl">Recommended Electrode</div><div class="pv" id="pickEl">SS 316L</div><div class="pd" id="pickElD">Standard, most economical electrode for water, wastewater and mild media.</div></div>
+        </div>
+        <div class="sel-tables">
+          <table class="mini-table" id="linerTable"><caption>Liner range</caption>
+            <tr data-l="PTFE"><td>PTFE</td><td>−40→180°C · acids, high temp, general</td></tr>
+            <tr data-l="Hard Rubber"><td>Hard Rubber</td><td>−10→80°C · clean &amp; raw water</td></tr>
+            <tr data-l="Neoprene"><td>Neoprene</td><td>−10→70°C · wastewater, low-pressure</td></tr>
+            <tr data-l="F46 (FEP)"><td>F46 (FEP)</td><td>−20→120°C · food, mid-temp chemical</td></tr>
+            <tr data-l="PFA"><td>PFA</td><td>−40→180°C · high-purity, pharma</td></tr>
+            <tr data-l="Polyurethane"><td>Polyurethane</td><td>−10→60°C · abrasive slurry, mining</td></tr>
+          </table>
+          <table class="mini-table" id="elTable"><caption>Electrode range</caption>
+            <tr data-e="SS 316L"><td>SS 316L</td><td>Water, wastewater, mild chemicals</td></tr>
+            <tr data-e="Hastelloy B"><td>Hastelloy B</td><td>HCl, phosphoric, non-oxidizing acids</td></tr>
+            <tr data-e="Hastelloy C"><td>Hastelloy C</td><td>HNO₃, H₂SO₄, chlorinated, oxidizers</td></tr>
+            <tr data-e="Titanium"><td>Titanium</td><td>Seawater, brine, hypochlorite</td></tr>
+            <tr data-e="Tantalum"><td>Tantalum</td><td>Aqua regia, nearly all chemicals</td></tr>
+            <tr data-e="Platinum"><td>Platinum</td><td>Extreme corrosives, special use</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEC TABLE -->
+<section class="p-section" id="datasheet">
+  <div class="wrap two-col">
+    <div>
+      <span class="eyebrow">Technical Specifications</span>
+      <h2 style="font-size:clamp(26px,3vw,38px);margin-top:16px;margin-bottom:24px">Full datasheet, NT-VMF</h2>
+      <table class="spec-table">
+        <tr><th>Parameter</th><th>Value</th></tr>
+        <tr><td>Product code</td><td>NT-VMF</td></tr>
+        <tr><td>Pipe diameter</td><td>DN3 – DN3000 mm (1/8″–120″)</td></tr>
+        <tr><td>Flow velocity</td><td>0.2 – 15 m/s</td></tr>
+        <tr><td>Accuracy</td><td>±0.5% std · ±0.3% / ±0.2% opt.</td></tr>
+        <tr><td>Body material</td><td>Carbon / SS 304 / 316</td></tr>
+        <tr><td>Coil material</td><td>99% copper</td></tr>
+        <tr><td>Liner</td><td>PTFE · Neoprene · Hard Rubber · F46 · PFA · PU</td></tr>
+        <tr><td>Electrode</td><td>SS316L · Hastelloy B/C · Ti · Ta · Pt</td></tr>
+        <tr><td>Connection</td><td>Flange, DIN / ANSI / JIS / custom</td></tr>
+        <tr><td>Output signal</td><td>4–20mA · Pulse · RS485 · HART (opt.) · Profibus (opt.)</td></tr>
+        <tr><td>Display</td><td>3-line LCD (instant + total)</td></tr>
+        <tr><td>Protection</td><td>IP65 / IP67 / IP68 (opt.)</td></tr>
+        <tr><td>Power supply</td><td>AC 85–250V / DC 20–36V</td></tr>
+        <tr><td>Ambient temp.</td><td>−25°C ~ +60°C</td></tr>
+        <tr><td>Pressure rating</td><td>0.6 / 1.0 / 1.6 / 2.5 / 4.0 MPa</td></tr>
+        <tr><td>Conductivity</td><td>≥5 μS/cm</td></tr>
+        <tr><td>Calibration</td><td>TÜRKAK AB-0354-K · ±0.27% uncertainty</td></tr>
+        <tr><td>Certificates</td><td>CE declaration · ISO 9001</td></tr>
+      </table>
+    </div>
+    <aside>
+      <div class="quote-side">
+        <div style="border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;background:#fff;box-shadow:var(--shadow-sm)">
+          <h3 style="font-size:18px">Documents</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:16px">
+            <a href="#" class="btn btn-ghost" style="justify-content:flex-start;width:100%"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Datasheet (PDF)</a>
+            <a href="#" class="btn btn-ghost" style="justify-content:flex-start;width:100%"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Dimensional drawing</a>
+            <a href="#" class="btn btn-ghost" style="justify-content:flex-start;width:100%"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Calibration certificate</a>
+          </div>
+          <div style="margin-top:20px;padding-top:18px;border-top:1px dashed var(--line-2);display:flex;gap:8px;flex-wrap:wrap">
+            <span class="badge badge--cert">TÜRKAK</span><span class="badge">ISO 17025</span><span class="badge badge--turkey">Made in Türkiye</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="p-section" style="background:var(--bg-alt);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Related Instruments</span><h2 style="font-size:clamp(24px,2.6vw,34px);margin-top:14px">You might also need</h2></div>
+    <div class="related-grid">
+      <a href="products.html" class="card prod-card theme-light"><div class="prod-figure"><div class="prod-tags"><span class="badge badge--blue">Food &amp; Beverage</span></div><svg class="glyph" viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><rect x="60" y="8" width="40" height="40" rx="5"/><rect x="30" y="60" width="100" height="34" rx="17"/><path d="M24 64v26M136 64v26"/></svg></div><div class="prod-body"><span class="prod-cat">Flow · NT-VMF-W</span><h3>Food-Grade Flow Meter</h3><p>Hygienic tri-clamp version for dairy and beverage lines.</p><span class="prod-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+      <a href="products.html" class="card prod-card"><div class="prod-figure"><div class="blueprint"></div><div class="prod-tags"><span class="badge">Large Pipe</span></div><svg class="glyph" viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><rect x="66" y="4" width="28" height="34" rx="4"/><line x1="80" y1="38" x2="80" y2="70"/><rect x="14" y="70" width="132" height="34" rx="6"/></svg></div><div class="prod-body"><span class="prod-cat">Flow · NT-VMF-I</span><h3>Insertion Flow Meter</h3><p>Retrofit large mains without cutting the pipe.</p><span class="prod-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+      <a href="products.html" class="card prod-card theme-light"><div class="prod-figure"><div class="prod-tags"><span class="badge badge--blue">Heavy Duty</span></div><svg class="glyph" viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><rect x="58" y="8" width="44" height="36" rx="5"/><rect x="20" y="58" width="120" height="38" rx="6"/><circle cx="50" cy="77" r="4" fill="currentColor" stroke="none"/><circle cx="80" cy="77" r="5" fill="currentColor" stroke="none"/><circle cx="110" cy="77" r="4" fill="currentColor" stroke="none"/></svg></div><div class="prod-body"><span class="prod-cat">Flow · NT-VMF-S</span><h3>Slurry Flow Meter</h3><p>Abrasion-resistant for mining and cement.</p><span class="prod-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html"><span class="mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect class="mk-bg" x="1.5" y="1.5" width="37" height="37" rx="11"/><text class="mk-pm" x="20" y="17.5" text-anchor="middle" dominant-baseline="central">NF</text><path class="mk-wave" d="M9 28.5q3.6-4.2 7.2 0t7.2 0t7.2 0"/></svg></span><span style="color:#fff">Net Flow<small>Industrial Instrumentation</small></span></a>
+        <p>Turkish manufacturer of electromagnetic flow meters, level instruments and process transmitters with a TÜRKAK-accredited calibration laboratory.</p>
+        <div class="f-addr">Fevzıçakmak Mah. Aslım Cad.<br>Konya · Türkiye<br>+90 332 235 1888</div>
+      </div>
+      <div class="foot-col"><h5>Flow Meters</h5><a href="electromagnetic-flow-meter.html">Electromagnetic</a><a href="products.html">Food-Grade</a><a href="products.html">Battery-Powered</a><a href="products.html">Insertion</a><a href="products.html">Slurry</a></div>
+      <div class="foot-col"><h5>Level &amp; Process</h5><a href="products.html">Magnetic Bypass</a><a href="products.html">Float Transmitter</a><a href="products.html">Level Switches</a><a href="products.html">Angle Sensor</a><a href="products.html">P/T Transmitter</a></div>
+      <div class="foot-col"><h5>Company</h5><a href="products.html#certs">Certifications</a><a href="products.html#industries">Industries</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Net Flow · netflw.com · An export brand of VFA Elektronik</span><div class="fb-badges"><span class="badge badge--cert">TÜRKAK AB-0354-K</span><span class="badge">ISO 9001</span><span class="badge badge--turkey">Made in Türkiye</span></div></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/" class="wa-float" aria-label="WhatsApp"><span class="pulse"></span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.6-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
+<div class="mobile-bar"><a href="https://wa.me/" class="btn btn-wa">WhatsApp</a><a href="#quote" class="btn btn-primary">Get Quote</a></div>
+
+<!-- shared meter symbol for explorer -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="__meter"></g></defs></svg>
+
+<script src="assets/i18n-dict.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/product.js"></script>
+<script>document.querySelectorAll('.lang').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');});});</script>
+</body>
+</html>
