@@ -73,7 +73,7 @@
     <div class="wrap two-col">
       <div class="prose">
         <span class="eyebrow">Overview</span>
-        <h2 style="font-size:clamp(24px,3vw,36px);margin-top:14px">Built and calibrated in Konya</h2>
+        <h2 style="font-size:clamp(24px,3vw,36px);margin-top:14px">Built and calibrated in Turkey</h2>
         <p>${esc(p.d)}</p>
         <p>Every Net Flow instrument is manufactured in Türkiye and supplied as a Yerli Malı (local-production) certified product, with an ISO 9001 quality system and a CE declaration. Specify your connection, material and output and we configure the unit to your exact application.</p>
         <table class="spec-table">
