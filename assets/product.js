@@ -121,12 +121,16 @@
   const chips=document.getElementById('mediaChips');
   function applyMedia(m){
     const r=MEDIA[m]; if(!r)return;
-    document.getElementById('pickLiner').textContent=r.liner;
-    document.getElementById('pickLinerD').textContent=LINER_D[r.liner]||'';
-    document.getElementById('pickEl').textContent=r.el;
-    document.getElementById('pickElD').textContent=EL_D[r.el]||'';
+    // use innerHTML to force new text nodes so i18n engine re-translates
+    var pl=document.getElementById('pickLiner'),pld=document.getElementById('pickLinerD');
+    var pe=document.getElementById('pickEl'),ped=document.getElementById('pickElD');
+    if(pl)pl.innerHTML='';pl.appendChild(document.createTextNode(r.liner));
+    if(pld)pld.innerHTML='';pld.appendChild(document.createTextNode(LINER_D[r.liner]||''));
+    if(pe)pe.innerHTML='';pe.appendChild(document.createTextNode(r.el));
+    if(ped)ped.innerHTML='';ped.appendChild(document.createTextNode(EL_D[r.el]||''));
     document.querySelectorAll('#linerTable tr').forEach(tr=>tr.classList.toggle('hot',tr.dataset.l===r.liner));
     document.querySelectorAll('#elTable tr').forEach(tr=>tr.classList.toggle('hot',tr.dataset.e===r.el));
+    if(window.PMI18n) PMI18n.apply();
   }
   if(chips){
     chips.addEventListener('click',e=>{
