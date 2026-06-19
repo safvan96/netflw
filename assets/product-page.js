@@ -2,6 +2,19 @@
 (function(){
   const hdr=document.getElementById('hdr');
   addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20),{passive:true});
+  // mobile menu
+  const burger=hdr.querySelector('.hamburger');
+  const navLinks=hdr.querySelector('.nav-links');
+  if(burger&&navLinks){
+    burger.addEventListener('click',()=>{
+      const open=navLinks.classList.toggle('open');
+      burger.setAttribute('aria-expanded',open);
+      if(open){document.body.style.overflow='hidden'}else{document.body.style.overflow=''}
+    });
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+      navLinks.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';
+    }));
+  }
 
   const P = window.PM_PRODUCTS||[], BY = window.PM_BYCODE||{}, G = window.PM_GLYPHS||{};
   const cat = {flow:"Flow Meter",level:"Level Instrument",switch:"Level Switch",process:"Process Instrument"};
@@ -15,6 +28,15 @@
 
   const esc=s=>(s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   document.title = p.n + ' · ' + p.code + ' — Net Flow';
+  // dynamic SEO meta
+  const metaDesc=document.querySelector('meta[name="description"]');
+  if(metaDesc) metaDesc.setAttribute('content',p.d+' '+p.code+'. '+p.s.map(x=>x[1]+': '+x[0]).join(', ')+'. Made in Turkey by Net Flow.');
+  const ogTitle=document.querySelector('meta[property="og:title"]');
+  if(ogTitle) ogTitle.setAttribute('content',p.n+' · '+p.code+' | Net Flow');
+  const ogDesc=document.querySelector('meta[property="og:description"]');
+  if(ogDesc) ogDesc.setAttribute('content',p.d);
+  const canon=document.querySelector('link[rel="canonical"]');
+  if(canon) canon.setAttribute('href','https://netflw.com/product.html?p='+encodeURIComponent(p.code));
 
   const chk='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>';
   const arrow='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
@@ -133,7 +155,10 @@
       i=(i+1)%fes.length;
     }
     cyc(); setInterval(cyc,2600);
-    fes.forEach((f,n)=>f.addEventListener('mouseenter',()=>{i=n;fes.forEach((x,m)=>x.classList.toggle('on',m===n));stage.dataset.z=String(n%4);}));
+    fes.forEach((f,n)=>{
+      f.addEventListener('mouseenter',()=>{i=n;fes.forEach((x,m)=>x.classList.toggle('on',m===n));stage.dataset.z=String(n%4);});
+      f.addEventListener('click',()=>{i=n;fes.forEach((x,m)=>x.classList.toggle('on',m===n));stage.dataset.z=String(n%4);});
+    });
   }
 
   // ---- real product photo slot (drop a 1000x1000 PNG at assets/products/<code>.png) ----

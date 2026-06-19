@@ -5,6 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Industrial Flow Meters &amp; Level Sensors | TURKAK Certified | Net Flow</title>
 <meta name="description" content="TURKAK-accredited electromagnetic flow meters, magnetic bypass level indicators and process instruments. ISO/IEC 17025 calibration. Engineered &amp; made in Turkey.">
+<link rel="canonical" href="https://netflw.com/">
+<link rel="alternate" hreflang="en" href="https://netflw.com/">
+<link rel="alternate" hreflang="tr" href="https://netflw.com/">
+<link rel="alternate" hreflang="ar" href="https://netflw.com/">
+<link rel="alternate" hreflang="ru" href="https://netflw.com/">
+<link rel="alternate" hreflang="x-default" href="https://netflw.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://netflw.com/">
+<meta property="og:title" content="Industrial Flow Meters &amp; Level Sensors | TURKAK Certified | Net Flow">
+<meta property="og:description" content="TURKAK-accredited electromagnetic flow meters, magnetic bypass level indicators and process instruments. ISO/IEC 17025 calibration. Made in Turkey.">
+<meta property="og:site_name" content="Net Flow">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Industrial Flow Meters &amp; Level Sensors | Net Flow">
+<meta name="twitter:description" content="TURKAK-accredited electromagnetic flow meters, level sensors and process instruments. Made in Turkey.">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="electromagnetic flow meter, mag flow meter, level sensor, magnetic bypass level indicator, process transmitter, TURKAK, Turkey manufacturer, flow measurement, wastewater flow meter, industrial instrumentation">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Net Flow","alternateName":"VFA Elektronik","url":"https://netflw.com","description":"Turkish manufacturer of electromagnetic flow meters, level instruments and process transmitters with TURKAK-accredited calibration.","foundingDate":"2012","address":{"@type":"PostalAddress","streetAddress":"Fevzicakmak Mah. Aslim Cad.","addressLocality":"Konya","addressCountry":"TR"},"telephone":"+903322351888","sameAs":[],"brand":{"@type":"Brand","name":"Net Flow"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Accreditation","name":"TURKAK AB-0354-K"},{"@type":"EducationalOccupationalCredential","credentialCategory":"Certification","name":"ISO 9001"}]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -506,8 +529,29 @@
   </div>
 </section>
 
+<!-- ======================= ABOUT ======================= -->
+<section class="section" id="about" style="background:var(--bg-alt);border-top:1px solid var(--line)">
+  <div class="wrap" style="max-width:860px;text-align:center">
+    <span class="eyebrow">About Net Flow</span>
+    <h2 style="font-size:clamp(24px,3vw,38px);margin-top:14px">A subsidiary of VFA Elektronik</h2>
+    <p class="about-p1" style="color:var(--ink-2);font-size:17px;line-height:1.75;margin-top:20px">
+      Net Flow is an international export brand of <strong>VFA Elektronik</strong>, a Turkish manufacturer founded in <strong>2012</strong> in Konya, Turkiye. VFA Elektronik specialises in the design, manufacture and calibration of electromagnetic flow meters, level sensors, and process instrumentation for water, wastewater, chemical, food and industrial applications.
+    </p>
+    <p class="about-p2" style="color:var(--ink-2);font-size:17px;line-height:1.75;margin-top:16px">
+      Our production facility houses a <strong>TURKAK-accredited calibration laboratory</strong> (AB-0354-K, ISO/IEC 17025:2017), enabling every instrument to be factory-calibrated to traceable national standards. All products carry <strong>Yerli Mali</strong> (local-production) certification, <strong>ISO 9001</strong> quality management and <strong>CE</strong> marking.
+    </p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px">
+      <span class="badge badge--turkey">Made in Turkiye</span>
+      <span class="badge badge--cert">TURKAK AB-0354-K</span>
+      <span class="badge">ISO 9001</span>
+      <span class="badge">CE Marking</span>
+      <span class="badge">Yerli Mali</span>
+    </div>
+  </div>
+</section>
+
 <!-- ======================= FOOTER ======================= -->
-<footer class="site-footer" id="about">
+<footer class="site-footer">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
@@ -550,6 +594,19 @@
   // header shrink
   const hdr=document.getElementById('hdr');
   addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+  // mobile menu
+  const burger=document.getElementById('burger');
+  const navLinks=document.querySelector('.nav-links');
+  if(burger&&navLinks){
+    burger.addEventListener('click',()=>{
+      const open=navLinks.classList.toggle('open');
+      burger.setAttribute('aria-expanded',open);
+      if(open){document.body.style.overflow='hidden'}else{document.body.style.overflow=''}
+    });
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+      navLinks.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';
+    }));
+  }
   // mega menu
   const mega=document.getElementById('mega'),pb=document.getElementById('prodBtn');
   let megaT;
