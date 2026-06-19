@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <title>Product — Net Flow</title>
 <meta name="description" content="Industrial flow, level and process instrument by Net Flow. Configured to your application, Yerli Malı, ISO 9001.">
 <link rel="canonical" href="https://netflw.com/product.html">
@@ -102,6 +103,13 @@
     .two-col{grid-template-columns:1fr}.quote-side{position:static}
     .related-grid{grid-template-columns:1fr}
   }
+  @media (max-width:760px){
+    .p-hero h1{font-size:clamp(24px,6vw,34px)}
+    .p-hero .lede{font-size:16px}
+    .p-cta{flex-direction:column}
+    .p-cta .btn{width:100%;text-align:center}
+    .gstage{max-width:100%}
+  }
   @media (max-width:520px){ .spec-strip-inner,.tour-grid{grid-template-columns:1fr 1fr} }
 </style>
 </head>
@@ -117,6 +125,7 @@
         <a href="products.html#certs">Certifications</a>
         <a href="index.html#about">About</a>
         <a href="index.html#contact">Contact</a>
+        <div class="mob-lang lang"><button class="on">EN</button><button>AR</button><button>RU</button><button>TR</button></div>
       </div>
       <div class="nav-cta">
         <div class="lang"><button class="on">EN</button><button>AR</button><button>RU</button><button>TR</button></div>

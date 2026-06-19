@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <title>Industrial Flow Meters &amp; Level Sensors | TURKAK Certified | Net Flow</title>
 <meta name="description" content="TURKAK-accredited electromagnetic flow meters, magnetic bypass level indicators and process instruments. ISO/IEC 17025 calibration. Engineered &amp; made in Turkey.">
 <link rel="canonical" href="https://netflw.com/">
@@ -54,6 +55,7 @@
         <a href="products.html#certs">Certifications</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <div class="mob-lang lang"><button class="on">EN</button><button>AR</button><button>RU</button><button>TR</button></div>
       </div>
       <div class="nav-cta">
         <div class="lang"><button class="on">EN</button><button>AR</button><button>RU</button><button>TR</button></div>
@@ -609,13 +611,24 @@
   }
   // mega menu
   const mega=document.getElementById('mega'),pb=document.getElementById('prodBtn');
+  const hasMega=document.querySelector('.has-mega');
   let megaT;
-  function openMega(o){mega.classList.toggle('open',o);pb.setAttribute('aria-expanded',o);mega.style.top=hdr.offsetHeight+'px'}
-  pb.addEventListener('mouseenter',()=>{clearTimeout(megaT);openMega(true)});
-  pb.addEventListener('click',()=>openMega(!mega.classList.contains('open')));
-  document.querySelector('.has-mega').addEventListener('mouseleave',()=>{megaT=setTimeout(()=>openMega(false),160)});
-  mega.addEventListener('mouseenter',()=>clearTimeout(megaT));
-  mega.addEventListener('mouseleave',()=>openMega(false));
+  const isMobile=()=>window.innerWidth<=980;
+  // move mega into .has-mega for mobile inline expand
+  if(hasMega&&mega){hasMega.appendChild(mega);}
+  function openMega(o){mega.classList.toggle('open',o);pb.setAttribute('aria-expanded',o);if(!isMobile())mega.style.top=hdr.offsetHeight+'px'}
+  pb.addEventListener('click',e=>{e.stopPropagation();openMega(!mega.classList.contains('open'))});
+  if(!('ontouchstart' in window)){
+    pb.addEventListener('mouseenter',()=>{if(!isMobile()){clearTimeout(megaT);openMega(true)}});
+    hasMega.addEventListener('mouseleave',()=>{if(!isMobile())megaT=setTimeout(()=>openMega(false),160)});
+    mega.addEventListener('mouseenter',()=>{if(!isMobile())clearTimeout(megaT)});
+    mega.addEventListener('mouseleave',()=>{if(!isMobile())openMega(false)});
+  }
+  // close mega when clicking a link inside it on mobile
+  mega.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    openMega(false);
+    if(isMobile()){navLinks.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  }));
   // reveal on scroll (rect-based, reliable across render contexts)
   const revealEls=[...document.querySelectorAll('.reveal')];
   function checkReveal(){
