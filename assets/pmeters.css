@@ -112,8 +112,8 @@ p{margin:0}
 .btn-primary:hover{background:var(--accent-700);transform:translateY(-2px);box-shadow:0 10px 26px rgba(30,136,229,.4)}
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
-.on-dark .btn-ghost{color:#fff;border-color:rgba(255,255,255,.28)}
-.on-dark .btn-ghost:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.06)}
+.on-dark .btn-ghost,.scrollex .btn-ghost,.tour .btn-ghost,.p-hero .btn-ghost,.selector .btn-ghost{color:#fff;border-color:rgba(255,255,255,.28)}
+.on-dark .btn-ghost:hover,.scrollex .btn-ghost:hover,.tour .btn-ghost:hover,.p-hero .btn-ghost:hover,.selector .btn-ghost:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.06)}
 .btn-white{background:#fff;color:var(--navy-900)}
 .btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
 .btn-wa{background:var(--whatsapp);color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.32)}
