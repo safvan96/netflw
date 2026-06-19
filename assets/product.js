@@ -128,8 +128,8 @@
     if(pld)pld.innerHTML='';pld.appendChild(document.createTextNode(LINER_D[r.liner]||''));
     if(pe)pe.innerHTML='';pe.appendChild(document.createTextNode(r.el));
     if(ped)ped.innerHTML='';ped.appendChild(document.createTextNode(EL_D[r.el]||''));
-    document.querySelectorAll('#linerTable tr').forEach(tr=>tr.classList.toggle('hot',tr.dataset.l===r.liner));
-    document.querySelectorAll('#elTable tr').forEach(tr=>tr.classList.toggle('hot',tr.dataset.e===r.el));
+    document.querySelectorAll('#linerTable tr').forEach(tr=>tr.classList.toggle('sel',tr.dataset.l===r.liner));
+    document.querySelectorAll('#elTable tr').forEach(tr=>tr.classList.toggle('sel',tr.dataset.e===r.el));
     if(window.PMI18n) PMI18n.apply();
   }
   if(chips){
