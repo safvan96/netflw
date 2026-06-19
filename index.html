@@ -52,7 +52,6 @@
           </button>
         </div>
         <a href="products.html#industries">Industries</a>
-        <a href="products.html#certs">Certifications</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <div class="mob-lang lang"><button class="on">EN</button><button>AR</button><button>RU</button><button>TR</button></div>
@@ -774,7 +773,6 @@ const PM_TWEAKS = /*EDITMODE-BEGIN*/{
   document.getElementById('twReset').onclick=()=>{state=Object.assign({},PM_TWEAKS);apply();save();};
 })();
 </script>
-<script>document.querySelectorAll('.lang').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');});});</script>
 <script src="assets/i18n-dict.js"></script>
 <script src="assets/i18n.js"></script>
 </body>

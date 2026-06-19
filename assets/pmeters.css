@@ -151,7 +151,7 @@ p{margin:0}
    HEADER
    ============================================================ */
 .site-header{
-  position:sticky;top:0;z-index:60;
+  position:sticky;top:0;z-index:102;
   background:rgba(255,255,255,.82);backdrop-filter:saturate(160%) blur(14px);
   border-bottom:1px solid var(--line);
   transition:padding .25s ease, box-shadow .25s;
@@ -184,7 +184,7 @@ p{margin:0}
 .lang{font-family:var(--f-mono);font-size:12.5px;font-weight:600;color:var(--ink-3);display:flex;gap:9px;align-items:center}
 .lang button{background:none;border:none;cursor:pointer;color:var(--ink-3);font:inherit;padding:2px}
 .lang button.on{color:var(--navy-900)}
-.hamburger{display:none;border:1px solid var(--line-2);border-radius:9px;width:42px;height:42px;place-items:center;background:#fff;cursor:pointer;color:var(--navy-900)}
+.hamburger{display:none;border:1px solid var(--line-2);border-radius:9px;width:42px;height:42px;place-items:center;background:#fff;cursor:pointer;color:var(--navy-900);position:relative;z-index:101}
 .mob-lang{display:none!important}
 
 /* mega menu */
@@ -389,15 +389,15 @@ p{margin:0}
 }
 @media (max-width:980px){
   .nav-links{
-    display:none;position:fixed;left:0;right:0;top:62px;bottom:0;
-    background:#fff;z-index:58;
+    display:none;position:fixed;left:0;right:0;top:0;bottom:0;
+    background:#fff;z-index:100;
     flex-direction:column;align-items:stretch;
-    padding:0;gap:0;
-    border-top:1px solid var(--line);
+    padding:0;gap:0;padding-top:74px;
+    border-top:none;
     overflow-y:auto;-webkit-overflow-scrolling:touch;
   }
-  .site-header.scrolled~.nav .nav-links,.site-header.scrolled .nav-links{top:62px}
-  .nav-links.open{display:flex}
+  .site-header.scrolled .nav-links{padding-top:62px}
+  .nav-links.open{display:flex!important}
   .nav-links>a,.nav-links>.has-mega>button{
     font-size:17px;padding:16px 24px;width:100%;text-align:left;justify-content:flex-start;
     border-bottom:1px solid var(--line);color:var(--ink);border-radius:0;
@@ -416,6 +416,8 @@ p{margin:0}
   }
   .nav-links .mob-lang button.on{color:#fff;border-color:var(--accent);background:var(--accent)}
   .hamburger{display:grid}
+  /* close icon state when menu open */
+  .nav-links.open ~ .nav-cta .hamburger svg path{d:path("M6 6l12 12M6 18l12-12")}
   /* mega menu inline in mobile overlay */
   .mega{position:static!important;opacity:1!important;visibility:visible!important;transform:none!important;
     display:none;border-bottom:none;box-shadow:none;background:var(--bg-alt);border-radius:0;margin:0}
