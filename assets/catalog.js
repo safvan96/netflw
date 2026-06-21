@@ -100,15 +100,19 @@
     if(window.PMI18n) PMI18n.apply();
   }
 
+  function scrollToGrid(){
+    const top = grid.getBoundingClientRect().top + scrollY - 140;
+    window.scrollTo({top, behavior:'smooth'});
+  }
   document.getElementById('catChips').addEventListener('click',e=>{
     const b=e.target.closest('.chip'); if(!b)return;
     document.querySelectorAll('#catChips .chip').forEach(c=>c.classList.remove('on'));
-    b.classList.add('on'); curCat=b.dataset.cat; render();
+    b.classList.add('on'); curCat=b.dataset.cat; render(); scrollToGrid();
   });
   document.getElementById('indChips').addEventListener('click',e=>{
     const b=e.target.closest('.chip'); if(!b)return;
     document.querySelectorAll('#indChips .chip').forEach(c=>c.classList.remove('on'));
-    b.classList.add('on'); curInd=b.dataset.ind; render();
+    b.classList.add('on'); curInd=b.dataset.ind; render(); scrollToGrid();
   });
   document.getElementById('search').addEventListener('input',e=>{curQ=e.target.value;render();});
   document.querySelectorAll('.ind[data-jump]').forEach(el=>el.addEventListener('click',()=>{
