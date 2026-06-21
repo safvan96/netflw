@@ -28,15 +28,15 @@
   const cat = {flow:"Flow Meter",level:"Level Instrument",switch:"Level Switch",process:"Process Instrument"};
 
   const P = [
-    {n:"Electromagnetic Flow Meter",code:"NT-VMF",c:"flow",g:"flow",t:0,star:1,ind:["water","oil","food","chemical","mining"],link:"electromagnetic-flow-meter.html",tags:["★ Bestseller","Made in Türkiye"],s:[["DN3–DN3000","Diameter"],["±0.2%","Accuracy"]],d:"No moving parts, zero pressure drop. For any conductive liquid, six liners, six electrode alloys, every output protocol."},
-    {n:"Food-Grade Flow Meter",code:"NT-VMF-W",c:"flow",g:"food",t:1,ind:["food","chemical"],tags:["Hygienic"],s:[["DN10–DN200","Diameter"],["Tri-Clamp","Connection"]],d:"Hygienic tri-clamp connection for dairy, beverage and pharma transfer lines. PTFE / PFA lined, 316L electrodes."},
-    {n:"Battery-Powered Flow Meter",code:"NT-VMF-BT",c:"flow",g:"battery",t:0,ind:["water"],tags:["5-Year Battery"],s:[["DN3–DN600","Diameter"],["3.6V Li","Power"]],d:"Five-year lithium battery for remote sites with no mains power, irrigation, DMA stations, NRW leak detection."},
-    {n:"Insertion Flow Meter",code:"NT-VMF-I",c:"flow",g:"insertion",t:0,ind:["water","oil"],tags:["Easy Retrofit"],s:[["DN100–DN3000","Diameter"],["±0.5%","Accuracy"]],d:"Single-point insertion for large mains, retrofit onto existing lines without cutting the pipe. ABS / PP body."},
-    {n:"Partially-Filled Flow Meter",code:"NT-VMF-P",c:"flow",g:"partial",t:0,ind:["water"],tags:["Gravity Flow"],s:[["DN200–DN3000","Diameter"],["±2.5%","Accuracy"]],d:"Measures level and velocity together in non-full pipes, sewerage, stormwater and industrial drainage."},
-    {n:"Zero Straight-Run (0D) Meter",code:"NT-VMF-0D",c:"flow",g:"zerod",t:0,ind:["water","chemical"],tags:["0D Install"],s:[["DN3–DN3000","Diameter"],["±0.5%","Accuracy"]],d:"No upstream or downstream straight pipe required, mount right after an elbow, valve or pump in tight spaces."},
-    {n:"Miniature Flow Meter",code:"NT-VMF-M",c:"flow",g:"mini",t:1,ind:["chemical","food"],tags:["Micro Flow"],s:[["DN3–DN15","Diameter"],["PIC body","Material"]],d:"Precision micro-dosing from 0.2 L/min, chemical dosing, pharma and lab applications. Polyimide composite body."},
-    {n:"Slurry Flow Meter",code:"NT-VMF-S",c:"flow",g:"slurry",t:1,ind:["mining","chemical"],tags:["Heavy Duty"],s:[["Pt-Ir","Electrode"],["≤0.17%","Repeatability"]],d:"Abrasion-resistant with 25/30 Hz high-frequency excitation to suppress particle noise, mining, cement, drilling mud."},
-    {n:"Magnetic Bypass Level Indicator",code:"NT-MLI",c:"level",g:"bypass",t:0,ind:["oil","chemical","water"],tags:["No Power"],s:[["200°C","Max temp"],["PN10","Pressure"]],d:"Sealed magnetic flag indication, no power, zero maintenance. For fuel, chemical and boiler-drum tanks."},
+    {n:"Electromagnetic Flow Meter",code:"NT-VMF",c:"flow",g:"flow",t:0,star:1,ind:["water","oil","food","chemical","mining"],link:"electromagnetic-flow-meter.html",tags:["★ Bestseller","Made in Türkiye"],s:[["DN3–DN3000","Diameter"],["±0.2%","Accuracy"]],d:"No moving parts, zero pressure drop. For any conductive liquid, six liners, six electrode alloys, every output protocol.",pdf:"nt-vmf"},
+    {n:"Food-Grade Flow Meter",code:"NT-VMF-W",c:"flow",g:"food",t:1,ind:["food","chemical"],tags:["Hygienic"],s:[["DN10–DN200","Diameter"],["Tri-Clamp","Connection"]],d:"Hygienic tri-clamp connection for dairy, beverage and pharma transfer lines. PTFE / PFA lined, 316L electrodes.",pdf:"nt-vmf-w"},
+    {n:"Battery-Powered Flow Meter",code:"NT-VMF-BT",c:"flow",g:"battery",t:0,ind:["water"],tags:["5-Year Battery"],s:[["DN3–DN600","Diameter"],["3.6V Li","Power"]],d:"Five-year lithium battery for remote sites with no mains power, irrigation, DMA stations, NRW leak detection.",pdf:"nt-vmf-bt"},
+    {n:"Insertion Flow Meter",code:"NT-VMF-I",c:"flow",g:"insertion",t:0,ind:["water","oil"],tags:["Easy Retrofit"],s:[["DN100–DN3000","Diameter"],["±0.5%","Accuracy"]],d:"Single-point insertion for large mains, retrofit onto existing lines without cutting the pipe. ABS / PP body.",pdf:"nt-vmf-i"},
+    {n:"Partially-Filled Flow Meter",code:"NT-VMF-P",c:"flow",g:"partial",t:0,ind:["water"],tags:["Gravity Flow"],s:[["DN200–DN3000","Diameter"],["±2.5%","Accuracy"]],d:"Measures level and velocity together in non-full pipes, sewerage, stormwater and industrial drainage.",pdf:"nt-vmf-p"},
+    {n:"Zero Straight-Run (0D) Meter",code:"NT-VMF-0D",c:"flow",g:"zerod",t:0,ind:["water","chemical"],tags:["0D Install"],s:[["DN3–DN3000","Diameter"],["±0.5%","Accuracy"]],d:"No upstream or downstream straight pipe required, mount right after an elbow, valve or pump in tight spaces.",pdf:"nt-vmf-0d"},
+    {n:"Miniature Flow Meter",code:"NT-VMF-M",c:"flow",g:"mini",t:1,ind:["chemical","food"],tags:["Micro Flow"],s:[["DN3–DN15","Diameter"],["PIC body","Material"]],d:"Precision micro-dosing from 0.2 L/min, chemical dosing, pharma and lab applications. Polyimide composite body.",pdf:"nt-vmf-m"},
+    {n:"Slurry Flow Meter",code:"NT-VMF-S",c:"flow",g:"slurry",t:1,ind:["mining","chemical"],tags:["Heavy Duty"],s:[["Pt-Ir","Electrode"],["≤0.17%","Repeatability"]],d:"Abrasion-resistant with 25/30 Hz high-frequency excitation to suppress particle noise, mining, cement, drilling mud.",pdf:"nt-vmf-s"},
+    {n:"Magnetic Bypass Level Indicator",code:"NT-MLI",c:"level",g:"bypass",t:0,ind:["oil","chemical","water"],tags:["No Power"],s:[["200°C","Max temp"],["PN10","Pressure"]],d:"Sealed magnetic flag indication, no power, zero maintenance. For fuel, chemical and boiler-drum tanks.",pdf:"nt-mbl"},
     {n:"Ex-Proof Bypass Indicator",code:"NT-MLI-EX",c:"level",g:"exproof",t:0,ind:["oil","chemical"],tags:["Hazardous Areas"],s:[["150°C","Max temp"],["PN10","Pressure"]],d:"Ex-proof design for hazardous atmospheres, refineries, LPG/LNG terminals and solvent storage."},
     {n:"Boiler-Type Bypass Indicator",code:"NT-MLI-BR",c:"level",g:"boiler",t:0,ind:["oil"],tags:["High Pressure"],s:[["300°C","Max temp"],["PN40","Pressure"]],d:"Built for high-pressure steam systems, fire-tube and water-tube boiler drums, power-plant feed tanks."},
     {n:"Float Level Transmitter",code:"NT-FLT",c:"level",g:"floattx",t:1,ind:["water","chemical","food"],tags:["Continuous"],s:[["0–6000mm","Range"],["4–20mA","Output"]],d:"Continuous level with simple, reliable float + magnetic coupling, water reservoirs, process and wastewater tanks."},
@@ -44,7 +44,7 @@
     {n:"Magnetic Level Sensor",code:"NT-MLP",c:"level",g:"maglevel",t:0,ind:["water","chemical"],tags:["Point Level"],s:[["IP67","Protection"],["150°C","Max temp"]],d:"Compact magnetic float + reed switch for pump protection and high/low alarms. Vertical or side mount."},
     {n:"Mini Stainless Level Switch",code:"NT-LSW-M",c:"switch",g:"miniswitch",t:1,ind:["chemical"],tags:["Compact"],s:[["IP67","Protection"],["316L","Body"]],d:"Fits the tightest spaces, machine tanks, compressors and compact systems. Stainless, NO/NC relay."},
     {n:"Float Level Switch",code:"NT-LSW-F",c:"switch",g:"floatswitch",t:0,ind:["water"],tags:["Economical"],s:[["120°C","Max temp"],["PP / SS","Body"]],d:"The simplest, most economical level detection, pump control, sumps and condensate tanks."},
-    {n:"Paddle Motor Level Switch",code:"NT-LSW-P",c:"switch",g:"paddle",t:0,ind:["mining","food"],tags:["Solids"],s:[["220VAC","Supply"],["IP65","Protection"]],d:"Rotating-paddle full/empty detection for grain, cement and plastic-granule silos, economical and rugged."},
+    {n:"Paddle Motor Level Switch",code:"NT-LSW-P",c:"switch",g:"paddle",t:0,ind:["mining","food"],tags:["Solids"],s:[["220VAC","Supply"],["IP65","Protection"]],d:"Rotating-paddle full/empty detection for grain, cement and plastic-granule silos, economical and rugged.",pdf:"nt-lsw-p"},
     {n:"Angle Sensor (RCS Series)",code:"NT-RCS 3100/2100",c:"process",g:"angle",t:0,ind:["oil"],tags:["Contactless"],s:[["0–360°","Range"],["12-bit","Resolution"]],d:"Contactless Hall-effect angle sensing with unlimited rotation life, valve position feedback and mobile machinery."},
     {n:"Pressure-Temperature Transmitter",code:"NT-BTT-S",c:"process",g:"pt",t:0,ind:["oil","chemical"],tags:["2-in-1"],s:[["0–600 bar","Pressure"],["PT100","Temp"]],d:"Two measurements from one tapping, pressure and temperature together, halving cabling and install space."}
   ];
@@ -72,10 +72,10 @@
     }).join('');
     const specs=p.s.map(x=>`<div class="ps"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('');
     const href=p.link?p.link:('product.html?p='+encodeURIComponent(p.code));
-    // drop-in photo slot: set p.img to a file path and it replaces the animated glyph
     const media = p.img
       ? `<img class="prod-photo" src="${p.img}" alt="${p.n}" loading="lazy">`
       : `<div class="glyph glyph-anim">${G[p.g]}</div>`;
+    const pdfBtn = p.pdf ? `<a class="btn-pdf" href="assets/pdf/en/${p.pdf}-en.pdf" data-pdf="${p.pdf}" onclick="(function(e){e.stopPropagation();e.preventDefault();var l=(typeof PMI18n!=='undefined'?PMI18n.get():'en');var ls=['en','tr','ar'];var pl=ls.includes(l)?l:'en';window.open('assets/pdf/'+pl+'/'+e.currentTarget.dataset.pdf+'-'+pl+'.pdf')})(event)" title="Download Datasheet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 15V3m0 12-4-4m4 4 4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg> PDF</a>` : '';
     return `<a href="${href}" class="card prod-card${theme}">
       <div class="prod-figure"${p.img?' data-has-photo="true"':''}>${p.t?'':'<div class="blueprint"></div>'}<div class="prod-tags">${tags}</div>${media}</div>
       <div class="prod-body">
@@ -83,7 +83,7 @@
         <h3>${p.n}</h3>
         <p>${p.d}</p>
         <div class="prod-specs">${specs}</div>
-        <span class="prod-link">View product <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="prod-footer"><span class="prod-link">View product <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>${pdfBtn}</div>
       </div>
     </a>`;
   }
