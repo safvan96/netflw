@@ -75,7 +75,6 @@
     const media = p.img
       ? `<img class="prod-photo" src="${p.img}" alt="${p.n}" loading="lazy">`
       : `<div class="glyph glyph-anim">${G[p.g]}</div>`;
-    const pdfBtn = p.pdf ? `<a class="btn-pdf" href="assets/pdf/en/${p.pdf}-en.pdf" data-pdf="${p.pdf}" onclick="(function(e){e.stopPropagation();e.preventDefault();var l=(typeof PMI18n!=='undefined'?PMI18n.get():'en');var ls=['en','tr','ar'];var pl=ls.includes(l)?l:'en';window.open('assets/pdf/'+pl+'/'+e.currentTarget.dataset.pdf+'-'+pl+'.pdf')})(event)" title="Download Datasheet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 15V3m0 12-4-4m4 4 4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17"/></svg> PDF</a>` : '';
     return `<a href="${href}" class="card prod-card${theme}">
       <div class="prod-figure"${p.img?' data-has-photo="true"':''}>${p.t?'':'<div class="blueprint"></div>'}<div class="prod-tags">${tags}</div>${media}</div>
       <div class="prod-body">
@@ -83,7 +82,7 @@
         <h3>${p.n}</h3>
         <p>${p.d}</p>
         <div class="prod-specs">${specs}</div>
-        <div class="prod-footer"><span class="prod-link">View product <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>${pdfBtn}</div>
+        <span class="prod-link">View product <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </div>
     </a>`;
   }

@@ -166,14 +166,7 @@ p{margin:0}
 .brand .mark{
   width:40px;height:40px;flex:none;position:relative;
 }
-.brand .mark svg{width:100%;height:100%;display:block;overflow:visible}
-.mk-bg{fill:var(--navy-900)}
-.mk-letter{fill:#fff}
-.mk-wave{fill:none;stroke:var(--accent);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:30}
-@media (prefers-reduced-motion:no-preference){
-  .mk-wave{animation:mkFlow 2.6s linear infinite}
-}
-@keyframes mkFlow{to{stroke-dashoffset:-60}}
+.mk-amblem{width:100%;height:100%;object-fit:contain;display:block}
 .brand small{display:block;font-family:var(--f-mono);font-weight:500;font-size:9.5px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase;margin-top:1px}
 .nav-links{display:flex;align-items:center;gap:6px;margin-left:8px}
 .nav-links a, .nav-links button{
@@ -255,12 +248,9 @@ p{margin:0}
 .prod-specs .ps{display:flex;flex-direction:column;min-width:0;flex-shrink:0}
 .prod-specs .ps b{font-family:var(--f-mono);font-size:13px;color:var(--navy-900);font-weight:600;white-space:nowrap}
 .prod-specs .ps span{font-size:10.5px;color:var(--ink-3);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
-.prod-footer{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
-.prod-link{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-head);font-weight:600;font-size:14.5px;color:var(--accent)}
+.prod-link{display:inline-flex;align-items:center;gap:7px;font-family:var(--f-head);font-weight:600;font-size:14.5px;color:var(--accent);margin-top:18px}
 .prod-link svg{width:16px;height:16px;transition:transform .2s}
 .prod-card:hover .prod-link svg{transform:translateX(4px)}
-.btn-pdf{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:6px;border:1.5px solid var(--accent);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.04em;text-decoration:none;transition:background .18s,color .18s;flex-shrink:0;cursor:pointer}
-.btn-pdf:hover{background:var(--accent);color:#fff}
 
 /* featured product (big) */
 .featured{grid-column:span 2;display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden}
@@ -348,7 +338,7 @@ p{margin:0}
 .site-footer{background:var(--navy-850);color:#c7d4e2;padding-block:64px 30px;position:relative;border-top:1px solid var(--navy-line)}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
 .foot-brand .brand{color:#fff}
-.foot-brand .mk-bg{fill:#0e1d33;stroke:rgba(255,255,255,.16);stroke-width:1}
+
 .foot-brand p{margin-top:18px;font-size:14px;color:#8ea1b5;max-width:34ch;line-height:1.6}
 .foot-brand .f-addr{margin-top:16px;font-family:var(--f-mono);font-size:12px;color:#7f93a8;line-height:1.7}
 .foot-col h5{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#6f859b;margin:0 0 16px;font-weight:600}
