@@ -118,8 +118,7 @@
   document.querySelectorAll('.ind[data-jump]').forEach(el=>el.addEventListener('click',()=>{
     const ind=el.dataset.jump;
     document.querySelectorAll('#indChips .chip').forEach(c=>c.classList.toggle('on',c.dataset.ind===ind));
-    curInd=ind; render();
-    window.scrollTo({top:document.querySelector('.filters').offsetTop-80,behavior:'smooth'});
+    curInd=ind; render(); scrollToGrid();
   }));
 
   // header shrink
