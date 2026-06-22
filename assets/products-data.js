@@ -47,5 +47,5 @@
   ];
   window.PM_BYCODE = {}; window.PM_PRODUCTS.forEach(p=>window.PM_BYCODE[p.code]=p);
   /* product codes that have a real photo at assets/products/<slug>.png — add codes here as photos arrive */
-  window.PM_PHOTOS = ['NT-VMF','NT-VMF-W','NT-VMF-BT','NT-VMF-I','NT-VMF-P','NT-VMF-0D','NT-VMF-M','NT-VMF-S','NT-MLI','NT-MLI-EX','NT-MLI-BR','NT-FLT','NT-MLS','NT-MLP','NT-LSW-M','NT-LSW-F','NT-LSW-P','NT-RCS 3100/2100','NT-BTT-S'];
+  window.PM_PHOTOS = ['NT-VMF','NT-VMF-W','NT-VMF-BT','NT-VMF-I','NT-VMF-P','NT-VMF-0D','NT-VMF-M','NT-VMF-S','NT-MLI','NT-MLI-EX','NT-MLI-BR','NT-FLT','NT-MLS','NT-LSW-M','NT-LSW-F','NT-LSW-P','NT-RCS 3100/2100','NT-BTT-S'];
 })();
