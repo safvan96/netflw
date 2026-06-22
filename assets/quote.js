@@ -47,10 +47,10 @@ const T = {
 
 /* ---------- default terms per language ---------- */
 const TERMS = {
-  en:'• Prices are quoted EXW Konya (Incoterms® 2020) unless otherwise agreed.\n• Delivery: 3–5 weeks after order confirmation and advance payment.\n• Payment: 50% advance, 50% before shipment (T/T).\n• Warranty: 24 months against manufacturing defects.\n• Electromagnetic flow meters ship with a TÜRKAK-accredited calibration certificate (ISO/IEC 17025); other instruments carry a Yerli Malı (local-production) certificate.\n• This quotation is valid until the date stated above.',
-  tr:'• Fiyatlar aksi belirtilmedikçe EXW Konya (Incoterms® 2020) olarak verilmiştir.\n• Teslimat: Sipariş onayı ve avans ödemesinden sonra 3–5 hafta.\n• Ödeme: %50 avans, %50 sevkiyat öncesi (T/T).\n• Garanti: Üretim hatalarına karşı 24 ay.\n• Elektromanyetik debimetreler TÜRKAK akreditasyonlu kalibrasyon sertifikası (ISO/IEC 17025) ile; diğer cihazlar Yerli Malı belgesi ile teslim edilir.\n• Bu teklif yukarıda belirtilen tarihe kadar geçerlidir.',
-  ar:'• الأسعار على أساس تسليم المصنع EXW قونية (إنكوترمز 2020) ما لم يُتفق على خلاف ذلك.\n• التسليم: 3–5 أسابيع بعد تأكيد الطلب ودفع الدفعة المقدمة.\n• الدفع: 50% مقدمًا و50% قبل الشحن (تحويل بنكي).\n• الضمان: 24 شهرًا ضد عيوب التصنيع.\n• تُسلَّم أجهزة قياس التدفق الكهرومغناطيسية بشهادة معايرة معتمدة من TÜRKAK ‏(ISO/IEC 17025)؛ بينما تحمل الأجهزة الأخرى شهادة منشأ محلي (Yerli Malı).\n• هذا العرض صالح حتى التاريخ المذكور أعلاه.',
-  ru:'• Цены указаны на условиях EXW Конья (Incoterms® 2020), если не согласовано иное.\n• Поставка: 3–5 недель после подтверждения заказа и предоплаты.\n• Оплата: 50% аванс, 50% перед отгрузкой (банковский перевод).\n• Гарантия: 24 месяца от производственных дефектов.\n• Электромагнитные расходомеры поставляются с калибровкой ISO/IEC 17025, аккредитованной TÜRKAK; прочие приборы, с сертификатом локального производства (Yerli Malı).\n• Данное предложение действительно до указанной выше даты.'
+  en:'• Prices are quoted EXW Konya (Incoterms® 2020) unless otherwise agreed.\n• Delivery: 3–5 weeks after order confirmation and receipt of full payment.\n• Payment: 100% advance by T/T (bank transfer) before production.\n• Warranty: 24 months against manufacturing defects.\n• Electromagnetic flow meters ship with a TÜRKAK-accredited calibration certificate (ISO/IEC 17025); other instruments carry a Yerli Malı (local-production) certificate.\n• This quotation is valid until the date stated above.',
+  tr:'• Fiyatlar aksi belirtilmedikçe EXW Konya (Incoterms® 2020) olarak verilmiştir.\n• Teslimat: Tam ödeme alındıktan sonra 3–5 hafta.\n• Ödeme: %100 peşin, T/T (banka havalesi) ile üretim başlamadan önce.\n• Garanti: Üretim hatalarına karşı 24 ay.\n• Elektromanyetik debimetreler TÜRKAK akreditasyonlu kalibrasyon sertifikası (ISO/IEC 17025) ile; diğer cihazlar Yerli Malı belgesi ile teslim edilir.\n• Bu teklif yukarıda belirtilen tarihe kadar geçerlidir.',
+  ar:'• الأسعار على أساس تسليم المصنع EXW قونية (إنكوترمز 2020) ما لم يُتفق على خلاف ذلك.\n• التسليم: 3–5 أسابيع بعد استلام الدفعة الكاملة.\n• الدفع: 100% مقدمًا بالتحويل البنكي T/T قبل بدء الإنتاج.\n• الضمان: 24 شهرًا ضد عيوب التصنيع.\n• تُسلَّم أجهزة قياس التدفق الكهرومغناطيسية بشهادة معايرة معتمدة من TÜRKAK ‏(ISO/IEC 17025)؛ بينما تحمل الأجهزة الأخرى شهادة منشأ محلي (Yerli Malı).\n• هذا العرض صالح حتى التاريخ المذكور أعلاه.',
+  ru:'• Цены указаны на условиях EXW Конья (Incoterms® 2020), если не согласовано иное.\n• Поставка: 3–5 недель после получения полной оплаты.\n• Оплата: 100% аванс банковским переводом T/T до начала производства.\n• Гарантия: 24 месяца от производственных дефектов.\n• Электромагнитные расходомеры поставляются с калибровкой ISO/IEC 17025, аккредитованной TÜRKAK; прочие приборы, с сертификатом локального производства (Yerli Malı).\n• Данное предложение действительно до указанной выше даты.'
 };
 
 /* ---------- config field definitions ---------- */
@@ -159,23 +159,48 @@ function aui(){ return AUI[uiLang()]||AUI.en; }
 
 /* ---------- state ---------- */
 const DRAFT_KEY='pm_quote_draft_v1';
+const LIST_KEY='pm_quote_list_v2';
 function pad(n){return String(n).padStart(2,'0');}
 function iso(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());}
 function genNo(){return 'NT-Q-'+new Date().getFullYear()+'-'+String(Math.floor(1000+Math.random()*9000));}
-function fmtDate(s){ if(!s) return ', '; const [y,m,d]=s.split('-'); return d+'.'+m+'.'+y; }
+function fmtDate(s){ if(!s) return '—'; const [y,m,d]=s.split('-'); return d+'.'+m+'.'+y; }
 
 function defaultState(){
   const today=new Date(); const valid=new Date(Date.now()+30*86400000);
   return {lang:'en', currency:'USD', review:false,
     meta:{no:genNo(), date:iso(today), valid:iso(valid), by:''},
-    cust:{company:'',contact:'',country:'',email:'',project:''},
+    cust:{company:'',contact:'',reqBy:'',custSign:'',country:'',email:'',project:''},
     discount:0, vat:0, travel:0, terms:{}, items:[]};
 }
 let S;
 try{ S = JSON.parse(localStorage.getItem(DRAFT_KEY)); }catch(e){ S=null; }
 if(!S || !S.meta) S = defaultState();
 if(!S.terms) S.terms={};
+if(!S.cust.reqBy) S.cust.reqBy='';
+if(!S.cust.custSign) S.cust.custSign='';
 function save(){ try{ localStorage.setItem(DRAFT_KEY, JSON.stringify(S)); }catch(e){} }
+
+/* ---- quote archive ---- */
+function getList(){ try{ return JSON.parse(localStorage.getItem(LIST_KEY)||'[]'); }catch(e){ return []; } }
+function saveToArchive(){
+  const list=getList();
+  const entry={code:S.meta.no, date:S.meta.date, customer:S.cust.company||'—', country:S.cust.country||'', currency:S.currency, grand:totals().grand, data:JSON.stringify(S)};
+  const idx=list.findIndex(x=>x.code===entry.code);
+  if(idx>=0) list[idx]=entry; else list.unshift(entry);
+  localStorage.setItem(LIST_KEY, JSON.stringify(list.slice(0,100)));
+}
+function renderArchive(){
+  const list=getList();
+  const ul=$('#archiveList');
+  if(!ul) return;
+  if(!list.length){ ul.innerHTML='<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:13px">No saved quotes yet.</div>'; return; }
+  ul.innerHTML=list.map(q=>`
+    <div class="arch-item" data-load="${esc(q.code)}">
+      <div class="arch-code">${esc(q.code)}</div>
+      <div class="arch-cust">${esc(q.customer)}${q.country?' · '+esc(q.country):''}</div>
+      <div class="arch-meta">${fmtDate(q.date)} · ${q.currency} ${(q.grand||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div>
+    </div>`).join('');
+}
 
 /* ---------- helpers ---------- */
 const $=s=>document.querySelector(s);
@@ -365,14 +390,19 @@ function buildDoc(){
     </div>
 
     <div class="qd-foot">
-      <div class="qd-sign">${esc(S.meta.by||'Net Flow')}<br>${esc(t.authSign)}</div>
       <div>
-        <div class="qd-badges">
+        <div class="qd-sign" style="margin-bottom:4px">${esc(S.meta.by||'Net Flow')}</div>
+        <div class="qd-sign">${esc(t.authSign)}</div>
+        <div class="qd-badges" style="justify-content:flex-start;margin-top:12px">
           ${hasTurkak?'<span class="badge badge--cert">TÜRKAK AB-0354-K</span><span class="badge">ISO 17025</span>':''}
           <span class="badge">ISO 9001</span>
           <span class="badge badge--turkey">${esc(YERLI[L])}</span>
         </div>
-        <div class="qd-sign" style="margin-top:26px;text-align:right">${esc(t.custAcc)}</div>
+      </div>
+      <div style="text-align:right">
+        <div class="qd-sign" style="margin-bottom:4px">${esc(S.cust.custSign||'________________')}</div>
+        <div class="qd-sign">${esc(t.custAcc)}</div>
+        ${S.cust.reqBy?`<div style="font-family:var(--f-mono);font-size:10px;color:var(--ink-3);margin-top:8px">Requested by: ${esc(S.cust.reqBy)}</div>`:''}
       </div>
     </div>
 
@@ -385,7 +415,8 @@ function buildDoc(){
    ============================================================ */
 function loadForm(){
   $('#qNo').value=S.meta.no; $('#qDate').value=S.meta.date; $('#qValid').value=S.meta.valid; $('#qBy').value=S.meta.by;
-  $('#cCompany').value=S.cust.company; $('#cContact').value=S.cust.contact; $('#cCountry').value=S.cust.country;
+  $('#cCompany').value=S.cust.company; $('#cContact').value=S.cust.contact; $('#cReqBy').value=S.cust.reqBy||'';
+  $('#cCustSign').value=S.cust.custSign||''; $('#cCountry').value=S.cust.country;
   $('#cEmail').value=S.cust.email; $('#cProject').value=S.cust.project;
   $('#tDisc').value=S.discount; $('#tTravel').value=S.travel||0; $('#tVat').value=S.vat;
   $('#curSel').value=S.currency; $('#langSel').value=S.lang;
@@ -417,7 +448,8 @@ function bind(){
 
   // meta + customer
   const map={qNo:['meta','no'],qDate:['meta','date'],qValid:['meta','valid'],qBy:['meta','by'],
-    cCompany:['cust','company'],cContact:['cust','contact'],cCountry:['cust','country'],cEmail:['cust','email'],cProject:['cust','project']};
+    cCompany:['cust','company'],cContact:['cust','contact'],cReqBy:['cust','reqBy'],cCustSign:['cust','custSign'],
+    cCountry:['cust','country'],cEmail:['cust','email'],cProject:['cust','project']};
   Object.keys(map).forEach(id=>{ $('#'+id).addEventListener('input',e=>{const[a,b]=map[id];S[a][b]=e.target.value;save();}); });
 
   // discount / vat
@@ -448,7 +480,11 @@ function bind(){
   $('#btnPreview').addEventListener('click',()=>{buildDoc();$('#previewOv').classList.add('open');document.body.style.overflow='hidden';});
   $('#btnClosePv').addEventListener('click',()=>{$('#previewOv').classList.remove('open');document.body.style.overflow='';});
   $('#btnPrint').addEventListener('click',()=>{buildDoc();setTimeout(()=>window.print(),60);});
-  $('#btnSave').addEventListener('click',()=>{save();const b=$('#btnSave');const o=b.innerHTML;b.innerHTML='✓ Saved';setTimeout(()=>b.innerHTML=o,1200);});
+  $('#btnSave').addEventListener('click',()=>{save();saveToArchive();renderArchive();const b=$('#btnSave');const o=b.innerHTML;b.innerHTML='✓ Saved';setTimeout(()=>b.innerHTML=o,1200);});
+  // archive panel toggle
+  $('#btnArchive').addEventListener('click',()=>{ const p=$('#archivePanel'); p.style.display=p.style.display==='block'?'none':'block'; renderArchive(); });
+  document.addEventListener('click',e=>{ if(!e.target.closest('#archivePanel')&&!e.target.closest('#btnArchive')) $('#archivePanel').style.display='none'; });
+  $('#archiveList').addEventListener('click',e=>{ const it=e.target.closest('[data-load]'); if(!it)return; const list=getList(); const entry=list.find(x=>x.code===it.dataset.load); if(!entry)return; try{ S=JSON.parse(entry.data); if(!S.terms)S.terms={}; if(!S.cust.reqBy)S.cust.reqBy=''; if(!S.cust.custSign)S.cust.custSign=''; save(); loadForm(); renderPalette(); renderItems(); renderTotals(); $('#archivePanel').style.display='none'; }catch(e){} });
   $('#btnNew').addEventListener('click',()=>{ if(confirm('Start a new blank quotation? The current draft will be cleared.')){ S=defaultState(); save(); loadForm(); renderItems(); renderTotals(); } });
 }
 
