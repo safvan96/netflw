@@ -616,7 +616,7 @@
   // move mega into .has-mega for mobile inline expand
   if(hasMega&&mega){hasMega.appendChild(mega);}
   function openMega(o){mega.classList.toggle('open',o);pb.setAttribute('aria-expanded',o);if(!isMobile())mega.style.top=hdr.offsetHeight+'px'}
-  pb.addEventListener('click',e=>{e.stopPropagation();openMega(!mega.classList.contains('open'))});
+  pb.addEventListener('click',e=>{e.stopPropagation();if(isMobile()){openMega(!mega.classList.contains('open'))}else{window.location.href='products.html'}});
   if(!('ontouchstart' in window)){
     pb.addEventListener('mouseenter',()=>{if(!isMobile()){clearTimeout(megaT);openMega(true)}});
     hasMega.addEventListener('mouseleave',()=>{if(!isMobile())megaT=setTimeout(()=>openMega(false),160)});
