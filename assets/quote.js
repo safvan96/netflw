@@ -18,28 +18,28 @@ const T = {
   en:{quotation:'QUOTATION', quoteNo:'Quote No.', date:'Date', valid:'Valid Until', by:'Prepared by',
       supplier:'Supplier', customer:'Customer', project:'Project', attn:'Attn',
       thNo:'#', thDesc:'Description', thQty:'Qty', thUnit:'Unit Price', thTotal:'Total',
-      subtotal:'Subtotal', discount:'Discount', vat:'VAT', grand:'Grand Total',
+      subtotal:'Subtotal', discount:'Discount', transport:'Transport & Field Visit', vat:'VAT', grand:'Grand Total',
       terms:'Terms & Conditions', authSign:'Authorized signature', custAcc:'Customer acceptance',
       tagline:'Industrial Instrumentation', noItems:'No products added yet.',
       legal:'Net Flow · netflw.com, TÜRKAK-accredited (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · Made in Türkiye'},
   tr:{quotation:'FİYAT TEKLİFİ', quoteNo:'Teklif No.', date:'Tarih', valid:'Son Geçerlilik', by:'Hazırlayan',
       supplier:'Tedarikçi', customer:'Müşteri', project:'Proje', attn:'İlgili',
       thNo:'#', thDesc:'Açıklama', thQty:'Adet', thUnit:'Birim Fiyat', thTotal:'Tutar',
-      subtotal:'Ara Toplam', discount:'İskonto', vat:'KDV', grand:'Genel Toplam',
+      subtotal:'Ara Toplam', discount:'İskonto', transport:'Yol & Saha Masrafı', vat:'KDV', grand:'Genel Toplam',
       terms:'Şartlar ve Koşullar', authSign:'Yetkili imza', custAcc:'Müşteri onayı',
       tagline:'Endüstriyel Ölçüm Cihazları', noItems:'Henüz ürün eklenmedi.',
       legal:'Net Flow · netflw.com, TÜRKAK akreditasyonlu (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · Türk Malı'},
   ar:{quotation:'عرض سعر', quoteNo:'رقم العرض', date:'التاريخ', valid:'صالح حتى', by:'أعدّه',
       supplier:'المورّد', customer:'العميل', project:'المشروع', attn:'عناية',
       thNo:'#', thDesc:'الوصف', thQty:'الكمية', thUnit:'سعر الوحدة', thTotal:'الإجمالي',
-      subtotal:'المجموع الفرعي', discount:'الخصم', vat:'ضريبة القيمة المضافة', grand:'الإجمالي الكلي',
+      subtotal:'المجموع الفرعي', discount:'الخصم', transport:'النقل والزيارة الميدانية', vat:'ضريبة القيمة المضافة', grand:'الإجمالي الكلي',
       terms:'الشروط والأحكام', authSign:'التوقيع المعتمد', custAcc:'موافقة العميل',
       tagline:'أجهزة قياس صناعية', noItems:'لم تتم إضافة منتجات بعد.',
       legal:'Net Flow · netflw.com, معتمد من TÜRKAK ‏(AB-0354-K) · ISO/IEC 17025 · ISO 9001 · صنع في تركيا'},
   ru:{quotation:'КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ', quoteNo:'№ предложения', date:'Дата', valid:'Действительно до', by:'Подготовил',
       supplier:'Поставщик', customer:'Заказчик', project:'Проект', attn:'Вниманию',
       thNo:'#', thDesc:'Описание', thQty:'Кол-во', thUnit:'Цена за ед.', thTotal:'Сумма',
-      subtotal:'Промежуточный итог', discount:'Скидка', vat:'НДС', grand:'Итого',
+      subtotal:'Промежуточный итог', discount:'Скидка', transport:'Транспорт / выезд на объект', vat:'НДС', grand:'Итого',
       terms:'Условия', authSign:'Подпись уполномоченного', custAcc:'Согласие заказчика',
       tagline:'Промышленные измерительные приборы', noItems:'Товары ещё не добавлены.',
       legal:'Net Flow · netflw.com, аккредитация TÜRKAK (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · Сделано в Турции'}
@@ -120,9 +120,9 @@ const PRODUCTS = [
   {code:'NT-MLS',cat:'level',cfg:['supply','outSw','ip'],
     name:N('Motorized Level Sensor','Motorlu Seviye Sensörü','حساس مستوى محرّكي','Моторизованный датчик уровня'),
     desc:N('Motorized rotary-paddle level sensor for bulk-solids detection in silos.','Silolarda katı malzeme tespiti için motorlu döner paletli seviye sensörü.','حساس مستوى بمجداف دوّار محرّكي لكشف المواد الصلبة في الصوامع.','Моторизованный лопастной датчик уровня для контроля сыпучих в силосах.')},
-  {code:'NT-MLP',cat:'level',cfg:['outSw','mat','ip'],
-    name:N('Magnetic Level Sensor','Manyetik Seviye Sensörü','حساس مستوى مغناطيسي','Магнитный датчик уровня'),
-    desc:N('Compact magnetic float level sensor with reed switch for pump protection.','Pompa koruması için reed switchli kompakt manyetik şamandıralı seviye sensörü.','حساس مستوى مغناطيسي مدمج بعوّامة ومفتاح ريد لحماية المضخات.','Компактный магнитный поплавковый датчик уровня с герконом для защиты насосов.')},
+  {code:'NT-MLP',cat:'switch',cfg:['outSw','mat','ip'],
+    name:N('Side-Mount Level Switch','Yandan Montajlı Seviye Şalteri','مفتاح مستوى للتركيب الجانبي','Датчик-реле уровня с боковым монтажом'),
+    desc:N('Lever-arm float switch mounted on the side wall of a tank for high/low level alarms and pump control.','Tank yan cidarına monte edilen kollu şamandıralı seviye şalteri, yüksek/düşük alarm ve pompa kontrolü.','مفتاح عوّامة بذراع مثبّت على الجدار الجانبي للخزان لإنذارات الارتفاع/الانخفاض والتحكم بالمضخة.','Рычажный поплавковый датчик на боковой стенке резервуара для сигнализации уровня и управления насосом.')},
   {code:'NT-LSW-M',cat:'switch',cfg:['outSw','mat','ip'],
     name:N('Mini Stainless Level Switch','Mini Paslanmaz Seviye Switchi','مفتاح مستوى صغير من الستانلس','Мини датчик-реле уровня (нерж.)'),
     desc:N('Mini stainless-steel level switch for tight installations; NO/NC relay output.','Dar montajlar için mini paslanmaz çelik seviye switchi; NO/NC röle çıkışı.','مفتاح مستوى صغير من الفولاذ المقاوم للصدأ للمساحات الضيقة؛ خرج ريليه NO/NC.','Мини датчик-реле уровня из нержавеющей стали; релейный выход NO/NC.')},
@@ -145,6 +145,7 @@ const BYCODE = {}; PRODUCTS.forEach(p=>BYCODE[p.code]=p);
 const CUR = {USD:{sym:'$',pre:true}, EUR:{sym:'€',pre:true}, TRY:{sym:'₺',pre:true}};
 const YERLI = {en:'Made in Türkiye',tr:'Yerli Malı',ar:'صنع في تركيا',ru:'Сделано в Турции'};
 function isTurkak(code){ return code==='NT-VMF'; }
+function slug(code){ return code.replace(/[^A-Za-z0-9]+/g,'-'); }
 
 /* ---- admin UI language (follows site pm_lang) ---- */
 function uiLang(){ var l=localStorage.getItem('pm_lang')||'en'; return LANG_META[l]?l:'en'; }
@@ -168,7 +169,7 @@ function defaultState(){
   return {lang:'en', currency:'USD', review:false,
     meta:{no:genNo(), date:iso(today), valid:iso(valid), by:''},
     cust:{company:'',contact:'',country:'',email:'',project:''},
-    discount:0, vat:0, terms:{}, items:[]};
+    discount:0, vat:0, travel:0, terms:{}, items:[]};
 }
 let S;
 try{ S = JSON.parse(localStorage.getItem(DRAFT_KEY)); }catch(e){ S=null; }
@@ -184,7 +185,7 @@ function esc(s){ return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;
 function specOf(it){ const p=BYCODE[it.code]; return p.cfg.map(f=>it.cfg[f]).filter(Boolean).join(' · '); }
 function lineTotal(it){ return (parseFloat(it.qty)||0)*(parseFloat(it.unit)||0); }
 function subtotal(){ return S.items.reduce((a,it)=>a+lineTotal(it),0); }
-function totals(){ const sub=subtotal(); const disc=sub*(parseFloat(S.discount)||0)/100; const net=sub-disc; const vat=net*(parseFloat(S.vat)||0)/100; return {sub,disc,net,vat,grand:net+vat}; }
+function totals(){ const sub=subtotal(); const disc=sub*(parseFloat(S.discount)||0)/100; const net=sub-disc; const travel=parseFloat(S.travel)||0; const vat=net*(parseFloat(S.vat)||0)/100; return {sub,disc,net,travel,vat,grand:net+travel+vat}; }
 
 /* ============================================================
    PALETTE
@@ -196,7 +197,10 @@ function renderPalette(){
   const L=uiLang();
   $('#palList').innerHTML = list.map(p=>`
     <div class="pitem" data-add="${esc(p.code)}">
-      <span class="pic">${ICONS[p.cat]}</span>
+      <span class="pic" style="position:relative;overflow:hidden">
+        <img src="assets/products/${slug(p.code)}.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:3px;background:#fff;border-radius:8px" onerror="this.remove()">
+        ${ICONS[p.cat]}
+      </span>
       <span class="pmeta"><b>${esc(p.name[L])}</b><span>${esc(p.code)}</span></span>
       <span class="padd">+</span>
     </div>`).join('');
@@ -233,10 +237,13 @@ function renderItems(){
     return `<div class="litem">
       <div class="litem-top">
         <span class="litem-no">${String(i+1).padStart(2,'0')}</span>
-        <div class="litem-main">
+        <div class="litem-main" style="display:flex;gap:12px;align-items:flex-start">
+          <img src="assets/products/${slug(it.code)}.png" alt="" style="width:56px;height:56px;object-fit:contain;border:1px solid var(--line);border-radius:8px;background:#fff;flex:none" onerror="this.remove()">
+          <div style="flex:1;min-width:0">
           <h4>${esc(p.name[L])} <span class="lcode">${esc(p.code)}</span></h4>
           <div class="litem-desc">${esc(p.desc[L])}</div>
           <div class="cfg-row" style="margin-top:10px">${cfgHtml}</div>
+          </div>
         </div>
         <button class="litem-remove" data-remove="${it.uid}" title="Remove">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg>
@@ -283,12 +290,16 @@ function buildDoc(){
     return `<tr>
       <td class="num">${i+1}</td>
       <td>
+        <div style="display:flex;gap:10px;align-items:flex-start">
+        <img src="assets/products/${slug(p.code)}.png" alt="" style="width:54px;height:54px;object-fit:contain;border:1px solid #e5eaf0;border-radius:6px;flex:none" onerror="this.remove()">
+        <div style="flex:1;min-width:0">
         <div class="ti-name">${nm} <span class="ti-code">${esc(p.code)}</span></div>
         ${nmRef}
         <div class="ti-spec">${esc(specOf(it))}</div>
         <div class="ti-cert">${isTurkak(p.code) ? '\u2713 TÜRKAK · ISO/IEC 17025' : '\u2713 '+esc(YERLI[L])}</div>
         <div class="ti-desc">${ds}</div>
         ${dsRef}
+        </div></div>
       </td>
       <td class="num">${esc(it.qty)}</td>
       <td class="num">${money(parseFloat(it.unit)||0)}</td>
@@ -343,6 +354,7 @@ function buildDoc(){
     <div class="qd-totals"><div class="tt">
       <div class="ttrow"><span>${esc(t.subtotal)}</span><span class="v">${money(tot.sub)}</span></div>
       ${(parseFloat(S.discount)||0)>0?`<div class="ttrow"><span>${esc(t.discount)} (${S.discount}%)</span><span class="v">− ${money(tot.disc)}</span></div>`:''}
+      ${(parseFloat(S.travel)||0)>0?`<div class="ttrow"><span>${esc(t.transport)}</span><span class="v">+ ${money(tot.travel)}</span></div>`:''}
       ${(parseFloat(S.vat)||0)>0?`<div class="ttrow"><span>${esc(t.vat)} (${S.vat}%)</span><span class="v">+ ${money(tot.vat)}</span></div>`:''}
       <div class="ttgrand"><span class="l">${esc(t.grand)}</span><span class="v">${money(tot.grand)} ${S.currency}</span></div>
     </div></div>
@@ -375,7 +387,7 @@ function loadForm(){
   $('#qNo').value=S.meta.no; $('#qDate').value=S.meta.date; $('#qValid').value=S.meta.valid; $('#qBy').value=S.meta.by;
   $('#cCompany').value=S.cust.company; $('#cContact').value=S.cust.contact; $('#cCountry').value=S.cust.country;
   $('#cEmail').value=S.cust.email; $('#cProject').value=S.cust.project;
-  $('#tDisc').value=S.discount; $('#tVat').value=S.vat;
+  $('#tDisc').value=S.discount; $('#tTravel').value=S.travel||0; $('#tVat').value=S.vat;
   $('#curSel').value=S.currency; $('#langSel').value=S.lang;
   $('#qTerms').value = (S.terms[S.lang]!=null? S.terms[S.lang] : TERMS[S.lang]);
   $('#pvLang').value=S.lang; $('#pvReview').checked=!!S.review;
@@ -410,6 +422,7 @@ function bind(){
 
   // discount / vat
   $('#tDisc').addEventListener('input',e=>{S.discount=e.target.value;renderTotals();save();});
+  $('#tTravel').addEventListener('input',e=>{S.travel=e.target.value;renderTotals();save();});
   $('#tVat').addEventListener('input',e=>{S.vat=e.target.value;renderTotals();save();});
 
   // currency
