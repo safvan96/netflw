@@ -194,4 +194,15 @@
 
   // translate after injection
   if(window.PMI18n) PMI18n.apply();
+
+  // mobile: animation → photo cycle for related cards
+  if(!window.matchMedia('(hover:hover)').matches){
+    [...document.querySelectorAll('.prod-card')].forEach(function(card,i){
+      if(!card.querySelector('.prod-hover-photo')) return;
+      setTimeout(function flip(){
+        card.classList.add('photo-on');
+        setTimeout(function(){card.classList.remove('photo-on');setTimeout(flip,2000);},2000);
+      },2000+i*400);
+    });
+  }
 })();

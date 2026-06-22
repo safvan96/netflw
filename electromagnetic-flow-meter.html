@@ -809,6 +809,18 @@
   }
   setTimeout(showPhoto, 1500);
 })();
+
+// Mobile: animation → photo cycle for related cards
+(function(){
+  if(window.matchMedia('(hover:hover)').matches) return;
+  [...document.querySelectorAll('.prod-card')].forEach(function(card,i){
+    if(!card.querySelector('.prod-hover-photo')) return;
+    setTimeout(function flip(){
+      card.classList.add('photo-on');
+      setTimeout(function(){card.classList.remove('photo-on');setTimeout(flip,2000);},2000);
+    },2000+i*400);
+  });
+})();
 </script>
 </body>
 </html>

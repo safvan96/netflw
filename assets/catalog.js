@@ -96,6 +96,18 @@
     grid.innerHTML = list.length ? list.map(card).join('') : `<div class="empty">${emptyMsg()}</div>`;
     countEl.textContent = countMsg(list.length, P.length);
     if(window.PMI18n) PMI18n.apply();
+    mobileCycle();
+  }
+
+  function mobileCycle(){
+    if(window.matchMedia('(hover:hover)').matches) return;
+    [...document.querySelectorAll('.prod-card')].forEach(function(card,i){
+      if(!card.querySelector('.prod-hover-photo')) return;
+      setTimeout(function flip(){
+        card.classList.add('photo-on');
+        setTimeout(function(){card.classList.remove('photo-on');setTimeout(flip,2000);},2000);
+      },2000+i*400);
+    });
   }
 
   function scrollToGrid(){
