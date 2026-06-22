@@ -132,8 +132,8 @@
     <div class="wrap">
       <div class="sec-head"><span class="eyebrow">Related Instruments</span><h2 style="font-size:clamp(22px,2.6vw,32px);margin-top:12px">You might also need</h2></div>
       <div class="related-grid">
-        ${related.map(x=>`<a href="${relHref(x)}" class="card prod-card${x.t?' theme-light':''}">
-          <div class="prod-figure">${x.t?'':'<div class="blueprint"></div>'}<div class="glyph glyph-anim">${G[x.g]||''}</div>${x.img?`<img class="prod-hover-photo" src="${x.img}" alt="${esc(x.n)}" loading="lazy">`:''}${!x.img&&(window.PM_PHOTOS||[]).includes(x.code)?`<img class="prod-hover-photo" src="assets/products/${x.code.replace(/[^A-Za-z0-9]+/g,'-')}.png" alt="${esc(x.n)}" loading="lazy">`:''}</div>
+        ${related.map(x=>`<a href="${relHref(x)}" class="card prod-card${x.t?' theme-light':''}" data-code="${esc(x.code)}">
+          <div class="prod-figure">${x.t?'':'<div class="blueprint"></div>'}<div class="glyph glyph-anim">${G[x.g]||''}</div></div>
           <div class="prod-body"><span class="prod-cat">${esc(cat[x.c])} · ${esc(x.code)}</span><h3>${esc(x.n)}</h3>
           <span class="prod-link">View product ${arrow}</span></div></a>`).join('')}
       </div>
@@ -141,6 +141,20 @@
   </section>`:''}
   `;
   document.getElementById('app').innerHTML = html;
+
+  // ---- hover photos for related product cards ----
+  var rPhotos=window.PM_PHOTOS||[];
+  document.querySelectorAll('.related-grid .prod-card').forEach(function(card){
+    var code=card.dataset.code;
+    if(!code||rPhotos.indexOf(code)===-1) return;
+    var fig=card.querySelector('.prod-figure');
+    if(!fig) return;
+    var img=document.createElement('img');
+    img.className='prod-hover-photo';
+    img.src='assets/products/'+code.replace(/[^A-Za-z0-9]+/g,'-')+'.png';
+    img.alt='';
+    fig.appendChild(img);
+  });
 
   // ---- cinematic glyph + spotlight cycle ----
   const stage=document.getElementById('gstage');
@@ -167,7 +181,12 @@
     const has = (window.PM_PHOTOS||[]).indexOf(p.code)>-1;
     if(ph && has){
       const slug = p.code.replace(/[^A-Za-z0-9]+/g,'-');
-      ph.addEventListener('load',()=>{ stage.dataset.photo='1'; });
+      ph.addEventListener('load',()=>{
+        // cycle: 3s animation → 5s photo → repeat
+        function showPhoto(){ stage.dataset.photo='1'; setTimeout(hidePhoto,5000); }
+        function hidePhoto(){ delete stage.dataset.photo; setTimeout(showPhoto,3000); }
+        setTimeout(showPhoto,3000);
+      });
       ph.addEventListener('error',()=>{ ph.remove(); });
       ph.src='assets/products/'+slug+'.png';
     } else if(ph){ ph.remove(); }
