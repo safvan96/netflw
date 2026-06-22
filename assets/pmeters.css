@@ -118,6 +118,8 @@ p{margin:0}
 .btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
 .btn-wa{background:var(--whatsapp);color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.32)}
 .btn-wa:hover{transform:translateY(-2px);filter:brightness(1.04)}
+.btn-tg{background:#2AABEE;color:#fff;box-shadow:0 6px 18px rgba(42,171,238,.32)}
+.btn-tg:hover{transform:translateY(-2px);filter:brightness(1.04)}
 .btn-lg{padding:17px 30px;font-size:16.5px}
 .btn-sm{padding:10px 16px;font-size:14px}
 
@@ -357,6 +359,11 @@ p{margin:0}
 .wa-float svg{width:30px;height:30px}
 .wa-float .pulse{position:absolute;inset:0;border-radius:50%;border:2px solid var(--whatsapp);animation:waPulse 2.4s ease-out infinite}
 @keyframes waPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.7);opacity:0}}
+.tg-float{position:fixed;right:22px;bottom:90px;z-index:70;width:58px;height:58px;border-radius:50%;
+  background:#2AABEE;color:#fff;display:grid;place-items:center;box-shadow:0 8px 26px rgba(42,171,238,.45);
+  transition:transform .2s;border:none;cursor:pointer}
+.tg-float:hover{transform:scale(1.08)}
+.tg-float svg{width:30px;height:30px}
 
 .mobile-bar{display:none}
 
@@ -454,6 +461,7 @@ p{margin:0}
   .form-row{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr;gap:30px}
   .wa-float{bottom:78px}
+  .tg-float{bottom:146px}
   .mobile-bar{
     display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:65;
     padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);
