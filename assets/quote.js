@@ -178,7 +178,21 @@ if(!S || !S.meta) S = defaultState();
 if(!S.terms) S.terms={};
 if(!S.cust.reqBy) S.cust.reqBy='';
 if(!S.cust.custSign) S.cust.custSign='';
-function save(){ try{ localStorage.setItem(DRAFT_KEY, JSON.stringify(S)); }catch(e){} }
+function updateQBar(){
+  const code=$('#qbarCode'); if(code) code.textContent=S.meta.no||'—';
+  const ci=$('#qbarCust'); if(ci && ci!==document.activeElement) ci.value=S.cust.company||'';
+}
+let _archTimer;
+function save(){
+  try{ localStorage.setItem(DRAFT_KEY, JSON.stringify(S)); }catch(e){}
+  updateQBar();
+  clearTimeout(_archTimer);
+  _archTimer=setTimeout(()=>{
+    saveToArchive(); renderArchive();
+    const st=$('#qbarStatus');
+    if(st){st.className='qbar-status vis';clearTimeout(st._t);st._t=setTimeout(()=>{st.className='qbar-status';},2200);}
+  },1800);
+}
 
 /* ---- quote archive ---- */
 function getList(){ try{ return JSON.parse(localStorage.getItem(LIST_KEY)||'[]'); }catch(e){ return []; } }
@@ -422,6 +436,7 @@ function loadForm(){
   $('#curSel').value=S.currency; $('#langSel').value=S.lang;
   $('#qTerms').value = (S.terms[S.lang]!=null? S.terms[S.lang] : TERMS[S.lang]);
   $('#pvLang').value=S.lang; $('#pvReview').checked=!!S.review;
+  updateQBar();
 }
 
 function bind(){
@@ -446,11 +461,24 @@ function bind(){
     S.items=S.items.filter(x=>x.uid!==rm.dataset.remove); save(); renderItems(); renderTotals();
   });
 
+  // quick bar: customer sync + copy code
+  $('#qbarCust').addEventListener('input',e=>{
+    S.cust.company=e.target.value; $('#cCompany').value=e.target.value; save();
+  });
+  $('#btnCopyCode').addEventListener('click',()=>{
+    navigator.clipboard.writeText(S.meta.no||'').catch(()=>{});
+    const b=$('#btnCopyCode'); b.title='Copied!'; setTimeout(()=>b.title='Kodu kopyala',1500);
+  });
+
   // meta + customer
   const map={qNo:['meta','no'],qDate:['meta','date'],qValid:['meta','valid'],qBy:['meta','by'],
     cCompany:['cust','company'],cContact:['cust','contact'],cReqBy:['cust','reqBy'],cCustSign:['cust','custSign'],
     cCountry:['cust','country'],cEmail:['cust','email'],cProject:['cust','project']};
-  Object.keys(map).forEach(id=>{ $('#'+id).addEventListener('input',e=>{const[a,b]=map[id];S[a][b]=e.target.value;save();}); });
+  Object.keys(map).forEach(id=>{ $('#'+id).addEventListener('input',e=>{const[a,b]=map[id];S[a][b]=e.target.value;
+    if(id==='cCompany') updateQBar();
+    if(id==='qNo'){$('#qbarCode').textContent=e.target.value||'—';}
+    save();
+  }); });
 
   // discount / vat
   $('#tDisc').addEventListener('input',e=>{S.discount=e.target.value;renderTotals();save();});
@@ -509,6 +537,7 @@ function bind(){
 var _pl=localStorage.getItem('pm_lang'); if(_pl && LANG_META[_pl]) S.lang=_pl;
 bind();
 loadForm();
+updateQBar();
 renderPalette();
 renderItems();
 renderTotals();

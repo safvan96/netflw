@@ -28,6 +28,22 @@
   .abtn.primary:hover{background:var(--accent-700)}
   .abtn.ghost{background:none}
 
+  /* quick bar */
+  .qbar{position:sticky;top:62px;z-index:49;background:#f0f4f8;border-bottom:1px solid var(--line);padding:0 clamp(16px,3vw,28px)}
+  .qbar-in{max-width:1500px;margin:0 auto;display:flex;align-items:center;gap:12px;height:46px}
+  .qbar-code-wrap{display:flex;align-items:center;gap:8px;flex:none}
+  .qbar-lbl{font-family:var(--f-mono);font-size:10px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+  .qbar-code{font-family:var(--f-mono);font-size:13.5px;font-weight:600;color:var(--navy-900);background:#fff;border:1.5px solid var(--line-2);border-radius:7px;padding:4px 10px;letter-spacing:.04em}
+  .qbar-copy{background:none;border:none;padding:4px 6px;border-radius:6px;cursor:pointer;color:var(--ink-3);display:flex;align-items:center;transition:.13s}
+  .qbar-copy:hover{background:var(--line);color:var(--accent)}
+  .qbar-sep{width:1px;height:22px;background:var(--line-2);flex:none}
+  .qbar-cust-wrap{display:flex;align-items:center;gap:7px;flex:1;min-width:0}
+  .qbar-cust-wrap svg{color:var(--ink-3);flex:none}
+  #qbarCust{font-family:var(--f-head);font-size:14px;font-weight:600;border:none;background:none;outline:none;width:100%;color:var(--ink-1)}
+  #qbarCust::placeholder{color:var(--ink-3);font-weight:400}
+  .qbar-status{font-family:var(--f-mono);font-size:11px;color:var(--ink-3);margin-left:auto;flex:none;opacity:0;transition:opacity .3s}
+  .qbar-status.vis{opacity:1;color:#16a34a}
+
   /* layout */
   .admin-wrap{max-width:1500px;margin:0 auto;display:grid;grid-template-columns:340px 1fr;gap:22px;padding:22px clamp(16px,3vw,28px) 80px;align-items:start}
 
@@ -235,6 +251,25 @@
     </div>
   </div>
 </header>
+
+<!-- QUICK BAR -->
+<div class="qbar">
+  <div class="qbar-in">
+    <div class="qbar-code-wrap">
+      <span class="qbar-lbl">Teklif Kodu</span>
+      <span class="qbar-code" id="qbarCode">—</span>
+      <button class="qbar-copy" id="btnCopyCode" title="Kodu kopyala">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+      </button>
+    </div>
+    <div class="qbar-sep"></div>
+    <div class="qbar-cust-wrap">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      <input id="qbarCust" placeholder="Müşteri adı / Customer name…" autocomplete="off">
+    </div>
+    <span class="qbar-status" id="qbarStatus">Auto-saved ✓</span>
+  </div>
+</div>
 
 <div class="admin-wrap">
   <!-- PRODUCT PALETTE -->
