@@ -507,11 +507,20 @@ function bind(){
   // language modal helpers
   function openLangModal(cb){
     const m=$('#langModal');
+    const mc=$('#modalCust');
+    if(mc) mc.value=S.cust.company||'';
     m.style.display='flex';
+    setTimeout(()=>{ if(mc) mc.focus(); },80);
     m.onclick=e=>{
       const btn=e.target.closest('[data-lang]');
       if(!btn && !e.target.closest('.lang-modal-box'))return;
-      if(!btn){return;}
+      if(!btn) return;
+      // save customer name from modal before closing
+      if(mc && mc.value.trim()){
+        S.cust.company=mc.value.trim();
+        $('#cCompany').value=S.cust.company;
+        updateQBar();
+      }
       m.style.display='none';
       cb(btn.dataset.lang);
     };

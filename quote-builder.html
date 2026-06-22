@@ -343,9 +343,13 @@
 
 <!-- LANGUAGE SELECTION MODAL -->
 <div id="langModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(10,17,28,.72);backdrop-filter:blur(6px);align-items:center;justify-content:center">
-  <div class="lang-modal-box" style="background:var(--bg-card);border:1.5px solid var(--line-2);border-radius:16px;padding:32px 36px;width:340px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.4)">
+  <div class="lang-modal-box" style="background:var(--bg-card);border:1.5px solid var(--line-2);border-radius:16px;padding:32px 36px;width:360px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.4)">
     <div style="font-size:13px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">Output Language</div>
-    <h3 style="margin:0 0 24px;font-size:18px;color:var(--ink-1)">Select document language</h3>
+    <h3 style="margin:0 0 20px;font-size:18px;color:var(--ink-1)">Select document language</h3>
+    <div style="margin-bottom:20px;text-align:left">
+      <label style="font-family:var(--f-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);display:block;margin-bottom:6px">Customer / Company</label>
+      <input id="modalCust" autocomplete="off" placeholder="e.g. Baghdad Water Authority" style="width:100%;font-family:var(--f-head);font-size:14px;font-weight:600;padding:10px 13px;border:1.5px solid var(--line-2);border-radius:9px;color:var(--ink-1);outline:none;box-sizing:border-box" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--line-2)'">
+    </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px">
       <button class="abtn primary" data-lang="en" style="justify-content:center;font-size:15px;padding:14px">🇬🇧 English</button>
       <button class="abtn primary" data-lang="tr" style="justify-content:center;font-size:15px;padding:14px">🇹🇷 Türkçe</button>
