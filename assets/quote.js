@@ -16,33 +16,33 @@ const LANG_META = {
 /* ---------- UI strings per language ---------- */
 const T = {
   en:{quotation:'QUOTATION', quoteNo:'Quote No.', date:'Date', valid:'Valid Until', by:'Prepared by',
-      supplier:'Supplier', customer:'Customer', project:'Project', attn:'Attn',
+      supplier:'Supplier', customer:'Customer', project:'Project', attn:'Attn', reqBy:'Requested by',
       thNo:'#', thDesc:'Description', thQty:'Qty', thUnit:'Unit Price', thTotal:'Total',
       subtotal:'Subtotal', discount:'Discount', transport:'Transport & Field Visit', vat:'VAT', grand:'Grand Total',
-      terms:'Terms & Conditions', authSign:'Authorized signature', custAcc:'Customer acceptance',
-      tagline:'Industrial Instrumentation', noItems:'No products added yet.',
-      legal:'Net Flow · netflw.com, TÜRKAK-accredited (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · Made in Türkiye'},
+      terms:'Terms & Conditions', authSign:'Authorized Signature', custAcc:'Customer Acceptance',
+      tagline:'Industrial Instrumentation · Made in Türkiye', noItems:'No products added yet.',
+      legal:'Net Flow · netflw.com · +90 541 373 79 53 · info@netflw.com · TÜRKAK-accredited (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · VFA Elektronik, Konya · Türkiye'},
   tr:{quotation:'FİYAT TEKLİFİ', quoteNo:'Teklif No.', date:'Tarih', valid:'Son Geçerlilik', by:'Hazırlayan',
-      supplier:'Tedarikçi', customer:'Müşteri', project:'Proje', attn:'İlgili',
+      supplier:'Tedarikçi', customer:'Müşteri', project:'Proje', attn:'İlgili', reqBy:'Talep eden',
       thNo:'#', thDesc:'Açıklama', thQty:'Adet', thUnit:'Birim Fiyat', thTotal:'Tutar',
       subtotal:'Ara Toplam', discount:'İskonto', transport:'Yol & Saha Masrafı', vat:'KDV', grand:'Genel Toplam',
-      terms:'Şartlar ve Koşullar', authSign:'Yetkili imza', custAcc:'Müşteri onayı',
-      tagline:'Endüstriyel Ölçüm Cihazları', noItems:'Henüz ürün eklenmedi.',
-      legal:'Net Flow · netflw.com, TÜRKAK akreditasyonlu (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · Türk Malı'},
+      terms:'Şartlar ve Koşullar', authSign:'Yetkili İmza', custAcc:'Müşteri Onayı',
+      tagline:'Endüstriyel Ölçüm Cihazları · Türk Malı', noItems:'Henüz ürün eklenmedi.',
+      legal:'Net Flow · netflw.com · +90 541 373 79 53 · info@netflw.com · TÜRKAK akreditasyonlu (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · VFA Elektronik, Konya · Türkiye'},
   ar:{quotation:'عرض سعر', quoteNo:'رقم العرض', date:'التاريخ', valid:'صالح حتى', by:'أعدّه',
-      supplier:'المورّد', customer:'العميل', project:'المشروع', attn:'عناية',
+      supplier:'المورّد', customer:'العميل', project:'المشروع', attn:'عناية', reqBy:'طلب من قِبَل',
       thNo:'#', thDesc:'الوصف', thQty:'الكمية', thUnit:'سعر الوحدة', thTotal:'الإجمالي',
       subtotal:'المجموع الفرعي', discount:'الخصم', transport:'النقل والزيارة الميدانية', vat:'ضريبة القيمة المضافة', grand:'الإجمالي الكلي',
       terms:'الشروط والأحكام', authSign:'التوقيع المعتمد', custAcc:'موافقة العميل',
-      tagline:'أجهزة قياس صناعية', noItems:'لم تتم إضافة منتجات بعد.',
-      legal:'Net Flow · netflw.com, معتمد من TÜRKAK ‏(AB-0354-K) · ISO/IEC 17025 · ISO 9001 · صنع في تركيا'},
+      tagline:'أجهزة قياس صناعية · صنع في تركيا', noItems:'لم تتم إضافة منتجات بعد.',
+      legal:'Net Flow · netflw.com · ‎+90 541 373 79 53 · info@netflw.com · معتمد من TÜRKAK ‏(AB-0354-K) · ISO/IEC 17025 · ISO 9001 · VFA Elektronik، قونية · تركيا'},
   ru:{quotation:'КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ', quoteNo:'№ предложения', date:'Дата', valid:'Действительно до', by:'Подготовил',
-      supplier:'Поставщик', customer:'Заказчик', project:'Проект', attn:'Вниманию',
+      supplier:'Поставщик', customer:'Заказчик', project:'Проект', attn:'Вниманию', reqBy:'Запросил',
       thNo:'#', thDesc:'Описание', thQty:'Кол-во', thUnit:'Цена за ед.', thTotal:'Сумма',
       subtotal:'Промежуточный итог', discount:'Скидка', transport:'Транспорт / выезд на объект', vat:'НДС', grand:'Итого',
       terms:'Условия', authSign:'Подпись уполномоченного', custAcc:'Согласие заказчика',
-      tagline:'Промышленные измерительные приборы', noItems:'Товары ещё не добавлены.',
-      legal:'Net Flow · netflw.com, аккредитация TÜRKAK (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · Сделано в Турции'}
+      tagline:'Промышленные измерительные приборы · Сделано в Турции', noItems:'Товары ещё не добавлены.',
+      legal:'Net Flow · netflw.com · +90 541 373 79 53 · info@netflw.com · аккредитация TÜRKAK (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · VFA Elektronik, Конья · Турция'}
 };
 
 /* ---------- default terms per language ---------- */
@@ -353,7 +353,7 @@ function buildDoc(){
     <div class="qd-parties">
       <div class="qd-party">
         <h5>${esc(t.supplier)}</h5>
-        <p><b>Net Flow</b><br>Fevzıçakmak Mah. Aslım Cad.<br>Konya · Türkiye<br>+90 332 235 1888<br>info@netflw.com · netflw.com</p>
+        <p><b>Net Flow</b> — VFA Elektronik<br>Fevzıçakmak Mah. Aslım Cad.<br>Konya · Türkiye<br>+90 541 373 79 53 (WhatsApp / Telegram)<br>info@netflw.com · netflw.com</p>
       </div>
       <div class="qd-party">
         <h5>${esc(t.customer)}</h5>
@@ -402,7 +402,7 @@ function buildDoc(){
       <div style="text-align:right">
         <div class="qd-sign" style="margin-bottom:4px">${esc(S.cust.custSign||'________________')}</div>
         <div class="qd-sign">${esc(t.custAcc)}</div>
-        ${S.cust.reqBy?`<div style="font-family:var(--f-mono);font-size:10px;color:var(--ink-3);margin-top:8px">Requested by: ${esc(S.cust.reqBy)}</div>`:''}
+        ${S.cust.reqBy?`<div style="font-family:var(--f-mono);font-size:10px;color:var(--ink-3);margin-top:8px">${esc(t.reqBy)}: ${esc(S.cust.reqBy)}</div>`:''}
       </div>
     </div>
 
@@ -476,8 +476,25 @@ function bind(){
   // review toggle
   $('#pvReview').addEventListener('change',e=>{S.review=e.target.checked;save();buildDoc();});
 
+  // language modal helpers
+  function openLangModal(cb){
+    const m=$('#langModal');
+    m.style.display='flex';
+    m.onclick=e=>{
+      const btn=e.target.closest('[data-lang]');
+      if(!btn && !e.target.closest('.lang-modal-box'))return;
+      if(!btn){return;}
+      m.style.display='none';
+      cb(btn.dataset.lang);
+    };
+  }
+  function closeLangModal(){$('#langModal').style.display='none';}
+  $('#langModalClose').addEventListener('click',closeLangModal);
+
   // actions
-  $('#btnPreview').addEventListener('click',()=>{buildDoc();$('#previewOv').classList.add('open');document.body.style.overflow='hidden';});
+  $('#btnPreview').addEventListener('click',()=>{
+    openLangModal(lang=>{setLang(lang);buildDoc();$('#previewOv').classList.add('open');document.body.style.overflow='hidden';});
+  });
   $('#btnClosePv').addEventListener('click',()=>{$('#previewOv').classList.remove('open');document.body.style.overflow='';});
   $('#btnPrint').addEventListener('click',()=>{buildDoc();setTimeout(()=>window.print(),60);});
   $('#btnSave').addEventListener('click',()=>{save();saveToArchive();renderArchive();const b=$('#btnSave');const o=b.innerHTML;b.innerHTML='✓ Saved';setTimeout(()=>b.innerHTML=o,1200);});

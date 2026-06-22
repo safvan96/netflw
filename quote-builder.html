@@ -306,6 +306,21 @@
   </section>
 </div>
 
+<!-- LANGUAGE SELECTION MODAL -->
+<div id="langModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(10,17,28,.72);backdrop-filter:blur(6px);align-items:center;justify-content:center">
+  <div class="lang-modal-box" style="background:var(--bg-card);border:1.5px solid var(--line-2);border-radius:16px;padding:32px 36px;width:340px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.4)">
+    <div style="font-size:13px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">Output Language</div>
+    <h3 style="margin:0 0 24px;font-size:18px;color:var(--ink-1)">Select document language</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px">
+      <button class="abtn primary" data-lang="en" style="justify-content:center;font-size:15px;padding:14px">🇬🇧 English</button>
+      <button class="abtn primary" data-lang="tr" style="justify-content:center;font-size:15px;padding:14px">🇹🇷 Türkçe</button>
+      <button class="abtn primary" data-lang="ar" style="justify-content:center;font-size:15px;padding:14px">🇸🇦 العربية</button>
+      <button class="abtn primary" data-lang="ru" style="justify-content:center;font-size:15px;padding:14px">🇷🇺 Русский</button>
+    </div>
+    <button id="langModalClose" class="abtn ghost" style="width:100%;justify-content:center">Cancel</button>
+  </div>
+</div>
+
 <!-- PREVIEW OVERLAY -->
 <div class="preview-ov" id="previewOv">
   <div class="preview-bar">
