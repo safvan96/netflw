@@ -10,16 +10,9 @@
     mv.addEventListener('load',()=>{ mv.classList.add('mv-ready'); });
     mv.addEventListener('error',()=>{ mv.remove(); });
   }
-  // ---- real product photo slot (drop assets/products/NT-VMF.png) ----
-  const exStage=document.querySelector('.p-hero .ex-stage');
-  const exPhoto=exStage&&exStage.querySelector('.ex-photo');
-  if(exPhoto){
-    if((window.PM_PHOTOS||[]).indexOf('NT-VMF')>-1){
-      exPhoto.addEventListener('load',()=>{ exStage.dataset.photo='1'; });
-      exPhoto.addEventListener('error',()=>{ exPhoto.remove(); });
-      exPhoto.src='assets/products/NT-VMF.png';
-    } else { exPhoto.remove(); }
-  }
+  // ---- real product photo slot — animation cycle (in page script) handles show/hide ----
+  const exPhoto=document.querySelector('.p-hero .ex-photo');
+  if(exPhoto){ exPhoto.addEventListener('error',()=>exPhoto.remove()); }
 
   // ---- animated LCD ----
   const lcds=[...document.querySelectorAll('.lcd-val')];
