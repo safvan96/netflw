@@ -73,9 +73,9 @@
     const specs=p.s.map(x=>`<div class="ps"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('');
     const href=p.link?p.link:('product.html?p='+encodeURIComponent(p.code));
     const media = `<div class="glyph glyph-anim">${G[p.g]}</div>`;
-    const photoThumb = p.img ? `<img class="prod-thumb" src="${p.img}" alt="${p.n}" loading="lazy">` : '';
+    const photo = p.img ? `<img class="prod-hover-photo" src="${p.img}" alt="${p.n}" loading="lazy">` : '';
     return `<a href="${href}" class="card prod-card${theme}">
-      <div class="prod-figure">${p.t?'':'<div class="blueprint"></div>'}<div class="prod-tags">${tags}</div>${media}${photoThumb}</div>
+      <div class="prod-figure">${p.t?'':'<div class="blueprint"></div>'}<div class="prod-tags">${tags}</div>${media}${photo}</div>
       <div class="prod-body">
         <span class="prod-cat"><span class="pc-name">${cat[p.c]}</span>${p.code&&p.code!==', '?' · '+p.code:''}</span>
         <h3>${p.n}</h3>
