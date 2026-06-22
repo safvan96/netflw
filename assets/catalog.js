@@ -45,8 +45,8 @@
     {n:"Mini Stainless Level Switch",code:"NT-LSW-M",c:"switch",g:"miniswitch",t:1,ind:["chemical"],tags:["Compact"],s:[["IP67","Protection"],["316L","Body"]],d:"Fits the tightest spaces, machine tanks, compressors and compact systems. Stainless, NO/NC relay.",img:"assets/img/miniswitch.png"},
     {n:"Float Level Switch",code:"NT-LSW-F",c:"switch",g:"floatswitch",t:0,ind:["water"],tags:["Economical"],s:[["120°C","Max temp"],["PP / SS","Body"]],d:"The simplest, most economical level detection, pump control, sumps and condensate tanks.",img:"assets/img/floatswitch.png"},
     {n:"Paddle Motor Level Switch",code:"NT-LSW-P",c:"switch",g:"paddle",t:0,ind:["mining","food"],tags:["Solids"],s:[["220VAC","Supply"],["IP65","Protection"]],d:"Rotating-paddle full/empty detection for grain, cement and plastic-granule silos, economical and rugged.",pdf:"nt-lsw-p",img:"assets/img/paddle.png"},
-    {n:"Angle Sensor (RCS Series)",code:"NT-RCS 3100/2100",c:"process",g:"angle",t:0,ind:["oil"],tags:["Contactless"],s:[["0–360°","Range"],["12-bit","Resolution"]],d:"Contactless Hall-effect angle sensing with unlimited rotation life, valve position feedback and mobile machinery."},
-    {n:"Pressure-Temperature Transmitter",code:"NT-BTT-S",c:"process",g:"pt",t:0,ind:["oil","chemical"],tags:["2-in-1"],s:[["0–600 bar","Pressure"],["PT100","Temp"]],d:"Two measurements from one tapping, pressure and temperature together, halving cabling and install space."}
+    {n:"Angle Sensor (RCS Series)",code:"NT-RCS 3100/2100",c:"process",g:"angle",t:0,ind:["oil"],tags:["Contactless"],s:[["0–360°","Range"],["12-bit","Resolution"]],d:"Contactless Hall-effect angle sensing with unlimited rotation life, valve position feedback and mobile machinery.",img:"assets/img/angle.png"},
+    {n:"Pressure-Temperature Transmitter",code:"NT-BTT-S",c:"process",g:"pt",t:0,ind:["oil","chemical"],tags:["2-in-1"],s:[["0–600 bar","Pressure"],["PT100","Temp"]],d:"Two measurements from one tapping, pressure and temperature together, halving cabling and install space.",img:"assets/img/pt.png"}
   ];
 
   const grid=document.getElementById('catGrid');

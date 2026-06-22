@@ -133,7 +133,7 @@
       <div class="sec-head"><span class="eyebrow">Related Instruments</span><h2 style="font-size:clamp(22px,2.6vw,32px);margin-top:12px">You might also need</h2></div>
       <div class="related-grid">
         ${related.map(x=>`<a href="${relHref(x)}" class="card prod-card${x.t?' theme-light':''}">
-          <div class="prod-figure">${x.t?'':'<div class="blueprint"></div>'}<div class="glyph glyph-anim">${G[x.g]||''}</div></div>
+          <div class="prod-figure">${x.t?'':'<div class="blueprint"></div>'}<div class="glyph glyph-anim">${G[x.g]||''}</div>${x.img?`<img class="prod-hover-photo" src="${x.img}" alt="${esc(x.n)}" loading="lazy">`:''}${!x.img&&(window.PM_PHOTOS||[]).includes(x.code)?`<img class="prod-hover-photo" src="assets/products/${x.code.replace(/[^A-Za-z0-9]+/g,'-')}.png" alt="${esc(x.n)}" loading="lazy">`:''}</div>
           <div class="prod-body"><span class="prod-cat">${esc(cat[x.c])} · ${esc(x.code)}</span><h3>${esc(x.n)}</h3>
           <span class="prod-link">View product ${arrow}</span></div></a>`).join('')}
       </div>
