@@ -134,7 +134,7 @@
       <div class="related-grid">
         ${related.map(x=>`<a href="${relHref(x)}" class="card prod-card${x.t?' theme-light':''}" data-code="${esc(x.code)}">
           <div class="prod-figure">${x.t?'':'<div class="blueprint"></div>'}<div class="glyph glyph-anim">${G[x.g]||''}</div></div>
-          <div class="prod-body"><span class="prod-cat">${esc(cat[x.c])} · ${esc(x.code)}</span><h3>${esc(x.n)}</h3>
+          <div class="prod-body"><span class="prod-cat"><span>${esc(cat[x.c])}</span> · ${esc(x.code)}</span><h3>${esc(x.n)}</h3>
           <span class="prod-link">View product ${arrow}</span></div></a>`).join('')}
       </div>
     </div>
@@ -185,7 +185,7 @@
         // cycle: 3s animation → 5s photo → repeat
         function showPhoto(){ stage.dataset.photo='1'; setTimeout(hidePhoto,5000); }
         function hidePhoto(){ delete stage.dataset.photo; setTimeout(showPhoto,3000); }
-        setTimeout(showPhoto,3000);
+        setTimeout(showPhoto,1500);
       });
       ph.addEventListener('error',()=>{ ph.remove(); });
       ph.src='assets/products/'+slug+'.png';
