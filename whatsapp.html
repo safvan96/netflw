@@ -78,7 +78,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 <div class="toast" id="toast"></div>
 
 <script>
-const PW = 'netflow2026';
+const PW = '252825';
 
 const contacts = [
   {
@@ -469,16 +469,23 @@ netflw.com | +90 541 373 79 53`
   },
 ];
 
+function showApp(){
+  document.getElementById('loginScreen').style.display='none';
+  document.getElementById('app').style.display='block';
+  renderCards();
+}
+
 function doLogin(){
   if(document.getElementById('pwInput').value===PW){
-    document.getElementById('loginScreen').style.display='none';
-    document.getElementById('app').style.display='block';
-    renderCards();
+    localStorage.setItem('nf_wa_auth','1');
+    showApp();
   } else {
     document.getElementById('loginErr').style.display='block';
   }
 }
 document.getElementById('pwInput').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
+
+if(localStorage.getItem('nf_wa_auth')==='1') showApp();
 
 function waLink(num){ return 'https://wa.me/'+num.replace(/[\s\-\+]/g,''); }
 
