@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastSync": "2026-06-23T17:30:00Z",
-    "syncNote": "64 mail gönderildi · Özbekistan fabrika turu tamamlandı"
+    "lastSync": "2026-06-23T18:00:00Z",
+    "syncNote": "64 mail · Indorama 3x, Uzbekneftegaz 4x, Erdenet 5x açtı · HardBounce: NCOC/Shurtan/Turkmenbashi/Vakhsh"
   },
   "leads": [
     {
@@ -41,7 +41,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "NCOC genel iletişim. Email format: first.last@ncoc.kz",
-      "emailEvent": "opened"
+      "emailEvent": "hardBounce"
     },
     {
       "id": 4,
@@ -67,7 +67,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Atyrau rafineri. KazMunayGas bünyesi.",
-      "emailEvent": "delivered"
+      "emailEvent": "softBounce"
     },
     {
       "id": 6,
@@ -80,7 +80,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Pavlodar rafineri sekreterlik",
-      "emailEvent": "delivered"
+      "emailEvent": "softBounce"
     },
     {
       "id": 7,
@@ -316,7 +316,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Devlet petrol-gaz şirketi.",
-      "emailEvent": "delivered"
+      "emailEvent": "opened"
     },
     {
       "id": 25,
@@ -381,7 +381,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Taşkent Su genel abone iletişimi",
-      "emailEvent": "delivered"
+      "emailEvent": "softBounce"
     },
     {
       "id": 30,
@@ -447,7 +447,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Turkmenbashi rafineri Foreign Economic Relations",
-      "emailEvent": "delivered"
+      "emailEvent": "hardBounce"
     },
     {
       "id": 35,
@@ -499,7 +499,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Barki Tojik iletişim",
-      "emailEvent": "delivered"
+      "emailEvent": "opened"
     },
     {
       "id": 39,
@@ -525,7 +525,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Kumtor tedarik alım emaili",
-      "emailEvent": "delivered"
+      "emailEvent": "softBounce"
     },
     {
       "id": 41,
@@ -590,7 +590,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Erdenes Tavan Tolgoi. Tel: +976 7505 5555",
-      "emailEvent": "clicked"
+      "emailEvent": "opened"
     },
     {
       "id": 46,
@@ -702,7 +702,7 @@
       "notes": "Tayland kökenli uluslararası. Süperfosfat, boya. Tel: +998 73 543 90 00",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "opened"
     },
     {
       "id": 54,
@@ -747,7 +747,7 @@
       "notes": "Namangan. 1400 çalışan, ISO 9001. Tel: +998 78 148 81 48",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "softBounce"
     },
     {
       "id": 57,
@@ -777,7 +777,7 @@
       "notes": "Taşkent. Türk teknolojisi, boyahane. Tel: +998 70 975 80 80",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "softBounce"
     },
     {
       "id": 59,
@@ -882,7 +882,7 @@
       "notes": "İçecek üretici ve ihracatçı. Mob: +998 95 512 10 50",
       "whatsapp": "+998955121050",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "softBounce"
     },
     {
       "id": 66,
@@ -912,7 +912,7 @@
       "notes": "Jizzakh bölgesi çimento. Mob: +998 97 460 40 00",
       "whatsapp": "+998974604000",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "softBounce"
     },
     {
       "id": 68,
