@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastSync": "2026-06-24T14:30:00Z",
-    "syncNote": "145 mail gönderildi · GE+AM turu tamamlandi"
+    "lastSync": "2026-06-24T15:00:00Z",
+    "syncNote": "147 mail gönderildi · GE+AM turu tamamlandı · Rustavi Azot + Borjomi tıkladı"
   },
   "leads": [
     {
@@ -1660,7 +1660,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Eski adı HeidelbergCement Georgia. Kaspi ve Rustavi'de fabrikalar.",
-      "emailEvent": "delivered",
+      "emailEvent": "opened",
       "whatsapp": null,
       "telegram": null
     },
@@ -1690,7 +1690,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Pernod Ricard ortakligi (%51). Telavi, Kakheti. Buyuk uretim tesisi.",
-      "emailEvent": "",
+      "emailEvent": "hardBounce",
       "whatsapp": null,
       "telegram": null
     },
@@ -1705,7 +1705,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Borjomi, Likani, Bakuriani markalari. Tbilisi. Su sise hatlarinda EM flowmeter kullanir.",
-      "emailEvent": "",
+      "emailEvent": "clicked",
       "whatsapp": null,
       "telegram": null
     },
@@ -1750,7 +1750,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Bolnisi'de bakir ve altin madeni. Kvemo Kartli'nin en buyuk iscisi. Slurry flowmeter.",
-      "emailEvent": "",
+      "emailEvent": "clicked",
       "whatsapp": null,
       "telegram": null
     },
@@ -1780,7 +1780,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Mtskheta yakini Natakhtari. Anadolu Efes grubu. Kapasite 45M litre/yil.",
-      "emailEvent": "",
+      "emailEvent": "opened",
       "whatsapp": null,
       "telegram": null
     },
@@ -1809,8 +1809,8 @@
       "email": "kotayk@multigroup.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Ermenistan'in en buyuk bira fabrikalarından. Abovyan, Kotayk. Multi Group Concern.",
-      "emailEvent": "",
+      "notes": "Ermenistan'in en buyuk bira fabrikalarından. Abovyan, Kotayk. Multi Group Concern. | info@kotayk.am ile yeniden gönderildi",
+      "emailEvent": "hardBounce",
       "whatsapp": null,
       "telegram": null
     },
@@ -1825,7 +1825,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Ermenistan'in ikinci buyuk birasi. 1970 kurulus. Gyumri sehri.",
-      "emailEvent": "",
+      "emailEvent": "softBounce",
       "whatsapp": null,
       "telegram": null
     },
@@ -1869,8 +1869,8 @@
       "email": "export@tamaragroup.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "1988 kurulus. Abovyan, Kotayk. Dondurma, peynir, tereyag. info@tamaragroup.am",
-      "emailEvent": "",
+      "notes": "1988 kurulus. Abovyan, Kotayk. Dondurma, peynir, tereyag. info@tamaragroup.am | info@tamaragroup.am ile yeniden gönderildi",
+      "emailEvent": "hardBounce",
       "whatsapp": null,
       "telegram": null
     },
@@ -2005,7 +2005,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "1997 kurulus, Tbilisi Sut Fabrikasi'ndan. Gurcistan sut sektoru lideri. Kakheti Highway km10.",
-      "emailEvent": "",
+      "emailEvent": "hardBounce",
       "whatsapp": null,
       "telegram": null
     },
@@ -2050,7 +2050,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Kafkasya'nin en buyuk kimya tesisi. Gurcistan'in tek azot gubre ureticisi. Rustavi. YUKSEK ONCELIK.",
-      "emailEvent": "",
+      "emailEvent": "clicked",
       "whatsapp": null,
       "telegram": null
     },
@@ -2080,7 +2080,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Sasunik, Aragatsotn. 2008 kurulus. Ermenistan sarap ihracatinin lideri.",
-      "emailEvent": "",
+      "emailEvent": "opened",
       "whatsapp": null,
       "telegram": null
     },
@@ -2110,7 +2110,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Tbilisi Highway 20, Kanaker-Zeytun, Yerevan. 1954 kurulus. Kivan sarap.",
-      "emailEvent": "",
+      "emailEvent": "softBounce",
       "whatsapp": null,
       "telegram": null
     },
@@ -2125,7 +2125,7 @@
       "status": "sent",
       "sentDate": "2026-06-24",
       "notes": "Yillik 1.2M ton kapasite. Hrazdan, Kotayk. Khachaturov Group.",
-      "emailEvent": "",
+      "emailEvent": "softBounce",
       "whatsapp": null,
       "telegram": null
     },
