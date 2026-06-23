@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastSync": "2026-06-24T09:00:00Z",
-    "syncNote": "110 mail gönderildi · AZ fabrika turu tamamlandı"
+    "lastSync": "2026-06-24T12:00:00Z",
+    "syncNote": "110 mail gönderildi · Brevo events senkronize edildi · AZ turu tamamlandı"
   },
   "leads": [
     {
@@ -41,7 +41,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "NCOC genel iletişim. Email format: first.last@ncoc.kz",
-      "emailEvent": "hardBounce"
+      "emailEvent": "opened"
     },
     {
       "id": 4,
@@ -93,7 +93,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "2023'te Qarmet adını aldı. Procurement: Vladimir Lazovskiy",
-      "emailEvent": "delivered",
+      "emailEvent": "opened",
       "whatsapp": "+79122525506"
     },
     {
@@ -564,7 +564,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "online@ot.mn auto-reply ile doğru adres verildi. Yeni adrese gönderildi.",
-      "emailEvent": "replied"
+      "emailEvent": "clicked"
     },
     {
       "id": 44,
@@ -590,7 +590,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Erdenes Tavan Tolgoi. Tel: +976 7505 5555",
-      "emailEvent": "opened"
+      "emailEvent": "clicked"
     },
     {
       "id": 46,
@@ -616,7 +616,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Shell-Irak ortaklığı. Tedarikçi kayıt açık. EN ÖNCELİKLİ. Mail gönderildi.",
-      "emailEvent": "delivered",
+      "emailEvent": "softBounce",
       "whatsapp": "+9647809211319"
     },
     {
@@ -822,7 +822,7 @@
       "notes": "30+ süt ürünü. FSSC 22000. Tel: +998 78 120 33 34",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "opened"
     },
     {
       "id": 62,
@@ -957,7 +957,7 @@
       "notes": "Lactalis Fransa ortaklığı. 3 fabrika. Tel: +7 727 244 6000",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "hardBounce"
     },
     {
       "id": 71,
@@ -972,7 +972,7 @@
       "notes": "Süt ve yağ ürünleri. 3 fabrika. Tel: +7 727 378-71-71",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "opened"
     },
     {
       "id": 72,
@@ -987,7 +987,7 @@
       "notes": "Juicy, Palma markaları. Tel: +7 727 330-46-15. Mob: +7 771 736-12-60",
       "whatsapp": "+77717361260",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "clicked"
     },
     {
       "id": 73,
@@ -1002,7 +1002,7 @@
       "notes": "4500 çalışan şekerleme. Güney Kore LOTTE. Tel: +7 7272 58-47-11",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "opened"
     },
     {
       "id": 74,
@@ -1017,7 +1017,7 @@
       "notes": "Et işleme, 5000t/yıl. Tel: +7 71636 3-44-09",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "hardBounce"
     },
     {
       "id": 75,
@@ -1032,7 +1032,7 @@
       "notes": "Kazakistan ilaç lideri. Şymkent. Tel: +7252 61-01-20",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "clicked"
     },
     {
       "id": 76,
@@ -1047,7 +1047,7 @@
       "notes": "Fosfor ve gübre. Taraz. Tel: +7 727 330-56-00",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "softBounce"
     },
     {
       "id": 77,
@@ -1092,7 +1092,7 @@
       "notes": "Vicat Fransa ortaklığı. 1.4mt/yıl. Mynaral.",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "clicked"
     },
     {
       "id": 80,
@@ -1107,7 +1107,7 @@
       "notes": "Şımkent. Satınalma müdürü: Boris Naidenov. Mob: +7 771 086-02-06",
       "whatsapp": "+77710860206",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "clicked"
     },
     {
       "id": 81,
@@ -1122,7 +1122,7 @@
       "notes": "Samawa. Lucky Cement ortak. Tel: +964 780 505 8555",
       "whatsapp": "+9647805058555",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "opened"
     },
     {
       "id": 82,
@@ -1137,7 +1137,7 @@
       "notes": "Basra. Lucky Cement + Al-Shomookh ortak.",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "clicked"
     },
     {
       "id": 83,
@@ -1152,7 +1152,7 @@
       "notes": "Samawa. 1.5mt/yıl. IFC yatırımı.",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "opened"
     },
     {
       "id": 84,
@@ -1167,7 +1167,7 @@
       "notes": "Erbil bölgesinde ilk çimento. 2025 yeni açıldı. Tel: +964 750 590 6161",
       "whatsapp": "+9647505906161",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "opened"
     },
     {
       "id": 85,
@@ -1197,7 +1197,7 @@
       "notes": "Bazyan. 1.25mt/yıl çelik. Tel: +964 770 138 2550",
       "whatsapp": "+9647701382550",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "softBounce"
     },
     {
       "id": 87,
@@ -1287,7 +1287,7 @@
       "notes": "Süleymaniye. Tel: +964 770 770 9070",
       "whatsapp": "+9647707709070",
       "telegram": "",
-      "emailEvent": ""
+      "emailEvent": "clicked"
     },
     {
       "id": 93,
@@ -1331,7 +1331,7 @@
       "notes": "Bakü süt fabrikası. Tel: +994 12 599 10 99",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "opened",
       "contact": "agrodairy.az"
     },
     {
@@ -1346,7 +1346,7 @@
       "notes": "Gəncə/Qəbələ. 300.000t/yıl meyve işleme. Tel: +994 24 205 26 07",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "opened",
       "contact": "jale.az"
     },
     {
@@ -1391,7 +1391,7 @@
       "notes": "Xırdalan. Bölgenin en büyük bira fabrikası. Tel: +994 12 342 09 00",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "clicked",
       "contact": "carlsbergazerbaijan.az"
     },
     {
@@ -1406,7 +1406,7 @@
       "notes": "Göygöl. 537 ha bağ. Şarap ve konyak. Tel: +994 12 437 26 02",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "opened",
       "contact": "vinagro.az"
     },
     {
@@ -1451,7 +1451,7 @@
       "notes": "Bakü. Sıvı gübre üretimi. Mob: +994 99 369 36 93",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "opened",
       "contact": "azchemco.az"
     },
     {
@@ -1511,7 +1511,7 @@
       "notes": "Bakü/Sumqayıt. Metal boru ve profiller. Tel: +994 10 212 28 28",
       "whatsapp": "+994102122828",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "opened",
       "contact": "metak.az"
     },
     {
@@ -1526,7 +1526,7 @@
       "notes": "Sumqayıt Sənaye Parkı. Çelik boru. Tel: +994 10 250 44 00",
       "whatsapp": "+994102504400",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "clicked",
       "contact": "azertexnolayn.com"
     },
     {
@@ -1541,7 +1541,7 @@
       "notes": "Garadağ/Bakü. Güney Kafkasya'nın en büyük çimento. Tel: +994 12 310 10 10",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "hardBounce",
       "contact": "norm.az"
     },
     {
@@ -1601,7 +1601,7 @@
       "notes": "Bakü. İş kıyafeti ve tekstil. Tel: +994 12 412 02 06",
       "whatsapp": "",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "opened",
       "contact": "btf.az"
     },
     {
@@ -1631,7 +1631,7 @@
       "notes": "Lənkəran. Süt ve et ürünleri. Mob: +994 50 295 44 74",
       "whatsapp": "+994502954474",
       "telegram": "",
-      "emailEvent": "",
+      "emailEvent": "softBounce",
       "contact": "palsud.az"
     }
   ]
