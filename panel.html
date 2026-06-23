@@ -353,6 +353,18 @@ function doLogin(){
 document.getElementById('pwInput').addEventListener('keydown',e=>{ if(e.key==='Enter') doLogin(); });
 
 // --- RENDER ---
+function getEventBadge(ev){
+  if(!ev) return '';
+  const map = {
+    clicked:    ['#10b981','Tıkladı'],
+    opened:     ['#3b82f6','Açtı'],
+    delivered:  ['#475569','İletti'],
+    softBounce: ['#f59e0b','Soft Bounce'],
+    hardBounce: ['#ef4444','Bounce'],
+  };
+  const [color,label] = map[ev]||['#475569',ev];
+  return `<span style="display:inline-block;margin-top:3px;font-size:10px;padding:1px 6px;border-radius:4px;background:${color}22;color:${color};font-weight:700">${label}</span>`;
+}
 function getSectorClass(s){
   if(s==='Petrol & Gaz') return 's-oil';
   if(s==='Maden') return 's-mining';
@@ -390,7 +402,10 @@ function renderTable(){
       <td><span class="country-badge">${l.country}</span></td>
       <td><span class="sector-badge ${getSectorClass(l.sector)}">${l.sector}</span></td>
       <td><a class="site-link" href="https://${l.website}" target="_blank">${l.website}</a><br><a class="site-link" href="https://${l.contact}" target="_blank" style="opacity:.6;font-size:11px">Contact →</a></td>
-      <td class="email-cell">${l.email?`<a href="mailto:${l.email}">${l.email}</a>`:'<span style="opacity:.35">—</span>'}</td>
+      <td class="email-cell">
+        ${l.email?`<a href="mailto:${l.email}">${l.email}</a>`:'<span style="opacity:.35">—</span>'}
+        ${getEventBadge(l.emailEvent)}
+      </td>
       <td>
         <select class="status-sel" onchange="updateField(${l.id},'status',this.value)">
           <option value="pending" ${l.status==='pending'?'selected':''}>⏳ Bekliyor</option>
@@ -401,7 +416,13 @@ function renderTable(){
         </select>
       </td>
       <td><input type="date" class="notes-input" style="width:120px" value="${l.sentDate||''}" onchange="updateField(${l.id},'sentDate',this.value)"></td>
-      <td><input class="notes-input" placeholder="not..." value="${l.notes||''}" onchange="updateField(${l.id},'notes',this.value)"></td>
+      <td>
+        <div style="display:flex;gap:5px;align-items:center;flex-wrap:wrap">
+          ${l.whatsapp?`<a href="https://wa.me/${l.whatsapp.replace(/\D/g,'')}" target="_blank" style="display:inline-flex;align-items:center;gap:3px;padding:3px 7px;background:#25D366;color:#fff;border-radius:5px;font-size:11px;font-weight:600;text-decoration:none">WA</a>`:''}
+          ${l.telegram?`<a href="https://t.me/${l.telegram}" target="_blank" style="display:inline-flex;align-items:center;gap:3px;padding:3px 7px;background:#229ED9;color:#fff;border-radius:5px;font-size:11px;font-weight:600;text-decoration:none">TG</a>`:''}
+          <input class="notes-input" style="flex:1;min-width:120px" placeholder="not..." value="${l.notes||''}" onchange="updateField(${l.id},'notes',this.value)">
+        </div>
+      </td>
       <td style="white-space:nowrap">
         <button class="compose-btn" onclick="composeMail(${l.id})">✉ Yaz</button>
         ${l.status==='sent'||l.status==='replied'||l.status==='interested'?`<button class="view-btn" style="margin-left:4px" onclick="previewMail(${l.id})">👁 Gör</button>`:''}

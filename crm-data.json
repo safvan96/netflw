@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastSync": "2026-06-23T16:30:00Z",
-    "syncNote": "45 mail gönderildi · 5 firmada email bulunamadı"
+    "lastSync": "2026-06-23T17:00:00Z",
+    "syncNote": "45 mail gönderildi · 10 açıldı · 1 link tıklandı · 3 hardBounce · 3 softBounce"
   },
   "leads": [
     {
@@ -14,7 +14,8 @@
       "email": "Astana@kmg.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Mail gönderildi"
+      "notes": "Mail gönderildi",
+      "emailEvent": "delivered"
     },
     {
       "id": 2,
@@ -26,7 +27,8 @@
       "email": "TCOSEOI@tengizchevroil.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Chevron-KMG. Büyük saha. Vendor kayıt: seoi.tengizchevroil.com"
+      "notes": "Chevron-KMG. Büyük saha. Vendor kayıt: seoi.tengizchevroil.com",
+      "emailEvent": "delivered"
     },
     {
       "id": 3,
@@ -38,7 +40,8 @@
       "email": "info@ncoc.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "NCOC genel iletişim. Email format: first.last@ncoc.kz"
+      "notes": "NCOC genel iletişim. Email format: first.last@ncoc.kz",
+      "emailEvent": "opened"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "email": "eprocsupport@kpo.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "KPO e-procurement destek. Vendor kayıt: kpo.kz/en/suppliers/"
+      "notes": "KPO e-procurement destek. Vendor kayıt: kpo.kz/en/suppliers/",
+      "emailEvent": "opened"
     },
     {
       "id": 5,
@@ -62,7 +66,8 @@
       "email": "anpz@qazmg.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Atyrau rafineri. KazMunayGas bünyesi."
+      "notes": "Atyrau rafineri. KazMunayGas bünyesi.",
+      "emailEvent": "delivered"
     },
     {
       "id": 6,
@@ -74,7 +79,8 @@
       "email": "secretary@pnhz.net",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Pavlodar rafineri sekreterlik"
+      "notes": "Pavlodar rafineri sekreterlik",
+      "emailEvent": "delivered"
     },
     {
       "id": 7,
@@ -86,7 +92,9 @@
       "email": "Vladimir.Lazovskiy@qarmet.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "2023'te Qarmet adını aldı. Procurement: Vladimir Lazovskiy"
+      "notes": "2023'te Qarmet adını aldı. Procurement: Vladimir Lazovskiy",
+      "emailEvent": "delivered",
+      "whatsapp": "+79122525506"
     },
     {
       "id": 8,
@@ -98,7 +106,8 @@
       "email": "office@kazakhmys.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Büyük bakır madeni."
+      "notes": "Büyük bakır madeni.",
+      "emailEvent": "opened"
     },
     {
       "id": 9,
@@ -110,7 +119,8 @@
       "email": "info@kazatomprom.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Dünya 1. uranyum üreticisi."
+      "notes": "Dünya 1. uranyum üreticisi.",
+      "emailEvent": "delivered"
     },
     {
       "id": 10,
@@ -122,7 +132,8 @@
       "email": "CCOffice@erg.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Krom, demir, alüminyum. Tel: +7 7172 61 23 50"
+      "notes": "Krom, demir, alüminyum. Tel: +7 7172 61 23 50",
+      "emailEvent": "delivered"
     },
     {
       "id": 11,
@@ -134,7 +145,8 @@
       "email": "almatysu@almatysu.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Almatı şehir su idaresi. Tel: +7 771 852 9101"
+      "notes": "Almatı şehir su idaresi. Tel: +7 771 852 9101",
+      "emailEvent": "delivered"
     },
     {
       "id": 12,
@@ -146,7 +158,8 @@
       "email": "odo@astanasu.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Astana Su Ana iletişim"
+      "notes": "Astana Su Ana iletişim",
+      "emailEvent": "delivered"
     },
     {
       "id": 13,
@@ -158,7 +171,8 @@
       "email": "Demina_L@kegoc.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Ulusal elektrik iletim şirketi. Procurement: Lyubov Dyomina"
+      "notes": "Ulusal elektrik iletim şirketi. Procurement: Lyubov Dyomina",
+      "emailEvent": "delivered"
     },
     {
       "id": 14,
@@ -170,7 +184,8 @@
       "email": "kazazot@kazazot.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "KazAzot genel iletişim"
+      "notes": "KazAzot genel iletişim",
+      "emailEvent": "opened"
     },
     {
       "id": 15,
@@ -182,7 +197,8 @@
       "email": "eprocurement.support@socar.az",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Azerbaycan devlet petrol şirketi. E-procurement portal mevcut."
+      "notes": "Azerbaycan devlet petrol şirketi. E-procurement portal mevcut.",
+      "emailEvent": "hardBounce"
     },
     {
       "id": 16,
@@ -194,7 +210,8 @@
       "email": "",
       "status": "pending",
       "sentDate": "",
-      "notes": "ACG sahası operatörü."
+      "notes": "ACG sahası operatörü.",
+      "emailEvent": ""
     },
     {
       "id": 17,
@@ -206,7 +223,8 @@
       "email": "office@azersu.az",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Ulusal su ve kanalizasyon idaresi."
+      "notes": "Ulusal su ve kanalizasyon idaresi.",
+      "emailEvent": "softBounce"
     },
     {
       "id": 18,
@@ -218,7 +236,8 @@
       "email": "info@azerenerji.gov.az",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Azerenerji genel iletişim"
+      "notes": "Azerenerji genel iletişim",
+      "emailEvent": "delivered"
     },
     {
       "id": 19,
@@ -230,7 +249,8 @@
       "email": "project@socarpolymer.az",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "SOCAR Polymer proje/tedarik iletişimi"
+      "notes": "SOCAR Polymer proje/tedarik iletişimi",
+      "emailEvent": "opened"
     },
     {
       "id": 20,
@@ -242,7 +262,8 @@
       "email": "info@sgc.az",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "SGC genel iletişim"
+      "notes": "SGC genel iletişim",
+      "emailEvent": "delivered"
     },
     {
       "id": 21,
@@ -254,7 +275,8 @@
       "email": "tender@bakusteel.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Baku Steel tedarik/ihale birimi"
+      "notes": "Baku Steel tedarik/ihale birimi",
+      "emailEvent": "delivered"
     },
     {
       "id": 22,
@@ -266,7 +288,8 @@
       "email": "sabir.gubadov@holcim.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Holcim Az: Ekipman & Malzeme Tedariki"
+      "notes": "Holcim Az: Ekipman & Malzeme Tedariki",
+      "emailEvent": "delivered"
     },
     {
       "id": 23,
@@ -278,7 +301,9 @@
       "email": "karbamid.zavodu@socar.az",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Karbamid gübre tesisi. Mob: +994 50 842 51 41 (WhatsApp olabilir)"
+      "notes": "Karbamid gübre tesisi. Mob: +994 50 842 51 41 (WhatsApp olabilir)",
+      "emailEvent": "softBounce",
+      "whatsapp": "+994508425141"
     },
     {
       "id": 24,
@@ -290,7 +315,8 @@
       "email": "kans@ung.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Devlet petrol-gaz şirketi."
+      "notes": "Devlet petrol-gaz şirketi.",
+      "emailEvent": "delivered"
     },
     {
       "id": 25,
@@ -302,7 +328,8 @@
       "email": "info@sgcc.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Gaz kimyası kompleksi. Tel: +998 75 552 42 54"
+      "notes": "Gaz kimyası kompleksi. Tel: +998 75 552 42 54",
+      "emailEvent": "hardBounce"
     },
     {
       "id": 26,
@@ -314,7 +341,8 @@
       "email": "",
       "status": "pending",
       "sentDate": "",
-      "notes": "Bakır, altın, çinko madeni."
+      "notes": "Bakır, altın, çinko madeni.",
+      "emailEvent": ""
     },
     {
       "id": 27,
@@ -326,7 +354,8 @@
       "email": "info@ngmk.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Dünyanın en büyük altın madenlerinden."
+      "notes": "Dünyanın en büyük altın madenlerinden.",
+      "emailEvent": "delivered"
     },
     {
       "id": 28,
@@ -338,7 +367,8 @@
       "email": "office@navoiyazot.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Navoiyazot genel iletişim"
+      "notes": "Navoiyazot genel iletişim",
+      "emailEvent": "delivered"
     },
     {
       "id": 29,
@@ -350,7 +380,8 @@
       "email": "abonent@suv-taminot.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Taşkent Su genel abone iletişimi"
+      "notes": "Taşkent Su genel abone iletişimi",
+      "emailEvent": "delivered"
     },
     {
       "id": 30,
@@ -362,7 +393,9 @@
       "email": "info@fnpz.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Fergana Rafineri. Tel: +998 94 555 83 84 (mob). Telegram: @fnpz_uz"
+      "notes": "Fergana Rafineri. Tel: +998 94 555 83 84 (mob). Telegram: @fnpz_uz",
+      "emailEvent": "delivered",
+      "telegram": "fnpz_uz"
     },
     {
       "id": 31,
@@ -374,7 +407,8 @@
       "email": "",
       "status": "pending",
       "sentDate": "",
-      "notes": "Ulusal enerji şirketi."
+      "notes": "Ulusal enerji şirketi.",
+      "emailEvent": ""
     },
     {
       "id": 32,
@@ -386,7 +420,8 @@
       "email": "odum@turkmengaz.gov.tm",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Dünyanın 4. büyük gaz rezervi. Tedarik departmanı."
+      "notes": "Dünyanın 4. büyük gaz rezervi. Tedarik departmanı.",
+      "emailEvent": "delivered"
     },
     {
       "id": 33,
@@ -398,7 +433,8 @@
       "email": "fer@turkmennebit.gov.tm",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Turkmennebit tedarik iletişimi"
+      "notes": "Turkmennebit tedarik iletişimi",
+      "emailEvent": "delivered"
     },
     {
       "id": 34,
@@ -410,7 +446,8 @@
       "email": "tngizt@online.tm",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Turkmenbashi rafineri Foreign Economic Relations"
+      "notes": "Turkmenbashi rafineri Foreign Economic Relations",
+      "emailEvent": "delivered"
     },
     {
       "id": 35,
@@ -422,7 +459,8 @@
       "email": "",
       "status": "pending",
       "sentDate": "",
-      "notes": "Azot gübre tesisi."
+      "notes": "Azot gübre tesisi.",
+      "emailEvent": ""
     },
     {
       "id": 36,
@@ -434,7 +472,8 @@
       "email": "info@dragonoil.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Hazar offshore petrol. Vendor portal: vendorportal.dragonoil.com"
+      "notes": "Hazar offshore petrol. Vendor portal: vendorportal.dragonoil.com",
+      "emailEvent": "delivered"
     },
     {
       "id": 37,
@@ -446,7 +485,8 @@
       "email": "procurement@talco-s.tj",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "TALCO özel tedarik email"
+      "notes": "TALCO özel tedarik email",
+      "emailEvent": "opened"
     },
     {
       "id": 38,
@@ -458,7 +498,8 @@
       "email": "barki.tojik@gmail.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Barki Tojik iletişim"
+      "notes": "Barki Tojik iletişim",
+      "emailEvent": "delivered"
     },
     {
       "id": 39,
@@ -470,7 +511,8 @@
       "email": "tjazot@khatlon.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Azot gübre tesisi. Tel: +992 3222 2 35 84"
+      "notes": "Azot gübre tesisi. Tel: +992 3222 2 35 84",
+      "emailEvent": "hardBounce"
     },
     {
       "id": 40,
@@ -482,7 +524,8 @@
       "email": "Kumtor_localbuyer@kumtor.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Kumtor tedarik alım emaili"
+      "notes": "Kumtor tedarik alım emaili",
+      "emailEvent": "delivered"
     },
     {
       "id": 41,
@@ -494,7 +537,8 @@
       "email": "info@kyrgyzaltyn.kg",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Kyrgyzaltyn genel iletişim"
+      "notes": "Kyrgyzaltyn genel iletişim",
+      "emailEvent": "delivered"
     },
     {
       "id": 42,
@@ -506,7 +550,8 @@
       "email": "priemn@water.elcat.kg",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Bişkek şehir su idaresi. Tel: +996 312 56 16 55"
+      "notes": "Bişkek şehir su idaresi. Tel: +996 312 56 16 55",
+      "emailEvent": "softBounce"
     },
     {
       "id": 43,
@@ -518,7 +563,8 @@
       "email": "online@ot.mn",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Dünyanın en büyük bakır-altın madenlerinden. Procurement Rio Tinto üzerinden."
+      "notes": "Dünyanın en büyük bakır-altın madenlerinden. Procurement Rio Tinto üzerinden.",
+      "emailEvent": "opened"
     },
     {
       "id": 44,
@@ -530,7 +576,8 @@
       "email": "info@erdenetmc.mn",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Erdenet Mining genel iletişim"
+      "notes": "Erdenet Mining genel iletişim",
+      "emailEvent": "opened"
     },
     {
       "id": 45,
@@ -542,7 +589,8 @@
       "email": "info@erdenestt.mn",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Erdenes Tavan Tolgoi. Tel: +976 7505 5555"
+      "notes": "Erdenes Tavan Tolgoi. Tel: +976 7505 5555",
+      "emailEvent": "clicked"
     },
     {
       "id": 46,
@@ -554,7 +602,8 @@
       "email": "usug1959@gmail.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Ulaanbaatar şehir su idaresi. Gmail adresi kullanıyorlar."
+      "notes": "Ulaanbaatar şehir su idaresi. Gmail adresi kullanıyorlar.",
+      "emailEvent": "delivered"
     },
     {
       "id": 47,
@@ -566,7 +615,9 @@
       "email": "BGC-vendormanagement@basrahgas.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Shell-Irak ortaklığı. Tedarikçi kayıt açık. EN ÖNCELİKLİ. Mail gönderildi."
+      "notes": "Shell-Irak ortaklığı. Tedarikçi kayıt açık. EN ÖNCELİKLİ. Mail gönderildi.",
+      "emailEvent": "delivered",
+      "whatsapp": "+9647809211319"
     },
     {
       "id": 48,
@@ -578,7 +629,8 @@
       "email": "",
       "status": "pending",
       "sentDate": "",
-      "notes": "Eski South Oil Company."
+      "notes": "Eski South Oil Company.",
+      "emailEvent": ""
     },
     {
       "id": 49,
@@ -590,7 +642,9 @@
       "email": "info@moawr.gov.krd",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Kürdistan Bölgesi Su Bakanlığı. WhatsApp: +964 750 616 1569"
+      "notes": "Kürdistan Bölgesi Su Bakanlığı. WhatsApp: +964 750 616 1569",
+      "emailEvent": "opened",
+      "whatsapp": "+9647506161569"
     },
     {
       "id": 50,
@@ -602,7 +656,8 @@
       "email": "iq.recruitment@lafarge.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Bazian, Tasluja, Karbala çimento fabrikaları. Mail gönderildi."
+      "notes": "Bazian, Tasluja, Karbala çimento fabrikaları. Mail gönderildi.",
+      "emailEvent": "delivered"
     }
   ]
 }
