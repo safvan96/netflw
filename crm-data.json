@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastSync": "",
-    "syncNote": "İlk yükleme"
+    "lastSync": "2026-06-23T10:30:00Z",
+    "syncNote": "50 lead yüklendi · Henüz mail gönderilmedi"
   },
   "leads": [
     {"id":1,"company":"KazMunayGas","country":"Kazakistan","sector":"Petrol & Gaz","website":"kmg.kz","contact":"kmg.kz/en/contacts/","email":"Astana@kmg.kz","status":"pending","sentDate":"","notes":""},
