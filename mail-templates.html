@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Net Flow · Email Şablonları</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d1b2e;color:#e2e8f0;min-height:100vh}
+#loginScreen{display:flex;align-items:center;justify-content:center;min-height:100vh}
+.login-box{background:#1a2e4a;border:1px solid #2a4a6b;border-radius:16px;padding:40px;width:340px;text-align:center}
+.login-box .logo{font-size:22px;font-weight:800;color:#fff;margin-bottom:6px}
+.login-box .logo span{color:#3b82f6}
+.login-box small{color:#64748b;font-size:13px;display:block;margin-bottom:28px}
+.login-box input{width:100%;padding:12px 14px;background:#0d1b2e;border:1.5px solid #2a4a6b;border-radius:9px;color:#fff;font-size:14px;margin-bottom:14px;outline:none}
+.login-box input:focus{border-color:#3b82f6}
+.login-box button{width:100%;padding:12px;background:#3b82f6;border:none;border-radius:9px;color:#fff;font-weight:700;font-size:14px;cursor:pointer}
+.login-err{color:#f87171;font-size:13px;margin-top:10px;display:none}
+#app{display:none}
+.topbar{background:#1a2e4a;border-bottom:1px solid #1e3a5f;padding:14px 24px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:100}
+.topbar .brand{font-weight:800;font-size:16px;color:#fff}
+.topbar .brand span{color:#3b82f6}
+.topbar a{color:#64748b;text-decoration:none;font-size:13px}
+.topbar a:hover{color:#fff}
+.content{max-width:900px;margin:0 auto;padding:32px 24px}
+.sector-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{padding:7px 16px;border-radius:20px;border:1.5px solid #2a4a6b;background:transparent;color:#94a3b8;font-size:13px;font-weight:600;cursor:pointer;transition:.15s}
+.tab:hover,.tab.active{background:#3b82f6;border-color:#3b82f6;color:#fff}
+.template-pair{display:none;gap:20px;flex-direction:column}
+.template-pair.visible{display:flex}
+.tmpl-card{background:#1a2e4a;border:1px solid #1e3a5f;border-radius:12px;overflow:hidden}
+.tmpl-header{padding:12px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1e3a5f}
+.tmpl-lang{font-size:12px;font-weight:700;color:#3b82f6;text-transform:uppercase;letter-spacing:.06em}
+.tmpl-label{font-size:12px;color:#64748b}
+.copy-btn{padding:5px 12px;background:#0d1b2e;border:1px solid #2a4a6b;border-radius:7px;color:#94a3b8;font-size:12px;font-weight:600;cursor:pointer;transition:.15s}
+.copy-btn:hover{border-color:#3b82f6;color:#3b82f6}
+.copy-btn.copied{border-color:#22c55e;color:#22c55e}
+.subj-row{padding:10px 16px;background:#0f2035;border-bottom:1px solid #1e3a5f;font-size:12.5px}
+.subj-label{color:#64748b;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}
+.subj-text{color:#e2e8f0;font-weight:600}
+.tmpl-body{padding:16px;white-space:pre-wrap;font-family:'Courier New',monospace;font-size:13px;line-height:1.7;color:#cbd5e1;max-height:420px;overflow-y:auto}
+.note{background:#172235;border:1px solid #1e3a5f;border-radius:10px;padding:14px 16px;margin-bottom:24px;font-size:13px;color:#94a3b8;line-height:1.6}
+.note b{color:#e2e8f0}
+.note code{background:#0d1b2e;padding:2px 6px;border-radius:4px;font-size:12px;color:#60a5fa}
+</style>
+</head>
+<body>
+
+<div id="loginScreen">
+  <div class="login-box">
+    <div class="logo">Net Flow <span>Mail</span></div>
+    <small>Email Şablonları</small>
+    <input type="password" id="pwInput" placeholder="Şifre" autocomplete="current-password">
+    <button onclick="doLogin()">Giriş</button>
+    <div class="login-err" id="loginErr">Yanlış şifre</div>
+  </div>
+</div>
+
+<div id="app">
+  <div class="topbar">
+    <div class="brand">Net Flow <span>Mail</span></div>
+    <a href="/crm.html">← CRM</a>
+  </div>
+
+  <div class="content">
+    <div class="note">
+      <b>[COMPANY] ve [NAME_TITLE]</b> kısımlarını değiştir. Genel mail listesi için bu alanları bırakabilirsin — yeterince kişisel görünüyor. <br>
+      Gönderim: <b>info@netflw.com</b> · Reply-To: <b>infonetflw@gmail.com</b> · Konu satırı template içinde.
+    </div>
+
+    <div class="sector-tabs">
+      <button class="tab active" onclick="showSector('oilgas',this)">Petrol &amp; Gaz</button>
+      <button class="tab" onclick="showSector('mining',this)">Maden</button>
+      <button class="tab" onclick="showSector('water',this)">Su İdareleri</button>
+      <button class="tab" onclick="showSector('chemical',this)">Kimya / Gübre</button>
+      <button class="tab" onclick="showSector('energy',this)">Enerji</button>
+    </div>
+
+    <!-- OIL & GAS -->
+    <div class="template-pair visible" id="oilgas">
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">English</div><div class="tmpl-label">Oil &amp; Gas — Refineries, Upstream, LNG</div></div>
+          <button class="copy-btn" onclick="copyTemplate('oilgas-en')">Copy</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Flow &amp; Level Instrumentation — Net Flow (Türkiye)</div></div>
+        <div class="tmpl-body" id="oilgas-en">Dear Procurement / Instrumentation Team,
+
+My name is Safvan, and I'm with Net Flow — a manufacturer based in Konya, Türkiye, producing electromagnetic flow meters, magnetic bypass level gauges, and process transmitters for the oil &amp; gas industry.
+
+We work with refineries and upstream facilities across the region and thought your team might have upcoming procurement needs we could support.
+
+A few things that tend to be relevant for operations like yours:
+
+– Electromagnetic flow meters for produced water, crude transfer lines, and utility water
+– Magnetic bypass level gauges for separator vessels and storage tanks
+– Pressure and temperature transmitters for well-head and process skids
+
+Our instruments are TÜRKAK-accredited (AB-0354-K) and ISO/IEC 17025 certified. Lead times are short and we can supply with full documentation packages.
+
+If you have any active tenders or upcoming projects, I'd be glad to send a product catalog or discuss specifications.
+
+Product overview: netflw.com/products.html
+Electromagnetic flow meters: netflw.com/electromagnetic-flow-meter.html
+
+Best regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">Русский</div><div class="tmpl-label">Нефть и газ — НПЗ, добыча, СПГ</div></div>
+          <button class="copy-btn" onclick="copyTemplate('oilgas-ru')">Копировать</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Расходомеры и уровнемеры для нефтегазовой отрасли — Net Flow (Турция)</div></div>
+        <div class="tmpl-body" id="oilgas-ru">Здравствуйте,
+
+Меня зовут Сафван, я представляю компанию Net Flow — турецкого производителя промышленных приборов из г. Конья.
+
+Мы производим электромагнитные расходомеры, магнитные байпасные уровнемеры и технологические трансмиттеры для нефтегазовой и нефтехимической отрасли.
+
+Среди наших клиентов — нефтеперерабатывающие заводы и добывающие предприятия региона. Хотели бы предложить наши решения и для ваших объектов.
+
+Что может быть актуально для вас:
+
+– Электромагнитные расходомеры для пластовых вод, трубопроводов сырой нефти и технологической воды
+– Магнитные байпасные уровнемеры для сепараторов и резервуаров
+– Трансмиттеры давления и температуры для скважинного и технологического оборудования
+
+Наши приборы имеют аккредитацию TÜRKAK (AB-0354-K), сертифицированы по ISO/IEC 17025. Сроки поставки короткие, документация полная.
+
+Если есть текущие тендеры или планируются закупки — готов выслать каталог или обсудить технические требования.
+
+Каталог продукции: netflw.com/products.html
+Электромагнитные расходомеры: netflw.com/electromagnetic-flow-meter.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+    </div>
+
+    <!-- MINING -->
+    <div class="template-pair" id="mining">
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">English</div><div class="tmpl-label">Mining — Flotation, Slurry, Processing Plants</div></div>
+          <button class="copy-btn" onclick="copyTemplate('mining-en')">Copy</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Slurry &amp; Process Flow Meters — Net Flow (Türkiye)</div></div>
+        <div class="tmpl-body" id="mining-en">Dear Procurement / Maintenance Team,
+
+I'm reaching out from Net Flow, a Turkish instrumentation manufacturer. We specialize in electromagnetic flow meters and level gauges that are widely used in mining and mineral processing — particularly for slurry pipelines, flotation circuits, and process water systems.
+
+Electromagnetic flow meters work exceptionally well with conductive slurries (copper, gold, coal) because there are no moving parts and no pressure drop. This means longer service life and less downtime compared to mechanical alternatives.
+
+What we supply to mining operations:
+
+– Electromagnetic flow meters (DN15 to DN1200) for slurry and process water
+– Magnetic bypass level gauges for reagent and flotation tanks
+– Density-compatible versions for high-solids applications
+
+We're TÜRKAK-accredited (AB-0354-K) and ISO/IEC 17025 certified. If you have upcoming MRO procurement or capital projects, we'd be happy to provide a proposal.
+
+Product details: netflw.com/electromagnetic-flow-meter.html
+
+Kind regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">Русский</div><div class="tmpl-label">Горнодобывающая промышленность — флотация, пульпопроводы</div></div>
+          <button class="copy-btn" onclick="copyTemplate('mining-ru')">Копировать</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Расходомеры для горнодобывающих предприятий — Net Flow (Турция)</div></div>
+        <div class="tmpl-body" id="mining-ru">Здравствуйте,
+
+Обращаюсь к вам от компании Net Flow (г. Конья, Турция). Мы производим электромагнитные расходомеры и уровнемеры, которые широко применяются в горнодобывающей и обогатительной промышленности — в том числе для измерения пульпы, в флотационных схемах и системах технологической воды.
+
+Электромагнитные расходомеры особенно эффективны при работе с проводящими пульпами (медь, золото, уголь): нет движущихся частей, нет потерь давления — срок службы значительно выше, чем у механических аналогов.
+
+Что мы поставляем на обогатительные фабрики:
+
+– Электромагнитные расходомеры (DN15–DN1200) для пульпы и технологической воды
+– Магнитные байпасные уровнемеры для баков реагентов и флотационных камер
+– Версии для высокого содержания твёрдых частиц
+
+Аккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025. Готовы предоставить коммерческое предложение под ваши нужды.
+
+Подробнее о продукции: netflw.com/electromagnetic-flow-meter.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+    </div>
+
+    <!-- WATER -->
+    <div class="template-pair" id="water">
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">English</div><div class="tmpl-label">Water Utilities — Municipal Water &amp; Wastewater</div></div>
+          <button class="copy-btn" onclick="copyTemplate('water-en')">Copy</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Electromagnetic Flow Meters for Water Networks — Net Flow</div></div>
+        <div class="tmpl-body" id="water-en">Dear Procurement / Technical Team,
+
+I'm writing from Net Flow, a manufacturer of electromagnetic flow meters based in Konya, Türkiye. Our instruments are used in municipal water distribution networks, wastewater treatment plants, and pumping stations across the region.
+
+Electromagnetic flow meters are the standard choice for clean and wastewater applications — no moving parts, no pressure drop, highly accurate even at low flow velocities. We manufacture sizes from DN15 to DN1200, covering everything from district meter areas to main transmission lines.
+
+What we offer for water utilities:
+
+– Full-bore electromagnetic flow meters for main distribution lines
+– Battery-powered versions for remote meter stations
+– Magnetic bypass level gauges for reservoirs and wet wells
+– Certifications: TÜRKAK (AB-0354-K), ISO/IEC 17025, IP68 protection
+
+We're competitive on price with European manufacturers and offer shorter lead times. If you have upcoming procurement or rehabilitation projects, I'd be glad to provide a quotation.
+
+Product overview: netflw.com/products.html
+
+Best regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">Русский</div><div class="tmpl-lang" style="color:#94a3b8;font-size:12px;font-weight:400;margin-top:2px">Водоканалы — водоснабжение и водоотведение</div></div>
+          <button class="copy-btn" onclick="copyTemplate('water-ru')">Копировать</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Электромагнитные расходомеры для водопроводных сетей — Net Flow</div></div>
+        <div class="tmpl-body" id="water-ru">Здравствуйте,
+
+Пишу вам от компании Net Flow — турецкого производителя электромагнитных расходомеров (г. Конья). Наши приборы применяются в системах водоснабжения, на насосных станциях и очистных сооружениях.
+
+Электромагнитный расходомер — стандартное решение для чистой воды и сточных вод: без движущихся частей, без потерь давления, высокая точность даже при малых скоростях потока. Производим типоразмеры от DN15 до DN1200.
+
+Что мы предлагаем водоканалам:
+
+– Полнопроходные электромагнитные расходомеры для магистральных трубопроводов
+– Версии с автономным питанием для удалённых точек учёта
+– Магнитные байпасные уровнемеры для резервуаров и колодцев
+– Защита IP68, аккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025
+
+По цене конкурируем с европейскими производителями при более коротких сроках поставки. Если есть планируемые закупки или проекты по реконструкции — готов выставить коммерческое предложение.
+
+О продукции: netflw.com/products.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+    </div>
+
+    <!-- CHEMICAL -->
+    <div class="template-pair" id="chemical">
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">English</div><div class="tmpl-label">Chemical / Fertilizer Plants</div></div>
+          <button class="copy-btn" onclick="copyTemplate('chem-en')">Copy</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Process Instrumentation for Chemical Plants — Net Flow (Türkiye)</div></div>
+        <div class="tmpl-body" id="chem-en">Dear Procurement / Instrumentation Team,
+
+I'm contacting you from Net Flow, a Turkish manufacturer of process instrumentation — electromagnetic flow meters, magnetic bypass level gauges, and pressure/temperature transmitters.
+
+We supply to fertilizer plants, petrochemical complexes, and chemical processing facilities. Our instruments are built to handle aggressive media and demanding process conditions.
+
+For chemical plants specifically:
+
+– Electromagnetic flow meters with PTFE, rubber, or Hastelloy C liner options for corrosive media
+– Magnetic bypass level gauges for ammonia, acid, and alkali storage tanks
+– Pressure transmitters rated up to 400 bar
+– All with TÜRKAK accreditation (AB-0354-K) and ISO/IEC 17025
+
+We can supply with full material certifications and traceability documentation if required.
+
+If you have upcoming equipment procurement or are looking for an alternative supplier, I'd be happy to send a catalog or discuss your requirements.
+
+netflw.com/products.html
+
+Regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">Русский</div><div class="tmpl-label">Химические предприятия / Производство удобрений</div></div>
+          <button class="copy-btn" onclick="copyTemplate('chem-ru')">Копировать</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">КИПиА для химических предприятий — Net Flow (Турция)</div></div>
+        <div class="tmpl-body" id="chem-ru">Здравствуйте,
+
+Обращаюсь к вам от Net Flow — турецкого производителя средств КИПиА: электромагнитных расходомеров, магнитных байпасных уровнемеров, трансмиттеров давления и температуры.
+
+Наши приборы поставляются на химические заводы, предприятия по производству удобрений и нефтехимические комплексы. Оборудование рассчитано на работу с агрессивными средами и тяжёлыми условиями эксплуатации.
+
+Для химической промышленности актуально:
+
+– Электромагнитные расходомеры с футеровкой PTFE, резиной или Hastelloy C для агрессивных сред
+– Магнитные байпасные уровнемеры для резервуаров аммиака, кислот и щелочей
+– Трансмиттеры давления до 400 бар
+– Аккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025, полная документация
+
+Если вы рассматриваете альтернативных поставщиков или планируете закупки оборудования — готов выслать каталог или обсудить технические требования.
+
+netflw.com/products.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+    </div>
+
+    <!-- ENERGY -->
+    <div class="template-pair" id="energy">
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">English</div><div class="tmpl-label">Power Plants — Thermal, Hydro, Industrial Utilities</div></div>
+          <button class="copy-btn" onclick="copyTemplate('energy-en')">Copy</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Flow &amp; Level Instruments for Power Generation — Net Flow</div></div>
+        <div class="tmpl-body" id="energy-en">Dear Procurement / Maintenance Team,
+
+I'm writing from Net Flow (Konya, Türkiye), a manufacturer of electromagnetic flow meters and level instruments used in power generation facilities.
+
+Whether it's a thermal power plant, hydroelectric station, or industrial utility, accurate flow and level measurement is critical for efficiency and safety. We supply instruments that are well-suited for:
+
+– Cooling water circuits (condenser inlet/outlet, cooling towers)
+– Demineralized water and boiler feed water systems
+– Fuel oil and heavy oil transfer measurement
+– Penstock and tailrace flow in hydroelectric plants
+
+Our instruments are reliable, low-maintenance, and come with full calibration documentation (TÜRKAK AB-0354-K, ISO/IEC 17025).
+
+If your facility has upcoming instrumentation needs or scheduled maintenance projects, we'd be glad to discuss how we can support.
+
+netflw.com/products.html
+
+Best regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+      <div class="tmpl-card">
+        <div class="tmpl-header">
+          <div><div class="tmpl-lang">Русский</div><div class="tmpl-label">Электростанции — ТЭС, ГЭС, промышленные объекты</div></div>
+          <button class="copy-btn" onclick="copyTemplate('energy-ru')">Копировать</button>
+        </div>
+        <div class="subj-row"><div class="subj-label">Subject</div><div class="subj-text">Расходомеры и уровнемеры для энергетики — Net Flow (Турция)</div></div>
+        <div class="tmpl-body" id="energy-ru">Здравствуйте,
+
+Пишу вам от компании Net Flow (г. Конья, Турция) — производителя электромагнитных расходомеров и уровнемеров для объектов энергетики.
+
+На тепловых и гидроэлектростанциях точное измерение расхода и уровня критически важно для эффективной и безопасной работы. Наши приборы применяются:
+
+– В системах охлаждения (конденсаторы, градирни)
+– В системах обессоленной воды и питательной воды котлов
+– На трубопроводах мазута и жидкого топлива
+– На гидроэлектростанциях — измерение расхода в турбинных трактах
+
+Оборудование надёжно, не требует обслуживания, поставляется с полной калибровочной документацией (TÜRKAK AB-0354-K, ISO/IEC 17025).
+
+Если есть потребности в приборах или планируется техническое обслуживание — рад обсудить.
+
+netflw.com/products.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com</div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+const PW = 'netflow2026';
+
+function doLogin(){
+  const v = document.getElementById('pwInput').value;
+  if(v===PW){ document.getElementById('loginScreen').style.display='none'; document.getElementById('app').style.display='block'; }
+  else{ document.getElementById('loginErr').style.display='block'; }
+}
+document.getElementById('pwInput').addEventListener('keydown',e=>{ if(e.key==='Enter') doLogin(); });
+
+function showSector(id, btn){
+  document.querySelectorAll('.template-pair').forEach(el=>el.classList.remove('visible'));
+  document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
+  document.getElementById(id).classList.add('visible');
+  btn.classList.add('active');
+}
+
+function copyTemplate(id){
+  const el = document.getElementById(id);
+  const btn = el.closest('.tmpl-card').querySelector('.copy-btn');
+  const subj = el.closest('.tmpl-card').querySelector('.subj-text').textContent;
+  const body = el.textContent;
+  const full = 'Subject: ' + subj + '\n\n' + body;
+  navigator.clipboard.writeText(full).then(()=>{
+    btn.textContent = '✓ Kopyalandı';
+    btn.classList.add('copied');
+    setTimeout(()=>{ btn.textContent = id.endsWith('ru') ? 'Копировать' : 'Copy'; btn.classList.remove('copied'); }, 2200);
+  });
+}
+</script>
+</body>
+</html>
