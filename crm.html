@@ -65,6 +65,8 @@ a.site-link:hover{text-decoration:underline}
 .d-pending{background:#64748b}.d-sent{background:#3b82f6}.d-replied{background:#f59e0b}.d-interested{background:#22c55e}.d-notint{background:#ef4444}
 
 .empty{text-align:center;padding:60px;color:#475569}
+.compose-btn{padding:5px 10px;background:#1e3a5f;border:1px solid #3b82f6;border-radius:7px;color:#60a5fa;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap}
+.compose-btn:hover{background:#3b82f6;color:#fff}
 .toast{position:fixed;bottom:24px;right:24px;background:#1e3a5f;border:1px solid #3b82f6;color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;font-weight:600;z-index:9999;transform:translateY(60px);opacity:0;transition:.3s}
 .toast.show{transform:translateY(0);opacity:1}
 </style>
@@ -144,6 +146,7 @@ a.site-link:hover{text-decoration:underline}
           <th>Durum</th>
           <th>Mail Tarihi</th>
           <th>Notlar</th>
+          <th></th>
         </tr>
       </thead>
       <tbody id="leadsBody"></tbody>
@@ -340,6 +343,7 @@ function renderTable(){
       </td>
       <td><input type="date" class="notes-input" style="width:120px" value="${l.sentDate||''}" onchange="updateField(${l.id},'sentDate',this.value)"></td>
       <td><input class="notes-input" placeholder="not..." value="${l.notes||''}" onchange="updateField(${l.id},'notes',this.value)"></td>
+      <td><button class="compose-btn" onclick="composeMail(${l.id})">✉ Yaz</button></td>
     </tr>`).join('');
   updateStats();
 }
@@ -374,6 +378,66 @@ function exportCSV(){
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');a.href=url;a.download='netflow-leads.csv';a.click();
   showToast('CSV indirildi');
+}
+
+function composeMail(id){
+  const l = leads.find(x=>x.id===id);
+  if(!l) return;
+
+  const isRu = ['Kazakistan','Özbekistan','Türkmenistan','Tacikistan','Kırgızistan','Moğolistan','Azerbaycan'].includes(l.country);
+
+  const subjects = {
+    en: {
+      'Petrol & Gaz': 'Flow & Level Instrumentation — Net Flow (Türkiye)',
+      'Maden': 'Slurry & Process Flow Meters — Net Flow (Türkiye)',
+      'Su': 'Electromagnetic Flow Meters for Water Networks — Net Flow',
+      'Kimya': 'Process Instrumentation for Chemical Plants — Net Flow (Türkiye)',
+      'Enerji': 'Flow & Level Instruments for Power Generation — Net Flow',
+    },
+    ru: {
+      'Petrol & Gaz': 'Расходомеры и уровнемеры для нефтегазовой отрасли — Net Flow (Турция)',
+      'Maden': 'Расходомеры для горнодобывающих предприятий — Net Flow (Турция)',
+      'Su': 'Электромагнитные расходомеры для водопроводных сетей — Net Flow',
+      'Kimya': 'КИПиА для химических предприятий — Net Flow (Турция)',
+      'Enerji': 'Расходомеры и уровнемеры для энергетики — Net Flow (Турция)',
+    }
+  };
+
+  const bodies = {
+    en: {
+      'Petrol & Gaz': `Dear Procurement / Instrumentation Team,\n\nMy name is Safvan, and I'm with Net Flow — a manufacturer based in Konya, Türkiye, producing electromagnetic flow meters, magnetic bypass level gauges, and process transmitters for the oil & gas industry.\n\nA few things that tend to be relevant for operations like yours:\n– Electromagnetic flow meters for produced water, crude transfer lines, and utility water\n– Magnetic bypass level gauges for separator vessels and storage tanks\n– Pressure and temperature transmitters for well-head and process skids\n\nOur instruments are TÜRKAK-accredited (AB-0354-K) and ISO/IEC 17025 certified.\n\nProduct overview: netflw.com/products.html\nElectromagnetic flow meters: netflw.com/electromagnetic-flow-meter.html\n\nBest regards,\nSafvan Uçucu\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+      'Maden': `Dear Procurement / Maintenance Team,\n\nI'm reaching out from Net Flow, a Turkish instrumentation manufacturer. We specialize in electromagnetic flow meters and level gauges for mining and mineral processing — particularly for slurry pipelines, flotation circuits, and process water systems.\n\nWhat we supply to mining operations:\n– Electromagnetic flow meters (DN15 to DN1200) for slurry and process water\n– Magnetic bypass level gauges for reagent and flotation tanks\n– Density-compatible versions for high-solids applications\n\nWe're TÜRKAK-accredited (AB-0354-K) and ISO/IEC 17025 certified.\n\nProduct details: netflw.com/electromagnetic-flow-meter.html\n\nKind regards,\nSafvan Uçucu\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+      'Su': `Dear Procurement / Technical Team,\n\nI'm writing from Net Flow, a manufacturer of electromagnetic flow meters based in Konya, Türkiye. Our instruments are used in municipal water distribution networks, wastewater treatment plants, and pumping stations.\n\nWhat we offer:\n– Full-bore electromagnetic flow meters (DN15 to DN1200)\n– Battery-powered versions for remote meter stations\n– IP68 protection, TÜRKAK (AB-0354-K), ISO/IEC 17025\n\nProduct overview: netflw.com/products.html\n\nBest regards,\nSafvan Uçucu\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+      'Kimya': `Dear Procurement / Instrumentation Team,\n\nI'm contacting you from Net Flow, a Turkish manufacturer of process instrumentation — electromagnetic flow meters, magnetic bypass level gauges, and pressure/temperature transmitters.\n\nFor chemical plants:\n– Electromagnetic flow meters with PTFE, rubber, or Hastelloy C liner for corrosive media\n– Magnetic bypass level gauges for ammonia, acid, and alkali storage tanks\n– Pressure transmitters rated up to 400 bar\n– TÜRKAK (AB-0354-K), ISO/IEC 17025\n\nnetflw.com/products.html\n\nRegards,\nSafvan Uçucu\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+      'Enerji': `Dear Procurement / Maintenance Team,\n\nI'm writing from Net Flow (Konya, Türkiye), a manufacturer of electromagnetic flow meters and level instruments used in power generation facilities.\n\nFor power plants:\n– Cooling water circuits (condenser inlet/outlet, cooling towers)\n– Demineralized water and boiler feed water systems\n– TÜRKAK AB-0354-K, ISO/IEC 17025\n\nnetflw.com/products.html\n\nBest regards,\nSafvan Uçucu\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+    },
+    ru: {
+      'Petrol & Gaz': `Здравствуйте,\n\nМеня зовут Сафван, я представляю компанию Net Flow — турецкого производителя электромагнитных расходомеров, магнитных байпасных уровнемеров и технологических трансмиттеров для нефтегазовой отрасли.\n\nЧто актуально для ваших объектов:\n– Электромагнитные расходомеры для пластовых вод и трубопроводов\n– Магнитные байпасные уровнемеры для сепараторов и резервуаров\n– Трансмиттеры давления и температуры\n\nАккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025.\n\nКаталог: netflw.com/products.html\nРасходомеры: netflw.com/electromagnetic-flow-meter.html\n\nС уважением,\nСафван Учучу\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+      'Maden': `Здравствуйте,\n\nОбращаюсь от компании Net Flow (г. Конья, Турция). Производим электромагнитные расходомеры для горнодобывающей промышленности — для пульпопроводов, флотационных схем и технологической воды.\n\nДля обогатительных фабрик:\n– Электромагнитные расходомеры DN15–DN1200 для пульпы\n– Магнитные байпасные уровнемеры для флотационных баков\n– Аккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025\n\nnetflw.com/electromagnetic-flow-meter.html\n\nС уважением,\nСафван Учучу\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+      'Su': `Здравствуйте,\n\nПишу от компании Net Flow (г. Конья, Турция) — производителя электромагнитных расходомеров для водоканалов и водопроводных сетей.\n\nДля водоканалов:\n– Полнопроходные расходомеры DN15–DN1200\n– Версии с автономным питанием для удалённых точек\n– IP68, TÜRKAK (AB-0354-K), ISO/IEC 17025\n\nnetflw.com/products.html\n\nС уважением,\nСафван Учучу\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+      'Kimya': `Здравствуйте,\n\nОбращаюсь от Net Flow — турецкого производителя КИПиА: электромагнитных расходомеров, уровнемеров, трансмиттеров давления и температуры.\n\nДля химических предприятий:\n– Расходомеры с футеровкой PTFE, резиной или Hastelloy C\n– Уровнемеры для резервуаров кислот, щелочей, аммиака\n– Аккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025\n\nnetflw.com/products.html\n\nС уважением,\nСафван Учучу\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+      'Enerji': `Здравствуйте,\n\nПишу от компании Net Flow (г. Конья, Турция) — производителя расходомеров и уровнемеров для объектов энергетики.\n\nДля электростанций:\n– Системы охлаждения, котельная питательная вода\n– Расходомеры для гидроэлектростанций\n– TÜRKAK AB-0354-K, ISO/IEC 17025\n\nnetflw.com/products.html\n\nС уважением,\nСафван Учучу\nNet Flow · VFA Elektronik\n+90 541 373 79 53 (WhatsApp / Telegram)\ninfo@netflw.com · netflw.com`,
+    }
+  };
+
+  const lang = isRu ? 'ru' : 'en';
+  const sector = l.sector || 'Petrol & Gaz';
+  const subject = (subjects[lang][sector] || subjects[lang]['Petrol & Gaz']);
+  const body = (bodies[lang][sector] || bodies[lang]['Petrol & Gaz']);
+
+  const to = l.email || '';
+  const gmailUrl = 'https://mail.google.com/mail/?view=cm'
+    + '&to=' + encodeURIComponent(to)
+    + '&su=' + encodeURIComponent(subject)
+    + '&body=' + encodeURIComponent(body);
+
+  window.open(gmailUrl, '_blank');
+
+  // Auto-mark as sent
+  updateField(l.id, 'status', 'sent');
+  updateField(l.id, 'sentDate', new Date().toISOString().slice(0,10));
+  renderTable();
+  showToast(l.company + ' — mail penceresi açıldı, durum "Gönderildi" yapıldı');
 }
 
 function showToast(msg){
