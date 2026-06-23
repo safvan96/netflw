@@ -69,6 +69,23 @@ a.site-link:hover{text-decoration:underline}
 .compose-btn:hover{background:#3b82f6;color:#fff}
 .toast{position:fixed;bottom:24px;right:24px;background:#1e3a5f;border:1px solid #3b82f6;color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;font-weight:600;z-index:9999;transform:translateY(60px);opacity:0;transition:.3s}
 .toast.show{transform:translateY(0);opacity:1}
+
+/* Mail Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{display:flex}
+.modal-box{background:#1a2e4a;border:1px solid #2a4a6b;border-radius:16px;width:100%;max-width:640px;max-height:85vh;display:flex;flex-direction:column}
+.modal-head{padding:16px 20px;border-bottom:1px solid #1e3a5f;display:flex;align-items:center;gap:12px}
+.modal-head h3{font-size:14px;font-weight:700;color:#fff;flex:1}
+.modal-close{background:none;border:none;color:#64748b;cursor:pointer;font-size:20px;line-height:1;padding:4px}
+.modal-close:hover{color:#fff}
+.modal-body{padding:20px;overflow-y:auto;flex:1}
+.mail-field{margin-bottom:14px}
+.mail-field label{display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:5px}
+.mail-field .val{background:#0d1b2e;border:1px solid #1e3a5f;border-radius:8px;padding:10px 12px;font-size:13px;color:#e2e8f0}
+.mail-field .val.body{white-space:pre-wrap;line-height:1.6;font-family:inherit}
+.modal-foot{padding:12px 20px;border-top:1px solid #1e3a5f;display:flex;gap:8px;justify-content:flex-end}
+.view-btn{padding:5px 10px;background:#162236;border:1px solid #2a4a6b;border-radius:7px;color:#94a3b8;font-size:12px;font-weight:600;cursor:pointer}
+.view-btn:hover{border-color:#3b82f6;color:#60a5fa}
 </style>
 </head>
 <body>
@@ -156,6 +173,38 @@ a.site-link:hover{text-decoration:underline}
 </div>
 
 <div class="toast" id="toast"></div>
+
+<!-- MAIL MODAL -->
+<div class="modal-overlay" id="mailModal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 id="modalCompany">Mail İçeriği</h3>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="mail-field">
+        <label>Gönderen</label>
+        <div class="val">info@netflw.com (Net Flow)</div>
+      </div>
+      <div class="mail-field">
+        <label>Alıcı</label>
+        <div class="val" id="modalTo"></div>
+      </div>
+      <div class="mail-field">
+        <label>Konu</label>
+        <div class="val" id="modalSubject"></div>
+      </div>
+      <div class="mail-field">
+        <label>İçerik</label>
+        <div class="val body" id="modalBody"></div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="view-btn" onclick="copyMailContent()">Kopyala</button>
+      <button class="view-btn" onclick="closeModal()">Kapat</button>
+    </div>
+  </div>
+</div>
 
 <script>
 const PW = 'netflow2026';
@@ -343,7 +392,10 @@ function renderTable(){
       </td>
       <td><input type="date" class="notes-input" style="width:120px" value="${l.sentDate||''}" onchange="updateField(${l.id},'sentDate',this.value)"></td>
       <td><input class="notes-input" placeholder="not..." value="${l.notes||''}" onchange="updateField(${l.id},'notes',this.value)"></td>
-      <td><button class="compose-btn" onclick="composeMail(${l.id})">✉ Yaz</button></td>
+      <td style="white-space:nowrap">
+        <button class="compose-btn" onclick="composeMail(${l.id})">✉ Yaz</button>
+        ${l.status==='sent'||l.status==='replied'||l.status==='interested'?`<button class="view-btn" style="margin-left:4px" onclick="previewMail(${l.id})">👁 Gör</button>`:''}
+      </td>
     </tr>`).join('');
   updateStats();
 }
@@ -438,6 +490,232 @@ function composeMail(id){
   updateField(l.id, 'sentDate', new Date().toISOString().slice(0,10));
   renderTable();
   showToast(l.company + ' — mail penceresi açıldı, durum "Gönderildi" yapıldı');
+}
+
+function getMailContent(l){
+  const isRu = ['Kazakistan','Özbekistan','Türkmenistan','Tacikistan','Kırgızistan','Moğolistan','Azerbaycan'].includes(l.country);
+  const lang = isRu ? 'ru' : 'en';
+  const sector = l.sector || 'Petrol & Gaz';
+
+  const subjects = {
+    en: {
+      'Petrol & Gaz': 'Flow & Level Instrumentation — Net Flow (Türkiye)',
+      'Maden': 'Slurry & Process Flow Meters — Net Flow (Türkiye)',
+      'Su': 'Electromagnetic Flow Meters for Water Networks — Net Flow',
+      'Kimya': 'Process Instrumentation for Chemical Plants — Net Flow (Türkiye)',
+      'Enerji': 'Flow & Level Instruments for Power Generation — Net Flow',
+    },
+    ru: {
+      'Petrol & Gaz': 'Расходомеры и уровнемеры для нефтегазовой отрасли — Net Flow (Турция)',
+      'Maden': 'Расходомеры для горнодобывающих предприятий — Net Flow (Турция)',
+      'Su': 'Электромагнитные расходомеры для водопроводных сетей — Net Flow',
+      'Kimya': 'КИПиА для химических предприятий — Net Flow (Турция)',
+      'Enerji': 'Расходомеры и уровнемеры для энергетики — Net Flow (Турция)',
+    }
+  };
+
+  const bodies = {
+    en: {
+      'Petrol & Gaz': `Dear Procurement / Instrumentation Team,
+
+My name is Safvan, and I'm with Net Flow — a manufacturer based in Konya, Türkiye, producing electromagnetic flow meters, magnetic bypass level gauges, and process transmitters for the oil & gas industry.
+
+What we offer:
+– Electromagnetic flow meters for produced water, crude transfer lines, and utility water
+– Magnetic bypass level gauges for separator vessels and storage tanks
+– Pressure and temperature transmitters for well-head and process skids
+
+TÜRKAK-accredited (AB-0354-K), ISO/IEC 17025 certified.
+
+Product overview: netflw.com/products.html
+
+Best regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+      'Maden': `Dear Procurement / Maintenance Team,
+
+I'm reaching out from Net Flow, a Turkish instrumentation manufacturer. We specialize in electromagnetic flow meters and level gauges for mining and mineral processing.
+
+What we supply:
+– Electromagnetic flow meters (DN15 to DN1200) for slurry and process water
+– Magnetic bypass level gauges for reagent and flotation tanks
+– Density-compatible versions for high-solids applications
+
+TÜRKAK-accredited (AB-0354-K), ISO/IEC 17025 certified.
+
+netflw.com/electromagnetic-flow-meter.html
+
+Kind regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+      'Su': `Dear Procurement / Technical Team,
+
+I'm writing from Net Flow, a manufacturer of electromagnetic flow meters based in Konya, Türkiye. Our instruments are used in municipal water distribution networks, wastewater treatment plants, and pumping stations.
+
+What we offer:
+– Full-bore electromagnetic flow meters (DN15 to DN1200)
+– Battery-powered versions for remote meter stations
+– IP68 protection, TÜRKAK (AB-0354-K), ISO/IEC 17025
+
+netflw.com/products.html
+
+Best regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+      'Kimya': `Dear Procurement / Instrumentation Team,
+
+I'm contacting you from Net Flow, a Turkish manufacturer of process instrumentation — electromagnetic flow meters, magnetic bypass level gauges, and pressure/temperature transmitters.
+
+For chemical plants:
+– Electromagnetic flow meters with PTFE, rubber, or Hastelloy C liner for corrosive media
+– Magnetic bypass level gauges for ammonia, acid, and alkali storage tanks
+– Pressure transmitters rated up to 400 bar
+
+TÜRKAK (AB-0354-K), ISO/IEC 17025.
+
+netflw.com/products.html
+
+Regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+      'Enerji': `Dear Procurement / Maintenance Team,
+
+I'm writing from Net Flow (Konya, Türkiye), a manufacturer of electromagnetic flow meters and level instruments used in power generation facilities.
+
+For power plants:
+– Cooling water circuits (condenser inlet/outlet, cooling towers)
+– Demineralized water and boiler feed water systems
+– TÜRKAK AB-0354-K, ISO/IEC 17025
+
+netflw.com/products.html
+
+Best regards,
+Safvan Uçucu
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+    },
+    ru: {
+      'Petrol & Gaz': `Здравствуйте,
+
+Меня зовут Сафван, я представляю компанию Net Flow — турецкого производителя электромагнитных расходомеров, магнитных байпасных уровнемеров и технологических трансмиттеров для нефтегазовой отрасли.
+
+Что мы предлагаем:
+– Электромагнитные расходомеры для пластовых вод и трубопроводов
+– Магнитные байпасные уровнемеры для сепараторов и резервуаров
+– Трансмиттеры давления и температуры
+
+Аккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025.
+
+Каталог: netflw.com/products.html
+Расходомеры: netflw.com/electromagnetic-flow-meter.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+      'Maden': `Здравствуйте,
+
+Обращаюсь от компании Net Flow (г. Конья, Турция). Производим электромагнитные расходомеры для горнодобывающей промышленности — для пульпопроводов, флотационных схем и технологической воды.
+
+Для обогатительных фабрик:
+– Электромагнитные расходомеры DN15–DN1200 для пульпы
+– Магнитные байпасные уровнемеры для флотационных баков
+– Аккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025
+
+netflw.com/electromagnetic-flow-meter.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+      'Su': `Здравствуйте,
+
+Пишу от компании Net Flow (г. Конья, Турция) — производителя электромагнитных расходомеров для водоканалов и водопроводных сетей.
+
+Для водоканалов:
+– Полнопроходные расходомеры DN15–DN1200
+– Версии с автономным питанием для удалённых точек
+– IP68, TÜRKAK (AB-0354-K), ISO/IEC 17025
+
+netflw.com/products.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+      'Kimya': `Здравствуйте,
+
+Обращаюсь от Net Flow — турецкого производителя КИПиА: электромагнитных расходомеров, уровнемеров, трансмиттеров давления и температуры.
+
+Для химических предприятий:
+– Расходомеры с футеровкой PTFE, резиной или Hastelloy C
+– Уровнемеры для резервуаров кислот, щелочей, аммиака
+– Аккредитация TÜRKAK (AB-0354-K), ISO/IEC 17025
+
+netflw.com/products.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+      'Enerji': `Здравствуйте,
+
+Пишу от компании Net Flow (г. Конья, Турция) — производителя расходомеров и уровнемеров для объектов энергетики.
+
+Для электростанций:
+– Системы охлаждения, котельная питательная вода
+– Расходомеры для гидроэлектростанций
+– TÜRKAK AB-0354-K, ISO/IEC 17025
+
+netflw.com/products.html
+
+С уважением,
+Сафван Учучу
+Net Flow · VFA Elektronik
++90 541 373 79 53 (WhatsApp / Telegram)
+info@netflw.com · netflw.com`,
+    }
+  };
+
+  return {
+    subject: subjects[lang][sector] || subjects[lang]['Petrol & Gaz'],
+    body: bodies[lang][sector] || bodies[lang]['Petrol & Gaz']
+  };
+}
+
+function previewMail(id){
+  const l = leads.find(x=>x.id===id);
+  if(!l) return;
+  const {subject, body} = getMailContent(l);
+  document.getElementById('modalCompany').textContent = l.company + ' — Mail İçeriği';
+  document.getElementById('modalTo').textContent = l.email || '(email yok)';
+  document.getElementById('modalSubject').textContent = subject;
+  document.getElementById('modalBody').textContent = body;
+  document.getElementById('mailModal').classList.add('open');
+}
+
+function closeModal(){
+  document.getElementById('mailModal').classList.remove('open');
+}
+
+function copyMailContent(){
+  const subj = document.getElementById('modalSubject').textContent;
+  const body = document.getElementById('modalBody').textContent;
+  navigator.clipboard.writeText('Konu: ' + subj + '\n\n' + body);
+  showToast('Kopyalandı');
 }
 
 function showToast(msg){
