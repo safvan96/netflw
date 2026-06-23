@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastSync": "2026-06-23T13:30:00Z",
-    "syncNote": "32 mail gönderildi · 18 firmada email eksik"
+    "lastSync": "2026-06-23T16:30:00Z",
+    "syncNote": "45 mail gönderildi · 5 firmada email bulunamadı"
   },
   "leads": [
     {
@@ -71,10 +71,10 @@
       "sector": "Petrol & Gaz",
       "website": "pnhz.kz",
       "contact": "pnhz.kz/en/kontakty/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": ""
+      "email": "secretary@pnhz.net",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Pavlodar rafineri sekreterlik"
     },
     {
       "id": 7,
@@ -119,10 +119,10 @@
       "sector": "Maden",
       "website": "erg.kz",
       "contact": "erg.kz/en/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Krom, demir, alüminyum."
+      "email": "CCOffice@erg.kz",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Krom, demir, alüminyum. Tel: +7 7172 61 23 50"
     },
     {
       "id": 11,
@@ -131,10 +131,10 @@
       "sector": "Su",
       "website": "vodokanal.almaty.kz",
       "contact": "vodokanal.almaty.kz/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Almatı şehir su idaresi."
+      "email": "almatysu@almatysu.kz",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Almatı şehir su idaresi. Tel: +7 771 852 9101"
     },
     {
       "id": 12,
@@ -275,10 +275,10 @@
       "sector": "Kimya",
       "website": "carbamide.socar.az",
       "contact": "carbamide.socar.az/en/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Karbamid gübre tesisi."
+      "email": "karbamid.zavodu@socar.az",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Karbamid gübre tesisi. Mob: +994 50 842 51 41 (WhatsApp olabilir)"
     },
     {
       "id": 24,
@@ -297,12 +297,12 @@
       "company": "Shurtan Gas Chemical Complex",
       "country": "Özbekistan",
       "sector": "Kimya",
-      "website": "shurtangaz.uz",
-      "contact": "shurtangaz.uz/en/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Gaz kimyası kompleksi."
+      "website": "sgcc.uz",
+      "contact": "sgcc.uz",
+      "email": "info@sgcc.uz",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Gaz kimyası kompleksi. Tel: +998 75 552 42 54"
     },
     {
       "id": 26,
@@ -357,12 +357,12 @@
       "company": "Fergana Oil Refinery",
       "country": "Özbekistan",
       "sector": "Petrol & Gaz",
-      "website": "ung.uz",
-      "contact": "ung.uz/en/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Uzbekneftegaz bünyesinde."
+      "website": "fnpz.uz",
+      "contact": "fnpz.uz/en/contact/",
+      "email": "info@fnpz.uz",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Fergana Rafineri. Tel: +998 94 555 83 84 (mob). Telegram: @fnpz_uz"
     },
     {
       "id": 31,
@@ -407,10 +407,10 @@
       "sector": "Petrol & Gaz",
       "website": "torc.gov.tm",
       "contact": "torc.gov.tm/en/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Orta Asya'nın en büyük rafinerilerinden."
+      "email": "tngizt@online.tm",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Turkmenbashi rafineri Foreign Economic Relations"
     },
     {
       "id": 35,
@@ -467,10 +467,10 @@
       "sector": "Kimya",
       "website": "vakhshazot.tj",
       "contact": "vakhshazot.tj/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Azot gübre tesisi."
+      "email": "tjazot@khatlon.com",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Azot gübre tesisi. Tel: +992 3222 2 35 84"
     },
     {
       "id": 40,
@@ -479,10 +479,10 @@
       "sector": "Maden",
       "website": "kumtor.kg",
       "contact": "kumtor.kg/en/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Orta Asya'nın en büyük altın madenlerinden."
+      "email": "Kumtor_localbuyer@kumtor.com",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Kumtor tedarik alım emaili"
     },
     {
       "id": 41,
@@ -501,12 +501,12 @@
       "company": "Bishkek Su (Vodokanal)",
       "country": "Kırgızistan",
       "sector": "Su",
-      "website": "vodokanal.kg",
-      "contact": "vodokanal.kg/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Bişkek şehir su idaresi."
+      "website": "bishkeksuukanal.kg",
+      "contact": "bishkeksuukanal.kg",
+      "email": "priemn@water.elcat.kg",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Bişkek şehir su idaresi. Tel: +996 312 56 16 55"
     },
     {
       "id": 43,
@@ -534,27 +534,27 @@
     },
     {
       "id": 45,
-      "company": "Tavan Tolgoi Coal (TTT)",
+      "company": "Tavan Tolgoi Coal (ETT)",
       "country": "Moğolistan",
       "sector": "Maden",
-      "website": "ttolgoi.mn",
-      "contact": "ttolgoi.mn/en/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Dünya'nın en büyük kömür yataklarından."
+      "website": "ett.mn",
+      "contact": "ett.mn/contact/",
+      "email": "info@erdenestt.mn",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Erdenes Tavan Tolgoi. Tel: +976 7505 5555"
     },
     {
       "id": 46,
       "company": "UB Water & Sewerage Authority",
       "country": "Moğolistan",
       "sector": "Su",
-      "website": "us.ub.gov.mn",
-      "contact": "us.ub.gov.mn/contacts/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Ulaanbaatar şehir su idaresi."
+      "website": "usug.ub.gov.mn",
+      "contact": "usug.ub.gov.mn",
+      "email": "usug1959@gmail.com",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Ulaanbaatar şehir su idaresi. Gmail adresi kullanıyorlar."
     },
     {
       "id": 47,
@@ -585,12 +585,12 @@
       "company": "KRG Su Genel Müdürlüğü",
       "country": "Irak",
       "sector": "Su",
-      "website": "services.gov.krd",
-      "contact": "gov.krd/momt-en/contact/",
-      "email": "",
-      "status": "pending",
-      "sentDate": "",
-      "notes": "Erbil. +964 750 616 1569"
+      "website": "gov.krd",
+      "contact": "gov.krd/moawr-en/contact/",
+      "email": "info@moawr.gov.krd",
+      "status": "sent",
+      "sentDate": "2026-06-23",
+      "notes": "Kürdistan Bölgesi Su Bakanlığı. WhatsApp: +964 750 616 1569"
     },
     {
       "id": 50,
