@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Net Flow · CRM</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d1b2e;color:#e2e8f0;min-height:100vh}
+
+/* Login */
+#loginScreen{display:flex;align-items:center;justify-content:center;min-height:100vh}
+.login-box{background:#1a2e4a;border:1px solid #2a4a6b;border-radius:16px;padding:40px;width:340px;text-align:center}
+.login-box .logo{font-size:22px;font-weight:800;color:#fff;margin-bottom:6px;letter-spacing:-.5px}
+.login-box small{color:#64748b;font-size:13px;display:block;margin-bottom:28px}
+.login-box input{width:100%;padding:12px 14px;background:#0d1b2e;border:1.5px solid #2a4a6b;border-radius:9px;color:#fff;font-size:14px;margin-bottom:14px;outline:none}
+.login-box input:focus{border-color:#3b82f6}
+.login-box button{width:100%;padding:12px;background:#3b82f6;border:none;border-radius:9px;color:#fff;font-weight:700;font-size:14px;cursor:pointer}
+.login-box button:hover{background:#2563eb}
+.login-err{color:#f87171;font-size:13px;margin-top:10px;display:none}
+
+/* App */
+#app{display:none}
+.topbar{background:#1a2e4a;border-bottom:1px solid #1e3a5f;padding:14px 24px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:100}
+.topbar .brand{font-weight:800;font-size:16px;color:#fff}
+.topbar .brand span{color:#3b82f6}
+.topbar .stats{display:flex;gap:20px;margin-left:auto;align-items:center}
+.stat{text-align:center}
+.stat .n{font-size:20px;font-weight:700;color:#3b82f6}
+.stat .l{font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em}
+.tbtn{padding:8px 14px;border-radius:8px;border:1px solid #2a4a6b;background:rgba(255,255,255,.04);color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;transition:.13s}
+.tbtn:hover{background:rgba(255,255,255,.1)}
+.tbtn.primary{background:#3b82f6;border-color:#3b82f6;color:#fff}
+.tbtn.primary:hover{background:#2563eb}
+
+.filters{padding:14px 24px;display:flex;gap:10px;flex-wrap:wrap;border-bottom:1px solid #1e3a5f;background:#162236}
+.fsearch{flex:1;min-width:200px;position:relative}
+.fsearch input{width:100%;padding:9px 12px 9px 34px;background:#0d1b2e;border:1.5px solid #1e3a5f;border-radius:9px;color:#e2e8f0;font-size:13.5px;outline:none}
+.fsearch input:focus{border-color:#3b82f6}
+.fsearch svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:#64748b}
+select.fsel{padding:9px 12px;background:#0d1b2e;border:1.5px solid #1e3a5f;border-radius:9px;color:#e2e8f0;font-size:13px;outline:none;cursor:pointer}
+select.fsel:focus{border-color:#3b82f6}
+
+.table-wrap{padding:16px 24px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;padding:10px 12px;color:#64748b;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid #1e3a5f;white-space:nowrap}
+td{padding:11px 12px;border-bottom:1px solid #1a2e4a;vertical-align:middle}
+tr:hover td{background:#1a2e4a}
+.company-name{font-weight:600;color:#fff}
+.country-badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;background:#1e3a5f;color:#93c5fd;font-weight:600}
+.sector-badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;font-weight:600}
+.s-oil{background:#422006;color:#fb923c}
+.s-water{background:#0c2340;color:#60a5fa}
+.s-mining{background:#2e1065;color:#c084fc}
+.s-chemical{background:#052e16;color:#4ade80}
+.s-energy{background:#450a0a;color:#f87171}
+a.site-link{color:#60a5fa;text-decoration:none;font-size:12.5px}
+a.site-link:hover{text-decoration:underline}
+.email-cell{font-family:monospace;font-size:12px;color:#94a3b8}
+.email-cell a{color:#60a5fa}
+.status-sel{padding:5px 8px;border-radius:7px;border:1px solid #2a4a6b;background:#0d1b2e;color:#e2e8f0;font-size:12px;cursor:pointer;outline:none}
+.notes-input{padding:5px 8px;border-radius:7px;border:1px solid #2a4a6b;background:#0d1b2e;color:#e2e8f0;font-size:12px;width:160px;outline:none}
+.notes-input:focus{border-color:#3b82f6}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:5px}
+.d-pending{background:#64748b}.d-sent{background:#3b82f6}.d-replied{background:#f59e0b}.d-interested{background:#22c55e}.d-notint{background:#ef4444}
+
+.empty{text-align:center;padding:60px;color:#475569}
+.toast{position:fixed;bottom:24px;right:24px;background:#1e3a5f;border:1px solid #3b82f6;color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;font-weight:600;z-index:9999;transform:translateY(60px);opacity:0;transition:.3s}
+.toast.show{transform:translateY(0);opacity:1}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginScreen">
+  <div class="login-box">
+    <div class="logo">Net Flow <span>CRM</span></div>
+    <small>Lead Takip Sistemi</small>
+    <input type="password" id="pwInput" placeholder="Şifre" autocomplete="current-password">
+    <button onclick="doLogin()">Giriş</button>
+    <div class="login-err" id="loginErr">Yanlış şifre</div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app">
+  <div class="topbar">
+    <div class="brand">Net Flow <span>CRM</span></div>
+    <div class="stats">
+      <div class="stat"><div class="n" id="statTotal">0</div><div class="l">Toplam</div></div>
+      <div class="stat"><div class="n" id="statSent">0</div><div class="l">Mail Atıldı</div></div>
+      <div class="stat"><div class="n" id="statReplied">0</div><div class="l">Yanıt Geldi</div></div>
+      <div class="stat"><div class="n" id="statInterested">0</div><div class="l">İlgilendi</div></div>
+    </div>
+    <span id="syncBadge" style="font-size:11px;color:#64748b;white-space:nowrap"></span>
+    <button class="tbtn" onclick="reloadFromServer()" title="Sunucudan yenile">↻ Yenile</button>
+    <button class="tbtn" onclick="exportCSV()">CSV İndir</button>
+    <button class="tbtn primary" onclick="addLead()">+ Lead Ekle</button>
+  </div>
+
+  <div class="filters">
+    <div class="fsearch">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input id="searchInput" placeholder="Firma, ülke, email ara..." oninput="renderTable()">
+    </div>
+    <select class="fsel" id="filterCountry" onchange="renderTable()">
+      <option value="">Tüm Ülkeler</option>
+      <option>Kazakistan</option>
+      <option>Azerbaycan</option>
+      <option>Özbekistan</option>
+      <option>Türkmenistan</option>
+      <option>Tacikistan</option>
+      <option>Kırgızistan</option>
+      <option>Moğolistan</option>
+      <option>Irak</option>
+    </select>
+    <select class="fsel" id="filterSector" onchange="renderTable()">
+      <option value="">Tüm Sektörler</option>
+      <option>Petrol &amp; Gaz</option>
+      <option>Maden</option>
+      <option>Su</option>
+      <option>Kimya</option>
+      <option>Enerji</option>
+    </select>
+    <select class="fsel" id="filterStatus" onchange="renderTable()">
+      <option value="">Tüm Durumlar</option>
+      <option value="pending">Bekliyor</option>
+      <option value="sent">Mail Atıldı</option>
+      <option value="replied">Yanıt Geldi</option>
+      <option value="interested">İlgilendi</option>
+      <option value="notint">İlgilenmedi</option>
+    </select>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Firma</th>
+          <th>Ülke</th>
+          <th>Sektör</th>
+          <th>Website</th>
+          <th>Email / Contact</th>
+          <th>Durum</th>
+          <th>Mail Tarihi</th>
+          <th>Notlar</th>
+        </tr>
+      </thead>
+      <tbody id="leadsBody"></tbody>
+    </table>
+    <div class="empty" id="emptyState" style="display:none">Sonuç bulunamadı</div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const PW = 'netflow2026';
+const KEY = 'nf_crm_v1';
+
+// --- LEADS DATA ---
+const DEFAULT_LEADS = [
+  // KAZAKISTAN
+  {id:1,company:'KazMunayGas',country:'Kazakistan',sector:'Petrol & Gaz',website:'kmg.kz',contact:'kmg.kz/en/contacts/',email:'Astana@kmg.kz',notes:'',status:'pending',sentDate:''},
+  {id:2,company:'Tengizchevroil (TCO)',country:'Kazakistan',sector:'Petrol & Gaz',website:'tengizchevroil.com',contact:'tengizchevroil.com/contact-us',email:'',notes:'Chevron-KMG. Büyük saha.',status:'pending',sentDate:''},
+  {id:3,company:'North Caspian Operating (NCOC)',country:'Kazakistan',sector:'Petrol & Gaz',website:'ncoc.kz',contact:'ncoc.kz/en/contacts/',email:'',notes:'Kashagan sahası. Shell, Total, Eni.',status:'pending',sentDate:''},
+  {id:4,company:'Karachaganak Petroleum (KPO)',country:'Kazakistan',sector:'Petrol & Gaz',website:'kpo.kz',contact:'kpo.kz/en/contacts/',email:'',notes:'',status:'pending',sentDate:''},
+  {id:5,company:'Atyrau Oil Refinery (ANPZ)',country:'Kazakistan',sector:'Petrol & Gaz',website:'anpz.kz',contact:'anpz.kz/en/contacts/',email:'',notes:'',status:'pending',sentDate:''},
+  {id:6,company:'Pavlodar Oil Refinery (PNHZ)',country:'Kazakistan',sector:'Petrol & Gaz',website:'pnhz.kz',contact:'pnhz.kz/en/kontakty/',email:'',notes:'',status:'pending',sentDate:''},
+  {id:7,company:'ArcelorMittal Temirtau',country:'Kazakistan',sector:'Maden',website:'arcelormittal.kz',contact:'arcelormittal.kz/en/contacts/',email:'',notes:'Entegre çelik tesisi.',status:'pending',sentDate:''},
+  {id:8,company:'Kazakhmys (Kaz Copper)',country:'Kazakistan',sector:'Maden',website:'kazakhmys.com',contact:'kazakhmys.com/en/contacts/',email:'',notes:'Büyük bakır madeni.',status:'pending',sentDate:''},
+  {id:9,company:'Kazatomprom',country:'Kazakistan',sector:'Maden',website:'kazatomprom.kz',contact:'kazatomprom.kz/en/contacts/',email:'',notes:'Dünya 1. uranyum üreticisi.',status:'pending',sentDate:''},
+  {id:10,company:'ERG (Eurasian Resources)',country:'Kazakistan',sector:'Maden',website:'erg.kz',contact:'erg.kz/en/contacts/',email:'',notes:'Krom, demir, alüminyum.',status:'pending',sentDate:''},
+  {id:11,company:'Almaty Su (Vodokanal)',country:'Kazakistan',sector:'Su',website:'vodokanal.almaty.kz',contact:'vodokanal.almaty.kz/contacts/',email:'',notes:'Almatı şehir su idaresi.',status:'pending',sentDate:''},
+  {id:12,company:'Astana Su (Vodokanal)',country:'Kazakistan',sector:'Su',website:'vodokanal.astana.kz',contact:'vodokanal.astana.kz/contacts/',email:'',notes:'Başkent su idaresi.',status:'pending',sentDate:''},
+  {id:13,company:'KEGOC (Enerji İletim)',country:'Kazakistan',sector:'Enerji',website:'kegoc.kz',contact:'kegoc.kz/en/contacts/',email:'',notes:'Ulusal elektrik iletim şirketi.',status:'pending',sentDate:''},
+  {id:14,company:'KazAzot',country:'Kazakistan',sector:'Kimya',website:'kazazot.kz',contact:'kazazot.kz/contacts/',email:'',notes:'Azot gübre tesisi.',status:'pending',sentDate:''},
+  // AZERBAYCAN
+  {id:15,company:'SOCAR',country:'Azerbaycan',sector:'Petrol & Gaz',website:'socar.az',contact:'socar.az/socar/az/company/contact-us',email:'',notes:'Azerbaycan devlet petrol şirketi.',status:'pending',sentDate:''},
+  {id:16,company:'BP Azerbaijan',country:'Azerbaycan',sector:'Petrol & Gaz',website:'bp.com/en_az',contact:'bp.com/en_az/caspian/contacts.html',email:'',notes:'ACG sahası operatörü.',status:'pending',sentDate:''},
+  {id:17,company:'Azersu',country:'Azerbaycan',sector:'Su',website:'azersu.az',contact:'azersu.az/en/contact',email:'',notes:'Ulusal su ve kanalizasyon idaresi.',status:'pending',sentDate:''},
+  {id:18,company:'Azərenerji',country:'Azerbaycan',sector:'Enerji',website:'azerenerji.gov.az',contact:'azerenerji.gov.az/en/contact/',email:'',notes:'Ulusal enerji şirketi.',status:'pending',sentDate:''},
+  {id:19,company:'SOCAR Polymer',country:'Azerbaycan',sector:'Kimya',website:'socarpolymer.az',contact:'socarpolymer.az/en/contacts',email:'',notes:'PP ve PE üretimi.',status:'pending',sentDate:''},
+  {id:20,company:'Southern Gas Corridor (SGC)',country:'Azerbaycan',sector:'Petrol & Gaz',website:'sgc.az',contact:'sgc.az/en/contact/',email:'',notes:'TANAP-TAP boru hattı.',status:'pending',sentDate:''},
+  {id:21,company:'Baku Steel Company',country:'Azerbaycan',sector:'Maden',website:'bakusteel.com',contact:'bakusteel.com/en/contacts/',email:'',notes:'Çelik üretimi.',status:'pending',sentDate:''},
+  {id:22,company:'Holcim Azerbaijan',country:'Azerbaycan',sector:'Maden',website:'holcim.az',contact:'holcim.az/en/contact-us',email:'',notes:'Garadagh çimento fabrikası.',status:'pending',sentDate:''},
+  {id:23,company:'SOCAR Carbamide',country:'Azerbaycan',sector:'Kimya',website:'carbamide.socar.az',contact:'carbamide.socar.az/en/contacts/',email:'',notes:'Karbamid gübre tesisi.',status:'pending',sentDate:''},
+  // OZBEKİSTAN
+  {id:24,company:'Uzbekneftegaz',country:'Özbekistan',sector:'Petrol & Gaz',website:'ung.uz',contact:'ung.uz/en/contacts/',email:'',notes:'Devlet petrol-gaz şirketi.',status:'pending',sentDate:''},
+  {id:25,company:'Shurtan Gas Chemical Complex',country:'Özbekistan',sector:'Kimya',website:'shurtangaz.uz',contact:'shurtangaz.uz/en/contacts/',email:'',notes:'Gaz kimyası kompleksi.',status:'pending',sentDate:''},
+  {id:26,company:'Almalyk Mining (AMMC)',country:'Özbekistan',sector:'Maden',website:'agmk.uz',contact:'agmk.uz/en/contacts/',email:'',notes:'Bakır, altın, çinko madeni.',status:'pending',sentDate:''},
+  {id:27,company:'Navoi Mining (NMMC)',country:'Özbekistan',sector:'Maden',website:'ngmk.uz',contact:'ngmk.uz/en/contacts/',email:'',notes:'Dünyanın en büyük altın madenlerinden.',status:'pending',sentDate:''},
+  {id:28,company:'Navoiyazot',country:'Özbekistan',sector:'Kimya',website:'navoiyazot.uz',contact:'navoiyazot.uz/en/contacts/',email:'',notes:'Azot gübre tesisi.',status:'pending',sentDate:''},
+  {id:29,company:'Tashkent Su (Suv Taminoti)',country:'Özbekistan',sector:'Su',website:'suv-taminot.uz',contact:'suv-taminot.uz/contacts/',email:'',notes:'Taşkent şehir su idaresi.',status:'pending',sentDate:''},
+  {id:30,company:'Fergana Oil Refinery',country:'Özbekistan',sector:'Petrol & Gaz',website:'ung.uz',contact:'ung.uz/en/contacts/',email:'',notes:'Uzbekneftegaz bünyesinde.',status:'pending',sentDate:''},
+  {id:31,company:'Uzbekenergo',country:'Özbekistan',sector:'Enerji',website:'ene.uz',contact:'ene.uz/en/contacts/',email:'',notes:'Ulusal enerji şirketi.',status:'pending',sentDate:''},
+  // TÜRKMENİSTAN
+  {id:32,company:'Turkmengaz',country:'Türkmenistan',sector:'Petrol & Gaz',website:'turkmengaz.gov.tm',contact:'turkmengaz.gov.tm/en/contacts/',email:'',notes:'Dünyanın 4. büyük gaz rezervi.',status:'pending',sentDate:''},
+  {id:33,company:'Turkmennebit',country:'Türkmenistan',sector:'Petrol & Gaz',website:'turkmennebit.gov.tm',contact:'turkmennebit.gov.tm/en/contacts/',email:'',notes:'Devlet petrol şirketi.',status:'pending',sentDate:''},
+  {id:34,company:'Turkmenbashi Refinery (TORC)',country:'Türkmenistan',sector:'Petrol & Gaz',website:'torc.gov.tm',contact:'torc.gov.tm/en/contacts/',email:'',notes:'Orta Asya\'nın en büyük rafinerilerinden.',status:'pending',sentDate:''},
+  {id:35,company:'Mary Nitrogen Plant (Markazot)',country:'Türkmenistan',sector:'Kimya',website:'markazot.gov.tm',contact:'markazot.gov.tm/en/contacts/',email:'',notes:'Azot gübre tesisi.',status:'pending',sentDate:''},
+  {id:36,company:'Dragon Oil',country:'Türkmenistan',sector:'Petrol & Gaz',website:'dragonoil.com',contact:'dragonoil.com/contact/',email:'',notes:'Hazar offshore petrol.',status:'pending',sentDate:''},
+  // TACİKİSTAN
+  {id:37,company:'TALCO (Tacik Alüminyum)',country:'Tacikistan',sector:'Maden',website:'talco.com.tj',contact:'talco.com.tj/en/contacts/',email:'',notes:'BDT\'nin en büyük alüminyum eritme tesisi.',status:'pending',sentDate:''},
+  {id:38,company:'Barki Tojik (Enerji)',country:'Tacikistan',sector:'Enerji',website:'barqitojik.tj',contact:'barqitojik.tj/en/contacts/',email:'',notes:'Ulusal enerji şirketi. Büyük hidroelektrik.',status:'pending',sentDate:''},
+  {id:39,company:'Vakhsh Nitrogen Plant',country:'Tacikistan',sector:'Kimya',website:'vakhshazot.tj',contact:'vakhshazot.tj/contacts/',email:'',notes:'Azot gübre tesisi.',status:'pending',sentDate:''},
+  // KIRGIZİSTAN
+  {id:40,company:'Kumtor Gold Mine (Centerra)',country:'Kırgızistan',sector:'Maden',website:'kumtor.kg',contact:'kumtor.kg/en/contacts/',email:'',notes:'Orta Asya\'nın en büyük altın madenlerinden.',status:'pending',sentDate:''},
+  {id:41,company:'Kyrgyzaltyn',country:'Kırgızistan',sector:'Maden',website:'kyrgyzaltyn.kg',contact:'kyrgyzaltyn.kg/en/contacts/',email:'',notes:'Devlet altın şirketi.',status:'pending',sentDate:''},
+  {id:42,company:'Bishkek Su (Vodokanal)',country:'Kırgızistan',sector:'Su',website:'vodokanal.kg',contact:'vodokanal.kg/contacts/',email:'',notes:'Bişkek şehir su idaresi.',status:'pending',sentDate:''},
+  // MOĞOLİSTAN
+  {id:43,company:'Oyu Tolgoi (Rio Tinto)',country:'Moğolistan',sector:'Maden',website:'ot.mn',contact:'ot.mn/en/contact/',email:'',notes:'Dünyanın en büyük bakır-altın madenlerinden.',status:'pending',sentDate:''},
+  {id:44,company:'Erdenet Mining Corporation',country:'Moğolistan',sector:'Maden',website:'erdenetmc.mn',contact:'erdenetmc.mn/en/contacts/',email:'',notes:'Büyük bakır madeni. Moğolistan-Rusya ortak.',status:'pending',sentDate:''},
+  {id:45,company:'Tavan Tolgoi Coal (TTT)',country:'Moğolistan',sector:'Maden',website:'ttolgoi.mn',contact:'ttolgoi.mn/en/contacts/',email:'',notes:'Dünya\'nın en büyük kömür yataklarından.',status:'pending',sentDate:''},
+  {id:46,company:'UB Water & Sewerage Authority',country:'Moğolistan',sector:'Su',website:'us.ub.gov.mn',contact:'us.ub.gov.mn/contacts/',email:'',notes:'Ulaanbaatar şehir su idaresi.',status:'pending',sentDate:''},
+  // IRAK
+  {id:47,company:'Basrah Gas Company (BGC)',country:'Irak',sector:'Petrol & Gaz',website:'basrahgas.com',contact:'basrahgas.com/doing-business-with-bgc/',email:'BGC-vendormanagement@basrahgas.com',notes:'Shell-Irak ortaklığı. Tedarikçi kayıt açık. EN ÖNCELİKLİ.',status:'pending',sentDate:''},
+  {id:48,company:'Basra Oil Company (BOC)',country:'Irak',sector:'Petrol & Gaz',website:'boc.oil.gov.iq',contact:'boc.oil.gov.iq',email:'',notes:'Eski South Oil Company.',status:'pending',sentDate:''},
+  {id:49,company:'KRG Su Genel Müdürlüğü',country:'Irak',sector:'Su',website:'services.gov.krd',contact:'gov.krd/momt-en/contact/',email:'',notes:'Erbil. +964 750 616 1569',status:'pending',sentDate:''},
+  {id:50,company:'Lafarge Iraq',country:'Irak',sector:'Maden',website:'lafarge-iraq.com',contact:'lafarge-iraq.com/en/ContactUs',email:'iq.recruitment@lafarge.com',notes:'Bazian, Tasluja, Karbala çimento fabrikaları.',status:'pending',sentDate:''},
+];
+
+// --- STATE ---
+let leads = [];
+let nextId = 100;
+
+async function loadData(){
+  // 1. Fetch server data (crm-data.json — updated by Gmail sync)
+  let serverLeads = null;
+  let serverMeta = null;
+  try{
+    const resp = await fetch('/crm-data.json?_='+Date.now());
+    if(resp.ok){ const d=await resp.json(); serverLeads=d.leads; serverMeta=d.meta; }
+  }catch(e){}
+
+  const base = serverLeads || DEFAULT_LEADS;
+
+  // 2. Load local overrides (user's manual changes)
+  let localMap = {};
+  try{
+    const raw = localStorage.getItem(KEY);
+    if(raw){
+      const d = JSON.parse(raw);
+      (d.leads||[]).forEach(l=>{ localMap[l.id]=l; });
+      nextId = d.nextId || 100;
+    }
+  }catch(e){}
+
+  // 3. Merge: server is base, local overrides status/sentDate/notes/email per lead
+  leads = base.map(l=>{
+    const ov = localMap[l.id];
+    if(ov) return {...l, status:ov.status||l.status, sentDate:ov.sentDate||l.sentDate, notes:ov.notes||l.notes, email:ov.email||l.email};
+    return {...l};
+  });
+
+  // 4. Add any leads manually added locally (id >= 100)
+  Object.values(localMap).filter(l=>l.id>=100).forEach(l=>{
+    if(!leads.find(x=>x.id===l.id)) leads.push(l);
+  });
+
+  // 5. Show last Gmail sync time
+  if(serverMeta && serverMeta.lastSync){
+    const d = new Date(serverMeta.lastSync);
+    const el = document.getElementById('syncBadge');
+    if(el) el.textContent = 'Gmail sync: '+d.toLocaleDateString('tr-TR')+' '+d.toTimeString().slice(0,5) + (serverMeta.syncNote?' · '+serverMeta.syncNote:'');
+  }
+
+  renderTable();
+}
+
+async function reloadFromServer(){
+  // Clear local overrides and reload fresh from server
+  localStorage.removeItem(KEY);
+  leads=[]; nextId=100;
+  document.getElementById('syncBadge').textContent='Yükleniyor...';
+  await loadData();
+  showToast('Sunucudan yüklendi');
+}
+
+function save(){
+  localStorage.setItem(KEY,JSON.stringify({leads,nextId}));
+  updateStats();
+}
+
+// --- LOGIN ---
+function doLogin(){
+  const v = document.getElementById('pwInput').value;
+  if(v===PW){ document.getElementById('loginScreen').style.display='none'; document.getElementById('app').style.display='block'; loadData(); renderTable(); }
+  else{ document.getElementById('loginErr').style.display='block'; }
+}
+document.getElementById('pwInput').addEventListener('keydown',e=>{ if(e.key==='Enter') doLogin(); });
+
+// --- RENDER ---
+function getSectorClass(s){
+  if(s==='Petrol & Gaz') return 's-oil';
+  if(s==='Maden') return 's-mining';
+  if(s==='Su') return 's-water';
+  if(s==='Kimya') return 's-chemical';
+  if(s==='Enerji') return 's-energy';
+  return 's-water';
+}
+function getStatusLabel(s){
+  const map={pending:'⏳ Bekliyor',sent:'📧 Mail Atıldı',replied:'💬 Yanıt Geldi',interested:'✅ İlgilendi',notint:'❌ İlgilenmedi'};
+  return map[s]||s;
+}
+function getDotClass(s){
+  return 'd-'+s;
+}
+
+function renderTable(){
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const fc = document.getElementById('filterCountry').value;
+  const fs = document.getElementById('filterSector').value;
+  const fst = document.getElementById('filterStatus').value;
+  const filtered = leads.filter(l=>{
+    if(q && !`${l.company} ${l.country} ${l.email} ${l.notes}`.toLowerCase().includes(q)) return false;
+    if(fc && l.country!==fc) return false;
+    if(fs && l.sector!==fs) return false;
+    if(fst && l.status!==fst) return false;
+    return true;
+  });
+  const tbody = document.getElementById('leadsBody');
+  if(!filtered.length){ tbody.innerHTML=''; document.getElementById('emptyState').style.display='block'; return; }
+  document.getElementById('emptyState').style.display='none';
+  tbody.innerHTML = filtered.map(l=>`
+    <tr>
+      <td><div class="company-name">${l.company}</div></td>
+      <td><span class="country-badge">${l.country}</span></td>
+      <td><span class="sector-badge ${getSectorClass(l.sector)}">${l.sector}</span></td>
+      <td><a class="site-link" href="https://${l.website}" target="_blank">${l.website}</a><br><a class="site-link" href="https://${l.contact}" target="_blank" style="opacity:.6;font-size:11px">Contact →</a></td>
+      <td class="email-cell">${l.email?`<a href="mailto:${l.email}">${l.email}</a>`:'<span style="opacity:.35">—</span>'}</td>
+      <td>
+        <select class="status-sel" onchange="updateField(${l.id},'status',this.value)">
+          <option value="pending" ${l.status==='pending'?'selected':''}>⏳ Bekliyor</option>
+          <option value="sent" ${l.status==='sent'?'selected':''}>📧 Mail Atıldı</option>
+          <option value="replied" ${l.status==='replied'?'selected':''}>💬 Yanıt Geldi</option>
+          <option value="interested" ${l.status==='interested'?'selected':''}>✅ İlgilendi</option>
+          <option value="notint" ${l.status==='notint'?'selected':''}>❌ İlgilenmedi</option>
+        </select>
+      </td>
+      <td><input type="date" class="notes-input" style="width:120px" value="${l.sentDate||''}" onchange="updateField(${l.id},'sentDate',this.value)"></td>
+      <td><input class="notes-input" placeholder="not..." value="${l.notes||''}" onchange="updateField(${l.id},'notes',this.value)"></td>
+    </tr>`).join('');
+  updateStats();
+}
+
+function updateField(id, field, val){
+  const l = leads.find(x=>x.id===id);
+  if(l){ l[field]=val; save(); updateStats(); }
+}
+
+function updateStats(){
+  document.getElementById('statTotal').textContent=leads.length;
+  document.getElementById('statSent').textContent=leads.filter(l=>['sent','replied','interested','notint'].includes(l.status)).length;
+  document.getElementById('statReplied').textContent=leads.filter(l=>['replied','interested'].includes(l.status)).length;
+  document.getElementById('statInterested').textContent=leads.filter(l=>l.status==='interested').length;
+}
+
+function addLead(){
+  const company=prompt('Firma adı:'); if(!company) return;
+  const country=prompt('Ülke:'); if(!country) return;
+  const sector=prompt('Sektör (Petrol & Gaz / Maden / Su / Kimya / Enerji):');
+  const website=prompt('Website (domain):') || '';
+  const email=prompt('Email:') || '';
+  leads.push({id:nextId++,company,country,sector:sector||'',website,contact:'',email,notes:'',status:'pending',sentDate:''});
+  save(); renderTable(); showToast('Lead eklendi');
+}
+
+function exportCSV(){
+  const header='Firma,Ülke,Sektör,Website,Email,Durum,Mail Tarihi,Notlar';
+  const rows=leads.map(l=>[l.company,l.country,l.sector,l.website,l.email,l.status,l.sentDate,l.notes].map(v=>'"'+(v||'').replace(/"/g,'""')+'"').join(','));
+  const csv=header+'\n'+rows.join('\n');
+  const blob=new Blob([csv],{type:'text/csv'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;a.download='netflow-leads.csv';a.click();
+  showToast('CSV indirildi');
+}
+
+function showToast(msg){
+  const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2500);
+}
+</script>
+</body>
+</html>
