@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Net Flow · WhatsApp Outreach</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d1b2e;color:#e2e8f0;min-height:100vh}
+#loginScreen{display:flex;align-items:center;justify-content:center;min-height:100vh}
+.login-box{background:#1a2e4a;border:1px solid #2a4a6b;border-radius:16px;padding:40px;width:340px;text-align:center}
+.login-box .logo{font-size:22px;font-weight:800;color:#fff;margin-bottom:6px}
+.login-box small{color:#64748b;font-size:13px;display:block;margin-bottom:28px}
+.login-box input{width:100%;padding:12px 14px;background:#0d1b2e;border:1.5px solid #2a4a6b;border-radius:9px;color:#fff;font-size:14px;margin-bottom:14px;outline:none}
+.login-box button{width:100%;padding:12px;background:#25D366;border:none;border-radius:9px;color:#fff;font-weight:700;font-size:14px;cursor:pointer}
+.login-err{color:#f87171;font-size:13px;margin-top:10px;display:none}
+#app{display:none}
+.topbar{background:#1a2e4a;border-bottom:1px solid #1e3a5f;padding:14px 24px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:100}
+.topbar .brand{font-weight:800;font-size:16px;color:#fff}
+.topbar .brand span{color:#25D366}
+.topbar small{color:#64748b;font-size:12px;margin-left:auto}
+.content{max-width:900px;margin:0 auto;padding:24px}
+.info-box{background:#0b2615;border:1px solid #166534;border-radius:12px;padding:14px 18px;margin-bottom:24px;font-size:13px;color:#4ade80;line-height:1.6}
+.card{background:#1a2e4a;border:1px solid #1e3a5f;border-radius:14px;padding:20px;margin-bottom:16px}
+.card-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.card-num{font-size:12px;font-weight:700;color:#64748b;min-width:24px;padding-top:2px}
+.card-info{flex:1}
+.company{font-size:16px;font-weight:700;color:#fff;margin-bottom:4px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.badge{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:600}
+.b-country{background:#1e3a5f;color:#93c5fd}
+.b-sector{background:#1e1040;color:#c084fc}
+.b-mobile{background:#0b2615;color:#4ade80}
+.b-landline{background:#1c1008;color:#fb923c}
+.phone-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.phone-num{font-family:monospace;font-size:14px;font-weight:600;color:#e2e8f0}
+.wa-btn{display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff;text-decoration:none;padding:7px 14px;border-radius:8px;font-size:13px;font-weight:700}
+.wa-btn:hover{background:#1da851}
+.tg-btn{display:inline-flex;align-items:center;gap:6px;background:#0088cc;color:#fff;text-decoration:none;padding:7px 14px;border-radius:8px;font-size:13px;font-weight:700}
+.source-link{font-size:11px;color:#64748b;text-decoration:none;display:block;margin-top:4px}
+.source-link:hover{color:#93c5fd}
+.msg-box{background:#0d1b2e;border:1px solid #1e3a5f;border-radius:10px;padding:14px;white-space:pre-wrap;font-size:13px;line-height:1.65;color:#cbd5e1;position:relative}
+.copy-btn{position:absolute;top:10px;right:10px;background:#1e3a5f;border:1px solid #2a4a6b;border-radius:6px;color:#94a3b8;font-size:11px;font-weight:600;padding:4px 10px;cursor:pointer}
+.copy-btn:hover{border-color:#3b82f6;color:#60a5fa}
+.section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:6px}
+.no-phone{background:#1a0a0a;border:1px solid #450a0a;border-radius:10px;padding:10px 14px;font-size:12px;color:#f87171;margin-top:8px}
+.toast{position:fixed;bottom:24px;right:24px;background:#25D366;color:#fff;padding:12px 20px;border-radius:10px;font-size:14px;font-weight:600;z-index:9999;transform:translateY(60px);opacity:0;transition:.3s}
+.toast.show{transform:translateY(0);opacity:1}
+</style>
+</head>
+<body>
+
+<div id="loginScreen">
+  <div class="login-box">
+    <div class="logo">Net Flow <span>WA</span></div>
+    <small>WhatsApp Outreach Paneli</small>
+    <input type="password" id="pwInput" placeholder="Şifre" autocomplete="current-password">
+    <button onclick="doLogin()">Giriş</button>
+    <div class="login-err" id="loginErr">Yanlış şifre</div>
+  </div>
+</div>
+
+<div id="app">
+  <div class="topbar">
+    <div class="brand">Net Flow <span>WA Outreach</span></div>
+    <small>Numara bulundu: 20 firma · Toplam 50 lead</small>
+  </div>
+
+  <div class="content">
+    <div class="info-box">
+      Yeşil <b>mobil</b> numaralar WhatsApp'ta kesinlikle çalışır. Turuncu <b>santral</b> numaralar da çalışabilir — bazı firmalar santral hattını WhatsApp'a bağlıyor. Her mesajın altında <b>Kopyala</b> butonu var, kopyalayıp WhatsApp'tan gönder.
+    </div>
+
+    <div id="cards"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const PW = 'netflow2026';
+
+const contacts = [
+  {
+    num: 1,
+    company: "Basrah Gas Company (BGC)",
+    country: "Irak",
+    sector: "Petrol & Gaz",
+    phone: "+964 780 921 1319",
+    wa: "+96478092 11319",
+    type: "mobile",
+    source: "https://www.basrahgas.com/contact-us/",
+    sourceLabel: "basrahgas.com/contact-us",
+    lang: "en",
+    msg: `Hi,
+
+I'm Safvan from Net Flow (Turkey) — we manufacture electromagnetic flowmeters (DN15–DN1200) and level instruments for oil & gas operations.
+
+We already sent a vendor registration inquiry to BGC-vendormanagement@basrahgas.com and would love to follow up directly.
+
+Would it be possible to connect with the procurement or instrumentation team?
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 2,
+    company: "KRG Su Genel Müdürlüğü",
+    country: "Irak",
+    sector: "Su",
+    phone: "+964 750 616 1569",
+    wa: "+9647506161569",
+    type: "mobile",
+    source: "https://gov.krd/momt-en/contact/",
+    sourceLabel: "gov.krd/momt-en/contact",
+    lang: "en",
+    msg: `Hello,
+
+I'm Safvan from Net Flow (Turkey). We produce electromagnetic flowmeters and level instruments for water utilities.
+
+We'd like to introduce our products for KRG water infrastructure projects. Could you point us to the right procurement contact?
+
+netflw.com | info@netflw.com`
+  },
+  {
+    num: 3,
+    company: "Qarmet (ArcelorMittal Temirtau)",
+    country: "Kazakistan",
+    sector: "Maden",
+    phone: "+7 912 252 55 06",
+    wa: "+79122525506",
+    type: "mobile",
+    source: "https://qarmet.kz/en/",
+    sourceLabel: "qarmet.kz",
+    contact: "Vladimir Lazovskiy — Procurement",
+    lang: "ru",
+    msg: `Здравствуйте, Владимир,
+
+Меня зовут Сафван, компания Net Flow (г. Конья, Турция). Мы производим электромагнитные расходомеры и уровнемеры для металлургических предприятий.
+
+Ранее отправили письмо на ваш корпоративный email. Можем ли мы обсудить возможность включения Net Flow в базу поставщиков Qarmet?
+
+netflw.com | info@netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 4,
+    company: "KEGOC (Enerji İletim)",
+    country: "Kazakistan",
+    sector: "Enerji",
+    phone: "+7 7172 690-189",
+    wa: "+77172690189",
+    type: "landline",
+    source: "https://www.kegoc.kz/en/procurement/info/",
+    sourceLabel: "kegoc.kz/en/procurement/info",
+    contact: "Lyubov Dyomina — Procurement Head",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Компания Net Flow (Турция) — производитель электромагнитных расходомеров для электроэнергетики. Отправили email на Demina_L@kegoc.kz по вопросу регистрации в базе поставщиков.
+
+Возможно ли уточнить, к кому обратиться по данному вопросу?
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 5,
+    company: "Holcim Azerbaijan",
+    country: "Azerbaycan",
+    sector: "Maden",
+    phone: "+994 12 441 88 88",
+    wa: "+994124418888",
+    type: "landline",
+    source: "https://www.holcim.az/en/procurement",
+    sourceLabel: "holcim.az/en/procurement",
+    contact: "Sabir Gubadov — Equipment & Consumables Procurement",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Пишу от Net Flow (Турция). Мы производим электромагнитные расходомеры и уровнемеры для цементных заводов.
+
+Отправили предложение на sabir.gubadov@holcim.com. Хотели бы уточнить возможность включения в список поставщиков Holcim Azerbaijan.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 6,
+    company: "Baku Steel Company",
+    country: "Azerbaycan",
+    sector: "Maden",
+    phone: "+994 12 490 08 00",
+    wa: "+994124900800",
+    type: "landline",
+    source: "https://www.bakusteel.com/en/contacts/",
+    sourceLabel: "bakusteel.com/en/contacts",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Компания Net Flow (Турция) — производитель электромагнитных расходомеров для металлургических предприятий. Направили предложение на tender@bakusteel.com.
+
+Просим связаться с отделом закупок для уточнения деталей.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 7,
+    company: "Azerenerji",
+    country: "Azerbaycan",
+    sector: "Enerji",
+    phone: "+994 12 530 66 20",
+    wa: "+994125306620",
+    type: "landline",
+    source: "https://azerenerji.gov.az/en/contact/",
+    sourceLabel: "azerenerji.gov.az",
+    contact: "Anar Efendiyev",
+    lang: "ru",
+    msg: `Здравствуйте, Анар,
+
+Меня зовут Сафван, Net Flow (Турция). Мы производим расходомеры и уровнемеры для объектов электроэнергетики.
+
+Направили предложение на info@azerenerji.gov.az. Возможно ли уточнить контакт отдела закупок?
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 8,
+    company: "Karachaganak Petroleum (KPO)",
+    country: "Kazakistan",
+    sector: "Petrol & Gaz",
+    phone: "+7 71133 62192",
+    wa: "+771133 62192",
+    type: "landline",
+    source: "https://www.kpo.kz/en/suppliers/registration-in-the-kpo-database-for-potential-suppliers",
+    sourceLabel: "kpo.kz/en/suppliers",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) — производитель электромагнитных расходомеров и КИПиА для нефтегазовой отрасли. Направили запрос на регистрацию поставщика на eprocsupport@kpo.kz.
+
+Можем ли мы уточнить статус рассмотрения заявки?
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 9,
+    company: "KazAzot",
+    country: "Kazakistan",
+    sector: "Kimya",
+    phone: "+7 7292 579-814",
+    wa: "+77292579814",
+    type: "landline",
+    source: "https://www.kazazot.kz/en/contacts/",
+    sourceLabel: "kazazot.kz/en/contacts",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Компания Net Flow (Турция). Производим расходомеры и уровнемеры для химических производств и заводов по выпуску удобрений (исполнения PTFE, Hastelloy).
+
+Отправили предложение на kazazot@kazazot.kz. Просим соединить с отделом закупок.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 10,
+    company: "Uzbekneftegaz",
+    country: "Özbekistan",
+    sector: "Petrol & Gaz",
+    phone: "+998 71 233 57 57",
+    wa: "+998712335757",
+    type: "landline",
+    source: "https://old.gov.uz/en/organizations/contacts/77",
+    sourceLabel: "gov.uz/organizations/contacts/77",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) — производитель электромагнитных расходомеров и КИПиА для нефтегазовой отрасли. Направили предложение на kans@ung.uz.
+
+Просим соединить с отделом материально-технического снабжения.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 11,
+    company: "Navoi Mining (NMMC)",
+    country: "Özbekistan",
+    sector: "Maden",
+    phone: "+998 79 227-72-22",
+    wa: "+998792277222",
+    type: "landline",
+    source: "https://www.ngmk.uz/en/contacts/",
+    sourceLabel: "ngmk.uz/en/contacts",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Компания Net Flow (Турция) — производитель электромагнитных расходомеров для горнодобывающей промышленности. Отправили предложение на info@ngmk.uz.
+
+Просим соединить с отделом закупок.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 12,
+    company: "Almalyk Mining (AMMC)",
+    country: "Özbekistan",
+    sector: "Maden",
+    phone: "+998 78 141 90 99",
+    wa: "+998781419099",
+    type: "landline",
+    source: "https://agmk.uz/en",
+    sourceLabel: "agmk.uz/en",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) производит расходомеры для горнодобывающей промышленности — для пульпопроводов, флотационных схем, технологической воды (DN15–DN1200).
+
+Просим соединить с отделом закупок или МТС.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 13,
+    company: "Navoiyazot",
+    country: "Özbekistan",
+    sector: "Kimya",
+    phone: "+998 79 229-22-36",
+    wa: "+998792292236",
+    type: "landline",
+    source: "https://www.navoiyazot.uz/en/home/contact",
+    sourceLabel: "navoiyazot.uz/contacts",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Компания Net Flow (Турция). Производим расходомеры и уровнемеры для химических заводов и производств удобрений. Отправили предложение на office@navoiyazot.uz.
+
+Просим соединить с отделом МТС/закупок.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 14,
+    company: "TALCO (Tacik Alüminyum)",
+    country: "Tacikistan",
+    sector: "Maden",
+    phone: "+992 37 224-26-21",
+    wa: "+992372242621",
+    type: "landline",
+    source: "https://www.talco.com.tj/en/clients/procurement",
+    sourceLabel: "talco.com.tj/en/procurement",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) — производитель электромагнитных расходомеров для алюминиевых и металлургических предприятий.
+
+Отправили предложение на procurement@talco-s.tj. Просим соединить с отделом закупок.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 15,
+    company: "Barki Tojik",
+    country: "Tacikistan",
+    sector: "Enerji",
+    phone: "+992 37 235-86-66",
+    wa: "+992372358666",
+    type: "landline",
+    source: "http://www.barqitojik.tj/en/contacts/",
+    sourceLabel: "barqitojik.tj/en/contacts",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) — производитель расходомеров для объектов гидроэнергетики и водоснабжения.
+
+Отправили предложение на barki.tojik@gmail.com. Можем ли мы уточнить контакт отдела закупок?
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 16,
+    company: "Kumtor Gold Mine",
+    country: "Kırgızistan",
+    sector: "Maden",
+    phone: "+996 312 90-07-07",
+    wa: "+996312900707",
+    type: "landline",
+    source: "https://www.kumtor.kg/en/about/contactsus/",
+    sourceLabel: "kumtor.kg/en/contacts",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) производит расходомеры для горнодобывающих предприятий. Отправили коммерческое предложение на Kumtor_localbuyer@kumtor.com.
+
+Можем ли уточнить статус рассмотрения?
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 17,
+    company: "Kyrgyzaltyn",
+    country: "Kırgızistan",
+    sector: "Maden",
+    phone: "+996 312 66-66-70",
+    wa: "+996312666670",
+    type: "landline",
+    source: "https://en.kyrgyzaltyn.kg/contacts/",
+    sourceLabel: "kyrgyzaltyn.kg/contacts",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Компания Net Flow (Турция). Производим электромагнитные расходомеры для золотодобывающей промышленности. Отправили предложение на info@kyrgyzaltyn.kg.
+
+Просим соединить с отделом снабжения.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 18,
+    company: "Turkmennebit",
+    country: "Türkmenistan",
+    sector: "Petrol & Gaz",
+    phone: "+993 12 40-35-55",
+    wa: "+993124035 55",
+    type: "landline",
+    source: "https://www.tendersinfo.com/tenders_details/516386804",
+    sourceLabel: "tendersinfo.com (resmi ihale ilanı)",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) — производитель электромагнитных расходомеров и КИПиА для нефтяной промышленности. Направили предложение на fer@turkmennebit.gov.tm.
+
+Просим соединить с отделом МТС.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 19,
+    company: "Erdenet Mining Corporation",
+    country: "Moğolistan",
+    sector: "Maden",
+    phone: "+976 75-77-35-01",
+    wa: "+97675773501",
+    type: "landline",
+    source: "https://www.erdenetmc.mn/en/contact",
+    sourceLabel: "erdenetmc.mn/en/contact",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) производит электромагнитные расходомеры для горнодобывающих предприятий — для пульпы и технологической воды.
+
+Отправили предложение на info@erdenetmc.mn. Просим соединить с отделом закупок.
+
+netflw.com | +90 541 373 79 53`
+  },
+  {
+    num: 20,
+    company: "Turkmenbashi Refinery (TORC)",
+    country: "Türkmenistan",
+    sector: "Petrol & Gaz",
+    phone: "+993 243 96-1-27",
+    wa: "+9932439 61 27",
+    type: "landline",
+    source: "https://www.tngizt.gov.tm/en/contact-us",
+    sourceLabel: "tngizt.gov.tm/en/contact-us",
+    lang: "ru",
+    msg: `Здравствуйте,
+
+Net Flow (Турция) — производитель электромагнитных расходомеров для нефтеперерабатывающих заводов.
+
+Направили предложение на tngizt@online.tm. Просим соединить с отделом МТС.
+
+netflw.com | +90 541 373 79 53`
+  },
+];
+
+function doLogin(){
+  if(document.getElementById('pwInput').value===PW){
+    document.getElementById('loginScreen').style.display='none';
+    document.getElementById('app').style.display='block';
+    renderCards();
+  } else {
+    document.getElementById('loginErr').style.display='block';
+  }
+}
+document.getElementById('pwInput').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
+
+function waLink(num){ return 'https://wa.me/'+num.replace(/[\s\-\+]/g,''); }
+
+function renderCards(){
+  const html = contacts.map(c=>`
+    <div class="card">
+      <div class="card-head">
+        <div class="card-num">${c.num}.</div>
+        <div class="card-info">
+          <div class="company">${c.company}</div>
+          <div class="meta">
+            <span class="badge b-country">${c.country}</span>
+            <span class="badge b-sector">${c.sector}</span>
+            <span class="badge ${c.type==='mobile'?'b-mobile':'b-landline'}">${c.type==='mobile'?'Mobil (WhatsApp kesin)':'Santral (denemeye değer)'}</span>
+          </div>
+          ${c.contact?`<div style="font-size:12px;color:#94a3b8;margin-bottom:8px">Kişi: ${c.contact}</div>`:''}
+          <div class="phone-row">
+            <span class="phone-num">${c.phone}</span>
+            <a class="wa-btn" href="${waLink(c.wa)}" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.828L0 24l6.336-1.502A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.95 0-3.77-.523-5.333-1.433l-.383-.226-3.762.893.944-3.661-.249-.398A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+              WhatsApp'ta Aç
+            </a>
+          </div>
+          <a class="source-link" href="${c.source}" target="_blank">Kaynak: ${c.sourceLabel} →</a>
+        </div>
+      </div>
+      <div class="section-title">Gönderilecek Mesaj (${c.lang==='ru'?'Rusça':'İngilizce'})</div>
+      <div class="msg-box" id="msg${c.num}"><button class="copy-btn" onclick="copyMsg(${c.num})">Kopyala</button>${c.msg.trim()}</div>
+    </div>
+  `).join('');
+  document.getElementById('cards').innerHTML = html;
+}
+
+function copyMsg(num){
+  const el = document.getElementById('msg'+num);
+  const text = el.innerText.replace('Kopyala','').trim();
+  navigator.clipboard.writeText(text);
+  showToast('Mesaj kopyalandı');
+}
+
+function showToast(msg){
+  const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2000);
+}
+</script>
+</body>
+</html>
