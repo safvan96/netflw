@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastSync": "2026-06-24T15:00:00Z",
+    "lastSync": "2026-06-24T16:00:00Z",
     "syncNote": "147 mail gönderildi · GE+AM turu tamamlandı · Rustavi Azot + Borjomi tıkladı"
   },
   "leads": [
@@ -184,7 +184,7 @@
       "email": "kazazot@kazazot.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "KazAzot genel iletişim",
+      "notes": "KazAzot genel iletişim | Tel: +7 7292 579 814",
       "emailEvent": "opened"
     },
     {
@@ -1029,7 +1029,7 @@
       "email": "santo@santo.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Kazakistan ilaç lideri. Şymkent. Tel: +7252 61-01-20",
+      "notes": "Kazakistan ilaç lideri. Şymkent. Tel: +7252 61-01-20 | Tel: +7 7252 61 01 40",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "clicked"
@@ -1089,7 +1089,7 @@
       "email": "jambylcement@jambylcement.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Vicat Fransa ortaklığı. 1.4mt/yıl. Mynaral.",
+      "notes": "Vicat Fransa ortaklığı. 1.4mt/yıl. Mynaral. | Tel: +7 727 244 02 44",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "clicked"
@@ -1135,7 +1135,7 @@
       "status": "sent",
       "sentDate": "2026-06-23",
       "notes": "Basra. Lucky Cement + Al-Shomookh ortak.",
-      "whatsapp": "",
+      "whatsapp": "+9647783339341",
       "telegram": "",
       "emailEvent": "clicked"
     },
@@ -1719,7 +1719,7 @@
       "email": "contact@nikora.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Gurcistan'in lider gida holding. Et, sut, dondurma, balikcilik. Tbilisi.",
+      "notes": "Gurcistan'in lider gida holding. Et, sut, dondurma, balikcilik. Tbilisi. | Tel: +995 32 269 55 50",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1886,7 +1886,7 @@
       "sentDate": "2026-06-24",
       "notes": "40M kutu/yil kapasite. Meyve puresinden meyve suyuna. Artashat.",
       "emailEvent": "",
-      "whatsapp": null,
+      "whatsapp": "+37477533335",
       "telegram": null
     },
     {
@@ -2049,7 +2049,7 @@
       "email": "info@rustaviazot.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Kafkasya'nin en buyuk kimya tesisi. Gurcistan'in tek azot gubre ureticisi. Rustavi. YUKSEK ONCELIK.",
+      "notes": "Kafkasya'nin en buyuk kimya tesisi. Gurcistan'in tek azot gubre ureticisi. Rustavi. YUKSEK ONCELIK. | Tel: +995 341 270909",
       "emailEvent": "clicked",
       "whatsapp": null,
       "telegram": null
