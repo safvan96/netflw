@@ -210,5 +210,6 @@
 // mobile menu
 (function(){var h=document.getElementById('hdr');if(!h)return;var b=h.querySelector('.hamburger'),n=h.querySelector('.nav-links');if(!b||!n)return;h.addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>20)});b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.style.overflow='';});});})();
 </script>
+<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4d830cda0a164fc69dfdf65ee1bf60d8"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
