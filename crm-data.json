@@ -12,9 +12,9 @@
       "website": "kmg.kz",
       "contact": "kmg.kz/en/contacts/",
       "email": "Astana@kmg.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Mail gönderildi",
+      "notes": "Mail gönderildi | SKIP: KazMunayGas - dev devlet",
       "emailEvent": "delivered"
     },
     {
@@ -25,9 +25,9 @@
       "website": "tengizchevroil.com",
       "contact": "tengizchevroil.com/contact-us",
       "email": "TCOSEOI@tengizchevroil.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Chevron-KMG. Büyük saha. Vendor kayıt: seoi.tengizchevroil.com",
+      "notes": "Chevron-KMG. Büyük saha. Vendor kayıt: seoi.tengizchevroil.com | SKIP: Tengizchevroil - dev (Chevron)",
       "emailEvent": "delivered"
     },
     {
@@ -38,9 +38,9 @@
       "website": "ncoc.kz",
       "contact": "ncoc.kz/en/contacts/",
       "email": "info@ncoc.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "NCOC genel iletişim. Email format: first.last@ncoc.kz",
+      "notes": "NCOC genel iletişim. Email format: first.last@ncoc.kz | SKIP: NCOC - dev",
       "emailEvent": "opened"
     },
     {
@@ -51,9 +51,9 @@
       "website": "kpo.kz",
       "contact": "kpo.kz/en/contacts/",
       "email": "eprocsupport@kpo.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "KPO e-procurement destek. Vendor kayıt: kpo.kz/en/suppliers/",
+      "notes": "KPO e-procurement destek. Vendor kayıt: kpo.kz/en/suppliers/ | SKIP: KPO - dev",
       "emailEvent": "opened"
     },
     {
@@ -64,9 +64,9 @@
       "website": "anpz.kz",
       "contact": "anpz.kz/en/contacts/",
       "email": "anpz@qazmg.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Atyrau rafineri. KazMunayGas bünyesi.",
+      "notes": "Atyrau rafineri. KazMunayGas bünyesi. | SKIP: Atyrau Refinery - dev devlet",
       "emailEvent": "softBounce"
     },
     {
@@ -77,9 +77,9 @@
       "website": "pnhz.kz",
       "contact": "pnhz.kz/en/kontakty/",
       "email": "secretary@pnhz.net",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Pavlodar rafineri sekreterlik",
+      "notes": "Pavlodar rafineri sekreterlik | SKIP: Pavlodar Refinery - dev devlet",
       "emailEvent": "softBounce"
     },
     {
@@ -90,9 +90,9 @@
       "website": "qarmet.kz",
       "contact": "qarmet.kz/en/",
       "email": "Vladimir.Lazovskiy@qarmet.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "2023'te Qarmet adını aldı. Procurement: Vladimir Lazovskiy",
+      "notes": "2023'te Qarmet adını aldı. Procurement: Vladimir Lazovskiy | SKIP: ArcelorMittal - dev global",
       "emailEvent": "opened",
       "whatsapp": "+79122525506"
     },
@@ -104,9 +104,9 @@
       "website": "kazakhmys.kz",
       "contact": "kazakhmys.kz/en/contacts",
       "email": "office@kazakhmys.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Büyük bakır madeni.",
+      "notes": "Büyük bakır madeni. | SKIP: Kazakhmys - dev",
       "emailEvent": "opened"
     },
     {
@@ -117,9 +117,9 @@
       "website": "kazatomprom.kz",
       "contact": "kazatomprom.kz/en/contacts",
       "email": "info@kazatomprom.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Dünya 1. uranyum üreticisi.",
+      "notes": "Dünya 1. uranyum üreticisi. | SKIP: Kazatomprom - dev devlet",
       "emailEvent": "delivered"
     },
     {
@@ -130,9 +130,9 @@
       "website": "erg.kz",
       "contact": "erg.kz/en/contacts/",
       "email": "CCOffice@erg.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Krom, demir, alüminyum. Tel: +7 7172 61 23 50",
+      "notes": "Krom, demir, alüminyum. Tel: +7 7172 61 23 50 | SKIP: ERG Eurasian - dev",
       "emailEvent": "delivered"
     },
     {
@@ -143,9 +143,9 @@
       "website": "vodokanal.almaty.kz",
       "contact": "vodokanal.almaty.kz/contacts/",
       "email": "almatysu@almatysu.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Almatı şehir su idaresi. Tel: +7 771 852 9101",
+      "notes": "Almatı şehir su idaresi. Tel: +7 771 852 9101 | SKIP: Almaty Su - devlet",
       "emailEvent": "delivered"
     },
     {
@@ -156,9 +156,9 @@
       "website": "vodokanal.astana.kz",
       "contact": "vodokanal.astana.kz/contacts/",
       "email": "odo@astanasu.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Astana Su Ana iletişim",
+      "notes": "Astana Su Ana iletişim | SKIP: Astana Su - devlet",
       "emailEvent": "delivered"
     },
     {
@@ -169,9 +169,9 @@
       "website": "kegoc.kz",
       "contact": "kegoc.kz/en/procurement/info/",
       "email": "Demina_L@kegoc.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Ulusal elektrik iletim şirketi. Procurement: Lyubov Dyomina",
+      "notes": "Ulusal elektrik iletim şirketi. Procurement: Lyubov Dyomina | SKIP: KEGOC - devlet enerji",
       "emailEvent": "delivered"
     },
     {
@@ -195,9 +195,9 @@
       "website": "socar.az",
       "contact": "e-procurement.socar.az/en",
       "email": "eprocurement.support@socar.az",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Azerbaycan devlet petrol şirketi. E-procurement portal mevcut.",
+      "notes": "Azerbaycan devlet petrol şirketi. E-procurement portal mevcut. | SKIP: SOCAR - dev devlet",
       "emailEvent": "hardBounce"
     },
     {
@@ -208,9 +208,9 @@
       "website": "bp.com/en_az",
       "contact": "bp.com/en_az/caspian/contacts.html",
       "email": "",
-      "status": "pending",
+      "status": "skip",
       "sentDate": "",
-      "notes": "ACG sahası operatörü.",
+      "notes": "ACG sahası operatörü. | SKIP: BP Azerbaijan - dev global",
       "emailEvent": ""
     },
     {
@@ -221,9 +221,9 @@
       "website": "azersu.az",
       "contact": "azersu.az/en/contact",
       "email": "office@azersu.az",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Ulusal su ve kanalizasyon idaresi.",
+      "notes": "Ulusal su ve kanalizasyon idaresi. | SKIP: Azersu - devlet",
       "emailEvent": "softBounce"
     },
     {
@@ -234,9 +234,9 @@
       "website": "azerenerji.gov.az",
       "contact": "azerenerji.gov.az/en/contact/",
       "email": "info@azerenerji.gov.az",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Azerenerji genel iletişim",
+      "notes": "Azerenerji genel iletişim | SKIP: Azerenerji - devlet",
       "emailEvent": "delivered"
     },
     {
@@ -260,9 +260,9 @@
       "website": "sgc.az",
       "contact": "sgc.az/en/contact/",
       "email": "info@sgc.az",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "SGC genel iletişim",
+      "notes": "SGC genel iletişim | SKIP: SGC - dev devlet",
       "emailEvent": "delivered"
     },
     {
@@ -273,9 +273,9 @@
       "website": "bakusteel.com",
       "contact": "bakusteel.com/en/contacts/",
       "email": "tender@bakusteel.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Baku Steel tedarik/ihale birimi",
+      "notes": "Baku Steel tedarik/ihale birimi | SKIP: Baku Steel - dev",
       "emailEvent": "delivered"
     },
     {
@@ -286,9 +286,9 @@
       "website": "holcim.az",
       "contact": "holcim.az/en/contact-us",
       "email": "sabir.gubadov@holcim.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Holcim Az: Ekipman & Malzeme Tedariki",
+      "notes": "Holcim Az: Ekipman & Malzeme Tedariki | SKIP: Holcim AZ - dev global",
       "emailEvent": "delivered"
     },
     {
@@ -313,9 +313,9 @@
       "website": "ung.uz",
       "contact": "ung.uz/en/contacts/",
       "email": "kans@ung.uz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Devlet petrol-gaz şirketi.",
+      "notes": "Devlet petrol-gaz şirketi. | SKIP: Uzbekneftegaz - dev devlet",
       "emailEvent": "opened"
     },
     {
@@ -339,9 +339,9 @@
       "website": "agmk.uz",
       "contact": "agmk.uz/en/contacts/",
       "email": "",
-      "status": "pending",
+      "status": "skip",
       "sentDate": "",
-      "notes": "Bakır, altın, çinko madeni.",
+      "notes": "Bakır, altın, çinko madeni. | SKIP: Almalyk Mining - dev devlet",
       "emailEvent": ""
     },
     {
@@ -352,9 +352,9 @@
       "website": "ngmk.uz",
       "contact": "ngmk.uz/en/contacts/",
       "email": "info@ngmk.uz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Dünyanın en büyük altın madenlerinden.",
+      "notes": "Dünyanın en büyük altın madenlerinden. | SKIP: Navoi Mining - dev devlet",
       "emailEvent": "delivered"
     },
     {
@@ -378,9 +378,9 @@
       "website": "suv-taminot.uz",
       "contact": "suv-taminot.uz/contacts/",
       "email": "abonent@suv-taminot.uz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Taşkent Su genel abone iletişimi",
+      "notes": "Taşkent Su genel abone iletişimi | SKIP: Tashkent Su - devlet",
       "emailEvent": "softBounce"
     },
     {
@@ -405,9 +405,9 @@
       "website": "ene.uz",
       "contact": "ene.uz/en/contacts/",
       "email": "",
-      "status": "pending",
+      "status": "skip",
       "sentDate": "",
-      "notes": "Ulusal enerji şirketi.",
+      "notes": "Ulusal enerji şirketi. | SKIP: Uzbekenergo - devlet",
       "emailEvent": ""
     },
     {
@@ -418,9 +418,9 @@
       "website": "turkmengaz.gov.tm",
       "contact": "turkmengaz.gov.tm/en/contacts/",
       "email": "odum@turkmengaz.gov.tm",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Dünyanın 4. büyük gaz rezervi. Tedarik departmanı.",
+      "notes": "Dünyanın 4. büyük gaz rezervi. Tedarik departmanı. | SKIP: Turkmengaz - devlet",
       "emailEvent": "delivered"
     },
     {
@@ -431,9 +431,9 @@
       "website": "turkmennebit.gov.tm",
       "contact": "turkmennebit.gov.tm/en/contacts/",
       "email": "fer@turkmennebit.gov.tm",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Turkmennebit tedarik iletişimi",
+      "notes": "Turkmennebit tedarik iletişimi | SKIP: Turkmennebit - devlet",
       "emailEvent": "delivered"
     },
     {
@@ -444,9 +444,9 @@
       "website": "torc.gov.tm",
       "contact": "torc.gov.tm/en/contacts/",
       "email": "tngizt@online.tm",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Turkmenbashi rafineri Foreign Economic Relations",
+      "notes": "Turkmenbashi rafineri Foreign Economic Relations | SKIP: Turkmenbashi Refinery - dev devlet",
       "emailEvent": "hardBounce"
     },
     {
@@ -470,9 +470,9 @@
       "website": "dragonoil.com",
       "contact": "dragonoil.com/vendors/",
       "email": "info@dragonoil.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Hazar offshore petrol. Vendor portal: vendorportal.dragonoil.com",
+      "notes": "Hazar offshore petrol. Vendor portal: vendorportal.dragonoil.com | SKIP: Dragon Oil - dev global",
       "emailEvent": "delivered"
     },
     {
@@ -483,9 +483,9 @@
       "website": "talco.com.tj",
       "contact": "talco.com.tj/en/contacts/",
       "email": "procurement@talco-s.tj",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "TALCO özel tedarik email",
+      "notes": "TALCO özel tedarik email | SKIP: Bishkek Su - devlet",
       "emailEvent": "opened"
     },
     {
@@ -496,9 +496,9 @@
       "website": "barqitojik.tj",
       "contact": "barqitojik.tj/en/contacts/",
       "email": "barki.tojik@gmail.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Barki Tojik iletişim",
+      "notes": "Barki Tojik iletişim | SKIP: KumtorGold - dev global",
       "emailEvent": "opened"
     },
     {
@@ -509,9 +509,9 @@
       "website": "vakhshazot.tj",
       "contact": "vakhshazot.tj/contacts/",
       "email": "tjazot@khatlon.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Azot gübre tesisi. Tel: +992 3222 2 35 84",
+      "notes": "Azot gübre tesisi. Tel: +992 3222 2 35 84 | SKIP: Kyrgyz Energo - devlet",
       "emailEvent": "hardBounce"
     },
     {
@@ -535,9 +535,9 @@
       "website": "kyrgyzaltyn.kg",
       "contact": "kyrgyzaltyn.kg/en/contacts/",
       "email": "info@kyrgyzaltyn.kg",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Kyrgyzaltyn genel iletişim",
+      "notes": "Kyrgyzaltyn genel iletişim | SKIP: TALCO Aluminyum - dev devlet",
       "emailEvent": "delivered"
     },
     {
@@ -548,9 +548,9 @@
       "website": "bishkeksuukanal.kg",
       "contact": "bishkeksuukanal.kg",
       "email": "priemn@water.elcat.kg",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Bişkek şehir su idaresi. Tel: +996 312 56 16 55",
+      "notes": "Bişkek şehir su idaresi. Tel: +996 312 56 16 55 | SKIP: Barki Tojik - devlet enerji",
       "emailEvent": "softBounce"
     },
     {
@@ -574,9 +574,9 @@
       "website": "erdenetmc.mn",
       "contact": "erdenetmc.mn/en/contacts/",
       "email": "info@erdenetmc.mn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Erdenet Mining genel iletişim",
+      "notes": "Erdenet Mining genel iletişim | SKIP: Erdenet Mining - dev devlet",
       "emailEvent": "opened"
     },
     {
@@ -587,9 +587,9 @@
       "website": "ett.mn",
       "contact": "ett.mn/contact/",
       "email": "info@erdenestt.mn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Erdenes Tavan Tolgoi. Tel: +976 7505 5555",
+      "notes": "Erdenes Tavan Tolgoi. Tel: +976 7505 5555 | SKIP: Oyu Tolgoi - dev (Rio Tinto)",
       "emailEvent": "clicked"
     },
     {
@@ -600,9 +600,9 @@
       "website": "usug.ub.gov.mn",
       "contact": "usug.ub.gov.mn",
       "email": "usug1959@gmail.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Ulaanbaatar şehir su idaresi. Gmail adresi kullanıyorlar.",
+      "notes": "Ulaanbaatar şehir su idaresi. Gmail adresi kullanıyorlar. | SKIP: Tavan Tolgoi - dev devlet",
       "emailEvent": "delivered"
     },
     {
@@ -613,9 +613,9 @@
       "website": "basrahgas.com",
       "contact": "basrahgas.com/doing-business-with-bgc/",
       "email": "BGC-vendormanagement@basrahgas.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Shell-Irak ortaklığı. Tedarikçi kayıt açık. EN ÖNCELİKLİ. Mail gönderildi.",
+      "notes": "Shell-Irak ortaklığı. Tedarikçi kayıt açık. EN ÖNCELİKLİ. Mail gönderildi. | SKIP: Darkhan Metallurgy - dev devlet",
       "emailEvent": "softBounce",
       "whatsapp": "+9647809211319"
     },
@@ -627,9 +627,9 @@
       "website": "boc.oil.gov.iq",
       "contact": "boc.oil.gov.iq",
       "email": "",
-      "status": "pending",
+      "status": "skip",
       "sentDate": "",
-      "notes": "Eski South Oil Company.",
+      "notes": "Eski South Oil Company. | SKIP: MCS Coca-Cola - dev global franchise",
       "emailEvent": ""
     },
     {
@@ -640,9 +640,9 @@
       "website": "gov.krd",
       "contact": "gov.krd/moawr-en/contact/",
       "email": "info@moawr.gov.krd",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Kürdistan Bölgesi Su Bakanlığı. WhatsApp: +964 750 616 1569",
+      "notes": "Kürdistan Bölgesi Su Bakanlığı. WhatsApp: +964 750 616 1569 | SKIP: Basrah Gas - dev (Shell ortaklık)",
       "emailEvent": "opened",
       "whatsapp": "+9647506161569"
     },
@@ -654,9 +654,9 @@
       "website": "lafarge-iraq.com",
       "contact": "lafarge-iraq.com/en/ContactUs",
       "email": "iq.recruitment@lafarge.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Bazian, Tasluja, Karbala çimento fabrikaları. Mail gönderildi.",
+      "notes": "Bazian, Tasluja, Karbala çimento fabrikaları. Mail gönderildi. | SKIP: SCOP Basrah - dev devlet",
       "emailEvent": "delivered"
     },
     {
@@ -667,9 +667,9 @@
       "website": "azot.uz",
       "contact": "azot.uz",
       "email": "info@azot.uz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Azot gübre. Amonyak/asit hatları. Tel: +998 73 242 59 95",
+      "notes": "Azot gübre. Amonyak/asit hatları. Tel: +998 73 242 59 95 | SKIP: KRG Su - devlet",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -682,9 +682,9 @@
       "website": "maxam-chirchiq.uz",
       "contact": "maxam-chirchiq.uz",
       "email": "info@maxam-chirchiq.uz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "40+ kimyasal ürün. Üre, amonyum nitrat. Tel: +998 71 715 15 75",
+      "notes": "40+ kimyasal ürün. Üre, amonyum nitrat. Tel: +998 71 715 15 75 | SKIP: Iraq Cement - dev devlet",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -697,9 +697,9 @@
       "website": "indoramakokandfertilizer.com",
       "contact": "indoramakokandfertilizer.com",
       "email": "ikf@uz.indorama.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Tayland kökenli uluslararası. Süperfosfat, boya. Tel: +998 73 543 90 00",
+      "notes": "Tayland kökenli uluslararası. Süperfosfat, boya. Tel: +998 73 543 90 00 | SKIP: United Cement - dev devlet",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened"
@@ -1672,9 +1672,9 @@
       "website": "cgw.ge",
       "contact": "cgw.ge/en/contact",
       "email": "info@cgw.ge",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Gürcistan'ın en büyük şarap üreticilerinden. Tsinandali'de winery.",
+      "notes": "Gürcistan'ın en büyük şarap üreticilerinden. Tsinandali'de winery. | SKIP: CGW Georgian Wine - alkol",
       "emailEvent": "delivered",
       "whatsapp": null,
       "telegram": null
@@ -1687,9 +1687,9 @@
       "website": "gws.ge",
       "contact": "gws.ge/en/",
       "email": "info@gws.ge",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Pernod Ricard ortakligi (%51). Telavi, Kakheti. Buyuk uretim tesisi.",
+      "notes": "Pernod Ricard ortakligi (%51). Telavi, Kakheti. Buyuk uretim tesisi. | SKIP: GWS Georgian Wines - alkol",
       "emailEvent": "hardBounce",
       "whatsapp": null,
       "telegram": null
@@ -1702,9 +1702,9 @@
       "website": "borjomi.com",
       "contact": "borjomi.com/en/support",
       "email": "ids@borjomi.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Borjomi, Likani, Bakuriani markalari. Tbilisi. Su sise hatlarinda EM flowmeter kullanir.",
+      "notes": "Borjomi, Likani, Bakuriani markalari. Tbilisi. Su sise hatlarinda EM flowmeter kullanir. | SKIP: IDS Borjomi - dev global",
       "emailEvent": "clicked",
       "whatsapp": null,
       "telegram": null
@@ -1732,9 +1732,9 @@
       "website": "rustavisteel.ge",
       "contact": "rustavisteel.ge/en/about-us/",
       "email": "contact@rustavisteel.ge",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Kafkasya'nin en buyuk metalurji tesisi. Rustavi. Sogutma suyu vs icin flowmeter.",
+      "notes": "Kafkasya'nin en buyuk metalurji tesisi. Rustavi. Sogutma suyu vs icin flowmeter. | SKIP: Rustavi Steel - dev",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1762,9 +1762,9 @@
       "website": "zedazeni.ge",
       "contact": "zedazeni.ge",
       "email": "info@zedazeni.ge",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Saguramo, Mtskheta. Bira ve alkol uretimi. Bira fabrikalarinda flowmeter gereklidir.",
+      "notes": "Saguramo, Mtskheta. Bira ve alkol uretimi. Bira fabrikalarinda flowmeter gereklidir. | SKIP: Zedazeni Beer - alkol/bira",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1777,9 +1777,9 @@
       "website": "natakhtari.com",
       "contact": "natakhtari.com",
       "email": "malkhaz.chakaberia@ge.anadoluefes.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Mtskheta yakini Natakhtari. Anadolu Efes grubu. Kapasite 45M litre/yil.",
+      "notes": "Mtskheta yakini Natakhtari. Anadolu Efes grubu. Kapasite 45M litre/yil. | SKIP: Natakhtari/EFES - alkol/bira dev",
       "emailEvent": "opened",
       "whatsapp": null,
       "telegram": null
@@ -1792,9 +1792,9 @@
       "website": "gwp.ge",
       "contact": "gwp.ge/en/contact",
       "email": "online@gwp.ge",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Tbilisi ve Guney Kafkasya su dagitim lideri. Satinalma: Nini Kakhetelidze.",
+      "notes": "Tbilisi ve Guney Kafkasya su dagitim lideri. Satinalma: Nini Kakhetelidze. | SKIP: GWP - devlet su",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1807,9 +1807,9 @@
       "website": "kotayk.am",
       "contact": "multigroup.am/en/contacts.html",
       "email": "kotayk@multigroup.am",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Ermenistan'in en buyuk bira fabrikalarından. Abovyan, Kotayk. Multi Group Concern. | info@kotayk.am ile yeniden gönderildi",
+      "notes": "Ermenistan'in en buyuk bira fabrikalarından. Abovyan, Kotayk. Multi Group Concern. | info@kotayk.am ile yeniden gönderildi | SKIP: Kotayk Brewery - alkol/bira",
       "emailEvent": "hardBounce",
       "whatsapp": null,
       "telegram": null
@@ -1822,9 +1822,9 @@
       "website": "gyumribeer.am",
       "contact": "gyumribeer.am",
       "email": "beer@gyumri.am",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Ermenistan'in ikinci buyuk birasi. 1970 kurulus. Gyumri sehri.",
+      "notes": "Ermenistan'in ikinci buyuk birasi. 1970 kurulus. Gyumri sehri. | SKIP: Gyumri Brewery - alkol/bira",
       "emailEvent": "softBounce",
       "whatsapp": null,
       "telegram": null
@@ -1852,9 +1852,9 @@
       "website": "zcmc.am",
       "contact": "zcmc.am/en/contacts/",
       "email": "info@zcmc.am",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Ermenistan'in en buyuk madeni. Kajaran, Syunik. 22M ton cevher/yil. Slurry flowmeter.",
+      "notes": "Ermenistan'in en buyuk madeni. Kajaran, Syunik. 22M ton cevher/yil. Slurry flowmeter. | SKIP: ZCMC - dev maden",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1897,9 +1897,9 @@
       "website": "ijevangroup.am",
       "contact": "ijevangroup.am/en/about-us/",
       "email": "info@ijevangroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Ijevan, Tavush. Sarap, brendi, kivan sarap, meyve suyu. Genis uretim yelpazesi.",
+      "notes": "Ijevan, Tavush. Sarap, brendi, kivan sarap, meyve suyu. Genis uretim yelpazesi. | SKIP: Ijevan Wine-Brandy - alkol",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1927,9 +1927,9 @@
       "website": "ktwgroup.ge",
       "contact": "ktwgroup.ge/en/",
       "email": "info@ktw.ge",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "4 uretim tesisi. Pernod Ricard ortakligiyla buyuk skalali sarap/brendi uretimi.",
+      "notes": "4 uretim tesisi. Pernod Ricard ortakligiyla buyuk skalali sarap/brendi uretimi. | SKIP: KTW Winemaking - alkol",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1942,9 +1942,9 @@
       "website": "tbilvino.ge",
       "contact": "tbilvino.ge",
       "email": "info@tbilvino.ge",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "1962 kurulus. 6-7.5M sise/yil. Gurcistan'in en buyuk sarap ihracatcisi.",
+      "notes": "1962 kurulus. 6-7.5M sise/yil. Gurcistan'in en buyuk sarap ihracatcisi. | SKIP: Tbilvino - alkol",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1957,9 +1957,9 @@
       "website": "telianivalley.com",
       "contact": "telianivalley.com/en/contact",
       "email": "info@telianivalley.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Telavi, Kakheti. Buyuk skalali endustriyel sarap uretimi.",
+      "notes": "Telavi, Kakheti. Buyuk skalali endustriyel sarap uretimi. | SKIP: Teliani Valley - alkol",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1972,9 +1972,9 @@
       "website": "winery-khareba.com",
       "contact": "winery-khareba.com/en",
       "email": "info@winerykhareba.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Tbilisi ve Kakheti'de buyuk uretim tesisi.",
+      "notes": "Tbilisi ve Kakheti'de buyuk uretim tesisi. | SKIP: Winery Khareba - alkol",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1987,9 +1987,9 @@
       "website": "mgbrew.com",
       "contact": "mgbrew.com",
       "email": "info@mgbrew.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Tbilisi, 42 Gardabani Highway. 2017 kurulus. Iskandinavya ve Asya'ya ihracat.",
+      "notes": "Tbilisi, 42 Gardabani Highway. 2017 kurulus. Iskandinavya ve Asya'ya ihracat. | SKIP: Megobrebi Brewery - alkol/bira",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2077,9 +2077,9 @@
       "website": "armeniawine.am",
       "contact": "armeniawine.am/en/about",
       "email": "info@armeniawine.am",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Sasunik, Aragatsotn. 2008 kurulus. Ermenistan sarap ihracatinin lideri.",
+      "notes": "Sasunik, Aragatsotn. 2008 kurulus. Ermenistan sarap ihracatinin lideri. | SKIP: Armenia Wine - alkol",
       "emailEvent": "opened",
       "whatsapp": null,
       "telegram": null
@@ -2107,9 +2107,9 @@
       "website": "armchampagne.am",
       "contact": "armchampagne.am",
       "email": "armchampagne@rambler.ru",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Tbilisi Highway 20, Kanaker-Zeytun, Yerevan. 1954 kurulus. Kivan sarap.",
+      "notes": "Tbilisi Highway 20, Kanaker-Zeytun, Yerevan. 1954 kurulus. Kivan sarap. | SKIP: Yerevan Champagne - alkol",
       "emailEvent": "softBounce",
       "whatsapp": null,
       "telegram": null
