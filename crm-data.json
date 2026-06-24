@@ -184,7 +184,7 @@
       "email": "kazazot@kazazot.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "KazAzot genel iletişim | Tel: +7 7292 579 814",
+      "notes": "KazAzot genel iletişim | Tel: +7 7292 579 814 | Follow-up fiyatli 25.06",
       "emailEvent": "opened"
     },
     {
@@ -247,9 +247,9 @@
       "website": "socarpolymer.az",
       "contact": "socarpolymer.az/en/contacts",
       "email": "project@socarpolymer.az",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "SOCAR Polymer proje/tedarik iletişimi",
+      "notes": "SOCAR Polymer proje/tedarik iletişimi | Buyuk firma - skip",
       "emailEvent": "opened"
     },
     {
@@ -301,7 +301,7 @@
       "email": "karbamid.zavodu@socar.az",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Karbamid gübre tesisi. Mob: +994 50 842 51 41 (WhatsApp olabilir)",
+      "notes": "Karbamid gübre tesisi. Mob: +994 50 842 51 41 (WhatsApp olabilir) | Yeni format fiyatli 25.06",
       "emailEvent": "softBounce",
       "whatsapp": "+994508425141"
     },
@@ -328,7 +328,7 @@
       "email": "info@sgcc.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Gaz kimyası kompleksi. Tel: +998 75 552 42 54",
+      "notes": "Gaz kimyası kompleksi. Tel: +998 75 552 42 54 | Yeni format fiyatli 25.06",
       "emailEvent": "hardBounce"
     },
     {
@@ -367,7 +367,7 @@
       "email": "office@navoiyazot.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Navoiyazot genel iletişim",
+      "notes": "Navoiyazot genel iletişim | Yeni format fiyatli 25.06",
       "emailEvent": "delivered"
     },
     {
@@ -393,7 +393,7 @@
       "email": "info@fnpz.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Fergana Rafineri. Tel: +998 94 555 83 84 (mob). Telegram: @fnpz_uz",
+      "notes": "Fergana Rafineri. Tel: +998 94 555 83 84 (mob). Telegram: @fnpz_uz | Yeni format fiyatli 25.06",
       "emailEvent": "delivered",
       "telegram": "fnpz_uz"
     },
@@ -524,7 +524,7 @@
       "email": "Kumtor_localbuyer@kumtor.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Kumtor tedarik alım emaili",
+      "notes": "Kumtor tedarik alım emaili | Yeni format fiyatli 25.06",
       "emailEvent": "softBounce"
     },
     {
@@ -561,9 +561,9 @@
       "website": "ot.mn",
       "contact": "ot.mn/en/about/contact",
       "email": "OTCorrespondence@ot.mn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "online@ot.mn auto-reply ile doğru adres verildi. Yeni adrese gönderildi.",
+      "notes": "online@ot.mn auto-reply ile doğru adres verildi. Yeni adrese gönderildi. | Buyuk firma - skip",
       "emailEvent": "clicked"
     },
     {
@@ -714,7 +714,7 @@
       "email": "info@global-textile.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "2500 çalışan, boyahane günde 30t su. Tel: +998 71 231 86 01",
+      "notes": "2500 çalışan, boyahane günde 30t su. Tel: +998 71 231 86 01 | Yeni format fiyatli 25.06",
       "whatsapp": "+998990292976",
       "telegram": "",
       "emailEvent": ""
@@ -729,7 +729,7 @@
       "email": "info@hajtex.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Buhara. Tam döngü: ginning-iplik-boyahane. Tel: +998 55 520 00 30",
+      "notes": "Buhara. Tam döngü: ginning-iplik-boyahane. Tel: +998 55 520 00 30 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -744,7 +744,7 @@
       "email": "info@chusttextile.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Namangan. 1400 çalışan, ISO 9001. Tel: +998 78 148 81 48",
+      "notes": "Namangan. 1400 çalışan, ISO 9001. Tel: +998 78 148 81 48 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "softBounce"
@@ -759,7 +759,7 @@
       "email": "yarn@dakatex.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Semerkant. İplik-boyahane-baskı. Tel: +998 66 233 44 97",
+      "notes": "Semerkant. İplik-boyahane-baskı. Tel: +998 66 233 44 97 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -774,7 +774,7 @@
       "email": "info@biryuza.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Taşkent. Türk teknolojisi, boyahane. Tel: +998 70 975 80 80",
+      "notes": "Taşkent. Türk teknolojisi, boyahane. Tel: +998 70 975 80 80 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "softBounce"
@@ -789,7 +789,7 @@
       "email": "info@puremilky.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Semerkant, Özbekistan en büyük süt fabrikası. Tel: +998 66 666 52 14",
+      "notes": "Semerkant, Özbekistan en büyük süt fabrikası. Tel: +998 66 666 52 14 | Yeni format fiyatli 25.06",
       "whatsapp": "+998981806655",
       "telegram": "",
       "emailEvent": ""
@@ -804,7 +804,7 @@
       "email": "bio-sut@mail.ru",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Alman ortak girişim süt fabrikası. CIP sistemleri var. Tel: +998 71 286 03 00",
+      "notes": "Alman ortak girişim süt fabrikası. CIP sistemleri var. Tel: +998 71 286 03 00 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -819,7 +819,7 @@
       "email": "info@milkhouse.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "30+ süt ürünü. FSSC 22000. Tel: +998 78 120 33 34",
+      "notes": "30+ süt ürünü. FSSC 22000. Tel: +998 78 120 33 34 | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened"
@@ -834,7 +834,7 @@
       "email": "cooperation@naturaljuice.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Özbekistan meyve suyu lideri. Tel: +998 78 120 37 37",
+      "notes": "Özbekistan meyve suyu lideri. Tel: +998 78 120 37 37 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -849,7 +849,7 @@
       "email": "office@agromir.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Meyve suyu + konserve. BLISS, MEVA JUICE markaları. Tel: +998 71 140 31 01",
+      "notes": "Meyve suyu + konserve. BLISS, MEVA JUICE markaları. Tel: +998 71 140 31 01 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -864,7 +864,7 @@
       "email": "info@marwin.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "DENA, LIKE! meyve suları. Tel: +998 71 200 40 00",
+      "notes": "DENA, LIKE! meyve suları. Tel: +998 71 200 40 00 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -879,7 +879,7 @@
       "email": "info@dinay.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "İçecek üretici ve ihracatçı. Mob: +998 95 512 10 50",
+      "notes": "İçecek üretici ve ihracatçı. Mob: +998 95 512 10 50 | Yeni format fiyatli 25.06",
       "whatsapp": "+998955121050",
       "telegram": "",
       "emailEvent": "softBounce"
@@ -894,7 +894,7 @@
       "email": "info@hydrolife.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Doğal kaynak suyu şişeleme. ISO 9001/22000. Mob: +998 90 168 68 18",
+      "notes": "Doğal kaynak suyu şişeleme. ISO 9001/22000. Mob: +998 90 168 68 18 | Yeni format fiyatli 25.06",
       "whatsapp": "+998901686818",
       "telegram": "",
       "emailEvent": ""
@@ -909,7 +909,7 @@
       "email": "info@zomincement.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Jizzakh bölgesi çimento. Mob: +998 97 460 40 00",
+      "notes": "Jizzakh bölgesi çimento. Mob: +998 97 460 40 00 | Yeni format fiyatli 25.06",
       "whatsapp": "+998974604000",
       "telegram": "",
       "emailEvent": "softBounce"
@@ -924,7 +924,7 @@
       "email": "turoncement@mail.ru",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Fergana, 600bin t/yıl kapasite. Mob: +998 95 404 77 00",
+      "notes": "Fergana, 600bin t/yıl kapasite. Mob: +998 95 404 77 00 | Yeni format fiyatli 25.06",
       "whatsapp": "+998954047700",
       "telegram": "",
       "emailEvent": ""
@@ -939,7 +939,7 @@
       "email": "info@biokimyo.uz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Yangiyul. Ana ilaç üreticisi. Tel: +998 70 602 49 18",
+      "notes": "Yangiyul. Ana ilaç üreticisi. Tel: +998 70 602 49 18 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -954,7 +954,7 @@
       "email": "pierre.begoc@foodmaster.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Lactalis Fransa ortaklığı. 3 fabrika. Tel: +7 727 244 6000",
+      "notes": "Lactalis Fransa ortaklığı. 3 fabrika. Tel: +7 727 244 6000 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "hardBounce"
@@ -969,7 +969,7 @@
       "email": "info@efc.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Süt ve yağ ürünleri. 3 fabrika. Tel: +7 727 378-71-71",
+      "notes": "Süt ve yağ ürünleri. 3 fabrika. Tel: +7 727 378-71-71 | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened"
@@ -984,7 +984,7 @@
       "email": "office@raimbek.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Juicy, Palma markaları. Tel: +7 727 330-46-15. Mob: +7 771 736-12-60",
+      "notes": "Juicy, Palma markaları. Tel: +7 727 330-46-15. Mob: +7 771 736-12-60 | Follow-up fiyatli 25.06",
       "whatsapp": "+77717361260",
       "telegram": "",
       "emailEvent": "clicked"
@@ -997,9 +997,9 @@
       "website": "rakhat.kz",
       "contact": "rakhat.kz",
       "email": "rakhat@rakhat.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "4500 çalışan şekerleme. Güney Kore LOTTE. Tel: +7 7272 58-47-11",
+      "notes": "4500 çalışan şekerleme. Güney Kore LOTTE. Tel: +7 7272 58-47-11 | Buyuk firma - skip",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened"
@@ -1014,7 +1014,7 @@
       "email": "contact@kazbeef.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Et işleme, 5000t/yıl. Tel: +7 71636 3-44-09",
+      "notes": "Et işleme, 5000t/yıl. Tel: +7 71636 3-44-09 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "hardBounce"
@@ -1029,7 +1029,7 @@
       "email": "santo@santo.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Kazakistan ilaç lideri. Şymkent. Tel: +7252 61-01-20 | Tel: +7 7252 61 01 40",
+      "notes": "Kazakistan ilaç lideri. Şymkent. Tel: +7252 61-01-20 | Tel: +7 7252 61 01 40 | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "clicked"
@@ -1044,7 +1044,7 @@
       "email": "almaty@kazphosphate.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Fosfor ve gübre. Taraz. Tel: +7 727 330-56-00",
+      "notes": "Fosfor ve gübre. Taraz. Tel: +7 727 330-56-00 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "softBounce"
@@ -1057,9 +1057,9 @@
       "website": "national-coating.kz",
       "contact": "national-coating.kz",
       "email": "info@national-coating.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Boya üretimi, Almatı. Tel: +7 727 399-01-94. Mob: +7 776 399-01-94",
+      "notes": "Boya üretimi, Almatı. Tel: +7 727 399-01-94. Mob: +7 776 399-01-94 | Buyuk firma - skip",
       "whatsapp": "+77763990194",
       "telegram": "",
       "emailEvent": ""
@@ -1074,7 +1074,7 @@
       "email": "info@kazakhupack.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Polimer ambalaj, Şımkent. Tel: +7 727 310-06-84",
+      "notes": "Polimer ambalaj, Şımkent. Tel: +7 727 310-06-84 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -1089,7 +1089,7 @@
       "email": "jambylcement@jambylcement.kz",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Vicat Fransa ortaklığı. 1.4mt/yıl. Mynaral. | Tel: +7 727 244 02 44",
+      "notes": "Vicat Fransa ortaklığı. 1.4mt/yıl. Mynaral. | Tel: +7 727 244 02 44 | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "clicked"
@@ -1102,9 +1102,9 @@
       "website": "heidelbergcement.kz",
       "contact": "heidelbergcement.kz",
       "email": "tender@heidelbergcement.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Şımkent. Satınalma müdürü: Boris Naidenov. Mob: +7 771 086-02-06",
+      "notes": "Şımkent. Satınalma müdürü: Boris Naidenov. Mob: +7 771 086-02-06 | Buyuk firma - skip",
       "whatsapp": "+77710860206",
       "telegram": "",
       "emailEvent": "clicked"
@@ -1119,7 +1119,7 @@
       "email": "sales@nas-cement.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Samawa. Lucky Cement ortak. Tel: +964 780 505 8555",
+      "notes": "Samawa. Lucky Cement ortak. Tel: +964 780 505 8555 | Follow-up fiyatli 25.06",
       "whatsapp": "+9647805058555",
       "telegram": "",
       "emailEvent": "opened"
@@ -1134,7 +1134,7 @@
       "email": "info@almabrooka.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Basra. Lucky Cement + Al-Shomookh ortak.",
+      "notes": "Basra. Lucky Cement + Al-Shomookh ortak. | Follow-up fiyatli 25.06",
       "whatsapp": "+9647783339341",
       "telegram": "",
       "emailEvent": "clicked"
@@ -1149,7 +1149,7 @@
       "email": "Noor.sami@al-douh.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Samawa. 1.5mt/yıl. IFC yatırımı.",
+      "notes": "Samawa. 1.5mt/yıl. IFC yatırımı. | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened"
@@ -1164,7 +1164,7 @@
       "email": "info@dabingroup.krd",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Erbil bölgesinde ilk çimento. 2025 yeni açıldı. Tel: +964 750 590 6161",
+      "notes": "Erbil bölgesinde ilk çimento. 2025 yeni açıldı. Tel: +964 750 590 6161 | Follow-up fiyatli 25.06",
       "whatsapp": "+9647505906161",
       "telegram": "",
       "emailEvent": "opened"
@@ -1179,7 +1179,7 @@
       "email": "info.mcb@massgroupholding.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Bazyan/Süleymaniye. 6mt/yıl. Tel: +964 770 138 3991",
+      "notes": "Bazyan/Süleymaniye. 6mt/yıl. Tel: +964 770 138 3991 | Yeni format fiyatli 25.06",
       "whatsapp": "+9647701383991",
       "telegram": "",
       "emailEvent": ""
@@ -1194,7 +1194,7 @@
       "email": "info.mis@massgroupholding.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Bazyan. 1.25mt/yıl çelik. Tel: +964 770 138 2550",
+      "notes": "Bazyan. 1.25mt/yıl çelik. Tel: +964 770 138 2550 | Yeni format fiyatli 25.06",
       "whatsapp": "+9647701382550",
       "telegram": "",
       "emailEvent": "softBounce"
@@ -1209,7 +1209,7 @@
       "email": "rami@sinalco-co.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Bağdat. 1954'ten beri. Tel: +964 773 122 2221",
+      "notes": "Bağdat. 1954'ten beri. Tel: +964 773 122 2221 | Yeni format fiyatli 25.06",
       "whatsapp": "+9647731222221",
       "telegram": "",
       "emailEvent": ""
@@ -1224,7 +1224,7 @@
       "email": "salesalrawia@gmail.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Bağdat. Su ve meşrubat şişeleme.",
+      "notes": "Bağdat. Su ve meşrubat şişeleme. | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -1239,7 +1239,7 @@
       "email": "info@aljaiedcompany.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Kalar/Süleymaniye. Süt, dondurma, meyve suyu. Tel: +964 770 163 9050",
+      "notes": "Kalar/Süleymaniye. Süt, dondurma, meyve suyu. Tel: +964 770 163 9050 | Yeni format fiyatli 25.06",
       "whatsapp": "+9647701639050",
       "telegram": "",
       "emailEvent": ""
@@ -1254,7 +1254,7 @@
       "email": "info@dijlasoftdrinks.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Bağdat. RC Cola Irak distribütörü. Summer, Vino markaları.",
+      "notes": "Bağdat. RC Cola Irak distribütörü. Summer, Vino markaları. | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -1269,7 +1269,7 @@
       "email": "mpipr@mpicoating.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Bağdat. 1976'dan beri. Borsada işlem görüyor. Tel: +964 772 988 0647",
+      "notes": "Bağdat. 1976'dan beri. Borsada işlem görüyor. Tel: +964 772 988 0647 | Yeni format fiyatli 25.06",
       "whatsapp": "+9647729880647",
       "telegram": "",
       "emailEvent": ""
@@ -1284,7 +1284,7 @@
       "email": "info@pioneerpharma.org",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Süleymaniye. Tel: +964 770 770 9070",
+      "notes": "Süleymaniye. Tel: +964 770 770 9070 | Follow-up fiyatli 25.06",
       "whatsapp": "+9647707709070",
       "telegram": "",
       "emailEvent": "clicked"
@@ -1299,7 +1299,7 @@
       "email": "info@organopharmairaq.com",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Tel: +964 750 448 0318",
+      "notes": "Tel: +964 750 448 0318 | Yeni format fiyatli 25.06",
       "whatsapp": "+9647504480318",
       "telegram": "",
       "emailEvent": ""
@@ -1314,7 +1314,7 @@
       "email": "info@hawkary.net",
       "status": "sent",
       "sentDate": "2026-06-23",
-      "notes": "Erbil. Tel: +964 750 700 1992",
+      "notes": "Erbil. Tel: +964 750 700 1992 | Yeni format fiyatli 25.06",
       "whatsapp": "+9647507001992",
       "telegram": "",
       "emailEvent": ""
@@ -1328,7 +1328,7 @@
       "email": "office@agrodairy.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Bakü süt fabrikası. Tel: +994 12 599 10 99",
+      "notes": "Bakü süt fabrikası. Tel: +994 12 599 10 99 | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened",
@@ -1343,7 +1343,7 @@
       "email": "info@jale.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Gəncə/Qəbələ. 300.000t/yıl meyve işleme. Tel: +994 24 205 26 07",
+      "notes": "Gəncə/Qəbələ. 300.000t/yıl meyve işleme. Tel: +994 24 205 26 07 | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened",
@@ -1358,7 +1358,7 @@
       "email": "office@azgranata.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Ağsu. Meyve suyu, şarap, votka. Tel: +994 12 310 53 04",
+      "notes": "Ağsu. Meyve suyu, şarap, votka. Tel: +994 12 310 53 04 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "",
@@ -1373,7 +1373,7 @@
       "email": "career@totalbeverage.group",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Xırdalan. PepsiCo şişeleme. Mob: +994 50 290 72 72",
+      "notes": "Xırdalan. PepsiCo şişeleme. Mob: +994 50 290 72 72 | Yeni format fiyatli 25.06",
       "whatsapp": "+994502907272",
       "telegram": "",
       "emailEvent": "",
@@ -1386,9 +1386,9 @@
       "sector": "Gıda",
       "website": "carlsbergazerbaijan.az",
       "email": "reception@carlsberg.az",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Xırdalan. Bölgenin en büyük bira fabrikası. Tel: +994 12 342 09 00",
+      "notes": "Xırdalan. Bölgenin en büyük bira fabrikası. Tel: +994 12 342 09 00 | Buyuk firma - skip",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "clicked",
@@ -1401,9 +1401,9 @@
       "sector": "Gıda",
       "website": "vinagro.az",
       "email": "office@vinagro.az",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Göygöl. 537 ha bağ. Şarap ve konyak. Tel: +994 12 437 26 02",
+      "notes": "Göygöl. 537 ha bağ. Şarap ve konyak. Tel: +994 12 437 26 02 | Buyuk firma - skip",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened",
@@ -1418,7 +1418,7 @@
       "email": "info@ulduz.com.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Bakü. 400 çalışan. Tel: +994 12 447 40 11",
+      "notes": "Bakü. 400 çalışan. Tel: +994 12 447 40 11 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "",
@@ -1433,7 +1433,7 @@
       "email": "fabboya@fabboya.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Bakü/Binəqədi. Boya ve kimya. Mob: +994 55 500 91 11",
+      "notes": "Bakü/Binəqədi. Boya ve kimya. Mob: +994 55 500 91 11 | Yeni format fiyatli 25.06",
       "whatsapp": "+994555009111",
       "telegram": "",
       "emailEvent": "",
@@ -1448,7 +1448,7 @@
       "email": "office@azchemco.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Bakü. Sıvı gübre üretimi. Mob: +994 99 369 36 93",
+      "notes": "Bakü. Sıvı gübre üretimi. Mob: +994 99 369 36 93 | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened",
@@ -1463,7 +1463,7 @@
       "email": "info@elplastik.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Sumqayıt. Polimer film ve borular. Mob: +994 50 221 22 26",
+      "notes": "Sumqayıt. Polimer film ve borular. Mob: +994 50 221 22 26 | Yeni format fiyatli 25.06",
       "whatsapp": "+994502212226",
       "telegram": "",
       "emailEvent": "",
@@ -1478,7 +1478,7 @@
       "email": "office@peraplastic.net",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Bakü. 4 fabrika, PP çuvallar. Tel: +994 12 448 02 14",
+      "notes": "Bakü. 4 fabrika, PP çuvallar. Tel: +994 12 448 02 14 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "",
@@ -1493,7 +1493,7 @@
       "email": "info@bakupack.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Abşeron. Karton ambalaj. Mob: +994 50 803 33 03",
+      "notes": "Abşeron. Karton ambalaj. Mob: +994 50 803 33 03 | Yeni format fiyatli 25.06",
       "whatsapp": "+994508033303",
       "telegram": "",
       "emailEvent": "",
@@ -1508,7 +1508,7 @@
       "email": "office@metak.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Bakü/Sumqayıt. Metal boru ve profiller. Tel: +994 10 212 28 28",
+      "notes": "Bakü/Sumqayıt. Metal boru ve profiller. Tel: +994 10 212 28 28 | Follow-up fiyatli 25.06",
       "whatsapp": "+994102122828",
       "telegram": "",
       "emailEvent": "opened",
@@ -1523,7 +1523,7 @@
       "email": "info@azertexnolayn.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Sumqayıt Sənaye Parkı. Çelik boru. Tel: +994 10 250 44 00",
+      "notes": "Sumqayıt Sənaye Parkı. Çelik boru. Tel: +994 10 250 44 00 | Follow-up fiyatli 25.06",
       "whatsapp": "+994102504400",
       "telegram": "",
       "emailEvent": "clicked",
@@ -1538,7 +1538,7 @@
       "email": "info@norm.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Garadağ/Bakü. Güney Kafkasya'nın en büyük çimento. Tel: +994 12 310 10 10",
+      "notes": "Garadağ/Bakü. Güney Kafkasya'nın en büyük çimento. Tel: +994 12 310 10 10 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "hardBounce",
@@ -1553,7 +1553,7 @@
       "email": "office@turkyapi.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Goranboy. Alçıpan üretimi. Mob: +994 50 229 39 85",
+      "notes": "Goranboy. Alçıpan üretimi. Mob: +994 50 229 39 85 | Yeni format fiyatli 25.06",
       "whatsapp": "+994502293985",
       "telegram": "",
       "emailEvent": "",
@@ -1568,7 +1568,7 @@
       "email": "info@giltex.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Sumqayıt. Güney Kafkasya'nın tek entegre tekstil fabrikası. Tel: +994 12 585 10 80",
+      "notes": "Sumqayıt. Güney Kafkasya'nın tek entegre tekstil fabrikası. Tel: +994 12 585 10 80 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "",
@@ -1583,7 +1583,7 @@
       "email": "info@mingachevirtextile.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Mingəçevir. Kafkasya'nın en büyük iplik fabrikası. Tel: +994 24 275 52 25",
+      "notes": "Mingəçevir. Kafkasya'nın en büyük iplik fabrikası. Tel: +994 24 275 52 25 | Yeni format fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "",
@@ -1598,7 +1598,7 @@
       "email": "info@btf.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Bakü. İş kıyafeti ve tekstil. Tel: +994 12 412 02 06",
+      "notes": "Bakü. İş kıyafeti ve tekstil. Tel: +994 12 412 02 06 | Follow-up fiyatli 25.06",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "opened",
@@ -1613,7 +1613,7 @@
       "email": "Refinery@binagadioil-az.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Bakü/Binəqədi. Özel rafineri. Mob: +994 55 694 66 90",
+      "notes": "Bakü/Binəqədi. Özel rafineri. Mob: +994 55 694 66 90 | Yeni format fiyatli 25.06",
       "whatsapp": "+994556946690",
       "telegram": "",
       "emailEvent": "",
@@ -1628,7 +1628,7 @@
       "email": "info@palsud.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Lənkəran. Süt ve et ürünleri. Mob: +994 50 295 44 74",
+      "notes": "Lənkəran. Süt ve et ürünleri. Mob: +994 50 295 44 74 | Yeni format fiyatli 25.06",
       "whatsapp": "+994502954474",
       "telegram": "",
       "emailEvent": "softBounce",
@@ -1644,7 +1644,7 @@
       "email": "info@gcco.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Tbilisi, Saburtalo. Annual capacity 250K tons.",
+      "notes": "Tbilisi, Saburtalo. Annual capacity 250K tons. | Yeni format fiyatli 25.06",
       "emailEvent": "delivered",
       "whatsapp": null,
       "telegram": null
@@ -1659,7 +1659,7 @@
       "email": "info@cement.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Eski adı HeidelbergCement Georgia. Kaspi ve Rustavi'de fabrikalar.",
+      "notes": "Eski adı HeidelbergCement Georgia. Kaspi ve Rustavi'de fabrikalar. | Follow-up fiyatli 25.06",
       "emailEvent": "opened",
       "whatsapp": null,
       "telegram": null
@@ -1719,7 +1719,7 @@
       "email": "contact@nikora.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Gurcistan'in lider gida holding. Et, sut, dondurma, balikcilik. Tbilisi. | Tel: +995 32 269 55 50",
+      "notes": "Gurcistan'in lider gida holding. Et, sut, dondurma, balikcilik. Tbilisi. | Tel: +995 32 269 55 50 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1747,9 +1747,9 @@
       "website": "richmetalsgroup.com",
       "contact": "richmetalsgroup.com/en/contact/",
       "email": "info@richmetalsgroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Bolnisi'de bakir ve altin madeni. Kvemo Kartli'nin en buyuk iscisi. Slurry flowmeter.",
+      "notes": "Bolnisi'de bakir ve altin madeni. Kvemo Kartli'nin en buyuk iscisi. Slurry flowmeter. | Buyuk firma - skip",
       "emailEvent": "clicked",
       "whatsapp": null,
       "telegram": null
@@ -1839,7 +1839,7 @@
       "email": "info@araratcement.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Ermenistan'in 2 Portland cimento ureticisinden biri. Ararat sehri. Multi Group.",
+      "notes": "Ermenistan'in 2 Portland cimento ureticisinden biri. Ararat sehri. Multi Group. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -1869,7 +1869,7 @@
       "email": "export@tamaragroup.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "1988 kurulus. Abovyan, Kotayk. Dondurma, peynir, tereyag. info@tamaragroup.am | info@tamaragroup.am ile yeniden gönderildi",
+      "notes": "1988 kurulus. Abovyan, Kotayk. Dondurma, peynir, tereyag. info@tamaragroup.am | info@tamaragroup.am ile yeniden gönderildi | Yeni format fiyatli 25.06",
       "emailEvent": "hardBounce",
       "whatsapp": null,
       "telegram": null
@@ -1884,7 +1884,7 @@
       "email": "info@artfood.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "40M kutu/yil kapasite. Meyve puresinden meyve suyuna. Artashat.",
+      "notes": "40M kutu/yil kapasite. Meyve puresinden meyve suyuna. Artashat. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+37477533335",
       "telegram": null
@@ -1914,7 +1914,7 @@
       "email": "contact@alextextile.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Kafkasya'nin en buyuk tekstil sirketlerinden. Yerevan. Boyama hatlari icin flowmeter.",
+      "notes": "Kafkasya'nin en buyuk tekstil sirketlerinden. Yerevan. Boyama hatlari icin flowmeter. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2004,7 +2004,7 @@
       "email": "marketing@sante.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "1997 kurulus, Tbilisi Sut Fabrikasi'ndan. Gurcistan sut sektoru lideri. Kakheti Highway km10.",
+      "notes": "1997 kurulus, Tbilisi Sut Fabrikasi'ndan. Gurcistan sut sektoru lideri. Kakheti Highway km10. | Yeni format fiyatli 25.06",
       "emailEvent": "hardBounce",
       "whatsapp": null,
       "telegram": null
@@ -2019,7 +2019,7 @@
       "email": "info@agrohub.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "ISO 22000. Sut isleme, et, pastane, konserve. Gelovani Ave. 22, Tbilisi.",
+      "notes": "ISO 22000. Sut isleme, et, pastane, konserve. Gelovani Ave. 22, Tbilisi. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2034,7 +2034,7 @@
       "email": "info@kavkazcement.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Avchala, Mukhrani, Kakheti. Yillik 250K ton kapasite. Lafarge 2012 ortakligi.",
+      "notes": "Avchala, Mukhrani, Kakheti. Yillik 250K ton kapasite. Lafarge 2012 ortakligi. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2047,9 +2047,9 @@
       "website": "rustaviazot.ge",
       "contact": "rustaviazot.ge",
       "email": "info@rustaviazot.ge",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Kafkasya'nin en buyuk kimya tesisi. Gurcistan'in tek azot gubre ureticisi. Rustavi. YUKSEK ONCELIK. | Tel: +995 341 270909",
+      "notes": "Kafkasya'nin en buyuk kimya tesisi. Gurcistan'in tek azot gubre ureticisi. Rustavi. YUKSEK ONCELIK. | Tel: +995 341 270909 | Buyuk firma - skip",
       "emailEvent": "clicked",
       "whatsapp": null,
       "telegram": null
@@ -2064,7 +2064,7 @@
       "email": "info@tiflistex.ge",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Tbilisi. OEKO-TEX sertifikalı. Yunanistan, Avusturya, Azerbaycan'a ihracat.",
+      "notes": "Tbilisi. OEKO-TEX sertifikalı. Yunanistan, Avusturya, Azerbaycan'a ihracat. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2094,7 +2094,7 @@
       "email": "info@jermukgroup.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Ermenistan'in en buyuk maden suyu ureticisi. 1999 kurulus. Yerevan.",
+      "notes": "Ermenistan'in en buyuk maden suyu ureticisi. 1999 kurulus. Yerevan. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2124,7 +2124,7 @@
       "email": "marketing@hrazdancement.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Yillik 1.2M ton kapasite. Hrazdan, Kotayk. Khachaturov Group.",
+      "notes": "Yillik 1.2M ton kapasite. Hrazdan, Kotayk. Khachaturov Group. | Yeni format fiyatli 25.06",
       "emailEvent": "softBounce",
       "whatsapp": null,
       "telegram": null
@@ -2139,7 +2139,7 @@
       "email": "info@acp.am",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Alaverdi, Lori. Vallex Group. Bakir madeni ve eritme. Slurry flowmeter potansiyeli.",
+      "notes": "Alaverdi, Lori. Vallex Group. Bakir madeni ve eritme. Slurry flowmeter potansiyeli. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2154,7 +2154,7 @@
       "email": "info@arzni.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "1925'ten beri. Yerevan, 69 Arshakunyats Ave. Maden suyu sise hatlari.",
+      "notes": "1925'ten beri. Yerevan, 69 Arshakunyats Ave. Maden suyu sise hatlari. | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2169,7 +2169,7 @@
       "email": "arslan.durdiyev@parahat.biz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Meyve suyu, nektar, süt, gazlı içecek. Aşkabat. YÜKSEK ÖNCELİK | Tel: +993 61 43 99 11",
+      "notes": "Meyve suyu, nektar, süt, gazlı içecek. Aşkabat. YÜKSEK ÖNCELİK | Tel: +993 61 43 99 11 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+99361439911",
       "telegram": null
@@ -2184,7 +2184,7 @@
       "email": "info@adastextile.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Örgü, iplik, havlu. 2008 kurulus. Ak Bugday | Tel: +993 12 575276",
+      "notes": "Örgü, iplik, havlu. 2008 kurulus. Ak Bugday | Tel: +993 12 575276 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2199,7 +2199,7 @@
       "email": "gala@online.tm",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "2700t giyim, 4700t kumaş, 4900t iplik/yıl. Gökdepe | Tel: +993 132 47-2-22",
+      "notes": "2700t giyim, 4700t kumaş, 4900t iplik/yıl. Gökdepe | Tel: +993 132 47-2-22 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2214,7 +2214,7 @@
       "email": "batly-gadam@mail.ru",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "En büyük çorap üreticisi. Balkan welayat | Tel: +993 65 19 02 29",
+      "notes": "En büyük çorap üreticisi. Balkan welayat | Tel: +993 65 19 02 29 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+99365190229",
       "telegram": null
@@ -2229,7 +2229,7 @@
       "email": "safa.polymerplastic@gmail.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "PE/PP film, torba. 1995 kurulus. Aşkabat | Tel: +993 62 27-81-18",
+      "notes": "PE/PP film, torba. 1995 kurulus. Aşkabat | Tel: +993 62 27-81-18 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+99362278118",
       "telegram": null
@@ -2244,7 +2244,7 @@
       "email": "info@kemalplastik.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "2011 kurulus. Aşkabat | Tel: +993 65 601866",
+      "notes": "2011 kurulus. Aşkabat | Tel: +993 65 601866 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+99365601866",
       "telegram": null
@@ -2259,7 +2259,7 @@
       "email": "deryaplastikexport@gmail.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Hijyen ve plastik ürünleri. Aşkabat | Tel: +993 61 43 79 21",
+      "notes": "Hijyen ve plastik ürünleri. Aşkabat | Tel: +993 61 43 79 21 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+99361437921",
       "telegram": null
@@ -2274,7 +2274,7 @@
       "email": "manager@senagatplastik.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "2017 kurulus. Türkmenbaşı | Tel: +993 243 7 99 64",
+      "notes": "2017 kurulus. Türkmenbaşı | Tel: +993 243 7 99 64 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2289,7 +2289,7 @@
       "email": "info@turkmensenagat.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "PE/PP boru, damla sulama. En büyük boru üreticisi. Ak Bugday | Tel: +993 61 03 14 50",
+      "notes": "PE/PP boru, damla sulama. En büyük boru üreticisi. Ak Bugday | Tel: +993 61 03 14 50 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+99361031450",
       "telegram": null
@@ -2304,7 +2304,7 @@
       "email": "office@kantsut.kg",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "1998 kurulus. Süt işleme. YÜKSEK ÖNCELİK | Tel: +996 553 333 000",
+      "notes": "1998 kurulus. Süt işleme. YÜKSEK ÖNCELİK | Tel: +996 553 333 000 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+996553333000",
       "telegram": null
@@ -2319,7 +2319,7 @@
       "email": "office@shoro.kg",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "1992 kurulus. Maden suyu, geleneksel içecekler. Bişkek | Tel: +996 312 36 14 21",
+      "notes": "1992 kurulus. Maden suyu, geleneksel içecekler. Bişkek | Tel: +996 312 36 14 21 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2334,7 +2334,7 @@
       "email": "aarpachiev@toyboss.kg",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "2014 kurulus. Sosis, sucuk. IFC destekli | Tel: +996 705 331 133",
+      "notes": "2014 kurulus. Sosis, sucuk. IFC destekli | Tel: +996 705 331 133 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+996705331133",
       "telegram": null
@@ -2349,7 +2349,7 @@
       "email": "cooperation@naturaljuice.uz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "20+ yıl. Meyve suyu, pastörizasyon. Taşkent | Tel: +998 78 120 37 37",
+      "notes": "20+ yıl. Meyve suyu, pastörizasyon. Taşkent | Tel: +998 78 120 37 37 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2364,7 +2364,7 @@
       "email": "info@aqua.uz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Montella su, Ice çay, Frutto. Taşkent | Tel: +998 78 150 60 10",
+      "notes": "Montella su, Ice çay, Frutto. Taşkent | Tel: +998 78 150 60 10 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2379,7 +2379,7 @@
       "email": "info@crafers.uz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Modern çikolata fabrikası. Taşkent | Tel: +998 71 207 72 07",
+      "notes": "Modern çikolata fabrikası. Taşkent | Tel: +998 71 207 72 07 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2394,7 +2394,7 @@
       "email": "jizplast@uks.uz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "72K ton/yıl PE işleme. Cizzah | Tel: +998 72 22 326 59",
+      "notes": "72K ton/yıl PE işleme. Cizzah | Tel: +998 72 22 326 59 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2409,7 +2409,7 @@
       "email": "info@gormolzavod.kz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "1965 kurulus. Pastörizasyon, dolum. Kökşetau | Tel: +7 7162 92 66 00",
+      "notes": "1965 kurulus. Pastörizasyon, dolum. Kökşetau | Tel: +7 7162 92 66 00 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2424,7 +2424,7 @@
       "email": "office@jlc.kz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "Süt, yoğurt, dondurma. Almatı | Tel: +7 727 224 43 33",
+      "notes": "Süt, yoğurt, dondurma. Almatı | Tel: +7 727 224 43 33 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2439,7 +2439,7 @@
       "email": "info@kfp.kz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "26 yıl, 5000 çalışan, 20 işletme. Almatı | Tel: +7 727 321 00 11",
+      "notes": "26 yıl, 5000 çalışan, 20 işletme. Almatı | Tel: +7 727 321 00 11 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2454,7 +2454,7 @@
       "email": "marketing@aquarossa.kz",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "2018 kurulus. Şımkent | Tel: +7 771 808 01 01",
+      "notes": "2018 kurulus. Şımkent | Tel: +7 771 808 01 01 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": "+77718080101",
       "telegram": null
@@ -2469,7 +2469,7 @@
       "email": "info@gilanholding.com",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "70K ton meyve, 210K ton suyu/yıl. Gabala. ÖZEL | Tel: +994 12 511 68 16",
+      "notes": "70K ton meyve, 210K ton suyu/yıl. Gabala. ÖZEL | Tel: +994 12 511 68 16 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
@@ -2484,7 +2484,7 @@
       "email": "info@milla.az",
       "status": "sent",
       "sentDate": "2026-06-24",
-      "notes": "250 ton süt/gün, 100+ ürün. Abşeron. ÖZEL | Tel: +994 12 410 99 05",
+      "notes": "250 ton süt/gün, 100+ ürün. Abşeron. ÖZEL | Tel: +994 12 410 99 05 | Yeni format fiyatli 25.06",
       "emailEvent": "",
       "whatsapp": null,
       "telegram": null
