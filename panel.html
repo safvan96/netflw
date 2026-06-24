@@ -212,7 +212,7 @@ const AUTH_KEY = 'nf_panel_auth';
 if(localStorage.getItem(AUTH_KEY)==='1'){
   document.getElementById('loginScreen').style.display='none';
   document.getElementById('app').style.display='block';
-  loadData(); renderTable();
+  loadData();
 }
 const KEY = 'nf_crm_v1';
 
@@ -394,6 +394,7 @@ function renderTable(){
     return true;
   });
   const tbody = document.getElementById('leadsBody');
+  updateStats();
   if(!filtered.length){ tbody.innerHTML=''; document.getElementById('emptyState').style.display='block'; return; }
   document.getElementById('emptyState').style.display='none';
   tbody.innerHTML = filtered.map(l=>`
