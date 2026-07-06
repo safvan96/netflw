@@ -329,20 +329,11 @@
   }
 
   function sendBrevo(data){
-    const BREVO_KEY = 'BREVO_API_KEY';
-    const productLines = data.products.map(i=>`${i.qty}x ${i.name} (${i.code})`).join('<br>');
-    const html = `<b>Name:</b> ${data.name}<br><b>Email:</b> ${data.email}<br><b>Company:</b> ${data.company||'—'}<br><b>Country:</b> ${data.country||'—'}<br><br><b>Products:</b><br>${productLines}<br><br><b>Message:</b><br>${data.message||'—'}`;
-    fetch('https://api.brevo.com/v3/smtp/email',{
+    fetch('/api/send-quote',{
       method:'POST',
-      headers:{'api-key':BREVO_KEY,'Content-Type':'application/json'},
-      body: JSON.stringify({
-        sender:{name:'Net Flow Website',email:'info@netflw.com'},
-        to:[{email:'infonetflw@gmail.com'}],
-        replyTo:{email:data.email,name:data.name},
-        subject:`Quote Request from ${data.name} — ${data.country||'Unknown'}`,
-        htmlContent: html
-      })
-    }).catch(()=>{}); // silent fail if Brevo limit reached
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(data)
+    }).catch(()=>{});
   }
 
   /* ---- Init ---- */
