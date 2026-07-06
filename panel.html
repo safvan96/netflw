@@ -110,6 +110,7 @@ a.site-link:hover{text-decoration:underline}
       <div class="stat"><div class="n" id="statSent">0</div><div class="l">Mail Atıldı</div></div>
       <div class="stat"><div class="n" id="statReplied">0</div><div class="l">Yanıt Geldi</div></div>
       <div class="stat"><div class="n" id="statInterested">0</div><div class="l">İlgilendi</div></div>
+      <div class="stat"><div class="n" id="statWA" style="color:#25D366">0</div><div class="l">WA Numarası</div></div>
     </div>
     <span id="syncBadge" style="font-size:11px;color:#64748b;white-space:nowrap"></span>
     <button class="tbtn" onclick="reloadFromServer()" title="Sunucudan yenile">↻ Yenile</button>
@@ -124,22 +125,9 @@ a.site-link:hover{text-decoration:underline}
     </div>
     <select class="fsel" id="filterCountry" onchange="renderTable()">
       <option value="">Tüm Ülkeler</option>
-      <option>Kazakistan</option>
-      <option>Azerbaycan</option>
-      <option>Özbekistan</option>
-      <option>Türkmenistan</option>
-      <option>Tacikistan</option>
-      <option>Kırgızistan</option>
-      <option>Moğolistan</option>
-      <option>Irak</option>
     </select>
     <select class="fsel" id="filterSector" onchange="renderTable()">
       <option value="">Tüm Sektörler</option>
-      <option>Petrol &amp; Gaz</option>
-      <option>Maden</option>
-      <option>Su</option>
-      <option>Kimya</option>
-      <option>Enerji</option>
     </select>
     <select class="fsel" id="filterStatus" onchange="renderTable()">
       <option value="">Tüm Durumlar</option>
@@ -366,11 +354,13 @@ function getEventBadge(ev){
   return `<span style="display:inline-block;margin-top:3px;font-size:10px;padding:1px 6px;border-radius:4px;background:${color}22;color:${color};font-weight:700">${label}</span>`;
 }
 function getSectorClass(s){
-  if(s==='Petrol & Gaz') return 's-oil';
-  if(s==='Maden') return 's-mining';
-  if(s==='Su') return 's-water';
-  if(s==='Kimya') return 's-chemical';
-  if(s==='Enerji') return 's-energy';
+  if(!s) return 's-water';
+  const sl = s.toLowerCase();
+  if(sl.includes('petrol')||sl.includes('oil')||sl.includes('gaz')||sl.includes('gas')) return 's-oil';
+  if(sl.includes('maden')||sl.includes('mining')||sl.includes('metal')||sl.includes('çelik')||sl.includes('steel')||sl.includes('alüminyum')||sl.includes('alum')||sl.includes('kömür')||sl.includes('coal')||sl.includes('bakır')||sl.includes('copper')||sl.includes('çimento')||sl.includes('cement')) return 's-mining';
+  if(sl.includes('su')||sl.includes('water')||sl.includes('sewage')) return 's-water';
+  if(sl.includes('kimya')||sl.includes('chemical')||sl.includes('gübre')||sl.includes('fertilizer')||sl.includes('petrokimya')||sl.includes('petrochemical')||sl.includes('polymer')||sl.includes('plastik')||sl.includes('plastic')) return 's-chemical';
+  if(sl.includes('enerji')||sl.includes('energy')||sl.includes('elektrik')||sl.includes('electric')||sl.includes('power')||sl.includes('hidroelektrik')) return 's-energy';
   return 's-water';
 }
 function getStatusLabel(s){
@@ -379,6 +369,16 @@ function getStatusLabel(s){
 }
 function getDotClass(s){
   return 'd-'+s;
+}
+
+function populateFilters(){
+  const countries = [...new Set(leads.map(l=>l.country).filter(Boolean))].sort();
+  const sectors = [...new Set(leads.map(l=>l.sector).filter(Boolean))].sort();
+  const fc = document.getElementById('filterCountry');
+  const fs = document.getElementById('filterSector');
+  const selC = fc.value, selS = fs.value;
+  fc.innerHTML = '<option value="">Tüm Ülkeler</option>' + countries.map(c=>`<option${c===selC?' selected':''}>${c}</option>`).join('');
+  fs.innerHTML = '<option value="">Tüm Sektörler</option>' + sectors.map(s=>`<option${s===selS?' selected':''}>${s}</option>`).join('');
 }
 
 function renderTable(){
@@ -393,6 +393,7 @@ function renderTable(){
     if(fst && l.status!==fst) return false;
     return true;
   });
+  populateFilters();
   const tbody = document.getElementById('leadsBody');
   updateStats();
   if(!filtered.length){ tbody.innerHTML=''; document.getElementById('emptyState').style.display='block'; return; }
@@ -442,6 +443,7 @@ function updateStats(){
   document.getElementById('statSent').textContent=leads.filter(l=>['sent','replied','interested','notint'].includes(l.status)).length;
   document.getElementById('statReplied').textContent=leads.filter(l=>['replied','interested'].includes(l.status)).length;
   document.getElementById('statInterested').textContent=leads.filter(l=>l.status==='interested').length;
+  document.getElementById('statWA').textContent=leads.filter(l=>l.whatsapp).length;
 }
 
 function addLead(){

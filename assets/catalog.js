@@ -75,6 +75,8 @@
     const href=p.link?p.link:('product.html?p='+encodeURIComponent(p.code));
     const media = `<div class="glyph glyph-anim">${G[p.g]}</div>`;
     const photo = p.img ? `<img class="prod-hover-photo" src="${p.img}" alt="${p.n}" loading="lazy">` : '';
+    const inBasket = window.NFQuote && window.NFQuote.has(p.code);
+    const addLabel = inBasket ? (window.NFQuote.t('added')) : (window.NFQuote ? window.NFQuote.t('add') : '+ Add to Quote');
     return `<a href="${href}" class="card prod-card${theme}">
       <div class="prod-figure">${p.t?'':'<div class="blueprint"></div>'}<div class="prod-tags">${tags}</div>${media}${photo}</div>
       <div class="prod-body">
@@ -83,6 +85,7 @@
         <p>${p.d}</p>
         <div class="prod-specs">${specs}</div>
         <span class="prod-link">View product <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <button class="card-quote-btn${inBasket?' added':''}" data-qb-code="${p.code}" data-qb-name="${p.n.replace(/"/g,'&quot;')}" data-qb-img="${p.img||''}" onclick="event.preventDefault();event.stopPropagation();if(!this.classList.contains('added')&&window.NFQuote){NFQuote.add(this.dataset.qbCode,this.dataset.qbName,this.dataset.qbImg);this.classList.add('added');this.textContent=NFQuote.t('added');}">${addLabel}</button>
       </div>
     </a>`;
   }

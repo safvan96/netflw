@@ -66,6 +66,7 @@
           </div>
           <div class="p-cta">
             <a href="#quote" class="btn btn-primary btn-lg">Request a Quote</a>
+            <button id="pdAddToBasket" class="btn btn-ghost btn-lg" onclick="if(window.NFQuote&&!this.dataset.added){NFQuote.add('${esc(p.code)}','${esc(p.n)}','${esc(p.img||'')}');this.dataset.added='1';this.textContent=NFQuote.t('added');this.style.borderColor='var(--green)';this.style.color='var(--green)';}">+ Add to Quote</button>
             <a href="#specs" class="btn btn-ghost btn-lg">Specifications</a>
           </div>
         </div>
@@ -194,6 +195,13 @@
 
   // translate after injection
   if(window.PMI18n) PMI18n.apply();
+
+  // sync Add-to-Basket button state
+  var addBtn = document.getElementById('pdAddToBasket');
+  if(addBtn && window.NFQuote){
+    addBtn.textContent = NFQuote.t('add');
+    if(NFQuote.has(p.code)){ addBtn.dataset.added='1'; addBtn.textContent = NFQuote.t('added'); addBtn.style.borderColor='var(--green)'; addBtn.style.color='var(--green)'; }
+  }
 
   // mobile: animation → photo cycle for related cards
   if(!window.matchMedia('(hover:hover)').matches){

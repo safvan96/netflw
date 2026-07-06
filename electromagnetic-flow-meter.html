@@ -329,6 +329,7 @@
         </div>
         <div class="p-hero-cta">
           <a href="#quote" class="btn btn-primary btn-lg">Request a Quote</a>
+          <button id="emfAddToBasket" class="btn btn-ghost btn-lg" onclick="if(window.NFQuote&&!this.dataset.added){NFQuote.add('NT-VMF-100','Electromagnetic Flow Meter','assets/products/NT-VMF-100.png');this.dataset.added='1';this.textContent=NFQuote.t('added');this.style.borderColor='var(--green)';this.style.color='var(--green)';}">+ Add to Quote</button>
           <a href="#datasheet" class="btn btn-ghost btn-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Datasheet</a>
         </div>
       </div>
@@ -789,6 +790,7 @@
 
 <script src="assets/i18n-dict.js"></script>
 <script src="assets/i18n.js"></script>
+<script src="assets/quote-basket.js"></script>
 <script src="assets/product.js"></script>
 <script>
 // mobile menu
@@ -822,6 +824,7 @@
   });
 })();
 </script>
+<script>(function(){var b=document.getElementById('emfAddToBasket');if(b&&window.NFQuote){b.textContent=NFQuote.t('add');if(NFQuote.has('NT-VMF-100')){b.dataset.added='1';b.textContent=NFQuote.t('added');b.style.borderColor='var(--green)';b.style.color='var(--green)';}}})()</script>
 <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "4d830cda0a164fc69dfdf65ee1bf60d8"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

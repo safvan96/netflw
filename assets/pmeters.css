@@ -365,6 +365,103 @@ p{margin:0}
 .tg-float:hover{transform:scale(1.08)}
 .tg-float svg{width:30px;height:30px}
 
+/* ============================================================
+   QUOTE BASKET WIDGET
+   ============================================================ */
+.qb-float{position:fixed;right:22px;bottom:158px;z-index:71;width:58px;height:58px;border-radius:50%;
+  background:var(--accent);color:#fff;display:grid;place-items:center;
+  box-shadow:0 8px 26px rgba(30,136,229,.45);transition:transform .2s;border:none;cursor:pointer}
+.qb-float:hover{transform:scale(1.08)}
+.qb-float svg{width:26px;height:26px}
+.qb-badge{position:absolute;top:-4px;right:-4px;background:#F44336;color:#fff;font-size:11px;font-weight:700;
+  min-width:18px;height:18px;border-radius:9px;display:none;align-items:center;justify-content:center;
+  padding:0 4px;font-family:var(--f-body);line-height:1;border:2px solid #fff}
+.qb-badge.show{display:flex}
+@keyframes qbPop{0%{transform:scale(1)}50%{transform:scale(1.5)}100%{transform:scale(1)}}
+.qb-badge.pop{animation:qbPop .3s ease}
+
+/* Drawer */
+.qb-drawer{position:fixed;right:0;top:0;bottom:0;width:min(420px,100vw);background:#fff;z-index:200;
+  transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);
+  box-shadow:-8px 0 40px rgba(10,22,40,.14);display:flex;flex-direction:column}
+.qb-drawer.open{transform:none}
+.qb-overlay{position:fixed;inset:0;background:rgba(10,22,40,.4);z-index:199;opacity:0;pointer-events:none;transition:opacity .3s}
+.qb-overlay.show{opacity:1;pointer-events:auto}
+
+.qb-head{display:flex;align-items:center;justify-content:space-between;padding:20px 20px 16px;
+  border-bottom:1px solid var(--line);gap:12px}
+.qb-head h3{font-family:var(--f-head);font-size:17px;font-weight:700;color:var(--navy-900);margin:0}
+.qb-close{width:36px;height:36px;border-radius:50%;border:none;background:var(--bg-alt);cursor:pointer;
+  display:grid;place-items:center;color:var(--ink-2);transition:background .15s;flex-shrink:0}
+.qb-close:hover{background:var(--line)}
+
+.qb-items{flex:1;overflow-y:auto;padding:12px 16px}
+.qb-empty{text-align:center;padding:48px 20px;color:var(--ink-3)}
+.qb-empty svg{width:48px;height:48px;opacity:.35;margin:0 auto 12px}
+.qb-empty p{font-size:15px;line-height:1.5}
+
+.qb-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.qb-item:last-child{border-bottom:none}
+.qb-item-img{width:52px;height:52px;border-radius:var(--r-sm);background:var(--bg-alt);flex-shrink:0;overflow:hidden}
+.qb-item-img img{width:100%;height:100%;object-fit:contain;padding:4px}
+.qb-item-info{flex:1;min-width:0}
+.qb-item-name{font-size:13px;font-weight:600;color:var(--navy-900);line-height:1.3;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.qb-item-code{font-size:11px;color:var(--ink-3);font-family:var(--f-mono);margin-top:2px}
+.qb-qty{display:flex;align-items:center;gap:6px;margin-top:6px}
+.qb-qty button{width:24px;height:24px;border-radius:6px;border:1px solid var(--line);background:#fff;
+  cursor:pointer;font-size:14px;font-weight:600;color:var(--ink-2);transition:all .15s;line-height:1}
+.qb-qty button:hover{background:var(--bg-alt);border-color:var(--accent)}
+.qb-qty span{font-size:14px;font-weight:600;min-width:20px;text-align:center;color:var(--ink)}
+.qb-remove{width:28px;height:28px;border:none;background:none;cursor:pointer;color:var(--ink-3);
+  display:grid;place-items:center;border-radius:6px;transition:all .15s;flex-shrink:0}
+.qb-remove:hover{background:#FEE2E2;color:#DC2626}
+
+.qb-foot{padding:16px 20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.qb-count{font-size:13px;color:var(--ink-3);text-align:center}
+.qb-foot .btn{width:100%;justify-content:center;font-size:15px;padding:14px}
+
+/* Modal */
+.qb-modal-wrap{position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:16px}
+.qb-modal-bg{position:absolute;inset:0;background:rgba(10,22,40,.5)}
+.qb-modal{position:relative;background:#fff;border-radius:var(--r-lg);max-width:520px;width:100%;
+  max-height:90vh;overflow-y:auto;padding:28px 28px 24px;box-shadow:var(--shadow-lg)}
+.qb-modal h3{font-family:var(--f-head);font-size:20px;font-weight:700;margin:0 0 4px}
+.qb-modal .sub{font-size:14px;color:var(--ink-3);margin-bottom:20px}
+.qb-modal label{display:block;font-size:13px;font-weight:600;color:var(--ink-2);margin-bottom:4px;margin-top:14px}
+.qb-modal label:first-of-type{margin-top:0}
+.qb-modal input,.qb-modal select,.qb-modal textarea{
+  width:100%;padding:11px 13px;border:1.5px solid var(--line-2);border-radius:var(--r-sm);
+  font-family:var(--f-body);font-size:15px;color:var(--ink);background:#fff;transition:border .15s;outline:none}
+.qb-modal input:focus,.qb-modal select:focus,.qb-modal textarea:focus{border-color:var(--accent)}
+.qb-modal textarea{resize:vertical;min-height:80px}
+.qb-modal-products{background:var(--bg-alt);border-radius:var(--r-sm);padding:12px 14px;margin:16px 0 4px;font-size:13px}
+.qb-modal-products b{display:block;margin-bottom:6px;color:var(--navy-900)}
+.qb-modal-products li{color:var(--ink-2);margin-bottom:2px}
+.qb-modal-actions{display:flex;gap:10px;margin-top:20px}
+.qb-modal-actions .btn{flex:1;justify-content:center;padding:13px}
+.qb-success{text-align:center;padding:20px 0}
+.qb-success svg{width:52px;height:52px;color:var(--green);margin:0 auto 12px}
+.qb-success h4{font-family:var(--f-head);font-size:18px;margin:0 0 8px}
+.qb-success p{font-size:14px;color:var(--ink-3)}
+
+/* catalog.js: add-to-quote btn on card */
+.card-quote-btn{
+  display:inline-flex;align-items:center;gap:6px;margin-top:10px;padding:7px 14px;
+  border-radius:var(--r-sm);border:1.5px solid var(--accent);background:transparent;
+  color:var(--accent);font-size:13px;font-weight:600;font-family:var(--f-body);cursor:pointer;
+  transition:all .18s;line-height:1;white-space:nowrap}
+.card-quote-btn:hover{background:var(--accent);color:#fff}
+.card-quote-btn.added{border-color:var(--green);color:var(--green-dim);background:rgba(0,200,83,.07)}
+.card-quote-btn.added:hover{background:rgba(0,200,83,.14)}
+.card-quote-btn svg{width:14px;height:14px;flex-shrink:0}
+
+@media (max-width:680px){
+  .qb-float{bottom:226px}
+  .wa-float{bottom:78px}
+  .tg-float{bottom:146px}
+}
+
 .mobile-bar{display:none}
 
 /* ============================================================
