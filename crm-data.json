@@ -470,9 +470,9 @@
       "website": "markazot.gov.tm",
       "contact": "markazot.gov.tm/en/contacts/",
       "email": "contact@turkmenhimiya.gov.tm",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Azot gübre tesisi. | Turkmenhimiya State Concern email - Markazot/Mary Nitrogen parent org",
+      "notes": "Azot gübre tesisi. | Turkmenhimiya State Concern email - Markazot/Mary Nitrogen parent org | SKIP: website ulaşılamaz",
       "emailEvent": "sent_procurement"
     },
     {
@@ -890,9 +890,9 @@
       "website": "dinay.uz",
       "contact": "dinay.uz",
       "email": "info@dinay.uz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "İçecek üretici ve ihracatçı. Mob: +998 95 512 10 50 | Yeni format fiyatli 25.06",
+      "notes": "İçecek üretici ve ihracatçı. Mob: +998 95 512 10 50 | Yeni format fiyatli 25.06 | SKIP: website ulaşılamaz",
       "whatsapp": "+998955121050",
       "telegram": "",
       "emailEvent": "softBounce"
@@ -935,9 +935,9 @@
       "website": "turon-eco.uz",
       "contact": "turon-eco.uz",
       "email": "turoncement@mail.ru",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Fergana, 600bin t/yıl kapasite. Mob: +998 95 404 77 00 | Yeni format fiyatli 25.06",
+      "notes": "Fergana, 600bin t/yıl kapasite. Mob: +998 95 404 77 00 | Yeni format fiyatli 25.06 | SKIP: website ulaşılamaz",
       "whatsapp": "+998954047700",
       "telegram": "",
       "emailEvent": ""
@@ -1055,9 +1055,9 @@
       "website": "kazphosphate.kz",
       "contact": "kazphosphate.kz",
       "email": "almaty@kazphosphate.kz",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Fosfor ve gübre. Taraz. Tel: +7 727 330-56-00 | Yeni format fiyatli 25.06",
+      "notes": "Fosfor ve gübre. Taraz. Tel: +7 727 330-56-00 | Yeni format fiyatli 25.06 | SKIP: website ulaşılamaz",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": "softBounce"
@@ -1235,9 +1235,9 @@
       "website": "al-rawia.com",
       "contact": "al-rawia.com",
       "email": "salesalrawia@gmail.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-23",
-      "notes": "Bağdat. Su ve meşrubat şişeleme. | Yeni format fiyatli 25.06",
+      "notes": "Bağdat. Su ve meşrubat şişeleme. | Yeni format fiyatli 25.06 | SKIP: website ulaşılamaz",
       "whatsapp": "",
       "telegram": "",
       "emailEvent": ""
@@ -1639,9 +1639,9 @@
       "sector": "Gıda",
       "website": "palsud.az",
       "email": "info@palsud.az",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Lənkəran. Süt ve et ürünleri. Mob: +994 50 295 44 74 | Yeni format fiyatli 25.06",
+      "notes": "Lənkəran. Süt ve et ürünleri. Mob: +994 50 295 44 74 | Yeni format fiyatli 25.06 | SKIP: website ulaşılamaz",
       "whatsapp": "+994502954474",
       "telegram": "",
       "emailEvent": "softBounce",
@@ -2135,9 +2135,9 @@
       "website": "hrazdancement.am",
       "contact": "khachaturovgroup.am/cement-factory/",
       "email": "marketing@hrazdancement.am",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-24",
-      "notes": "Yillik 1.2M ton kapasite. Hrazdan, Kotayk. Khachaturov Group. | Yeni format fiyatli 25.06",
+      "notes": "Yillik 1.2M ton kapasite. Hrazdan, Kotayk. Khachaturov Group. | Yeni format fiyatli 25.06 | SKIP: website ulaşılamaz",
       "emailEvent": "softBounce",
       "whatsapp": null,
       "telegram": null
@@ -2755,9 +2755,9 @@
       "sector": "Süt Ürünleri",
       "website": "adams.pk",
       "email": "info@adams.pk",
-      "notes": "Cheese, butter, ghee, milk powder, Lahore/Sahiwal",
+      "notes": "Cheese, butter, ghee, milk powder, Lahore/Sahiwal | SKIP: hedef dışı ülke",
       "id": 192,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-25",
       "contact": "",
       "emailEvent": ""
@@ -2768,9 +2768,9 @@
       "sector": "Süt Ürünleri",
       "website": "farmpure.pk",
       "email": "info@farmpure.pk",
-      "notes": "Fresh milk, ghee, cheese, Lahore",
+      "notes": "Fresh milk, ghee, cheese, Lahore | SKIP: hedef dışı ülke",
       "id": 193,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-25",
       "contact": "",
       "emailEvent": ""
@@ -2781,9 +2781,9 @@
       "sector": "İçecek",
       "website": "kingbeverages.com.pk",
       "email": "info@tasteofpower.com",
-      "notes": "Fruit juice, energy drinks, Sialkot",
+      "notes": "Fruit juice, energy drinks, Sialkot | SKIP: hedef dışı ülke",
       "id": 194,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-25",
       "contact": "",
       "emailEvent": ""
@@ -2794,9 +2794,9 @@
       "sector": "İçecek",
       "website": "pfj.com.pk",
       "email": "jobs@pfj.com.pk",
-      "notes": "Ice cream & beverages, Lahore/Karachi",
+      "notes": "Ice cream & beverages, Lahore/Karachi | SKIP: hedef dışı ülke",
       "id": 195,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-25",
       "contact": "",
       "emailEvent": ""
@@ -2807,9 +2807,9 @@
       "sector": "Kimya",
       "website": "sitara.com.pk",
       "email": "scil@sitara.com.pk",
-      "notes": "Caustic soda, chlorine, HCl, Faisalabad",
+      "notes": "Caustic soda, chlorine, HCl, Faisalabad | SKIP: hedef dışı ülke",
       "id": 196,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-25",
       "contact": "",
       "emailEvent": ""
@@ -2820,9 +2820,9 @@
       "sector": "Çimento",
       "website": "pioneercement.com",
       "email": "pioneer@pioneercement.com",
-      "notes": "Medium cement producer, Khushab Punjab",
+      "notes": "Medium cement producer, Khushab Punjab | SKIP: hedef dışı ülke",
       "id": 197,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-25",
       "contact": "",
       "emailEvent": ""
@@ -4590,9 +4590,9 @@
       "website": "pvgas.com.vn",
       "contact": "procurement",
       "email": "pvgas@pvgas.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 334,
@@ -4602,9 +4602,9 @@
       "website": "bsr.com.vn",
       "contact": "technical",
       "email": "info@bsr.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 335,
@@ -4614,9 +4614,9 @@
       "website": "vinachem.com.vn",
       "contact": "procurement",
       "email": "vinachem@vinachem.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 336,
@@ -4626,9 +4626,9 @@
       "website": "thanhcongtex.com",
       "contact": "engineering",
       "email": "info@thanhcongtex.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 337,
@@ -4638,9 +4638,9 @@
       "website": "vicem.vn",
       "contact": "procurement",
       "email": "contact@vicem.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 338,
@@ -4830,9 +4830,9 @@
       "website": "deepaknitrite.com",
       "contact": "procurement",
       "email": "info@deepaknitrite.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 354,
@@ -4842,9 +4842,9 @@
       "website": "tatachemicals.com",
       "contact": "procurement",
       "email": "tatachemicals@tatachemicals.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 355,
@@ -4854,9 +4854,9 @@
       "website": "gfl.co.in",
       "contact": "technical",
       "email": "contact@gfl.co.in",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "SE Asia / India campaign 2026-06-27 | Email güncellendi procurement@: GFL vendor portal + procurement entry point",
+      "notes": "SE Asia / India campaign 2026-06-27 | Email güncellendi procurement@: GFL vendor portal + procurement entry point | SKIP: hedef dışı ülke",
       "emailEvent": "sent_procurement"
     },
     {
@@ -4867,9 +4867,9 @@
       "website": "bergerpaints.com",
       "contact": "procurement",
       "email": "info@bergerpaints.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 357,
@@ -4879,9 +4879,9 @@
       "website": "pidilite.com",
       "contact": "procurement",
       "email": "customer.service@pidilite.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 358,
@@ -4891,9 +4891,9 @@
       "website": "hzlindia.com",
       "contact": "engineering",
       "email": "investors@hzlindia.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 359,
@@ -4903,9 +4903,9 @@
       "website": "nlcindia.in",
       "contact": "procurement",
       "email": "nlcwebsite@nlcindia.in",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 360,
@@ -4915,9 +4915,9 @@
       "website": "dalmiabharat.com",
       "contact": "procurement",
       "email": "contact@dalmiabharat.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 361,
@@ -4927,9 +4927,9 @@
       "website": "aartiindustries.com",
       "contact": "technical",
       "email": "info@aartigroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 362,
@@ -4939,9 +4939,9 @@
       "website": "jains.com",
       "contact": "engineering",
       "email": "jains@jains.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "SE Asia / India campaign 2026-06-27"
+      "notes": "SE Asia / India campaign 2026-06-27 | SKIP: hedef dışı ülke"
     },
     {
       "id": 363,
@@ -4951,9 +4951,9 @@
       "website": "apcotex.com",
       "contact": "procurement",
       "email": "info@apcotex.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Ankleshwar Gujarat. Sentetik kauçuk ve lateks üreticisi. Flowmeter ihtiyacı reaktör ve dolum hatlarında."
+      "notes": "Ankleshwar Gujarat. Sentetik kauçuk ve lateks üreticisi. Flowmeter ihtiyacı reaktör ve dolum hatlarında. | SKIP: hedef dışı ülke"
     },
     {
       "id": 364,
@@ -4963,9 +4963,9 @@
       "website": "bodal.com",
       "contact": "technical",
       "email": "dyestuff@bodal.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Ahmedabad Gujarat. Boyarmadde ve tekstil kimyasalları üreticisi. Kimyasal proses hatları."
+      "notes": "Ahmedabad Gujarat. Boyarmadde ve tekstil kimyasalları üreticisi. Kimyasal proses hatları. | SKIP: hedef dışı ülke"
     },
     {
       "id": 365,
@@ -4975,9 +4975,9 @@
       "website": "sudarshan.com",
       "contact": "engineering",
       "email": "contact@sudarshan.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Pune Maharashtra. Pigment ve boyarmadde üreticisi. Akış ölçümü reaktör ve karıştırma sistemlerinde."
+      "notes": "Pune Maharashtra. Pigment ve boyarmadde üreticisi. Akış ölçümü reaktör ve karıştırma sistemlerinde. | SKIP: hedef dışı ülke"
     },
     {
       "id": 366,
@@ -4987,9 +4987,9 @@
       "website": "wondercement.com",
       "contact": "procurement",
       "email": "headoffice@wondercement.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Udaipur Rajasthan. Orta ölçekli çimento üreticisi. 13 MTPA kapasite. Su ve slurry hatları için flowmeter."
+      "notes": "Udaipur Rajasthan. Orta ölçekli çimento üreticisi. 13 MTPA kapasite. Su ve slurry hatları için flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 367,
@@ -4999,9 +4999,9 @@
       "website": "gnfc.in",
       "contact": "procurement",
       "email": "customercare@gnfc.in",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Bharuch Gujarat. Gübre ve kimya üreticisi. Amonyak, asit hatları için manyetik flowmeter."
+      "notes": "Bharuch Gujarat. Gübre ve kimya üreticisi. Amonyak, asit hatları için manyetik flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 368,
@@ -5011,9 +5011,9 @@
       "website": "ionexchangeglobal.com",
       "contact": "engineering",
       "email": "ieil@ionexchange.co.in",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Mumbai. Su arıtma ve iyon değiştirici reçine üreticisi. ETP/STP/WTP projelerinde flowmeter entegrasyonu."
+      "notes": "Mumbai. Su arıtma ve iyon değiştirici reçine üreticisi. ETP/STP/WTP projelerinde flowmeter entegrasyonu. | SKIP: hedef dışı ülke"
     },
     {
       "id": 369,
@@ -5023,9 +5023,9 @@
       "website": "jyotihydrotech.com",
       "contact": "technical",
       "email": "info@jyotihydrotech.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Surat Gujarat. Endüstriyel atık su arıtma sistemi kurulumu. ETP/ZLD projelerinde debimetre."
+      "notes": "Surat Gujarat. Endüstriyel atık su arıtma sistemi kurulumu. ETP/ZLD projelerinde debimetre. | SKIP: hedef dışı ülke"
     },
     {
       "id": 370,
@@ -5035,9 +5035,9 @@
       "website": "3daqua.in",
       "contact": "technical",
       "email": "info@3daqua.in",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "ISO 9001. STP/ETP/WTP/RO çözümleri. Gujarat Maharashtra Rajasthan bölgeleri. Proje bazlı flowmeter."
+      "notes": "ISO 9001. STP/ETP/WTP/RO çözümleri. Gujarat Maharashtra Rajasthan bölgeleri. Proje bazlı flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 371,
@@ -5047,9 +5047,9 @@
       "website": "hetero.com",
       "contact": "engineering",
       "email": "cs@hetero.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Hyderabad Telangana. Büyük API ve jenerik ilaç üreticisi. Farmasötik proses hatlarında PTFE astarlı flowmeter."
+      "notes": "Hyderabad Telangana. Büyük API ve jenerik ilaç üreticisi. Farmasötik proses hatlarında PTFE astarlı flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 372,
@@ -5059,9 +5059,9 @@
       "website": "granulesindia.com",
       "contact": "procurement",
       "email": "sales@granulesindia.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Hyderabad. Paracetamol ve ibuprofen API üreticisi. Proses akış ölçümü ihtiyacı."
+      "notes": "Hyderabad. Paracetamol ve ibuprofen API üreticisi. Proses akış ölçümü ihtiyacı. | SKIP: hedef dışı ülke"
     },
     {
       "id": 373,
@@ -5071,9 +5071,9 @@
       "website": "laxmi.com",
       "contact": "technical",
       "email": "info@laxmi.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Mumbai / Mahad Maharashtra. Asetik asit türevleri ve özel kimyasallar. Korozif akışkanlar için PTFE flowmeter."
+      "notes": "Mumbai / Mahad Maharashtra. Asetik asit türevleri ve özel kimyasallar. Korozif akışkanlar için PTFE flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 374,
@@ -5083,9 +5083,9 @@
       "website": "indigopaints.com",
       "contact": "procurement",
       "email": "info@indigopaints.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Pune Maharashtra. Hızla büyüyen dekoratif boya üreticisi. Üretim hatlarında boya dozaj flowmetre."
+      "notes": "Pune Maharashtra. Hızla büyüyen dekoratif boya üreticisi. Üretim hatlarında boya dozaj flowmetre. | SKIP: hedef dışı ülke"
     },
     {
       "id": 375,
@@ -5095,9 +5095,9 @@
       "website": "yellowdiamond.in",
       "contact": "procurement",
       "email": "info@yellowdiamond.in",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Indore Madhya Pradesh. Önemli cips ve atıştırmalık üreticisi. Gıda proses hatları için hijyenik flowmeter."
+      "notes": "Indore Madhya Pradesh. Önemli cips ve atıştırmalık üreticisi. Gıda proses hatları için hijyenik flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 376,
@@ -5107,9 +5107,9 @@
       "website": "adityacement.com",
       "contact": "engineering",
       "email": "info@adityacement.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Kotputli Rajasthan. Orta ölçekli çimento fabrikası. Su ve slurry besleme hatları için flowmeter."
+      "notes": "Kotputli Rajasthan. Orta ölçekli çimento fabrikası. Su ve slurry besleme hatları için flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 377,
@@ -5119,9 +5119,9 @@
       "website": "thermaxindia.com",
       "contact": "technical",
       "email": "info@thermaxindia.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Pune Maharashtra. Endüstriyel su arıtma ve enerji çözümleri. ZLD/ETP sistemlerinde debimetre entegrasyonu."
+      "notes": "Pune Maharashtra. Endüstriyel su arıtma ve enerji çözümleri. ZLD/ETP sistemlerinde debimetre entegrasyonu. | SKIP: hedef dışı ülke"
     },
     {
       "id": 378,
@@ -5131,9 +5131,9 @@
       "website": "sainikmining.com",
       "contact": "procurement",
       "email": "info@sainikmining.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Gurugram. Kömür/linyit sözleşmeli maden işletmecisi. Slurry ve su deşarj hatlarında flowmeter."
+      "notes": "Gurugram. Kömür/linyit sözleşmeli maden işletmecisi. Slurry ve su deşarj hatlarında flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 379,
@@ -5143,9 +5143,9 @@
       "website": "jyothylabs.com",
       "contact": "engineering",
       "email": "contact@jyothy.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Mumbai. Deterjan ve ev bakım ürünleri üreticisi. Sıvı dolum ve karıştırma hatlarında flowmeter."
+      "notes": "Mumbai. Deterjan ve ev bakım ürünleri üreticisi. Sıvı dolum ve karıştırma hatlarında flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 380,
@@ -5155,9 +5155,9 @@
       "website": "envirowater.in",
       "contact": "technical",
       "email": "info@envirowater.in",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Belediye ve endüstriyel su altyapısı kurulum şirketi. ETP/STP projelerinde manyetik flowmeter."
+      "notes": "Belediye ve endüstriyel su altyapısı kurulum şirketi. ETP/STP projelerinde manyetik flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 381,
@@ -5167,9 +5167,9 @@
       "website": "nerolac.com",
       "contact": "procurement",
       "email": "contact@nerolac.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Mumbai. Hindistan'ın ikinci büyük boya şirketi. Otopark ve endüstriyel boya. Üretim hatları flowmeter."
+      "notes": "Mumbai. Hindistan'ın ikinci büyük boya şirketi. Otopark ve endüstriyel boya. Üretim hatları flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 382,
@@ -5179,9 +5179,9 @@
       "website": "dfpcl.com",
       "contact": "engineering",
       "email": "info@dfpcl.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-27",
-      "notes": "Pune / Taloja Maharashtra. Amonyum nitrat, IPA, TAN üretimi. Korozif ve agresif akışkanlar için flowmeter."
+      "notes": "Pune / Taloja Maharashtra. Amonyum nitrat, IPA, TAN üretimi. Korozif ve agresif akışkanlar için flowmeter. | SKIP: hedef dışı ülke"
     },
     {
       "id": 383,
@@ -5442,9 +5442,9 @@
       "website": "amberdenim.com",
       "contact": "Info",
       "email": "info@amberdenim.com",
-      "notes": "Gazipur knit dyeing fabrikası, akış ölçer kullanır",
+      "notes": "Gazipur knit dyeing fabrikası, akış ölçer kullanır | SKIP: hedef dışı ülke",
       "id": 404,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5454,9 +5454,9 @@
       "website": "chaity.com",
       "contact": "Info",
       "email": "info@chaity.com",
-      "notes": "Narayanganj knit dyeing, kimyasal sıvı prosesi",
+      "notes": "Narayanganj knit dyeing, kimyasal sıvı prosesi | SKIP: hedef dışı ülke",
       "id": 405,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5466,9 +5466,9 @@
       "website": "kssknit.com",
       "contact": "Info",
       "email": "info@kssknit.com",
-      "notes": "Gazipur, boyama-yıkama prosesi",
+      "notes": "Gazipur, boyama-yıkama prosesi | SKIP: hedef dışı ülke",
       "id": 406,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5478,9 +5478,9 @@
       "website": "kazigroup.com",
       "contact": "Info",
       "email": "info@kazigroup.com",
-      "notes": "Narayanganj, tekstil sizing kimyasalı",
+      "notes": "Narayanganj, tekstil sizing kimyasalı | SKIP: hedef dışı ülke",
       "id": 407,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5490,9 +5490,9 @@
       "website": "fatullahfabrics.com",
       "contact": "Info",
       "email": "info@fatullahfabrics.com",
-      "notes": "Narayanganj, boyama prosesi",
+      "notes": "Narayanganj, boyama prosesi | SKIP: hedef dışı ülke",
       "id": 408,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5502,9 +5502,9 @@
       "website": "alphaknit.com.bd",
       "contact": "Info",
       "email": "info@alphaknit.com.bd",
-      "notes": "Gazipur, knit dyeing, su ve kimyasal akış takibi",
+      "notes": "Gazipur, knit dyeing, su ve kimyasal akış takibi | SKIP: hedef dışı ülke",
       "id": 409,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5514,9 +5514,9 @@
       "website": "sadaqatgroup.com",
       "contact": "Info",
       "email": "info@sadaqatgroup.com",
-      "notes": "Faisalabad, dikey entegre tekstil, boyama hattı",
+      "notes": "Faisalabad, dikey entegre tekstil, boyama hattı | SKIP: hedef dışı ülke",
       "id": 410,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5526,9 +5526,9 @@
       "website": "paklandchem.com",
       "contact": "Info",
       "email": "info@paklandchem.com",
-      "notes": "Faisalabad, kimya üretimi, akış ölçer ihtiyacı",
+      "notes": "Faisalabad, kimya üretimi, akış ölçer ihtiyacı | SKIP: hedef dışı ülke",
       "id": 411,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5538,9 +5538,9 @@
       "website": "jintex-chemical.com",
       "contact": "Sales",
       "email": "jindo.industry@jintex-chemical.com",
-      "notes": "Bekasi Cikarang, tekstil kimyasalı üretimi",
+      "notes": "Bekasi Cikarang, tekstil kimyasalı üretimi | SKIP: hedef dışı ülke",
       "id": 412,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5550,9 +5550,9 @@
       "website": "chemstarindonesia.com",
       "contact": "Info",
       "email": "info@chemstarindonesia.com",
-      "notes": "Tekstil kimyasalı üretim ve ticaret",
+      "notes": "Tekstil kimyasalı üretim ve ticaret | SKIP: hedef dışı ülke",
       "id": 413,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5562,9 +5562,9 @@
       "website": "nagachem.com",
       "contact": "Info",
       "email": "info@nagachem.com",
-      "notes": "Endüstriyel kimya üretim ve hizmet",
+      "notes": "Endüstriyel kimya üretim ve hizmet | SKIP: hedef dışı ülke",
       "id": 414,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5574,9 +5574,9 @@
       "website": "duniakimiajaya.com",
       "contact": "Info",
       "email": "info@duniakimiajaya.com",
-      "notes": "Tekstil, kağıt, lastik, su arıtma kimyasalı",
+      "notes": "Tekstil, kağıt, lastik, su arıtma kimyasalı | SKIP: hedef dışı ülke",
       "id": 415,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5586,9 +5586,9 @@
       "website": "vinachem.com.vn",
       "contact": "Office",
       "email": "infor.office@vinachem.com.vn",
-      "notes": "Hanoi, ulusal kimya grubu, akış ölçer ihtiyacı yüksek",
+      "notes": "Hanoi, ulusal kimya grubu, akış ölçer ihtiyacı yüksek | SKIP: hedef dışı ülke",
       "id": 416,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5598,9 +5598,9 @@
       "website": "hcmc.com.vn",
       "contact": "Info",
       "email": "info@hcmc.com.vn",
-      "notes": "Ho Chi Minh, kimya üretimi, Cat Lai sanayi bölgesi",
+      "notes": "Ho Chi Minh, kimya üretimi, Cat Lai sanayi bölgesi | SKIP: hedef dışı ülke",
       "id": 417,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5610,9 +5610,9 @@
       "website": "kova.com.vn",
       "contact": "Info",
       "email": "info@kova.com.vn",
-      "notes": "Hanoi + HCMC, boya üretim grubu, emülsiyon hatları",
+      "notes": "Hanoi + HCMC, boya üretim grubu, emülsiyon hatları | SKIP: hedef dışı ülke",
       "id": 418,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5646,9 +5646,9 @@
       "website": "myanmarchemicalmart.com",
       "contact": "Info",
       "email": "myanmar.chemical.mart@gmail.com",
-      "notes": "Yangon Hlaing Thar Yar sanayi, endüstriyel kimya",
+      "notes": "Yangon Hlaing Thar Yar sanayi, endüstriyel kimya | SKIP: hedef dışı ülke",
       "id": 421,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5658,9 +5658,9 @@
       "website": "islandpaints.com",
       "contact": "Info",
       "email": "info@islandpaints.com",
-      "notes": "Boya üretici, emülsiyon hatları, akış ölçer",
+      "notes": "Boya üretici, emülsiyon hatları, akış ölçer | SKIP: hedef dışı ülke",
       "id": 422,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5670,9 +5670,9 @@
       "website": "tncchem.com",
       "contact": "Info",
       "email": "info@tncchem.com",
-      "notes": "Makati, nitroselüloz ve endüstriyel kimya üretimi",
+      "notes": "Makati, nitroselüloz ve endüstriyel kimya üretimi | SKIP: hedef dışı ülke",
       "id": 423,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5875,9 +5875,9 @@
       "website": "orgachim.bg",
       "contact": "Info",
       "email": "info@orgachim.bg",
-      "notes": "Ruse, 120+ yıl, Bulgaristan boya pazarı lideri",
+      "notes": "Ruse, 120+ yıl, Bulgaristan boya pazarı lideri | SKIP: hedef dışı ülke",
       "id": 440,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5887,9 +5887,9 @@
       "website": "alsal.ro",
       "contact": "Contact",
       "email": "contact@alsal.ro",
-      "notes": "Oradea, koagülant kimyasal üretici, su arıtma sektörü",
+      "notes": "Oradea, koagülant kimyasal üretici, su arıtma sektörü | SKIP: hedef dışı ülke",
       "id": 441,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -5995,9 +5995,9 @@
       "website": "rokospol.com",
       "contact": "Info",
       "email": "info@rokospol.com",
-      "notes": "Çek Cum., endüstriyel ve dekoratif boya, Çek+Slovak+Polonya pazarı",
+      "notes": "Çek Cum., endüstriyel ve dekoratif boya, Çek+Slovak+Polonya pazarı | SKIP: hedef dışı ülke",
       "id": 450,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6007,9 +6007,9 @@
       "website": "grundfoswt.com",
       "contact": "Info",
       "email": "info.pl@grundfoswt.com",
-      "notes": "Polonya, su arıtma ekipmanı, akış ölçer entegrasyonu",
+      "notes": "Polonya, su arıtma ekipmanı, akış ölçer entegrasyonu | SKIP: hedef dışı ülke",
       "id": 451,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6067,9 +6067,9 @@
       "website": "bonchem.co.za",
       "contact": "Enquiries",
       "email": "enquiries@bonchem.co.za",
-      "notes": "Edenvale, endüstriyel kimya üretim ve depolama",
+      "notes": "Edenvale, endüstriyel kimya üretim ve depolama | SKIP: hedef dışı ülke",
       "id": 456,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6079,9 +6079,9 @@
       "website": "ultrawater.co.za",
       "contact": "Info",
       "email": "info@ultrawater.co.za",
-      "notes": "Su arıtma kimyasalı, maden ve çevre yönetimi",
+      "notes": "Su arıtma kimyasalı, maden ve çevre yönetimi | SKIP: hedef dışı ülke",
       "id": 457,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6091,9 +6091,9 @@
       "website": "pintuco.com.co",
       "contact": "Info",
       "email": "info@pintuco.com.co",
-      "notes": "Medellín, Kolombiya+Ekvador+Orta Amerika, karbon nötr sertifikalı",
+      "notes": "Medellín, Kolombiya+Ekvador+Orta Amerika, karbon nötr sertifikalı | SKIP: hedef dışı ülke",
       "id": 458,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6103,9 +6103,9 @@
       "website": "comex.com.mx",
       "contact": "Info",
       "email": "info@comex.com.mx",
-      "notes": "Meksika, 4000+ satış noktası, PPG Comex grubu",
+      "notes": "Meksika, 4000+ satış noktası, PPG Comex grubu | SKIP: hedef dışı ülke",
       "id": 459,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6115,9 +6115,9 @@
       "website": "cin.eu",
       "contact": "Info",
       "email": "info@cin.eu",
-      "notes": "Porto, Portekiz boya lideri, İspanya-Fransa-Angola pazarı",
+      "notes": "Porto, Portekiz boya lideri, İspanya-Fransa-Angola pazarı | SKIP: hedef dışı ülke",
       "id": 460,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6127,9 +6127,9 @@
       "website": "titanlux.es",
       "contact": "Info",
       "email": "info@titanlux.es",
-      "notes": "Barcelona, dekoratif ve endüstriyel boya, emülsiyon hatları",
+      "notes": "Barcelona, dekoratif ve endüstriyel boya, emülsiyon hatları | SKIP: hedef dışı ülke",
       "id": 461,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6139,9 +6139,9 @@
       "website": "kukdo.com",
       "contact": "General",
       "email": "kdc@kukdo.com",
-      "notes": "Seul, epoksi reçine ve boya hammaddesi, 1972'den beri",
+      "notes": "Seul, epoksi reçine ve boya hammaddesi, 1972'den beri | SKIP: hedef dışı ülke",
       "id": 462,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6151,9 +6151,9 @@
       "website": "kcc.co.kr",
       "contact": "Info",
       "email": "info@kcc.co.kr",
-      "notes": "Seul, Kore'nin en büyük boya ve cam üreticisi",
+      "notes": "Seul, Kore'nin en büyük boya ve cam üreticisi | SKIP: hedef dışı ülke",
       "id": 463,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6163,9 +6163,9 @@
       "website": "samhwapaints.com",
       "contact": "Info",
       "email": "info@samhwapaints.com",
-      "notes": "Kore, endüstriyel ve dekoratif boya üreticisi",
+      "notes": "Kore, endüstriyel ve dekoratif boya üreticisi | SKIP: hedef dışı ülke",
       "id": 464,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6175,9 +6175,9 @@
       "website": "songwon.com",
       "contact": "Info",
       "email": "info@songwon.com",
-      "notes": "Ulsan, kimyasal hammadde ve polimer katkı üreticisi",
+      "notes": "Ulsan, kimyasal hammadde ve polimer katkı üreticisi | SKIP: hedef dışı ülke",
       "id": 465,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6187,9 +6187,9 @@
       "website": "dnt.co.jp",
       "contact": "Info",
       "email": "info@dnt.co.jp",
-      "notes": "Tokyo, Japonya endüstriyel boya üreticisi, otomotiv+ağır sanayi",
+      "notes": "Tokyo, Japonya endüstriyel boya üreticisi, otomotiv+ağır sanayi | SKIP: hedef dışı ülke",
       "id": 466,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6199,9 +6199,9 @@
       "website": "chugoku.co.jp",
       "contact": "Info",
       "email": "info@chugoku.co.jp",
-      "notes": "Hiroshima, gemi boyası ve endüstriyel kaplama üreticisi",
+      "notes": "Hiroshima, gemi boyası ve endüstriyel kaplama üreticisi | SKIP: hedef dışı ülke",
       "id": 467,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6211,9 +6211,9 @@
       "website": "rainbowpaint.com.tw",
       "contact": "Sales",
       "email": "ycprd@mail.rainbowpaint.com",
-      "notes": "Kaohsiung, endüstriyel boya ve varnish, ihracat odaklı",
+      "notes": "Kaohsiung, endüstriyel boya ve varnish, ihracat odaklı | SKIP: hedef dışı ülke",
       "id": 468,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6223,9 +6223,9 @@
       "website": "nanpao.com",
       "contact": "Info",
       "email": "info@nanpao.com",
-      "notes": "Tainan, $700M+ satış, yapıştırıcı ve reçine üreticisi",
+      "notes": "Tainan, $700M+ satış, yapıştırıcı ve reçine üreticisi | SKIP: hedef dışı ülke",
       "id": 469,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6259,9 +6259,9 @@
       "website": "polifarbe.hu",
       "contact": "Info",
       "email": "polifarbe@polifarbe.hu",
-      "notes": "Bócsa, Macaristan'ın en büyük boya üreticisi, 2017'de yeni fabrika",
+      "notes": "Bócsa, Macaristan'ın en büyük boya üreticisi, 2017'de yeni fabrika | SKIP: hedef dışı ülke",
       "id": 472,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6283,9 +6283,9 @@
       "website": "rennercoatings.com",
       "contact": "Info",
       "email": "contato@rennercoatings.com",
-      "notes": "Curitiba, Latin Amerika'nın en büyük endüstriyel boya üreticilerinden",
+      "notes": "Curitiba, Latin Amerika'nın en büyük endüstriyel boya üreticilerinden | SKIP: hedef dışı ülke",
       "id": 474,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6295,9 +6295,9 @@
       "website": "iquine.com.br",
       "contact": "Info",
       "email": "contato@iquine.com.br",
-      "notes": "Pernambuco, 220M litre/yıl kapasite, 3 fabrika",
+      "notes": "Pernambuco, 220M litre/yıl kapasite, 3 fabrika | SKIP: hedef dışı ülke",
       "id": 475,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6307,9 +6307,9 @@
       "website": "snf.com.br",
       "contact": "Info",
       "email": "info@snf.com.br",
-      "notes": "Sao Paulo, flokülant ve su arıtma kimyasalı lideri",
+      "notes": "Sao Paulo, flokülant ve su arıtma kimyasalı lideri | SKIP: hedef dışı ülke",
       "id": 476,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6319,9 +6319,9 @@
       "website": "tersuave.com.ar",
       "contact": "Info",
       "email": "info@tersuave.com.ar",
-      "notes": "Villa Mercedes, Arjantin boya sektörü lideri, mimari+endüstriyel",
+      "notes": "Villa Mercedes, Arjantin boya sektörü lideri, mimari+endüstriyel | SKIP: hedef dışı ülke",
       "id": 477,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6331,9 +6331,9 @@
       "website": "colorin.com.ar",
       "contact": "Info",
       "email": "info@colorin.com.ar",
-      "notes": "Buenos Aires, boya ve kaplama üreticisi, Tersuave bünyesinde",
+      "notes": "Buenos Aires, boya ve kaplama üreticisi, Tersuave bünyesinde | SKIP: hedef dışı ülke",
       "id": 478,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6343,9 +6343,9 @@
       "website": "sipa.cl",
       "contact": "Info",
       "email": "info@sipa.cl",
-      "notes": "Santiago, Şili boya üreticisi, endüstriyel ve mimari",
+      "notes": "Santiago, Şili boya üreticisi, endüstriyel ve mimari | SKIP: hedef dışı ülke",
       "id": 479,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6355,9 +6355,9 @@
       "website": "anypsa.com.pe",
       "contact": "Info",
       "email": "info@anypsa.com.pe",
-      "notes": "Lima, Peru'nun en büyük yerli boya üreticisi",
+      "notes": "Lima, Peru'nun en büyük yerli boya üreticisi | SKIP: hedef dışı ülke",
       "id": 480,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6367,9 +6367,9 @@
       "website": "tambour.co.il",
       "contact": "Info",
       "email": "info@tambour.co.il",
-      "notes": "Tel Aviv, İsrail boya pazarı lideri, AkzoNobel grubu",
+      "notes": "Tel Aviv, İsrail boya pazarı lideri, AkzoNobel grubu | SKIP: hedef dışı ülke",
       "id": 481,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6439,9 +6439,9 @@
       "website": "chemiewater.com",
       "contact": "Sales",
       "email": "info@chemiewater.com",
-      "notes": "Water treatment solutions Pakistan",
+      "notes": "Water treatment solutions Pakistan | SKIP: hedef dışı ülke",
       "id": 487,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6451,9 +6451,9 @@
       "website": "watercareservices.org",
       "contact": "Sales",
       "email": "info@watercareservices.org",
-      "notes": "Water treatment Karachi",
+      "notes": "Water treatment Karachi | SKIP: hedef dışı ülke",
       "id": 488,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6463,9 +6463,9 @@
       "website": "arcopk.com",
       "contact": "Sales",
       "email": "info@arcopk.com",
-      "notes": "Chemicals and water treatment Pakistan",
+      "notes": "Chemicals and water treatment Pakistan | SKIP: hedef dışı ülke",
       "id": 489,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6475,9 +6475,9 @@
       "website": "ozoneinternational.pk",
       "contact": "Sales",
       "email": "info@ozoneinternational.pk",
-      "notes": "Water treatment Lahore Pakistan",
+      "notes": "Water treatment Lahore Pakistan | SKIP: hedef dışı ülke",
       "id": 490,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6487,9 +6487,9 @@
       "website": "colorlak.cz",
       "contact": "Export Sales",
       "email": "export@colorlak.cz",
-      "notes": "Large Czech paint manufacturer",
+      "notes": "Large Czech paint manufacturer | SKIP: hedef dışı ülke",
       "id": 491,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6499,9 +6499,9 @@
       "website": "industrol.cz",
       "contact": "Sales",
       "email": "info@industrol.cz",
-      "notes": "Industrial coatings Czech",
+      "notes": "Industrial coatings Czech | SKIP: hedef dışı ülke",
       "id": 492,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6511,9 +6511,9 @@
       "website": "chemos.cz",
       "contact": "Sales",
       "email": "chemos@chemos.cz",
-      "notes": "Chemical manufacturing Czech",
+      "notes": "Chemical manufacturing Czech | SKIP: hedef dışı ülke",
       "id": 493,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6523,9 +6523,9 @@
       "website": "malfarb.pl",
       "contact": "Sales",
       "email": "biuro@malfarb.pl",
-      "notes": "Paint manufacturer Poland",
+      "notes": "Paint manufacturer Poland | SKIP: hedef dışı ülke",
       "id": 494,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6535,9 +6535,9 @@
       "website": "polifarb-cieszyn.com.pl",
       "contact": "Export",
       "email": "export@polifarb-cieszyn.com.pl",
-      "notes": "Polish paint manufacturer Cieszyn",
+      "notes": "Polish paint manufacturer Cieszyn | SKIP: hedef dışı ülke",
       "id": 495,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6547,9 +6547,9 @@
       "website": "nitro-chem.pl",
       "contact": "Sales",
       "email": "nitrochem@nitro-chem.pl",
-      "notes": "Chemical manufacturer Poland",
+      "notes": "Chemical manufacturer Poland | SKIP: hedef dışı ülke",
       "id": 496,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -6883,9 +6883,9 @@
       "website": "cfmnet.co.mz",
       "contact": "Procurement",
       "email": "info@cfmnet.co.mz",
-      "notes": "Ports Mozambique",
+      "notes": "Ports Mozambique | SKIP: alakasız sektör (Port & Logistics)",
       "id": 524,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7111,9 +7111,9 @@
       "website": "bashundharagroup.com",
       "contact": "Procurement",
       "email": "info@bashundharagroup.com",
-      "notes": "Cement paper chemicals Bangladesh",
+      "notes": "Cement paper chemicals Bangladesh | SKIP: hedef dışı ülke",
       "id": 543,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7123,9 +7123,9 @@
       "website": "bsrm.com",
       "contact": "Procurement",
       "email": "info@bsrm.com",
-      "notes": "Steel manufacturer Bangladesh",
+      "notes": "Steel manufacturer Bangladesh | SKIP: hedef dışı ülke",
       "id": 544,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7135,9 +7135,9 @@
       "website": "mcml.net",
       "contact": "Procurement",
       "email": "info@mcml.net",
-      "notes": "Cement Bangladesh",
+      "notes": "Cement Bangladesh | SKIP: hedef dışı ülke",
       "id": 545,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7147,9 +7147,9 @@
       "website": "pvgas.com.vn",
       "contact": "Procurement",
       "email": "pvgas@pvgas.com.vn",
-      "notes": "Gas company Vietnam",
+      "notes": "Gas company Vietnam | SKIP: hedef dışı ülke",
       "id": 546,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7159,9 +7159,9 @@
       "website": "hoaphat.com.vn",
       "contact": "Procurement",
       "email": "contact@hoaphat.com.vn",
-      "notes": "Steel manufacturer Vietnam",
+      "notes": "Steel manufacturer Vietnam | SKIP: hedef dışı ülke",
       "id": 547,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7195,9 +7195,9 @@
       "website": "myanmarbrewery.com.mm",
       "contact": "Procurement",
       "email": "info@myanmarbrewery.com.mm",
-      "notes": "Brewery Myanmar",
+      "notes": "Brewery Myanmar | SKIP: hedef dışı ülke",
       "id": 550,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7255,9 +7255,9 @@
       "website": "semenindonesia.com",
       "contact": "Procurement",
       "email": "sekretaris@semenindonesia.com",
-      "notes": "Largest cement Indonesia",
+      "notes": "Largest cement Indonesia | SKIP: hedef dışı ülke",
       "id": 555,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7267,9 +7267,9 @@
       "website": "capcx.com",
       "contact": "Procurement",
       "email": "info@capcx.com",
-      "notes": "Petrochemical Indonesia",
+      "notes": "Petrochemical Indonesia | SKIP: hedef dışı ülke",
       "id": 556,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7279,9 +7279,9 @@
       "website": "holcim.com.ph",
       "contact": "Procurement",
       "email": "info@holcim.com.ph",
-      "notes": "Cement Philippines",
+      "notes": "Cement Philippines | SKIP: hedef dışı ülke",
       "id": 557,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7291,9 +7291,9 @@
       "website": "petron.com",
       "contact": "Procurement",
       "email": "askpetron@petron.com",
-      "notes": "Oil refinery Philippines",
+      "notes": "Oil refinery Philippines | SKIP: hedef dışı ülke",
       "id": 558,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7592,9 +7592,9 @@
       "website": "mol.hu",
       "contact": "Procurement",
       "email": "mol@mol.hu",
-      "notes": "Oil gas Hungary",
+      "notes": "Oil gas Hungary | SKIP: hedef dışı ülke",
       "id": 583,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7604,9 +7604,9 @@
       "website": "borsodchem.hu",
       "contact": "Sales",
       "email": "borsodchem@borsodchem.hu",
-      "notes": "Chemical Hungary",
+      "notes": "Chemical Hungary | SKIP: hedef dışı ülke",
       "id": 584,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7616,9 +7616,9 @@
       "website": "omvpetrom.com",
       "contact": "Procurement",
       "email": "contact@petrom.ro",
-      "notes": "Oil gas Romania",
+      "notes": "Oil gas Romania | SKIP: hedef dışı ülke",
       "id": 585,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7628,9 +7628,9 @@
       "website": "lafarge.ro",
       "contact": "Procurement",
       "email": "office@lafarge.ro",
-      "notes": "Cement Romania",
+      "notes": "Cement Romania | SKIP: hedef dışı ülke",
       "id": 586,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7688,9 +7688,9 @@
       "website": "upm.com",
       "contact": "Procurement",
       "email": "info@upm.com",
-      "notes": "Paper pulp Finland - flow meters",
+      "notes": "Paper pulp Finland - flow meters | SKIP: hedef dışı ülke",
       "id": 591,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7700,9 +7700,9 @@
       "website": "metsafibre.com",
       "contact": "Procurement",
       "email": "info@metsafibre.com",
-      "notes": "Pulp mill Finland",
+      "notes": "Pulp mill Finland | SKIP: hedef dışı ülke",
       "id": 592,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7712,9 +7712,9 @@
       "website": "equinor.com",
       "contact": "Procurement",
       "email": "procurement@equinor.com",
-      "notes": "Large oil gas Norway",
+      "notes": "Large oil gas Norway | SKIP: hedef dışı ülke",
       "id": 593,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7724,9 +7724,9 @@
       "website": "billerud.com",
       "contact": "Procurement",
       "email": "info@billerud.com",
-      "notes": "Paper packaging Sweden",
+      "notes": "Paper packaging Sweden | SKIP: hedef dışı ülke",
       "id": 594,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7772,9 +7772,9 @@
       "website": "paksteel.com.pk",
       "contact": "Procurement",
       "email": "info@paksteel.com.pk",
-      "notes": "Steel mill Karachi",
+      "notes": "Steel mill Karachi | SKIP: hedef dışı ülke",
       "id": 598,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7784,9 +7784,9 @@
       "website": "engrochemicals.com",
       "contact": "Procurement",
       "email": "info@engrochemicals.com",
-      "notes": "Fertilizer chemicals Pakistan",
+      "notes": "Fertilizer chemicals Pakistan | SKIP: hedef dışı ülke",
       "id": 599,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7796,9 +7796,9 @@
       "website": "godrejindustries.com",
       "contact": "Procurement",
       "email": "corporate@godrej.com",
-      "notes": "Chemical India",
+      "notes": "Chemical India | SKIP: hedef dışı ülke",
       "id": 600,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7808,9 +7808,9 @@
       "website": "deepaknitrite.com",
       "contact": "Sales",
       "email": "info@deepaknitrite.com",
-      "notes": "Chemical manufacturer India",
+      "notes": "Chemical manufacturer India | SKIP: hedef dışı ülke",
       "id": 601,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7820,9 +7820,9 @@
       "website": "pttgcgroup.com",
       "contact": "Procurement",
       "email": "info@pttgcgroup.com",
-      "notes": "Petrochemical Thailand",
+      "notes": "Petrochemical Thailand | SKIP: hedef dışı ülke",
       "id": 602,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7952,9 +7952,9 @@
       "website": "neftochim.bg",
       "contact": "Procurement",
       "email": "neftochim@neftochim.bg",
-      "notes": "Oil refinery Burgas Bulgaria",
+      "notes": "Oil refinery Burgas Bulgaria | SKIP: hedef dışı ülke",
       "id": 613,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7964,9 +7964,9 @@
       "website": "aurubis.bg",
       "contact": "Procurement",
       "email": "info@aurubis.bg",
-      "notes": "Copper smelter Bulgaria",
+      "notes": "Copper smelter Bulgaria | SKIP: hedef dışı ülke",
       "id": 614,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7976,9 +7976,9 @@
       "website": "petronaschems.com",
       "contact": "Procurement",
       "email": "info@petronaschems.com",
-      "notes": "Chemicals Malaysia",
+      "notes": "Chemicals Malaysia | SKIP: hedef dışı ülke",
       "id": 615,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -7988,9 +7988,9 @@
       "website": "annjoo.com.my",
       "contact": "Procurement",
       "email": "info@annjoo.com.my",
-      "notes": "Steel Malaysia",
+      "notes": "Steel Malaysia | SKIP: hedef dışı ülke",
       "id": 616,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8000,9 +8000,9 @@
       "website": "jac.com.sg",
       "contact": "Procurement",
       "email": "info@jac.com.sg",
-      "notes": "Petrochemical Singapore",
+      "notes": "Petrochemical Singapore | SKIP: hedef dışı ülke",
       "id": 617,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8012,9 +8012,9 @@
       "website": "cpc.com.tw",
       "contact": "Procurement",
       "email": "cpc@cpc.com.tw",
-      "notes": "Oil gas Taiwan",
+      "notes": "Oil gas Taiwan | SKIP: hedef dışı ülke",
       "id": 618,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8024,9 +8024,9 @@
       "website": "csc.com.tw",
       "contact": "Procurement",
       "email": "pr@mail.csc.com.tw",
-      "notes": "Steel Taiwan",
+      "notes": "Steel Taiwan | SKIP: hedef dışı ülke",
       "id": 619,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8036,9 +8036,9 @@
       "website": "lottechem.com",
       "contact": "Procurement",
       "email": "info@lottechem.com",
-      "notes": "Chemical South Korea",
+      "notes": "Chemical South Korea | SKIP: hedef dışı ülke",
       "id": 620,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8048,9 +8048,9 @@
       "website": "skchemicals.com",
       "contact": "Procurement",
       "email": "info@skchemicals.com",
-      "notes": "Chemical Korea",
+      "notes": "Chemical Korea | SKIP: hedef dışı ülke",
       "id": 621,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8060,9 +8060,9 @@
       "website": "toagosei.co.jp",
       "contact": "Sales",
       "email": "info@toagosei.co.jp",
-      "notes": "Chemical Japan",
+      "notes": "Chemical Japan | SKIP: hedef dışı ülke",
       "id": 622,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8132,9 +8132,9 @@
       "website": "omv.com",
       "contact": "Procurement",
       "email": "kontakt@omv.com",
-      "notes": "Oil gas Austria",
+      "notes": "Oil gas Austria | SKIP: hedef dışı ülke",
       "id": 628,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8144,9 +8144,9 @@
       "website": "voestalpine.com",
       "contact": "Procurement",
       "email": "info@voestalpine.com",
-      "notes": "Steel Austria",
+      "notes": "Steel Austria | SKIP: hedef dışı ülke",
       "id": 629,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8156,9 +8156,9 @@
       "website": "clariant.com",
       "contact": "Sales",
       "email": "info@clariant.com",
-      "notes": "Specialty chemicals Switzerland",
+      "notes": "Specialty chemicals Switzerland | SKIP: hedef dışı ülke",
       "id": 630,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8168,9 +8168,9 @@
       "website": "lonza.com",
       "contact": "Procurement",
       "email": "info@lonza.com",
-      "notes": "Chemical pharma Switzerland",
+      "notes": "Chemical pharma Switzerland | SKIP: hedef dışı ülke",
       "id": 631,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8180,9 +8180,9 @@
       "website": "solvay.com",
       "contact": "Sales",
       "email": "info@solvay.com",
-      "notes": "Large chemical Belgium",
+      "notes": "Large chemical Belgium | SKIP: hedef dışı ülke",
       "id": 632,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8192,9 +8192,9 @@
       "website": "arcelormittal.com",
       "contact": "Procurement",
       "email": "ghent@arcelormittal.com",
-      "notes": "Steel plant Ghent Belgium",
+      "notes": "Steel plant Ghent Belgium | SKIP: hedef dışı ülke",
       "id": 633,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8204,9 +8204,9 @@
       "website": "shell.nl",
       "contact": "Procurement",
       "email": "info@shell.nl",
-      "notes": "Petrochemical Netherlands",
+      "notes": "Petrochemical Netherlands | SKIP: hedef dışı ülke",
       "id": 634,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8216,9 +8216,9 @@
       "website": "dsm.com",
       "contact": "Procurement",
       "email": "info@dsm.com",
-      "notes": "Chemical nutrition Netherlands",
+      "notes": "Chemical nutrition Netherlands | SKIP: hedef dışı ülke",
       "id": 635,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8228,9 +8228,9 @@
       "website": "hindustanpetroleum.com",
       "contact": "Procurement",
       "email": "webmaster@hpcl.in",
-      "notes": "Oil refinery India",
+      "notes": "Oil refinery India | SKIP: hedef dışı ülke",
       "id": 636,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8240,9 +8240,9 @@
       "website": "tatachemicals.com",
       "contact": "Procurement",
       "email": "info@tatachemicals.com",
-      "notes": "Chemical India",
+      "notes": "Chemical India | SKIP: hedef dışı ülke",
       "id": 637,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8252,9 +8252,9 @@
       "website": "jsw.in",
       "contact": "Procurement",
       "email": "info@jsw.in",
-      "notes": "Steel India",
+      "notes": "Steel India | SKIP: hedef dışı ülke",
       "id": 638,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8312,9 +8312,9 @@
       "website": "topsoe.com",
       "contact": "Sales",
       "email": "info@topsoe.com",
-      "notes": "Catalyst chemical Denmark",
+      "notes": "Catalyst chemical Denmark | SKIP: hedef dışı ülke",
       "id": 643,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8324,9 +8324,9 @@
       "website": "alfalaval.com",
       "contact": "Sales",
       "email": "info@alfalaval.com",
-      "notes": "Heat transfer Denmark",
+      "notes": "Heat transfer Denmark | SKIP: hedef dışı ülke",
       "id": 644,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8360,9 +8360,9 @@
       "website": "galp.com",
       "contact": "Procurement",
       "email": "info@galp.com",
-      "notes": "Oil gas Portugal",
+      "notes": "Oil gas Portugal | SKIP: hedef dışı ülke",
       "id": 647,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8372,9 +8372,9 @@
       "website": "edp.com",
       "contact": "Procurement",
       "email": "info@edp.com",
-      "notes": "Power utility Portugal",
+      "notes": "Power utility Portugal | SKIP: hedef dışı ülke",
       "id": 648,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8384,9 +8384,9 @@
       "website": "repsol.com",
       "contact": "Procurement",
       "email": "info@repsol.com",
-      "notes": "Oil gas Spain",
+      "notes": "Oil gas Spain | SKIP: hedef dışı ülke",
       "id": 649,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8396,9 +8396,9 @@
       "website": "iberdrola.com",
       "contact": "Procurement",
       "email": "info@iberdrola.com",
-      "notes": "Power utility Spain",
+      "notes": "Power utility Spain | SKIP: hedef dışı ülke",
       "id": 650,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8408,9 +8408,9 @@
       "website": "eni.com",
       "contact": "Procurement",
       "email": "info@eni.com",
-      "notes": "Oil gas Italy",
+      "notes": "Oil gas Italy | SKIP: hedef dışı ülke",
       "id": 651,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8420,9 +8420,9 @@
       "website": "snam.it",
       "contact": "Procurement",
       "email": "info@snam.it",
-      "notes": "Gas network Italy",
+      "notes": "Gas network Italy | SKIP: hedef dışı ülke",
       "id": 652,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8552,9 +8552,9 @@
       "website": "basf.com",
       "contact": "Procurement",
       "email": "global.info@basf.com",
-      "notes": "World largest chemical company",
+      "notes": "World largest chemical company | SKIP: hedef dışı ülke",
       "id": 663,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8564,9 +8564,9 @@
       "website": "lanxess.com",
       "contact": "Sales",
       "email": "info@lanxess.com",
-      "notes": "Specialty chemical Germany",
+      "notes": "Specialty chemical Germany | SKIP: hedef dışı ülke",
       "id": 664,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8576,9 +8576,9 @@
       "website": "thyssenkrupp-steel.com",
       "contact": "Procurement",
       "email": "info@thyssenkrupp.com",
-      "notes": "Steel Germany",
+      "notes": "Steel Germany | SKIP: hedef dışı ülke",
       "id": 665,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8588,9 +8588,9 @@
       "website": "totalenergies.com",
       "contact": "Procurement",
       "email": "info@totalenergies.com",
-      "notes": "Oil gas France",
+      "notes": "Oil gas France | SKIP: hedef dışı ülke",
       "id": 666,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8600,9 +8600,9 @@
       "website": "airliquide.com",
       "contact": "Sales",
       "email": "contact@airliquide.com",
-      "notes": "Industrial gases France - flow meters",
+      "notes": "Industrial gases France - flow meters | SKIP: hedef dışı ülke",
       "id": 667,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8612,9 +8612,9 @@
       "website": "bp.com",
       "contact": "Procurement",
       "email": "info@bp.com",
-      "notes": "Oil gas UK",
+      "notes": "Oil gas UK | SKIP: hedef dışı ülke",
       "id": 668,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8624,9 +8624,9 @@
       "website": "ineos.com",
       "contact": "Sales",
       "email": "info@ineos.com",
-      "notes": "Chemical manufacturer UK",
+      "notes": "Chemical manufacturer UK | SKIP: hedef dışı ülke",
       "id": 669,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8660,9 +8660,9 @@
       "website": "braskem.com.br",
       "contact": "Procurement",
       "email": "info@braskem.com.br",
-      "notes": "Largest petrochemical South America",
+      "notes": "Largest petrochemical South America | SKIP: hedef dışı ülke",
       "id": 672,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8672,9 +8672,9 @@
       "website": "vale.com",
       "contact": "Procurement",
       "email": "info@vale.com",
-      "notes": "Iron ore mining Brazil",
+      "notes": "Iron ore mining Brazil | SKIP: hedef dışı ülke",
       "id": 673,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8684,9 +8684,9 @@
       "website": "ecopetrol.com.co",
       "contact": "Procurement",
       "email": "ecopetrol@ecopetrol.com.co",
-      "notes": "State oil Colombia",
+      "notes": "State oil Colombia | SKIP: hedef dışı ülke",
       "id": 674,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8696,9 +8696,9 @@
       "website": "argos.co",
       "contact": "Procurement",
       "email": "info@argos.co",
-      "notes": "Cement Colombia",
+      "notes": "Cement Colombia | SKIP: hedef dışı ülke",
       "id": 675,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8708,9 +8708,9 @@
       "website": "pemex.com",
       "contact": "Procurement",
       "email": "info@pemex.com",
-      "notes": "State oil Mexico",
+      "notes": "State oil Mexico | SKIP: hedef dışı ülke",
       "id": 676,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8720,9 +8720,9 @@
       "website": "cemex.com",
       "contact": "Procurement",
       "email": "info@cemex.com",
-      "notes": "Largest cement company Mexico",
+      "notes": "Largest cement company Mexico | SKIP: hedef dışı ülke",
       "id": 677,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8732,9 +8732,9 @@
       "website": "ypf.com",
       "contact": "Procurement",
       "email": "info@ypf.com",
-      "notes": "State oil Argentina",
+      "notes": "State oil Argentina | SKIP: hedef dışı ülke",
       "id": 678,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8744,9 +8744,9 @@
       "website": "arcor.com.ar",
       "contact": "Procurement",
       "email": "info@arcor.com.ar",
-      "notes": "Food manufacturer Argentina",
+      "notes": "Food manufacturer Argentina | SKIP: hedef dışı ülke",
       "id": 679,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8756,9 +8756,9 @@
       "website": "codelco.cl",
       "contact": "Procurement",
       "email": "info@codelco.cl",
-      "notes": "World largest copper company",
+      "notes": "World largest copper company | SKIP: hedef dışı ülke",
       "id": 680,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8768,9 +8768,9 @@
       "website": "enap.cl",
       "contact": "Procurement",
       "email": "info@enap.cl",
-      "notes": "Oil refinery Chile",
+      "notes": "Oil refinery Chile | SKIP: hedef dışı ülke",
       "id": 681,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8780,9 +8780,9 @@
       "website": "southerncoppercorp.com",
       "contact": "Procurement",
       "email": "info@southerncoppercorp.com",
-      "notes": "Copper mining Peru",
+      "notes": "Copper mining Peru | SKIP: hedef dışı ülke",
       "id": 682,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8792,9 +8792,9 @@
       "website": "bhp.com",
       "contact": "Procurement",
       "email": "info@bhp.com",
-      "notes": "World largest mining Australia",
+      "notes": "World largest mining Australia | SKIP: hedef dışı ülke",
       "id": 683,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8804,9 +8804,9 @@
       "website": "riotinto.com",
       "contact": "Procurement",
       "email": "info@riotinto.com",
-      "notes": "Mining Australia",
+      "notes": "Mining Australia | SKIP: hedef dışı ülke",
       "id": 684,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8816,9 +8816,9 @@
       "website": "orica.com",
       "contact": "Sales",
       "email": "info@orica.com",
-      "notes": "Explosives chemicals Australia",
+      "notes": "Explosives chemicals Australia | SKIP: hedef dışı ülke",
       "id": 685,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8828,9 +8828,9 @@
       "website": "fonterra.com",
       "contact": "Procurement",
       "email": "info@fonterra.com",
-      "notes": "Dairy giant NZ - flow meters",
+      "notes": "Dairy giant NZ - flow meters | SKIP: hedef dışı ülke",
       "id": 686,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8840,9 +8840,9 @@
       "website": "methanex.com",
       "contact": "Procurement",
       "email": "info@methanex.com",
-      "notes": "Methanol chemical NZ",
+      "notes": "Methanol chemical NZ | SKIP: hedef dışı ülke",
       "id": 687,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8948,9 +8948,9 @@
       "website": "suezcanal.gov.eg",
       "contact": "Procurement",
       "email": "info@suezcanal.gov.eg",
-      "notes": "Suez Canal flow management",
+      "notes": "Suez Canal flow management | SKIP: alakasız sektör (Port & Logistics)",
       "id": 696,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -8996,9 +8996,9 @@
       "website": "petrobangla.org.bd",
       "contact": "Procurement",
       "email": "info@petrobangla.org.bd",
-      "notes": "Gas state company Bangladesh",
+      "notes": "Gas state company Bangladesh | SKIP: hedef dışı ülke",
       "id": 700,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9008,9 +9008,9 @@
       "website": "petronas.com",
       "contact": "Procurement",
       "email": "pcsb@petronas.com.my",
-      "notes": "State oil Malaysia",
+      "notes": "State oil Malaysia | SKIP: hedef dışı ülke",
       "id": 701,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9020,9 +9020,9 @@
       "website": "irpc.co.th",
       "contact": "Procurement",
       "email": "info@irpc.co.th",
-      "notes": "Petrochemical Thailand",
+      "notes": "Petrochemical Thailand | SKIP: hedef dışı ülke",
       "id": 702,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9080,9 +9080,9 @@
       "website": "suncor.com",
       "contact": "Procurement",
       "email": "info@suncor.com",
-      "notes": "Oil sands Canada",
+      "notes": "Oil sands Canada | SKIP: hedef dışı ülke",
       "id": 707,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9092,9 +9092,9 @@
       "website": "methanex.com",
       "contact": "Procurement",
       "email": "canada@methanex.com",
-      "notes": "Methanol Canada",
+      "notes": "Methanol Canada | SKIP: hedef dışı ülke",
       "id": 708,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9140,9 +9140,9 @@
       "website": "eastman.com",
       "contact": "Sales",
       "email": "info@eastman.com",
-      "notes": "Chemical manufacturer USA",
+      "notes": "Chemical manufacturer USA | SKIP: hedef dışı ülke",
       "id": 712,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9152,9 +9152,9 @@
       "website": "celanese.com",
       "contact": "Sales",
       "email": "info@celanese.com",
-      "notes": "Specialty chemical USA",
+      "notes": "Specialty chemical USA | SKIP: hedef dışı ülke",
       "id": 713,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9164,9 +9164,9 @@
       "website": "diageo.com",
       "contact": "Procurement",
       "email": "info@diageo.com",
-      "notes": "Spirits brewery global - flow meters",
+      "notes": "Spirits brewery global - flow meters | SKIP: hedef dışı ülke",
       "id": 714,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9176,9 +9176,9 @@
       "website": "ab-inbev.com",
       "contact": "Procurement",
       "email": "info@ab-inbev.com",
-      "notes": "World largest brewery Belgium",
+      "notes": "World largest brewery Belgium | SKIP: hedef dışı ülke",
       "id": 715,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9188,9 +9188,9 @@
       "website": "heineken.com",
       "contact": "Procurement",
       "email": "info@heineken.com",
-      "notes": "Brewery Netherlands",
+      "notes": "Brewery Netherlands | SKIP: hedef dışı ülke",
       "id": 716,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9200,9 +9200,9 @@
       "website": "novartis.com",
       "contact": "Procurement",
       "email": "info@novartis.com",
-      "notes": "Pharma Switzerland",
+      "notes": "Pharma Switzerland | SKIP: hedef dışı ülke",
       "id": 717,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9212,9 +9212,9 @@
       "website": "astrazeneca.com",
       "contact": "Procurement",
       "email": "info@astrazeneca.com",
-      "notes": "Pharma UK",
+      "notes": "Pharma UK | SKIP: hedef dışı ülke",
       "id": 718,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9224,9 +9224,9 @@
       "website": "bayer.com",
       "contact": "Procurement",
       "email": "info@bayer.com",
-      "notes": "Pharma chemical Germany",
+      "notes": "Pharma chemical Germany | SKIP: hedef dışı ülke",
       "id": 719,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9236,9 +9236,9 @@
       "website": "sanofi.com",
       "contact": "Procurement",
       "email": "info@sanofi.com",
-      "notes": "Pharma France",
+      "notes": "Pharma France | SKIP: hedef dışı ülke",
       "id": 720,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9248,9 +9248,9 @@
       "website": "suez.com",
       "contact": "Sales",
       "email": "info@suez.com",
-      "notes": "Water treatment global",
+      "notes": "Water treatment global | SKIP: hedef dışı ülke",
       "id": 721,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9260,9 +9260,9 @@
       "website": "veolia.com",
       "contact": "Sales",
       "email": "info@veolia.com",
-      "notes": "Water waste global - flow meters",
+      "notes": "Water waste global - flow meters | SKIP: hedef dışı ülke",
       "id": 722,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9272,9 +9272,9 @@
       "website": "orlen.pl",
       "contact": "Procurement",
       "email": "kontakt@orlen.pl",
-      "notes": "Oil refinery Poland",
+      "notes": "Oil refinery Poland | SKIP: hedef dışı ülke",
       "id": 723,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9284,9 +9284,9 @@
       "website": "kghm.com",
       "contact": "Procurement",
       "email": "info@kghm.com",
-      "notes": "Copper silver mining Poland",
+      "notes": "Copper silver mining Poland | SKIP: hedef dışı ülke",
       "id": 724,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9332,9 +9332,9 @@
       "website": "unipetrol.cz",
       "contact": "Procurement",
       "email": "info@unipetrol.cz",
-      "notes": "Petrochemical Czech",
+      "notes": "Petrochemical Czech | SKIP: hedef dışı ülke",
       "id": 728,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9392,9 +9392,9 @@
       "website": "sibanye-stillwater.com",
       "contact": "Procurement",
       "email": "info@sibanye-stillwater.com",
-      "notes": "Platinum mining South Africa",
+      "notes": "Platinum mining South Africa | SKIP: hedef dışı ülke",
       "id": 733,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9404,9 +9404,9 @@
       "website": "sasol.com",
       "contact": "Procurement",
       "email": "info@sasol.com",
-      "notes": "Chemical South Africa",
+      "notes": "Chemical South Africa | SKIP: hedef dışı ülke",
       "id": 734,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9440,9 +9440,9 @@
       "website": "sngpl.com.pk",
       "contact": "Procurement",
       "email": "info@sngpl.com.pk",
-      "notes": "Gas distribution North Pakistan",
+      "notes": "Gas distribution North Pakistan | SKIP: hedef dışı ülke",
       "id": 737,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9488,9 +9488,9 @@
       "website": "moge.com.mm",
       "contact": "Procurement",
       "email": "info@moge.com.mm",
-      "notes": "State oil gas Myanmar",
+      "notes": "State oil gas Myanmar | SKIP: hedef dışı ülke",
       "id": 741,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9500,9 +9500,9 @@
       "website": "vinacomin.vn",
       "contact": "Procurement",
       "email": "info@vinacomin.vn",
-      "notes": "Coal mining Vietnam",
+      "notes": "Coal mining Vietnam | SKIP: hedef dışı ülke",
       "id": 742,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-28"
     },
     {
@@ -9512,8 +9512,8 @@
       "sector": "Kimya / Petrokimya",
       "website": "lyondellbasell.com",
       "email": "procurement@lyondellbasell.com",
-      "status": "sent",
-      "notes": "Büyük petrokimya, Houston TX",
+      "status": "skip",
+      "notes": "Büyük petrokimya, Houston TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9523,8 +9523,8 @@
       "sector": "Kimya",
       "website": "huntsman.com",
       "email": "info@huntsman.com",
-      "status": "sent",
-      "notes": "Özel kimya şirketi",
+      "status": "skip",
+      "notes": "Özel kimya şirketi | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9534,8 +9534,8 @@
       "sector": "Kimya / Klor",
       "website": "olin.com",
       "email": "contact@olin.com",
-      "status": "sent",
-      "notes": "Klor-alkali, Winchester",
+      "status": "skip",
+      "notes": "Klor-alkali, Winchester | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9545,8 +9545,8 @@
       "sector": "Özel Kimyasallar",
       "website": "cabot-corp.com",
       "email": "info@cabot-corp.com",
-      "status": "sent",
-      "notes": "Karbon siyahı, özel kimyasallar",
+      "status": "skip",
+      "notes": "Karbon siyahı, özel kimyasallar | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9556,8 +9556,8 @@
       "sector": "Kimya / PVC",
       "website": "westlake.com",
       "email": "info@westlake.com",
-      "status": "sent",
-      "notes": "PVC, klor, kaustic",
+      "status": "skip",
+      "notes": "PVC, klor, kaustic | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9567,8 +9567,8 @@
       "sector": "Rafineri",
       "website": "valero.com",
       "email": "info@valero.com",
-      "status": "sent",
-      "notes": "En büyük ABD rafinerileri zinciri, San Antonio TX",
+      "status": "skip",
+      "notes": "En büyük ABD rafinerileri zinciri, San Antonio TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9578,8 +9578,8 @@
       "sector": "Rafineri",
       "website": "marathonpetroleum.com",
       "email": "contact@marathonpetroleum.com",
-      "status": "sent",
-      "notes": "Findlay OH, büyük rafineri",
+      "status": "skip",
+      "notes": "Findlay OH, büyük rafineri | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9589,8 +9589,8 @@
       "sector": "Rafineri / Petrokimya",
       "website": "phillips66.com",
       "email": "info@phillips66.com",
-      "status": "sent",
-      "notes": "Houston TX",
+      "status": "skip",
+      "notes": "Houston TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9600,8 +9600,8 @@
       "sector": "Rafineri",
       "website": "hfsinclair.com",
       "email": "info@hfsinclair.com",
-      "status": "sent",
-      "notes": "Dallas TX, rafineri",
+      "status": "skip",
+      "notes": "Dallas TX, rafineri | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9611,8 +9611,8 @@
       "sector": "EPC / Mühendislik",
       "website": "fluor.com",
       "email": "info@fluor.com",
-      "status": "sent",
-      "notes": "Küresel EPC devi, Irving TX",
+      "status": "skip",
+      "notes": "Küresel EPC devi, Irving TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9622,8 +9622,8 @@
       "sector": "EPC / Mühendislik",
       "website": "jacobs.com",
       "email": "info@jacobs.com",
-      "status": "sent",
-      "notes": "Dallas TX, global EPC",
+      "status": "skip",
+      "notes": "Dallas TX, global EPC | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9633,8 +9633,8 @@
       "sector": "EPC / Mühendislik",
       "website": "kbr.com",
       "email": "contact@kbr.com",
-      "status": "sent",
-      "notes": "Houston TX, proses mühendisliği",
+      "status": "skip",
+      "notes": "Houston TX, proses mühendisliği | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9644,8 +9644,8 @@
       "sector": "Su Arıtma",
       "website": "amwater.com",
       "email": "communications@amwater.com",
-      "status": "sent",
-      "notes": "En büyük ABD su şirketi, Camden NJ",
+      "status": "skip",
+      "notes": "En büyük ABD su şirketi, Camden NJ | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9655,8 +9655,8 @@
       "sector": "Su Arıtma / Atık Su",
       "website": "veolia.com/north-america",
       "email": "info.northamerica@veolia.com",
-      "status": "sent",
-      "notes": "Su ve atık su yönetimi",
+      "status": "skip",
+      "notes": "Su ve atık su yönetimi | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9666,8 +9666,8 @@
       "sector": "Mühendislik / Altyapı",
       "website": "aecom.com",
       "email": "info@aecom.com",
-      "status": "sent",
-      "notes": "Los Angeles, global altyapı",
+      "status": "skip",
+      "notes": "Los Angeles, global altyapı | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9677,8 +9677,8 @@
       "sector": "Gıda İşleme",
       "website": "cargill.com",
       "email": "procurement@cargill.com",
-      "status": "sent",
-      "notes": "Minneapolis MN, gıda devi",
+      "status": "skip",
+      "notes": "Minneapolis MN, gıda devi | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9688,8 +9688,8 @@
       "sector": "Gıda / Tarım",
       "website": "adm.com",
       "email": "contact@adm.com",
-      "status": "sent",
-      "notes": "Chicago IL, tahıl ve yağ işleme",
+      "status": "skip",
+      "notes": "Chicago IL, tahıl ve yağ işleme | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9699,8 +9699,8 @@
       "sector": "Gıda İşleme",
       "website": "tysonfoods.com",
       "email": "info@tysonfoods.com",
-      "status": "sent",
-      "notes": "Springdale AR, et işleme",
+      "status": "skip",
+      "notes": "Springdale AR, et işleme | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9710,8 +9710,8 @@
       "sector": "Madencilik / Bakır",
       "website": "fcx.com",
       "email": "info@freeportmcmoran.com",
-      "status": "sent",
-      "notes": "Phoenix AZ, büyük bakır madencisi",
+      "status": "skip",
+      "notes": "Phoenix AZ, büyük bakır madencisi | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9721,8 +9721,8 @@
       "sector": "Çelik",
       "website": "nucor.com",
       "email": "info@nucor.com",
-      "status": "sent",
-      "notes": "Charlotte NC, çelik",
+      "status": "skip",
+      "notes": "Charlotte NC, çelik | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9732,8 +9732,8 @@
       "sector": "Enstrümantasyon Distribütörü",
       "website": "omega.com",
       "email": "info@omega.com",
-      "status": "sent",
-      "notes": "Norwalk CT, proses enstrümanı devi — distribütörlük teklifi",
+      "status": "skip",
+      "notes": "Norwalk CT, proses enstrümanı devi — distribütörlük teklifi | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9743,8 +9743,8 @@
       "sector": "Enstrümantasyon Distribütörü",
       "website": "coleparmer.com",
       "email": "info@coleparmer.com",
-      "status": "sent",
-      "notes": "Vernon Hills IL — distribütörlük",
+      "status": "skip",
+      "notes": "Vernon Hills IL — distribütörlük | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9754,8 +9754,8 @@
       "sector": "Flow Meter",
       "website": "badgermeter.com",
       "email": "info@badgermeter.com",
-      "status": "sent",
-      "notes": "Milwaukee WI — flow meter OEM, iş birliği potansiyeli",
+      "status": "skip",
+      "notes": "Milwaukee WI — flow meter OEM, iş birliği potansiyeli | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9765,8 +9765,8 @@
       "sector": "Kimya",
       "website": "dow.com",
       "email": "info@dow.com",
-      "status": "sent",
-      "notes": "Midland MI, dünya kimya devi",
+      "status": "skip",
+      "notes": "Midland MI, dünya kimya devi | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9776,8 +9776,8 @@
       "sector": "Boya / Kimya",
       "website": "ppg.com",
       "email": "info@ppg.com",
-      "status": "sent",
-      "notes": "Pittsburgh PA, kaplama ve kimya",
+      "status": "skip",
+      "notes": "Pittsburgh PA, kaplama ve kimya | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9787,8 +9787,8 @@
       "sector": "Kimya / Kaplama",
       "website": "rpminc.com",
       "email": "info@rpminc.com",
-      "status": "sent",
-      "notes": "Medina OH",
+      "status": "skip",
+      "notes": "Medina OH | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9798,8 +9798,8 @@
       "sector": "Yapıştırıcı / Kimya",
       "website": "hbfuller.com",
       "email": "info@hbfuller.com",
-      "status": "sent",
-      "notes": "St. Paul MN",
+      "status": "skip",
+      "notes": "St. Paul MN | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9809,8 +9809,8 @@
       "sector": "Özel Kimyasallar",
       "website": "ashland.com",
       "email": "info@ashland.com",
-      "status": "sent",
-      "notes": "Wilmington DE",
+      "status": "skip",
+      "notes": "Wilmington DE | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9820,8 +9820,8 @@
       "sector": "Petrokimya",
       "website": "ineos.com",
       "email": "info@ineos.com",
-      "status": "sent",
-      "notes": "League City TX",
+      "status": "skip",
+      "notes": "League City TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9831,8 +9831,8 @@
       "sector": "Petrol & Gaz",
       "website": "pxd.com",
       "email": "info@pxd.com",
-      "status": "sent",
-      "notes": "Dallas TX, büyük shale",
+      "status": "skip",
+      "notes": "Dallas TX, büyük shale | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9842,8 +9842,8 @@
       "sector": "Petrol & Gaz",
       "website": "devonenergy.com",
       "email": "info@devonenergy.com",
-      "status": "sent",
-      "notes": "Oklahoma City OK",
+      "status": "skip",
+      "notes": "Oklahoma City OK | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9853,8 +9853,8 @@
       "sector": "Petrol & Gaz",
       "website": "eogresources.com",
       "email": "info@eogresources.com",
-      "status": "sent",
-      "notes": "Houston TX",
+      "status": "skip",
+      "notes": "Houston TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9864,8 +9864,8 @@
       "sector": "Petrol & Gaz",
       "website": "apacorp.com",
       "email": "info@apacorp.com",
-      "status": "sent",
-      "notes": "Houston TX",
+      "status": "skip",
+      "notes": "Houston TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9875,8 +9875,8 @@
       "sector": "Gıda İşleme",
       "website": "kraftheinzcompany.com",
       "email": "info@kraftheinzcompany.com",
-      "status": "sent",
-      "notes": "Chicago IL",
+      "status": "skip",
+      "notes": "Chicago IL | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9886,8 +9886,8 @@
       "sector": "Gıda İşleme",
       "website": "conagrabrands.com",
       "email": "info@conagrabrands.com",
-      "status": "sent",
-      "notes": "Chicago IL",
+      "status": "skip",
+      "notes": "Chicago IL | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9897,8 +9897,8 @@
       "sector": "Gıda İşleme",
       "website": "hormelfoods.com",
       "email": "info@hormelfoods.com",
-      "status": "sent",
-      "notes": "Austin MN",
+      "status": "skip",
+      "notes": "Austin MN | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9908,8 +9908,8 @@
       "sector": "Gıda İşleme",
       "website": "generalmills.com",
       "email": "info@generalmills.com",
-      "status": "sent",
-      "notes": "Golden Valley MN",
+      "status": "skip",
+      "notes": "Golden Valley MN | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9919,8 +9919,8 @@
       "sector": "Kağıt / Selüloz",
       "website": "internationalpaper.com",
       "email": "info@internationalpaper.com",
-      "status": "sent",
-      "notes": "Memphis TN",
+      "status": "skip",
+      "notes": "Memphis TN | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9930,8 +9930,8 @@
       "sector": "Kağıt / Ambalaj",
       "website": "packagingcorp.com",
       "email": "info@packagingcorp.com",
-      "status": "sent",
-      "notes": "Lake Forest IL",
+      "status": "skip",
+      "notes": "Lake Forest IL | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9941,8 +9941,8 @@
       "sector": "Orman Ürünleri",
       "website": "weyerhaeuser.com",
       "email": "info@weyerhaeuser.com",
-      "status": "sent",
-      "notes": "Seattle WA, kağıt/orman",
+      "status": "skip",
+      "notes": "Seattle WA, kağıt/orman | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9952,8 +9952,8 @@
       "sector": "Çelik",
       "website": "clevelandcliffs.com",
       "email": "info@clevelandcliffs.com",
-      "status": "sent",
-      "notes": "Cleveland OH",
+      "status": "skip",
+      "notes": "Cleveland OH | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9963,8 +9963,8 @@
       "sector": "Enerji / Elektrik",
       "website": "duke-energy.com",
       "email": "info@duke-energy.com",
-      "status": "sent",
-      "notes": "Charlotte NC, büyük kamu",
+      "status": "skip",
+      "notes": "Charlotte NC, büyük kamu | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9974,8 +9974,8 @@
       "sector": "Enerji / Elektrik",
       "website": "xcelenergy.com",
       "email": "info@xcelenergy.com",
-      "status": "sent",
-      "notes": "Minneapolis MN",
+      "status": "skip",
+      "notes": "Minneapolis MN | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9985,8 +9985,8 @@
       "sector": "Enerji / Elektrik",
       "website": "entergy.com",
       "email": "info@entergy.com",
-      "status": "sent",
-      "notes": "New Orleans LA",
+      "status": "skip",
+      "notes": "New Orleans LA | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -9996,8 +9996,8 @@
       "sector": "EPC / Mühendislik",
       "website": "burnsmcd.com",
       "email": "info@burnsmcd.com",
-      "status": "sent",
-      "notes": "Kansas City MO",
+      "status": "skip",
+      "notes": "Kansas City MO | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10007,8 +10007,8 @@
       "sector": "Su / Mühendislik",
       "website": "cdmsmith.com",
       "email": "info@cdmsmith.com",
-      "status": "sent",
-      "notes": "Boston MA, su/atıksu EPC",
+      "status": "skip",
+      "notes": "Boston MA, su/atıksu EPC | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10018,8 +10018,8 @@
       "sector": "EPC / Savunma",
       "website": "parsons.com",
       "email": "info@parsons.com",
-      "status": "sent",
-      "notes": "Centennial CO",
+      "status": "skip",
+      "notes": "Centennial CO | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10029,8 +10029,8 @@
       "sector": "İlaç / Medikal",
       "website": "baxter.com",
       "email": "info@baxter.com",
-      "status": "sent",
-      "notes": "Deerfield IL, ilaç üretim tesisleri",
+      "status": "skip",
+      "notes": "Deerfield IL, ilaç üretim tesisleri | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10040,8 +10040,8 @@
       "sector": "İlaç",
       "website": "lilly.com",
       "email": "info@lilly.com",
-      "status": "sent",
-      "notes": "Indianapolis IN",
+      "status": "skip",
+      "notes": "Indianapolis IN | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10051,8 +10051,8 @@
       "sector": "İlaç / Medikal",
       "website": "abbott.com",
       "email": "info@abbott.com",
-      "status": "sent",
-      "notes": "Abbott Park IL",
+      "status": "skip",
+      "notes": "Abbott Park IL | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10062,8 +10062,8 @@
       "sector": "Gübre / Kimya",
       "website": "cfindustries.com",
       "email": "info@cfindustries.com",
-      "status": "sent",
-      "notes": "Northbrook IL, amonyak/gübre",
+      "status": "skip",
+      "notes": "Northbrook IL, amonyak/gübre | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10073,8 +10073,8 @@
       "sector": "Gübre / Madencilik",
       "website": "mosaicco.com",
       "email": "info@mosaicco.com",
-      "status": "sent",
-      "notes": "Tampa FL, fosfat/potasyum",
+      "status": "skip",
+      "notes": "Tampa FL, fosfat/potasyum | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10084,8 +10084,8 @@
       "sector": "Madencilik / Altın",
       "website": "newmont.com",
       "email": "info@newmont.com",
-      "status": "sent",
-      "notes": "Denver CO, altın madencisi",
+      "status": "skip",
+      "notes": "Denver CO, altın madencisi | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10535,8 +10535,8 @@
       "sector": "Çelik",
       "website": "ussteel.com",
       "email": "info@ussteel.com",
-      "status": "sent",
-      "notes": "Pittsburgh PA",
+      "status": "skip",
+      "notes": "Pittsburgh PA | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10546,8 +10546,8 @@
       "sector": "Çelik",
       "website": "steeltechnologies.com",
       "email": "info@steeltechnologies.com",
-      "status": "sent",
-      "notes": "Louisville KY",
+      "status": "skip",
+      "notes": "Louisville KY | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10557,8 +10557,8 @@
       "sector": "İnşaat / Altyapı",
       "website": "graniteconstruction.com",
       "email": "info@graniteconstruction.com",
-      "status": "sent",
-      "notes": "Watsonville CA",
+      "status": "skip",
+      "notes": "Watsonville CA | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10568,8 +10568,8 @@
       "sector": "Enerji / Gaz",
       "website": "blackhillscorp.com",
       "email": "info@blackhillscorp.com",
-      "status": "sent",
-      "notes": "Rapid City SD, gaz dağıtımı",
+      "status": "skip",
+      "notes": "Rapid City SD, gaz dağıtımı | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10579,8 +10579,8 @@
       "sector": "Boru Hattı / Gaz",
       "website": "kindermorgan.com",
       "email": "info@kindermorgan.com",
-      "status": "sent",
-      "notes": "Houston TX, büyük pipeline",
+      "status": "skip",
+      "notes": "Houston TX, büyük pipeline | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10590,8 +10590,8 @@
       "sector": "Boru Hattı / Gaz",
       "website": "williams.com",
       "email": "info@williams.com",
-      "status": "sent",
-      "notes": "Tulsa OK, doğalgaz pipeline",
+      "status": "skip",
+      "notes": "Tulsa OK, doğalgaz pipeline | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10601,8 +10601,8 @@
       "sector": "Doğalgaz",
       "website": "oneok.com",
       "email": "info@oneok.com",
-      "status": "sent",
-      "notes": "Tulsa OK",
+      "status": "skip",
+      "notes": "Tulsa OK | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10612,8 +10612,8 @@
       "sector": "Doğalgaz / LNG",
       "website": "targaresources.com",
       "email": "info@targaresources.com",
-      "status": "sent",
-      "notes": "Houston TX",
+      "status": "skip",
+      "notes": "Houston TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10623,8 +10623,8 @@
       "sector": "Kimya / Floropolimer",
       "website": "chemours.com",
       "email": "info@chemours.com",
-      "status": "sent",
-      "notes": "Wilmington DE",
+      "status": "skip",
+      "notes": "Wilmington DE | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10634,8 +10634,8 @@
       "sector": "Özel Kimyasallar",
       "website": "quakerhoughton.com",
       "email": "info@quakerhoughton.com",
-      "status": "sent",
-      "notes": "Conshohocken PA",
+      "status": "skip",
+      "notes": "Conshohocken PA | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10645,8 +10645,8 @@
       "sector": "İnşaat Malzemeleri",
       "website": "arcosa.com",
       "email": "info@arcosa.com",
-      "status": "sent",
-      "notes": "Dallas TX",
+      "status": "skip",
+      "notes": "Dallas TX | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10656,8 +10656,8 @@
       "sector": "Doğalgaz",
       "website": "swgas.com",
       "email": "info@swgas.com",
-      "status": "sent",
-      "notes": "Las Vegas NV",
+      "status": "skip",
+      "notes": "Las Vegas NV | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10667,8 +10667,8 @@
       "sector": "Doğalgaz",
       "website": "nationalfuelgas.com",
       "email": "info@nationalfuelgas.com",
-      "status": "sent",
-      "notes": "Williamsville NY",
+      "status": "skip",
+      "notes": "Williamsville NY | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10678,8 +10678,8 @@
       "sector": "İlaç / Kimya",
       "website": "pahc.com",
       "email": "info@pahc.com",
-      "status": "sent",
-      "notes": "Teaneck NJ",
+      "status": "skip",
+      "notes": "Teaneck NJ | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10689,8 +10689,8 @@
       "sector": "Otomotiv / Metal",
       "website": "aam.com",
       "email": "info@aam.com",
-      "status": "sent",
-      "notes": "Detroit MI",
+      "status": "skip",
+      "notes": "Detroit MI | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10744,8 +10744,8 @@
       "sector": "Finans / Sanayi Yatırım",
       "website": "bankofafrica.ma",
       "email": "info@bankofafrica.ma",
-      "status": "sent",
-      "notes": "Yatırım projelerini finanse ediyor",
+      "status": "skip",
+      "notes": "Yatırım projelerini finanse ediyor | SKIP: alakasız sektör (Finans / Sanayi Yatırım)",
       "sentDate": "2026-06-30"
     },
     {
@@ -10755,8 +10755,8 @@
       "sector": "Telekomünikasyon",
       "website": "tunisietelecom.tn",
       "email": "contact@tunisietelecom.tn",
-      "status": "sent",
-      "notes": "Tunus, büyük altyapı",
+      "status": "skip",
+      "notes": "Tunus, büyük altyapı | SKIP: alakasız sektör (Telekomünikasyon)",
       "sentDate": "2026-06-30"
     },
     {
@@ -10788,8 +10788,8 @@
       "sector": "Ambalaj / Kağıt",
       "website": "graphicpkg.com",
       "email": "info@graphicpkg.com",
-      "status": "sent",
-      "notes": "Atlanta GA",
+      "status": "skip",
+      "notes": "Atlanta GA | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10799,8 +10799,8 @@
       "sector": "İlaç",
       "website": "merck.com",
       "email": "info@merck.com",
-      "status": "sent",
-      "notes": "Rahway NJ, büyük ilaç",
+      "status": "skip",
+      "notes": "Rahway NJ, büyük ilaç | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10810,8 +10810,8 @@
       "sector": "Kimya / Patlayıcı",
       "website": "winchester.com",
       "email": "info@winchester.com",
-      "status": "sent",
-      "notes": "East Alton IL",
+      "status": "skip",
+      "notes": "East Alton IL | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10821,8 +10821,8 @@
       "sector": "Kimya Distribütörü",
       "website": "univarsolutions.com",
       "email": "info@univarsolutions.com",
-      "status": "sent",
-      "notes": "Downers Grove IL, kimya distribütörü",
+      "status": "skip",
+      "notes": "Downers Grove IL, kimya distribütörü | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10832,8 +10832,8 @@
       "sector": "Kimya",
       "website": "hawkinsinc.com",
       "email": "info@hawkinsinc.com",
-      "status": "sent",
-      "notes": "Minneapolis MN",
+      "status": "skip",
+      "notes": "Minneapolis MN | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10843,8 +10843,8 @@
       "sector": "Enerji / Boru Hattı",
       "website": "centurigroup.com",
       "email": "info@centurigroup.com",
-      "status": "sent",
-      "notes": "Phoenix AZ, gaz altyapısı",
+      "status": "skip",
+      "notes": "Phoenix AZ, gaz altyapısı | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10854,8 +10854,8 @@
       "sector": "Atık / Çevre",
       "website": "gflenv.com",
       "email": "info@gflenv.com",
-      "status": "sent",
-      "notes": "ABD atık/çevre şirketi",
+      "status": "skip",
+      "notes": "ABD atık/çevre şirketi | SKIP: hedef dışı ülke",
       "sentDate": "2026-06-30"
     },
     {
@@ -10865,8 +10865,9 @@
       "sector": "Kimya / Katalizör",
       "website": "basf.com",
       "email": "contact@basf.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 867,
@@ -10875,8 +10876,9 @@
       "sector": "Kimya / Silikon",
       "website": "wacker.com",
       "email": "info@wacker.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 868,
@@ -10885,8 +10887,9 @@
       "sector": "Özel Kimyasallar",
       "website": "lanxess.com",
       "email": "info@lanxess.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 869,
@@ -10895,8 +10898,9 @@
       "sector": "Özel Kimyasallar",
       "website": "evonik.com",
       "email": "info@evonik.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 870,
@@ -10905,8 +10909,9 @@
       "sector": "Polimer / Plastik",
       "website": "covestro.com",
       "email": "info@covestro.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 871,
@@ -10915,8 +10920,9 @@
       "sector": "Çelik / Mühendislik",
       "website": "thyssenkrupp.com",
       "email": "info@thyssenkrupp.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 872,
@@ -10925,8 +10931,9 @@
       "sector": "Endüstriyel Gaz",
       "website": "linde.com",
       "email": "info@linde.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 873,
@@ -10935,8 +10942,9 @@
       "sector": "EPC / Sanayi",
       "website": "bilfinger.com",
       "email": "info@bilfinger.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 874,
@@ -10945,8 +10953,9 @@
       "sector": "Çelik",
       "website": "salzgitter-ag.de",
       "email": "info@salzgitter-ag.de",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 875,
@@ -10955,8 +10964,9 @@
       "sector": "Enerji",
       "website": "rwe.com",
       "email": "info@rwe.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 876,
@@ -10965,8 +10975,9 @@
       "sector": "Petrol & Gaz",
       "website": "totalenergies.com",
       "email": "contact@totalenergies.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 877,
@@ -10975,8 +10986,9 @@
       "sector": "Endüstriyel Gaz",
       "website": "airliquide.com",
       "email": "info@airliquide.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 878,
@@ -10985,8 +10997,9 @@
       "sector": "Özel Kimyasallar",
       "website": "arkema.com",
       "email": "info@arkema.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 879,
@@ -10995,8 +11008,9 @@
       "sector": "Su / Atıksu",
       "website": "suez.com",
       "email": "contact@suez.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 880,
@@ -11005,8 +11019,9 @@
       "sector": "Boru / Çelik",
       "website": "vallourec.com",
       "email": "info@vallourec.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 881,
@@ -11015,8 +11030,9 @@
       "sector": "İnşaat / EPC",
       "website": "eiffage.com",
       "email": "info@eiffage.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 882,
@@ -11025,8 +11041,9 @@
       "sector": "Petrol & Gaz",
       "website": "eni.com",
       "email": "info@eni.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 883,
@@ -11035,8 +11052,9 @@
       "sector": "EPC / Offshore",
       "website": "saipem.com",
       "email": "info@saipem.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 884,
@@ -11045,8 +11063,9 @@
       "sector": "Petrokimya",
       "website": "versalis.eni.com",
       "email": "info@versalis.eni.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 885,
@@ -11055,8 +11074,9 @@
       "sector": "Doğalgaz Pipeline",
       "website": "snam.it",
       "email": "info@snam.it",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 886,
@@ -11065,8 +11085,9 @@
       "sector": "Boru / Çelik",
       "website": "tenaris.com",
       "email": "info@tenaris.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 887,
@@ -11075,8 +11096,9 @@
       "sector": "Petrol & Gaz",
       "website": "shell.com",
       "email": "info@shell.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 888,
@@ -11085,8 +11107,9 @@
       "sector": "Boya / Kimya",
       "website": "akzonobel.com",
       "email": "info@akzonobel.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 889,
@@ -11095,8 +11118,9 @@
       "sector": "Gübre / Kimya",
       "website": "oci.nl",
       "email": "info@oci.nl",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 890,
@@ -11105,8 +11129,9 @@
       "sector": "Dredging / EPC",
       "website": "boskalis.com",
       "email": "info@boskalis.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 891,
@@ -11115,8 +11140,9 @@
       "sector": "Petrol & Gaz",
       "website": "repsol.com",
       "email": "info@repsol.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 892,
@@ -11125,8 +11151,9 @@
       "sector": "Altyapı / EPC",
       "website": "ferrovial.com",
       "email": "info@ferrovial.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 893,
@@ -11135,8 +11162,9 @@
       "sector": "Su / Enerji / EPC",
       "website": "acciona.com",
       "email": "info@acciona.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 894,
@@ -11145,8 +11173,9 @@
       "sector": "EPC / Rafineri",
       "website": "tecnicasreunidas.es",
       "email": "info@tecnicasreunidas.es",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 895,
@@ -11155,8 +11184,9 @@
       "sector": "Kimya",
       "website": "solvay.com",
       "email": "info@solvay.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 896,
@@ -11165,8 +11195,9 @@
       "sector": "Petrokimya",
       "website": "ineos.com",
       "email": "info@ineos-phenol.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 897,
@@ -11175,8 +11206,9 @@
       "sector": "Özel Kimyasallar",
       "website": "clariant.com",
       "email": "info@clariant.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 898,
@@ -11185,8 +11217,9 @@
       "sector": "İlaç / Kimya",
       "website": "lonza.com",
       "email": "info@lonza.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 899,
@@ -11285,8 +11318,9 @@
       "sector": "Petrol & Gaz",
       "website": "pertamina.com",
       "email": "pcc@pertamina.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 909,
@@ -11295,8 +11329,9 @@
       "sector": "Petrokimya",
       "website": "chandraasri.com",
       "email": "info@chandraasri.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 910,
@@ -11305,8 +11340,9 @@
       "sector": "Gübre",
       "website": "pupuk-indonesia.com",
       "email": "info@pupuk-indonesia.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 911,
@@ -11315,8 +11351,9 @@
       "sector": "Petrokimya",
       "website": "pttgcgroup.com",
       "email": "info@pttgcgroup.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 912,
@@ -11325,8 +11362,9 @@
       "sector": "Rafineri",
       "website": "thaioilgroup.com",
       "email": "info@thaioilgroup.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 913,
@@ -11335,8 +11373,9 @@
       "sector": "Gıda / Şeker",
       "website": "mitrphol.com",
       "email": "info@mitrphol.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 914,
@@ -11345,8 +11384,9 @@
       "sector": "Petrokimya",
       "website": "irpc.co.th",
       "email": "info@irpc.co.th",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 915,
@@ -11355,8 +11395,9 @@
       "sector": "Gıda / Enerji",
       "website": "sanmiguel.com.ph",
       "email": "info@sanmiguel.com.ph",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 916,
@@ -11365,8 +11406,9 @@
       "sector": "Enerji / Gaz",
       "website": "firstgen.com.ph",
       "email": "info@firstgen.com.ph",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 917,
@@ -11375,8 +11417,9 @@
       "sector": "Petrokimya",
       "website": "petronaschemicals.com",
       "email": "info@petronaschemicals.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 918,
@@ -11385,8 +11428,9 @@
       "sector": "Çimento",
       "website": "malayancement.com.my",
       "email": "info@malayancement.com.my",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 919,
@@ -11395,8 +11439,9 @@
       "sector": "Offshore / FPSO",
       "website": "yinson.com",
       "email": "info@yinson.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 920,
@@ -11405,8 +11450,9 @@
       "sector": "Petrol & Gaz",
       "website": "ecopetrol.com.co",
       "email": "info@ecopetrol.com.co",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 921,
@@ -11415,8 +11461,9 @@
       "sector": "Gıda",
       "website": "grupoenutresa.com",
       "email": "info@grupoenutresa.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 922,
@@ -11425,8 +11472,9 @@
       "sector": "Petrol & Gaz",
       "website": "frontera.energy",
       "email": "info@frontera.energy",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 923,
@@ -11435,8 +11483,9 @@
       "sector": "Madencilik / Bakır",
       "website": "codelco.com",
       "email": "info@codelco.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 924,
@@ -11445,8 +11494,9 @@
       "sector": "Lityum / Gübre",
       "website": "sqm.com",
       "email": "info@sqm.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 925,
@@ -11455,8 +11505,9 @@
       "sector": "Madencilik / Bakır",
       "website": "antofagasta.co.uk",
       "email": "info@antofagasta.co.uk",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 926,
@@ -11465,8 +11516,9 @@
       "sector": "Madencilik / Bakır",
       "website": "southerncoppercorp.com",
       "email": "info@southerncoppercorp.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 927,
@@ -11475,8 +11527,9 @@
       "sector": "Madencilik / Altın",
       "website": "buenaventura.com",
       "email": "info@buenaventura.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 928,
@@ -11485,8 +11538,9 @@
       "sector": "Petrol & Gaz / Rafineri",
       "website": "petroperu.com.pe",
       "email": "info@petroperu.com.pe",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 929,
@@ -11495,8 +11549,9 @@
       "sector": "Rafineri",
       "website": "pemex.com",
       "email": "atencionciudadana@pemex.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 930,
@@ -11505,8 +11560,9 @@
       "sector": "Madencilik / Bakır",
       "website": "grupomexico.com",
       "email": "info@grupomexico.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 931,
@@ -11515,8 +11571,9 @@
       "sector": "Petrokimya / PET",
       "website": "alpek.com",
       "email": "info@alpek.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 932,
@@ -11525,8 +11582,9 @@
       "sector": "Kimya / Boru",
       "website": "orbia.com",
       "email": "info@orbia.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 933,
@@ -11535,8 +11593,9 @@
       "sector": "Petrokimya / Gaz",
       "website": "sasol.com",
       "email": "info@sasol.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 934,
@@ -11545,8 +11604,9 @@
       "sector": "Enerji / Elektrik",
       "website": "eskom.co.za",
       "email": "info@eskom.co.za",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 935,
@@ -11555,8 +11615,9 @@
       "sector": "Su",
       "website": "randwater.co.za",
       "email": "info@randwater.co.za",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 936,
@@ -11565,8 +11626,9 @@
       "sector": "Liman / Boru / Lojistik",
       "website": "transnet.net",
       "email": "info@transnet.net",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 937,
@@ -11575,8 +11637,9 @@
       "sector": "Çelik",
       "website": "arcelormittalsa.com",
       "email": "info@arcelormittalsa.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 938,
@@ -11585,8 +11648,9 @@
       "sector": "Madencilik / Platin",
       "website": "implats.co.za",
       "email": "info@implats.co.za",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 939,
@@ -11645,8 +11709,9 @@
       "sector": "Rafineri / Petrokimya",
       "website": "orlen.pl",
       "email": "info@orlen.pl",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 945,
@@ -11655,8 +11720,9 @@
       "sector": "Madencilik / Bakır",
       "website": "kghm.com",
       "email": "info@kghm.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 946,
@@ -11665,8 +11731,9 @@
       "sector": "Doğalgaz",
       "website": "pgnig.pl",
       "email": "info@pgnig.pl",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 947,
@@ -11675,8 +11742,9 @@
       "sector": "Rafineri / Petrokimya",
       "website": "unipetrol.cz",
       "email": "info@unipetrol.cz",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 948,
@@ -11685,8 +11753,9 @@
       "sector": "Petrol & Gaz",
       "website": "mol.hu",
       "email": "info@mol.hu",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 949,
@@ -11695,8 +11764,9 @@
       "sector": "Petrokimya",
       "website": "mol.hu",
       "email": "tvk@mol.hu",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 950,
@@ -11705,8 +11775,9 @@
       "sector": "Petrol & Gaz",
       "website": "omvpetrom.com",
       "email": "info@omvpetrom.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 951,
@@ -11715,8 +11786,9 @@
       "sector": "Rafineri",
       "website": "rompetrol.ro",
       "email": "info@rompetrol.ro",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 952,
@@ -11725,8 +11797,9 @@
       "sector": "Rafineri",
       "website": "lukoil-neftochim.bg",
       "email": "info@lukoil-neftochim.bg",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 953,
@@ -11735,8 +11808,9 @@
       "sector": "Petrol & Gaz",
       "website": "equinor.com",
       "email": "info@equinor.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 954,
@@ -11745,8 +11819,9 @@
       "sector": "Gübre / Kimya",
       "website": "yara.com",
       "email": "info@yara.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 955,
@@ -11755,8 +11830,9 @@
       "sector": "Rafineri / Biyoyakıt",
       "website": "neste.com",
       "email": "info@neste.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 956,
@@ -11765,8 +11841,9 @@
       "sector": "Enerji",
       "website": "fortum.com",
       "email": "info@fortum.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 957,
@@ -11775,8 +11852,9 @@
       "sector": "Özel Kimyasallar",
       "website": "perstorp.com",
       "email": "info@perstorp.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 958,
@@ -11785,8 +11863,9 @@
       "sector": "Madencilik",
       "website": "bhp.com",
       "email": "info@bhp.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 959,
@@ -11795,8 +11874,9 @@
       "sector": "Madencilik",
       "website": "riotinto.com",
       "email": "info@riotinto.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 960,
@@ -11805,8 +11885,9 @@
       "sector": "LNG / Petrol",
       "website": "woodside.com",
       "email": "info@woodside.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 961,
@@ -11815,8 +11896,9 @@
       "sector": "Patlayıcı / Madencilik",
       "website": "orica.com",
       "email": "info@orica.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 962,
@@ -11825,8 +11907,9 @@
       "sector": "Gübre / Patlayıcı",
       "website": "incitecpivot.com.au",
       "email": "info@incitecpivot.com.au",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 963,
@@ -11835,8 +11918,9 @@
       "sector": "Petrokimya / Batarya",
       "website": "lgchem.com",
       "email": "info@lgchem.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 964,
@@ -11845,8 +11929,9 @@
       "sector": "Petrokimya",
       "website": "lottechem.com",
       "email": "info@lottechem.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 965,
@@ -11855,8 +11940,9 @@
       "sector": "Kimya / Güneş",
       "website": "hanwhasolutions.com",
       "email": "info@hanwhasolutions.com",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 966,
@@ -11865,8 +11951,9 @@
       "sector": "Kimya",
       "website": "m-chemical.co.jp",
       "email": "info@m-chemical.co.jp",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 967,
@@ -11875,8 +11962,9 @@
       "sector": "Kimya",
       "website": "sumitomo-chem.co.jp",
       "email": "info@sumitomo-chem.co.jp",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 968,
@@ -11885,14 +11973,15 @@
       "sector": "Kimya",
       "website": "mitsuichem.co.jp",
       "email": "info@mitsuichem.co.jp",
-      "status": "sent",
-      "sentDate": "2026-06-30"
+      "status": "skip",
+      "sentDate": "2026-06-30",
+      "notes": "SKIP: hedef dışı ülke"
     },
     {
       "id": 969,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "BP PLC",
       "country": "United Kingdom",
       "sector": "Petrol & Gaz",
@@ -11901,9 +11990,9 @@
     },
     {
       "id": 970,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Shell PLC",
       "country": "United Kingdom",
       "sector": "Petrol & Gaz",
@@ -11912,9 +12001,9 @@
     },
     {
       "id": 971,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Ineos Group",
       "country": "United Kingdom",
       "sector": "Kimya",
@@ -11923,9 +12012,9 @@
     },
     {
       "id": 972,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Tata Steel UK",
       "country": "United Kingdom",
       "sector": "Maden",
@@ -11934,9 +12023,9 @@
     },
     {
       "id": 973,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Anglo American PLC",
       "country": "United Kingdom",
       "sector": "Maden",
@@ -11945,9 +12034,9 @@
     },
     {
       "id": 974,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Severn Trent Water",
       "country": "United Kingdom",
       "sector": "Su",
@@ -11956,9 +12045,9 @@
     },
     {
       "id": 975,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Thames Water",
       "country": "United Kingdom",
       "sector": "Su",
@@ -11967,9 +12056,9 @@
     },
     {
       "id": 976,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Scottish Water",
       "country": "United Kingdom",
       "sector": "Su",
@@ -11978,9 +12067,9 @@
     },
     {
       "id": 977,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Centrica PLC",
       "country": "United Kingdom",
       "sector": "Enerji",
@@ -11989,9 +12078,9 @@
     },
     {
       "id": 978,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Drax Group",
       "country": "United Kingdom",
       "sector": "Enerji",
@@ -12000,9 +12089,9 @@
     },
     {
       "id": 979,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Petrobras",
       "country": "Brazil",
       "sector": "Petrol & Gaz",
@@ -12011,9 +12100,9 @@
     },
     {
       "id": 980,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Vale SA",
       "country": "Brazil",
       "sector": "Maden",
@@ -12022,9 +12111,9 @@
     },
     {
       "id": 981,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Braskem SA",
       "country": "Brazil",
       "sector": "Kimya",
@@ -12033,9 +12122,9 @@
     },
     {
       "id": 982,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Samarco Mineração",
       "country": "Brazil",
       "sector": "Maden",
@@ -12044,9 +12133,9 @@
     },
     {
       "id": 983,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Usiminas",
       "country": "Brazil",
       "sector": "Maden",
@@ -12055,9 +12144,9 @@
     },
     {
       "id": 984,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Embraer",
       "country": "Brazil",
       "sector": "Kimya",
@@ -12066,9 +12155,9 @@
     },
     {
       "id": 985,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Raízen",
       "country": "Brazil",
       "sector": "Enerji",
@@ -12077,9 +12166,9 @@
     },
     {
       "id": 986,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Gerdau SA",
       "country": "Brazil",
       "sector": "Maden",
@@ -12088,9 +12177,9 @@
     },
     {
       "id": 987,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Bradespar (Vale stake)",
       "country": "Brazil",
       "sector": "Maden",
@@ -12099,9 +12188,9 @@
     },
     {
       "id": 988,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Natura &Co",
       "country": "Brazil",
       "sector": "Kimya",
@@ -12110,9 +12199,9 @@
     },
     {
       "id": 989,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Suncor Energy",
       "country": "Canada",
       "sector": "Petrol & Gaz",
@@ -12121,9 +12210,9 @@
     },
     {
       "id": 990,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Canadian Natural Resources",
       "country": "Canada",
       "sector": "Petrol & Gaz",
@@ -12132,9 +12221,9 @@
     },
     {
       "id": 991,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Cenovus Energy",
       "country": "Canada",
       "sector": "Petrol & Gaz",
@@ -12143,9 +12232,9 @@
     },
     {
       "id": 992,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Teck Resources",
       "country": "Canada",
       "sector": "Maden",
@@ -12154,9 +12243,9 @@
     },
     {
       "id": 993,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Barrick Gold",
       "country": "Canada",
       "sector": "Maden",
@@ -12165,9 +12254,9 @@
     },
     {
       "id": 994,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Agnico Eagle Mines",
       "country": "Canada",
       "sector": "Maden",
@@ -12176,9 +12265,9 @@
     },
     {
       "id": 995,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Enbridge Inc",
       "country": "Canada",
       "sector": "Petrol & Gaz",
@@ -12187,9 +12276,9 @@
     },
     {
       "id": 996,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "TC Energy",
       "country": "Canada",
       "sector": "Enerji",
@@ -12198,9 +12287,9 @@
     },
     {
       "id": 997,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Nutrien Ltd",
       "country": "Canada",
       "sector": "Kimya",
@@ -12209,9 +12298,9 @@
     },
     {
       "id": 998,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Imperial Oil",
       "country": "Canada",
       "sector": "Petrol & Gaz",
@@ -12220,9 +12309,9 @@
     },
     {
       "id": 999,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Indian Oil Corporation",
       "country": "India",
       "sector": "Petrol & Gaz",
@@ -12231,9 +12320,9 @@
     },
     {
       "id": 1000,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "ONGC Ltd",
       "country": "India",
       "sector": "Petrol & Gaz",
@@ -12242,9 +12331,9 @@
     },
     {
       "id": 1001,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Reliance Industries",
       "country": "India",
       "sector": "Petrol & Gaz",
@@ -12253,9 +12342,9 @@
     },
     {
       "id": 1002,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "GAIL India Ltd",
       "country": "India",
       "sector": "Petrol & Gaz",
@@ -12264,9 +12353,9 @@
     },
     {
       "id": 1003,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Tata Steel Ltd",
       "country": "India",
       "sector": "Maden",
@@ -12275,9 +12364,9 @@
     },
     {
       "id": 1004,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Steel Authority of India (SAIL)",
       "country": "India",
       "sector": "Maden",
@@ -12286,9 +12375,9 @@
     },
     {
       "id": 1005,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Hindustan Zinc",
       "country": "India",
       "sector": "Maden",
@@ -12297,9 +12386,9 @@
     },
     {
       "id": 1006,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "NTPC Limited",
       "country": "India",
       "sector": "Enerji",
@@ -12308,9 +12397,9 @@
     },
     {
       "id": 1007,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "UPL Limited",
       "country": "India",
       "sector": "Kimya",
@@ -12319,9 +12408,9 @@
     },
     {
       "id": 1008,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Deepak Nitrite",
       "country": "India",
       "sector": "Kimya",
@@ -12551,9 +12640,9 @@
     },
     {
       "id": 1029,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Galp Energia",
       "country": "Portugal",
       "sector": "Petrol & Gaz",
@@ -12562,9 +12651,9 @@
     },
     {
       "id": 1030,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "EDP Energias de Portugal",
       "country": "Portugal",
       "sector": "Enerji",
@@ -12573,9 +12662,9 @@
     },
     {
       "id": 1031,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "REN (Redes Energéticas)",
       "country": "Portugal",
       "sector": "Enerji",
@@ -12606,9 +12695,9 @@
     },
     {
       "id": 1034,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Fonterra Co-operative",
       "country": "New Zealand",
       "sector": "Kimya",
@@ -12617,9 +12706,9 @@
     },
     {
       "id": 1035,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Vector Limited",
       "country": "New Zealand",
       "sector": "Enerji",
@@ -12628,9 +12717,9 @@
     },
     {
       "id": 1036,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Sembcorp Industries",
       "country": "Singapore",
       "sector": "Enerji",
@@ -12639,9 +12728,9 @@
     },
     {
       "id": 1037,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Jurong Aromatics Corporation",
       "country": "Singapore",
       "sector": "Kimya",
@@ -12650,9 +12739,9 @@
     },
     {
       "id": 1038,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "CPC Corporation Taiwan",
       "country": "Taiwan",
       "sector": "Petrol & Gaz",
@@ -12661,9 +12750,9 @@
     },
     {
       "id": 1039,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Formosa Plastics Group",
       "country": "Taiwan",
       "sector": "Kimya",
@@ -12672,9 +12761,9 @@
     },
     {
       "id": 1040,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Yung Chi Paint & Varnish",
       "country": "Taiwan",
       "sector": "Kimya",
@@ -12683,9 +12772,9 @@
     },
     {
       "id": 1041,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "YPF SA",
       "country": "Argentina",
       "sector": "Petrol & Gaz",
@@ -12694,9 +12783,9 @@
     },
     {
       "id": 1042,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Tecpetrol",
       "country": "Argentina",
       "sector": "Petrol & Gaz",
@@ -12705,9 +12794,9 @@
     },
     {
       "id": 1043,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Aluar Aluminio",
       "country": "Argentina",
       "sector": "Maden",
@@ -12716,9 +12805,9 @@
     },
     {
       "id": 1044,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Pampa Energía",
       "country": "Argentina",
       "sector": "Enerji",
@@ -12727,9 +12816,9 @@
     },
     {
       "id": 1045,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Delek Group",
       "country": "Israel",
       "sector": "Petrol & Gaz",
@@ -12738,9 +12827,9 @@
     },
     {
       "id": 1046,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "ICL Group (Israel Chemicals)",
       "country": "Israel",
       "sector": "Kimya",
@@ -12749,9 +12838,9 @@
     },
     {
       "id": 1047,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "OPC Energy",
       "country": "Israel",
       "sector": "Enerji",
@@ -12760,9 +12849,9 @@
     },
     {
       "id": 1048,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Ørsted A/S",
       "country": "Denmark",
       "sector": "Enerji",
@@ -12771,9 +12860,9 @@
     },
     {
       "id": 1049,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Topsoe (Haldor)",
       "country": "Denmark",
       "sector": "Kimya",
@@ -12782,9 +12871,9 @@
     },
     {
       "id": 1050,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "HOFOR (Water Copenhagen)",
       "country": "Denmark",
       "sector": "Su",
@@ -12793,9 +12882,9 @@
     },
     {
       "id": 1051,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "OMV AG",
       "country": "Austria",
       "sector": "Petrol & Gaz",
@@ -12804,9 +12893,9 @@
     },
     {
       "id": 1052,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Voestalpine AG",
       "country": "Austria",
       "sector": "Maden",
@@ -12815,9 +12904,9 @@
     },
     {
       "id": 1053,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-06-30",
-      "notes": "",
+      "notes": "SKIP: hedef dışı ülke",
       "company": "Borealis AG",
       "country": "Austria",
       "sector": "Kimya",
@@ -13570,9 +13659,9 @@
     },
     {
       "id": 1121,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - küresel proje mühendisliği",
+      "notes": "EPC - küresel proje mühendisliği | SKIP: hedef dışı ülke",
       "company": "Wood PLC",
       "country": "United Kingdom",
       "sector": "Petrol & Gaz",
@@ -13581,9 +13670,9 @@
     },
     {
       "id": 1122,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - LNG, petrokimya projeleri",
+      "notes": "EPC - LNG, petrokimya projeleri | SKIP: hedef dışı ülke",
       "company": "Technip Energies",
       "country": "France",
       "sector": "Petrol & Gaz",
@@ -13592,9 +13681,9 @@
     },
     {
       "id": 1123,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - enerji projeleri",
+      "notes": "EPC - enerji projeleri | SKIP: hedef dışı ülke",
       "company": "WorleyParsons",
       "country": "Australia",
       "sector": "Petrol & Gaz",
@@ -13603,9 +13692,9 @@
     },
     {
       "id": 1124,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - büyük saha projeleri",
+      "notes": "EPC - büyük saha projeleri | SKIP: hedef dışı ülke",
       "company": "Fluor Corporation",
       "country": "USA",
       "sector": "Petrol & Gaz",
@@ -13614,9 +13703,9 @@
     },
     {
       "id": 1125,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - offshore & onshore",
+      "notes": "EPC - offshore & onshore | SKIP: hedef dışı ülke",
       "company": "McDermott International",
       "country": "USA",
       "sector": "Petrol & Gaz",
@@ -13625,9 +13714,9 @@
     },
     {
       "id": 1126,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - petrol & gaz projeleri",
+      "notes": "EPC - petrol & gaz projeleri | SKIP: hedef dışı ülke",
       "company": "Saipem SpA (Projects)",
       "country": "Italy",
       "sector": "Petrol & Gaz",
@@ -13636,9 +13725,9 @@
     },
     {
       "id": 1127,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC + subsea teknoloji",
+      "notes": "EPC + subsea teknoloji | SKIP: hedef dışı ülke",
       "company": "TechnipFMC",
       "country": "USA",
       "sector": "Petrol & Gaz",
@@ -13647,9 +13736,9 @@
     },
     {
       "id": 1128,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - Orta Doğu & Orta Asya güçlü",
+      "notes": "EPC - Orta Doğu & Orta Asya güçlü | SKIP: hedef dışı ülke",
       "company": "Petrofac Ltd",
       "country": "United Kingdom",
       "sector": "Petrol & Gaz",
@@ -13658,9 +13747,9 @@
     },
     {
       "id": 1129,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - petrokimya projeleri",
+      "notes": "EPC - petrokimya projeleri | SKIP: hedef dışı ülke",
       "company": "Samsung Engineering",
       "country": "South Korea",
       "sector": "Petrol & Gaz",
@@ -13669,9 +13758,9 @@
     },
     {
       "id": 1130,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - rafinerileri & petrokimya",
+      "notes": "EPC - rafinerileri & petrokimya | SKIP: hedef dışı ülke",
       "company": "Hyundai Engineering",
       "country": "South Korea",
       "sector": "Petrol & Gaz",
@@ -13680,9 +13769,9 @@
     },
     {
       "id": 1131,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - küresel projeler",
+      "notes": "EPC - küresel projeler | SKIP: hedef dışı ülke",
       "company": "GS Engineering & Construction",
       "country": "South Korea",
       "sector": "Petrol & Gaz",
@@ -13691,9 +13780,9 @@
     },
     {
       "id": 1132,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - petrol & gaz",
+      "notes": "EPC - petrol & gaz | SKIP: hedef dışı ülke",
       "company": "Daewoo Engineering",
       "country": "South Korea",
       "sector": "Petrol & Gaz",
@@ -13724,9 +13813,9 @@
     },
     {
       "id": 1135,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "EPC - İspanyol mühendislik",
+      "notes": "EPC - İspanyol mühendislik | SKIP: hedef dışı ülke",
       "company": "Technique Constr. (Técnicas R.)",
       "country": "Spain",
       "sector": "Petrol & Gaz",
@@ -13845,9 +13934,9 @@
     },
     {
       "id": 1146,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Mangalore rafinerisi",
+      "notes": "Mangalore rafinerisi | SKIP: hedef dışı ülke",
       "company": "Mangalore Refinery (MRPL)",
       "country": "India",
       "sector": "Petrol & Gaz",
@@ -13856,9 +13945,9 @@
     },
     {
       "id": 1147,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Chennai rafinerisi",
+      "notes": "Chennai rafinerisi | SKIP: hedef dışı ülke",
       "company": "Chennai Petroleum (CPCL)",
       "country": "India",
       "sector": "Petrol & Gaz",
@@ -13867,9 +13956,9 @@
     },
     {
       "id": 1148,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Assam rafinerisi",
+      "notes": "Assam rafinerisi | SKIP: hedef dışı ülke",
       "company": "Numaligarh Refinery",
       "country": "India",
       "sector": "Petrol & Gaz",
@@ -13878,9 +13967,9 @@
     },
     {
       "id": 1149,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Gujarat bölge rafinerisi",
+      "notes": "Gujarat bölge rafinerisi | SKIP: hedef dışı ülke",
       "company": "Gujarat Refinery (IOCL)",
       "country": "India",
       "sector": "Petrol & Gaz",
@@ -13889,9 +13978,9 @@
     },
     {
       "id": 1150,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Gübre ve kimya",
+      "notes": "Gübre ve kimya | SKIP: hedef dışı ülke",
       "company": "Deepak Fertilisers",
       "country": "India",
       "sector": "Kimya",
@@ -13900,9 +13989,9 @@
     },
     {
       "id": 1151,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Soda külü ve kimya",
+      "notes": "Soda külü ve kimya | SKIP: hedef dışı ülke",
       "company": "Tata Chemicals",
       "country": "India",
       "sector": "Kimya",
@@ -13911,9 +14000,9 @@
     },
     {
       "id": 1152,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Gübre üreticisi",
+      "notes": "Gübre üreticisi | SKIP: hedef dışı ülke",
       "company": "Coromandel International",
       "country": "India",
       "sector": "Kimya",
@@ -13922,9 +14011,9 @@
     },
     {
       "id": 1153,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Azot gübre",
+      "notes": "Azot gübre | SKIP: hedef dışı ülke",
       "company": "Chambal Fertilisers",
       "country": "India",
       "sector": "Kimya",
@@ -13933,9 +14022,9 @@
     },
     {
       "id": 1154,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Devlet kimya şirketi",
+      "notes": "Devlet kimya şirketi | SKIP: hedef dışı ülke",
       "company": "Rashtriya Chemicals (RCF)",
       "country": "India",
       "sector": "Kimya",
@@ -13944,9 +14033,9 @@
     },
     {
       "id": 1155,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Gübre + kimya",
+      "notes": "Gübre + kimya | SKIP: hedef dışı ülke",
       "company": "Gujarat Narmada (GNFC)",
       "country": "India",
       "sector": "Kimya",
@@ -14065,9 +14154,9 @@
     },
     {
       "id": 1166,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Tayland upstream petrol",
+      "notes": "Tayland upstream petrol | SKIP: hedef dışı ülke",
       "company": "PTT Exploration & Production",
       "country": "Thailand",
       "sector": "Petrol & Gaz",
@@ -14076,9 +14165,9 @@
     },
     {
       "id": 1167,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Kömür madenciliği",
+      "notes": "Kömür madenciliği | SKIP: hedef dışı ülke",
       "company": "Indika Energy",
       "country": "Indonesia",
       "sector": "Maden",
@@ -14087,9 +14176,9 @@
     },
     {
       "id": 1168,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Devlet kömür şirketi",
+      "notes": "Devlet kömür şirketi | SKIP: hedef dışı ülke",
       "company": "Bukit Asam (PTBA)",
       "country": "Indonesia",
       "sector": "Maden",
@@ -14098,9 +14187,9 @@
     },
     {
       "id": 1169,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Kömür madenciliği",
+      "notes": "Kömür madenciliği | SKIP: hedef dışı ülke",
       "company": "Adaro Energy",
       "country": "Indonesia",
       "sector": "Maden",
@@ -14109,9 +14198,9 @@
     },
     {
       "id": 1170,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Çimento fabrikası",
+      "notes": "Çimento fabrikası | SKIP: hedef dışı ülke",
       "company": "Holcim Indonesia",
       "country": "Indonesia",
       "sector": "Maden",
@@ -14120,9 +14209,9 @@
     },
     {
       "id": 1171,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Endüstriyel gaz",
+      "notes": "Endüstriyel gaz | SKIP: hedef dışı ülke",
       "company": "Bangkok Industrial Gas (BIG)",
       "country": "Thailand",
       "sector": "Kimya",
@@ -14131,9 +14220,9 @@
     },
     {
       "id": 1172,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Rayong petrokimya kompleksi",
+      "notes": "Rayong petrokimya kompleksi | SKIP: hedef dışı ülke",
       "company": "IRPC PCL (Rayong)",
       "country": "Thailand",
       "sector": "Kimya",
@@ -14142,9 +14231,9 @@
     },
     {
       "id": 1173,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Vietnam gaz",
+      "notes": "Vietnam gaz | SKIP: hedef dışı ülke",
       "company": "PetroVietnam Gas",
       "country": "Vietnam",
       "sector": "Petrol & Gaz",
@@ -14153,9 +14242,9 @@
     },
     {
       "id": 1174,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Gübre tesisi",
+      "notes": "Gübre tesisi | SKIP: hedef dışı ülke",
       "company": "PetroVietnam Fertilizer (DPM)",
       "country": "Vietnam",
       "sector": "Kimya",
@@ -14164,9 +14253,9 @@
     },
     {
       "id": 1175,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Dung Quat rafinerisi",
+      "notes": "Dung Quat rafinerisi | SKIP: hedef dışı ülke",
       "company": "Binh Son Refinery (BSR)",
       "country": "Vietnam",
       "sector": "Petrol & Gaz",
@@ -14186,9 +14275,9 @@
     },
     {
       "id": 1177,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Porvoo rafinerisi",
+      "notes": "Porvoo rafinerisi | SKIP: hedef dışı ülke",
       "company": "Neste Porvoo (Refinery)",
       "country": "Finland",
       "sector": "Petrol & Gaz",
@@ -14219,9 +14308,9 @@
     },
     {
       "id": 1180,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Romanya gübre tesisi",
+      "notes": "Romanya gübre tesisi | SKIP: hedef dışı ülke",
       "company": "Azomures (Fertiliser)",
       "country": "Romania",
       "sector": "Kimya",
@@ -14230,9 +14319,9 @@
     },
     {
       "id": 1181,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Romanya PVC ve kimya",
+      "notes": "Romanya PVC ve kimya | SKIP: hedef dışı ülke",
       "company": "Oltchim SA",
       "country": "Romania",
       "sector": "Kimya",
@@ -14241,9 +14330,9 @@
     },
     {
       "id": 1182,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Bulgaristan çelik",
+      "notes": "Bulgaristan çelik | SKIP: hedef dışı ülke",
       "company": "Stomana Industry (Steel)",
       "country": "Bulgaria",
       "sector": "Maden",
@@ -14252,9 +14341,9 @@
     },
     {
       "id": 1183,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Bulgaristan çimento",
+      "notes": "Bulgaristan çimento | SKIP: hedef dışı ülke",
       "company": "Devnya Cement",
       "country": "Bulgaria",
       "sector": "Maden",
@@ -14285,9 +14374,9 @@
     },
     {
       "id": 1186,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Arjantin PVC üretimi",
+      "notes": "Arjantin PVC üretimi | SKIP: hedef dışı ülke",
       "company": "Petroquímica Cuyo",
       "country": "Argentina",
       "sector": "Kimya",
@@ -14296,9 +14385,9 @@
     },
     {
       "id": 1187,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Arjantin çimento",
+      "notes": "Arjantin çimento | SKIP: hedef dışı ülke",
       "company": "Loma Negra (Cement)",
       "country": "Argentina",
       "sector": "Maden",
@@ -14307,9 +14396,9 @@
     },
     {
       "id": 1188,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Şili nikel madeni",
+      "notes": "Şili nikel madeni | SKIP: hedef dışı ülke",
       "company": "Cerro Negro Nickel",
       "country": "Chile",
       "sector": "Maden",
@@ -14318,9 +14407,9 @@
     },
     {
       "id": 1189,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Arauco selüloz",
+      "notes": "Arauco selüloz | SKIP: hedef dışı ülke",
       "company": "CELPA (Celulosa)",
       "country": "Chile",
       "sector": "Kimya",
@@ -14329,9 +14418,9 @@
     },
     {
       "id": 1190,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Brezilya çimento",
+      "notes": "Brezilya çimento | SKIP: hedef dışı ülke",
       "company": "Votorantim Cimentos",
       "country": "Brazil",
       "sector": "Maden",
@@ -14340,9 +14429,9 @@
     },
     {
       "id": 1191,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Meksika polietilen",
+      "notes": "Meksika polietilen | SKIP: hedef dışı ülke",
       "company": "Braskem Idesa",
       "country": "Mexico",
       "sector": "Kimya",
@@ -14351,9 +14440,9 @@
     },
     {
       "id": 1192,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "PEMEX petrokimya kolu",
+      "notes": "PEMEX petrokimya kolu | SKIP: hedef dışı ülke",
       "company": "PEMEX Gas y Petroquímica",
       "country": "Mexico",
       "sector": "Kimya",
@@ -14362,9 +14451,9 @@
     },
     {
       "id": 1193,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Kolombiya çimento",
+      "notes": "Kolombiya çimento | SKIP: hedef dışı ülke",
       "company": "Cementos Argos",
       "country": "Colombia",
       "sector": "Maden",
@@ -14373,9 +14462,9 @@
     },
     {
       "id": 1194,
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-01",
-      "notes": "Peru petrol üretim",
+      "notes": "Peru petrol üretim | SKIP: hedef dışı ülke",
       "company": "Petroperu (upstream)",
       "country": "Peru",
       "sector": "Petrol & Gaz",
@@ -14597,9 +14686,9 @@
       "website": "lsp.com",
       "contact": "",
       "email": "trangvtm@lsp.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Vietnam'ın ilk entegre petrokimya kompleksi. Ba Ria-Vung Tau. SCG Group. $5.4B yatırım. Eylül 2024'te üretime başladı.",
+      "notes": "Vietnam'ın ilk entegre petrokimya kompleksi. Ba Ria-Vung Tau. SCG Group. $5.4B yatırım. Eylül 2024'te üretime başladı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14610,9 +14699,9 @@
       "website": "pvcfc.com.vn",
       "contact": "",
       "email": "info@pvcfc.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Ca Mau ili. 800.000 ton/yıl üre kapasitesi. Gaz besleme, amonyak hatlarında akışölçer.",
+      "notes": "Ca Mau ili. 800.000 ton/yıl üre kapasitesi. Gaz besleme, amonyak hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14623,9 +14712,9 @@
       "website": "vinachem.com.vn",
       "contact": "",
       "email": "infor.office@vinachem.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "30+ kimya yan kuruluşunun devlet ana şirketi. Gübreler, pestisitler, kauçuk kimyasalları, temel kimyasallar.",
+      "notes": "30+ kimya yan kuruluşunun devlet ana şirketi. Gübreler, pestisitler, kauçuk kimyasalları, temel kimyasallar. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14636,9 +14725,9 @@
       "website": "fhs.com.vn",
       "contact": "",
       "email": "contact@fhs.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Büyük entegre çelik tesisi. Ha Tinh ili. Tayvan destekli. Soğutma suyu, yüksek fırın, su arıtma hatlarında akışölçer.",
+      "notes": "Büyük entegre çelik tesisi. Ha Tinh ili. Tayvan destekli. Soğutma suyu, yüksek fırın, su arıtma hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14649,9 +14738,9 @@
       "website": "sabeco.com.vn",
       "contact": "",
       "email": "info@sabeco.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Vietnam'ın 1 numaralı bira markası. 30M HL/yıl kapasite. ThaiBev. Mayalama, CIP hatlarında akışölçer.",
+      "notes": "Vietnam'ın 1 numaralı bira markası. 30M HL/yıl kapasite. ThaiBev. Mayalama, CIP hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14662,9 +14751,9 @@
       "website": "sawaco.com.vn",
       "contact": "",
       "email": "info@sawaco.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "HCMC belediye su şirketi. 734.000 bağlantı. Thu Duc, Tan Hiep arıtma tesisleri. Dağıtım hatlarında EMF.",
+      "notes": "HCMC belediye su şirketi. 734.000 bağlantı. Thu Duc, Tan Hiep arıtma tesisleri. Dağıtım hatlarında EMF. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14675,9 +14764,9 @@
       "website": "habeco.com.vn",
       "contact": "",
       "email": "info@habeco.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Vietnam'ın 3. büyük bira üreticisi. 8M HL/yıl. Hanoi merkezli. Su, şıra, mayalama hatlarında akışölçer.",
+      "notes": "Vietnam'ın 3. büyük bira üreticisi. 8M HL/yıl. Hanoi merkezli. Su, şıra, mayalama hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14688,9 +14777,9 @@
       "website": "kafcobd.com",
       "contact": "",
       "email": "kafco.vro@kafcobd.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Uluslararası JV gübre tesisi. Chittagong. Üre tesisi — amonyak, üre, buhar, soğutma hatlarında akışölçer. Vendor kayıt emaili onaylı.",
+      "notes": "Uluslararası JV gübre tesisi. Chittagong. Üre tesisi — amonyak, üre, buhar, soğutma hatlarında akışölçer. Vendor kayıt emaili onaylı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14701,9 +14790,9 @@
       "website": "bcic.gov.bd",
       "contact": "",
       "email": "pd@gpufu.gov.bd",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Yeni $1.2B üre tesisi (2023). BCIC yan kuruluşu. Narsingdi. 800.000 ton/yıl üre.",
+      "notes": "Yeni $1.2B üre tesisi (2023). BCIC yan kuruluşu. Narsingdi. 800.000 ton/yıl üre. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14714,9 +14803,9 @@
       "website": "squarepharma.com.bd",
       "contact": "",
       "email": "intlmkt@squaregroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Bangladesh'ın en büyük ilaç şirketi. API üretiminde, WFI sistemlerinde Coriolis ve EMF akışölçer kullanır.",
+      "notes": "Bangladesh'ın en büyük ilaç şirketi. API üretiminde, WFI sistemlerinde Coriolis ve EMF akışölçer kullanır. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14727,9 +14816,9 @@
       "website": "beximcopharma.com",
       "contact": "",
       "email": "info@beximco.net",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Bangladesh'ın en büyük ilaç ihracatçısı (55 ülke). Tongi, Gazipur. API üretim hatlarında hassas akışölçer ihtiyacı.",
+      "notes": "Bangladesh'ın en büyük ilaç ihracatçısı (55 ülke). Tongi, Gazipur. API üretim hatlarında hassas akışölçer ihtiyacı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14740,9 +14829,9 @@
       "website": "padmaoil.com.bd",
       "contact": "",
       "email": "info@padmaoil.com.bd",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Devlet yakıt dağıtım şirketi. Bangladesh Petroleum Corp yan kuruluşu. Depot ve terminal hatlarında EMF akışölçer.",
+      "notes": "Devlet yakıt dağıtım şirketi. Bangladesh Petroleum Corp yan kuruluşu. Depot ve terminal hatlarında EMF akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14753,9 +14842,9 @@
       "website": "meghnapetroleum.com",
       "contact": "",
       "email": "info@meghnapetroleum.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Büyük yakıt pazarlama şirketi. Tank çiftliği akış ölçümü için akışölçer.",
+      "notes": "Büyük yakıt pazarlama şirketi. Tank çiftliği akış ölçümü için akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14766,9 +14855,9 @@
       "website": "ffc.com.pk",
       "contact": "",
       "email": "ffcrwp@ffc.com.pk",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Pakistan'ın en büyük gübre şirketi. Goth Machhi ve Mirpur Mathelo tesisleri. procurement@ffc.com.pk ayrıca mevcut.",
+      "notes": "Pakistan'ın en büyük gübre şirketi. Goth Machhi ve Mirpur Mathelo tesisleri. procurement@ffc.com.pk ayrıca mevcut. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14779,9 +14868,9 @@
       "website": "engropolymer.com",
       "contact": "",
       "email": "info@engropolymer.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Pakistan'ın tek entegre PVC/kostik soda üreticisi. Bin Qasim, Karachi. Klor, kostik, VCM, PVC hatlarında akışölçer.",
+      "notes": "Pakistan'ın tek entegre PVC/kostik soda üreticisi. Bin Qasim, Karachi. Klor, kostik, VCM, PVC hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14792,9 +14881,9 @@
       "website": "fatima-group.com",
       "contact": "",
       "email": "INFO@FATIMA-GROUP.COM",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Büyük özel gübre üreticisi. Lahore merkez. Şeikhupura'da amonyak + üre tesisi.",
+      "notes": "Büyük özel gübre üreticisi. Lahore merkez. Şeikhupura'da amonyak + üre tesisi. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14805,9 +14894,9 @@
       "website": "bestwaygroup.co.uk",
       "contact": "",
       "email": "procurement@bestway.com.pk",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Pakistan'ın en büyük çimento üreticisi. 11M ton/yıl. 5 tesis. Tedarik Direktörü: Safdar Khattak. Procurement email onaylı.",
+      "notes": "Pakistan'ın en büyük çimento üreticisi. 11M ton/yıl. 5 tesis. Tedarik Direktörü: Safdar Khattak. Procurement email onaylı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14818,9 +14907,9 @@
       "website": "dgcement.com",
       "contact": "",
       "email": "info@dgcement.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "4 tesis, 6.72M ton/yıl. DG Khan, Chakwal, Hub. Nishat House, Lawrence Road, Lahore.",
+      "notes": "4 tesis, 6.72M ton/yıl. DG Khan, Chakwal, Hub. Nishat House, Lawrence Road, Lahore. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14831,9 +14920,9 @@
       "website": "cheratcement.com",
       "contact": "",
       "email": "info@cheratcement.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Orta ölçekli çimento. Nowshera, KPK. Ham farin, soğutma suyu, yakıt yağı hatlarında akışölçer ihtiyacı.",
+      "notes": "Orta ölçekli çimento. Nowshera, KPK. Ham farin, soğutma suyu, yakıt yağı hatlarında akışölçer ihtiyacı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14844,9 +14933,9 @@
       "website": "ittehadchemicals.com",
       "contact": "",
       "email": "info@ittehadchemicals.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Orta ölçekli kimya üreticisi, Lahore. Klor-alkali kimyası. Klor ve kostik hatlarında akışölçer.",
+      "notes": "Orta ölçekli kimya üreticisi, Lahore. Klor-alkali kimyası. Klor ve kostik hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14857,9 +14946,9 @@
       "website": "mapleleafcement.com",
       "contact": "",
       "email": "info@mapleleafcement.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Orta ölçekli çimento. İskenderabad, Punjab. 2.7M ton/yıl. Yakıt akışı ve ham farin ölçümü için hedef.",
+      "notes": "Orta ölçekli çimento. İskenderabad, Punjab. 2.7M ton/yıl. Yakıt akışı ve ham farin ölçümü için hedef. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14922,9 +15011,9 @@
       "website": "pluspetrol.com",
       "contact": "",
       "email": "info@pluspetrol.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Peru'nun önde gelen petrol & gaz E&P şirketi. Camisea gaz sahası operatörü. Lima merkez. Kuyu başı, boru hattı, gaz işleme hatlarında akışölçer.",
+      "notes": "Peru'nun önde gelen petrol & gaz E&P şirketi. Camisea gaz sahası operatörü. Lima merkez. Kuyu başı, boru hattı, gaz işleme hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14935,9 +15024,9 @@
       "website": "hochschildmining.com",
       "contact": "",
       "email": "contact.peru@hochschildmining.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "İngiliz listeli gümüş/altın madencisi. Inmaculada madeni (Ayacucho). Lima merkez. Liç çamuru, su, reaktif dozlama hatlarında akışölçer.",
+      "notes": "İngiliz listeli gümüş/altın madencisi. Inmaculada madeni (Ayacucho). Lima merkez. Liç çamuru, su, reaktif dozlama hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14948,9 +15037,9 @@
       "website": "elbrocal.com.pe",
       "contact": "",
       "email": "info@elbrocal.com.pe",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Orta ölçekli listeli bakır/çinko madencisi. Pasco bölgesi. 500-1000 çalışan. Buenaventura yan kuruluşu. Flotasyon ve çamur hatlarında akışölçer.",
+      "notes": "Orta ölçekli listeli bakır/çinko madencisi. Pasco bölgesi. 500-1000 çalışan. Buenaventura yan kuruluşu. Flotasyon ve çamur hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14974,9 +15063,9 @@
       "website": "ecopetrol.com.co",
       "contact": "",
       "email": "proveedores@ecopetrol.com.co",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Kolombiya devlet petrol şirketi. Tedarikçi/satın alma portalı emaili. Yukarı/aşağı akış operasyonları. Her üretim, transfer ve yükleme hattında akışölçer.",
+      "notes": "Kolombiya devlet petrol şirketi. Tedarikçi/satın alma portalı emaili. Yukarı/aşağı akış operasyonları. Her üretim, transfer ve yükleme hattında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -14987,9 +15076,9 @@
       "website": "tequendama.com.co",
       "contact": "",
       "email": "info@tequendama.com.co",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Orta ölçekli Kolombiya çimento şirketi. Cundinamarca bölgesi. Argos'a göre daha erişilebilir satın alma.",
+      "notes": "Orta ölçekli Kolombiya çimento şirketi. Cundinamarca bölgesi. Argos'a göre daha erişilebilir satın alma. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_midsize"
     },
     {
@@ -15234,9 +15323,9 @@
       "website": "",
       "contact": "",
       "email": "hygro@hygrochemicals.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Hyderabad. Kimyasal proses. Flow meter ve basınç sensörü.",
+      "notes": "Hyderabad. Kimyasal proses. Flow meter ve basınç sensörü. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15247,9 +15336,9 @@
       "website": "",
       "contact": "",
       "email": "sales@sdichem.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Ankleshwar, Gujarat. İlaç ara maddesi üretimi.",
+      "notes": "Ankleshwar, Gujarat. İlaç ara maddesi üretimi. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15260,9 +15349,9 @@
       "website": "",
       "contact": "",
       "email": "marketing@rita.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Di An, Binh Duong. OEM içecek üretimi. Dolum hattı akış ölçümü.",
+      "notes": "Di An, Binh Duong. OEM içecek üretimi. Dolum hattı akış ölçümü. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15273,9 +15362,9 @@
       "website": "",
       "contact": "",
       "email": "info@thp.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Binh Duong. Vietnam'ın büyük içecek firması. Proses enstrümantasyon.",
+      "notes": "Binh Duong. Vietnam'ın büyük içecek firması. Proses enstrümantasyon. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15286,9 +15375,9 @@
       "website": "",
       "contact": "",
       "email": "kinhdoanh@vinachimex.com.vn",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Hanoi. Kimyasal ithalat/ihracat. Depolama ve dağıtım flow meter.",
+      "notes": "Hanoi. Kimyasal ithalat/ihracat. Depolama ve dağıtım flow meter. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15299,9 +15388,9 @@
       "website": "",
       "contact": "",
       "email": "rfl@prangroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Dhaka. FMCG gıda grubu. Proses flow meter.",
+      "notes": "Dhaka. FMCG gıda grubu. Proses flow meter. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15312,9 +15401,9 @@
       "website": "",
       "contact": "",
       "email": "info@ibnsinapharma.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Dhaka. Farmasötik üretim. Saf su ve proses hattı.",
+      "notes": "Dhaka. Farmasötik üretim. Saf su ve proses hattı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15325,9 +15414,9 @@
       "website": "",
       "contact": "",
       "email": "info@albionbd.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Chittagong. İlaç üretim tesisi. Proses enstrümantasyon.",
+      "notes": "Chittagong. İlaç üretim tesisi. Proses enstrümantasyon. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15338,9 +15427,9 @@
       "website": "",
       "contact": "",
       "email": "info@premiercement.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Dhaka. Çimento üretimi. Ham madde ve su akışı.",
+      "notes": "Dhaka. Çimento üretimi. Ham madde ve su akışı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15351,9 +15440,9 @@
       "website": "",
       "contact": "",
       "email": "shahcement@abulkhairgroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Dhaka. Büyük çimento tesisi. Enstrümantasyon ihtiyacı.",
+      "notes": "Dhaka. Büyük çimento tesisi. Enstrümantasyon ihtiyacı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15364,9 +15453,9 @@
       "website": "",
       "contact": "",
       "email": "pioneer@pioneercement.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Lahore/Jauharabad. Çimento fabrikası. Proses ölçümü.",
+      "notes": "Lahore/Jauharabad. Çimento fabrikası. Proses ölçümü. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15377,9 +15466,9 @@
       "website": "",
       "contact": "",
       "email": "info@pakagrofertilizers.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Sargodha/Lahore. Gübre/kimya. Formülasyon hatlarında akışölçer.",
+      "notes": "Sargodha/Lahore. Gübre/kimya. Formülasyon hatlarında akışölçer. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15390,9 +15479,9 @@
       "website": "",
       "contact": "",
       "email": "aps@applied-inside.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Lahore/Karachi. Su arıtma EPC. Flow meter ve seviye sensörü.",
+      "notes": "Lahore/Karachi. Su arıtma EPC. Flow meter ve seviye sensörü. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15403,9 +15492,9 @@
       "website": "",
       "contact": "",
       "email": "rafay1@sat.net.pk",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Karachi. Tarım kimyası formülasyon. Akış ölçümü.",
+      "notes": "Karachi. Tarım kimyası formülasyon. Akış ölçümü. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15494,9 +15583,9 @@
       "website": "",
       "contact": "",
       "email": "info@oilgassupport.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Bogota. Petrol sektörü tedarikçisi. Enstrümantasyon.",
+      "notes": "Bogota. Petrol sektörü tedarikçisi. Enstrümantasyon. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15507,9 +15596,9 @@
       "website": "",
       "contact": "",
       "email": "ventas@mpsperu.com.pe",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Arequipa. Maden ekipman tedariki. Flow meter alımı.",
+      "notes": "Arequipa. Maden ekipman tedariki. Flow meter alımı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15520,9 +15609,9 @@
       "website": "",
       "contact": "",
       "email": "wgalvan@opermin.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-02",
-      "notes": "Lima. Yeraltı madenciliği. Servis ekipmanı.",
+      "notes": "Lima. Yeraltı madenciliği. Servis ekipmanı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_sme"
     },
     {
@@ -15962,9 +16051,9 @@
       "website": "",
       "contact": "",
       "email": "procurement@tosoh.co.jp",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Klor gaz akışı, salamura ölçümü, VCM proses akışı.",
+      "notes": "Klor gaz akışı, salamura ölçümü, VCM proses akışı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -15975,9 +16064,9 @@
       "website": "",
       "contact": "",
       "email": "info@toagosei.co.jp",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Akrilik asit akışı, kostik ölçümü, proses suyu.",
+      "notes": "Akrilik asit akışı, kostik ölçümü, proses suyu. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -15988,9 +16077,9 @@
       "website": "",
       "contact": "",
       "email": "info@metawater.co.jp",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Su arıtma sistemlerinde akış ölçümü (OEM kullanıcısı).",
+      "notes": "Su arıtma sistemlerinde akış ölçümü (OEM kullanıcısı). | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16001,9 +16090,9 @@
       "website": "",
       "contact": "",
       "email": "purchasing@ssangyongcement.co.kr",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Fırın yakıtı, soğutma suyu, ham çamur akış ölçümü.",
+      "notes": "Fırın yakıtı, soğutma suyu, ham çamur akış ölçümü. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16014,9 +16103,9 @@
       "website": "",
       "contact": "",
       "email": "supply@lottefine.co.kr",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "ECH/amonyak akışı, proses yardımcıları, seviye sensörleri.",
+      "notes": "ECH/amonyak akışı, proses yardımcıları, seviye sensörleri. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16027,9 +16116,9 @@
       "website": "",
       "contact": "",
       "email": "procurement@kcc.co.kr",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Silikon reçine akışı, soğutma suyu, solvent ölçümü.",
+      "notes": "Silikon reçine akışı, soğutma suyu, solvent ölçümü. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16040,9 +16129,9 @@
       "website": "",
       "contact": "",
       "email": "info@ccpgp.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "BDO/asetik asit proses akışı, soğutma suyu ölçümü.",
+      "notes": "BDO/asetik asit proses akışı, soğutma suyu ölçümü. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16053,9 +16142,9 @@
       "website": "",
       "contact": "",
       "email": "mkt@wintakpetro.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "ONAYLANMIŞ email. Solvent karıştırma proses akışı, tank seviye sensörleri.",
+      "notes": "ONAYLANMIŞ email. Solvent karıştırma proses akışı, tank seviye sensörleri. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16066,9 +16155,9 @@
       "website": "",
       "contact": "",
       "email": "procurement@ccpg.com.tw",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Farmasötik proses suyu, kimyasal dozlama akışı.",
+      "notes": "Farmasötik proses suyu, kimyasal dozlama akışı. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16079,9 +16168,9 @@
       "website": "",
       "contact": "",
       "email": "procurement@sritranggroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "ONAYLANMIŞ procurement sayfası. Lateks akış ölçümü, atık su, buhar.",
+      "notes": "ONAYLANMIŞ procurement sayfası. Lateks akış ölçümü, atık su, buhar. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16092,9 +16181,9 @@
       "website": "",
       "contact": "",
       "email": "secretary@kslgroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "ONAYLANMIŞ email. Meyve suyu çıkarma akışı, buharlaştırıcı buhar, melas seviyesi.",
+      "notes": "ONAYLANMIŞ email. Meyve suyu çıkarma akışı, buharlaştırıcı buhar, melas seviyesi. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16105,9 +16194,9 @@
       "website": "",
       "contact": "",
       "email": "procurement@mitrphol.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Şeker proses akışı, bioetanol ölçümü, su yardımcıları.",
+      "notes": "Şeker proses akışı, bioetanol ölçümü, su yardımcıları. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16118,9 +16207,9 @@
       "website": "",
       "contact": "",
       "email": "procurement@irpc.co.th",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Ham/nafta akışı, kimyasal proses ölçümü, seviye sensörleri.",
+      "notes": "Ham/nafta akışı, kimyasal proses ölçümü, seviye sensörleri. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16131,9 +16220,9 @@
       "website": "",
       "contact": "",
       "email": "lae.win@myanmar-brewery.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Satın alma yöneticisi kişisel email (onaylı pattern). Bira akış ölçümü, CIP, buhar, CO2.",
+      "notes": "Satın alma yöneticisi kişisel email (onaylı pattern). Bira akış ölçümü, CIP, buhar, CO2. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16144,9 +16233,9 @@
       "website": "",
       "contact": "",
       "email": "procurement@grandroyalgroup.com",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-03",
-      "notes": "Damıtma akış ölçümü, soğutma suyu, buhar, etanol.",
+      "notes": "Damıtma akış ölçümü, soğutma suyu, buhar, etanol. | SKIP: hedef dışı ülke",
       "emailEvent": "sent_asia_arab"
     },
     {
@@ -16842,9 +16931,9 @@
       "sector": "Telekomünikasyon",
       "website": "telekom.rs",
       "email": "info@telekom.rs",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-06",
-      "notes": "Sırbistan telekom",
+      "notes": "Sırbistan telekom | SKIP: alakasız sektör (Telekomünikasyon)",
       "emailEvent": "delivered"
     },
     {
@@ -16866,9 +16955,9 @@
       "sector": "Orman & Tarım",
       "website": "vojvodinasume.rs",
       "email": "vojvodinasume@vojvodinasume.rs",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-06",
-      "notes": "Sırbistan orman",
+      "notes": "Sırbistan orman | SKIP: alakasız sektör (Orman & Tarım)",
       "emailEvent": "delivered"
     },
     {
@@ -16878,9 +16967,9 @@
       "sector": "Telekomünikasyon",
       "website": "bhtelecom.ba",
       "email": "info@bhtelecom.ba",
-      "status": "sent",
+      "status": "skip",
       "sentDate": "2026-07-06",
-      "notes": "Bosna telekom",
+      "notes": "Bosna telekom | SKIP: alakasız sektör (Telekomünikasyon)",
       "emailEvent": "delivered"
     },
     {
