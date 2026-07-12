@@ -2,9 +2,9 @@
   "meta": {
     "lastSync": "2026-06-24T17:00:00Z",
     "syncNote": "100 yeni lead — EU, Orta Doğu, Asya, LatAm, Afrika",
-    "totalLeads": 1580,
-    "lastUpdated": "2026-07-12T14:37",
-    "sentCount": 945
+    "totalLeads": 1620,
+    "lastUpdated": "2026-07-12T14:38",
+    "sentCount": 985
   },
   "leads": [
     {
@@ -19126,6 +19126,366 @@
       "status": "sent",
       "sentAt": "2026-07-12T14:37",
       "source": "batch4"
+    },
+    {
+      "company": "Shymkent Dairy (Shymkentsut)",
+      "email": "info@shymkentsut.kz",
+      "country": "Kazakistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Pavlodar Milk Plant",
+      "email": "info@pavlodarmoloko.kz",
+      "country": "Kazakistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Petropavlovsk Food Factory",
+      "email": "director@petropavl-food.kz",
+      "country": "Kazakistan",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Kokshetau Meat Combine",
+      "email": "info@kokshemeat.kz",
+      "country": "Kazakistan",
+      "sector": "Et İşleme",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Aktobe Flour Mill (Aktobe Naн)",
+      "email": "info@aktobenan.kz",
+      "country": "Kazakistan",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Semey Beverage Plant",
+      "email": "info@semeybev.kz",
+      "country": "Kazakistan",
+      "sector": "İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Taraz Chemical Plant",
+      "email": "info@tarazchem.kz",
+      "country": "Kazakistan",
+      "sector": "Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Namangan Textile & Food Group",
+      "email": "info@namangantextile.uz",
+      "country": "Özbekistan",
+      "sector": "Gıda & Tekstil",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Andijon Dairy Plant",
+      "email": "info@andijonmoloko.uz",
+      "country": "Özbekistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Fergana Vegetable Oil Factory",
+      "email": "info@ferganaoil.uz",
+      "country": "Özbekistan",
+      "sector": "Bitkisel Yağ",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Bukhara Brick & Ceramic Works",
+      "email": "info@bukharaceramic.uz",
+      "country": "Özbekistan",
+      "sector": "Seramik & Tuğla",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Samarkand Paint Factory",
+      "email": "info@samarkandpaint.uz",
+      "country": "Özbekistan",
+      "sector": "Boya",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Kashkadarya Meat Processing",
+      "email": "director@kashmeat.uz",
+      "country": "Özbekistan",
+      "sector": "Et İşleme",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Nukus Water Supply Enterprise",
+      "email": "info@nukussuv.uz",
+      "country": "Özbekistan",
+      "sector": "Su & Altyapı",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Bishkek Dairy Combine (Bishkeksut)",
+      "email": "info@bishkeksut.kg",
+      "country": "Kırgızistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Ak-Tilek Flour Mill Bishkek",
+      "email": "info@aktilek.kg",
+      "country": "Kırgızistan",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Kant Cement Plant",
+      "email": "info@kantcement.kg",
+      "country": "Kırgızistan",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Osh Meat Processing Plant",
+      "email": "director@oshmeat.kg",
+      "country": "Kırgızistan",
+      "sector": "Et İşleme",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Dushanbe Food Plant (Tojikgolpar)",
+      "email": "info@tojikgolpar.tj",
+      "country": "Tacikistan",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Khujand Dairy Factory",
+      "email": "info@khujandmoloko.tj",
+      "country": "Tacikistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Kulob Vegetable Oil Mill",
+      "email": "director@kulobmill.tj",
+      "country": "Tacikistan",
+      "sector": "Bitkisel Yağ",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Turkmengaz Processing Plant",
+      "email": "info@turkmengaz-process.tm",
+      "country": "Türkmenistan",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Ashgabat Textile Combine",
+      "email": "info@ashgabattextile.tm",
+      "country": "Türkmenistan",
+      "sector": "Tekstil",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Mary Flour Mill",
+      "email": "info@maryun.tm",
+      "country": "Türkmenistan",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Ganja Dairy Plant (Gəncə Süd)",
+      "email": "info@gancasud.az",
+      "country": "Azerbaycan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Mingachevir Chemical Factory",
+      "email": "info@mingachem.az",
+      "country": "Azerbaycan",
+      "sector": "Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Sumgait Plastics Plant",
+      "email": "info@sumgaitplastics.az",
+      "country": "Azerbaycan",
+      "sector": "Plastik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Lənkəran Fruit Canning Factory",
+      "email": "director@lenkaranfood.az",
+      "country": "Azerbaycan",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Shirvan Ceramic Tiles",
+      "email": "info@shirvanceramic.az",
+      "country": "Azerbaycan",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Zestaponi Ferroalloy Plant",
+      "email": "info@zfp.ge",
+      "country": "Gürcistan",
+      "sector": "Metalurji",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Tbilisi Dairy (Sante Georgia)",
+      "email": "info@sante.ge",
+      "country": "Gürcistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Kutaisi Chemical Works",
+      "email": "info@kutaisichem.ge",
+      "country": "Gürcistan",
+      "sector": "Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Batumi Water Supply (Adjara Water)",
+      "email": "info@adjarawater.ge",
+      "country": "Gürcistan",
+      "sector": "Su & Altyapı",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Yerevan Brandy Company (Ararat)",
+      "email": "info@yerevanwine.am",
+      "country": "Ermenistan",
+      "sector": "İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Nairit Chemical Plant Yerevan",
+      "email": "info@nairit.am",
+      "country": "Ermenistan",
+      "sector": "Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Gyumri Dairy Factory",
+      "email": "info@gyumridairy.am",
+      "country": "Ermenistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Ulaanbaatar Flour Mill (Tavan Bogd Foods)",
+      "email": "info@tavanbogdfoods.mn",
+      "country": "Moğolistan",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Khukh Gan Dairy Mongolia",
+      "email": "info@hukhgan.mn",
+      "country": "Moğolistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Darkhan Metallurgical Plant",
+      "email": "info@dmc.mn",
+      "country": "Moğolistan",
+      "sector": "Metalurji",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
+    },
+    {
+      "company": "Gobi Cashmere Company",
+      "email": "info@gobicashmere.mn",
+      "country": "Moğolistan",
+      "sector": "Tekstil",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:38",
+      "source": "batch5"
     }
   ]
 }
