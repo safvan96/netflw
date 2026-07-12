@@ -2,8 +2,9 @@
   "meta": {
     "lastSync": "2026-06-24T17:00:00Z",
     "syncNote": "100 yeni lead — EU, Orta Doğu, Asya, LatAm, Afrika",
-    "totalLeads": 1534,
-    "lastUpdated": "2026-07-10"
+    "totalLeads": 1580,
+    "lastUpdated": "2026-07-12T14:37",
+    "sentCount": 945
   },
   "leads": [
     {
@@ -18711,6 +18712,420 @@
       "sentDate": "2026-07-10",
       "notes": "",
       "emailEvent": "delivered"
+    },
+    {
+      "company": "Sudan Sugar Company",
+      "email": "info@sudansugar.com",
+      "country": "Sudan",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Kenana Sugar Company",
+      "email": "info@kenana.com",
+      "country": "Sudan",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Société Nationale du Sucre du Maroc (COSUMAR)",
+      "email": "contact@cosumar.co.ma",
+      "country": "Morocco",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Egyptian Sugar & Integrated Industries",
+      "email": "info@esico.com.eg",
+      "country": "Egypt",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Wonji Sugar Factory",
+      "email": "info@wonjisugars.com",
+      "country": "Ethiopia",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "BUA Sugar Refinery Nigeria",
+      "email": "info@buagroup.com",
+      "country": "Nigeria",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Mumias Sugar Company Kenya",
+      "email": "info@mumias-sugar.com",
+      "country": "Kenya",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Kazakhmys Grain",
+      "email": "info@kazakhmysgrain.kz",
+      "country": "Kazakistan",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Toshkent Don Mahsulotlari",
+      "email": "info@toshkentdon.uz",
+      "country": "Özbekistan",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Grands Moulins d'Algérie",
+      "email": "contact@grandsmoulins-algerie.com",
+      "country": "Algeria",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Grands Moulins du Maroc",
+      "email": "info@grandsmoulins.ma",
+      "country": "Morocco",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Cairo Flour Mills",
+      "email": "info@cairoflourmills.com",
+      "country": "Egypt",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Žitoprodukt Srbija",
+      "email": "info@zitoprodukt.rs",
+      "country": "Serbia",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Dangote Flour Mills Nigeria",
+      "email": "info@dangoteflour.com",
+      "country": "Nigeria",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "KazAgroFinance Feed Division",
+      "email": "info@kazagrofinance.kz",
+      "country": "Kazakistan",
+      "sector": "Hayvan Yemi",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Uzbek Poultry Feed Group",
+      "email": "info@uzpoultryfeed.uz",
+      "country": "Özbekistan",
+      "sector": "Hayvan Yemi",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Provimi Morocco (Cargill)",
+      "email": "contact@provimi.ma",
+      "country": "Morocco",
+      "sector": "Hayvan Yemi",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Tunisie Aliments (STIA)",
+      "email": "contact@stia.com.tn",
+      "country": "Tunisia",
+      "sector": "Hayvan Yemi",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Aqariya Animal Feed Egypt",
+      "email": "info@aqariya.com",
+      "country": "Egypt",
+      "sector": "Hayvan Yemi",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Unga Group Kenya",
+      "email": "info@ungagroup.com",
+      "country": "Kenya",
+      "sector": "Hayvan Yemi",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Chi Limited (Livestock Feeds) Nigeria",
+      "email": "info@chilimited.com",
+      "country": "Nigeria",
+      "sector": "Hayvan Yemi",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Kvartsit Ceramic Uzbekistan",
+      "email": "info@kvartsit.uz",
+      "country": "Özbekistan",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Azerbaycan Keramika",
+      "email": "info@azkeramika.az",
+      "country": "Azerbaycan",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "KazCeramics Almaty",
+      "email": "info@kazceramics.kz",
+      "country": "Kazakistan",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Ceramica Saloni Maroc",
+      "email": "info@salonimaroc.ma",
+      "country": "Morocco",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Egyptian Ceramics Company",
+      "email": "info@egyptceramics.com",
+      "country": "Egypt",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Zorka Ceramics Serbia",
+      "email": "office@zorka-keramika.rs",
+      "country": "Serbia",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Sunflag Ceramics Nigeria",
+      "email": "info@sunflagceramics.com",
+      "country": "Nigeria",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Cartonnerie du Maroc",
+      "email": "contact@cartonnerie.ma",
+      "country": "Morocco",
+      "sector": "Kağıt & Ambalaj",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "ENAP Algeria Packaging",
+      "email": "info@enap.dz",
+      "country": "Algeria",
+      "sector": "Kağıt & Ambalaj",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "SIAP Tunisia Packaging",
+      "email": "contact@siap.com.tn",
+      "country": "Tunisia",
+      "sector": "Kağıt & Ambalaj",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Nile Paper Egypt",
+      "email": "info@nilepaper.com.eg",
+      "country": "Egypt",
+      "sector": "Kağıt & Ambalaj",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Tetra Pak Georgia",
+      "email": "info.ge@tetrapak.com",
+      "country": "Gürcistan",
+      "sector": "Kağıt & Ambalaj",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Simpack Serbia",
+      "email": "info@simpack.rs",
+      "country": "Serbia",
+      "sector": "Kağıt & Ambalaj",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Nigerian Breweries Plc",
+      "email": "info@nigerianbrew.com",
+      "country": "Nigeria",
+      "sector": "Bira & Meşrubat",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "East African Breweries Kenya",
+      "email": "info@eabl.com",
+      "country": "Kenya",
+      "sector": "Bira & Meşrubat",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Bralima (Heineken DRC)",
+      "email": "info@bralima.cd",
+      "country": "Angola",
+      "sector": "Bira & Meşrubat",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Nile Breweries Uganda",
+      "email": "info@nilebreweries.com",
+      "country": "Uganda",
+      "sector": "Bira & Meşrubat",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Heineken Ethiopia (Habesha)",
+      "email": "info@habeshabeer.com",
+      "country": "Ethiopia",
+      "sector": "Bira & Meşrubat",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Sobrero & Ghia Algeria",
+      "email": "info@sobrero.dz",
+      "country": "Algeria",
+      "sector": "Bira & Meşrubat",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Castel Beer Morocco (Flag)",
+      "email": "contact@castelmaroc.ma",
+      "country": "Morocco",
+      "sector": "Bira & Meşrubat",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Tannerif Maroc (Fes Tanneries)",
+      "email": "info@tannerif.com",
+      "country": "Morocco",
+      "sector": "Deri",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "SOCOTU Tunisia Leather",
+      "email": "contact@socotu.com.tn",
+      "country": "Tunisia",
+      "sector": "Deri",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Egyptian Leather Export Council",
+      "email": "info@elec.org.eg",
+      "country": "Egypt",
+      "sector": "Deri",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Ethiopian Leather Industries",
+      "email": "info@elico.gov.et",
+      "country": "Ethiopia",
+      "sector": "Deri",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
+    },
+    {
+      "company": "Baku Shoe Factory",
+      "email": "info@bakushoe.az",
+      "country": "Azerbaycan",
+      "sector": "Deri",
+      "status": "sent",
+      "sentAt": "2026-07-12T14:37",
+      "source": "batch4"
     }
   ]
 }
