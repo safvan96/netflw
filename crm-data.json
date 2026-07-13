@@ -2,9 +2,9 @@
   "meta": {
     "lastSync": "2026-06-24T17:00:00Z",
     "syncNote": "100 yeni lead — EU, Orta Doğu, Asya, LatAm, Afrika",
-    "totalLeads": 1620,
-    "lastUpdated": "2026-07-12T14:38",
-    "sentCount": 985
+    "totalLeads": 1661,
+    "lastUpdated": "2026-07-13T20:55",
+    "sentCount": 1026
   },
   "leads": [
     {
@@ -19486,6 +19486,375 @@
       "status": "sent",
       "sentAt": "2026-07-12T14:38",
       "source": "batch5"
+    },
+    {
+      "company": "Basra Gas Company",
+      "email": "info@basragas.com",
+      "country": "Irak",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "State Company for Oil Projects (SCOP)",
+      "email": "info@scop.gov.iq",
+      "country": "Irak",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Missan Oil Company",
+      "email": "info@missanoil.gov.iq",
+      "country": "Irak",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Al-Furat Petroleum Company",
+      "email": "info@alfurat.com",
+      "country": "Irak",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Iraqi Drilling Company",
+      "email": "info@idc.gov.iq",
+      "country": "Irak",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Babylon Fertilizer Plant Iraq",
+      "email": "info@babylonfert.com",
+      "country": "Irak",
+      "sector": "Gübre",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Al Mansour Dairy Iraq",
+      "email": "info@almansourdairy.iq",
+      "country": "Irak",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Baghdad Water Authority",
+      "email": "info@bwa.gov.iq",
+      "country": "Irak",
+      "sector": "Su & Altyapı",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Mosul Cement Company",
+      "email": "info@mosulcement.com",
+      "country": "Irak",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Al Rasheed Beverages Iraq",
+      "email": "contact@alrasheedbev.iq",
+      "country": "Irak",
+      "sector": "İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Fauji Fertilizer Company",
+      "email": "info@ffc.com.pk",
+      "country": "Pakistan",
+      "sector": "Gübre",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Engro Fertilizers Pakistan",
+      "email": "contact@engrofertilizers.com",
+      "country": "Pakistan",
+      "sector": "Gübre",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Attock Refinery Pakistan",
+      "email": "info@atrl.com.pk",
+      "country": "Pakistan",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Maple Leaf Cement Pakistan",
+      "email": "info@mapleleafcement.com",
+      "country": "Pakistan",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Nestle Pakistan (Sheikhupura Plant)",
+      "email": "contact@pk.nestle.com",
+      "country": "Pakistan",
+      "sector": "Gıda & İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Pakistan State Oil (PSO)",
+      "email": "info@psopk.com",
+      "country": "Pakistan",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Haleeb Foods Pakistan",
+      "email": "info@haleebfoods.com",
+      "country": "Pakistan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Sitara Chemical Industries",
+      "email": "info@sitarachemical.com",
+      "country": "Pakistan",
+      "sector": "Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Noon Sugar Mills Pakistan",
+      "email": "info@noonsugar.com.pk",
+      "country": "Pakistan",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Pupuk Kaltim (Fertilizer) Indonesia",
+      "email": "info@pupukkaltim.com",
+      "country": "Endonezya",
+      "sector": "Gübre",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "PT Chandra Asri Petrochemical",
+      "email": "info@chandra-asri.com",
+      "country": "Endonezya",
+      "sector": "Petrokimya",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "PT Semen Indonesia (Cement)",
+      "email": "contact@semenindonesia.com",
+      "country": "Endonezya",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "PT PDAM Tirta Musi (Water)",
+      "email": "info@pdamtirtamusi.co.id",
+      "country": "Endonezya",
+      "sector": "Su & Altyapı",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "PT Salim Ivomas Pratama (Palm Oil)",
+      "email": "info@simp.co.id",
+      "country": "Endonezya",
+      "sector": "Bitkisel Yağ",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "PT Indofood CBP (Food Processing)",
+      "email": "contact@indofoodcbp.com",
+      "country": "Endonezya",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Square Pharmaceuticals Bangladesh",
+      "email": "info@squarepharma.com.bd",
+      "country": "Bangladeş",
+      "sector": "İlaç",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Meghna Group Bangladesh (Cement/Food)",
+      "email": "info@meghnagroup.com",
+      "country": "Bangladeş",
+      "sector": "Çimento & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "PRAN Foods Bangladesh",
+      "email": "info@pranfoods.net",
+      "country": "Bangladeş",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Bashundhara Paper Mills",
+      "email": "info@bashundharapaper.com",
+      "country": "Bangladeş",
+      "sector": "Kağıt & Ambalaj",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Linde Bangladesh (Industrial Gas)",
+      "email": "info.bd@linde.com",
+      "country": "Bangladeş",
+      "sector": "Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Holcim Serbia (Lafarge)",
+      "email": "info@holcim.rs",
+      "country": "Serbia",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "NIS Petrol Serbia (Gazprom Neft)",
+      "email": "info@nis.eu",
+      "country": "Serbia",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Imlek Dairy Serbia",
+      "email": "info@imlek.rs",
+      "country": "Serbia",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Knjaz Milos Water Serbia",
+      "email": "info@knjazmilos.rs",
+      "country": "Serbia",
+      "sector": "Su & İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Kronospan MDF Bosnia",
+      "email": "info@kronospan.com.ba",
+      "country": "Bosna",
+      "sector": "Orman Ürünleri",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Cementarnica USJE Macedonia",
+      "email": "info@usje.com.mk",
+      "country": "Kuzey Makedonya",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Makpetrol Macedonia",
+      "email": "info@makpetrol.com.mk",
+      "country": "Kuzey Makedonya",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Tirana Cement Albania (Antea)",
+      "email": "info@anteacement.com.al",
+      "country": "Arnavutluk",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Kastrati Group Albania (Oil)",
+      "email": "info@kastrati.com.al",
+      "country": "Arnavutluk",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Romgaz Romania (Gas)",
+      "email": "office@romgaz.ro",
+      "country": "Romanya",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
+    },
+    {
+      "company": "Cemacon Romania (Ceramics)",
+      "email": "office@cemacon.ro",
+      "country": "Romanya",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-13T20:55",
+      "source": "batch6"
     }
   ]
 }
