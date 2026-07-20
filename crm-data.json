@@ -2,9 +2,9 @@
   "meta": {
     "lastSync": "2026-06-24T17:00:00Z",
     "syncNote": "100 yeni lead — EU, Orta Doğu, Asya, LatAm, Afrika",
-    "totalLeads": 1701,
-    "lastUpdated": "2026-07-20T19:08",
-    "sentCount": 1066
+    "totalLeads": 1742,
+    "lastUpdated": "2026-07-20T19:23",
+    "sentCount": 1107
   },
   "leads": [
     {
@@ -20215,6 +20215,375 @@
       "status": "sent",
       "sentAt": "2026-07-20T19:08",
       "source": "batch7"
+    },
+    {
+      "company": "Kuwait Cement Company",
+      "email": "info@kuwaitcement.com",
+      "country": "Kuwait",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Kuwait Flour Mills & Bakeries",
+      "email": "info@kfmb.com.kw",
+      "country": "Kuwait",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "National Industries Group Kuwait",
+      "email": "info@nig.com",
+      "country": "Kuwait",
+      "sector": "Plastik & Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Kuwait National Petroleum Co.",
+      "email": "info@knpc.com.kw",
+      "country": "Kuwait",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Alba Aluminium Bahrain",
+      "email": "info@albasmelter.com.bh",
+      "country": "Bahrain",
+      "sector": "Metalurji",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Gulf Petrochemical Industries Bahrain",
+      "email": "info@gpic.com.bh",
+      "country": "Bahrain",
+      "sector": "Petrokimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Bahrain Flour Mills",
+      "email": "info@bahrainflour.com.bh",
+      "country": "Bahrain",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Qatar Fertiliser Company (QAFCO)",
+      "email": "info@qafco.com.qa",
+      "country": "Qatar",
+      "sector": "Gübre",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Qatar Steel Company",
+      "email": "info@qatarsteel.com.qa",
+      "country": "Qatar",
+      "sector": "Çelik",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Qatar Cement Company",
+      "email": "info@qatarcement.com",
+      "country": "Qatar",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Libyan Iron & Steel Company (LISCO)",
+      "email": "info@lisco.ly",
+      "country": "Libya",
+      "sector": "Çelik",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "National Oil Corporation Libya",
+      "email": "info@noc.ly",
+      "country": "Libya",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Libyan Cement Company",
+      "email": "info@libyancements.com",
+      "country": "Libya",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Groupe Chimique Tunisien (GCT)",
+      "email": "info@gct.com.tn",
+      "country": "Tunisia",
+      "sector": "Kimya & Gübre",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Sotacib Cement Tunisia",
+      "email": "info@sotacib.com.tn",
+      "country": "Tunisia",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Tunisie Lait (Dairy)",
+      "email": "contact@tunisielait.com.tn",
+      "country": "Tunisia",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "SFBT Beverages Tunisia",
+      "email": "info@sfbt.com.tn",
+      "country": "Tunisia",
+      "sector": "İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Egyptian Ethylene & Derivatives (ETHYDCO)",
+      "email": "info@ethydco.com",
+      "country": "Egypt",
+      "sector": "Petrokimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "El Nasr Pharmaceutical Chemicals",
+      "email": "info@nasr-pharma.com",
+      "country": "Egypt",
+      "sector": "İlaç & Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Nile Valley Cement Egypt",
+      "email": "info@nilevalleycement.com",
+      "country": "Egypt",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Juhayna Food Industries Egypt",
+      "email": "info@juhayna.com",
+      "country": "Egypt",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "OCP Group Morocco (Phosphate)",
+      "email": "contact@ocpgroup.ma",
+      "country": "Morocco",
+      "sector": "Maden & Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Lafarge Holcim Morocco",
+      "email": "info@lafargeholcim.ma",
+      "country": "Morocco",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Centrale Danone Morocco",
+      "email": "info@centraledanone.ma",
+      "country": "Morocco",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Sonelgaz Algeria (Energy)",
+      "email": "info@sonelgaz.dz",
+      "country": "Algeria",
+      "sector": "Enerji",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Groupe Cevital Algeria (Food)",
+      "email": "info@cevital.com",
+      "country": "Algeria",
+      "sector": "Gıda & Yağ",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Cosider Construction Algeria",
+      "email": "info@cosider.com",
+      "country": "Algeria",
+      "sector": "İnşaat",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Georgian Manganese (Chiatura)",
+      "email": "info@georgianmanganese.com",
+      "country": "Gürcistan",
+      "sector": "Maden",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Rustavi Steel Georgia",
+      "email": "info@rustavi-steel.com",
+      "country": "Gürcistan",
+      "sector": "Çelik",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Borjomi Mineral Waters",
+      "email": "info@borjomi.com",
+      "country": "Gürcistan",
+      "sector": "Su & İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Zangezur Copper Molybdenum Combine",
+      "email": "info@zcmc.am",
+      "country": "Ermenistan",
+      "sector": "Maden",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Hrazdan Cement Armenia",
+      "email": "info@hrazdancement.am",
+      "country": "Ermenistan",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Multi Group Armenia (Food)",
+      "email": "info@multigroup.am",
+      "country": "Ermenistan",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Twiga Cement Tanzania",
+      "email": "info@twigacement.co.tz",
+      "country": "Tanzania",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Tanzania Breweries (AB InBev)",
+      "email": "info@tanzaniabreweries.com",
+      "country": "Tanzania",
+      "sector": "İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "TPDC Tanzania Petroleum",
+      "email": "info@tpdc.go.tz",
+      "country": "Tanzania",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Hima Cement Uganda (Lafarge)",
+      "email": "info@himacement.com",
+      "country": "Uganda",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Uganda Sugar Works (Kakira)",
+      "email": "info@kakirasugar.com",
+      "country": "Uganda",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Ghana Cement (GHACEM)",
+      "email": "info@ghacem.com.gh",
+      "country": "Ghana",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Cocoa Processing Company Ghana",
+      "email": "info@cpcghana.com",
+      "country": "Ghana",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
+    },
+    {
+      "company": "Tema Oil Refinery Ghana",
+      "email": "info@tor.com.gh",
+      "country": "Ghana",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:23",
+      "source": "batch8"
     }
   ]
 }
