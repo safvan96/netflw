@@ -2,9 +2,9 @@
   "meta": {
     "lastSync": "2026-06-24T17:00:00Z",
     "syncNote": "100 yeni lead — EU, Orta Doğu, Asya, LatAm, Afrika",
-    "totalLeads": 1661,
-    "lastUpdated": "2026-07-13T20:55",
-    "sentCount": 1026
+    "totalLeads": 1701,
+    "lastUpdated": "2026-07-20T19:08",
+    "sentCount": 1066
   },
   "leads": [
     {
@@ -19855,6 +19855,366 @@
       "status": "sent",
       "sentAt": "2026-07-13T20:55",
       "source": "batch6"
+    },
+    {
+      "company": "Arab Potash Company Jordan",
+      "email": "info@arabpotash.com",
+      "country": "Jordan",
+      "sector": "Maden & Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Jordan Phosphate Mines",
+      "email": "info@jpmc.com.jo",
+      "country": "Jordan",
+      "sector": "Maden",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Jordan Cement Factories",
+      "email": "info@jordancement.com",
+      "country": "Jordan",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Hikma Pharmaceuticals Jordan",
+      "email": "info@hikma.com",
+      "country": "Jordan",
+      "sector": "İlaç",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Al Marai Jordan (Dairy)",
+      "email": "info@almarai.com.jo",
+      "country": "Jordan",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Almarai Company (Processing)",
+      "email": "procurement@almarai.com",
+      "country": "Saudi Arabia",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Saudi Dairy & Foodstuff (SADAFCO)",
+      "email": "info@sadafco.com",
+      "country": "Saudi Arabia",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "National Petrochemical Company Saudi",
+      "email": "info@natpet.com",
+      "country": "Saudi Arabia",
+      "sector": "Petrokimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Saudi Ceramic Company",
+      "email": "info@saudiceramic.com",
+      "country": "Saudi Arabia",
+      "sector": "Seramik",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Yanbu Cement Company",
+      "email": "info@yanbucement.com",
+      "country": "Saudi Arabia",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Agthia Group UAE (Food & Water)",
+      "email": "info@agthia.com",
+      "country": "UAE",
+      "sector": "Gıda & Su",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Gulf Cement Company UAE",
+      "email": "info@gulfcement.ae",
+      "country": "UAE",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Ducab Cables UAE",
+      "email": "info@ducab.com",
+      "country": "UAE",
+      "sector": "Enerji",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Emirates Steel Industries",
+      "email": "info@emiratessteel.com",
+      "country": "UAE",
+      "sector": "Çelik",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Oman Cement Company",
+      "email": "info@omancements.com",
+      "country": "Oman",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Oman Oil Refineries (ORPIC)",
+      "email": "info@orpic.om",
+      "country": "Oman",
+      "sector": "Petrokimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Oman Flour Mills",
+      "email": "info@ofm.co.om",
+      "country": "Oman",
+      "sector": "Un & Tahıl",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Sasol Limited South Africa",
+      "email": "info@sasol.com",
+      "country": "Güney Afrika",
+      "sector": "Petrokimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "PPC Cement South Africa",
+      "email": "info@ppc.co.za",
+      "country": "Güney Afrika",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Tongaat Hulett Sugar SA",
+      "email": "info@tongaat.com",
+      "country": "Güney Afrika",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Pioneer Foods South Africa",
+      "email": "info@pioneerfoods.co.za",
+      "country": "Güney Afrika",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Cimangola Cement Angola",
+      "email": "info@cimangola.com",
+      "country": "Angola",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Refinery of Luanda (SONANGOL)",
+      "email": "info@sonangol.co.ao",
+      "country": "Angola",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Castel Angola Beverages",
+      "email": "info@castelangola.com",
+      "country": "Angola",
+      "sector": "İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Mugher Cement Ethiopia",
+      "email": "info@mughercement.com.et",
+      "country": "Ethiopia",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Ethiopian Sugar Corporation",
+      "email": "info@sugarethiopia.gov.et",
+      "country": "Ethiopia",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Meta Abo Brewery Ethiopia",
+      "email": "info@metaabo.com",
+      "country": "Ethiopia",
+      "sector": "İçecek",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Dal Food Industries Sudan",
+      "email": "info@dalgroup.com",
+      "country": "Sudan",
+      "sector": "Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Sudan Cement Company",
+      "email": "info@sudancement.sd",
+      "country": "Sudan",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "White Nile Sugar Company",
+      "email": "info@whitenilesugar.com",
+      "country": "Sudan",
+      "sector": "Şeker",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Vinamilk Vietnam Dairy",
+      "email": "info@vinamilk.com.vn",
+      "country": "Vietnam",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Petrovietnam Fertilizer & Chemicals",
+      "email": "info@pvcfc.com.vn",
+      "country": "Vietnam",
+      "sector": "Gübre & Kimya",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Ha Tien 1 Cement Vietnam",
+      "email": "info@hatien1.com.vn",
+      "country": "Vietnam",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "TH True Milk Vietnam",
+      "email": "info@th.com.vn",
+      "country": "Vietnam",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Ecopetrol Colombia",
+      "email": "info@ecopetrol.com.co",
+      "country": "Kolombiya",
+      "sector": "Petrol & Gaz",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Cementos Argos Colombia",
+      "email": "info@argos.com.co",
+      "country": "Kolombiya",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Alpina Foods Colombia",
+      "email": "info@alpina.com.co",
+      "country": "Kolombiya",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Sociedad Minera Cerro Verde Peru",
+      "email": "info@cerroverde.com.pe",
+      "country": "Peru",
+      "sector": "Maden",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Cementos Pacasmayo Peru",
+      "email": "info@cementospacasmayo.com.pe",
+      "country": "Peru",
+      "sector": "Çimento",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
+    },
+    {
+      "company": "Gloria Foods Peru (Dairy)",
+      "email": "info@grupogloria.com",
+      "country": "Peru",
+      "sector": "Süt & Gıda",
+      "status": "sent",
+      "sentAt": "2026-07-20T19:08",
+      "source": "batch7"
     }
   ]
 }
