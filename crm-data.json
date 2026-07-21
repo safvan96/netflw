@@ -2,9 +2,9 @@
   "meta": {
     "lastSync": "2026-06-24T17:00:00Z",
     "syncNote": "100 yeni lead — EU, Orta Doğu, Asya, LatAm, Afrika",
-    "totalLeads": 1742,
-    "lastUpdated": "2026-07-20T19:23",
-    "sentCount": 1107
+    "totalLeads": 1773,
+    "lastUpdated": "2026-07-21T15:54",
+    "sentCount": 1138
   },
   "leads": [
     {
@@ -20584,6 +20584,316 @@
       "status": "sent",
       "sentAt": "2026-07-20T19:23",
       "source": "batch8"
+    },
+    {
+      "company": "SOCAR Polymer",
+      "email": "javid.aliyev@socarpolymer.az",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Javid Aliyev"
+    },
+    {
+      "company": "SOCAR Polymer",
+      "email": "j.aliyev@socarpolymer.az",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Javid Aliyev"
+    },
+    {
+      "company": "SOCAR Downstream",
+      "email": "bahman.naghiyev@socardownstream.az",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Bahman Naghiyev"
+    },
+    {
+      "company": "ZENITH-ARAN",
+      "email": "ali.elyazov@zenith-aran.az",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Ali Elyazov"
+    },
+    {
+      "company": "Saipem Azerbaijan",
+      "email": "sultan.aliyev@saipem.com",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Sultan Aliyev"
+    },
+    {
+      "company": "Pasha Construction",
+      "email": "rauf.aliyev@pashaconstruction.az",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Rauf Aliyev"
+    },
+    {
+      "company": "Holcim Azerbaijan",
+      "email": "alexander.mitin@holcim.az",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Alexander Mitin"
+    },
+    {
+      "company": "Azeri M-I",
+      "email": "zaur.taghiyev@azerimi.com",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Zaur Taghiyev"
+    },
+    {
+      "company": "SOCAR Downstream",
+      "email": "a.pirguliyev@socardownstream.az",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Aliaga Pirguliyev"
+    },
+    {
+      "company": "SOCAR Downstream",
+      "email": "leyla.khalilova@socardownstream.az",
+      "country": "Azerbaycan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Leyla Khalilova"
+    },
+    {
+      "company": "KAZPHOSPHATE",
+      "email": "n.davletyarova@kazphosphate.kz",
+      "country": "Kazakistan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Nelly Davletyarova"
+    },
+    {
+      "company": "KAZPHOSPHATE",
+      "email": "nelly.davletyarova@kazphosphate.kz",
+      "country": "Kazakistan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Nelly Davletyarova"
+    },
+    {
+      "company": "Karachaganak Petroleum (KPO)",
+      "email": "y.kabdullin@kpo.kz",
+      "country": "Kazakistan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Yerik Kabdullin"
+    },
+    {
+      "company": "Karachaganak Petroleum (KPO)",
+      "email": "d.keldibayeva@kpo.kz",
+      "country": "Kazakistan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Dinara Keldibayeva"
+    },
+    {
+      "company": "NOMAC Uzbekistan",
+      "email": "rustam.gulyamov@nomac.com.sa",
+      "country": "Özbekistan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Rustam Gulyamov"
+    },
+    {
+      "company": "Miraziz Construction",
+      "email": "z.akbarov@miraziz.uz",
+      "country": "Özbekistan",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Zaynobiddin Akbarov"
+    },
+    {
+      "company": "EGAS",
+      "email": "a.abdelhamid@egas.com.eg",
+      "country": "Egypt",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Ahmed Abd El-Hamid"
+    },
+    {
+      "company": "EGAS",
+      "email": "ahmed.abdelhamid@egas.com.eg",
+      "country": "Egypt",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Ahmed Abd El-Hamid"
+    },
+    {
+      "company": "EMC Egypt",
+      "email": "ahmed.hegazy@emco.com.eg",
+      "country": "Egypt",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Ahmed Hegazy"
+    },
+    {
+      "company": "ASEC Cement",
+      "email": "m.ibrahim@asec-cement.com",
+      "country": "Egypt",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Mohamed Ibrahim"
+    },
+    {
+      "company": "LafargeHolcim Maroc",
+      "email": "ilham.bekkar@lafargeholcim.ma",
+      "country": "Morocco",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Ilham Bekkar"
+    },
+    {
+      "company": "LafargeHolcim Maroc",
+      "email": "m.wahbi@lafargeholcim.ma",
+      "country": "Morocco",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Mehdi Wahbi Mernissi"
+    },
+    {
+      "company": "OCP Group",
+      "email": "h.elkorchi@ocpgroup.ma",
+      "country": "Morocco",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "EL KORCHI Hanane"
+    },
+    {
+      "company": "Anton Oilfield Services Iraq",
+      "email": "h.jafaripour@antonoil.com",
+      "country": "Irak",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Hossein Jafaripour"
+    },
+    {
+      "company": "Challenger Ltd Iraq",
+      "email": "i.alabbullah@challengerltd.com",
+      "country": "Irak",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Ibrahim Al Abdullah"
+    },
+    {
+      "company": "LUKOIL Iraq",
+      "email": "m.alatawy@lukoil.com",
+      "country": "Irak",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Mohammed Alatawy"
+    },
+    {
+      "company": "Sonatrach",
+      "email": "i.mechikel@sonatrach.dz",
+      "country": "Algeria",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Ismail Mechikel"
+    },
+    {
+      "company": "Sonatrach",
+      "email": "s.sabaa@sonatrach.com",
+      "country": "Algeria",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Soufiane Sabaa"
+    },
+    {
+      "company": "Sonatrach",
+      "email": "t.mekkaoui@sonatrach.dz",
+      "country": "Algeria",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Tarek Mekkaoui"
+    },
+    {
+      "company": "Pinnacle Oil and Gas",
+      "email": "o.kolawole@pinnacleoilandgas.com",
+      "country": "Nigeria",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Opeyemi Kolawole"
+    },
+    {
+      "company": "Independent Consultant Nigeria",
+      "email": "r.sokunbi@gmail.com",
+      "country": "Nigeria",
+      "sector": "Satın Alma / Procurement",
+      "status": "sent",
+      "sentAt": "2026-07-21T15:54",
+      "source": "linkedin-outreach",
+      "contact": "Razaq Sokunbi"
     }
   ]
 }
