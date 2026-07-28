@@ -27,7 +27,7 @@
       count:n => n===1 ? '1 product selected' : n+' products selected',
       add:'+ Add to Quote', added:'✓ Added',
       modal_title:'Request a Quote',
-      modal_sub:'We'll get back to you within 24 hours.',
+      modal_sub:"We'll get back to you within 24 hours.",
       name:'Full Name *', email:'E-mail *', company:'Company',
       country:'Country', message:'Message / Application',
       products_label:'Selected Products:',
