@@ -547,5 +547,12 @@ window.PM_PH = {
   "Sales Engineer":{tr:"Satış Mühendisi",ar:"مهندس مبيعات",ru:"Инженер по продажам"},
   "e.g. Baghdad Water Authority":{tr:"örn. Bağdat Su İdaresi",ar:"مثال هيئة مياه بغداد",ru:"напр. Водоканал Багдада"},
   "e.g. Iraq":{tr:"örn. Irak",ar:"مثال العراق",ru:"напр. Ирак"},
-  "e.g. WTP-2026 intake metering":{tr:"örn. WTP-2026 giriş sayımı",ar:"مثال WTP-2026 قياس السحب",ru:"напр. WTP-2026 учёт водозабора"}
+  "e.g. WTP-2026 intake metering":{tr:"örn. WTP-2026 giriş sayımı",ar:"مثال WTP-2026 قياس السحب",ru:"напр. WTP-2026 учёт водозабора"},
+/* ---- documents / catalog ---- */
+  "Documents":{tr:"Belgeler",ar:"المستندات",ru:"Документы"},
+  "Download Technical Datasheet":{tr:"Teknik Veri Sayfasını İndir",ar:"تنزيل ورقة البيانات التقنية",ru:"Скачать технический паспорт"},
+  "Download Full Catalog (PDF)":{tr:"Tüm Katalog İndir (PDF)",ar:"تنزيل الكتالوج الكامل (PDF)",ru:"Скачать полный каталог (PDF)"},
+  "Download Our Catalog":{tr:"Kataloğumuzu İndirin",ar:"حمّل كتالوجنا",ru:"Скачайте наш каталог"},
+  "Get our complete product catalog with specifications for all 19 instruments.":{tr:"19 cihazın tüm teknik özellikleriyle birlikte ürün kataloğumuzu indirin.",ar:"احصل على كتالوج منتجاتنا الكامل مع مواصفات جميع الأجهزة التسعة عشر.",ru:"Получите полный каталог продукции с характеристиками всех 19 приборов."},
+  "Download Catalog (PDF)":{tr:"Kataloğu İndir (PDF)",ar:"تنزيل الكتالوج (PDF)",ru:"Скачать каталог (PDF)"}
 };

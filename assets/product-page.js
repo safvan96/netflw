@@ -124,6 +124,13 @@
               <a href="tel:+903322351888"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> +90 332 235 1888</a>
             </div>
           </div>
+          <div style="border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;background:#fff;box-shadow:var(--shadow-sm);margin-top:16px">
+            <h3 style="font-size:18px">Documents</h3>
+            <div style="display:flex;flex-direction:column;gap:10px;margin-top:16px">
+              ${p.pdf ? '<a href="assets/pdf/en/'+esc(p.pdf)+'-en.pdf" class="btn btn-ghost" style="justify-content:flex-start;width:100%" onclick="(function(e){e.preventDefault();var l=(typeof PMI18n!==\'undefined\'?PMI18n.get():\'en\');var ls=[\'en\',\'tr\',\'ar\'];var pl=ls.includes(l)?l:\'en\';window.open(\'assets/pdf/\'+pl+\'/'+esc(p.pdf)+'-\'+pl+\'.pdf\')})(event)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Download Technical Datasheet</a>' : ''}
+              <a href="assets/pdf/en/netflow-catalog-en.pdf" class="btn btn-ghost" style="justify-content:flex-start;width:100%" onclick="(function(e){e.preventDefault();var l=(typeof PMI18n!=='undefined'?PMI18n.get():'en');var ls=['en','tr','ar','ru'];var pl=ls.includes(l)?l:'en';window.open('assets/pdf/'+pl+'/netflow-catalog-'+pl+'.pdf')})(event)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg> Download Full Catalog (PDF)</a>
+            </div>
+          </div>
         </div>
       </aside>
     </div>
