@@ -52,6 +52,7 @@
           </button>
         </div>
         <a href="products.html#industries">Industries</a>
+        <a href="katalog-en.html" data-i18n="Catalog" id="navCatalogLink">Catalog</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <div class="mob-lang lang"><button class="on">EN</button><button>AR</button><button>RU</button><button>TR</button></div>
@@ -362,8 +363,8 @@
         <h3 style="color:#fff;font-size:20px;margin:0">Download Our Catalog</h3>
         <p style="color:#9fb1c4;font-size:14px;margin-top:6px">Get our complete product catalog with specifications for all 19 instruments.</p>
       </div>
-      <a href="assets/pdf/en/netflow-catalog-en.pdf" class="btn btn-primary" onclick="(function(e){e.preventDefault();var l=(typeof PMI18n!=='undefined'?PMI18n.get():'en');var ls=['en','tr','ar','ru'];var pl=ls.includes(l)?l:'en';window.open('assets/pdf/'+pl+'/netflow-catalog-'+pl+'.pdf')})(event)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="margin-right:8px"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+      <a href="katalog-en.html" class="btn btn-primary navCatalogLink" onclick="(function(e){e.preventDefault();var l=(typeof PMI18n!=='undefined'?PMI18n.get():'en');var m={en:'katalog-en.html',tr:'katalog.html',ar:'katalog-ar.html',ru:'katalog-ru.html'};window.open(m[l]||m.en)})(event)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="margin-right:8px"><path d="M4 19.5v-15A2.5 2.5 0 016.5 2H20v20H6.5a2.5 2.5 0 010-5H20"/></svg>
         Download Catalog (PDF)
       </a>
     </div>

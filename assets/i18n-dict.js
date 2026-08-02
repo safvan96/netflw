@@ -554,5 +554,7 @@ window.PM_PH = {
   "Download Full Catalog (PDF)":{tr:"Tüm Katalog İndir (PDF)",ar:"تنزيل الكتالوج الكامل (PDF)",ru:"Скачать полный каталог (PDF)"},
   "Download Our Catalog":{tr:"Kataloğumuzu İndirin",ar:"حمّل كتالوجنا",ru:"Скачайте наш каталог"},
   "Get our complete product catalog with specifications for all 19 instruments.":{tr:"19 cihazın tüm teknik özellikleriyle birlikte ürün kataloğumuzu indirin.",ar:"احصل على كتالوج منتجاتنا الكامل مع مواصفات جميع الأجهزة التسعة عشر.",ru:"Получите полный каталог продукции с характеристиками всех 19 приборов."},
-  "Download Catalog (PDF)":{tr:"Kataloğu İndir (PDF)",ar:"تنزيل الكتالوج (PDF)",ru:"Скачать каталог (PDF)"}
+  "Download Catalog (PDF)":{tr:"Kataloğu İndir (PDF)",ar:"تنزيل الكتالوج (PDF)",ru:"Скачать каталог (PDF)"},
+  "Catalog":{tr:"Katalog",ar:"الكتالوج",ru:"Каталог"},
+  "View Online Catalog":{tr:"Online Kataloğu Görüntüle",ar:"عرض الكتالوج عبر الإنترنت",ru:"Просмотреть онлайн-каталог"}
 };

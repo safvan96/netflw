@@ -100,6 +100,14 @@ window.PMI18n = (function(){
     });
   }
 
+  const CATALOG_MAP = {en:'katalog-en.html',tr:'katalog.html',ar:'katalog-ar.html',ru:'katalog-ru.html'};
+  function catalogLinks(lang){
+    var href = CATALOG_MAP[lang] || CATALOG_MAP.en;
+    document.querySelectorAll('.navCatalogLink').forEach(function(a){ a.setAttribute('href', href); });
+    var el = document.getElementById('navCatalogLink');
+    if(el) el.setAttribute('href', href);
+  }
+
   function apply(){
     const lang = curLang();
     document.documentElement.lang = lang;
@@ -108,6 +116,7 @@ window.PMI18n = (function(){
     placeholders(lang);
     rich(lang);
     markSwitchers(lang);
+    catalogLinks(lang);
   }
 
   function set(lang){
