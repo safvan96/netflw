@@ -30,8 +30,8 @@
   if(!C||!doc) return;
   const esc = s => (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-  const LOGO = `<img src="assets/nf-logo-amblem.svg" alt="Net Flow" class="nf-mark">`;
-  const LOGO_FULL = `<img src="assets/nf-logo-full.svg" alt="Net Flow" class="nf-full">`;
+  const LOGO = `<img src="assets/logo-amblem.svg" alt="Net Flow" class="nf-mark">`;
+  const LOGO_FULL = `<img src="assets/logo-full.svg" alt="Net Flow" class="nf-full">`;
 
   /* ---- schematic glyphs (working principle) ---- */
   const PIPE = `<rect x="12" y="58" width="10" height="46" rx="2"/><rect x="138" y="58" width="10" height="46" rx="2"/><rect x="22" y="64" width="116" height="34" rx="6"/>`;
