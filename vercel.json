@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    { "source": "/catalog", "destination": "/katalog-en.html", "statusCode": 301 },
+    { "source": "/catalog.html", "destination": "/katalog-en.html", "statusCode": 301 },
+    { "source": "/catalogue", "destination": "/katalog-en.html", "statusCode": 301 },
+    { "source": "/catalogue.html", "destination": "/katalog-en.html", "statusCode": 301 },
+    { "source": "/catalog-en", "destination": "/katalog-en.html", "statusCode": 301 },
+    { "source": "/catalog-en.html", "destination": "/katalog-en.html", "statusCode": 301 },
+    { "source": "/catalog-ar", "destination": "/katalog-ar.html", "statusCode": 301 },
+    { "source": "/catalog-ar.html", "destination": "/katalog-ar.html", "statusCode": 301 },
+    { "source": "/catalog-tr", "destination": "/katalog.html", "statusCode": 301 },
+    { "source": "/catalog-tr.html", "destination": "/katalog.html", "statusCode": 301 },
+    { "source": "/catalog-ru", "destination": "/katalog-ru.html", "statusCode": 301 },
+    { "source": "/catalog-ru.html", "destination": "/katalog-ru.html", "statusCode": 301 }
+  ]
+}
