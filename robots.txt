@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /crm.html
+Disallow: /panel.html
+Disallow: /mail-templates.html
+Disallow: /whatsapp.html
+Disallow: /quote-builder.html
+Disallow: /presentations/
+
+Sitemap: https://netflw.com/sitemap.xml
