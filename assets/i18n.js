@@ -5,7 +5,7 @@
    ============================================================ */
 window.PMI18n = (function(){
   const RTL = ['ar'];
-  const CODE = {EN:'en',TR:'tr',AR:'ar',RU:'ru'};
+  const CODE = {EN:'en',TR:'tr',AR:'ar',RU:'ru',FR:'fr'};
   const D  = window.PM_DICT || {};
   const RICH = window.PM_RICH || [];
   const PH = window.PM_PH || {};
@@ -22,7 +22,8 @@ window.PMI18n = (function(){
       if(s.indexOf('tr')===0) return 'tr';
       if(s.indexOf('ar')===0) return 'ar';
       if(/^(ru|kk|uz|az|ky|tk|tg|be|uk|hy|mn)/.test(s)) return 'ru';
-      if(s.indexOf('en')===0||s.indexOf('de')===0||s.indexOf('fr')===0||s.indexOf('es')===0) return 'en';
+      if(s.indexOf('fr')===0) return 'fr';
+      if(s.indexOf('en')===0||s.indexOf('de')===0||s.indexOf('es')===0) return 'en';
     }
     return 'en';
   }
@@ -31,6 +32,7 @@ window.PMI18n = (function(){
     if(c==='TR') return 'tr';
     if(['SA','IQ','AE','JO','QA','KW','OM','BH','EG','SY','LB','LY','YE','SD','DZ','MA','TN','PS','MR'].indexOf(c)>-1) return 'ar';
     if(['RU','KZ','UZ','AZ','KG','TM','TJ','BY','UA','AM','MD','GE','MN'].indexOf(c)>-1) return 'ru';
+    if(['FR','SN','CI','CM','CD','CG','ML','NE','BF','GN','BJ','TG','GA','TD','DJ','KM','MG','HT','BE','CH','LU','MC'].indexOf(c)>-1) return 'fr';
     if(c) return 'en';
     return null;
   }
@@ -94,13 +96,13 @@ window.PMI18n = (function(){
   }
 
   function markSwitchers(lang){
-    const want = ({en:'EN',tr:'TR',ar:'AR',ru:'RU'})[lang];
+    const want = ({en:'EN',tr:'TR',ar:'AR',ru:'RU',fr:'FR'})[lang];
     document.querySelectorAll('.lang button').forEach(b=>{
       b.classList.toggle('on', b.textContent.trim().toUpperCase() === want);
     });
   }
 
-  const CATALOG_MAP = {en:'katalog-en.html',tr:'katalog.html',ar:'katalog-ar.html',ru:'katalog-ru.html'};
+  const CATALOG_MAP = {en:'katalog-en.html',tr:'katalog.html',ar:'katalog-ar.html',ru:'katalog-ru.html',fr:'katalog-fr.html'};
   function catalogLinks(lang){
     var href = CATALOG_MAP[lang] || CATALOG_MAP.en;
     document.querySelectorAll('.navCatalogLink').forEach(function(a){ a.setAttribute('href', href); });

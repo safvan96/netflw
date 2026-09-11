@@ -11,6 +11,10 @@
     { "source": "/catalog-tr", "destination": "/katalog.html", "statusCode": 301 },
     { "source": "/catalog-tr.html", "destination": "/katalog.html", "statusCode": 301 },
     { "source": "/catalog-ru", "destination": "/katalog-ru.html", "statusCode": 301 },
-    { "source": "/catalog-ru.html", "destination": "/katalog-ru.html", "statusCode": 301 }
+    { "source": "/catalog-ru.html", "destination": "/katalog-ru.html", "statusCode": 301 },
+    { "source": "/catalog-fr", "destination": "/katalog-fr.html", "statusCode": 301 },
+    { "source": "/catalog-fr.html", "destination": "/katalog-fr.html", "statusCode": 301 },
+    { "source": "/catalogue-fr", "destination": "/katalog-fr.html", "statusCode": 301 },
+    { "source": "/catalogue-fr.html", "destination": "/katalog-fr.html", "statusCode": 301 }
   ]
 }
