@@ -103,11 +103,14 @@ window.PMI18n = (function(){
   }
 
   const CATALOG_MAP = {en:'katalog-en.html',tr:'katalog.html',ar:'katalog-ar.html',ru:'katalog-ru.html',fr:'katalog-fr.html'};
+  const BLOG_MAP = {en:'blog-en.html',tr:'blog.html',ar:'blog-ar.html',ru:'blog-ru.html',fr:'blog-fr.html'};
   function catalogLinks(lang){
     var href = CATALOG_MAP[lang] || CATALOG_MAP.en;
     document.querySelectorAll('.navCatalogLink').forEach(function(a){ a.setAttribute('href', href); });
     var el = document.getElementById('navCatalogLink');
     if(el) el.setAttribute('href', href);
+    var blogHref = BLOG_MAP[lang] || BLOG_MAP.en;
+    document.querySelectorAll('.navBlogLink').forEach(function(a){ a.setAttribute('href', blogHref); });
   }
 
   function apply(){

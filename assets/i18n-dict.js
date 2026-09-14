@@ -610,5 +610,11 @@ window.PM_PH = {
   "Temp":{tr:"Sıcaklık",ar:"الحرارة",ru:"Температура",fr:"Temp."},
   "Repeatability":{tr:"Tekrarlanabilirlik",ar:"القابلية للتكرار",ru:"Повторяемость",fr:"Répétabilité"},
   "Electrode":{tr:"Elektrot",ar:"القطب",ru:"Электрод",fr:"Électrode"},
-  "Material":{tr:"Malzeme",ar:"المادة",ru:"Материал",fr:"Matériau"}
+  "Material":{tr:"Malzeme",ar:"المادة",ru:"Материал",fr:"Matériau"},
+  "Resources & Insights":{tr:"Kaynaklar & İçgörüler",ar:"الموارد والرؤى",ru:"Ресурсы и аналитика",fr:"Ressources & perspectives"},
+  "Latest articles from our laboratory & field":{tr:"Laboratuvarımızdan ve sahadan son makaleler",ar:"أحدث المقالات من مختبرنا والميدان",ru:"Последние статьи из нашей лаборатории и с объектов",fr:"Derniers articles de notre laboratoire et du terrain"},
+  "Read more →":{tr:"Devamını oku →",ar:"اقرأ المزيد →",ru:"Читать далее →",fr:"Lire la suite →"},
+  "View all articles →":{tr:"Tüm makaleleri gör →",ar:"عرض جميع المقالات →",ru:"Все статьи →",fr:"Voir tous les articles →"},
+  "← Back to articles":{tr:"← Makalelere dön",ar:"← العودة إلى المقالات",ru:"← Назад к статьям",fr:"← Retour aux articles"},
+  "Blog":{tr:"Blog",ar:"المدونة",ru:"Блог",fr:"Blog"}
 };
