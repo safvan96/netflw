@@ -616,5 +616,6 @@ window.PM_PH = {
   "Read more →":{tr:"Devamını oku →",ar:"اقرأ المزيد →",ru:"Читать далее →",fr:"Lire la suite →"},
   "View all articles →":{tr:"Tüm makaleleri gör →",ar:"عرض جميع المقالات →",ru:"Все статьи →",fr:"Voir tous les articles →"},
   "← Back to articles":{tr:"← Makalelere dön",ar:"← العودة إلى المقالات",ru:"← Назад к статьям",fr:"← Retour aux articles"},
-  "Blog":{tr:"Blog",ar:"المدونة",ru:"Блог",fr:"Blog"}
+  "Blog":{tr:"Blog",ar:"المدونة",ru:"Блог",fr:"Blog"},
+  "Get our complete product catalog with specifications for all 19 instruments.":{tr:"19 ürünümüzün tüm teknik özelliklerini içeren kataloğumuzu indirin.",ar:"احصل على كتالوج منتجاتنا الكامل مع المواصفات لجميع الأجهزة الـ 19.",ru:"Полный каталог с характеристиками всех 19 приборов.",fr:"Notre catalogue complet avec les spécifications de nos 19 instruments."}
 };

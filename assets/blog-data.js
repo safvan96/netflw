@@ -1,4 +1,4 @@
-/* Blog Posts — Net Flow
+/* Blog Posts - Net Flow
    Her dilde FARKLI icerik (ceviri degil), hedef pazara ozel.
    EN → Global / East Africa / Gulf / Balkans
    FR → Bati & Kuzey Afrika (frankofon)
@@ -12,13 +12,13 @@ window.BLOG_POSTS={
 en:[
 {slug:"electromagnetic-flow-meter-selection-guide",
 title:"How to Select the Right Electromagnetic Flow Meter for Your Application",
-excerpt:"Pipe size, liner material, electrode alloy, output protocol — every decision matters. A practical guide from our calibration lab.",
+excerpt:"Pipe size, liner material, electrode alloy, output protocol... every decision matters. A practical guide from our calibration lab.",
 category:"Application Guide",
 date:"2026-09-14",
 image:"assets/products/NT-VMF.png",
 content:`<h2>Why Electromagnetic Flow Meters?</h2>
-<p>If you're measuring a conductive liquid in a closed pipe, an electromagnetic flow meter is almost certainly the best option. No moving parts, no pressure drop, no maintenance schedule — just a reliable reading, year after year.</p>
-<p>We build every NT-VMF meter from DN3 to DN3000 at our facility in Turkey and calibrate each one on our TÜRKAK-accredited ISO/IEC 17025 rig with ±0.27% uncertainty. The calibration certificate is internationally recognised through EA and ILAC mutual recognition agreements — no need to re-calibrate on arrival.</p>
+<p>If you're measuring a conductive liquid in a closed pipe, an electromagnetic flow meter is almost certainly the best option. No moving parts, no pressure drop, no maintenance schedule. just a reliable reading, year after year.</p>
+<p>We build every NT-VMF meter from DN3 to DN3000 at our facility in Turkey and calibrate each one on our TÜRKAK-accredited ISO/IEC 17025 rig with ±0.27% uncertainty. The calibration certificate is internationally recognised through EA and ILAC mutual recognition agreements, so there is no need to re-calibrate on arrival.</p>
 
 <h2>Pipe Size (DN)</h2>
 <p>The golden rule: keep flow velocity between 1 m/s and 5 m/s. Too slow and accuracy suffers. Too fast and you risk erosion of the liner.</p>
@@ -32,15 +32,15 @@ content:`<h2>Why Electromagnetic Flow Meters?</h2>
 <h2>Liner Selection</h2>
 <p>The liner insulates the pipe wall from the liquid. Get it wrong and the meter fails within months.</p>
 <ul>
-<li><strong>Hard rubber (ebonite):</strong> Raw water, wastewater — abrasion-resistant, DN50–DN3000</li>
-<li><strong>PTFE:</strong> Clean water, chemicals — FDA-suitable, DN3–DN300</li>
-<li><strong>PFA:</strong> Aggressive chemicals — ozone, chlorine dioxide</li>
-<li><strong>Polyurethane:</strong> Abrasive slurries — mining, sludge</li>
+<li><strong>Hard rubber (ebonite):</strong> Raw water, wastewater, abrasion-resistant, DN50–DN3000</li>
+<li><strong>PTFE:</strong> Clean water, chemicals, FDA-suitable, DN3–DN300</li>
+<li><strong>PFA:</strong> Aggressive chemicals (ozone, chlorine dioxide)</li>
+<li><strong>Polyurethane:</strong> Abrasive slurries (mining, sludge)</li>
 </ul>
 
 <h2>Electrode Material</h2>
 <ul>
-<li><strong>316L stainless:</strong> Clean water — standard, economical</li>
+<li><strong>316L stainless:</strong> Clean water, standard, economical</li>
 <li><strong>Hastelloy C-276:</strong> Chlorinated water, seawater, chemicals</li>
 <li><strong>Titanium:</strong> Desalination, strong oxidisers</li>
 <li><strong>Tantalum:</strong> Concentrated acids (HCl, H₂SO₄)</li>
@@ -53,28 +53,28 @@ content:`<h2>Why Electromagnetic Flow Meters?</h2>
 <li><strong>Pulse output:</strong> Totaliser counting, batch control</li>
 </ul>
 
-<p>Send us your application details — pipe diameter, fluid, flow range, pressure, temperature — and we'll configure and quote within one business day.</p>`
+<p>Send us your application details (pipe diameter, fluid, flow range, pressure, temperature) and we'll configure and quote within one business day.</p>`
 },
 {slug:"non-revenue-water-loss-reduction-flow-metering",
-title:"Cutting Non-Revenue Water from 40% to 15% — It Starts with Accurate Meters",
+title:"Cutting Non-Revenue Water from 40% to 15% with Accurate Meters",
 excerpt:"Water utilities in Africa, the Middle East and the Balkans lose up to half their supply before it reaches a customer. District metering changes that.",
 category:"Water Utilities",
 date:"2026-09-12",
 image:"assets/products/NT-VMF-W.png",
 content:`<h2>The Problem Nobody Can Afford to Ignore</h2>
-<p>In Kenya, Jordan, Serbia, Egypt, and dozens of other countries, water utilities produce enough water — but 30% to 50% of it disappears before anyone pays for it. Leaks, illegal connections, ageing meters, unbilled consumption. The technical term is non-revenue water (NRW), and it costs billions globally every year.</p>
+<p>In Kenya, Jordan, Serbia, Egypt, and dozens of other countries, water utilities produce enough water, but 30% to 50% of it disappears before anyone pays for it. Leaks, illegal connections, ageing meters, unbilled consumption. The technical term is non-revenue water (NRW), and it costs billions globally every year.</p>
 
 <h2>District Metered Areas: Proven, Practical, Cost-Effective</h2>
 <p>The most effective approach is simple in principle: divide the network into zones, measure what goes in, compare it to what gets billed. The difference is your loss. An electromagnetic flow meter at each zone boundary gives you the data you need to find and fix the leaks.</p>
-<p>Why electromagnetic? Because mechanical meters clog with sediment, lose accuracy over time, and create pressure drop. A mag meter has a smooth, unobstructed bore — nothing to wear out, nothing to block.</p>
+<p>Why electromagnetic? Because mechanical meters clog with sediment, lose accuracy over time, and create pressure drop. A mag meter has a smooth, unobstructed bore: nothing to wear out, nothing to block.</p>
 
 <h2>Accuracy That Actually Matters</h2>
-<p>A DMA with 5,000 m³/day inflow: a ±2% meter gives you ±100 m³/day error. That's 36,500 m³/year of pure guesswork. Our NT-VMF delivers ±0.2% accuracy (±0.27% calibration uncertainty) — so your error band drops to ±10 m³/day. Now your night-flow analysis actually tells you something useful.</p>
+<p>A DMA with 5,000 m³/day inflow: a ±2% meter gives you ±100 m³/day error. That's 36,500 m³/year of pure guesswork. Our NT-VMF delivers ±0.2% accuracy (±0.27% calibration uncertainty), so your error band drops to ±10 m³/day. Now your night-flow analysis actually tells you something useful.</p>
 
 <h2>Installation Tips</h2>
 <ul>
 <li>5×DN straight pipe upstream, 3×DN downstream</li>
-<li>Full-bore — never reduce diameter at the meter</li>
+<li>Full-bore: never reduce diameter at the meter</li>
 <li>Grounding rings on plastic pipes</li>
 <li>Enable empty-pipe detection</li>
 <li>Set low-flow cut-off for clean night-flow data</li>
@@ -90,16 +90,16 @@ category:"Level Measurement",
 date:"2026-09-10",
 image:"assets/products/NT-MLI.png",
 content:`<h2>Glass Gauges Have Had Their Day</h2>
-<p>Sight glass level gauges have been standard equipment for over a century. They work — until they don't. A thermal shock cracks the glass. A gasket starts weeping. The liquid column discolours and you can't read it from three metres away. Every time you replace one, you need a process shutdown.</p>
+<p>Sight glass level gauges have been standard equipment for over a century. They work... until they don't. A thermal shock cracks the glass. A gasket starts weeping. The liquid column discolours and you can't read it from three metres away. Every time you replace one, you need a process shutdown.</p>
 
 <h2>Magnetic Bypass Level Indicators</h2>
-<p>A magnetic bypass level indicator mounts on the outside of the tank. A float with a permanent magnet rides inside a sealed bypass chamber. As it moves, it flips bi-colour flags on the external scale — giving you a clear, continuous reading without glass, without electrical power, and without any process fluid leaking out.</p>
+<p>A magnetic bypass level indicator mounts on the outside of the tank. A float with a permanent magnet rides inside a sealed bypass chamber. As it moves, it flips bi-colour flags on the external scale, giving you a clear, continuous reading without glass, without electrical power, and without any process fluid leaking out.</p>
 
 <h2>Our Range</h2>
 <ul>
-<li><strong>NT-MBY:</strong> Atmospheric and low-pressure tanks — water, chemicals, process vessels. Up to PN16 / 150°C.</li>
-<li><strong>NT-MBYEX:</strong> Hazardous areas — fuel, solvents, petrochemicals. ATEX/IECEx certified, PN40 / 200°C.</li>
-<li><strong>NT-MBYB:</strong> Boiler drums and high-pressure vessels — PN100 / 350°C, bi-colour indication.</li>
+<li><strong>NT-MBY:</strong> Atmospheric and low-pressure tanks (water, chemicals, process vessels. Up to PN16 / 150°C.</li>
+<li><strong>NT-MBYEX:</strong> Hazardous areas (fuel, solvents, petrochemicals. ATEX/IECEx certified, PN40 / 200°C.</li>
+<li><strong>NT-MBYB:</strong> Boiler drums and high-pressure vessels, PN100 / 350°C, bi-colour indication.</li>
 </ul>
 
 <h2>What We Need to Quote</h2>
@@ -127,15 +127,15 @@ date:"2026-09-08",
 image:"assets/products/NT-VMF-BT.png",
 content:`<h2>The Off-Grid Challenge</h2>
 <p>Across rural Sub-Saharan Africa, parts of Central Asia, and remote regions of the Middle East, water infrastructure exists without reliable electricity. Meter chambers are kilometres from the nearest power line. Solar panels get stolen. Generators run out of fuel.</p>
-<p>A conventional electromagnetic flow meter draws 15–25 watts continuously. That's fine in a pump station with mains power. But for a remote DMA boundary or a rural borehole — you need something different.</p>
+<p>A conventional electromagnetic flow meter draws 15–25 watts continuously. That's fine in a pump station with mains power. But for a remote DMA boundary or a rural borehole, you need something different.</p>
 
 <h2>NT-VMF-BT: 5-Year Battery Life</h2>
-<p>Our battery-powered variant uses a low-power excitation circuit that measures at programmable intervals — every 5 seconds, every 15 seconds, or every minute depending on your accuracy/battery trade-off. The result: up to 5 years of operation from a single lithium battery pack.</p>
+<p>Our battery-powered variant uses a low-power excitation circuit that measures at programmable intervals (every 5 seconds, every 15 seconds, or every minute depending on your accuracy/battery trade-off). The result: up to 5 years of operation from a single lithium battery pack.</p>
 <ul>
 <li><strong>Measurement interval:</strong> 1s to 60s, configurable</li>
 <li><strong>Data logging:</strong> 500,000+ readings stored internally</li>
 <li><strong>Communication:</strong> GSM/GPRS module transmits data daily to your server</li>
-<li><strong>Protection:</strong> IP68 — fully submersible, ideal for flooded chambers</li>
+<li><strong>Protection:</strong> IP68 (fully submersible, ideal for flooded chambers)</li>
 <li><strong>Sizes:</strong> DN50–DN300</li>
 </ul>
 
@@ -155,13 +155,13 @@ content:`<h2>Wastewater Is Not Clean Water</h2>
 <p>A flow meter that works perfectly on potable water will fail spectacularly in a wastewater treatment plant. The liquid contains suspended solids, rags, grease, grit, and dissolved chemicals that attack conventional materials. Mechanical meters seize. Ultrasonic meters lose signal in aerated flows. Differential pressure meters clog.</p>
 
 <h2>Electromagnetic: The Only Realistic Choice</h2>
-<p>An electromagnetic flow meter handles wastewater because the measurement principle doesn't care what's in the water — only that it conducts electricity. No obstructions to catch debris. No transducers to foul. No impulse lines to block.</p>
+<p>An electromagnetic flow meter handles wastewater because the measurement principle doesn't care what's in the water, only that it conducts electricity. No obstructions to catch debris. No transducers to foul. No impulse lines to block.</p>
 
 <h2>Material Selection for Wastewater</h2>
 <h3>Liner</h3>
 <ul>
 <li><strong>Hard rubber (ebonite):</strong> The workhorse for raw wastewater. Resists abrasion from grit, handles DN50–DN3000.</li>
-<li><strong>Polyurethane:</strong> For activated sludge lines with high solids — 5× the wear life of rubber.</li>
+<li><strong>Polyurethane:</strong> For activated sludge lines with high solids (5× the wear life of rubber).</li>
 <li><strong>PTFE:</strong> Only for treated effluent or chemical dosing lines.</li>
 </ul>
 
@@ -186,7 +186,7 @@ content:`<h2>Wastewater Is Not Clean Water</h2>
 fr:[
 {slug:"debitmetre-reseaux-eau-senegal-cameroun-cote-ivoire",
 title:"Quel débitmètre choisir pour les réseaux d'eau au Sénégal, Cameroun et Côte d'Ivoire ?",
-excerpt:"Eaux chargées, chaleur extrême, coupures de courant — les réseaux ouest-africains ont besoin de débitmètres qui tiennent le coup. Pas de théorie, que du concret.",
+excerpt:"Eaux chargées, chaleur extrême, coupures de courant... les réseaux ouest-africains ont besoin de débitmètres qui tiennent le coup. Pas de théorie, que du concret.",
 category:"Réseaux d'eau Afrique",
 date:"2026-09-14",
 image:"assets/products/NT-VMF-BT.png",
@@ -195,7 +195,7 @@ content:`<h2>Ce que le terrain impose</h2>
 <p>Dans ces conditions, un débitmètre mécanique à turbine dure rarement plus de deux ans. Les paliers s'usent, la roue se bloque avec le sable, et la précision chute bien avant que quelqu'un ne s'en aperçoive.</p>
 
 <h2>Le débitmètre électromagnétique s'impose</h2>
-<p>Pas de pièces mobiles. Pas de perte de charge. Le tube de mesure est lisse — rien ne peut se coincer, rien ne s'use. Le principe de Faraday mesure la vitesse du fluide sans contact mécanique, et les sédiments n'affectent pas la mesure.</p>
+<p>Pas de pièces mobiles. Pas de perte de charge. Le tube de mesure est lisse : rien ne peut se coincer, rien ne s'use. Le principe de Faraday mesure la vitesse du fluide sans contact mécanique, et les sédiments n'affectent pas la mesure.</p>
 <ul>
 <li>Durée de vie supérieure à 15 ans sans maintenance mécanique</li>
 <li>Précision maintenue même avec de l'eau non traitée</li>
@@ -207,12 +207,12 @@ content:`<h2>Ce que le terrain impose</h2>
 <p><strong>PTFE :</strong> Réservé à l'eau traitée et aux lignes de dosage chimique (chlore, coagulant). DN3 à DN300.</p>
 
 <h2>La question de l'alimentation</h2>
-<p>Pour les sites sans réseau électrique fiable — et il y en a beaucoup — notre version sur batterie <strong>NT-VMF-B</strong> fonctionne jusqu'à 5 ans sur une seule charge, avec option de transmission GSM/GPRS pour remonter les données au central.</p>
+<p>Pour les sites sans réseau électrique fiable (et il y en a beaucoup), notre version sur batterie <strong>NT-VMF-B</strong> fonctionne jusqu'à 5 ans sur une seule charge, avec option de transmission GSM/GPRS pour remonter les données au central.</p>
 
 <h2>Certification reconnue localement</h2>
 <p>Le certificat d'étalonnage TÜRKAK ISO/IEC 17025 (incertitude ±0,27%) est reconnu dans l'ensemble de l'espace CEDEAO grâce aux accords de reconnaissance mutuelle EA & ILAC. Pas besoin de ré-étalonner sur place.</p>
 
-<p>Envoyez-nous le diamètre, le débit et le type de fluide — on vous répond sous 24 heures avec un devis configuré.</p>`
+<p>Envoyez-nous le diamètre, le débit et le type de fluide : on vous répond sous 24 heures avec un devis configuré.</p>`
 },
 {slug:"mines-bauxite-cuivre-phosphate-debitmetre-afrique",
 title:"Mesure de débit dans les mines africaines : bauxite en Guinée, phosphate au Sénégal, cuivre en RDC",
@@ -225,7 +225,7 @@ content:`<h2>Le problème avec les slurries</h2>
 <p>Le même problème se pose dans les <strong>mines de phosphate au Sénégal</strong>, les <strong>cimenteries au Cameroun</strong> et les <strong>mines de cuivre/cobalt en RD Congo</strong>.</p>
 
 <h2>Excitation haute fréquence 25/30 Hz</h2>
-<p>Les slurries génèrent un bruit électrochimique qui perturbe les débitmètres standard (6,25 Hz). Nos modèles pour boues utilisent une fréquence d'excitation de <strong>25 ou 30 Hz</strong> — quatre fois plus élevée. Résultat :</p>
+<p>Les slurries génèrent un bruit électrochimique qui perturbe les débitmètres standard (6,25 Hz). Nos modèles pour boues utilisent une fréquence d'excitation de <strong>25 ou 30 Hz</strong>. quatre fois plus élevée. Résultat :</p>
 <ul>
 <li>Signal stable même avec un taux de solides élevé</li>
 <li>Temps de réponse inférieur à 0,5 seconde</li>
@@ -253,7 +253,7 @@ date:"2026-09-10",
 image:"assets/products/NT-MLI-EX.png",
 content:`<h2>Un risque bien connu</h2>
 <p>Dans les raffineries de <strong>Skikda, Arzew, Hassi Messaoud</strong> et les installations de <strong>l'OCP au Maroc</strong>, les indicateurs de niveau à tube de verre sont encore partout. Et chaque année, les mêmes incidents se répètent : rupture par choc thermique, fuite de joint, opacification du verre, arrêt de production pour remplacement.</p>
-<p>Avec des hydrocarbures sous pression, une fuite de verre n'est pas un simple désagrément — c'est un risque d'incendie.</p>
+<p>Avec des hydrocarbures sous pression, une fuite de verre n'est pas un simple désagrément, c'est un risque d'incendie.</p>
 
 <h2>L'indicateur magnétique à bypass</h2>
 <p>Le principe est simple : un flotteur magnétique monte et descend dans une chambre fermée. Son aimant fait tourner des volets bicolores sur l'indicateur externe. Lecture claire à distance, aucun contact entre le fluide et l'extérieur, aucune pièce en verre.</p>
@@ -281,7 +281,7 @@ date:"2026-09-07",
 image:"assets/products/NT-VMF-I.png",
 content:`<h2>Des pertes qui coûtent cher</h2>
 <p>La REGIDESO à <strong>Kinshasa</strong>, la SNDE à <strong>Brazzaville</strong>, la CDE au <strong>Cameroun</strong> et la SEG en <strong>Guinée</strong> font face au même problème : entre 40 et 55% de l'eau produite n'est jamais facturée. Fuites, branchements illicites, compteurs défaillants, consommation non mesurée.</p>
-<p>À l'échelle d'une ville comme Douala ou Conakry, ce sont des millions de mètres cubes — et des millions d'euros — qui disparaissent chaque année.</p>
+<p>À l'échelle d'une ville comme Douala ou Conakry, ce sont des millions de mètres cubes (et des millions d'euros) qui disparaissent chaque année.</p>
 
 <h2>Le comptage de zone (DMA)</h2>
 <p>La méthode éprouvée : diviser le réseau en zones isolées et mesurer précisément les volumes entrants. La différence entre volume entré et volume facturé donne le taux de pertes de chaque zone.</p>
@@ -307,12 +307,12 @@ category:"Ciment & BTP",
 date:"2026-09-05",
 image:"assets/products/NT-VMF-M.png",
 content:`<h2>Le rôle critique de l'eau dans le ciment</h2>
-<p>Dans une cimenterie — que ce soit une usine <strong>Dangote Cement au Nigeria ou au Cameroun</strong>, une unité <strong>Cimencam</strong> ou une ligne <strong>LafargeHolcim en Côte d'Ivoire</strong> — l'eau intervient à plusieurs étapes : refroidissement du clinker, broyage humide, dépoussiérage, et dosage dans le mélange final.</p>
+<p>Dans une cimenterie, que ce soit une usine <strong>Dangote Cement au Nigeria ou au Cameroun</strong>, une unité <strong>Cimencam</strong> ou une ligne <strong>LafargeHolcim en Côte d'Ivoire</strong>, l'eau intervient à plusieurs étapes : refroidissement du clinker, broyage humide, dépoussiérage, et dosage dans le mélange final.</p>
 <p>Le contrôle précis du débit d'eau est essentiel pour la qualité du produit fini et l'efficacité énergétique du four.</p>
 
 <h2>Les contraintes</h2>
 <ul>
-<li>Poussière omniprésente — les armoires de commande doivent être étanches</li>
+<li>Poussière omniprésente : les armoires de commande doivent être étanches</li>
 <li>Eau de process chargée en calcaire et particules fines</li>
 <li>Vibrations des broyeurs et des fours rotatifs</li>
 <li>Températures ambiantes élevées</li>
@@ -332,13 +332,13 @@ content:`<h2>Le rôle critique de l'eau dans le ciment</h2>
 /* ===================== العربية ===================== */
 ar:[
 {slug:"flow-measurement-oil-gas-iraq-kuwait-oman",
-title:"قياس التدفق في منشآت النفط والغاز — العراق، الكويت، عُمان والبحرين",
-excerpt:"مياه الحقن، طين الحفر، مياه التبريد — كل نقطة قياس في المصفاة تحتاج جهازاً مختلفاً. دليل عملي من مهندسي Net Flow.",
+title:"قياس التدفق في منشآت النفط والغاز: العراق، الكويت، عُمان والبحرين",
+excerpt:"مياه الحقن، طين الحفر، مياه التبريد... كل نقطة قياس في المصفاة تحتاج جهازاً مختلفاً. دليل عملي من مهندسي Net Flow.",
 category:"النفط والغاز",
 date:"2026-09-14",
 image:"assets/products/NT-VMF-S.png",
 content:`<h2>لماذا يختلف القياس في المصافي؟</h2>
-<p>المصفاة ليست مكاناً واحداً — إنها عشرات التطبيقات المختلفة تحت سقف واحد. مياه التبريد في الأبراج، مياه الغلايات المعالجة، طين الحفر المحمّل بالرمل، مياه الحقن في الآبار. كل تطبيق يحتاج تركيبة مختلفة من البطانة والأقطاب.</p>
+<p>المصفاة ليست مكاناً واحداً، بل عشرات التطبيقات المختلفة تحت سقف واحد. مياه التبريد في الأبراج، مياه الغلايات المعالجة، طين الحفر المحمّل بالرمل، مياه الحقن في الآبار. كل تطبيق يحتاج تركيبة مختلفة من البطانة والأقطاب.</p>
 <p>في حقول <strong>جنوب العراق</strong> ومصافي <strong>الكويت</strong> ومنشآت <strong>PDO في عُمان</strong>، نرى نفس التحدي: أجهزة أوروبية باهظة الثمن أو أجهزة رخيصة تتعطل بعد أشهر. الحل الوسط موجود.</p>
 
 <h2>التطبيقات ومواصفاتها</h2>
@@ -349,15 +349,15 @@ content:`<h2>لماذا يختلف القياس في المصافي؟</h2>
 <p>DN100–DN300، بطانة بولي يوريثان لمقاومة التآكل. أقطاب Hastelloy C-276. تردد إثارة عالي 25/30 هرتز لتنقية الإشارة من الضوضاء الكهروكيميائية.</p>
 
 <h3>مياه الحقن</h3>
-<p>الدقة حرجة — ±0.2% من القراءة. DN80–DN200. خرج Modbus RS485 للربط مع نظام DCS المركزي.</p>
+<p>الدقة حرجة: ±0.2% من القراءة. DN80–DN200. خرج Modbus RS485 للربط مع نظام DCS المركزي.</p>
 
 <h2>شهادة المعايرة</h2>
 <p>معايرة TÜRKAK وفق ISO/IEC 17025 بعدم يقين ±0.27%. الشهادة معترف بها في العراق والكويت وعُمان والبحرين والأردن ومصر من خلال اتفاقيات ILAC.</p>
 
-<p>أرسل مواصفات التطبيق — نرد خلال يوم عمل بعرض سعر مُفصّل.</p>`
+<p>أرسل مواصفات التطبيق وسنرد خلال يوم عمل بعرض سعر مُفصّل.</p>`
 },
 {slug:"water-network-metering-jordan-egypt-saudi",
-title:"شبكات المياه في الأردن ومصر والسعودية — كيف تُخفّض الفاقد من 50% إلى 20%؟",
+title:"شبكات المياه في الأردن ومصر والسعودية: كيف تُخفّض الفاقد من 50% إلى 20%؟",
 excerpt:"نصف المياه المنتجة تضيع قبل أن تصل للمستهلك. القياس الدقيق بالمناطق هو الحل الأول والأرخص.",
 category:"شبكات المياه",
 date:"2026-09-12",
@@ -381,7 +381,7 @@ content:`<h2>الأرقام لا تكذب</h2>
 <h2>المواصفات المناسبة</h2>
 <ul>
 <li>DN80–DN1200 لخطوط التوزيع الرئيسية</li>
-<li>درجة حماية IP68 — لغرف العدادات المعرضة للغمر</li>
+<li>درجة حماية IP68، مناسب لغرف العدادات المعرضة للغمر</li>
 <li>خرج 4-20 مللي أمبير + Modbus RS485</li>
 <li>نسخة بطارية للمواقع بدون كهرباء (5 سنوات تشغيل)</li>
 </ul>
@@ -395,7 +395,7 @@ category:"صناعة كيميائية",
 date:"2026-09-10",
 image:"assets/products/NT-MLI-BR.png",
 content:`<h2>بيئة قاسية</h2>
-<p>مصانع الأسمدة في <strong>قطر</strong> (مثل QAFCO)، مجمعات البتروكيماويات في <strong>الكويت</strong> (EQUATE، PIC)، ومصانع الكلور-قلوي في <strong>البحرين</strong> — كلها تتعامل مع سوائل شديدة التآكل. حمض الكبريتيك، الصودا الكاوية، المذيبات، محاليل الأمونيا.</p>
+<p>مصانع الأسمدة في <strong>قطر</strong> (مثل QAFCO)، مجمعات البتروكيماويات في <strong>الكويت</strong> (EQUATE، PIC)، ومصانع الكلور-قلوي في <strong>البحرين</strong>، كلها تتعامل مع سوائل شديدة التآكل. حمض الكبريتيك، الصودا الكاوية، المذيبات، محاليل الأمونيا.</p>
 <p>مؤشرات الزجاج التقليدية لا تصمد طويلاً. التآكل الكيميائي يضعف الزجاج، والأبخرة تعتّم الرؤية، والتسريب يعني توقف الإنتاج.</p>
 
 <h2>المؤشر المغناطيسي: لا زجاج، لا تسريب</h2>
@@ -418,7 +418,7 @@ content:`<h2>بيئة قاسية</h2>
 <p>كل وحدة مُختبرة هيدروليكياً وموثقة. شهادات المواد 3.1 متوفرة حسب الطلب.</p>`
 },
 {slug:"desalination-flow-meter-gcc",
-title:"قياس التدفق في محطات التحلية — السعودية، الإمارات، الكويت وعُمان",
+title:"قياس التدفق في محطات التحلية: السعودية، الإمارات، الكويت وعُمان",
 excerpt:"من مياه البحر إلى المياه المنتجة، كل مرحلة في التحلية تحتاج مقياس تدفق بمواصفات مختلفة.",
 category:"تحلية المياه",
 date:"2026-09-07",
@@ -428,9 +428,9 @@ content:`<h2>التحلية في منطقة الخليج</h2>
 
 <h2>تحديات القياس</h2>
 <ul>
-<li><strong>مياه البحر:</strong> عالية الملوحة والتآكل — تحتاج أقطاب تيتانيوم أو Hastelloy</li>
-<li><strong>مياه الصرف (brine):</strong> تركيز ملحي مضاعف — تآكل شديد</li>
-<li><strong>مياه منتجة:</strong> منخفضة التوصيل — تحتاج حساسية عالية</li>
+<li><strong>مياه البحر:</strong> عالية الملوحة والتآكل، تحتاج أقطاب تيتانيوم أو Hastelloy</li>
+<li><strong>مياه الصرف (brine):</strong> تركيز ملحي مضاعف، تآكل شديد</li>
+<li><strong>مياه منتجة:</strong> منخفضة التوصيل، تحتاج حساسية عالية</li>
 <li><strong>خطوط كيميائية:</strong> أحجام صغيرة DN3–DN25، دقة عالية</li>
 </ul>
 
@@ -445,7 +445,7 @@ content:`<h2>التحلية في منطقة الخليج</h2>
 <p>معايرة TÜRKAK ISO/IEC 17025 معتمدة في جميع دول مجلس التعاون الخليجي.</p>`
 },
 {slug:"battery-flow-meter-remote-water-wells-arab",
-title:"مقياس تدفق بالبطارية للآبار والمحطات النائية — 5 سنوات بدون كهرباء",
+title:"مقياس تدفق بالبطارية للآبار والمحطات النائية: 5 سنوات بدون كهرباء",
 excerpt:"آبار المياه في المناطق الصحراوية بالعراق والأردن وعُمان بعيدة عن شبكة الكهرباء. الحل: مقياس ببطارية ليثيوم مع اتصال GSM.",
 category:"قياس عن بُعد",
 date:"2026-09-05",
@@ -459,7 +459,7 @@ content:`<h2>المشكلة</h2>
 <li>قياس على فترات قابلة للبرمجة (كل 5 ثوانٍ إلى كل دقيقة)</li>
 <li>تخزين داخلي لأكثر من 500,000 قراءة</li>
 <li>وحدة GSM/GPRS ترسل البيانات يومياً للمركز</li>
-<li>حماية IP68 — غمر كامل</li>
+<li>حماية IP68، غمر كامل</li>
 <li>أحجام DN50–DN300</li>
 </ul>
 
@@ -472,16 +472,16 @@ content:`<h2>المشكلة</h2>
 ru:[
 {slug:"rashodomery-vodosnabzhenie-kazahstan-uzbekistan",
 title:"Электромагнитные расходомеры для водоснабжения Казахстана и Узбекистана",
-excerpt:"Песок в воде, морозы до −40°C, затапливаемые колодцы — какой расходомер выдержит условия Центральной Азии и проработает 15 лет без обслуживания.",
+excerpt:"Песок в воде, морозы до −40°C, затапливаемые колодцы... какой расходомер выдержит условия Центральной Азии и проработает 15 лет без обслуживания.",
 category:"Водоснабжение",
 date:"2026-09-14",
 image:"assets/products/NT-VMF.png",
 content:`<h2>Что не так с механическими расходомерами</h2>
-<p>Кто работал с водоканалами <strong>Алматы, Ташкента, Ашхабада или Бишкека</strong>, знает: механические крыльчатые расходомеры в этом регионе — расходный материал. Песок из поверхностных источников заклинивает крыльчатку за 6–12 месяцев. Подшипники изнашиваются. Показания уплывают, а вместе с ними — достоверность учёта.</p>
-<p>Зимой — другая проблема: замерзание в неотапливаемых колодцах при −35...−40°C.</p>
+<p>Кто работал с водоканалами <strong>Алматы, Ташкента, Ашхабада или Бишкека</strong>, знает: механические крыльчатые расходомеры в этом регионе это расходный материал. Песок из поверхностных источников заклинивает крыльчатку за 6–12 месяцев. Подшипники изнашиваются. Показания уплывают, а вместе с ними и достоверность учёта.</p>
+<p>Зимой другая проблема: замерзание в неотапливаемых колодцах при −35...−40°C.</p>
 
 <h2>Электромагнитный расходомер: ничего не ломается</h2>
-<p>Принцип Фарадея: магнитное поле пересекает поток жидкости, наведённое напряжение пропорционально скорости. Никаких движущихся частей. Проходное сечение — гладкая труба. Песку не за что зацепиться.</p>
+<p>Принцип Фарадея: магнитное поле пересекает поток жидкости, наведённое напряжение пропорционально скорости. Никаких движущихся частей. Проходное сечение это гладкая труба. Песку не за что зацепиться.</p>
 <ul>
 <li>Ресурс: более 15 лет без механического обслуживания</li>
 <li>Нулевая потеря давления</li>
@@ -491,30 +491,30 @@ content:`<h2>Что не так с механическими расходоме
 
 <h2>Что выбрать</h2>
 <h3>Футеровка</h3>
-<p><strong>Эбонит</strong> — стандарт для сырой воды с песком (DN50–DN3000). <strong>PTFE</strong> — для очищенной питьевой воды и линий хлорирования (DN3–DN300).</p>
+<p><strong>Эбонит</strong> это стандарт для сырой воды с песком (DN50–DN3000). <strong>PTFE</strong> используется для очищенной питьевой воды и линий хлорирования (DN3–DN300).</p>
 
 <h3>Степень защиты</h3>
-<p><strong>IP68</strong> — обязательно для колодцев, которые затапливает при весеннем паводке или прорыве трубы.</p>
+<p><strong>IP68</strong>, обязательно для колодцев, которые затапливает при весеннем паводке или прорыве трубы.</p>
 
 <h3>Температурный диапазон</h3>
-<p>Стандартный NT-VMF: от −25°C до +60°C. Для экстремальных условий Казахстана — версия с обогревом электроники.</p>
+<p>Стандартный NT-VMF: от −25°C до +60°C. Для экстремальных условий Казахстана доступна версия с обогревом электроники.</p>
 
 <h2>Калибровка</h2>
 <p>Аккредитация TÜRKAK по ISO/IEC 17025, неопределённость ±0,27%. Сертификат признаётся в Казахстане, Узбекистане, Кыргызстане, Таджикистане и Туркменистане через соглашения EA & ILAC.</p>
 
-<p>Пришлите параметры — ответим с предложением в течение рабочего дня.</p>`
+<p>Пришлите параметры, ответим с предложением в течение рабочего дня.</p>`
 },
 {slug:"rashodomery-gornodoba-kazminerals-navoi",
 title:"Расходомеры для горнодобычи: рудные пульпы, кислотный дренаж, цементные шламы",
-excerpt:"KazMinerals, Навоийский ГМК, TALCO — на этих предприятиях стандартные расходомеры не выживают. Рассказываем, что работает.",
+excerpt:"KazMinerals, Навоийский ГМК, TALCO: на этих предприятиях стандартные расходомеры не выживают. Рассказываем, что работает.",
 category:"Горнодобыча",
 date:"2026-09-12",
 image:"assets/products/NT-VMF-M.png",
 content:`<h2>Почему стандартные приборы не справляются</h2>
-<p>На обогатительной фабрике <strong>KazMinerals</strong> или на <strong>Навоийском ГМК</strong> по трубам идёт не вода — а пульпа с содержанием твёрдых частиц до 60%. Частицы абразивные, жидкость часто кислая, расход меняется скачками. Обычный расходомер с частотой возбуждения 6,25 Гц захлёбывается электрохимическим шумом: сигнал нестабильный, ноль плывёт, показания скачут.</p>
+<p>На обогатительной фабрике <strong>KazMinerals</strong> или на <strong>Навоийском ГМК</strong> по трубам идёт не вода, а пульпа с содержанием твёрдых частиц до 60%. Частицы абразивные, жидкость часто кислая, расход меняется скачками. Обычный расходомер с частотой возбуждения 6,25 Гц захлёбывается электрохимическим шумом: сигнал нестабильный, ноль плывёт, показания скачут.</p>
 
 <h2>Высокочастотное возбуждение 25/30 Гц</h2>
-<p>Наши расходомеры для суспензий работают на частоте <strong>25 или 30 Гц</strong> — в четыре раза выше стандартной. Электрохимический шум от абразивных частиц эффективно фильтруется.</p>
+<p>Наши расходомеры для суспензий работают на частоте <strong>25 или 30 Гц</strong>, в четыре раза выше стандартной. Электрохимический шум от абразивных частиц эффективно фильтруется.</p>
 <ul>
 <li>Время отклика: менее 0,5 с</li>
 <li>Стабильный ноль даже при загрязнении электродов</li>
@@ -523,7 +523,7 @@ content:`<h2>Почему стандартные приборы не справ�
 
 <h2>Материалы</h2>
 <ul>
-<li><strong>Полиуретан:</strong> для абразивных пульп — износостойкость в 5 раз выше резины</li>
+<li><strong>Полиуретан:</strong> для абразивных пульп (износостойкость в 5 раз выше резины)</li>
 <li><strong>Hastelloy C-276:</strong> стандарт для горных применений</li>
 <li><strong>Карбид вольфрама:</strong> для самых жёстких суспензий</li>
 <li><strong>Титан:</strong> для кислотного дренажа (AMD)</li>
@@ -540,7 +540,7 @@ content:`<h2>Почему стандартные приборы не справ�
 },
 {slug:"pribory-npz-azerbajdzhan-gruziya-turkmenistan",
 title:"Расходомеры и уровнемеры ATEX для НПЗ Азербайджана, Грузии и Туркменистана",
-excerpt:"SOCAR, ТНПЗ, грузинские НПЗ — подбор приборов для технологической воды, бурового раствора и резервуарного парка.",
+excerpt:"SOCAR, ТНПЗ, грузинские НПЗ: подбор приборов для технологической воды, бурового раствора и резервуарного парка.",
 category:"Нефтепереработка",
 date:"2026-09-10",
 image:"assets/products/NT-MLI-EX.png",
@@ -556,19 +556,19 @@ content:`<h2>Что нужно на НПЗ</h2>
 
 <h3>Магнитные байпасные уровнемеры</h3>
 <ul>
-<li><strong>NT-MBYEX:</strong> ATEX/IECEx, до PN40 / 200°C — для резервуарного парка</li>
-<li><strong>NT-MBYB:</strong> До PN100 / 350°C — для паровых барабанов котлов</li>
+<li><strong>NT-MBYEX:</strong> ATEX/IECEx, до PN40 / 200°C, для резервуарного парка</li>
+<li><strong>NT-MBYB:</strong> До PN100 / 350°C, для паровых барабанов котлов</li>
 </ul>
 
 <h2>Почему Net Flow</h2>
 <ul>
-<li>Турция — ближайший производитель, поставка от 2 недель</li>
-<li>Калибровка TÜRKAK — сертификат признаётся в СНГ</li>
+<li>Турция, ближайший производитель, поставка от 2 недель</li>
+<li>Калибровка TÜRKAK, сертификат признаётся в СНГ</li>
 <li>Прямая связь с инженерами, без посредников</li>
 <li>Конкурентные цены: дешевле европейских аналогов при сопоставимом качестве</li>
 </ul>
 
-<p>Запросите КП — подберём решение под ваши условия.</p>`
+<p>Запросите КП, подберём решение под ваши условия.</p>`
 },
 {slug:"urovnemery-magnitnye-neftehranilishha",
 title:"Замена стеклянных уровнемеров на магнитные: опыт нефтебаз и НПЗ",
@@ -577,23 +577,23 @@ category:"Уровнемеры",
 date:"2026-09-08",
 image:"assets/products/NT-MLI.png",
 content:`<h2>Проблема со стеклом</h2>
-<p>На любой нефтебазе или НПЗ — от <strong>Актау</strong> до <strong>Баку</strong> и от <strong>Атырау</strong> до <strong>Тбилиси</strong> — стеклянные указатели уровня стоят на сотнях ёмкостей. И регулярно создают проблемы:</p>
+<p>На любой нефтебазе или НПЗ, от <strong>Актау</strong> до <strong>Баку</strong> и от <strong>Атырау</strong> до <strong>Тбилиси</strong>, стеклянные указатели уровня стоят на сотнях ёмкостей. И регулярно создают проблемы:</p>
 <ul>
-<li>Термический шок — стекло трескается</li>
-<li>Прокладки стареют — начинается течь</li>
-<li>Отложения на стекле — уровень не видно</li>
-<li>Замена — только при остановке аппарата</li>
+<li>Термический шок: стекло трескается</li>
+<li>Прокладки стареют, начинается течь</li>
+<li>Отложения на стекле, уровень не видно</li>
+<li>Замена только при остановке аппарата</li>
 </ul>
-<p>С углеводородами под давлением любая утечка — это пожарный риск.</p>
+<p>С углеводородами под давлением любая утечка это пожарный риск.</p>
 
 <h2>Магнитный байпасный уровнемер</h2>
 <p>Поплавок с постоянным магнитом в закрытой камере. Магнит переворачивает двухцветные флажки на внешней шкале. Чёткая индикация с расстояния, полная герметичность, никакого стекла.</p>
 
 <h2>Модельный ряд</h2>
 <ul>
-<li><strong>NT-MBY:</strong> Стандарт — водяные баки, технологические ёмкости, PN16/150°C</li>
-<li><strong>NT-MBYEX:</strong> Взрывозащита ATEX/IECEx — топливо, нефтепродукты, PN40/200°C</li>
-<li><strong>NT-MBYB:</strong> Котельное исполнение — паровые барабаны, PN100/350°C</li>
+<li><strong>NT-MBY:</strong> Стандарт: водяные баки, технологические ёмкости, PN16/150°C</li>
+<li><strong>NT-MBYEX:</strong> Взрывозащита ATEX/IECEx: топливо, нефтепродукты, PN40/200°C</li>
+<li><strong>NT-MBYB:</strong> Котельное исполнение: паровые барабаны, PN100/350°C</li>
 </ul>
 
 <h2>Дополнительные опции</h2>
@@ -607,18 +607,18 @@ content:`<h2>Проблема со стеклом</h2>
 },
 {slug:"batareinye-rashodomery-udalennye-obekty",
 title:"Батарейные расходомеры для удалённых объектов водоснабжения в Центральной Азии",
-excerpt:"Скважины в степи, насосные без электричества, колодцы в 50 км от ближайшей подстанции — решение с 5-летним ресурсом батареи.",
+excerpt:"Скважины в степи, насосные без электричества, колодцы в 50 км от ближайшей подстанции: решение с 5-летним ресурсом батареи.",
 category:"Удалённый мониторинг",
 date:"2026-09-05",
 image:"assets/products/NT-VMF-BT.png",
 content:`<h2>Когда электричества нет</h2>
-<p>В <strong>казахстанской степи</strong>, в <strong>пустыне Каракум</strong>, в <strong>горных районах Кыргызстана</strong> и <strong>Таджикистана</strong> — сотни водозаборных скважин и насосных станций без стабильного электроснабжения. Солнечные панели воруют. Дизель-генераторы — дорого и ненадёжно.</p>
+<p>В <strong>казахстанской степи</strong>, в <strong>пустыне Каракум</strong>, в <strong>горных районах Кыргызстана</strong> и <strong>Таджикистана</strong>, сотни водозаборных скважин и насосных станций без стабильного электроснабжения. Солнечные панели воруют. Дизель-генераторы это дорого и ненадёжно.</p>
 <p>А расход воды учитывать нужно.</p>
 
 <h2>NT-VMF-BT</h2>
 <p>Батарейный электромагнитный расходомер:</p>
 <ul>
-<li>Литиевая батарея — до <strong>5 лет</strong> работы</li>
+<li>Литиевая батарея: до <strong>5 лет</strong> работы</li>
 <li>Интервал измерений: от 1 до 60 секунд (настраивается)</li>
 <li>Встроенный архив: 500 000+ записей</li>
 <li>GSM/GPRS модуль: автоматическая передача данных</li>
@@ -627,9 +627,9 @@ content:`<h2>Когда электричества нет</h2>
 </ul>
 
 <h2>Калибровка</h2>
-<p>Та же аккредитованная калибровка TÜRKAK, та же точность ±0,2%, тот же международно признанный сертификат. Единственное отличие — минимальное энергопотребление.</p>
+<p>Та же аккредитованная калибровка TÜRKAK, та же точность ±0,2%, тот же международно признанный сертификат. Единственное отличие: минимальное энергопотребление.</p>
 
-<p>Пришлите параметры ваших объектов — подготовим предложение.</p>`
+<p>Пришлите параметры ваших объектов, подготовим предложение.</p>`
 }
 ],
 
@@ -637,12 +637,12 @@ content:`<h2>Когда электричества нет</h2>
 tr:[
 {slug:"elektromanyetik-debimetre-secim-rehberi",
 title:"Elektromanyetik Debimetre Seçim Rehberi: Doğru Cihazı Nasıl Belirlersiniz?",
-excerpt:"Boru çapı, liner malzemesi, elektrot alaşımı, çıkış protokolü — her karar önemli. Kalibrasyon laboratuvarımızdan pratik bir rehber.",
+excerpt:"Boru çapı, liner malzemesi, elektrot alaşımı, çıkış protokolü... her karar önemli. Kalibrasyon laboratuvarımızdan pratik bir rehber.",
 category:"Uygulama Rehberi",
 date:"2026-09-14",
 image:"assets/products/NT-VMF.png",
 content:`<h2>Neden Elektromanyetik Debimetre?</h2>
-<p>İletken bir sıvıyı kapalı boruda ölçüyorsanız, elektromanyetik debimetre neredeyse her zaman en iyi seçimdir. Hareketli parça yok, basınç kaybı yok, bakım takvimi yok — yıllar boyunca güvenilir ölçüm.</p>
+<p>İletken bir sıvıyı kapalı boruda ölçüyorsanız, elektromanyetik debimetre neredeyse her zaman en iyi seçimdir. Hareketli parça yok, basınç kaybı yok, bakım takvimi yok, yıllar boyunca güvenilir ölçüm.</p>
 <p>Net Flow olarak her NT-VMF debimetreyi DN3'ten DN3000'e kadar Konya'daki tesisimizde üretiyoruz. Her biri <strong>TÜRKAK akrediteli ISO/IEC 17025 kalibrasyon rigimizde</strong> ±0,27% belirsizlikle kalibre ediliyor. Sertifika, EA ve ILAC karşılıklı tanıma anlaşmaları sayesinde 100'den fazla ülkede geçerli.</p>
 
 <h2>Boru Çapı (DN) Seçimi</h2>
@@ -657,15 +657,15 @@ content:`<h2>Neden Elektromanyetik Debimetre?</h2>
 <h2>Liner Seçimi</h2>
 <p>Liner, boru duvarı ile sıvı arasındaki yalıtım katmanıdır. Yanlış seçim yaparsanız cihaz aylar içinde arızalanır.</p>
 <ul>
-<li><strong>Sert kauçuk (ebonit):</strong> Ham su, atıksu — aşınmaya dayanıklı, DN50–DN3000</li>
-<li><strong>PTFE:</strong> Temiz su, kimyasallar — FDA uyumlu, DN3–DN300</li>
-<li><strong>PFA:</strong> Agresif kimyasallar — ozon, klor dioksit</li>
-<li><strong>Poliüretan:</strong> Aşındırıcı çamurlar — maden, arıtma çamuru</li>
+<li><strong>Sert kauçuk (ebonit):</strong> Ham su, atıksu; aşınmaya dayanıklı, DN50–DN3000</li>
+<li><strong>PTFE:</strong> Temiz su, kimyasallar; FDA uyumlu, DN3–DN300</li>
+<li><strong>PFA:</strong> Agresif kimyasallar (ozon, klor dioksit)</li>
+<li><strong>Poliüretan:</strong> Aşındırıcı çamurlar (maden, arıtma çamuru)</li>
 </ul>
 
 <h2>Elektrot Seçimi</h2>
 <ul>
-<li><strong>316L paslanmaz:</strong> Temiz su — standart, ekonomik</li>
+<li><strong>316L paslanmaz:</strong> Temiz su; standart, ekonomik</li>
 <li><strong>Hastelloy C-276:</strong> Klorlu su, deniz suyu, kimyasallar</li>
 <li><strong>Titanyum:</strong> Deniz suyu arıtma, güçlü oksitleyiciler</li>
 <li><strong>Tantal:</strong> Konsantre asitler (HCl, H₂SO₄)</li>
@@ -678,7 +678,7 @@ content:`<h2>Neden Elektromanyetik Debimetre?</h2>
 <li><strong>Puls çıkışı:</strong> Toplam hacim sayımı, parti kontrolü</li>
 </ul>
 
-<p>Uygulama detaylarınızı gönderin — boru çapı, akışkan, debi aralığı, basınç, sıcaklık — bir iş günü içinde yapılandırılmış teklif gönderelim.</p>`
+<p>Uygulama detaylarınızı gönderin (boru çapı, akışkan, debi aralığı, basınç, sıcaklık), bir iş günü içinde yapılandırılmış teklif gönderelim.</p>`
 },
 {slug:"turkak-kalibrasyon-neden-onemli",
 title:"TÜRKAK Akrediteli Kalibrasyon Neden Önemlidir?",
@@ -723,7 +723,7 @@ content:`<h2>Kayıp-Kaçak: Görmezden Gelinemeyecek Bir Sorun</h2>
 <p>Bazı şebekelerde gelir getirmeyen su (kayıp-kaçak) oranı <strong>%40'ın</strong> üzerine çıkıyor.</p>
 
 <h2>DMA (Bölgesel Ölçüm Alanı) Nedir?</h2>
-<p>Şebekeyi izole bölgelere ayırıp her bölgenin giriş-çıkışını elektromanyetik debimetre ile ölçmek — uluslararası kabul görmüş en etkili yöntemdir. Bölgeye giren su ile faturalanan su arasındaki fark, o bölgenin gerçek kayıp oranını verir.</p>
+<p>Şebekeyi izole bölgelere ayırıp her bölgenin giriş-çıkışını elektromanyetik debimetre ile ölçmek, uluslararası kabul görmüş en etkili yöntemdir. Bölgeye giren su ile faturalanan su arasındaki fark, o bölgenin gerçek kayıp oranını verir.</p>
 
 <h2>Neden Mekanik Sayaç Yetersiz?</h2>
 <ul>
@@ -752,16 +752,16 @@ category:"Seviye Ölçüm",
 date:"2026-09-08",
 image:"assets/products/NT-MLI.png",
 content:`<h2>Cam Göstergelerin Çağı Kapandı</h2>
-<p>Yüz yılı aşkın süredir kullanılan cam seviye göstergeleri, işlevlerini yerine getirir — ta ki getirmeyene kadar. Termal şok camı çatlatır. Contalar sızmaya başlar. Sıvı sütunu renk değiştirir ve üç metre öteden okunamaz hale gelir. Her değişimde proses durdurulur.</p>
+<p>Yüz yılı aşkın süredir kullanılan cam seviye göstergeleri, işlevlerini yerine getirir, ta ki getirmeyene kadar. Termal şok camı çatlatır. Contalar sızmaya başlar. Sıvı sütunu renk değiştirir ve üç metre öteden okunamaz hale gelir. Her değişimde proses durdurulur.</p>
 
 <h2>Manyetik Bypass Seviye Göstergesi</h2>
 <p>Tankın dışına monte edilen bir bypass odasında şamandıra yükselir ve alçalır. İçindeki sürekli mıknatıs, dış göstergedeki iki renkli bayrakları çevirir. Elektrik gerekmez, cam yoktur, proses sıvısı dışarı sızmaz. Sonuç: net, sürekli, güvenli seviye okuması.</p>
 
 <h2>Ürün Yelpazemiz</h2>
 <ul>
-<li><strong>NT-MBY:</strong> Standart — su tankları, proses kapları. PN16 / 150°C'ye kadar.</li>
-<li><strong>NT-MBYEX:</strong> Patlayıcı ortamlar — yakıt, solvent, petrokimya. ATEX/IECEx sertifikalı, PN40 / 200°C.</li>
-<li><strong>NT-MBYB:</strong> Kazan tipi — buhar kazanları, yüksek basınçlı kaplar. PN100 / 350°C, çift renkli gösterge.</li>
+<li><strong>NT-MBY:</strong> Standart: su tankları, proses kapları, PN16 / 150°C'ye kadar.</li>
+<li><strong>NT-MBYEX:</strong> Patlayıcı ortamlar: yakıt, solvent, petrokimya. ATEX/IECEx sertifikalı, PN40 / 200°C.</li>
+<li><strong>NT-MBYB:</strong> Kazan tipi: buhar kazanları, yüksek basınçlı kaplar, PN100 / 350°C, çift renkli gösterge.</li>
 </ul>
 
 <h2>Sipariş İçin Gerekenler</h2>
@@ -791,13 +791,13 @@ content:`<h2>Atıksu, Temiz Su Değildir</h2>
 <p>İçme suyu hattında mükemmel çalışan bir debimetre, atıksu arıtma tesisinde birkaç ay içinde çöker. Sıvı içinde askıda katı madde, bez parçaları, yağ, kum ve çözünmüş kimyasallar bulunur. Mekanik debimetreler tıkanır. Ultrasonik debimetreler havalandırılmış akışlarda sinyal kaybeder.</p>
 
 <h2>Elektromanyetik: Gerçekçi Tek Seçenek</h2>
-<p>Ölçüm prensibi sıvının içinde ne olduğuyla ilgilenmez — sadece elektrik iletip iletmediğiyle. Engel yok, tıkanacak impulse hattı yok, kirlenecek transdüser yok.</p>
+<p>Ölçüm prensibi sıvının içinde ne olduğuyla ilgilenmez; sadece elektrik iletip iletmediğiyle. Engel yok, tıkanacak impulse hattı yok, kirlenecek transdüser yok.</p>
 
 <h2>Malzeme Seçimi</h2>
 <h3>Liner</h3>
 <ul>
 <li><strong>Sert kauçuk (ebonit):</strong> Ham atıksu için standart. Kum aşınmasına dayanıklı, DN50–DN3000.</li>
-<li><strong>Poliüretan:</strong> Yüksek katı madde içeren aktif çamur hatları — kauçuğun 5 katı ömür.</li>
+<li><strong>Poliüretan:</strong> Yüksek katı madde içeren aktif çamur hatları (kauçuğun 5 katı ömür).</li>
 <li><strong>PTFE:</strong> Sadece arıtılmış çıkış suyu veya kimyasal dozlama hatları.</li>
 </ul>
 
