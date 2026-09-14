@@ -113,11 +113,25 @@ window.PMI18n = (function(){
     document.querySelectorAll('.navBlogLink').forEach(function(a){ a.setAttribute('href', blogHref); });
   }
 
+  function applyDataI18n(lang){
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var key = el.getAttribute('data-i18n');
+      if(!key) return;
+      var entry = D[key];
+      if(lang === 'en'){
+        el.textContent = key;
+      } else if(entry && entry[lang] != null){
+        el.textContent = entry[lang];
+      }
+    });
+  }
+
   function apply(){
     const lang = curLang();
     document.documentElement.lang = lang;
     document.documentElement.dir  = RTL.indexOf(lang) > -1 ? 'rtl' : 'ltr';
     walk(document.body, lang);
+    applyDataI18n(lang);
     placeholders(lang);
     rich(lang);
     markSwitchers(lang);
