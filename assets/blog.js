@@ -34,11 +34,11 @@ window.renderBlogCarousel = function(target){
   h += '</div>';
   target.innerHTML = h;
 
-  // Set animation duration based on item count
+  // Set animation duration based on item count (more items = slower scroll)
   var track = target.querySelector('.blog-ticker-track');
   if(track){
     var cardCount = posts.length;
-    track.style.animationDuration = (cardCount * 6) + 's';
+    track.style.animationDuration = (cardCount * 8) + 's';
   }
 };
 
