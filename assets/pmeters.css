@@ -690,10 +690,9 @@ html[dir=rtl] .quote-card .field,html[dir=rtl] .mini-form{text-align:right}
 @media(max-width:760px){.blog-grid{grid-template-columns:1fr}}
 
 /* ===== BLOG TICKER / CAROUSEL (homepage) ===== */
-.blog-ticker{overflow:hidden;position:relative;padding:24px 0 0}
-.blog-ticker::before,.blog-ticker::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none}
-.blog-ticker::before{left:0;background:linear-gradient(90deg,var(--bg-alt),transparent)}
-.blog-ticker::after{right:0;background:linear-gradient(270deg,var(--bg-alt),transparent)}
+.blog-ticker{overflow-x:auto;overflow-y:hidden;position:relative;padding:24px 0 0;cursor:grab;scrollbar-width:none;-ms-overflow-style:none}
+.blog-ticker::-webkit-scrollbar{display:none}
+.blog-ticker:active{cursor:grabbing}
 .blog-ticker-track{display:flex;gap:24px;width:max-content;animation:blogTicker 30s linear infinite}
 .blog-ticker:hover .blog-ticker-track{animation-play-state:paused}
 @keyframes blogTicker{0%{transform:translateX(0)}100%{transform:translateX(-33.333%)}}
@@ -716,7 +715,6 @@ html[dir=rtl] .blog-ticker-track{animation-name:blogTickerRTL}
   .blog-ticker-track{animation:none !important}
   .blog-ticker-card{flex:0 0 280px}
   .blog-ticker-img{height:160px}
-  .blog-ticker::before,.blog-ticker::after{width:20px}
 }
 
 /* Blog detail page */

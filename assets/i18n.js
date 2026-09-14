@@ -118,10 +118,18 @@ window.PMI18n = (function(){
       var key = el.getAttribute('data-i18n');
       if(!key) return;
       var entry = D[key];
-      if(lang === 'en'){
-        el.textContent = key;
-      } else if(entry && entry[lang] != null){
-        el.textContent = entry[lang];
+      var txt = (lang === 'en') ? key : (entry && entry[lang] != null ? entry[lang] : key);
+      // Only set if element has no child elements (avoid destroying SVG etc.)
+      if(!el.children.length){
+        el.textContent = txt;
+      } else {
+        // Find first text node child and update it
+        for(var i=0;i<el.childNodes.length;i++){
+          if(el.childNodes[i].nodeType===3 && el.childNodes[i].nodeValue.trim()){
+            el.childNodes[i].nodeValue = txt;
+            break;
+          }
+        }
       }
     });
   }
@@ -130,12 +138,19 @@ window.PMI18n = (function(){
     const lang = curLang();
     document.documentElement.lang = lang;
     document.documentElement.dir  = RTL.indexOf(lang) > -1 ? 'rtl' : 'ltr';
-    walk(document.body, lang);
+    // First translate data-i18n elements (reliable, explicit)
     applyDataI18n(lang);
+    // Then walk remaining text nodes
+    walk(document.body, lang);
     placeholders(lang);
     rich(lang);
     markSwitchers(lang);
     catalogLinks(lang);
+    // Re-render blog carousel for current language
+    if(window.renderBlogCarousel){
+      var bc = document.getElementById('blog-carousel');
+      if(bc) renderBlogCarousel(bc);
+    }
   }
 
   function set(lang){

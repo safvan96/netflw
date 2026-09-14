@@ -34,12 +34,41 @@ window.renderBlogCarousel = function(target){
   h += '</div>';
   target.innerHTML = h;
 
-  // Set animation duration based on item count (more items = slower scroll)
+  // Set animation duration based on item count
   var track = target.querySelector('.blog-ticker-track');
   if(track){
     var cardCount = posts.length;
     track.style.animationDuration = (cardCount * 8) + 's';
   }
+
+  // Mouse drag support (desktop)
+  var isDragging = false, startX = 0, scrollLeft = 0;
+  target.addEventListener('mousedown', function(e){
+    isDragging = true;
+    startX = e.pageX - target.offsetLeft;
+    scrollLeft = target.scrollLeft;
+    if(track) track.style.animationPlayState = 'paused';
+    e.preventDefault();
+  });
+  target.addEventListener('mousemove', function(e){
+    if(!isDragging) return;
+    var x = e.pageX - target.offsetLeft;
+    target.scrollLeft = scrollLeft - (x - startX);
+  });
+  target.addEventListener('mouseup', function(){ isDragging = false; });
+  target.addEventListener('mouseleave', function(){ isDragging = false; });
+
+  // Touch drag support
+  var touchStartX = 0, touchScrollLeft = 0;
+  target.addEventListener('touchstart', function(e){
+    touchStartX = e.touches[0].pageX;
+    touchScrollLeft = target.scrollLeft;
+    if(track) track.style.animationPlayState = 'paused';
+  }, {passive:true});
+  target.addEventListener('touchmove', function(e){
+    var x = e.touches[0].pageX;
+    target.scrollLeft = touchScrollLeft - (x - touchStartX);
+  }, {passive:true});
 };
 
 function esc(s){
