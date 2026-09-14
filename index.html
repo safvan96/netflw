@@ -383,10 +383,10 @@
       <span class="eyebrow eyebrow--center" data-i18n="Resources & Insights">Resources & Insights</span>
       <h2 data-i18n="Latest articles from our laboratory & field">Latest articles from our laboratory & field</h2>
     </div>
-    <div class="blog-grid" id="blog-preview"></div>
-    <div style="text-align:center;margin-top:36px">
-      <a href="blog-en.html" class="btn btn-ghost navBlogLink" data-i18n="View all articles →">View all articles →</a>
-    </div>
+  </div>
+  <div class="blog-ticker" id="blog-carousel"></div>
+  <div style="text-align:center;margin-top:28px">
+    <a href="blog-en.html" class="btn btn-ghost navBlogLink" data-i18n="View all articles →">View all articles →</a>
   </div>
 </section>
 
@@ -817,7 +817,7 @@ const PM_TWEAKS = /*EDITMODE-BEGIN*/{
 <script src="assets/blog-data.js"></script>
 <script src="assets/blog.js"></script>
 <script>
-(function(){var t=document.getElementById('blog-preview');if(t&&window.renderBlogPreview)renderBlogPreview(t,3);})();
+(function(){var t=document.getElementById('blog-carousel');if(t&&window.renderBlogCarousel)renderBlogCarousel(t);})();
 </script>
 <script src="assets/quote-basket.js"></script>
 <script>

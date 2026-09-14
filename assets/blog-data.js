@@ -9,11 +9,11 @@
 window.BLOG_POSTS={
 en:[
 {slug:"select-electromagnetic-flow-meter-water-treatment",
-title:"How to Select an Electromagnetic Flow Meter for Water Treatment Plants",
-excerpt:"Choosing the right mag meter depends on pipe size, liner compatibility, and output protocol. This guide walks you through every decision point from DN selection to SCADA integration.",
+title:"How to Select the Right Electromagnetic Flow Meter for Water Treatment Plants",
+excerpt:"DN selection, liner compatibility, electrode materials, and SCADA integration — a complete guide for water utility engineers planning flow meter procurement.",
 category:"Application Guide",
 date:"2026-09-14",
-image:"",
+image:"assets/products/NT-VMF.png",
 content:`<h2>Why Electromagnetic Flow Meters Dominate Water Treatment</h2>
 <p>In municipal water treatment, measurement accuracy directly affects chemical dosing, energy costs, and regulatory compliance. Electromagnetic flow meters — often called mag meters — have become the default technology because they offer <strong>no moving parts</strong>, <strong>zero pressure loss</strong>, and reliable readings even on water containing suspended solids or air bubbles.</p>
 <p>At Net Flow, every NT-VMF electromagnetic flow meter is calibrated on our <strong>TÜRKAK-accredited ISO/IEC 17025 rig</strong> with ±0.27% uncertainty before it leaves the factory. The certificate is traceable and recognised in 100+ countries through EA & ILAC mutual recognition.</p>
@@ -60,12 +60,12 @@ content:`<h2>Why Electromagnetic Flow Meters Dominate Water Treatment</h2>
 <h2>Summary</h2>
 <p>Selecting the right electromagnetic flow meter is not complicated — but the consequences of choosing wrong (inaccurate dosing, failed audits, excessive maintenance) are expensive. Start with the pipe size, match the liner and electrode to your media, and choose an output that fits your control system. If you send us your application details, we can configure and quote within one business day.</p>`
 },
-{slug:"reducing-non-revenue-water-loss-accurate-flow-metering",
-title:"Reducing Non-Revenue Water Loss with Accurate Flow Metering",
-excerpt:"Non-revenue water can exceed 40% in developing networks. Accurate district metering with electromagnetic flow meters is the first step to identifying and fixing losses.",
+{slug:"reducing-non-revenue-water-loss-africa-middle-east",
+title:"How African & Middle Eastern Utilities Cut 40% Water Loss with Accurate Flow Metering",
+excerpt:"Non-revenue water exceeds 40% across Sub-Saharan Africa and parts of the Middle East. District metering with electromagnetic flow meters is the proven solution to identify and fix losses.",
 category:"Industry Insight",
 date:"2026-09-12",
-image:"",
+image:"assets/products/NT-VMF-W.png",
 content:`<h2>The Scale of the Problem</h2>
 <p>Non-revenue water (NRW) — water that is produced and lost before reaching the customer — is one of the biggest challenges facing water utilities worldwide. In many networks across <strong>Sub-Saharan Africa, the Middle East, and Central Asia</strong>, NRW rates exceed <strong>40%</strong>. That means nearly half of all treated water never generates revenue.</p>
 <p>The causes are well-known: physical leaks, illegal connections, meter inaccuracy, and unbilled authorized consumption. But before you can fix losses, you need to <strong>measure them accurately</strong>.</p>
@@ -91,12 +91,12 @@ content:`<h2>The Scale of the Problem</h2>
 <p>If a utility reduces NRW from 40% to 25% in a network producing 100,000 m³/day, it recovers <strong>15,000 m³/day</strong> of previously lost water. At a conservative tariff, that's significant recovered revenue — often paying for the entire DMA metering programme within 12–18 months.</p>
 <p>Accurate flow metering is not a cost — it's an investment with measurable returns.</p>`
 },
-{slug:"magnetic-bypass-level-indicators-complete-guide",
-title:"Magnetic Bypass Level Indicators: A Complete Guide for Storage Tanks",
-excerpt:"From standard atmospheric tanks to high-pressure boiler drums, magnetic bypass level indicators provide safe, reliable visual level reading without glass gauges.",
-category:"Technical",
+{slug:"magnetic-bypass-level-indicators-storage-tanks",
+title:"Magnetic Bypass Level Indicators: Replacing Glass Gauges in Oil, Gas & Chemical Storage",
+excerpt:"From atmospheric tanks to high-pressure boiler drums, magnetic bypass level indicators eliminate the risks of glass gauges while providing safe, reliable continuous level reading.",
+category:"Technical Guide",
 date:"2026-09-10",
-image:"",
+image:"assets/products/NT-MLI.png",
 content:`<h2>What Is a Magnetic Bypass Level Indicator?</h2>
 <p>A magnetic bypass level indicator (also called a magnetic level gauge or MLG) is a device mounted externally on a tank or vessel. A float inside a bypass chamber rises and falls with the liquid level, and its built-in magnet flips coloured flags or rollers on the external indicator — providing a clear, <strong>continuous visual level reading</strong> without any electrical power.</p>
 <p>Unlike sight glass gauges, magnetic bypass indicators have <strong>no fragile glass tubes</strong>, no risk of leakage, and can operate at pressures and temperatures far beyond what glass can handle.</p>
@@ -133,11 +133,11 @@ content:`<h2>What Is a Magnetic Bypass Level Indicator?</h2>
 ],
 fr:[
 {slug:"choisir-debitmetre-reseaux-eau-afrique-ouest",
-title:"Comment choisir un débitmètre pour les réseaux d'eau en Afrique de l'Ouest",
-excerpt:"Les réseaux d'eau en Afrique de l'Ouest font face à des défis uniques : températures élevées, eau chargée en sédiments et infrastructures vieillissantes. Voici comment sélectionner le bon débitmètre.",
-category:"Guide d'application",
+title:"Quel débitmètre pour les réseaux d'eau au Sénégal, Cameroun et Côte d'Ivoire ?",
+excerpt:"Températures extrêmes, eaux chargées en sédiments, coupures électriques — les réseaux d'eau ouest-africains exigent des débitmètres robustes. Guide de sélection complet.",
+category:"Guide Afrique de l'Ouest",
 date:"2026-09-14",
-image:"",
+image:"assets/products/NT-VMF-BT.png",
 content:`<h2>Les défis spécifiques des réseaux d'eau ouest-africains</h2>
 <p>Les réseaux de distribution d'eau au <strong>Sénégal, en Côte d'Ivoire, au Cameroun, en Guinée et au Burkina Faso</strong> partagent des défis communs : des eaux de surface chargées en matières en suspension, des températures ambiantes pouvant dépasser 45°C, et des réseaux souvent anciens avec des taux de pertes d'eau non comptabilisée (ENC) supérieurs à 40%.</p>
 <p>Le choix du débitmètre est donc crucial. Un appareil inadapté se dégrade rapidement, perd en précision, et fausse les bilans hydrauliques.</p>
@@ -175,12 +175,12 @@ content:`<h2>Les défis spécifiques des réseaux d'eau ouest-africains</h2>
 
 <p>Envoyez-nous les détails de votre application (fluide, diamètre, plage de débit) et nous vous enverrons un devis configuré sous un jour ouvré.</p>`
 },
-{slug:"mesure-debit-industrie-miniere-guide-pratique",
-title:"Mesure de débit dans l'industrie minière : guide pratique",
-excerpt:"Du slurry de cuivre aux boues de ciment, la mesure de débit dans le secteur minier exige des instruments robustes. Voici les points clés pour un choix optimal.",
-category:"Guide technique",
+{slug:"mesure-debit-mines-bauxite-cuivre-phosphate-afrique",
+title:"Mines de bauxite, cuivre et phosphate en Afrique : quel débitmètre résiste aux slurries ?",
+excerpt:"Du slurry de bauxite en Guinée aux boues de phosphate au Sénégal, la mesure de débit dans le secteur minier africain exige des instruments ultra-robustes.",
+category:"Industrie Minière Afrique",
 date:"2026-09-11",
-image:"",
+image:"assets/products/NT-VMF-P.png",
 content:`<h2>Les contraintes de mesure en milieu minier</h2>
 <p>L'industrie minière en <strong>Guinée (bauxite), au Sénégal (phosphates), au Cameroun (ciment) et en RD Congo (cuivre/cobalt)</strong> utilise des liquides extrêmement abrasifs : slurries chargés en particules solides, boues de forage, eaux acides de drainage minier, et pulpes de flottation.</p>
 <p>Un débitmètre classique ne survit pas longtemps dans ces conditions. Le revêtement s'use, les électrodes se corrodent, et la précision chute en quelques mois.</p>
@@ -217,12 +217,12 @@ content:`<h2>Les contraintes de mesure en milieu minier</h2>
 
 <p>Tous nos débitmètres sont étalonnés TÜRKAK avec certificat traçable, reconnu internationalement. Contactez-nous avec vos paramètres d'application pour recevoir un devis configuré.</p>`
 },
-{slug:"indicateurs-niveau-magnetiques-industrie-petroliere",
-title:"Indicateurs de niveau magnétiques pour l'industrie pétrolière et gazière",
-excerpt:"Dans les raffineries et les dépôts pétroliers d'Afrique du Nord, les indicateurs de niveau magnétiques remplacent les hublots en verre pour plus de sécurité et fiabilité.",
-category:"Guide technique",
+{slug:"indicateurs-niveau-magnetiques-raffineries-algerie-maroc-tunisie",
+title:"Indicateurs de niveau magnétiques pour les raffineries en Algérie, Maroc et Tunisie",
+excerpt:"Remplacer les hublots en verre dangereux par des indicateurs magnétiques certifiés ATEX — la solution sécuritaire pour l'industrie pétrolière nord-africaine.",
+category:"Pétrole & Gaz Afrique du Nord",
 date:"2026-09-08",
-image:"",
+image:"assets/products/NT-MLI-EX.png",
 content:`<h2>Pourquoi remplacer les indicateurs à verre ?</h2>
 <p>Dans les installations pétrolières et gazières d'<strong>Algérie (Sonatrach, raffineries de Skikda et Arzew), du Maroc et de Tunisie</strong>, les indicateurs de niveau à tube de verre sont encore largement utilisés sur les réservoirs de stockage, les séparateurs et les ballons de vapeur.</p>
 <p>Ces instruments présentent des risques bien connus :</p>
@@ -261,12 +261,12 @@ content:`<h2>Pourquoi remplacer les indicateurs à verre ?</h2>
 }
 ],
 ar:[
-{slug:"flow-measurement-oil-gas-arab-region",
-title:"قياس التدفق في صناعة النفط والغاز في المنطقة العربية",
-excerpt:"من حقول العراق إلى مصافي الخليج، تعتمد صناعة النفط والغاز على أجهزة قياس تدفق دقيقة وموثوقة. دليل شامل لاختيار الجهاز المناسب.",
-category:"دليل تطبيقي",
+{slug:"flow-measurement-oil-gas-iraq-kuwait-bahrain",
+title:"قياس التدفق في صناعة النفط والغاز — العراق، الكويت، البحرين وعُمان",
+excerpt:"من حقول النفط العراقية إلى مصافي الخليج، أجهزة قياس التدفق الكهرومغناطيسية من Net Flow مصممة لأقسى الظروف التشغيلية.",
+category:"النفط والغاز",
 date:"2026-09-14",
-image:"",
+image:"assets/products/NT-VMF-S.png",
 content:`<h2>متطلبات القياس في منشآت النفط والغاز</h2>
 <p>تعتمد صناعة النفط والغاز في <strong>العراق والكويت والبحرين وعُمان والأردن</strong> على أجهزة قياس التدفق في مراحل متعددة: من مياه الحقن في الآبار إلى مياه التبريد في المصافي ومن طين الحفر إلى المياه المعالجة.</p>
 <p>مقاييس التدفق الكهرومغناطيسية من Net Flow مصممة خصيصاً لهذه التطبيقات، حيث تقيس أي سائل موصل كهربائياً <strong>بدون أي أجزاء متحركة</strong>، مما يعني صفر صيانة ميكانيكية وعمر افتراضي يتجاوز 15 عاماً.</p>
@@ -292,12 +292,12 @@ content:`<h2>متطلبات القياس في منشآت النفط والغاز
 <p>كل جهاز من Net Flow يتم معايرته في مختبرنا <strong>المعتمد من TÜRKAK وفق ISO/IEC 17025</strong> بعدم يقين ±0.27%. الشهادة معترف بها في جميع الدول العربية من خلال اتفاقيات الاعتراف المتبادل EA و ILAC.</p>
 <p>أرسل لنا تفاصيل تطبيقك (الوسط، قطر الأنبوب، نطاق التدفق) وسنرسل لك عرض أسعار مُهيأ خلال يوم عمل واحد.</p>`
 },
-{slug:"water-distribution-metering-arab-cities",
-title:"قياس التدفق في شبكات المياه البلدية في المدن العربية",
-excerpt:"مع تزايد الطلب على المياه في المنطقة العربية، يصبح القياس الدقيق أساسياً لتقليل الفاقد وتحسين الكفاءة التشغيلية.",
-category:"رؤية صناعية",
+{slug:"water-metering-jordan-egypt-saudi-municipal-networks",
+title:"قياس التدفق في شبكات المياه البلدية — الأردن، مصر، السعودية",
+excerpt:"مع فقدان أكثر من 50% من المياه في بعض الشبكات العربية، القياس الدقيق هو الخطوة الأولى لتقليل الهدر وتوفير الملايين.",
+category:"شبكات المياه",
 date:"2026-09-11",
-image:"",
+image:"assets/products/NT-VMF-I.png",
 content:`<h2>تحديات شبكات المياه في المنطقة العربية</h2>
 <p>تواجه شبكات المياه في <strong>الأردن والعراق ومصر والسعودية</strong> تحديات فريدة: ندرة الموارد المائية، ارتفاع درجات الحرارة، وشبكات توزيع ممتدة جغرافياً مع نسب فاقد مرتفعة.</p>
 <p>في بعض الشبكات، يتجاوز الفاقد (المياه غير المدرة للدخل) <strong>50%</strong> من إجمالي الإنتاج. القياس الدقيق هو الخطوة الأولى لتحديد مواقع التسرب وتقليل الهدر.</p>
@@ -324,12 +324,12 @@ content:`<h2>تحديات شبكات المياه في المنطقة العرب
 
 <p>تواصل معنا لتلقي عرض أسعار مُخصص لمشروعك.</p>`
 },
-{slug:"chemical-process-instrumentation-arab-plants",
-title:"أجهزة القياس لمصانع الكيماويات في المنطقة العربية",
-excerpt:"من مصانع الأسمدة في قطر إلى مجمعات البتروكيماويات في الكويت، دليل اختيار أجهزة قياس التدفق والمستوى المناسبة.",
-category:"دليل تقني",
+{slug:"chemical-plant-instrumentation-qatar-kuwait-bahrain",
+title:"أجهزة القياس لمصانع الكيماويات والبتروكيماويات — قطر، الكويت، البحرين",
+excerpt:"من مصانع الأسمدة في قطر إلى مجمعات EQUATE في الكويت — دليل اختيار أجهزة قياس التدفق والمستوى المقاومة للتآكل الكيميائي.",
+category:"كيماويات",
 date:"2026-09-08",
-image:"",
+image:"assets/products/NT-MLI-BR.png",
 content:`<h2>بيئة القياس في المصانع الكيماوية</h2>
 <p>تعمل مصانع الكيماويات والبتروكيماويات في <strong>قطر (QAFCO) والكويت (EQUATE) والبحرين والسعودية</strong> مع سوائل شديدة التآكل: أحماض، قواعد، مذيبات، ومحاليل ملحية مركزة.</p>
 <p>يتطلب ذلك أجهزة قياس بمواد خاصة تقاوم التآكل الكيميائي مع الحفاظ على الدقة المطلوبة.</p>
@@ -369,12 +369,12 @@ content:`<h2>بيئة القياس في المصانع الكيماوية</h2>
 }
 ],
 ru:[
-{slug:"vodosnabzhenie-centralnaya-aziya-rashodomery",
-title:"Электромагнитные расходомеры для систем водоснабжения Центральной Азии",
-excerpt:"Водные сети Казахстана, Узбекистана и Туркменистана сталкиваются с суровым климатом и устаревшей инфраструктурой. Как выбрать надёжный расходомер.",
-category:"Руководство",
+{slug:"vodosnabzhenie-kazahstan-uzbekistan-turkmenistan",
+title:"Электромагнитные расходомеры для водоснабжения Казахстана, Узбекистана и Туркменистана",
+excerpt:"Экстремальный климат от −40°C до +50°C, песчаные взвеси, устаревшие сети — как выбрать расходомер, который выдержит условия Центральной Азии.",
+category:"Водоснабжение Центральная Азия",
 date:"2026-09-14",
-image:"",
+image:"assets/products/NT-VMF.png",
 content:`<h2>Особенности систем водоснабжения региона</h2>
 <p>Системы водоснабжения <strong>Казахстана, Узбекистана, Туркменистана, Кыргызстана и Таджикистана</strong> работают в экстремальных условиях: температуры от −40°C зимой до +50°C летом, высокая минерализация воды, песчаные взвеси в источниках поверхностного водозабора.</p>
 <p>Механические расходомеры в таких условиях быстро выходят из строя — крыльчатки заклинивают от песка, подшипники изнашиваются, точность падает уже через 6–12 месяцев.</p>
@@ -413,12 +413,12 @@ content:`<h2>Особенности систем водоснабжения ре
 </ul>
 <p>Отправьте нам параметры вашего приложения для получения коммерческого предложения в течение одного рабочего дня.</p>`
 },
-{slug:"rashodomery-gornodobycha-cement",
-title:"Расходомеры для горнодобывающей и цементной промышленности",
-excerpt:"Измерение расхода абразивных суспензий в горнодобыче и цементном производстве требует специализированных решений. Обзор технологий и рекомендации.",
-category:"Техническое руководство",
+{slug:"rashodomery-gornodoba-kazminerals-navoi-talco",
+title:"Расходомеры для горнодобычи: KazMinerals, Навоийский ГМК, TALCO — подбор под суспензии",
+excerpt:"Рудные пульпы с 60% твёрдых частиц, кислотный дренаж, цементные шламы — высокочастотные расходомеры Net Flow решают задачи, с которыми стандартные приборы не справляются.",
+category:"Горнодобыча СНГ",
 date:"2026-09-10",
-image:"",
+image:"assets/products/NT-VMF-M.png",
 content:`<h2>Вызовы измерения в горнодобыче</h2>
 <p>Горнодобывающие предприятия <strong>Казахстана (KazMinerals), Таджикистана (TALCO), Узбекистана (Навоийский ГМК)</strong> и цементные заводы региона работают с жидкостями, содержащими до 60% твёрдых частиц — рудные пульпы, шламы, цементные суспензии.</p>
 <p>Стандартные расходомеры с частотой возбуждения 6,25 Гц не справляются с электрохимическим шумом, генерируемым абразивными суспензиями. Сигнал становится нестабильным, показания «плавают».</p>
@@ -453,12 +453,12 @@ content:`<h2>Вызовы измерения в горнодобыче</h2>
 
 <p>Свяжитесь с нами для подбора оптимального решения под ваше применение.</p>`
 },
-{slug:"neftepererabotka-kavkaz-pribory",
-title:"Приборы для нефтеперерабатывающих заводов Кавказа и Каспийского региона",
-excerpt:"Расходомеры и уровнемеры для нефтеперерабатывающих предприятий Азербайджана, Грузии и Туркменистана — подбор, установка, сертификация.",
-category:"Отраслевой обзор",
+{slug:"neftepererabotka-azerbajdzhan-gruziya-turkmenistan",
+title:"Приборы для НПЗ Азербайджана, Грузии и Туркменистана — расходомеры и уровнемеры ATEX",
+excerpt:"SOCAR, ТНПЗ, грузинские НПЗ — расходомеры и магнитные уровнемеры с сертификацией ATEX/IECEx для нефтеперерабатывающих заводов Кавказа и Каспия.",
+category:"Нефтепереработка Кавказ",
 date:"2026-09-06",
-image:"",
+image:"assets/products/NT-MLI-EX.png",
 content:`<h2>Нефтепереработка в Каспийском регионе</h2>
 <p>Нефтеперерабатывающие заводы <strong>Азербайджана (SOCAR), Туркменистана (ТНПЗ) и Грузии</strong> нуждаются в надёжных приборах для измерения расхода и уровня в различных точках технологического процесса.</p>
 
@@ -493,7 +493,7 @@ title:"Elektromanyetik Debimetre Secim Rehberi: Dogru Cihazi Nasil Belirlersiniz
 excerpt:"Boru capi, liner secimi, elektrot malzemesi ve cikis protokolu — dogru elektromanyetik debimetreyi secmek icin bilmeniz gereken her sey.",
 category:"Uygulama Rehberi",
 date:"2026-09-14",
-image:"",
+image:"assets/products/NT-VMF.png",
 content:`<h2>Neden Elektromanyetik Debimetre?</h2>
 <p>Elektromanyetik debimetreler, iletken sivilarin hacimsel debi olcumunde en yaygin kullanilan teknolojidir. Faraday'in elektromanyetik induksiyon yasasina dayanir: manyetik alan icinden gecen iletken sivi, akis hizina orantili bir gerilim uretir.</p>
 <p>Net Flow NT-VMF serisi, DN3'ten DN3000'e kadar tum boru caplarini kapsar ve <strong>TURKAK akrediteli ISO/IEC 17025 laboratuvarimizda</strong> ±0,27% belirsizlikle kalibre edilir.</p>
@@ -537,7 +537,7 @@ title:"TURKAK Akrediteli Kalibrasyon Neden Onemlidir?",
 excerpt:"ISO/IEC 17025 akreditasyonu, kalibrasyon sertifikanizin 100'den fazla ulkede gecerli olmasini saglar. Iste detaylar.",
 category:"Teknik",
 date:"2026-09-11",
-image:"",
+image:"assets/products/NT-RCS-3100-2100.png",
 content:`<h2>Kalibrasyon Nedir?</h2>
 <p>Kalibrasyon, bir olcum cihazinin gosterdigi degerin, bilinen bir referans standarda gore ne kadar saptigini belirleme islemidir. Sonuc, bir <strong>kalibrasyon sertifikasi</strong> ile belgelenir.</p>
 
@@ -569,7 +569,7 @@ title:"Endustriyel Seviye Olcum Yontemleri: Manyetik Bypass vs Diger Teknolojile
 excerpt:"Tank ve kaplarda sivi seviye olcumu icin manyetik bypass, ultrasonik, radar ve kapasitif yontemlerin karsilastirilmasi.",
 category:"Teknik",
 date:"2026-09-08",
-image:"",
+image:"assets/products/NT-MLI.png",
 content:`<h2>Seviye Olcum Neden Onemli?</h2>
 <p>Endustriyel tesislerde tanklardaki sivi seviyesinin dogru olculmesi, uretim surekliligi, guvenlik ve stok yonetimi icin kritiktir. Yanlis seviye okumasi, tank tasmasina, pompa hasarina veya uretim duraklarina yol acabilir.</p>
 
