@@ -69,6 +69,19 @@ window.renderBlogCarousel = function(target){
     var x = e.touches[0].pageX;
     target.scrollLeft = touchScrollLeft - (x - touchStartX);
   }, {passive:true});
+
+  // Arrow buttons
+  var arrowL = document.getElementById('blogArrowL');
+  var arrowR = document.getElementById('blogArrowR');
+  var scrollAmt = 370;
+  if(arrowL) arrowL.addEventListener('click', function(){
+    if(track) track.style.animationPlayState = 'paused';
+    target.scrollBy({left: -scrollAmt, behavior:'smooth'});
+  });
+  if(arrowR) arrowR.addEventListener('click', function(){
+    if(track) track.style.animationPlayState = 'paused';
+    target.scrollBy({left: scrollAmt, behavior:'smooth'});
+  });
 };
 
 function esc(s){
@@ -84,9 +97,15 @@ function esc(s){
   if(!container) return;
 
   function renderList(){
+    var UI = {
+      eyebrow:{en:'Resources & Insights',tr:'Kaynaklar & İçgörüler',ar:'الموارد والرؤى',ru:'Ресурсы и аналитика',fr:'Ressources & perspectives'},
+      heading:{en:'Latest articles from our laboratory & field',tr:'Laboratuvarımızdan ve sahadan son yazılar',ar:'أحدث المقالات من مختبرنا والميدان',ru:'Последние статьи из нашей лаборатории и с объектов',fr:'Derniers articles de notre laboratoire et du terrain'},
+      readMore:{en:'Read more →',tr:'Devamını oku →',ar:'اقرأ المزيد →',ru:'Читать далее →',fr:'Lire la suite →'},
+      backTo:{en:'← Back to articles',tr:'← Yazılara dön',ar:'← العودة إلى المقالات',ru:'← Назад к статьям',fr:'← Retour aux articles'}
+    };
     var h = '<div class="sec-head sec-head--center reveal">';
-    h += '<span class="eyebrow eyebrow--center" data-i18n="Resources & Insights">Resources & Insights</span>';
-    h += '<h2 data-i18n="Latest articles from our laboratory & field">Latest articles from our laboratory & field</h2>';
+    h += '<span class="eyebrow eyebrow--center">'+(UI.eyebrow[lang]||UI.eyebrow.en)+'</span>';
+    h += '<h2>'+(UI.heading[lang]||UI.heading.en)+'</h2>';
     h += '</div>';
     h += '<div class="blog-grid" style="margin-top:42px">';
     posts.forEach(function(p){
@@ -104,7 +123,7 @@ function esc(s){
       h += '<span class="blog-tag">'+esc(p.category)+'</span>';
       h += '<h3><a href="#'+p.slug+'" style="color:inherit;text-decoration:none">'+esc(p.title)+'</a></h3>';
       h += '<p>'+esc(p.excerpt)+'</p>';
-      h += '<a href="#'+p.slug+'" class="blog-card-link" data-i18n="Read more →">Read more →</a>';
+      h += '<a href="#'+p.slug+'" class="blog-card-link">'+(UI.readMore[lang]||UI.readMore.en)+'</a>';
       h += '</div>';
       h += '</article>';
     });
@@ -119,7 +138,8 @@ function esc(s){
     for(var i=0;i<posts.length;i++){if(posts[i].slug===slug){post=posts[i];break;}}
     if(!post){renderList();return;}
 
-    var h = '<a href="#" class="blog-back" onclick="location.hash=\'\';return false;" data-i18n="← Back to articles">← Back to articles</a>';
+    var backText = {en:'← Back to articles',tr:'← Yazılara dön',ar:'← العودة إلى المقالات',ru:'← Назад к статьям',fr:'← Retour aux articles'};
+    var h = '<a href="#" class="blog-back" onclick="location.hash=\'\';return false;">'+(backText[lang]||backText.en)+'</a>';
     h += '<article class="blog-detail">';
     h += '<span class="blog-tag">'+esc(post.category)+'</span>';
     h += '<h1>'+esc(post.title)+'</h1>';

@@ -104,13 +104,29 @@ window.PMI18n = (function(){
 
   const CATALOG_MAP = {en:'katalog-en.html',tr:'katalog.html',ar:'katalog-ar.html',ru:'katalog-ru.html',fr:'katalog-fr.html'};
   const BLOG_MAP = {en:'blog-en.html',tr:'blog.html',ar:'blog-ar.html',ru:'blog-ru.html',fr:'blog-fr.html'};
+
+  const UI_STRINGS = {
+    catalogTitle:{en:'Download Our Catalog',tr:'Kataloğumuzu İndirin',ar:'حمّل كتالوجنا',ru:'Скачайте наш каталог',fr:'Téléchargez notre catalogue'},
+    catalogDesc:{en:'Get our complete product catalog with specifications for all 19 instruments.',tr:'19 ürünümüzün tüm teknik özelliklerini içeren kataloğumuzu indirin.',ar:'احصل على كتالوج منتجاتنا الكامل مع المواصفات لجميع الأجهزة الـ 19.',ru:'Полный каталог с характеристиками всех 19 приборов.',fr:'Notre catalogue complet avec les spécifications de nos 19 instruments.'},
+    catalogBtn:{en:'Download Catalog (PDF)',tr:'Kataloğu İndir (PDF)',ar:'تنزيل الكتالوج (PDF)',ru:'Скачать каталог (PDF)',fr:'Télécharger le catalogue (PDF)'},
+    blogEyebrow:{en:'Resources & Insights',tr:'Kaynaklar & İçgörüler',ar:'الموارد والرؤى',ru:'Ресурсы и аналитика',fr:'Ressources & perspectives'},
+    blogHeading:{en:'Latest articles from our laboratory & field',tr:'Laboratuvarımızdan ve sahadan son yazılar',ar:'أحدث المقالات من مختبرنا والميدان',ru:'Последние статьи из нашей лаборатории и с объектов',fr:'Derniers articles de notre laboratoire et du terrain'},
+    blogViewAll:{en:'View all articles →',tr:'Tüm yazıları gör →',ar:'عرض جميع المقالات →',ru:'Все статьи →',fr:'Voir tous les articles →'},
+    navCatalog:{en:'Catalog',tr:'Katalog',ar:'الكتالوج',ru:'Каталог',fr:'Catalogue'}
+  };
+
   function catalogLinks(lang){
     var href = CATALOG_MAP[lang] || CATALOG_MAP.en;
     document.querySelectorAll('.navCatalogLink').forEach(function(a){ a.setAttribute('href', href); });
     var el = document.getElementById('navCatalogLink');
-    if(el) el.setAttribute('href', href);
+    if(el){ el.setAttribute('href', href); el.textContent = UI_STRINGS.navCatalog[lang] || UI_STRINGS.navCatalog.en; }
     var blogHref = BLOG_MAP[lang] || BLOG_MAP.en;
     document.querySelectorAll('.navBlogLink').forEach(function(a){ a.setAttribute('href', blogHref); });
+    // Translate hardcoded UI elements
+    Object.keys(UI_STRINGS).forEach(function(id){
+      var node = document.getElementById(id);
+      if(node) node.textContent = UI_STRINGS[id][lang] || UI_STRINGS[id].en;
+    });
   }
 
   function applyDataI18n(lang){

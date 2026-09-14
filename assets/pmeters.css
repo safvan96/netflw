@@ -693,6 +693,11 @@ html[dir=rtl] .quote-card .field,html[dir=rtl] .mini-form{text-align:right}
 .blog-ticker{overflow-x:auto;overflow-y:hidden;position:relative;padding:24px 0 0;cursor:grab;scrollbar-width:none;-ms-overflow-style:none}
 .blog-ticker::-webkit-scrollbar{display:none}
 .blog-ticker:active{cursor:grabbing}
+.blog-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.92);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink);transition:background .2s,box-shadow .2s}
+.blog-arrow:hover{background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.blog-arrow-left{left:12px}
+.blog-arrow-right{right:12px}
+@media(max-width:760px){.blog-arrow{width:36px;height:36px}.blog-arrow-left{left:6px}.blog-arrow-right{right:6px}}
 .blog-ticker-track{display:flex;gap:24px;width:max-content;animation:blogTicker 30s linear infinite}
 .blog-ticker:hover .blog-ticker-track{animation-play-state:paused}
 @keyframes blogTicker{0%{transform:translateX(0)}100%{transform:translateX(-33.333%)}}

@@ -55,7 +55,7 @@
           </button>
         </div>
         <a href="products.html#industries">Industries</a>
-        <a href="katalog-en.html" data-i18n="Catalog" id="navCatalogLink">Catalog</a>
+        <a href="katalog-en.html" id="navCatalogLink" class="navCatalogLink" data-i18n-skip>Catalog</a>
         <a href="blog-en.html" class="navBlogLink" data-i18n="Blog">Blog</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -364,12 +364,12 @@
     <!-- Catalog Download -->
     <div class="reveal" style="margin-top:40px;padding:32px;background:var(--navy-900);border-radius:var(--r-lg);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px">
       <div>
-        <h3 style="color:#fff;font-size:20px;margin:0" data-i18n="Download Our Catalog">Download Our Catalog</h3>
-        <p style="color:#9fb1c4;font-size:14px;margin-top:6px" data-i18n="Get our complete product catalog with specifications for all 19 instruments.">Get our complete product catalog with specifications for all 19 instruments.</p>
+        <h3 style="color:#fff;font-size:20px;margin:0" id="catalogTitle" data-i18n-skip>Download Our Catalog</h3>
+        <p style="color:#9fb1c4;font-size:14px;margin-top:6px" id="catalogDesc" data-i18n-skip>Get our complete product catalog with specifications for all 19 instruments.</p>
       </div>
       <a href="katalog-en.html" class="btn btn-primary navCatalogLink" onclick="(function(e){e.preventDefault();var l=(typeof PMI18n!=='undefined'?PMI18n.get():'en');var m={en:'katalog-en.html',tr:'katalog.html',ar:'katalog-ar.html',ru:'katalog-ru.html'};window.open(m[l]||m.en)})(event)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" style="margin-right:8px"><path d="M4 19.5v-15A2.5 2.5 0 016.5 2H20v20H6.5a2.5 2.5 0 010-5H20"/></svg>
-        <span data-i18n="Download Catalog (PDF)">Download Catalog (PDF)</span>
+        <span id="catalogBtn" data-i18n-skip>Download Catalog (PDF)</span>
       </a>
     </div>
 
@@ -380,13 +380,21 @@
 <section id="blog" style="background:var(--bg-alt);border-block:1px solid var(--line);padding:clamp(28px,4vw,48px) 0">
   <div class="wrap">
     <div class="sec-head sec-head--center reveal">
-      <span class="eyebrow eyebrow--center" data-i18n="Resources & Insights">Resources & Insights</span>
-      <h2 data-i18n="Latest articles from our laboratory & field">Latest articles from our laboratory & field</h2>
+      <span class="eyebrow eyebrow--center" id="blogEyebrow" data-i18n-skip>Resources & Insights</span>
+      <h2 id="blogHeading" data-i18n-skip>Latest articles from our laboratory & field</h2>
     </div>
   </div>
-  <div class="blog-ticker" id="blog-carousel"></div>
+  <div style="position:relative">
+    <button class="blog-arrow blog-arrow-left" id="blogArrowL" aria-label="Previous">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="blog-ticker" id="blog-carousel"></div>
+    <button class="blog-arrow blog-arrow-right" id="blogArrowR" aria-label="Next">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
   <div style="text-align:center;margin-top:28px">
-    <a href="blog-en.html" class="btn btn-ghost navBlogLink" data-i18n="View all articles →">View all articles →</a>
+    <a href="blog-en.html" class="btn btn-ghost navBlogLink" id="blogViewAll" data-i18n-skip>View all articles →</a>
   </div>
 </section>
 
