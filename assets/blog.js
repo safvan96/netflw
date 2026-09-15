@@ -105,7 +105,7 @@ function esc(s){
     };
     var h = '<div class="sec-head sec-head--center reveal">';
     h += '<span class="eyebrow eyebrow--center">'+(UI.eyebrow[lang]||UI.eyebrow.en)+'</span>';
-    h += '<h2>'+(UI.heading[lang]||UI.heading.en)+'</h2>';
+    h += '<h1 style="font-size:clamp(28px,4vw,44px)">'+(UI.heading[lang]||UI.heading.en)+'</h1>';
     h += '</div>';
     h += '<div class="blog-grid" style="margin-top:42px">';
     posts.forEach(function(p){
