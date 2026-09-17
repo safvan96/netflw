@@ -199,6 +199,13 @@
     .qd-title{text-align:left}
   }
 
+  /* shipping table */
+  .ship-tbl{width:100%;border-collapse:collapse;font-size:13px;font-family:var(--f-head)}
+  .ship-tbl th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);padding:8px 14px;border-bottom:2px solid var(--line-2);font-weight:600}
+  .ship-tbl td{padding:7px 14px;border-bottom:1px solid var(--line)}
+  .ship-tbl .ship-total td{border-top:2px solid var(--navy-900);border-bottom:none;padding-top:10px;font-size:14px}
+  .ship-badge{display:inline-block;font-family:var(--f-mono);font-size:11px;color:var(--accent);background:rgba(30,136,229,.08);padding:3px 8px;border-radius:6px;margin-top:4px}
+
   /* archive list items */
   .arch-item{padding:11px 16px;border-bottom:1px solid var(--line);cursor:pointer;transition:.12s}
   .arch-item:last-child{border-bottom:none}
@@ -210,7 +217,7 @@
   /* PRINT */
   @media print{
     body{background:#fff}
-    .abar,.admin-wrap,.preview-bar,.wa-float{display:none!important}
+    .abar,.admin-wrap,.preview-bar,.wa-float,#shippingCard{display:none!important}
     .preview-ov{position:static;display:block!important;background:#fff;padding:0;backdrop-filter:none}
     .quote-doc{box-shadow:none;border-radius:0;max-width:100%;padding:0}
     @page{margin:14mm}
@@ -342,6 +349,15 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- SHIPPING WEIGHT & DESI -->
+    <div class="card2" id="shippingCard" style="grid-column:1/-1">
+      <div class="card2-head">
+        <h3>Weight & Shipping</h3>
+        <span class="hint">Auto-calculated from DN sizes</span>
+        <button class="abtn ghost" id="btnCopyShip" style="margin-left:auto;font-size:12px;padding:5px 10px">Copy for courier</button>
+      </div>
+      <div id="shippingBox"></div>
     </div>
   </section>
 </div>

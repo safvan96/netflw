@@ -69,6 +69,23 @@ const FIELDS = {
   outSw:{label:{en:'Output',tr:'Çıkış',ar:'الخرج',ru:'Выход'}, opts:['NO/NC Relay','PNP','NPN','4–20mA']}
 };
 
+/* ---------- EM flow meter weight & box dimensions ---------- */
+const EM_WEIGHT = {
+  DN15:{kg:7,box:[30,25,25]},DN20:{kg:8,box:[30,25,25]},
+  DN25:{kg:9,box:[32,27,27]},DN32:{kg:10,box:[34,28,28]},
+  DN40:{kg:11,box:[36,30,30]},DN50:{kg:13,box:[38,32,32]},
+  DN65:{kg:15,box:[42,35,35]},DN80:{kg:17,box:[45,38,36]},
+  DN100:{kg:19,box:[48,40,38]},DN125:{kg:26,box:[52,44,42]},
+  DN150:{kg:32,box:[56,48,45]},DN200:{kg:46.5,box:[66,48,63]},
+  DN250:{kg:65,box:[78,60,74]},DN300:{kg:79.5,box:[78,60,74]},
+  DN350:{kg:100,box:[78,60,74]},DN400:{kg:128,box:[83,75,67]},
+  DN450:{kg:160,box:[90,80,75]},DN500:{kg:179,box:[100,85,80]},
+  DN600:{kg:225,box:[115,100,90]},DN700:{kg:360,box:[130,110,100]},
+  DN800:{kg:428,box:[140,120,110]},DN900:{kg:560,box:[155,135,120]},
+  DN1000:{kg:680,box:[170,150,135]}
+};
+function calcDesi(b){return Math.ceil(b[0]*b[1]*b[2]/3000);}
+
 /* ---------- icons by category ---------- */
 const ICONS = {
   flow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="20" height="6" rx="1.5"/><path d="M6 12h.01M10 12h.01M14 12h.01M18 12h.01"/><rect x="9" y="3" width="6" height="6" rx="1"/></svg>',
@@ -439,6 +456,7 @@ function renderItems(){
           <div style="flex:1;min-width:0">
           <h4>${esc(p.name[L])} <span class="lcode">${esc(p.code)}</span></h4>
           <div class="litem-desc">${esc(p.desc[L])}</div>
+          ${(()=>{const dn=it.cfg.dn;const w=dn&&EM_WEIGHT[dn];return w?`<span class="ship-badge">${w.kg} kg · ${calcDesi(w.box)} desi · ${w.box.join('×')} cm</span>`:''})()}
           <div class="cfg-row" style="margin-top:10px">${cfgHtml}</div>
           </div>
         </div>
@@ -464,6 +482,61 @@ function renderTotals(){
   $('#tDiscVal').textContent='− '+money(t.disc);
   $('#tVatVal').textContent='+ '+money(t.vat);
   $('#tGrand').textContent=money(t.grand);
+  renderShipping();
+}
+
+/* ============================================================
+   SHIPPING WEIGHT & DESI CALCULATOR
+   ============================================================ */
+function renderShipping(){
+  const box=$('#shippingBox'); if(!box) return;
+  const rows=[];
+  let totalKg=0, totalDesi=0, hasData=false;
+  S.items.forEach(it=>{
+    const p=BYCODE[it.code]; if(!p) return;
+    const dn=it.cfg&&it.cfg.dn;
+    const w=dn?EM_WEIGHT[dn]:null;
+    const qty=parseInt(it.qty)||1;
+    if(w){
+      const desi=calcDesi(w.box);
+      const rowKg=+(w.kg*qty).toFixed(1);
+      const rowDesi=desi*qty;
+      totalKg+=rowKg; totalDesi+=rowDesi; hasData=true;
+      rows.push(`<tr><td>${qty}×</td><td>${esc(p.name.en)}</td><td><b>${dn}</b></td><td>${w.box.join(' × ')} cm</td><td style="text-align:right">${rowKg} kg</td><td style="text-align:right">${rowDesi} desi</td></tr>`);
+    } else if(p.cfg.includes('dn')){
+      rows.push(`<tr style="opacity:.5"><td>${qty}×</td><td>${esc(p.name.en)}</td><td>—</td><td>—</td><td style="text-align:right">—</td><td style="text-align:right">—</td></tr>`);
+    }
+  });
+  if(!rows.length){
+    box.innerHTML='<div style="padding:18px;color:var(--ink-3);font-size:13px">Add products with DN size to see weight & shipping calculations.</div>';
+    return;
+  }
+  box.innerHTML=`<table class="ship-tbl">
+    <thead><tr><th>Qty</th><th>Product</th><th>DN</th><th>Box (L×W×H)</th><th style="text-align:right">Weight</th><th style="text-align:right">Vol. Weight</th></tr></thead>
+    <tbody>${rows.join('')}
+    <tr class="ship-total"><td colspan="4">TOTAL</td><td style="text-align:right"><b>${totalKg.toFixed(1)} kg</b></td><td style="text-align:right"><b>${totalDesi} desi</b></td></tr>
+    </tbody></table>
+    ${totalKg>0?`<div style="padding:8px 14px;font-size:12px;color:var(--ink-3)">Courier uses whichever is greater: actual weight (${totalKg.toFixed(1)} kg) or volumetric weight (${totalDesi} desi).</div>`:''}`;
+}
+function getShippingText(){
+  const lines=['NET FLOW — Shipping Details',''];
+  let totalKg=0,totalDesi=0;
+  S.items.forEach(it=>{
+    const p=BYCODE[it.code]; if(!p) return;
+    const dn=it.cfg&&it.cfg.dn;
+    const w=dn?EM_WEIGHT[dn]:null;
+    const qty=parseInt(it.qty)||1;
+    if(w){
+      const desi=calcDesi(w.box);
+      const rk=+(w.kg*qty).toFixed(1); const rd=desi*qty;
+      totalKg+=rk; totalDesi+=rd;
+      lines.push(`${qty}x ${dn} ${p.name.en} — ${rk} kg, ${rd} desi (${w.box.join('×')} cm)`);
+    }
+  });
+  if(!lines.length) return '';
+  lines.push('─────────────');
+  lines.push(`TOTAL: ${totalKg.toFixed(1)} kg | ${totalDesi} desi (volumetric)`);
+  return lines.join('\n');
 }
 
 /* ============================================================
@@ -698,6 +771,14 @@ function bind(){
   document.addEventListener('click',e=>{ if(!e.target.closest('#archivePanel')&&!e.target.closest('#btnArchive')) $('#archivePanel').style.display='none'; });
   $('#archiveList').addEventListener('click',e=>{ const it=e.target.closest('[data-load]'); if(!it)return; const list=getList(); const entry=list.find(x=>x.code===it.dataset.load); if(!entry)return; try{ S=JSON.parse(entry.data); if(!S.terms)S.terms={}; if(!S.cust.reqBy)S.cust.reqBy=''; if(!S.cust.custSign)S.cust.custSign=''; save(); loadForm(); renderPalette(); renderItems(); renderTotals(); $('#archivePanel').style.display='none'; }catch(e){} });
   $('#btnNew').addEventListener('click',()=>{ if(confirm('Start a new blank quotation? The current draft will be cleared.')){ S=defaultState(); save(); loadForm(); renderItems(); renderTotals(); } });
+
+  // shipping copy
+  const shipBtn=$('#btnCopyShip');
+  if(shipBtn) shipBtn.addEventListener('click',()=>{
+    const txt=getShippingText();
+    if(!txt){alert('No shipping data to copy.');return;}
+    navigator.clipboard.writeText(txt).then(()=>{shipBtn.textContent='Copied!';setTimeout(()=>shipBtn.textContent='Copy for courier',1500);}).catch(()=>{});
+  });
 }
 
 /* ---------- init ---------- */
