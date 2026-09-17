@@ -47,10 +47,10 @@ const T = {
 
 /* ---------- default terms per language ---------- */
 const TERMS = {
-  en:'• Prices are quoted EXW Konya (Incoterms® 2020) unless otherwise agreed.\n• Delivery: 3–5 weeks after order confirmation and receipt of full payment.\n• Payment: 100% advance by T/T (bank transfer) before production.\n• Warranty: 24 months against manufacturing defects.\n• Electromagnetic flow meters ship with a TÜRKAK-accredited calibration certificate (ISO/IEC 17025); other instruments carry a Yerli Malı (local-production) certificate.\n• This quotation is valid until the date stated above.',
-  tr:'• Fiyatlar aksi belirtilmedikçe EXW Konya (Incoterms® 2020) olarak verilmiştir.\n• Teslimat: Tam ödeme alındıktan sonra 3–5 hafta.\n• Ödeme: %100 peşin, T/T (banka havalesi) ile üretim başlamadan önce.\n• Garanti: Üretim hatalarına karşı 24 ay.\n• Elektromanyetik debimetreler TÜRKAK akreditasyonlu kalibrasyon sertifikası (ISO/IEC 17025) ile; diğer cihazlar Yerli Malı belgesi ile teslim edilir.\n• Bu teklif yukarıda belirtilen tarihe kadar geçerlidir.',
-  ar:'• الأسعار على أساس تسليم المصنع EXW قونية (إنكوترمز 2020) ما لم يُتفق على خلاف ذلك.\n• التسليم: 3–5 أسابيع بعد استلام الدفعة الكاملة.\n• الدفع: 100% مقدمًا بالتحويل البنكي T/T قبل بدء الإنتاج.\n• الضمان: 24 شهرًا ضد عيوب التصنيع.\n• تُسلَّم أجهزة قياس التدفق الكهرومغناطيسية بشهادة معايرة معتمدة من TÜRKAK ‏(ISO/IEC 17025)؛ بينما تحمل الأجهزة الأخرى شهادة منشأ محلي (Yerli Malı).\n• هذا العرض صالح حتى التاريخ المذكور أعلاه.',
-  ru:'• Цены указаны на условиях EXW Конья (Incoterms® 2020), если не согласовано иное.\n• Поставка: 3–5 недель после получения полной оплаты.\n• Оплата: 100% аванс банковским переводом T/T до начала производства.\n• Гарантия: 24 месяца от производственных дефектов.\n• Электромагнитные расходомеры поставляются с калибровкой ISO/IEC 17025, аккредитованной TÜRKAK; прочие приборы, с сертификатом локального производства (Yerli Malı).\n• Данное предложение действительно до указанной выше даты.'
+  en:'1. VALIDITY: This quotation is valid for 15 (fifteen) days from the date of issue. After this period, prices and delivery times are subject to reconfirmation.\n\n2. PRICES: All prices are quoted EXW Konya, Turkey (Incoterms® 2020) unless otherwise stated. Prices do not include shipping, insurance, customs duties, or local taxes.\n\n3. PAYMENT: 100% advance payment by T/T (bank transfer) before production commences. Production will not begin until payment is confirmed.\n\n4. DELIVERY: Estimated delivery time is 3–5 weeks from the date of payment confirmation. Delivery times are approximate and may vary depending on order volume and stock availability.\n\n5. SHIPPING: Products are packed in reinforced cardboard boxes suitable for international shipping. Freight, insurance, and customs clearance costs are the responsibility of the buyer unless agreed otherwise.\n\n6. WARRANTY: All products carry a 24-month warranty against manufacturing defects from the date of shipment. The warranty does not cover damage caused by improper installation, misuse, or unauthorized modification.\n\n7. CALIBRATION & CERTIFICATES: Electromagnetic flow meters are delivered with a TÜRKAK-accredited calibration certificate (ISO/IEC 17025, Accreditation No: AB-0354-K). Other instruments are supplied with a factory test certificate and CE declaration of conformity.\n\n8. TECHNICAL SUPPORT: Free technical support is provided via phone, email, and WhatsApp during and after installation.\n\n9. RETURNS: Products manufactured to custom specifications (special DN sizes, materials, or configurations) are non-returnable. Standard products may be returned within 14 days in original, unused condition.\n\n10. JURISDICTION: Any disputes arising from this quotation or resulting orders shall be resolved under the laws of the Republic of Turkey, with Konya courts having exclusive jurisdiction.',
+  tr:'1. GEÇERLİLİK: Bu teklif, düzenlenme tarihinden itibaren 15 (on beş) gün geçerlidir. Bu sürenin dolmasından sonra fiyatlar ve teslimat süreleri yeniden teyit edilmelidir.\n\n2. FİYATLAR: Tüm fiyatlar aksi belirtilmedikçe EXW Konya, Türkiye (Incoterms® 2020) olarak verilmiştir. Fiyatlara nakliye, sigorta, gümrük vergisi ve yerel vergiler dahil değildir.\n\n3. ÖDEME: Üretime başlanmadan önce %100 peşin ödeme, T/T (banka havalesi) ile yapılmalıdır. Ödeme teyit edilmeden üretime başlanmaz.\n\n4. TESLİMAT: Tahmini teslimat süresi, ödeme teyidinden itibaren 3–5 haftadır. Teslimat süreleri sipariş hacmine ve stok durumuna göre değişiklik gösterebilir.\n\n5. SEVKİYAT: Ürünler uluslararası sevkiyata uygun güçlendirilmiş karton kutularda paketlenir. Nakliye, sigorta ve gümrükleme masrafları aksi kararlaştırılmadıkça alıcıya aittir.\n\n6. GARANTİ: Tüm ürünler sevk tarihinden itibaren 24 ay üretim hatalarına karşı garantilidir. Garanti; hatalı kurulum, yanlış kullanım veya yetkisiz müdahale sonucu oluşan hasarları kapsamaz.\n\n7. KALİBRASYON VE SERTİFİKALAR: Elektromanyetik debimetreler TÜRKAK akreditasyonlu kalibrasyon sertifikası (ISO/IEC 17025, Akreditasyon No: AB-0354-K) ile teslim edilir. Diğer cihazlar fabrika test sertifikası ve CE uygunluk beyanı ile gönderilir.\n\n8. TEKNİK DESTEK: Kurulum süresince ve sonrasında telefon, e-posta ve WhatsApp üzerinden ücretsiz teknik destek sağlanır.\n\n9. İADE: Özel sipariş ürünler (özel DN çapları, malzemeler veya konfigürasyonlar) iade edilemez. Standart ürünler orijinal ve kullanılmamış durumda 14 gün içinde iade edilebilir.\n\n10. YETKİ: Bu tekliften veya sonucunda oluşan siparişlerden doğacak anlaşmazlıklar Türkiye Cumhuriyeti kanunlarına göre çözülür; Konya mahkemeleri münhasır yetkiye sahiptir.',
+  ar:'1. الصلاحية: هذا العرض ساري المفعول لمدة 15 (خمسة عشر) يومًا من تاريخ الإصدار. بعد انتهاء هذه الفترة، تخضع الأسعار ومواعيد التسليم لإعادة التأكيد.\n\n2. الأسعار: جميع الأسعار مقدمة على أساس تسليم المصنع EXW قونية، تركيا (إنكوترمز 2020) ما لم يُذكر خلاف ذلك. لا تشمل الأسعار الشحن والتأمين والرسوم الجمركية والضرائب المحلية.\n\n3. الدفع: 100% دفعة مقدمة بالتحويل البنكي T/T قبل بدء الإنتاج. لن يبدأ الإنتاج حتى يتم تأكيد الدفع.\n\n4. التسليم: مدة التسليم المقدرة 3–5 أسابيع من تاريخ تأكيد الدفع. قد تتغير مواعيد التسليم حسب حجم الطلب وتوفر المخزون.\n\n5. الشحن: تُعبأ المنتجات في صناديق كرتون مقوّاة مناسبة للشحن الدولي. تكاليف الشحن والتأمين والتخليص الجمركي على حساب المشتري ما لم يُتفق على خلاف ذلك.\n\n6. الضمان: جميع المنتجات مضمونة لمدة 24 شهرًا ضد عيوب التصنيع من تاريخ الشحن. لا يشمل الضمان الأضرار الناتجة عن التركيب الخاطئ أو سوء الاستخدام أو التعديل غير المصرح به.\n\n7. المعايرة والشهادات: تُسلَّم مقاييس التدفق الكهرومغناطيسية بشهادة معايرة معتمدة من TÜRKAK ‏(ISO/IEC 17025، رقم الاعتماد: AB-0354-K). تُسلَّم الأجهزة الأخرى بشهادة اختبار المصنع وإعلان مطابقة CE.\n\n8. الدعم الفني: يتم تقديم دعم فني مجاني عبر الهاتف والبريد الإلكتروني وواتساب أثناء التركيب وبعده.\n\n9. الإرجاع: المنتجات المصنعة بمواصفات خاصة (أقطار DN خاصة أو مواد أو تكوينات) غير قابلة للإرجاع. يمكن إرجاع المنتجات القياسية خلال 14 يومًا بحالتها الأصلية غير المستخدمة.\n\n10. الاختصاص القضائي: تُحل أي نزاعات ناشئة عن هذا العرض أو الطلبات الناتجة عنه وفقًا لقوانين جمهورية تركيا، وتكون محاكم قونية هي المختصة حصريًا.',
+  ru:'1. СРОК ДЕЙСТВИЯ: Данное предложение действительно в течение 15 (пятнадцати) дней с даты выдачи. По истечении этого срока цены и сроки поставки подлежат повторному подтверждению.\n\n2. ЦЕНЫ: Все цены указаны на условиях EXW Конья, Турция (Incoterms® 2020), если не указано иное. Цены не включают доставку, страховку, таможенные пошлины и местные налоги.\n\n3. ОПЛАТА: 100% предоплата банковским переводом T/T до начала производства. Производство не начнётся до подтверждения оплаты.\n\n4. ПОСТАВКА: Ориентировочный срок поставки — 3–5 недель с даты подтверждения оплаты. Сроки поставки могут варьироваться в зависимости от объёма заказа и наличия на складе.\n\n5. ОТГРУЗКА: Продукция упакована в усиленные картонные коробки, пригодные для международной доставки. Расходы на доставку, страховку и таможенное оформление несёт покупатель, если не согласовано иное.\n\n6. ГАРАНТИЯ: На все изделия предоставляется гарантия 24 месяца от производственных дефектов с даты отгрузки. Гарантия не распространяется на повреждения, вызванные неправильной установкой, неправильной эксплуатацией или несанкционированной модификацией.\n\n7. КАЛИБРОВКА И СЕРТИФИКАТЫ: Электромагнитные расходомеры поставляются с калибровочным сертификатом, аккредитованным TÜRKAK (ISO/IEC 17025, номер аккредитации: AB-0354-K). Прочие приборы поставляются с заводским протоколом испытаний и декларацией соответствия CE.\n\n8. ТЕХНИЧЕСКАЯ ПОДДЕРЖКА: Бесплатная техническая поддержка предоставляется по телефону, электронной почте и WhatsApp во время и после установки.\n\n9. ВОЗВРАТ: Продукция, изготовленная по специальным спецификациям (нестандартные DN, материалы или конфигурации), возврату не подлежит. Стандартная продукция может быть возвращена в течение 14 дней в оригинальном неиспользованном состоянии.\n\n10. ЮРИСДИКЦИЯ: Любые споры, возникающие из данного предложения или вытекающих заказов, разрешаются в соответствии с законами Турецкой Республики, с исключительной юрисдикцией судов Коньи.'
 };
 
 /* ---------- config field definitions ---------- */
@@ -85,6 +85,20 @@ const EM_WEIGHT = {
   DN1000:{kg:680,box:[170,150,135]}
 };
 function calcDesi(b){return Math.ceil(b[0]*b[1]*b[2]/3000);}
+
+/* weight multiplier by product type — only standard EM and food-grade */
+const WT_RATIO = {
+  'NT-VMF':1,         // standard flange EM
+  'NT-VMF-W':0.7      // food-grade: tri-clamp, lighter body
+};
+function getWeight(code,dn){
+  const w=EM_WEIGHT[dn]; if(!w) return null;
+  const r=WT_RATIO[code]; if(r==null) return null;
+  const kg=+(w.kg*r).toFixed(1);
+  // box scales proportionally for lighter products
+  const bs = r<1 ? w.box.map(d=>Math.round(d*Math.pow(r,0.33))) : w.box;
+  return {kg,box:bs};
+}
 
 /* ---------- icons by category ---------- */
 const ICONS = {
@@ -456,7 +470,7 @@ function renderItems(){
           <div style="flex:1;min-width:0">
           <h4>${esc(p.name[L])} <span class="lcode">${esc(p.code)}</span></h4>
           <div class="litem-desc">${esc(p.desc[L])}</div>
-          ${(()=>{const dn=it.cfg.dn;const w=dn&&EM_WEIGHT[dn];return w?`<span class="ship-badge">${w.kg} kg · ${calcDesi(w.box)} desi · ${w.box.join('×')} cm</span>`:''})()}
+          ${(()=>{const dn=it.cfg.dn;const w=dn&&getWeight(it.code,dn);return w?`<span class="ship-badge">${w.kg} kg · ${calcDesi(w.box)} desi · ${w.box.join('×')} cm</span>`:''})()}
           <div class="cfg-row" style="margin-top:10px">${cfgHtml}</div>
           </div>
         </div>
@@ -495,7 +509,7 @@ function renderShipping(){
   S.items.forEach(it=>{
     const p=BYCODE[it.code]; if(!p) return;
     const dn=it.cfg&&it.cfg.dn;
-    const w=dn?EM_WEIGHT[dn]:null;
+    const w=dn?getWeight(it.code,dn):null;
     const qty=parseInt(it.qty)||1;
     if(w){
       const desi=calcDesi(w.box);
@@ -524,7 +538,7 @@ function getShippingText(){
   S.items.forEach(it=>{
     const p=BYCODE[it.code]; if(!p) return;
     const dn=it.cfg&&it.cfg.dn;
-    const w=dn?EM_WEIGHT[dn]:null;
+    const w=dn?getWeight(it.code,dn):null;
     const qty=parseInt(it.qty)||1;
     if(w){
       const desi=calcDesi(w.box);
@@ -631,7 +645,7 @@ function buildDoc(){
 
     <div class="qd-terms">
       <h5>${esc(t.terms)}</h5>
-      <div class="tt-body">${esc(termsText)}</div>
+      <div class="tt-body">${esc(termsText).replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>')}</div>
     </div>
 
     <div class="qd-foot">
@@ -685,7 +699,7 @@ function bind(){
   });
   $('#itemsBox').addEventListener('change',e=>{
     const el=e.target;
-    if(el.dataset.field){ const it=S.items.find(x=>x.uid===el.dataset.uid); if(it){it.cfg[el.dataset.field]=el.value; save(); if(el.dataset.field==='dn'){const w=EM_WEIGHT[el.value];const badge=el.closest('.litem').querySelector('.ship-badge');if(w){const txt=w.kg+' kg · '+calcDesi(w.box)+' desi · '+w.box.join('×')+' cm';if(badge)badge.textContent=txt;else{const sp=document.createElement('span');sp.className='ship-badge';sp.textContent=txt;const descEl=el.closest('.litem').querySelector('.litem-desc');if(descEl)descEl.after(sp);}}else if(badge){badge.remove();}renderShipping();}} }
+    if(el.dataset.field){ const it=S.items.find(x=>x.uid===el.dataset.uid); if(it){it.cfg[el.dataset.field]=el.value; save(); if(el.dataset.field==='dn'){const w=getWeight(it.code,el.value);const badge=el.closest('.litem').querySelector('.ship-badge');if(w){const txt=w.kg+' kg · '+calcDesi(w.box)+' desi · '+w.box.join('×')+' cm';if(badge)badge.textContent=txt;else{const sp=document.createElement('span');sp.className='ship-badge';sp.textContent=txt;const descEl=el.closest('.litem').querySelector('.litem-desc');if(descEl)descEl.after(sp);}}else if(badge){badge.remove();}renderShipping();}} }
   });
   $('#itemsBox').addEventListener('click',e=>{
     const rm=e.target.closest('[data-remove]'); if(!rm)return;
