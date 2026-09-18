@@ -263,21 +263,21 @@ window.NF_CAT = {
        uses:"Solid products in powder, granule and particle form, as well as liquids.",
        sectors:"Food, pharmaceutical and chemical industries, building and construction industry."},
 
-      {code:"NT-CSW", img:"assets/products/NT-LSW-M.png", name:"Capacitive Level Switch", glyph:"capacitive",
+      {code:"NT-CSW", img:"assets/products/NT-CSW.png", name:"Capacitive Level Switch", glyph:"capacitive",
        desc:"Once the sensing element at the tip of the Magcap type level switch becomes surrounded by the raw material at the point of use, the RF power it emits decreases. When this decrease exceeds the configured sensitivity setting, an output signal is generated. Sensitivity can be adjusted on the device according to the dielectric constant and the properties of the material.",
        specs:[["Measuring Length","150 – 400 – 650 – 1150 mm"],["Process Temperature","−20…+100 °C"],["Ingress Protection","IP68"],["Max. Working Pressure","10 bar"],["Detection Delay","Max. 1 s"],["Supply Voltage","12 – 35 VDC, 1.2 W"],["Signal Output","Relay, 1 changeover contact, AC max. 250 VAC / 2 A / 500 VA"]],
        uses:"Solid products in powder, granule and particle form.",
        sectors:"Building industry, food industry, construction industry.",
        notes:["Unaffected by dust and soil at the point of use.","Depending on the application point, a baffle may be required where the unit could be damaged."]},
 
-      {code:"NT-SSW", img:"assets/products/NT-MLP.png", name:"Side-Mounted Level Switch", glyph:"sideswitch",
+      {code:"NT-SSW", img:"assets/products/NT-SSW.png", name:"Side-Mounted Level Switch", glyph:"sideswitch",
        desc:"F1 type magnetic level switches are used for liquid level measurement in all types of tank. They have a wide field of use thanks to their ability to operate without an external power supply, side-mounting capability, wide pressure and temperature range and fully stainless steel wetted parts.",
        specs:[["Pressure Rating","16 bar"],["Temperature Rating","Max. 150 °C"],["Connection Type","Square flange"],["Flange Material","AISI 316"],["Housing","Aluminium"],["Adjustment","50 – 100 – 200 mm"],["Density","> 0.7 kg/L"],["Switch Capacity","250 VAC, 15 A, NO+NC"]],
        uses:"Waste and clean water tanks, acid and caustic tanks, fuel and oil tanks, all pressurised and unpressurised vessels.",
        sectors:"Shipbuilding industry, fuel and oil plants, chemical industry.",
        notes:["Requires no external power supply.","Can operate under high vibration."]},
 
-      {code:"NT-DSW", img:"assets/products/NT-LSW-P.png", name:"Diaphragm Level Switch", glyph:"diaphragm",
+      {code:"NT-DSW", img:"assets/products/NT-DSW.png", name:"Diaphragm Level Switch", glyph:"diaphragm",
        desc:"The diaphragm solid level switch is the most economical method of measuring the level of bulk material in a store. It can be used in open and unpressurised tanks. The full and empty status of dusty, powdered, granular and pelletised bulk materials in the silo can be monitored. The membrane must always be in contact with the material being monitored. As material poured into the silo builds up, the membrane closes; the resulting pressure pushes the diaphragm back and the mechanism actuates the contact. As the material decreases, the contact returns to its original position.",
        specs:[["Body Material","Nitrile, NBR, FPM, stainless steel"],["Connection","Round flange"],["Output","1 × NO/NC micro switch"],["Maximum Temperature","200 °C"]],
        uses:"Full/empty control of bulk solid materials in silos.",
@@ -296,7 +296,7 @@ window.NF_CAT = {
        uses:"Water tanks, condensate tanks, deaerators, fuel tanks, steam boilers, underground tanks, aggressive and toxic liquids, liquefied gases, all pressurised and unpressurised vessels.",
        sectors:"Shipbuilding industry, chemical industry, refineries, power plants."},
 
-      {code:"NT-CDS", img:"assets/products/NT-LSW-F.png", name:"Conductive Level Switches", glyph:"conductive",
+      {code:"NT-CDS", img:"assets/products/NT-CDS.png", name:"Conductive Level Switches", glyph:"conductive",
        desc:"Conductive level switches are used for liquid level control in tanks and boilers. As they have no moving parts they can be used in critical environments and with conductive liquids containing solid particles, of low density and of high viscosity.",
        specs:[["Electrode Material","304 stainless steel, opt. 316 stainless steel"],["Connection & Housing Material","Delrin"],["Output","1 × NO/NC micro switch"],["Maximum Temperature & Pressure","60 °C … 6 bar"],["Number of Electrodes","Max. 3"]],
        uses:"An economical and reliable solution for booster set applications, water level control on steam boilers and various conductive liquid tanks.",
@@ -309,7 +309,7 @@ window.NF_CAT = {
        sectors:"Grain silos, cement plants, lime and gypsum plants, foundries.",
        notes:["The cable length can be specified according to the application point.","The cable can be used insulated or uninsulated."]},
 
-      {code:"NT-ELES", img:"assets/products/NT-FLT.png", name:"Float Level Sensors", glyph:"floattx",
+      {code:"NT-ELES", img:"assets/products/NT-ELES.png", name:"Float Level Sensors", glyph:"floattx",
        desc:"NT-ELES float level sensors are instruments designed to determine liquid level by making use of the buoyancy principle: a magnetic, movable float travelling along a guide tube triggers, through its magnetic field, a reed contact placed inside the guide tube, thereby switching the circuit on or off. Depending on the intended use they are produced as continuous (online) level and point level versions; continuous level sensors are called level transmitters, while point level sensors are called level switches.",
        variants:[
          ["NT-ELES11 Series","Designed to determine the instantaneous (online) level of liquid media. It can produce analogue signal outputs and communication outputs for transmission or monitoring; with different mechanical connection designs and length options from 50 mm to 3000 mm it provides a wide field of use."],

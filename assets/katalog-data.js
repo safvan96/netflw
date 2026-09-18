@@ -208,21 +208,21 @@ window.NF_CAT = {
        uses:"Toz, granül ve partikül hâlindeki katı ürünler ile sıvılar.",
        sectors:"Gıda, ilaç ve kimya sanayi, yapı ve inşaat endüstrisi."},
 
-      {code:"NT-CSW", img:"assets/products/NT-LSW-M.png", name:"Kapasitif Seviye Şalteri", glyph:"capacitive",
+      {code:"NT-CSW", img:"assets/products/NT-CSW.png", name:"Kapasitif Seviye Şalteri", glyph:"capacitive",
        desc:"Magcap tip seviye şalterinin uç kısmındaki algılama sensörünün etrafı kullanılan yerdeki hammadde ile kaplandıktan sonra yaydığı RF gücünde azalma oluşur. Bu azalma, yapılan hassasiyet ayarından fazla olduğunda çıkış sinyali üretir. Malzemenin dielektrik katsayısına ve özelliğine bağlı olarak cihaz üstünden hassasiyet ayarı yapılabilir.",
        specs:[["Ölçüm Mesafesi","150 – 400 – 650 – 1150 mm"],["İşlem Sıcaklığı","−20…+100 °C"],["Koruma Sınıfı","IP68"],["Maks. Çalışma Basıncı","10 bar"],["Algılama Gecikmesi","Maks. 1 sn"],["Besleme Gerilimi","12 – 35 VDC, 1,2 W"],["Sinyal Çıkışı","Röle, 1 enversör kontak, AC maks. 250 VAC / 2 A / 500 VA"]],
        uses:"Toz, granül ve partikül hâlindeki katı ürünler.",
        sectors:"Yapı endüstrisi, gıda endüstrisi, inşaat endüstrisi.",
        notes:["Kullanıldığı yerdeki tozdan ve topraktan etkilenmez.","Uygulama noktasına göre ürünün zarar görebileceği durumlarda siperlik kullanılması gerekebilir."]},
 
-      {code:"NT-SSW", img:"assets/products/NT-MLP.png", name:"Yandan Montajlı Seviye Şalteri", glyph:"sideswitch",
+      {code:"NT-SSW", img:"assets/products/NT-SSW.png", name:"Yandan Montajlı Seviye Şalteri", glyph:"sideswitch",
        desc:"F1 tip manyetik seviye şalterleri tüm tankların sıvı seviye ölçümleri için kullanılır. Harici besleme kaynağı olmadan çalışma özelliği, yandan montaj imkânı, geniş basınç ve sıcaklık aralığı ile komple paslanmaz temas sayesinde geniş kullanım alanına sahiptir.",
        specs:[["Basınç Dayanımı","16 bar"],["Sıcaklık Dayanımı","Maks. 150 °C"],["Bağlantı Tipi","Kare flanş"],["Flanş Özelliği","AISI 316"],["Buat","Alüminyum"],["Regülasyon","50 – 100 – 200 mm"],["Yoğunluk","> 0,7 kg/lt"],["Switch Kapasitesi","250 VAC, 15 A, NO+NC"]],
        uses:"Pis ve temiz su tankları, asit ve kostik tanklar, yakıt ve yağ tankları, tüm basınçlı ve basınçsız kaplar.",
        sectors:"Gemi sanayi, yakıt ve yağ tesisleri, kimya sanayi.",
        notes:["Harici beslemeye gerek duymaz.","Yüksek vibrasyonda çalışabilir."]},
 
-      {code:"NT-DSW", img:"assets/products/NT-LSW-P.png", name:"Diyaframlı Seviye Şalteri", glyph:"diaphragm",
+      {code:"NT-DSW", img:"assets/products/NT-DSW.png", name:"Diyaframlı Seviye Şalteri", glyph:"diaphragm",
        desc:"Diyaframlı katı seviye şalteri, depodaki dökme malzemenin seviyesinin ölçülmesinde en ekonomik yöntemdir. Açık ve basınçsız tanklarda kullanılabilir. Tozlu, pudralı, tanecikli, granüllü dökme malzemelerin silodaki dolu ve boş durumları kontrol edilebilir. Membran, kontrolü yapılan malzemeye mutlaka temas etmelidir. Siloya dökülen malzeme yığıldıkça membran kapanır; oluşan baskıyla malzeme diyaframı geri iter ve mekanizma kontağı iter. Malzeme azaldıkça kontak eski konuma döner.",
        specs:[["Gövde Malzemesi","Nitril, NBR, FPM, paslanmaz çelik"],["Bağlantı","Yuvarlak flanş"],["Çıkış","1 × NA/NK mikro şalter"],["Maksimum Sıcaklık","200 °C"]],
        uses:"Dökme katı malzemelerin silo dolu/boş kontrolü.",
@@ -241,7 +241,7 @@ window.NF_CAT = {
        uses:"Su tankları, kondens tankları, degazörler, yakıt tankları, buhar kazanları, yeraltı tankları, agresif ve toksik sıvılar, sıvılaştırılmış gazlar, tüm basınçlı ve basınçsız kaplar.",
        sectors:"Gemi inşa sanayi, kimya sanayi, rafineriler, enerji tesisleri."},
 
-      {code:"NT-CDS", img:"assets/products/NT-LSW-F.png", name:"İletken Tip Seviye Şalterleri", glyph:"conductive",
+      {code:"NT-CDS", img:"assets/products/NT-CDS.png", name:"İletken Tip Seviye Şalterleri", glyph:"conductive",
        desc:"İletken tip seviye şalteri tank ve kazanların sıvı seviye kontrolünde kullanılmaktadır. Oynar parçası olmadığından kritik ortamlarda, katı partiküllü, düşük yoğunluklu ve yüksek viskoziteli iletken sıvılarda kullanılabilir.",
        specs:[["Elektrot Malzemesi","304 paslanmaz çelik, ops. 316 paslanmaz çelik"],["Bağlantı ve Muhafaza Malzemesi","Derlin"],["Çıkış","1 × NA/NK mikro şalter"],["Maksimum Sıcaklık ve Basınç","60 °C … 6 bar"],["Elektrot Sayısı","Maks. 3"]],
        uses:"Hidrofor uygulamaları, buhar kazanları su seviye kontrolü ve muhtelif iletken sıvı tankları için ekonomik ve güvenli bir çözümdür.",
@@ -254,7 +254,7 @@ window.NF_CAT = {
        sectors:"Tahıl siloları, çimento tesisleri, kireç ve alçı tesisleri, dökümhaneler.",
        notes:["Halat boyu uygulama noktasına göre belirlenebilir.","Halat yalıtımlı veya yalıtımsız olarak kullanılabilir."]},
 
-      {code:"NT-ELES", img:"assets/products/NT-FLT.png", name:"Şamandıralı Seviye Sensörleri", glyph:"floattx",
+      {code:"NT-ELES", img:"assets/products/NT-ELES.png", name:"Şamandıralı Seviye Sensörleri", glyph:"floattx",
        desc:"NT-ELES şamandıralı seviye sensörleri; sıvıların kaldırma kuvveti prensibinden yararlanılarak, kılavuz çubuğu kapsayan mıknatıslı ve hareketli şamandıranın manyetik alan etkisiyle kılavuz çubuk içerisine yerleştirilen reed kontağı tetiklemesine bağlı olarak devreye alarak veya devreden çıkararak sıvıların seviye tespitini yapmak için tasarlanmış enstrümanlardır. Kullanım amacına göre sürekli (online) seviye ve noktasal seviye şeklinde üretilir; sürekli seviye sensörlerine seviye transmitterleri, noktasal seviye sensörlerine ise seviye şalterleri denir.",
        variants:[
          ["NT-ELES11 Serisi","Sıvı akışkanların anlık (online) seviyesini tespit etmek için tasarlanmıştır. Aktarım veya izleme için analog sinyal çıkışları ve haberleşme çıkışları üretebilir; farklı mekanik bağlantı yapıları ve 50 mm'den 3000 mm'ye kadar boyut seçenekleri ile geniş bir kullanım alanı sağlar."],
