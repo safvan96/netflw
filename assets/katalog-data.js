@@ -169,27 +169,27 @@ window.NF_CAT = {
     /* ===================== SEVİYE SENSÖRLERİ ===================== */
     {id:"seviye", kicker:"03", title:"Seviye Sensörleri", sub:"Sıvı ve katı malzemelerde sürekli ve noktasal seviye ölçümü", glyph:"level",
      products:[
-      {code:"NT-ULS", img:"assets/kat/p12_1.png", name:"Ultrasonik Seviye Transmitterleri", glyph:"ultra",
+      {code:"NT-ULS", img:"assets/products/NT-ULS.png", name:"Ultrasonik Seviye Transmitterleri", glyph:"ultra",
        desc:"Ultrasonik seviye sensörleri; katı ve sıvılarda temassız mesafe, seviye ve hacim ölçümü için tasarlanmış enstrümanlardır. Ultrasonik sensör, sinyal çevirici ve kontrol birimi bileşenlerinden oluşur. Kolayca montajı yapılan sensörün tank içerisine gönderdiği ses dalgası malzemeye çarpar ve geri algılanır; böylece seviye tespiti yapılmış olur. Filtreleme özelliği ile yanlış ölçümler engellenir.",
        specs:[["Ölçüm Aralığı","0–1 … 0–20 metre"],["Hassasiyet","%0,5 – %1,0"],["Çözünürlük","3 mm veya %0,1"],["Sıcaklık Dayanımı","Verici −20…+60 °C, sensör −20…+80 °C"],["Koruma Sınıfı","Verici IP65, sensör IP68"],["Çıkış","4–20 mA"],["Besleme","24 VDC"]],
        uses:"Su arıtma ve dağıtım tesisleri, kimya ve petrokimya tesisleri, gıda tesisleri, kapalı ve açık tanklar.",
        sectors:"Kum, çimento-klinker, atık su, temiz su, tozlu katı partiküller, gıda ve yem, plastik granüller.",
        notes:["Montaj kılavuzunda belirtilen adımlar uygulanmalıdır.","Kullanılan akışkana göre prob seçimine dikkat edilmelidir."]},
 
-      {code:"NT-RLS", img:"assets/kat/p12_2.png", name:"Radar Seviye Transmitterleri", glyph:"radar",
+      {code:"NT-RLS", img:"assets/products/NT-RLS.png", name:"Radar Seviye Transmitterleri", glyph:"radar",
        desc:"Radar seviye sensörleri darbe yönetimi ile zamanla artan frekans taramaları gönderir; ölçüm yüzeyinden yansıyarak geri dönen bu sinyaller anten tarafından toplanır ve böylece sıvı ve katılarda seviye tespiti yapılır. Yüksek teknolojisi ve temassız – kılavuzlu gibi farklı uygulama metotları ile zorlu proseslerde ölçüm kolaylığı sağlar. Ölçüm değerini mesafe, seviye, hacim ve kütle gibi farklı değerlerde yorumlar.",
        specs:[["Ölçüm Aralığı","0–10 m / 0–30 m / 0–50 m / 0–70 m"],["Hassasiyet","±2 mm"],["Besleme","24 VDC – 220 VAC"],["Sıcaklık Dayanımı","−60…+60 °C / −60…+150 °C / −60…+250 °C"],["Koruma Sınıfı","Verici IP65, sensör IP68"],["Sinyal ve İletişim Çıkışı","4–20 mA, HART, RS485 Modbus, Profibus PA, Foundation Fieldbus"],["Frekans Bandı","26 GHz – 70 GHz"]],
        uses:"Kum, çimento-klinker, atık su, temiz su, tozlu katı partiküller, yüksek sıcaklık ve viskoz sıvılar; süt ve süt ürünleri, meşrubat, yağ, benzin, mazot, dolomit, kalsit, kireç, un ve yem, plastik granüller.",
        sectors:"Seramik sanayi, çimento fabrikaları, arıtma tesisleri, gıda endüstrisi, petrokimya endüstrisi, plastik işleme ve hammadde tesisleri, kum ve taş ocakları, kireç ve alçı tesisleri."},
 
-      {code:"NT-HLS", img:"assets/kat/p13_2.png", name:"Hidrostatik Seviye Transmitterleri", glyph:"hydro",
+      {code:"NT-HLS", img:"assets/products/NT-HLS.png", name:"Hidrostatik Seviye Transmitterleri", glyph:"hydro",
        desc:"Hidrostatik seviye transmitteri özel olarak daldırma tip olarak dizayn edilmiştir. Sıvı seviyesi yükseldikçe dip kısma yapmış olduğu basınç lineer olarak artmaktadır. Bu prensibe dayalı olarak sıvıya daldırılan ürün, sıvı seviyesinin yükselmesine bağlı olarak seviyeyi hassas bir şekilde ölçer.",
        specs:[["Ölçüm Aralığı","1 – 100 metre"],["Hassasiyet","%0,5"],["Maksimum Basınç","%200 FS"],["Elektriksel Bağlantı","Seviye değerine göre kablo uzunluğu"],["Besleme Voltajı","+12…30 VDC"],["Koruma Sınıfı","IP68"],["Gövde","1.4404 (AISI 316L), ops. 1.4462 (dubleks) – Titanyum"],["Çalışma Sıcaklığı","−25…+85 °C"],["Çıkış","4–20 mA, 0–10 VDC veya 0,5–4,5 VDC"]],
        uses:"Kuyular, su tankları, akaryakıt tankları, göl seviyesi, nehir seviyesi, deniz seviyesi, rezervuarlar.",
        sectors:"Sulama sistemleri, akarsular, tanklar, belediye ve kamu kurumları.",
        notes:["Kablo boyu sipariş sırasında belirtilmelidir.","Ölçümde hava kanallı özel kablo kullanıldığı için muhafaza edilmelidir."]},
 
-      {code:"NT-CLS", img:"assets/kat/p13_3.png", name:"Kapasitif Seviye Transmitterleri", glyph:"capacitive",
+      {code:"NT-CLS", img:"assets/products/NT-CLS.png", name:"Kapasitif Seviye Transmitterleri", glyph:"capacitive",
        desc:"Kapasitif seviye transmitteri, katı ve sıvı malzemelerin seviye yönetiminde; toz, köpük, kir veya benzer partiküllere rağmen yüksek hassasiyette oransal ölçüm imkânı sunar. Kapasitif ölçüm prensibi, elektrot ve tank yüzeyi arasında kütleye bağlı değişen kapasite değerinin algılanmasına dayanır. Sensör elektrodu, kurulum sonrasında istenen noktaya kadar malzeme içerisine daldırılır.",
        specs:[["Ölçüm Mesafesi","150 – 400 – 650 – 1150 mm"],["İşlem Sıcaklığı","−20…+100 °C"],["Koruma Sınıfı","IP68"],["Maks. Çalışma Basıncı","10 bar"],["Algılama Gecikmesi","Maks. 1 sn"],["Besleme Gerilimi","12 – 35 VDC, 1,2 W"],["Sinyal Çıkışı","Röle, 1 enversör kontak, AC maks. 250 VAC / 2 A / 500 VA"]],
        uses:"Yapı endüstrisinde alçı, kireç, ince kum, dolomit, kalsit, perlitli alçı, çimento, taş, kömür, pulverize kömür tozu; gıda endüstrisinde yem, tohum, un, tuz, şeker.",
@@ -202,7 +202,7 @@ window.NF_CAT = {
        uses:"İnşaat, yapı, gıda ve plastik endüstrisinde bulk katı malzeme seviye kontrolü.",
        sectors:"İnşaat sektörü (alçı, kireç, çimento, taş kırma tesisleri), gıda (yem, tohum, un, tuz, şeker, çay, bakliyat), plastik sanayi."},
 
-      {code:"NT-VLS", img:"assets/kat/p14_3.png", name:"Titreşimli Seviye Sensörleri", glyph:"vibrating",
+      {code:"NT-VLS", img:"assets/products/NT-VLS.png", name:"Titreşimli Seviye Sensörleri", glyph:"vibrating",
        desc:"Titreşimli seviye sensörleri; sıvı ve katı malzemelerde noktasal seviye tespiti için tasarlanmıştır. Prob üzerindeki titreşimin malzeme teması ile sönümlenmesi esasına dayanır. Oynar parça sayısının azlığı sayesinde bakım gereksinimi düşüktür ve yüksek titreşimli ortamlarda güvenle çalışır.",
        specs:[["Uygulama","Sıvı ve katı malzemeler"],["Malzeme","Paslanmaz çelik"],["Mekanik Bağlantı","R1\", ops. flanşlı, tri-clamp"],["Maks. Sıcaklık ve Basınç","150 °C … 1,5 MPa"],["Çıkış","PNP-NO"],["Besleme","24 VDC"]],
        uses:"Toz, granül ve partikül hâlindeki katı ürünler ile sıvılar.",

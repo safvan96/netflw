@@ -224,27 +224,27 @@ window.NF_CAT = {
     /* ===================== LEVEL SENSORS ===================== */
     {id:"seviye", kicker:"03", title:"Level Sensors", sub:"Continuous and point level measurement on liquids and solids", glyph:"level",
      products:[
-      {code:"NT-ULS", img:"assets/kat/p12_1.png", name:"Ultrasonic Level Transmitters", glyph:"ultra",
+      {code:"NT-ULS", img:"assets/products/NT-ULS.png", name:"Ultrasonic Level Transmitters", glyph:"ultra",
        desc:"Ultrasonic level sensors are instruments designed for non-contact distance, level and volume measurement on solids and liquids. They consist of an ultrasonic sensor, a signal converter and a control unit. The sound wave that the easily mounted sensor sends into the tank strikes the material and is detected on its return, thereby determining the level. False readings are prevented by the filtering feature.",
        specs:[["Measuring Range","0–1 … 0–20 metres"],["Accuracy","0.5% – 1.0%"],["Resolution","3 mm or 0.1%"],["Temperature Rating","Transmitter −20…+60 °C, sensor −20…+80 °C"],["Ingress Protection","Transmitter IP65, sensor IP68"],["Output","4–20 mA"],["Power Supply","24 VDC"]],
        uses:"Water treatment and distribution plants, chemical and petrochemical plants, food plants, closed and open tanks.",
        sectors:"Sand, cement clinker, wastewater, clean water, dusty solid particles, food and feed, plastic granules.",
        notes:["The steps stated in the installation guide must be followed.","Probe selection must be made carefully according to the medium used."]},
 
-      {code:"NT-RLS", img:"assets/kat/p12_2.png", name:"Radar Level Transmitters", glyph:"radar",
+      {code:"NT-RLS", img:"assets/products/NT-RLS.png", name:"Radar Level Transmitters", glyph:"radar",
        desc:"Radar level sensors emit frequency sweeps that increase over time through pulse management; these signals, reflected back from the measured surface, are collected by the antenna and the level of liquids and solids is thereby determined. With their advanced technology and different application methods such as non-contact and guided wave, they simplify measurement in demanding processes. The measured value can be interpreted as distance, level, volume or mass.",
        specs:[["Measuring Range","0–10 m / 0–30 m / 0–50 m / 0–70 m"],["Accuracy","±2 mm"],["Power Supply","24 VDC – 220 VAC"],["Temperature Rating","−60…+60 °C / −60…+150 °C / −60…+250 °C"],["Ingress Protection","Transmitter IP65, sensor IP68"],["Signal & Communication Output","4–20 mA, HART, RS485 Modbus, Profibus PA, Foundation Fieldbus"],["Frequency Band","26 GHz – 70 GHz"]],
        uses:"Sand, cement clinker, wastewater, clean water, dusty solid particles, high-temperature and viscous liquids; milk and dairy products, soft drinks, oil, petrol, diesel, dolomite, calcite, lime, flour and feed, plastic granules.",
        sectors:"Ceramics industry, cement plants, treatment plants, food industry, petrochemical industry, plastics processing and raw material plants, sand and stone quarries, lime and gypsum plants."},
 
-      {code:"NT-HLS", img:"assets/kat/p13_2.png", name:"Hydrostatic Level Transmitters", glyph:"hydro",
+      {code:"NT-HLS", img:"assets/products/NT-HLS.png", name:"Hydrostatic Level Transmitters", glyph:"hydro",
        desc:"The hydrostatic level transmitter is specially designed as a submersible type. As the liquid level rises, the pressure it exerts on the bottom increases linearly. Based on this principle, the unit submerged in the liquid measures the level precisely in proportion to the rise of the liquid level.",
        specs:[["Measuring Range","1 – 100 metres"],["Accuracy","0.5%"],["Maximum Pressure","200% FS"],["Electrical Connection","Cable length according to the level value"],["Supply Voltage","+12…30 VDC"],["Ingress Protection","IP68"],["Body","1.4404 (AISI 316L), opt. 1.4462 (duplex) – titanium"],["Operating Temperature","−25…+85 °C"],["Output","4–20 mA, 0–10 VDC or 0.5–4.5 VDC"]],
        uses:"Wells, water tanks, fuel tanks, lake level, river level, sea level and reservoirs.",
        sectors:"Irrigation systems, watercourses, tanks, municipalities and public institutions.",
        notes:["The cable length must be stated when ordering.","A special vented cable is used for the measurement and must therefore be protected."]},
 
-      {code:"NT-CLS", img:"assets/kat/p13_3.png", name:"Capacitive Level Transmitters", glyph:"capacitive",
+      {code:"NT-CLS", img:"assets/products/NT-CLS.png", name:"Capacitive Level Transmitters", glyph:"capacitive",
        desc:"The capacitive level transmitter offers high-accuracy proportional measurement in the level management of solid and liquid materials, despite dust, foam, dirt or similar particles. The capacitive measuring principle is based on detecting the capacitance value between the electrode and the tank surface, which varies with the mass present. After installation, the sensor electrode is immersed into the material down to the required point.",
        specs:[["Measuring Length","150 – 400 – 650 – 1150 mm"],["Process Temperature","−20…+100 °C"],["Ingress Protection","IP68"],["Max. Working Pressure","10 bar"],["Detection Delay","Max. 1 s"],["Supply Voltage","12 – 35 VDC, 1.2 W"],["Signal Output","Relay, 1 changeover contact, AC max. 250 VAC / 2 A / 500 VA"]],
        uses:"In the building industry: gypsum, lime, fine sand, dolomite, calcite, perlite plaster, cement, stone, coal, pulverised coal dust; in the food industry: feed, seed, flour, salt and sugar.",
@@ -257,7 +257,7 @@ window.NF_CAT = {
        uses:"Bulk solid level control in the construction, building, food and plastics industries.",
        sectors:"Construction sector (gypsum, lime, cement, stone crushing plants), food (feed, seed, flour, salt, sugar, tea, pulses), plastics industry."},
 
-      {code:"NT-VLS", img:"assets/kat/p14_3.png", name:"Vibrating Fork Level Switches", glyph:"vibrating",
+      {code:"NT-VLS", img:"assets/products/NT-VLS.png", name:"Vibrating Fork Level Switches", glyph:"vibrating",
        desc:"Vibrating level sensors are designed for point level detection on liquid and solid materials. They work on the principle that the vibration on the fork is damped when it comes into contact with material. Thanks to the small number of moving parts, maintenance requirements are low and they operate reliably in environments with high vibration.",
        specs:[["Application","Liquid and solid materials"],["Material","Stainless steel"],["Mechanical Connection","R1\", opt. flanged, tri-clamp"],["Max. Temperature & Pressure","150 °C … 1.5 MPa"],["Output","PNP-NO"],["Power Supply","24 VDC"]],
        uses:"Solid products in powder, granule and particle form, as well as liquids.",
