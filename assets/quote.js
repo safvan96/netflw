@@ -551,10 +551,12 @@ function save(){
 function getList(){ try{ return JSON.parse(localStorage.getItem(LIST_KEY)||'[]'); }catch(e){ return []; } }
 function saveToArchive(){
   const list=getList();
-  const entry={code:S.meta.no, date:S.meta.date, customer:S.cust.company||'—', country:S.cust.country||'', currency:S.currency, grand:totals().grand, data:JSON.stringify(S)};
+  const t=totals();
+  const itemCount=S.items.length;
+  const entry={code:S.meta.no, date:S.meta.date, customer:S.cust.company||'—', country:S.cust.country||'', currency:S.currency, grand:t.grand, items:itemCount, savedAt:new Date().toISOString(), data:JSON.stringify(S)};
   const idx=list.findIndex(x=>x.code===entry.code);
   if(idx>=0) list[idx]=entry; else list.unshift(entry);
-  localStorage.setItem(LIST_KEY, JSON.stringify(list.slice(0,100)));
+  localStorage.setItem(LIST_KEY, JSON.stringify(list.slice(0,200)));
 }
 function renderArchive(){
   const list=getList();
@@ -562,10 +564,16 @@ function renderArchive(){
   if(!ul) return;
   if(!list.length){ ul.innerHTML='<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:13px">No saved quotes yet.</div>'; return; }
   ul.innerHTML=list.map(q=>`
-    <div class="arch-item" data-load="${esc(q.code)}">
-      <div class="arch-code">${esc(q.code)}</div>
-      <div class="arch-cust">${esc(q.customer)}${q.country?' · '+esc(q.country):''}</div>
-      <div class="arch-meta">${fmtDate(q.date)} · ${q.currency} ${(q.grand||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div>
+    <div class="arch-item">
+      <div style="display:flex;align-items:center;gap:8px">
+        <div style="flex:1;min-width:0;cursor:pointer" data-load="${esc(q.code)}">
+          <div class="arch-code">${esc(q.code)}</div>
+          <div class="arch-cust">${esc(q.customer)}${q.country?' · '+esc(q.country):''}</div>
+          <div class="arch-meta">${fmtDate(q.date)} · ${q.items||'?'} items · ${q.currency} ${(q.grand||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div>
+        </div>
+        <button class="arch-export" data-export="${esc(q.code)}" title="Export JSON" style="background:none;border:1px solid var(--line-2);border-radius:6px;padding:4px 6px;cursor:pointer;color:var(--ink-3);font-size:11px">JSON</button>
+        <button class="arch-del" data-del="${esc(q.code)}" title="Delete" style="background:none;border:1px solid var(--line-2);border-radius:6px;padding:4px 7px;cursor:pointer;color:#e0556a;font-size:13px">✕</button>
+      </div>
     </div>`).join('');
 }
 
@@ -998,11 +1006,18 @@ function bind(){
   });
   $('#btnClosePv').addEventListener('click',()=>{$('#previewOv').classList.remove('open');document.body.style.overflow='';});
   $('#btnPrint').addEventListener('click',()=>{buildDoc();setTimeout(()=>window.print(),60);});
-  $('#btnSave').addEventListener('click',()=>{save();saveToArchive();exportQuoteJSON();renderArchive();const b=$('#btnSave');const o=b.innerHTML;b.innerHTML='✓ Saved';setTimeout(()=>b.innerHTML=o,1200);});
+  $('#btnSave').addEventListener('click',()=>{save();saveToArchive();renderArchive();const b=$('#btnSave');const o=b.innerHTML;b.innerHTML='✓ Saved';setTimeout(()=>b.innerHTML=o,1200);});
   // archive panel toggle
   $('#btnArchive').addEventListener('click',()=>{ const p=$('#archivePanel'); p.style.display=p.style.display==='block'?'none':'block'; renderArchive(); });
   document.addEventListener('click',e=>{ if(!e.target.closest('#archivePanel')&&!e.target.closest('#btnArchive')) $('#archivePanel').style.display='none'; });
-  $('#archiveList').addEventListener('click',e=>{ const it=e.target.closest('[data-load]'); if(!it)return; const list=getList(); const entry=list.find(x=>x.code===it.dataset.load); if(!entry)return; try{ S=JSON.parse(entry.data); if(!S.terms)S.terms={}; if(!S.cust.reqBy)S.cust.reqBy=''; if(!S.cust.custSign)S.cust.custSign=''; save(); loadForm(); renderPalette(); renderItems(); renderTotals(); $('#archivePanel').style.display='none'; }catch(e){} });
+  $('#archiveList').addEventListener('click',e=>{
+    // load quote
+    const ld=e.target.closest('[data-load]'); if(ld){ const list=getList(); const entry=list.find(x=>x.code===ld.dataset.load); if(!entry)return; try{ S=JSON.parse(entry.data); if(!S.terms)S.terms={}; if(!S.cust.reqBy)S.cust.reqBy=''; if(!S.cust.custSign)S.cust.custSign=''; save(); loadForm(); renderPalette(); renderItems(); renderTotals(); $('#archivePanel').style.display='none'; }catch(ex){} return; }
+    // export single quote as JSON
+    const ex=e.target.closest('[data-export]'); if(ex){ const list=getList(); const entry=list.find(x=>x.code===ex.dataset.export); if(!entry)return; try{ const d=JSON.parse(entry.data); const blob=new Blob([JSON.stringify(d,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=(entry.code||'quote')+'.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); }catch(ex2){} return; }
+    // delete quote
+    const dl=e.target.closest('[data-del]'); if(dl){ if(!confirm('Delete this quote?'))return; let list=getList(); list=list.filter(x=>x.code!==dl.dataset.del); localStorage.setItem(LIST_KEY,JSON.stringify(list)); renderArchive(); return; }
+  });
   $('#btnNew').addEventListener('click',()=>{ if(confirm('Start a new blank quotation? The current draft will be cleared.')){ S=defaultState(); save(); loadForm(); renderItems(); renderTotals(); } });
 
   // shipping copy
