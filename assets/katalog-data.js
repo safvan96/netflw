@@ -325,7 +325,19 @@ window.NF_CAT = {
        ],
        specs:[["Gösterge Çapları","40, 50, 63, 100, 160, 200 mm"],["Ölçüm Aralığı","−1 bar … 1600 bar"],["Hassasiyet","Cl. 1.0 / Cl. 1.6 / Cl. 2.5"],["Sıcaklık Aralığı","+60 °C … +200 °C (tipe göre)"],["Gövde","Paslanmaz çelik / pirinç"]],
        uses:"Sıvı, buhar ve gazlar.",
-       sectors:"Gemi endüstrisi, temiz su taşıma sistemleri, atık su sistemleri, kimya ve petrokimya endüstrisi, enerji santralleri, gıda ve meşrubat endüstrisi, süt makineleri, ilaç sanayi, makine endüstrisi."}
+       sectors:"Gemi endüstrisi, temiz su taşıma sistemleri, atık su sistemleri, kimya ve petrokimya endüstrisi, enerji santralleri, gıda ve meşrubat endüstrisi, süt makineleri, ilaç sanayi, makine endüstrisi."},
+
+      {code:"NT-DPS-A", img:"assets/products/NT-DPS-A.png", name:"Hava Fark Basınç Şalteri", glyph:"diffpressure",
+       desc:"Klima ve havalandırma sistemlerinde filtre tıkanma tespiti için fark basınç şalteri. Filtre üzerindeki basınç düşüşü ayarlanan set değerini aştığında SPDT röle çıkışı alarm veya kontrol işlemi başlatır.",
+       specs:[["Ölçüm Aralığı","20 – 300 Pa (ayarlanabilir)"],["Kontak","SPDT (değiştirmeli)"],["Koruma Sınıfı","IP54"],["Bağlantı","6 mm hortum nipeli"],["Çalışma Sıcaklığı","−10…+85 °C"],["Set Değeri","Skaladan ayarlanabilir"]],
+       uses:"Hava filtresi tıkanma tespiti, temiz oda izleme, havalandırma ve fan kontrolü.",
+       sectors:"HVAC, temiz odalar, bina otomasyonu, üretim tesisleri."},
+
+      {code:"NT-DPS-L", img:"assets/products/NT-DPS-L.png", name:"Sıvı Fark Basınç Şalteri", glyph:"diffpressure",
+       desc:"Sıvı filtre durumunu izlemek ve basınç farkı set değerini aştığında alarm tetiklemek için kompakt fark basınç şalteri. Su, yağ ve kimyasal filtrasyon sistemlerine uygundur.",
+       specs:[["Ölçüm Aralığı","0,2 – 4 bar (ayarlanabilir)"],["Kontak","SPDT (değiştirmeli)"],["Koruma Sınıfı","IP65"],["Bağlantı","G 1/4\" veya 1/4\" NPT"],["Çalışma Sıcaklığı","−20…+85 °C"],["Maks. Çalışma Basıncı","40 bar"]],
+       uses:"Sıvı filtre izleme, soğutma devresi koruması, endüstriyel proses kontrolü.",
+       sectors:"Su arıtma, kimya, enerji santralleri, üretim."}
      ]},
 
     /* ===================== SICAKLIK ===================== */
@@ -410,7 +422,61 @@ window.NF_CAT = {
        ],
        specs:[["Besleme Gerilimi","8 – 36 VDC"],["Üniversal Analog Giriş","Termokupl B,E,J,K,L,N,R,S,T,U; PT100; akım 0/4–20 mA; gerilim 0–50 mV"],["Giriş Çözünürlüğü","16 bit"],["Örnekleme Periyodu","100 – 400 ms"],["Analog Çıkış","0/4–20 mA, 0/2–10 V, 20–4 mA"],["Yük Direnci","Akım RL ≤ 600 Ω, gerilim RL ≥ 1 MΩ"],["Doğruluk","PT100 ±%0,2 MV ±0,3 °C; T/C, mV ±%0,2 MV ±1 °C"],["Isıl Sürüklenme","±100 ppm/°C"],["Galvanik İzolasyon","1500 V"],["Hafıza","100 yıl, 100.000 yenileme"],["Tepki Süresi","0,2 … 120 s"],["Çalışma Sıcaklığı","−40…+85 °C"]],
        uses:"Sinyal seviyesi ve tipi dönüşümü, uzun mesafe sinyal taşıma, galvanik izolasyon.",
-       sectors:"Tüm endüstriyel otomasyon uygulamaları."}
+       sectors:"Tüm endüstriyel otomasyon uygulamaları."},
+
+      {code:"NT-MLC", img:"assets/products/NT-MLC.png", name:"Manyetik Lineer Enkoder", glyph:"angle",
+       desc:"Yağ, nem ve toza karşı çift conta korumalı, yataklı kapalı profil sisteme sahip kompakt manyetik lineer enkoder. Artımlı veya mutlak konum sinyali, sızdırmaz alüminyum profil içindeki manyetik skaladan okunarak üretilir.",
+       variants:[["MLC 310 Serisi","Kompakt yataklı kapalı profil, 20 m'ye kadar ölçüm uzunluğu. SSI, analog ve artımlı çıkış seçenekleri. IP67 koruma ile 5 µm çözünürlük."]],
+       specs:[["Ölçüm Uzunluğu","20 m'ye kadar"],["Çözünürlük","5 µm"],["Çıkış","SSI, 4–20 mA, 0–10 V, artımlı"],["Koruma","IP67"],["Çalışma Sıcaklığı","−20…+85 °C"],["Profil","Yataklı sızdırmaz alüminyum"]],
+       uses:"CNC tezgah eksen konumlama, pres strok ölçümü, paketleme makineleri.",
+       sectors:"Tezgahlar, presler, paketleme, kauçuk ve plastik makineleri."},
+
+      {code:"NT-MLS-E", img:"assets/products/NT-MLS-E.png", name:"Manyetik Okuyucu Sensör", glyph:"angle",
+       desc:"Ayrı monte edilen manyetik bant üzerinde çalışan temassız manyetik okuyucu sensör. Entegre bant sıyırıcıları ile çevresel koruma sağlar ve çok uzun mesafelerde hassas konum ölçümü yapar.",
+       variants:[["MLS 130 Serisi","Entegre bant sıyırıcılı okuyucu kafa, 100 m'ye kadar ölçüm uzunluğu. SSI, analog ve artımlı çıkışlar. 5 µm çözünürlük, IP67 koruma."]],
+       specs:[["Ölçüm Uzunluğu","100 m'ye kadar"],["Çözünürlük","5 µm"],["Çıkış","SSI, 4–20 mA, 0–10 V, artımlı"],["Koruma","IP67"],["Çalışma Sıcaklığı","−20…+85 °C"],["Bant","Yapışkanlı manyetik bant"]],
+       uses:"Uzun strok konumlama, vinç ve portal yürüyüş ölçümü, depolama sistemleri.",
+       sectors:"Lojistik, vinçler, AGV, demir çelik, ahşap işleme."},
+
+      {code:"NT-PLC", img:"assets/products/NT-PLC.png", name:"Potansiyometrik Lineer Cetvel", glyph:"angle",
+       desc:"Tezgahlar, hidrolik silindirler, enjeksiyon kalıpları ve endüstriyel aktüatörlerde strok ölçümü için analog potansiyometrik lineer pozisyon sensörü. Şaftlı ve şaftsız konfigürasyonlarda mevcuttur.",
+       variants:[["TLH Serisi","Şaftsız üstten montaj tasarım, 25–3000 mm strok aralığı, ±%0,01 doğrusallık, IP65 koruma."],["LWH Serisi","Yüksek hızlı ölçüm için bilye uçlu şaft tasarım, 50–1250 mm strok aralığı."],["LWG Serisi","Açılı montaj için mafsallı tasarım, 50–900 mm strok aralığı."]],
+       specs:[["Strok Aralığı","25 – 3000 mm"],["Doğrusallık","±%0,01"],["Çıkış","0–10 V, 4–20 mA"],["Koruma","IP65"],["Çalışma Sıcaklığı","−30…+100 °C"],["Ömür","50 × 10⁶ strok"]],
+       uses:"Hidrolik silindir pozisyonu, pres stroku, enjeksiyon kalıp kapanma mesafesi.",
+       sectors:"Hidrolik, presler, enjeksiyon kalıp, paketleme, test."},
+
+      {code:"NT-MSC", img:"assets/products/NT-MSC.png", name:"Manyetostriktif Lineer Cetvel", glyph:"angle",
+       desc:"Hidrolik silindir içi montaj ve harici strok ölçümü için temassız manyetostriktif lineer pozisyon sensörü. Algılama prensibi mükemmel uzun vadeli kararlılık ve titreşim bağışıklığı sağlar.",
+       variants:[["TP1 Serisi","Konumsal mıknatıslı harici montaj, 50–5000 mm strok aralığı, 1 µm çözünürlük, 350 bar basınç dayanımı."],["TH1 Serisi","Hidrolik silindirler için silindir içi montaj, piston mıknatısı ile doğrudan entegrasyon."]],
+       specs:[["Strok Aralığı","50 – 5000 mm"],["Çözünürlük","1 µm"],["Basınç Dayanımı","350 bar'a kadar"],["Çıkış","SSI, 4–20 mA, 0–10 V"],["Koruma","IP67 / IP68"],["Çalışma Sıcaklığı","−40…+100 °C"]],
+       uses:"Hidrolik silindir pozisyonu, pres ve kalıp yastığı kontrolü, servo-hidrolik.",
+       sectors:"Hidrolik, demir çelik, presler, enerji, mobil makine."},
+
+      {code:"NT-OLC", img:"assets/products/NT-OLC.png", name:"Optik Lineer Enkoder", glyph:"angle",
+       desc:"Yüksek hassasiyetli CNC tezgahlar, koordinat ölçüm makineleri ve yarıiletken ekipmanları için yataklı optik lineer enkoder. Cam skala teknolojisi mikron altı çözünürlük sağlar.",
+       specs:[["Ölçüm Uzunluğu","3000 mm'ye kadar"],["Çözünürlük","1 µm (opsiyonel 0,1 µm)"],["Çıkış","RS422 / TTL artımlı, opsiyonel SSI mutlak"],["Koruma","IP53"],["Doğruluk","±3 µm / m"],["Çalışma Sıcaklığı","+10…+50 °C"]],
+       uses:"CNC işleme merkezleri, EDM, taşlama tezgahları, koordinat ölçüm makineleri.",
+       sectors:"Tezgahlar, hassas üretim, yarıiletken, metroloji."},
+
+      {code:"NT-INS", img:"assets/products/NT-INS.png", name:"Eğim Sensörü (İnklinometre)", glyph:"angle",
+       desc:"Eğim ve meyil ölçümü için MEMS tabanlı inklinometre. Platform tesviyesi, iş makineleri, güneş takip sistemleri ve yapısal sağlık izleme için güvenilir açı verileri sağlar.",
+       variants:[["INS 130 Serisi","Tek veya çift eksen, ±10° ile ±90° aralık, 0,01° çözünürlük, IP67, 4–20 mA ve CANopen çıkışlar."],["INS 120 / 110 Serisi","OEM entegrasyonu için voltaj çıkışlı kompakt versiyonlar, ±15° ile ±60° aralık."],["INC 210 / 110 Serisi","Yapısal izleme için dijital çıkışlı yüksek hassasiyetli inklinometreler, ±0,005° doğruluk."]],
+       specs:[["Aralık","±10° … ±90°"],["Çözünürlük","0,01°"],["Doğruluk","±0,1° (standart), ±0,005° (hassas)"],["Çıkış","4–20 mA, 0–10 V, CANopen, Modbus"],["Koruma","IP67"],["Çalışma Sıcaklığı","−40…+85 °C"]],
+       uses:"Mobil makine eğim izleme, güneş takip konumlama, platform tesviyesi, yapısal izleme.",
+       sectors:"İnşaat, yenilenebilir enerji, denizcilik, madencilik, endüstriyel otomasyon."},
+
+      {code:"NT-TMR", img:"assets/products/NT-TMR.png", name:"Timer / Kronometre", glyph:"panel",
+       desc:"Tek cihazda çoklu zamanlama modları sunan panel tipi dijital timer ve kronometre. Ön panelden programlanabilir, endüstriyel zamanlama, sıralama ve parti kontrolü için çift röle çıkışlı.",
+       variants:[["TCS9 Serisi","72×72 mm panel montaj, çift 6 haneli gösterge, çoklu zamanlama modları, 2× röle çıkış, RS485 opsiyonu."],["TCS4 Serisi","48×48 mm kompakt panel montaj, aynı zamanlama fonksiyonları daha küçük form faktöründe."],["TCS37 Serisi","DIN 72×36 mm format, temel zamanlama modlarıyla ekonomik timer."]],
+       specs:[["Panel Boyutu","48×48 / 72×72 / 72×36 mm"],["Gösterge","2 × 6 hane (kırmızı LED)"],["Zamanlama Aralığı","0,01 s – 9999 saat"],["Çıkış","2× röle (SPDT), opsiyonel transistör"],["Besleme","100–240 VAC veya 12–24 VDC"],["Doğruluk","±%0,05"]],
+       uses:"Parti zamanlama, makine sıralama, pompa çalışma süresi, proses gecikme kontrolü.",
+       sectors:"Paketleme, gıda işleme, su arıtma, genel üretim."},
+
+      {code:"NT-STC", img:"assets/products/NT-STC.png", name:"Adım Kontrol Cihazı (Profil Kontrol)", glyph:"controller",
+       desc:"Rampa/tutma sıcaklık programları, fırın pişirme eğrileri ve ısıl işlem çevrimleri için adım (profil) kontrol cihazı. Termokupl ve PT100 girişli, röle ve analog çıkışlı programlanabilir çok adımlı profiller.",
+       specs:[["Panel Boyutu","72×72 mm"],["Giriş","TC (J, K, R, S, T), PT100, 4–20 mA"],["Gösterge","2 × 4 hane (kırmızı LED)"],["Adım","7 rampa/tutma adımına kadar"],["Çıkış","2× röle + 4–20 mA analog"],["Doğruluk","±%0,5"],["Besleme","100–240 VAC"]],
+       uses:"Fırın pişirme eğrileri, ısıl işlem rampa/tutma, ocak sıcaklık profilleme.",
+       sectors:"Seramik, cam, metalürji, laboratuvarlar, ısıl işlem tesisleri."}
      ]},
 
     /* ===================== MEKANİK KONTROL ===================== */
@@ -450,7 +516,19 @@ window.NF_CAT = {
        ],
        specs:[["Gövde Materyali","Sfero döküm, paslanmaz çelik, pirinç, PVC, alüminyum döküm"],["Bağlantı","Wafer, dişli, flanşlı"],["Basınç Sınıfı","PN10 … PN63"],["Maks. Sıcaklık","60 °C … 180 °C"],["Aktüatör Uyumu","Pnömatik ve elektrik"]],
        uses:"Hat açma-kapama, akış yönlendirme ve oransal debi kontrolü.",
-       sectors:"Su ve atık su, kimya ve petrokimya, gıda sanayi, enerji tesisleri, madencilik."}
+       sectors:"Su ve atık su, kimya ve petrokimya, gıda sanayi, enerji tesisleri, madencilik."},
+
+      {code:"NT-SOL-L", img:"assets/products/NT-SOL-L.png", name:"Büyük Ölçü Solenoid Vana", glyph:"solenoid",
+       desc:"Su, sulama, yangın söndürme ve endüstriyel açma/kapama kontrolü için büyük çaplı solenoid vana (DN50–DN200). Pirinç veya döküm demir gövdeli pilot kumandalı.",
+       specs:[["Ölçü","DN50 – DN200"],["Gövde Malzemesi","Pirinç / döküm demir"],["Pozisyon","NK (normalde kapalı)"],["Bobin","24 VAC/DC – 220 VAC"],["Maks. Basınç","10 bar"],["Sıcaklık","−10…+80 °C"]],
+       uses:"Su dağıtımı, sulama sistemleri, yangın söndürme hatları, büyük çaplı açma/kapama kontrolü.",
+       sectors:"Tarım, yangın koruması, su idareleri, endüstriyel tesisler."},
+
+      {code:"NT-BDV", img:"assets/products/NT-BDV.png", name:"Patlaç Valf", glyph:"solenoid",
+       desc:"Torba filtre toz toplayıcıları için darbe jet valf (patlaç valf). Filtre torbalarını temizlemek için kısa, yüksek enerjili hava darbesi verir. Alüminyum gövde, silikon veya kauçuk diyafram.",
+       specs:[["Ölçü","1\" – 4\" (dişli, flanşlı veya rekor)"],["Gövde Malzemesi","Alüminyum"],["Diyafram","Silikon / kauçuk"],["Çalışma Basıncı","0,2 – 0,6 MPa"],["Bobin","DC 24V (standart)"],["Tepki Süresi","< 5 ms"]],
+       uses:"Toz toplama sistemlerinde torba filtre temizleme.",
+       sectors:"Çimento fabrikaları, madencilik, toz işleme, demir çelik, gıda işleme."}
      ]},
 
     /* ===================== EL TİPİ + OTOMASYON ===================== */
@@ -462,37 +540,61 @@ window.NF_CAT = {
        uses:"Makine yüzey sıcaklığı, elektrik panosu kontrolü, gıda güvenliği denetimi.",
        sectors:"Bakım-onarım, gıda, enerji, ağır sanayi."},
 
-      {code:"NT-ANM", img:"assets/kat/p30_2.png", name:"Anemometre", glyph:"anemo",
+      {code:"NT-ANM", img:"assets/kat/p30_3.png", name:"Anemometre", glyph:"anemo",
        desc:"Açık sahalarda veya hava akışının geliştiği tünellerde rüzgâr/hava hızı ölçümlemesi yapan kolay kullanımlı cihazlardır. Bu tip cihazların birçok modelinde sıcaklık ve nem değerleri ölçümü de yapılır.",
        specs:[["Ölçüm","Hava/rüzgâr hızı, sıcaklık, nem"],["Kullanım","El tipi"]],
        uses:"Havalandırma kanalı ölçümü, tünel ve maden havalandırması, HVAC devreye alma.",
        sectors:"İklimlendirme, madencilik, inşaat, enerji."},
 
-      {code:"NT-SLM", img:"assets/kat/p30_3.png", name:"Ses (Desibel) Ölçer", glyph:"sound",
+      {code:"NT-SLM", img:"assets/kat/p30_4.png", name:"Ses (Desibel) Ölçer", glyph:"sound",
        desc:"Ses şiddetinin ölçümlenmesi ve tespit edilmesi için geliştirilmiş el tipi kompakt cihazlardır. Isı, nem ve ışık gibi farklı ölçüm parametreleriyle bir araya getirilmiş farklı modeller mevcuttur.",
        specs:[["Ölçüm","Ses şiddeti (dB), ops. ısı-nem-ışık"],["Kullanım","El tipi kompakt"]],
        uses:"İş sağlığı ve güvenliği ölçümleri, çevresel gürültü denetimi.",
        sectors:"İSG, belediye ve kamu, endüstriyel tesisler."},
 
-      {code:"NT-GLD", img:"assets/kat/p30_4.png", name:"Gaz Kaçak Dedektörü", glyph:"gasdetect",
+      {code:"NT-GLD", img:"assets/kat/p30_5.png", name:"Gaz Kaçak Dedektörü", glyph:"gasdetect",
        desc:"Sızıntısı ile insan sağlığını tehlikeye atabilecek karbonmonoksit, amonyak, metan, propan gibi gazların kaçak tespitini sağlayabilen cihazlardır. Ses ve ışıkla, belirtilen seviyenin üstüne çıkması durumunda alarm verebilir.",
        specs:[["Algılanan Gazlar","CO, amonyak, metan, propan vb."],["Alarm","Sesli ve ışıklı"],["Kullanım","El tipi"]],
        uses:"Gaz hattı kaçak kontrolü, kapalı alan güvenliği, bakım denetimi.",
        sectors:"Doğalgaz, petrokimya, soğutma tesisleri, bina yönetimi."},
 
-      {code:"NT-AQM", img:"assets/kat/p30_5.png", name:"pH, EC, TDS ve Klor Ölçerler", glyph:"analytic",
+      {code:"NT-AQM", img:"assets/kat/p30_7.png", name:"pH, EC, TDS ve Klor Ölçerler", glyph:"analytic",
        desc:"pH, iletkenlik, tuzluluk, çözünmüş oksijen, klor vb. analitik ölçümlemeler için geliştirilmiş cihazlardır. El tipi, laboratuvar tipi ve online (sürekli) ölçüm için tasarlanmış modeller mevcuttur. Bazı modellerinde kontrol ve izleme amaçlı analog veya dijital sinyal çıkışlı seçenekler bulunur.",
        specs:[["Ölçüm Parametreleri","pH, EC, TDS, tuzluluk, çözünmüş oksijen, klor"],["Model Tipleri","El tipi, laboratuvar tipi, online"],["Çıkış","Ops. analog veya dijital sinyal"]],
        uses:"Su arıtma proses kontrolü, havuz ve içme suyu denetimi, laboratuvar analizi.",
        sectors:"Su ve atık su arıtma, gıda sanayi, kimya, belediye ve kamu."},
 
-      {code:"NT-TAO", img:"assets/kat/p30_6.png", name:"Tarla Alan Ölçer", glyph:"gps",
+      {code:"NT-TAO", img:"assets/kat/p30_2.png", name:"Tarla Alan Ölçer", glyph:"gps",
        desc:"GPS sinyalleri sayesinde alan metrekare ölçümü yapabilen, pratik ve yüksek hassasiyetli üründür. Türkçe menüsü ve kullanıcı dostu ara yüzü ile tek butonla ölçüm alabilmenize olanak sağlar.",
        specs:[["Ölçüm","GPS tabanlı alan (m², dekar)"],["Arayüz","Türkçe menü, tek buton ölçüm"]],
        uses:"Tarla ve arazi alan hesabı, tarımsal planlama.",
        sectors:"Tarım, arazi yönetimi, kadastro uygulamaları."},
 
-      {code:"NT-DLG", img:"assets/kat/p30_8.png", name:"Veri Kayıt Cihazları ve Datalogger", glyph:"logger",
+      {code:"NT-CO2", img:"assets/products/NT-CO2.png", name:"CO₂ / Sıcaklık / Nem Transmitteri", glyph:"humidity",
+       desc:"İç hava kalitesi izleme için NDIR CO₂ transmitteri. Entegre sıcaklık ve nem sensörleri ile seralar, soğuk hava depoları, ofisler ve endüstriyel havalandırma sistemleri için tasarlanmıştır.",
+       specs:[["CO₂ Aralığı","0 – 5000 ppm"],["CO₂ Doğruluğu","±30 ppm + okumanın %3'ü"],["Sensör","NDIR (dağılımsız kızılötesi)"],["Sıcaklık","−40…+60 °C"],["Nem","0–100 %rH"],["Çıkış","4–20 mA, RS485 Modbus"],["Koruma","IP65"],["Besleme","24 VDC"]],
+       uses:"Sera CO₂ kontrolü, soğuk hava deposu izleme, ofis hava kalitesi, HVAC talep havalandırma.",
+       sectors:"Tarım, gıda depolama, bina otomasyonu, laboratuvarlar."},
+
+      {code:"NT-GDC", img:"assets/products/NT-GDC.png", name:"Katalitik Gaz Dedektörü", glyph:"gasdetect",
+       desc:"Tehlikeli alanlarda yanıcı gaz konsantrasyonlarının (0–100% LEL) sürekli izlenmesi için sabit katalitik (pelistör) gaz dedektörü. Ex d IIC T6 sertifikalı, 4–20 mA çıkışlı.",
+       specs:[["Algılama","0 – 100% LEL"],["Sensör","Katalitik pelistör"],["Onay","Ex d IIC T6"],["Çıkış","4–20 mA (3 telli)"],["Koruma","IP66"],["Besleme","24 VDC"]],
+       uses:"Rafinerilerde, kimya tesislerinde ve kazan dairelerinde yanıcı gaz kaçak izleme.",
+       sectors:"Petrol ve gaz, petrokimya, enerji santralleri, madencilik."},
+
+      {code:"NT-GDI", img:"assets/products/NT-GDI.png", name:"Kızılötesi Gaz Dedektörü", glyph:"gasdetect",
+       desc:"Yanıcı gazlar ve CO₂ için sabit kızılötesi (NDIR) gaz dedektörü. Katalitik sensörlerden farklı olarak kızılötesi sensörler zehirlenmeye karşı bağışıktır ve oksijensiz ortamlarda çalışır.",
+       specs:[["Algılama","0 – 100% LEL veya 0 – 100% Hacim"],["Sensör","NDIR (kızılötesi)"],["Onay","Ex d IIC T6"],["Çıkış","4–20 mA (3 telli)"],["Koruma","IP66"],["Besleme","24 VDC"]],
+       uses:"Kapalı alanlarda ve tehlikeli bölgelerde yanıcı ve CO₂ gaz izleme.",
+       sectors:"Petrol ve gaz, petrokimya, tüneller, atıksu, madencilik."},
+
+      {code:"NT-GDE", img:"assets/products/NT-GDE.png", name:"Elektrokimyasal Gaz Dedektörü", glyph:"gasdetect",
+       desc:"Endüstriyel ortamlarda ve kapalı alanlarda toksik gazlar (CO, H₂S, O₂, NH₃, Cl₂, SO₂) için sabit elektrokimyasal gaz dedektörü. Ex d IIC T6 sertifikalı.",
+       specs:[["Algılanan Gazlar","CO, H₂S, O₂, NH₃, Cl₂, SO₂ ve diğerleri"],["Sensör","Elektrokimyasal hücre"],["Onay","Ex d IIC T6"],["Çıkış","4–20 mA (3 telli)"],["Koruma","IP66"],["Besleme","24 VDC"]],
+       uses:"Kapalı alanlarda, su arıtma tesislerinde ve kimyasal depolarda toksik gaz izleme.",
+       sectors:"Su arıtma, kimya, madencilik, petrol ve gaz, gıda işleme."},
+
+      {code:"NT-DLG", img:"assets/kat/p30_6.png", name:"Veri Kayıt Cihazları ve Datalogger", glyph:"logger",
        desc:"Tüm termokupl çeşitleri, rezistans termo elemanlar ve tüm üniversal analog giriş tiplerine göre çıkış üreten sensör gruplarının algıladığı verileri hafızasında saklayan; göstergeli modellerinde ekran üzerinden grafiksel veya tablo hâlindeki verileri izleyebilmeye olanak sağlayan cihazlardır. Birçok modelinde bilgisayar üzerinden verilerin incelenebilmesi için haberleşme çıkışları ve izleme yazılımları mevcuttur.",
        variants:[["Veri Kayıt Cihazları","2, 4, 6 … 40 kanal, 320×200 LCD ekran, izole edilmiş üniversal girişler, RS232 haberleşme, 2 GB USB disk ve 1 GB SD kart hafıza, 4–20 mA çıkış ve 24 VDC sensör beslemesi. Kayıt süresi 1 sn – 30 dk arası ayarlanabilir."],["Datalogger","İlaç ve gıda gibi ürünlerin anlık sıcaklık verilerini kaydedebilmek için tasarlanmıştır; genellikle sevkiyat sürecinde ısı değişimleri izlenir. −35…+70 °C, ±0,5 °C hassasiyet, IP67, EN 12830 uyumlu, uluslararası HACCP sertifikalı, 16.000 kayıt kapasitesi, 90 gün çalışma süresi."]],
        specs:[["Kanal Sayısı","2, 4, 6 … 40"],["Ekran","320×200 LCD (kanal sayısına göre değişkenlik gösterir)"],["Giriş","İzole edilmiş üniversal girişler"],["Haberleşme","RS232"],["Hafıza","2 GB USB disk, 1 GB SD kart"],["Tepki Süresi ve Doğruluk","1 sn / ±0,2"],["Çıkış","4–20 mA, 24 VDC sensör besleme"],["Kayıt Süresi","1 sn – 30 dk arası ayarlanabilir"],["Besleme","220 VAC, ops. 24 VDC"]],

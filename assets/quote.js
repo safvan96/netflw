@@ -100,6 +100,104 @@ function getWeight(code,dn){
   return {kg,box:bs};
 }
 
+/* ---------- auto pricing from NF_PRICING ---------- */
+function calcPrice(code, cfg){
+  if(typeof NF_PRICING==='undefined') return 0;
+  var pr = NF_PRICING.products[code];
+  if(!pr) return 0;
+  // follow ref
+  if(pr.ref) pr = NF_PRICING.products[pr.ref];
+  if(!pr) return 0;
+
+  var base = 0;
+  var listRatio = pr.listRatio || 2.0;
+
+  // DN-based pricing
+  if(pr.byDN && cfg.dn){
+    var arr = pr.byDN[cfg.dn];
+    if(!arr) return 0;
+    // arr = [rubber/304/default, ptfe/316/alt] or [single]
+    var idx = 0;
+    if(arr.length > 1){
+      // liner: PTFE/PFA/F46 → col 1
+      if(cfg.liner && /PTFE|PFA|F46/.test(cfg.liner)) idx = 1;
+      // material: SS 316L → col 1
+      if(cfg.mat && /316/.test(cfg.mat)) idx = 1;
+    }
+    base = arr[idx] || arr[0] || 0;
+  }
+  // length-based
+  else if(pr.byLength && cfg.range){
+    var len = parseInt(cfg.range);
+    if(pr.byLength[len]) base = pr.byLength[len];
+    else{
+      // nearest
+      var keys = Object.keys(pr.byLength).map(Number).sort((a,b)=>a-b);
+      base = pr.byLength[keys[0]] || 0;
+    }
+  }
+  // variant-based
+  else if(pr.variants && cfg.range){
+    base = pr.variants[cfg.range] || 0;
+    if(!base){
+      // try first variant
+      var vk = Object.keys(pr.variants);
+      base = vk.length ? pr.variants[vk[0]] : 0;
+    }
+  }
+  // flat base
+  else if(pr.base){
+    base = pr.base;
+  }
+  // variant without range (e.g. ultrasonic types)
+  else if(pr.variants){
+    var vk2 = Object.keys(pr.variants);
+    base = vk2.length ? pr.variants[vk2[0]] : 0;
+  }
+
+  if(!base) return 0;
+
+  // calculate list price for percentage-based options
+  var listPrice = base * listRatio;
+  var total = base;
+
+  // apply options
+  var opts = pr.options || {};
+
+  // electrode
+  if(opts.electrode && cfg.electrode){
+    var eVal = opts.electrode[cfg.electrode];
+    if(eVal) total += eVal;
+  }
+  // output
+  if(opts.output && cfg.output){
+    var oVal = opts.output[cfg.output];
+    if(oVal) total += oVal;
+  }
+  // ip protection
+  if(opts.ip && cfg.ip){
+    var ipDef = opts.ip[cfg.ip];
+    if(ipDef && ipDef.pct) total += listPrice * ipDef.pct / 100;
+  }
+  // pressure class
+  if(opts.pn && cfg.pn){
+    var pnDef = opts.pn[cfg.pn];
+    if(pnDef && pnDef.pct) total += listPrice * pnDef.pct / 100;
+  }
+  // supply (battery)
+  if(opts.supply && cfg.supply){
+    var sVal = opts.supply[cfg.supply];
+    if(sVal) total += sVal;
+  }
+  // temperature
+  if(opts.temp && cfg.temp){
+    var tVal = opts.temp[cfg.temp];
+    if(tVal) total += tVal;
+  }
+
+  return Math.round(total * 100) / 100;
+}
+
 /* ---------- icons by category ---------- */
 const ICONS = {
   flow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="20" height="6" rx="1.5"/><path d="M6 12h.01M10 12h.01M14 12h.01M18 12h.01"/><rect x="9" y="3" width="6" height="6" rx="1"/></svg>',
@@ -326,7 +424,60 @@ const PRODUCTS = [
     desc:N('Handheld GPS area measurement device for agricultural land, construction sites and forestry. Walk or drive the perimeter to compute area and distance. Built-in rechargeable battery, colour LCD, data storage.','Tarım arazisi, şantiye ve ormancılık için elde taşınır GPS alan ölçüm cihazı. Çevre dolaşarak alan ve mesafe hesaplar. Dahili şarj edilebilir pil, renkli LCD, veri depolama.','جهاز قياس مساحة GPS محمول للأراضي الزراعية ومواقع البناء والغابات. امشِ أو قُد حول المحيط لحساب المساحة والمسافة. بطارية قابلة للشحن، شاشة LCD ملونة، تخزين بيانات.','GPS-прибор для измерения площади сельхозугодий, строительных участков и лесных массивов. Обход периметра для расчёта площади и расстояния. Встроенный аккумулятор, цветной ЖК-дисплей, хранение данных.')},
   {code:'NT-DLG',cat:'handheld',cfg:['supply'],
     name:N('Data Recorder / Datalogger','Veri Kaydedici / Datalogger','مسجل بيانات','Регистратор данных'),
-    desc:N('Multi-channel data recorder and datalogger with LCD display and USB/SD storage.','LCD ekran ve USB/SD depolamalı çok kanallı veri kaydedici.','مسجل بيانات متعدد القنوات مع شاشة LCD وتخزين USB/SD.','Многоканальный регистратор данных с ЖК-дисплеем и USB/SD.')}
+    desc:N('Multi-channel data recorder and datalogger with LCD display and USB/SD storage.','LCD ekran ve USB/SD depolamalı çok kanallı veri kaydedici.','مسجل بيانات متعدد القنوات مع شاشة LCD وتخزين USB/SD.','Многоканальный регистратор данных с ЖК-дисплеем и USB/SD.')},
+  /* --- Linear Encoders & Position Sensors --- */
+  {code:'NT-MLC',cat:'control',cfg:['range','output','ip'],
+    name:N('Magnetic Linear Encoder','Manyetik Lineer Enkoder','مشفر خطي مغناطيسي','Магнитный линейный энкодер'),
+    desc:N('Compact magnetic linear encoder with bearing-mounted closed profile for position measurement up to 20 m.','20 m\'ye kadar pozisyon ölçümü için yataklı kapalı profilli kompakt manyetik lineer enkoder.','مشفر خطي مغناطيسي مدمج بملف مغلق محمل على محامل لقياس الموضع حتى 20 م.','Компактный магнитный линейный энкодер с подшипниковым профилем для измерения позиции до 20 м.')},
+  {code:'NT-MLS-E',cat:'control',cfg:['range','output','ip'],
+    name:N('Magnetic Reader Sensor','Manyetik Okuyucu Sensör','حساس قراءة مغناطيسي','Магнитный датчик-считыватель'),
+    desc:N('Magnetic reader sensor on magnetic tape for contactless linear position measurement up to 100 m.','100 m\'ye kadar temassız lineer pozisyon ölçümü için manyetik bant üzerinde çalışan okuyucu sensör.','حساس قراءة مغناطيسي على شريط مغناطيسي لقياس الموضع الخطي بدون تلامس حتى 100 م.','Магнитный датчик-считыватель на магнитной ленте для бесконтактного измерения позиции до 100 м.')},
+  {code:'NT-PLC',cat:'control',cfg:['range','output'],
+    name:N('Potentiometric Linear Ruler','Potansiyometrik Lineer Cetvel','مسطرة خطية بوتنسيومترية','Потенциометрическая линейная линейка'),
+    desc:N('Potentiometric linear position sensor for machine tools, hydraulic cylinders and injection moulding.','Tezgahlar, hidrolik silindirler ve enjeksiyon kalıpları için potansiyometrik lineer pozisyon sensörü.','حساس موضع خطي بوتنسيومتري للأدوات الآلية والأسطوانات الهيدروليكية.','Потенциометрический линейный датчик положения для станков и гидроцилиндров.')},
+  {code:'NT-MSC',cat:'control',cfg:['range','output','ip'],
+    name:N('Magnetostrictive Linear Ruler','Manyetostriktif Lineer Cetvel','مسطرة خطية مغناطيسية انقباضية','Магнитострикционная линейная линейка'),
+    desc:N('Magnetostrictive linear position sensor for hydraulic cylinders and high-pressure environments.','Hidrolik silindirler ve yüksek basınçlı ortamlar için manyetostriktif lineer pozisyon sensörü.','حساس موضع خطي مغناطيسي انقباضي للأسطوانات الهيدروليكية والبيئات عالية الضغط.','Магнитострикционный датчик положения для гидроцилиндров и высокого давления.')},
+  {code:'NT-OLC',cat:'control',cfg:['range','output'],
+    name:N('Optical Linear Encoder','Optik Lineer Enkoder','مشفر خطي بصري','Оптический линейный энкодер'),
+    desc:N('Bearing-mounted optical linear encoder for high-precision CNC machines and coordinate measurement.','Yüksek hassasiyetli CNC tezgahları ve koordinat ölçümü için yataklı optik lineer enkoder.','مشفر خطي بصري محمل على محامل لآلات CNC عالية الدقة.','Оптический линейный энкодер на подшипниках для высокоточных станков с ЧПУ.')},
+  {code:'NT-INS',cat:'control',cfg:['range','output','ip'],
+    name:N('Inclinometer / Tilt Sensor','Eğim Sensörü (İnklinometre)','حساس ميل (إنكلينومتر)','Инклинометр / Датчик наклона'),
+    desc:N('MEMS-based inclinometer for slope monitoring, platform levelling and mobile machinery.','Eğim izleme, platform tesviyesi ve mobil makine için MEMS tabanlı eğim sensörü.','حساس ميل قائم على MEMS لمراقبة الانحدار وتسوية المنصات والآلات المتنقلة.','МЭМС-инклинометр для мониторинга уклонов, выравнивания платформ и мобильной техники.')},
+  /* --- Differential Pressure Switches --- */
+  {code:'NT-DPS-A',cat:'process',cfg:['range','outSw'],
+    name:N('Air Differential Pressure Switch','Hava Fark Basınç Şalteri','مفتاح فرق ضغط الهواء','Реле перепада давления воздуха'),
+    desc:N('Differential pressure switch for HVAC filter clogging detection and air handling unit monitoring.','Klima filtre tıkanma tespiti ve hava işleme ünitesi izleme için fark basınç şalteri.','مفتاح فرق ضغط لكشف انسداد فلاتر التكييف ومراقبة وحدات معالجة الهواء.','Реле перепада давления для контроля засорения фильтров HVAC и вентиляционных установок.')},
+  {code:'NT-DPS-L',cat:'process',cfg:['range','outSw','ip'],
+    name:N('Liquid Differential Pressure Switch','Sıvı Fark Basınç Şalteri','مفتاح فرق ضغط السوائل','Реле перепада давления жидкости'),
+    desc:N('Compact differential pressure switch for liquid filter monitoring and industrial process control.','Sıvı filtre izleme ve endüstriyel proses kontrolü için kompakt fark basınç şalteri.','مفتاح فرق ضغط مدمج لمراقبة فلاتر السوائل والتحكم في العمليات الصناعية.','Компактное реле перепада давления для мониторинга жидкостных фильтров.')},
+  /* --- Gas Detection --- */
+  {code:'NT-CO2',cat:'process',cfg:['output','supply','ip'],
+    name:N('CO₂ / Temp / Humidity Transmitter','CO₂ / Sıcaklık / Nem Transmitteri','مرسل CO₂ / حرارة / رطوبة','Преобразователь CO₂ / темп. / влажн.'),
+    desc:N('Wall-mount CO₂, temperature and humidity transmitter for indoor air quality and greenhouses.','İç hava kalitesi ve seralar için duvar tipi CO₂, sıcaklık ve nem transmitteri.','مرسل CO₂ والحرارة والرطوبة للتركيب الجداري لجودة الهواء الداخلي والبيوت الزجاجية.','Настенный преобразователь CO₂, температуры и влажности для мониторинга воздуха.')},
+  {code:'NT-GDC',cat:'process',cfg:['range','output','ip'],
+    name:N('Catalytic Gas Detector','Katalitik Gaz Dedektörü','كاشف غاز تحفيزي','Каталитический газоанализатор'),
+    desc:N('Fixed catalytic (pellistor) gas detector for LEL monitoring of combustible gases.','Yanıcı gazların LEL izlemesi için sabit katalitik (pelistör) gaz dedektörü.','كاشف غاز تحفيزي (بيليستور) ثابت لمراقبة حد الانفجار السفلي للغازات القابلة للاشتعال.','Стационарный каталитический газоанализатор для мониторинга НКПР горючих газов.')},
+  {code:'NT-GDI',cat:'process',cfg:['range','output','ip'],
+    name:N('Infrared Gas Detector','Kızılötesi Gaz Dedektörü','كاشف غاز بالأشعة تحت الحمراء','Инфракрасный газоанализатор'),
+    desc:N('Fixed infrared (NDIR) gas detector for combustible and CO₂ gases, immune to sensor poisoning.','Yanıcı ve CO₂ gazları için sabit kızılötesi (NDIR) gaz dedektörü, sensör zehirlenmesine dayanıklı.','كاشف غاز ثابت بالأشعة تحت الحمراء (NDIR) للغازات القابلة للاشتعال وCO₂.','Стационарный ИК-газоанализатор (NDIR) для горючих газов и CO₂, устойчив к отравлению.')},
+  {code:'NT-GDE',cat:'process',cfg:['range','output','ip'],
+    name:N('Electrochemical Gas Detector','Elektrokimyasal Gaz Dedektörü','كاشف غاز كهروكيميائي','Электрохимический газоанализатор'),
+    desc:N('Fixed electrochemical gas detector for toxic gases (CO, H₂S, O₂, NH₃) in confined spaces.','Kapalı alanlarda toksik gazlar (CO, H₂S, O₂, NH₃) için sabit elektrokimyasal gaz dedektörü.','كاشف غاز كهروكيميائي ثابت للغازات السامة (CO، H₂S، O₂، NH₃) في الأماكن المحصورة.','Стационарный электрохимический газоанализатор для токсичных газов (CO, H₂S, O₂, NH₃).')},
+  /* --- Valves --- */
+  {code:'NT-SOL-L',cat:'mechanical',cfg:['dn','mat','supply'],
+    name:N('Large Solenoid Valve','Büyük Ölçü Solenoid Vana','صمام ملفي كبير','Электромагнитный клапан большого диаметра'),
+    desc:N('Large-bore solenoid valve (DN50–DN200) for water, irrigation and fire suppression systems.','Su, sulama ve yangın söndürme sistemleri için büyük çaplı solenoid vana (DN50–DN200).','صمام ملفي كبير القطر (DN50–DN200) للمياه والري وأنظمة إطفاء الحريق.','Соленоидный клапан большого диаметра (DN50–DN200) для воды, ирригации и пожаротушения.')},
+  {code:'NT-BDV',cat:'mechanical',cfg:['dn','mat'],
+    name:N('Pulse Jet Valve (Burst Disc)','Patlaç Valf','صمام نفث نبضي','Импульсный клапан (мембранный)'),
+    desc:N('Pulse jet valve for bag filter dust collectors in cement, mining and powder processing.','Çimento, madencilik ve toz işleme tesislerinde torba filtre toz toplayıcıları için patlaç valf.','صمام نفث نبضي لجامعات الغبار بالفلاتر الكيسية في الأسمنت والتعدين.','Импульсный клапан для рукавных фильтров в цементной, горнодобывающей и порошковой промышленности.')},
+  /* --- Process Control --- */
+  {code:'NT-TMR',cat:'control',cfg:['output','supply'],
+    name:N('Timer / Chronometer','Timer / Kronometre','مؤقت / كرونومتر','Таймер / Хронометр'),
+    desc:N('Panel-mount digital timer and chronometer with relay outputs and multiple timing modes.','Röle çıkışlı ve çoklu zamanlama modlu panel tipi dijital timer ve kronometre.','مؤقت رقمي وكرونومتر للوحة مع مخارج ريليه وأوضاع توقيت متعددة.','Панельный цифровой таймер и хронометр с релейными выходами и режимами отсчёта.')},
+  {code:'NT-STC',cat:'control',cfg:['range','output','supply'],
+    name:N('Step Controller','Adım Kontrol Cihazı','جهاز تحكم بالخطوات','Программный регулятор'),
+    desc:N('Step (profile) controller for ramp/soak temperature programmes and kiln firing curves.','Rampa/tutma sıcaklık programları ve fırın pişirme eğrileri için adım (profil) kontrol cihazı.','جهاز تحكم بالخطوات (الملف الشخصي) لبرامج درجة الحرارة المنحدرة/الثابتة ومنحنيات الأفران.','Программный (профильный) регулятор для термических режимов обжига и нагрева.')}
 ];
 const BYCODE = {}; PRODUCTS.forEach(p=>BYCODE[p.code]=p);
 
@@ -378,6 +529,8 @@ if(!S || !S.meta) S = defaultState();
 if(!S.terms) S.terms={};
 if(!S.cust.reqBy) S.cust.reqBy='';
 if(!S.cust.custSign) S.cust.custSign='';
+// migrate: add priceMode to old items
+if(S.items) S.items.forEach(function(it){ if(!it.priceMode) it.priceMode = (parseFloat(it.unit)||0)===0 ? 'manual' : 'custom'; });
 function updateQBar(){
   const code=$('#qbarCode'); if(code) code.textContent=S.meta.no||'—';
   const ci=$('#qbarCust'); if(ci && ci!==document.activeElement) ci.value=S.cust.company||'';
@@ -452,7 +605,8 @@ function renderPalette(){
 function addItem(code){
   const p=BYCODE[code]; if(!p) return;
   const cfg={}; p.cfg.forEach(f=>cfg[f]=FIELDS[f].opts[0]);
-  S.items.push({uid:uid(), code, cfg, qty:1, unit:0});
+  const autoPrice = calcPrice(code, cfg);
+  S.items.push({uid:uid(), code, cfg, qty:1, unit:autoPrice||0, priceMode:autoPrice?'auto':'manual'});
   save(); renderItems(); renderTotals();
 }
 function renderItems(){
@@ -491,7 +645,7 @@ function renderItems(){
       </div>
       <div class="litem-money">
         <div class="money-field qty"><label>${esc(aui().qty)}</label><input type="number" min="1" step="1" value="${it.qty}" data-qty="${it.uid}"></div>
-        <div class="money-field"><label>${esc(aui().unit(S.currency))}</label><input class="price-input" type="number" min="0" step="0.01" value="${it.unit}" data-unit="${it.uid}" placeholder="0.00"></div>
+        <div class="money-field"><label>${esc(aui().unit(S.currency))}</label><div style="position:relative;display:flex;align-items:center;gap:4px"><input class="price-input" type="number" min="0" step="0.01" value="${it.unit}" data-unit="${it.uid}" placeholder="0.00">${it.priceMode==='auto'?'<span class="price-mode-badge auto">auto</span>':it.priceMode==='custom'?`<span class="price-mode-badge custom">custom</span><button class="price-reset" data-reset="${it.uid}" title="Reset to auto price">↻</button>`:''}</div></div>
         <div class="litem-total" data-total="${it.uid}">${money(lineTotal(it))}</div>
       </div>
     </div>`;
@@ -707,15 +861,19 @@ function bind(){
   $('#itemsBox').addEventListener('input',e=>{
     const el=e.target;
     if(el.dataset.qty!=null){ const it=S.items.find(x=>x.uid===el.dataset.qty); if(it){it.qty=el.value; $('[data-total="'+it.uid+'"]').textContent=money(lineTotal(it)); renderTotals(); save(); renderShipping();} }
-    else if(el.dataset.unit!=null){ const it=S.items.find(x=>x.uid===el.dataset.unit); if(it){it.unit=el.value; $('[data-total="'+it.uid+'"]').textContent=money(lineTotal(it)); renderTotals(); save();} }
+    else if(el.dataset.unit!=null){ const it=S.items.find(x=>x.uid===el.dataset.unit); if(it){it.unit=el.value; if(it.priceMode==='auto'){it.priceMode='custom';} $('[data-total="'+it.uid+'"]').textContent=money(lineTotal(it)); renderTotals(); save(); const badge=el.closest('.litem-money').querySelector('.price-mode-badge'); if(badge&&badge.classList.contains('auto')){badge.className='price-mode-badge custom';badge.textContent='custom';const resetBtn=document.createElement('button');resetBtn.className='price-reset';resetBtn.dataset.reset=it.uid;resetBtn.title='Reset to auto price';resetBtn.textContent='↻';badge.after(resetBtn);}} }
   });
   $('#itemsBox').addEventListener('change',e=>{
     const el=e.target;
-    if(el.dataset.field){ const it=S.items.find(x=>x.uid===el.dataset.uid); if(it){it.cfg[el.dataset.field]=el.value; save(); if(el.dataset.field==='dn'){const w=getWeight(it.code,el.value);const badge=el.closest('.litem').querySelector('.ship-badge');if(w){const txt=w.kg+' kg · '+calcDesi(w.box)+' desi · '+w.box.join('×')+' cm';if(badge)badge.textContent=txt;else{const sp=document.createElement('span');sp.className='ship-badge';sp.textContent=txt;const descEl=el.closest('.litem').querySelector('.litem-desc');if(descEl)descEl.after(sp);}}else if(badge){badge.remove();}renderShipping();}} }
+    if(el.dataset.field){ const it=S.items.find(x=>x.uid===el.dataset.uid); if(it){it.cfg[el.dataset.field]=el.value; save();
+      // recalc price if auto mode
+      if(it.priceMode==='auto'){const np=calcPrice(it.code,it.cfg);if(np){it.unit=np;save();renderItems();renderTotals();return;}}
+      if(el.dataset.field==='dn'){const w=getWeight(it.code,el.value);const badge=el.closest('.litem').querySelector('.ship-badge');if(w){const txt=w.kg+' kg · '+calcDesi(w.box)+' desi · '+w.box.join('×')+' cm';if(badge)badge.textContent=txt;else{const sp=document.createElement('span');sp.className='ship-badge';sp.textContent=txt;const descEl=el.closest('.litem').querySelector('.litem-desc');if(descEl)descEl.after(sp);}}else if(badge){badge.remove();}renderShipping();}
+    } }
   });
   $('#itemsBox').addEventListener('click',e=>{
-    const rm=e.target.closest('[data-remove]'); if(!rm)return;
-    S.items=S.items.filter(x=>x.uid!==rm.dataset.remove); save(); renderItems(); renderTotals();
+    const rm=e.target.closest('[data-remove]'); if(rm){S.items=S.items.filter(x=>x.uid!==rm.dataset.remove); save(); renderItems(); renderTotals(); return;}
+    const rst=e.target.closest('[data-reset]'); if(rst){const it=S.items.find(x=>x.uid===rst.dataset.reset); if(it){const np=calcPrice(it.code,it.cfg); if(np){it.unit=np;it.priceMode='auto';save();renderItems();renderTotals();}}}
   });
 
   // quick bar: customer sync + copy code
