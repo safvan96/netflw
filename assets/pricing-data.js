@@ -1,12 +1,12 @@
 /* ═══════════════════════════════════════════════════════════
-   NF_PRICING — 2026 Bayi Fiyat Tablosu (USD)
+   NF_PRICING — 2026 Bayi Fiyat Tablosu (EUR)
    Kaynak: 2026 Fiyatlar.xlsx
    Son güncelleme: 2026-09-19
    ═══════════════════════════════════════════════════════════ */
 
 const NF_PRICING = {
   version: '2026-v1',
-  currency: 'USD',
+  currency: 'EUR',
 
   products: {
 

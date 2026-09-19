@@ -518,7 +518,7 @@ function fmtDate(s){ if(!s) return '—'; const [y,m,d]=s.split('-'); return d+'
 
 function defaultState(){
   const today=new Date(); const valid=new Date(Date.now()+30*86400000);
-  return {lang:'en', currency:'USD', review:false,
+  return {lang:'en', currency:'EUR', review:false,
     meta:{no:genNo(), date:iso(today), valid:iso(valid), by:''},
     cust:{company:'',contact:'',reqBy:'',custSign:'',country:'',email:'',project:''},
     discount:0, vat:0, travel:0, terms:{}, items:[]};
@@ -567,6 +567,55 @@ function renderArchive(){
       <div class="arch-cust">${esc(q.customer)}${q.country?' · '+esc(q.country):''}</div>
       <div class="arch-meta">${fmtDate(q.date)} · ${q.currency} ${(q.grand||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div>
     </div>`).join('');
+}
+
+/* ---------- export quote as JSON file ---------- */
+function exportQuoteJSON(){
+  const t = totals();
+  const exportData = {
+    quoteNo: S.meta.no,
+    date: S.meta.date,
+    validUntil: S.meta.valid,
+    preparedBy: S.meta.by,
+    language: S.lang,
+    currency: S.currency,
+    customer: {
+      company: S.cust.company,
+      contact: S.cust.contact,
+      country: S.cust.country,
+      email: S.cust.email,
+      project: S.cust.project,
+      requestedBy: S.cust.reqBy,
+      signatory: S.cust.custSign
+    },
+    items: S.items.map(it => {
+      const p = BYCODE[it.code];
+      return {
+        code: it.code,
+        name: p ? p.name.en : it.code,
+        config: it.cfg,
+        qty: parseInt(it.qty) || 1,
+        unitPrice: parseFloat(it.unit) || 0,
+        priceMode: it.priceMode || 'manual',
+        lineTotal: lineTotal(it)
+      };
+    }),
+    subtotal: t.sub,
+    discount: { pct: parseFloat(S.discount) || 0, amount: t.disc },
+    transport: t.travel,
+    vat: { pct: parseFloat(S.vat) || 0, amount: t.vat },
+    grandTotal: t.grand,
+    savedAt: new Date().toISOString()
+  };
+  const blob = new Blob([JSON.stringify(exportData, null, 2)], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = (S.meta.no || 'quote') + '.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 /* ---------- helpers ---------- */
@@ -949,7 +998,7 @@ function bind(){
   });
   $('#btnClosePv').addEventListener('click',()=>{$('#previewOv').classList.remove('open');document.body.style.overflow='';});
   $('#btnPrint').addEventListener('click',()=>{buildDoc();setTimeout(()=>window.print(),60);});
-  $('#btnSave').addEventListener('click',()=>{save();saveToArchive();renderArchive();const b=$('#btnSave');const o=b.innerHTML;b.innerHTML='✓ Saved';setTimeout(()=>b.innerHTML=o,1200);});
+  $('#btnSave').addEventListener('click',()=>{save();saveToArchive();exportQuoteJSON();renderArchive();const b=$('#btnSave');const o=b.innerHTML;b.innerHTML='✓ Saved';setTimeout(()=>b.innerHTML=o,1200);});
   // archive panel toggle
   $('#btnArchive').addEventListener('click',()=>{ const p=$('#archivePanel'); p.style.display=p.style.display==='block'?'none':'block'; renderArchive(); });
   document.addEventListener('click',e=>{ if(!e.target.closest('#archivePanel')&&!e.target.closest('#btnArchive')) $('#archivePanel').style.display='none'; });
