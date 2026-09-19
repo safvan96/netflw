@@ -55,14 +55,14 @@ const TERMS = {
 
 /* ---------- config field definitions ---------- */
 const FIELDS = {
-  dn:{label:{en:'Diameter',tr:'Çap',ar:'القطر',ru:'Диаметр'}, opts:['DN15','DN25','DN40','DN50','DN80','DN100','DN150','DN200','DN300','DN400','DN500','DN600','DN800','DN1000']},
+  dn:{label:{en:'Diameter',tr:'Çap',ar:'القطر',ru:'Диаметр'}, opts:['DN3','DN6','DN8','DN10','DN15','DN20','DN25','DN32','DN40','DN50','DN65','DN80','DN100','DN125','DN150','DN200','DN250','DN300','DN350','DN400','DN450','DN500','DN600','DN700','DN800','DN900','DN1000']},
   liner:{label:{en:'Liner',tr:'Astar',ar:'البطانة',ru:'Футеровка'}, opts:['PTFE','Hard Rubber','Neoprene','F46 (FEP)','PFA','Polyurethane']},
   electrode:{label:{en:'Electrode',tr:'Elektrot',ar:'القطب',ru:'Электрод'}, opts:['SS 316L','Hastelloy B','Hastelloy C','Titanium','Tantalum','Platinum']},
   output:{label:{en:'Output',tr:'Çıkış',ar:'الخرج',ru:'Выход'}, opts:['4–20mA','4–20mA + HART','RS485 Modbus','Pulse / Frequency','Profibus DP']},
   conn:{label:{en:'Connection',tr:'Bağlantı',ar:'التوصيل',ru:'Соединение'}, opts:['DIN Flange','ANSI Flange','JIS Flange','Tri-Clamp','Wafer','Threaded']},
   ip:{label:{en:'Protection',tr:'Koruma',ar:'الحماية',ru:'Защита'}, opts:['IP65','IP67','IP68']},
-  pn:{label:{en:'Pressure',tr:'Basınç',ar:'الضغط',ru:'Давление'}, opts:['PN10','PN16','PN25','PN40']},
-  temp:{label:{en:'Max Temp',tr:'Maks. Sıcaklık',ar:'أقصى حرارة',ru:'Макс. темп.'}, opts:['80°C','150°C','200°C','300°C']},
+  pn:{label:{en:'Pressure',tr:'Basınç',ar:'الضغط',ru:'Давление'}, opts:['PN10','PN16','PN25','PN40','PN63']},
+  temp:{label:{en:'Max Temp',tr:'Maks. Sıcaklık',ar:'أقصى حرارة',ru:'Макс. темп.'}, opts:['80°C','150°C','200°C','300°C','350°C']},
   supply:{label:{en:'Supply',tr:'Besleme',ar:'التغذية',ru:'Питание'}, opts:['AC 85–250V','DC 20–36V','Battery 3.6V Li']},
   mat:{label:{en:'Material',tr:'Malzeme',ar:'المادة',ru:'Материал'}, opts:['SS 304','SS 316L','PP','PVC']},
   range:{label:{en:'Range',tr:'Aralık',ar:'النطاق',ru:'Диапазон'}, opts:['0–360°','0–10 bar','0–100 bar','0–600 bar','−50…+150°C']},
