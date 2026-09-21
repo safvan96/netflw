@@ -227,7 +227,19 @@ const NF_PRICING = {
     'NT-LSW-F': { ref: 'NT-FLT' },
 
     /* ─── YANDAN MONTAJ SEVİYE ─── */
-    'NT-MLS': { base: 13, listRatio: 2.5, options: {} },
+    'NT-MLS': {
+      variants: {
+        'Plastik 24VDC 100mm':63, 'Plastik 220VAC 100mm':59,
+        'Plastik 24VDC 200mm':67, 'Plastik 220VAC 200mm':63,
+        'Alüminyum 24VDC 100mm':76, 'Alüminyum 220VAC 100mm':71,
+        'Alüminyum 24VDC 200mm':76, 'Alüminyum 220VAC 200mm':71,
+        'Alüminyum 24VDC 500mm':74, 'Alüminyum 220VAC 500mm':74
+      },
+      listRatio: 2.5,
+      options: {
+        extension: {'Uzatma Mili 50cm':10.5, 'Uzatma Mili 100cm':12.6}
+      }
+    },
     'NT-LSW-M': { base: 20, listRatio: 2.5, options: {} },
 
     /* ─── MOTORLU SEVİYE (VMS) ─── */
@@ -333,7 +345,14 @@ const NF_PRICING = {
 
     /* ─── AKIŞ ŞALTERİ (VAS) ─── */
     'NT-FSW': {
-      byDN: {'DN15':[17],'DN25':[17],'DN40':[38],'DN50':[38]},
+      variants: {
+        'VAS-10 Ekonomik 1/2"':17, 'VAS-10 Ekonomik 1"':17,
+        'VAS-10 Plastik Dilli 3/4"':18,
+        'VAS-20 Paslanmaz Dilli 1/2"':38, 'VAS-20 Paslanmaz Dilli 1"':38,
+        'VAS-20 Plastik Dilli 1/2"':31, 'VAS-20 Plastik Dilli 1"':31,
+        'VAS-30 Pirinç 1/2"':38, 'VAS-30 Pirinç 1"':38,
+        'VAS-FS10 Termal':84
+      },
       listRatio: 2.5,
       options: {}
     },
@@ -380,6 +399,65 @@ const NF_PRICING = {
     'NT-SLM': { base: 65, listRatio: 2.0, options: {} },
     'NT-GLD': { base: 85, listRatio: 2.0, options: {} },
     'NT-AQM': { base: 120, listRatio: 2.0, options: {} },
-    'NT-TAO': { base: 95, listRatio: 2.0, options: {} }
+    'NT-TAO': { base: 95, listRatio: 2.0, options: {} },
+
+    /* ─── MİNİ SEVİYE ŞALTERİ (VML) ─── */
+    'NT-MNS': {
+      variants: {
+        'Paslanmaz 304 (Yandan)':13, 'Paslanmaz 316 (Yandan)':22,
+        'Paslanmaz Soketli 304':18, 'Paslanmaz Soketli 316':30,
+        'Plastik PP (Yandan)':4, 'PVDF (Yandan)':18,
+        'Plastik Üstten 2cm':2, 'Plastik Üstten 3cm':2.5, 'Plastik Üstten 4cm':3
+      },
+      listRatio: 2.5,
+      options: {}
+    },
+
+    /* ─── ORP ELEKTRODU ─── */
+    'NT-ORP': { base: 160, listRatio: 2.0, options: {} },
+
+    /* ─── ONLİNE ANALİZÖR ─── */
+    'NT-ANZ': {
+      variants: {
+        '2091PRO (pH/ORP/Sıcaklık)':310, '2090PRO (İletkenlik/TDS/Tuzluluk)':325
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
+    /* ─── KATALOG KOD EŞLEMELERİ (alternatif kodlar) ─── */
+    'NT-DK800': { ref: 'NT-VA' },
+    'NT-TUF-2000': { ref: 'NT-ULF' },
+    'NT-CSW': { base: 72, listRatio: 2.5, options: {} },
+    'NT-SSW': { base: 13, listRatio: 2.5, options: {} },
+    'NT-DSW': { ref: 'NT-LSW-D' },
+    'NT-CDS': { base: 28, listRatio: 2.5, options: {} },
+    'NT-RCS': { ref: 'NT-RCS 3100/2100' },
+    'NT-ELES': { ref: 'NT-FLT' },
+    'NT-BT': { ref: 'NT-BCT' },
+    'NT-EPI': { ref: 'NT-BCT' },
+    'NT-NAT': { ref: 'NT-BCT' },
+    'NT-DMP': { ref: 'NT-DPT' },
+    'NT-BFT': { ref: 'NT-DPT' },
+    'NT-TG': { ref: 'NT-PSW' },
+    'NT-KP': { ref: 'NT-PSW' },
+    'NT-A300': { ref: 'NT-MNM' },
+    'NT-S100': { ref: 'NT-MNM' },
+    'NT-C600': { ref: 'NT-MNM' },
+    'NT-FBT': { ref: 'NT-TCS' },
+    'NT-DI': { ref: 'NT-EPD' },
+    'NT-EPD 11': { ref: 'NT-EPD11' },
+    'NT-UPC': { base: 95, listRatio: 2.0, options: {} },
+    'NT-PRFC': { ref: 'NT-STC' },
+    'NT-UT': { ref: 'NT-CTRL' },
+    'NT-LT': { ref: 'NT-CTRL' },
+    'NT-TT': { ref: 'NT-CTRL' },
+    'NT-VT': { ref: 'NT-ACT' },
+    'NT-ATG': { ref: 'NT-ACT' },
+    'NT-KE100': { ref: 'NT-ACT' },
+    'NT-1901': { ref: 'NT-SOL' },
+    'NT-7901': { ref: 'NT-SOL' },
+    'NT-PV250': { ref: 'NT-VLV' },
+    'NT-AGS': { ref: 'NT-RCS 3100/2100' }
   }
 };
