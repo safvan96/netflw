@@ -1,0 +1,1109 @@
+    <!doctype html>
+<html lang="">
+
+<head>
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M4NDLCP');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404 - VFA Elektronik</title>
+    <link rel="icon" href="https://vfaelektronik.com/frontend/favicon.png" type="image/x-icon" />
+    <meta name="description" content="Elektromanyetik debimetre, seviye, basınç ve sıcaklık sensörlerini kendi ARGE ve üretim hattımızda üretiyoruz. Mühendis desteğiyle model seçimi ve hızlı teklif." />
+            <link rel="canonical" href="https://vfaelektronik.com/wp-content/uploads/elementor/thumbs/orp808-removebg-preview-qxbxrpriqzxe3w4dlvyxuvkjy8fwv2fvxwsatjmqes.png" />
+    <meta property="og:site_name" content="ADRES  Fevzi Çakmak Mah. Aslım Cad. Atiker 1 San. Sit. No:40 / Z Karatay-KONYA" />
+    <meta property="og:title" content="info@vfaelektronik.com" />
+    <meta property="og:description" content="satis@vfaelektronik.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vfaelektronik.com/wp-content/uploads/elementor/thumbs/orp808-removebg-preview-qxbxrpriqzxe3w4dlvyxuvkjy8fwv2fvxwsatjmqes.png" />
+    <meta property="og:image" content="" />
+    <meta name="author" content="griworkshop creative & digital < 0 505 879 54 26 | info@griworkshop.com" />
+    <meta name="copyright" content=" © griworkshop creative & digital" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="info@vfaelektronik.com" />
+    <meta name="twitter:description" content="satis@vfaelektronik.com" />
+    <meta name="twitter:url" content="https://vfaelektronik.com/wp-content/uploads/elementor/thumbs/orp808-removebg-preview-qxbxrpriqzxe3w4dlvyxuvkjy8fwv2fvxwsatjmqes.png" />
+    <meta name="twitter:image" content="">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.google.com">
+    <link rel="preconnect" href="https://www.google.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.gstatic.com">
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="stylesheet" href="https://vfaelektronik.com/frontend/assets/dist/critical.css">
+    <link rel="stylesheet" href="https://vfaelektronik.com/frontend/assets/fontawesome/css/all.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://vfaelektronik.com/frontend/assets/fontawesome/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://vfaelektronik.com/frontend/assets/css/main.css?v=7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" media="print" onload="this.media='all'" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"></noscript>
+    <link rel="stylesheet" href="https://vfaelektronik.com/globals/css/general.css">
+    <style>
+    /* KURUMSAL gibi hedefi olmayan (javascript:void) menu basliklari artik <button>; goruntusu <a> ile ayni kalsin.
+     * 2026-08-29 HIZALAMA DUZELTMESI: padding:0 + line-height:inherit birakildigi icin butonun
+     * kutusu 19px, kardes <a>'larin kutusu ise 50px yuksekligindeydi (main.css: padding:9px 30px;
+     * line-height:45px). Ayni satirda durduklari icin KURUMSAL yazisi masaustunde digerlerinden
+     * ~11px YUKARIDA kaliyordu ve yan bosluklari da dardi (65px vs 81-123px genislik).
+     * Cozum: kardes <a> kuralinin kutu olculerini birebir esle. Olculdu: buton artik
+     * top/bottom/height olarak <a>'larla ayni (29/79/50), genislik 65 -> 113px.
+     * Not: main.css'te 'menu-toggle' hic gecmiyor ve hicbir @media bu olculeri ezmiyor;
+     * bu kural her uc menude de (static, sticky, right) tutarli sonuc veriyor. */
+    .menu > ul > li > button.menu-toggle{appearance:none;-webkit-appearance:none;background:transparent;border:0;margin:0;padding:9px 30px;cursor:pointer;font-size:16px;font-family:'Poppins',sans-serif;line-height:45px;display:inline-flex;align-items:center;gap:5px;}
+    #vfa-header-static .menu > ul > li > button.menu-toggle{color:#fff;}
+    #vfa-header-sticky .menu > ul > li > button.menu-toggle{color:#000;}
+    #vfa-right-menu .menu > ul > li > button.menu-toggle{color:#fff;width:100%;justify-content:space-between;}
+    </style>
+    <meta name="X-CSRF-TOKEN" content="68cc4f132c5103674de9bd93a99b3937">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Anasayfa","item":"https://vfaelektronik.com"},{"@type":"ListItem","position":2,"name":"404","item":"https://vfaelektronik.com/wp-content/uploads/elementor/thumbs/orp808-removebg-preview-qxbxrpriqzxe3w4dlvyxuvkjy8fwv2fvxwsatjmqes.png"}]}</script>    </head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4NDLCP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <header id="vfa-header-static">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="https://vfaelektronik.com" class="d-inline-block"><img src="https://vfaelektronik.com/frontend/assets/img/logovfabeyaz.svg" width="100%" alt="VFA Elektronik"></a>
+                    <div class="d-lg-none d-sm-block text-white mt-1 text-center">+90 332 235 18 88</div>
+                </div>
+                
+<div class="menu w-100">
+    <ul>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com/all" target=""> </a>
+                                                                <ul class="mega-menu-wrapper">
+                                                                                                                <li>
+                                <ul class="mega-menu">
+                                                                        <li data-index="1">
+                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                                                            <ul>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                    </ul>
+                                                                                    </li>
+        
+                                                                        <li data-index="2">
+                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                                                            <ul>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                    </ul>
+                                                                                    </li>
+        
+                                                                        <li data-index="3">
+                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                                                            <ul>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                    </ul>
+                                                                                    </li>
+        
+                                                                </ul>
+                                <div class="the-content">
+
+                                </div>
+                                <div class="the-imgs">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2073.webp" class="img-01" width="140px" loading="lazy" alt="Yerli üretim elektromanyetik debimetre">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2075.webp" class="img-02" width="140px" loading="lazy" alt="Basınç transmitteri ve basınç şalteri modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2074.webp" class="img-03" width="140px" loading="lazy" alt="Şamandıralı seviye sensörü modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2076.webp" class="img-04" width="140px" loading="lazy" alt="Termokupl ve sıcaklık sensörü modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2077.webp" class="img-05" width="140px" loading="lazy" alt="Dijital sayaç ve gösterge modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2078.webp" class="img-06" width="140px" loading="lazy" alt="Ray ve kafa tipi sıcaklık transmitteri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2079.webp" class="img-07" width="140px" loading="lazy" alt="Proses kontrol cihazı ve dijital gösterge">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2080.webp" class="img-08" width="140px" loading="lazy" alt="USB RS485 dönüştürücü">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2081.webp" class="img-09" width="140px" loading="lazy" alt="Dijital proses göstergesi">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2072.webp" class="img-10" width="140px" loading="lazy" alt="Pnömatik aktüatörlü küresel vana">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2082.webp" class="img-11" width="140px" loading="lazy" alt="Solenoid valf modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2082.webp" class="img-12" width="140px" loading="lazy" alt="">
+                                                                    </div>
+                            </li>
+                                                                                </ul>
+                                    </li>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com" target=""> </a>
+                                                        </li>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com/all" target=""> </a>
+                                                        </li>
+                        <li class="">
+                                        <button type="button" class="menu-toggle" aria-haspopup="true"> </button>
+                                                                <ul class="">
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com/e-katalog.pdf" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                                                                                                        </ul>
+                                    </li>
+                            </ul>
+</div>
+<ul class="d-none">
+    <li>
+        <a href="" class="toggle-right-menu"><em class="fa fa-bars"></em></a>
+    </li>
+</ul>                <div class="lang-selector">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://vfaelektronik.com/flags" width="32px" style="border-radius:100%;object-position: center center;" alt="">                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item" href="https://vfaelektronik.com/Araclar/dil_degistirec/TR">Türkçe</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="call-us">
+                    <div class="d-flex">
+                        <div class="w-100">
+                            <a href="tel:+903322351888" class="d-flex flex-wrap">
+                                <small>İletişim için;</small>
+                                <var>
+                                    +90 332 <strong>235 18 88</strong>                                </var>
+                            </a>
+                            <a href="mailto:info@vfaelektronik.com">info@vfaelektronik.com</a>
+                        </div>
+                        <em class="fa fa-phone"></em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header id="vfa-header-sticky">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="https://vfaelektronik.com" class="d-inline-block"><img src="https://vfaelektronik.com/frontend/assets/img/logovfa.svg" width="100%" alt="VFA Elektronik"></a>
+                    <div class="d-lg-none d-sm-block mt-1 text-danger text-center">+90 332 235 18 88</div>
+                </div>
+                
+<div class="menu w-100">
+    <ul>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com/all" target=""> </a>
+                                                                <ul class="mega-menu-wrapper">
+                                                                                                                <li>
+                                <ul class="mega-menu">
+                                                                        <li data-index="1">
+                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                                                            <ul>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                    </ul>
+                                                                                    </li>
+        
+                                                                        <li data-index="2">
+                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                                                            <ul>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                    </ul>
+                                                                                    </li>
+        
+                                                                        <li data-index="3">
+                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                                                            <ul>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                            <li>
+                                                            <a href="https://vfaelektronik.com" target=""></a>
+                                                        </li>
+                                                                                                    </ul>
+                                                                                    </li>
+        
+                                                                </ul>
+                                <div class="the-content">
+
+                                </div>
+                                <div class="the-imgs">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2073.webp" class="img-01" width="140px" loading="lazy" alt="Yerli üretim elektromanyetik debimetre">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2075.webp" class="img-02" width="140px" loading="lazy" alt="Basınç transmitteri ve basınç şalteri modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2074.webp" class="img-03" width="140px" loading="lazy" alt="Şamandıralı seviye sensörü modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2076.webp" class="img-04" width="140px" loading="lazy" alt="Termokupl ve sıcaklık sensörü modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2077.webp" class="img-05" width="140px" loading="lazy" alt="Dijital sayaç ve gösterge modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2078.webp" class="img-06" width="140px" loading="lazy" alt="Ray ve kafa tipi sıcaklık transmitteri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2079.webp" class="img-07" width="140px" loading="lazy" alt="Proses kontrol cihazı ve dijital gösterge">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2080.webp" class="img-08" width="140px" loading="lazy" alt="USB RS485 dönüştürücü">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2081.webp" class="img-09" width="140px" loading="lazy" alt="Dijital proses göstergesi">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2072.webp" class="img-10" width="140px" loading="lazy" alt="Pnömatik aktüatörlü küresel vana">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2082.webp" class="img-11" width="140px" loading="lazy" alt="Solenoid valf modelleri">
+                                                                        <img src="https://vfaelektronik.com/uploads/2026/01/06/GRI2082.webp" class="img-12" width="140px" loading="lazy" alt="">
+                                                                    </div>
+                            </li>
+                                                                                </ul>
+                                    </li>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com" target=""> </a>
+                                                        </li>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com/all" target=""> </a>
+                                                        </li>
+                        <li class="">
+                                        <button type="button" class="menu-toggle" aria-haspopup="true"> </button>
+                                                                <ul class="">
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com/e-katalog.pdf" target="">                                                                    </a>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                                                    </a>
+                                                                    </li>
+                                                                                                                                        </ul>
+                                    </li>
+                            </ul>
+</div>
+<ul class="d-none">
+    <li>
+        <a href="" class="toggle-right-menu"><em class="fa fa-bars"></em></a>
+    </li>
+</ul>                <div class="search position-relative">
+                    <form action="https://vfaelektronik.com" method="get">
+                        <input type="text" class="form-control" name="ara" placeholder="ürün kodu ya da ürün ismi ile ara">
+                        <em class="fa fa-search" onclick="$(this).parent().submit();"></em>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header id="vfa-right-menu">
+        <div class="search position-relative w-100">
+            <form action="https://vfaelektronik.com" method="get">
+                <input type="text" class="form-control" name="ara" placeholder="ürün ara">
+                <em class="fa fa-search" onclick="$(this).parent().submit();"></em>
+            </form>
+        </div>
+        <a href="https://vfaelektronik.com" class="logo"><img src="https://vfaelektronik.com/frontend/assets/img/logovfa.svg" width="100%" alt="VFA Elektronik"></a>
+        
+<div class="menu w-100">
+    <ul>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com" target=""> </a>
+                                                        </li>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com/all" target=""> </a>
+                                                        </li>
+                        <li class="">
+                                        <a href="https://vfaelektronik.com/all" target=""> <em class='fa fa-chevron-down'></em></a>
+                                                                <ul class="">
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                    <em class='fa fa-chevron-down'></em>                                </a>
+                                                                            <ul>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                                                                                                                                                        </ul>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                    <em class='fa fa-chevron-down'></em>                                </a>
+                                                                            <ul>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                                                                                                                                                        </ul>
+                                                                    </li>
+                                                            <li>
+                                    <a href="https://vfaelektronik.com" target="">                                    <em class='fa fa-chevron-down'></em>                                </a>
+                                                                            <ul>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="https://vfaelektronik.com" target=""></a>
+                                                </li>
+                                                                                                                                                                                                                        </ul>
+                                                                    </li>
+                                                                                                                                        </ul>
+                                    </li>
+                    </ul>
+</div>
+<ul class="d-none">
+    <li>
+        <a href="" class="toggle-right-menu"><em class="fa fa-bars"></em></a>
+    </li>
+</ul>    </header><style type="text/css">
+    .page_404 {
+        position:relative;
+        z-index:1;
+        background: #fff;
+        font-family: 'Montserrat', serif;
+        height: 100vh;
+    }
+
+    .page_404 img {
+        width: 100%;
+    }
+
+    .four_zero_four_bg {
+
+        background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+        height: 400px;
+        background-position: center;
+    }
+
+
+    .four_zero_four_bg h1 {
+        font-size: 80px;
+    }
+
+    .four_zero_four_bg h3 {
+        font-size: 80px;
+    }
+
+    .link_404 {
+        color: #000;
+        border: 2px solid #000;
+        font-family:'Montserrat';
+        padding: 15px 30px;
+        font-size:14px;
+        font-weight:700;
+        background: none;
+        margin: 20px 0;
+        display: inline-block;
+        border-radius:60px;
+        transition:all 0.3s ease;
+    }
+    .link_404:hover{
+        color:#fff;
+        background:#000;
+        transition:all 0.3s ease;
+    }
+
+    .contant_box_404 {
+        margin-top: -50px;
+    }
+</style>
+<section class="page_404 d-flex">
+    <div class="container m-auto">
+        <div class="row">
+            <div class="col-lg-12 d-flex">
+                <div class="col-lg-10 m-auto  text-center">
+                    <div class="four_zero_four_bg">
+                        <h1 class="text-center ">404</h1>
+
+
+                    </div>
+
+                    <div class="contant_box_404">
+                        <h3 class="h2">
+                            Bulunamadı!                        </h3>
+
+                        <p>Aradığınız Sayfayı Bulamadık!</p>
+
+                        <a href="https://vfaelektronik.com" class="link_404">Anasayfa'ya Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="support">
+    <div class="container text-center">
+        <h3 class="text-center">TEKNİK DESTEK</h3>
+        <div class="squares d-flex align-items-center justify-content-center">
+            <hr width="75px">
+            <hr width="30px" class="mx-2 opacity-75">
+            <hr width="15px" class="opacity-50">
+        </div>
+        <p class="text-center">Mühendis Ekibimizle Yardım Sunmaya Hazırız!</p>
+        <a href="https://vfaelektronik.com"
+           class="btn support">Daha Fazla Göster</a>
+    </div>
+</section>
+<section id="main-categories">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 d-flex">
+                <div class="my-auto">
+                    <h2>Ana Ürün Kategorileri</h2>
+                    <p>VFA Elektronik, Akış Cihazları, Seviye Ölçer ve Kalbirasyon Cihazlarının Ar-Ge, üretim ve pazarlamasına odaklanmakatadır.</p>
+                    <p class="mt-2 mb-0"><a href="https://vfaelektronik.com/elektromanyetik-debimetreler" title="Elektromanyetik Debimetre Modelleri" style="text-decoration:underline;font-weight:600;">Elektromanyetik debimetre</a> modellerimizle endüstriyel hatlarda temassız ve yüksek hassasiyetli debi ölçümü sağlıyoruz.</p>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                                                <div class="col-lg-3">
+                                <a href="https://vfaelektronik.com" class="category">
+                                    <div class="img">
+                                        <svg width="120px">
+                                            <use href="https://vfaelektronik.com/uploads/2024/05/10/GRI0999.svg#Layer_1"/>
+                                        </svg>
+                                    </div>
+                                    <h3></h3>
+                                    <p></p>
+                                </a>
+                            </div>
+                                                        <div class="col-lg-3">
+                                <a href="https://vfaelektronik.com" class="category">
+                                    <div class="img">
+                                        <svg width="120px">
+                                            <use href="https://vfaelektronik.com/uploads/2024/05/10/GRI1002.svg#Layer_1"/>
+                                        </svg>
+                                    </div>
+                                    <h3></h3>
+                                    <p></p>
+                                </a>
+                            </div>
+                                                        <div class="col-lg-3">
+                                <a href="https://vfaelektronik.com" class="category">
+                                    <div class="img">
+                                        <svg width="120px">
+                                            <use href="https://vfaelektronik.com/uploads/2024/05/10/GRI1000.svg#Layer_1"/>
+                                        </svg>
+                                    </div>
+                                    <h3></h3>
+                                    <p></p>
+                                </a>
+                            </div>
+                                                        <div class="col-lg-3">
+                                <a href="https://vfaelektronik.com" class="category">
+                                    <div class="img">
+                                        <svg width="120px">
+                                            <use href="https://vfaelektronik.com/uploads/2024/05/10/GRI1003.svg#Layer_1"/>
+                                        </svg>
+                                    </div>
+                                    <h3></h3>
+                                    <p></p>
+                                </a>
+                            </div>
+                                                        <div class="col-lg-3">
+                                <a href="https://vfaelektronik.com" class="category">
+                                    <div class="img">
+                                        <svg width="120px">
+                                            <use href="https://vfaelektronik.com/uploads/2024/05/10/GRI1006.svg#Layer_1"/>
+                                        </svg>
+                                    </div>
+                                    <h3></h3>
+                                    <p></p>
+                                </a>
+                            </div>
+                                                        <div class="col-lg-3">
+                                <a href="https://vfaelektronik.com" class="category">
+                                    <div class="img">
+                                        <svg width="120px">
+                                            <use href="https://vfaelektronik.com/uploads/2024/05/10/GRI1004.svg#Layer_1"/>
+                                        </svg>
+                                    </div>
+                                    <h3></h3>
+                                    <p></p>
+                                </a>
+                            </div>
+                                                        <div class="col-lg-3">
+                                <a href="https://vfaelektronik.com" class="category">
+                                    <div class="img">
+                                        <svg width="120px">
+                                            <use href="https://vfaelektronik.com/uploads/2024/05/10/GRI1005.svg#Layer_1"/>
+                                        </svg>
+                                    </div>
+                                    <h3></h3>
+                                    <p></p>
+                                </a>
+                            </div>
+                                                        <div class="col-lg-3">
+                                <a href="https://vfaelektronik.com" class="category">
+                                    <div class="img">
+                                        <svg width="120px">
+                                            <use href="https://vfaelektronik.com/uploads/2024/10/22/GRI1471.svg#Layer_1"/>
+                                        </svg>
+                                    </div>
+                                    <h3></h3>
+                                    <p></p>
+                                </a>
+                            </div>
+                                            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 d-flex">
+                <div class="my-auto">
+                    <h2>Haberler,<br>Galeri &<br>Blog</h2>
+                    <p>VFA Elektronik'in En Son Haberlerini ve Güncellemelerini Kontrol Edin,</p>
+                    <a href="https://vfaelektronik.com" class="btn btn-blog">Daha Fazla</a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="swiper-container overflow-hidden">
+                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                    <a href="https://vfaelektronik.com" class="blog d-flex flex-wrap"
+                                       style="background-image:url('https://vfaelektronik.com/uploads/2026/07/18/GRI2110.png');background-image:image-set(url('https://vfaelektronik.com/uploads/2026/07/18/GRI2110.png.webp') type('image/webp'),url('https://vfaelektronik.com/uploads/2026/07/18/GRI2110.png') type('image/png'));">
+                                        <div class="white-bg"></div>
+                                        <h3 class="w-100"></h3>
+                                        <p></p>
+                                        <div class="btn more mt-auto"><em class="fa fa-long-arrow-right"></em></div>
+                                    </a>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <a href="https://vfaelektronik.com" class="blog d-flex flex-wrap"
+                                       style="background-image:url('https://vfaelektronik.com/uploads/2024/10/17/GRI1435.jpg');background-image:image-set(url('https://vfaelektronik.com/uploads/2024/10/17/GRI1435.jpg.webp') type('image/webp'),url('https://vfaelektronik.com/uploads/2024/10/17/GRI1435.jpg') type('image/jpeg'));">
+                                        <div class="white-bg"></div>
+                                        <h3 class="w-100"></h3>
+                                        <p></p>
+                                        <div class="btn more mt-auto"><em class="fa fa-long-arrow-right"></em></div>
+                                    </a>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <a href="https://vfaelektronik.com" class="blog d-flex flex-wrap"
+                                       style="background-image:url('https://vfaelektronik.com/uploads/2024/10/17/GRI1432.jpg');background-image:image-set(url('https://vfaelektronik.com/uploads/2024/10/17/GRI1432.jpg.webp') type('image/webp'),url('https://vfaelektronik.com/uploads/2024/10/17/GRI1432.jpg') type('image/jpeg'));">
+                                        <div class="white-bg"></div>
+                                        <h3 class="w-100"></h3>
+                                        <p></p>
+                                        <div class="btn more mt-auto"><em class="fa fa-long-arrow-right"></em></div>
+                                    </a>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <a href="https://vfaelektronik.com" class="blog d-flex flex-wrap"
+                                       style="background-image:url('https://vfaelektronik.com/uploads/2024/10/17/GRI1433.jpg');background-image:image-set(url('https://vfaelektronik.com/uploads/2024/10/17/GRI1433.jpg.webp') type('image/webp'),url('https://vfaelektronik.com/uploads/2024/10/17/GRI1433.jpg') type('image/jpeg'));">
+                                        <div class="white-bg"></div>
+                                        <h3 class="w-100"></h3>
+                                        <p></p>
+                                        <div class="btn more mt-auto"><em class="fa fa-long-arrow-right"></em></div>
+                                    </a>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <a href="https://vfaelektronik.com" class="blog d-flex flex-wrap"
+                                       style="background-image:url('https://vfaelektronik.com/uploads/2024/10/17/GRI1429.jpg');background-image:image-set(url('https://vfaelektronik.com/uploads/2024/10/17/GRI1429.jpg.webp') type('image/webp'),url('https://vfaelektronik.com/uploads/2024/10/17/GRI1429.jpg') type('image/jpeg'));">
+                                        <div class="white-bg"></div>
+                                        <h3 class="w-100"></h3>
+                                        <p></p>
+                                        <div class="btn more mt-auto"><em class="fa fa-long-arrow-right"></em></div>
+                                    </a>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <a href="https://vfaelektronik.com" class="blog d-flex flex-wrap"
+                                       style="background-image:url('https://vfaelektronik.com/uploads/2024/10/17/GRI1428.jpg');background-image:image-set(url('https://vfaelektronik.com/uploads/2024/10/17/GRI1428.jpg.webp') type('image/webp'),url('https://vfaelektronik.com/uploads/2024/10/17/GRI1428.jpg') type('image/jpeg'));">
+                                        <div class="white-bg"></div>
+                                        <h3 class="w-100"></h3>
+                                        <p></p>
+                                        <div class="btn more mt-auto"><em class="fa fa-long-arrow-right"></em></div>
+                                    </a>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <a href="https://vfaelektronik.com" class="blog d-flex flex-wrap"
+                                       style="background-image:url('https://vfaelektronik.com/uploads/2024/03/13/GRI0912.jpg');background-image:image-set(url('https://vfaelektronik.com/uploads/2024/03/13/GRI0912.jpg.webp') type('image/webp'),url('https://vfaelektronik.com/uploads/2024/03/13/GRI0912.jpg') type('image/jpeg'));">
+                                        <div class="white-bg"></div>
+                                        <h3 class="w-100"></h3>
+                                        <p></p>
+                                        <div class="btn more mt-auto"><em class="fa fa-long-arrow-right"></em></div>
+                                    </a>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <a href="https://vfaelektronik.com" class="blog d-flex flex-wrap"
+                                       style="background-image:url('https://vfaelektronik.com/uploads/2024/10/17/GRI1434.jpg');background-image:image-set(url('https://vfaelektronik.com/uploads/2024/10/17/GRI1434.jpg.webp') type('image/webp'),url('https://vfaelektronik.com/uploads/2024/10/17/GRI1434.jpg') type('image/jpeg'));">
+                                        <div class="white-bg"></div>
+                                        <h3 class="w-100"></h3>
+                                        <p></p>
+                                        <div class="btn more mt-auto"><em class="fa fa-long-arrow-right"></em></div>
+                                    </a>
+                                </div>
+                                                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 justify-content-end d-flex">
+                    <div class="texts text-end w-100">
+                        <h3>HEMEN BİZE YAZIN</h3>
+                        <a href="mailto:info@vfaelektronik.com">info@vfaelektronik.com</a>
+                    </div>
+                    <div class="icon"><em class="fa fa-envelope"></em></div>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <div class="icon"><em class="fab fa-whatsapp"></em></div>
+                    <div class="texts w-100">
+                        <h3>WHATSAPP DESTEK</h3>
+                        <a href="https://wa.me/903322351888" rel="nofollow">+90 332 235 18 88</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container position-relative">
+        <div class="_66_white"></div>
+        <div class="row">
+            <div class="col-lg-2">
+                <ul class="list-unstyled social-media-footer">
+
+                                            <li><a href="https://www.facebook.com/vfaelektronik"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                                                                <li><a href="https://www.instagram.com/vfa.elektronik/"><i
+                                class="fab fa-instagram"></i></a></li>
+                                                                                    <li><a href="https://www.linkedin.com/company/vfaelektronik/"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+            </div>
+            <div class="col-lg-2">
+                <h3 class="title">Ürün Kategorileri</h3>
+                <ul class="menu list-unstyled m-0 p-0">
+                                                <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                                        <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                                        <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                            </ul>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-1">
+                <h3 class="title">Kurumsal</h3>
+                <ul class="menu list-unstyled m-0 p-0">
+                                                <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                                        <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                                        <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                                        <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                                        <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                                        <li>
+                                <a href="https://vfaelektronik.com"></a>
+                            </li>
+                                            </ul>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <h3 class="title">İletişim</h3>
+                <ul class="list-unstyled menu footer-contact">
+                    <li><span class="d-inline-flex align-items-center"><em class="fa fa-map-marker"></em> ADRES  Fevzi Çakmak Mah. Aslım Cad. Atiker 1 San. Sit. No:40 / Z Karatay-KONYA</span></li>
+                    <li><a href="tel:+903322351888"><em class="fa fa-phone"></em> +90 332 235 18 88</a><a href="tel:+905324904200"> +90 532 490 42 00</a></li>
+                    <li><a href="mailto:info@vfaelektronik.com"><em class="fa fa-envelope"></em> info@vfaelektronik.com</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 py-4">
+                <div class="copyright">
+                    &copy; 2026 VFA Elektronik. All Rights Reserved.                </div>
+            </div>
+            <div class="col-lg-6 py-3 text-end">
+                <a href="https://www.griworkshop.com.tr/" rel="nofollow" title="konya web tasarım"><img src="https://vfaelektronik.com/frontend/griworkshop.png" alt="griworkshop"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="tel:+903322351888" class="position-fixed call-fix" rel="nofollow">
+    <img src="https://vfaelektronik.com/frontend/arama.svg" alt="">
+</a>
+<a href="https://wa.me/903322351888" class="position-fixed wp-fix" rel="nofollow">
+    <img src="https://vfaelektronik.com/frontend/whatsapp.svg" alt="">
+</a>
+<script src="https://vfaelektronik.com/frontend/assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="https://vfaelektronik.com/frontend/assets/dist/main.js"></script>
+<script type="text/javascript" src="https://vfaelektronik.com/frontend/assets/js/page.js"></script>
+<script>
+    $.ajaxSetup({
+        headers: {'X-CSRF-TOKEN': $("meta[name='X-CSRF-TOKEN']").attr("content")}
+    });
+    var HOST_URL = 'https://vfaelektronik.com';
+    // document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+    var _counter_page_id = "";
+</script>
+<script src="https://vfaelektronik.com/globals/js/general.js"></script>
+<style>
+/* Canli arama acilir kutusu — anasayfadaki "#searcher .searcher-content" gorunumunun birebir aynasi,
+   boylece header ve alt sayfalardaki kutular da anasayfayla ayni gorunur. */
+.vfa-live{position:absolute;right:0;left:auto;top:100%;min-width:360px;max-width:92vw;z-index:1050;display:none;text-align:left;
+  background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.18);
+  margin-top:10px;padding:8px;max-height:60vh;overflow:auto;-webkit-overflow-scrolling:touch}
+.vfa-live.active{display:block}
+.vfa-live .row{margin-left:0;margin-right:0}
+.vfa-live .row > [class^="col-"]{padding:6px;flex:0 0 100%;max-width:100%}
+.vfa-live a.product{display:flex;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:9px;gap:10px;align-items:center;text-decoration:none;color:#111;transition:all .2s ease}
+.vfa-live a.product:hover{border-color:rgba(228,21,18,.35);box-shadow:0 8px 18px rgba(228,21,18,.12);transform:translateY(-1px)}
+.vfa-live a.product .img{flex:0 0 56px;width:56px !important;height:56px;border-radius:10px;overflow:hidden;background:#f5f5f5}
+.vfa-live a.product .img img{width:100% !important;height:100% !important;object-fit:cover;display:block}
+.vfa-live a.product .texts{min-width:0}
+.vfa-live a.product .texts h3{margin:0 !important;font-size:13px !important;line-height:1.25 !important;font-weight:700 !important;color:#111 !important}
+.vfa-live a.product:hover .texts h3{color:#e41512 !important}
+.vfa-live a.product .texts ul{padding:6px 0;align-items:center;margin:0;list-style:none;display:flex;flex-wrap:wrap}
+.vfa-live a.product .texts ul li{margin:0 5px;font-size:9px;line-height:12px}
+/* Genis kapsayicilarda (kategori sayfasi #searcher) tam genislik kullan */
+#searcher .vfa-live{left:0;right:0;min-width:0;max-width:none}
+.search.w-100 .vfa-live{left:0;right:0;min-width:0}
+.vfa-live-foot{display:block;padding:11px 14px;text-align:center;font-weight:600;color:#e41512;border-top:1px solid #eee;text-decoration:none;margin-top:4px}
+.vfa-live-foot:hover{background:#fdf3f3;color:#e41512}
+.vfa-live-info{padding:16px;text-align:center;color:#777;margin:0}
+</style>
+<script type="text/javascript">
+(function(){
+    if (typeof jQuery === 'undefined') { return; }
+    var SEARCH_PAGE = "https:\/\/vfaelektronik.com";
+    var AJAX_URL    = "https:\/\/vfaelektronik.com\/Araclar\/urun_ara";
+    var SEL = '#product_search, .search input[name="ara"], #searcher input[name="ara"]';
+    var MIN = 2, DELAY = 300, LIMIT = 8;
+    var timer = null, sonTerim = '';
+
+    function aramaSayfasinaGit(term){
+        term = $.trim(term || '');
+        if (term === '') { return; }
+        window.location.href = SEARCH_PAGE + '?ara=' + encodeURIComponent(term);
+    }
+    function kutu($input){
+        if ($input.attr('id') === 'product_search') {
+            var $sc = $('.searcher-content');
+            if ($sc.length) { return { $box: $sc, $row: $sc.find('.row').first() }; }
+        }
+        var $host = $input.closest('.search, #searcher');
+        if (!$host.length) { $host = $input.closest('form').parent(); }
+        if (!$host.length) { $host = $input.parent(); }
+        if ($host.css('position') === 'static') { $host.css('position', 'relative'); }
+        var $box = $host.children('.vfa-live');
+        if (!$box.length) {
+            // "searcher-content" sinifi da veriliyor: kategori sayfasindaki #searcher icinde
+            // temanin kendi stili de gecerli olur, gorunum anasayfayla birebir ayni kalir.
+            $box = $('<div class="vfa-live searcher-content"><div class="row py-1 px-3"></div></div>');
+            $host.append($box);
+        }
+        return { $box: $box, $row: $box.find('.row').first() };
+    }
+    function kapat(){ $('.vfa-live, .searcher-content').removeClass('active'); }
+
+    function canliAra($input){
+        var term = $.trim($input.val() || '');
+        var ref = kutu($input);
+        if (term.length < MIN) { ref.$box.removeClass('active'); sonTerim = ''; return; }
+        if (term === sonTerim) { return; }
+        sonTerim = term;
+        $.ajax({
+            type: 'POST', url: AJAX_URL, dataType: 'json', data: { ara: term, limit: LIMIT },
+            success: function(res){
+                if (!res || res.status != 1) { ref.$box.removeClass('active'); return; }
+                var toplam = parseInt(res.total || 0, 10);
+                ref.$row.html(res.output || '<p class="vfa-live-info">Ürün bulunamadı.</p>');
+                var $foot = ref.$box.children('.vfa-live-foot');
+                if (toplam > LIMIT) {
+                    if (!$foot.length) { $foot = $('<a class="vfa-live-foot"></a>'); ref.$box.append($foot); }
+                    $foot.attr('href', SEARCH_PAGE + '?ara=' + encodeURIComponent(term))
+                         .text(toplam + ' sonucun tümünü gör').show();
+                } else if ($foot.length) { $foot.hide(); }
+                ref.$box.addClass('active');
+            },
+            error: function(){ ref.$box.removeClass('active'); }
+        });
+    }
+
+    $(document)
+        .on('input', SEL, function(){
+            var $i = $(this);
+            clearTimeout(timer);
+            timer = setTimeout(function(){ canliAra($i); }, DELAY);
+        })
+        .on('keydown', SEL, function(e){
+            if (e.which === 13) { e.preventDefault(); aramaSayfasinaGit($(this).val()); }
+            else if (e.which === 27) { kapat(); }
+        })
+        .on('click', function(e){
+            if (!$(e.target).closest('.vfa-live, .searcher-content, ' + SEL).length) { kapat(); }
+        });
+})();
+</script>
+<script type="text/javascript">
+/* ===========================================================================
+ * DONUSUM OLCUMU — dataLayer olaylari
+ *
+ * NEDEN: Sitede GTM kuruluydu ama HICBIR dataLayer olayi gonderilmiyordu.
+ * Yani hangi sayfanin teklif talebi getirdigi olculemiyordu; SEO kararlari
+ * tiklama sayisina bakilarak veriliyordu. Oysa bu is modelinde deger olcusu
+ * tiklama degil TEKLIF TALEBI.
+ *
+ * GONDERILEN OLAYLAR (hepsi `sayfa_yolu` parametresiyle — hangi sayfanin
+ * donusum urettigi bu sayede gorulur):
+ *   teklif_formu        <- urun sayfasindaki "Teklif İste" formu (ASIL DONUSUM)
+ *   iletisim_formu      <- iletisim sayfasi formu
+ *   telefon_tiklama     <- tel: baglantilari (header, footer, sabit buton)
+ *   eposta_tiklama      <- mailto: baglantilari
+ *   whatsapp_tiklama    <- wa.me baglantilari
+ *   katalog_indirme     <- .pdf baglantilari (e-katalog)
+ *
+ * Formlar yalnizca SUNUCU BASARILI yanit dondugunde (res.status==1) olay
+ * gonderir; basarisiz gonderim donusum sayilmaz.
+ *
+ * GTM TARAFINDA YAPILMASI GEREKEN: her olay adi icin bir "Custom Event"
+ * tetikleyicisi, ardindan GA4 etkinligi. `teklif_formu` donusum (key event)
+ * olarak isaretlenmeli.
+ * ======================================================================== */
+(function(){
+    window.dataLayer = window.dataLayer || [];
+    function vfaOlay(ad, ek){
+        var veri = { event: ad, sayfa_yolu: location.pathname };
+        if (ek) { for (var k in ek) { veri[k] = ek[k]; } }
+        window.dataLayer.push(veri);
+    }
+    window.vfaOlay = vfaOlay; // form basarisinda sablonlardan cagriliyor
+
+    document.addEventListener('click', function(e){
+        var hedef = e.target;
+        if (!hedef || !hedef.closest) { return; }
+        // Isaretli baglantilar: data-vfa-olay="olay_adi" tasiyan her <a> kendi
+        // olayini gonderir. Blog -> kategori yonlendirme kutusu bunu kullaniyor;
+        // boylece o kutunun ise yarayip yaramadigi olculebiliyor.
+        var isaretli = hedef.closest('[data-vfa-olay]');
+        if (isaretli) {
+            vfaOlay(isaretli.getAttribute('data-vfa-olay'), { etiket: isaretli.getAttribute('data-vfa-etiket') || '' });
+        }
+        var bag = hedef.closest('a[href]');
+        if (!bag) { return; }
+        var h = (bag.getAttribute('href') || '').toLowerCase();
+        if (h.indexOf('tel:') === 0)         { vfaOlay('telefon_tiklama',  { numara: h.replace('tel:', '') }); }
+        else if (h.indexOf('mailto:') === 0) { vfaOlay('eposta_tiklama'); }
+        else if (h.indexOf('wa.me') > -1)    { vfaOlay('whatsapp_tiklama'); }
+        else if (h.slice(-4) === '.pdf')     { vfaOlay('katalog_indirme', { dosya: h.split('/').pop() }); }
+    }, true); // yakalama fazi: baska bir betik olayi durdursa bile calisir
+})();
+</script>
+</body></html>
