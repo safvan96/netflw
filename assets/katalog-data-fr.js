@@ -232,7 +232,7 @@ window.NF_CAT = {
     /* ===================== CAPTEURS DE NIVEAU ===================== */
     {id:"seviye", kicker:"03", title:"Capteurs de niveau", sub:"Mesure de niveau continue et ponctuelle sur les liquides et les solides", glyph:"level",
      products:[
-      {code:"NT-ULS", img:"assets/products/NT-ULS.webp", name:"Transmetteurs de niveau a ultrasons", glyph:"ultra",
+      {code:"NT-ULS", img:"assets/products/NT-ULS.png", name:"Transmetteurs de niveau a ultrasons", glyph:"ultra",
        desc:"Les capteurs de niveau a ultrasons sont des instruments concus pour la mesure sans contact de la distance, du niveau et du volume sur les solides et les liquides. Ils se composent d'un capteur a ultrasons, d'un convertisseur de signal et d'une unite de commande. L'onde sonore que le capteur, facile a installer, envoie dans la cuve frappe le materiau et est detectee a son retour, determinant ainsi le niveau. Les fausses lectures sont evitees grace a la fonction de filtrage.",
        variants:[
          ["Série VUS QLU","Affichage LCD 4 chiffres, précision 0,2%, alimentation 24 VDC, consommation 60 mA. Capteur de niveau ultrasonique compact et économique."],
@@ -243,7 +243,7 @@ window.NF_CAT = {
        sectors:"Sable, clinker de ciment, eaux usees, eau propre, particules solides poussiereuses, alimentation et fourrage, granules plastiques.",
        notes:["Les etapes indiquees dans le guide d'installation doivent etre respectees.","Le choix de la sonde doit etre effectue avec soin en fonction du milieu utilise."]},
 
-      {code:"NT-RLS", img:"assets/products/NT-RLS.webp", name:"Transmetteurs de niveau radar", glyph:"radar",
+      {code:"NT-RLS", img:"assets/products/NT-RLS.png", name:"Transmetteurs de niveau radar", glyph:"radar",
        vimgs:[["Radar","assets/products/NT-RLS-radar.webp"],["Onde guidée","assets/products/NT-RLS-H.png"]],
        desc:"Les capteurs de niveau radar emettent des balayages de frequence croissants dans le temps par gestion d'impulsions ; ces signaux, reflechis par la surface mesuree, sont captes par l'antenne et le niveau des liquides et des solides est ainsi determine. Grace a leur technologie avancee et a differentes methodes d'application telles que le sans contact et l'onde guidee, ils simplifient la mesure dans les processus exigeants. La valeur mesuree peut etre interpretee comme distance, niveau, volume ou masse.",
        variants:[
@@ -267,7 +267,7 @@ window.NF_CAT = {
        sectors:"Systemes d'irrigation, cours d'eau, cuves, municipalites et institutions publiques.",
        notes:["La longueur du cable doit etre indiquee lors de la commande.","Un cable ventile special est utilise pour la mesure et doit donc etre protege."]},
 
-      {code:"NT-CLS", img:"assets/products/NT-CLS.webp", name:"Transmetteurs de niveau capacitifs", glyph:"capacitive",
+      {code:"NT-CLS", img:"assets/products/NT-CLS.png", name:"Transmetteurs de niveau capacitifs", glyph:"capacitive",
        desc:"Le transmetteur de niveau capacitif offre une mesure proportionnelle de haute precision dans la gestion du niveau des materiaux solides et liquides, malgre la poussiere, la mousse, la salete ou des particules similaires. Le principe de mesure capacitif repose sur la detection de la valeur de capacite entre l'electrode et la surface de la cuve, qui varie en fonction de la masse presente. Apres l'installation, l'electrode du capteur est immergee dans le materiau jusqu'au point requis.",
        variants:[
          ["Transmetteur de niveau capacitif VKS 5","Mesure de niveau sur les liquides conducteurs. Alimentation 9–36 VDC, pression (−)1…(+)100 bar, plage de température −40…+150 °C."],
@@ -299,7 +299,7 @@ window.NF_CAT = {
        uses:"Produits solides sous forme de poudre, de granules et de particules, ainsi que les liquides.",
        sectors:"Industries agroalimentaire, pharmaceutique et chimique, industrie du batiment et de la construction."},
 
-      {code:"NT-CSW", img:"assets/products/NT-CSW.webp", name:"Detecteur de niveau capacitif", glyph:"capacitive",
+      {code:"NT-CSW", img:"assets/products/NT-CSW.png", name:"Detecteur de niveau capacitif", glyph:"capacitive",
        desc:"Lorsque l'element de detection a l'extremite du detecteur de niveau de type Magcap est entoure par la matiere premiere au point d'utilisation, la puissance RF qu'il emet diminue. Lorsque cette diminution depasse le reglage de sensibilite configure, un signal de sortie est genere. La sensibilite peut etre ajustee sur l'appareil en fonction de la constante dielectrique et des proprietes du materiau.",
        variants:[
          ["Détecteur de niveau capacitif VKS 10","Alimentation 24 VDC, consommation max. 50 mW, température de fonctionnement −40…+150 °C. Construction compacte, contrôle de niveau industriel."],
@@ -354,7 +354,7 @@ window.NF_CAT = {
        sectors:"Silos a cereales, cimenteries, usines de chaux et de platre, fonderies.",
        notes:["La longueur du cable peut etre specifiee selon le point d'application.","Le cable peut etre utilise isole ou non isole."]},
 
-      {code:"NT-ELES", img:"assets/products/NT-ELES.webp", name:"Capteurs de niveau à flotteur", glyph:"floattx",
+      {code:"NT-ELES", img:"assets/products/NT-ELES.png", name:"Capteurs de niveau à flotteur", glyph:"floattx",
        desc:"Les capteurs de niveau à flotteur NT-ELES sont des instruments conçus pour déterminer le niveau de liquide en utilisant le principe de la poussée d'Archimède : un flotteur magnétique mobile se déplaçant le long d'un tube guide déclenche, par son champ magnétique, un contact reed placé à l'intérieur du tube guide, commutant ainsi le circuit. Selon l'utilisation prévue, ils sont produits en versions de niveau continu (en ligne) et de niveau ponctuel ; les capteurs de niveau continu sont appelés transmetteurs de niveau, tandis que les capteurs de niveau ponctuel sont appelés détecteurs de niveau.",
        variants:[
          ["Série NT-ELES11","Conçu pour déterminer le niveau instantané (en ligne) des fluides liquides. Il peut produire des sorties de signal analogique et des sorties de communication pour la transmission ou la surveillance ; avec différentes conceptions de raccordement mécanique et des options de longueur de 50 mm à 3000 mm, il offre un large champ d'utilisation. Modèles avec brise-vagues, à bride et avec boîtier PP disponibles."],
@@ -421,14 +421,14 @@ window.NF_CAT = {
        uses:"Toutes les applications liquides, gazeuses et vapeur.",
        sectors:"Industrie mécanique, systèmes d'essai et d'étalonnage, industrie chimique, industrie lourde, industrie de la défense, industrie pétrochimique."},
 
-      {code:"NT-EPD", img:"assets/products/NT-EPD.webp", name:"Transmetteurs et pressostats avec afficheur", glyph:"gauge",
+      {code:"NT-EPD", img:"assets/products/NT-EPD.png", name:"Transmetteurs et pressostats avec afficheur", glyph:"gauge",
        desc:"Se compose d'un écran de programmation et d'affichage ajouté de manière compacte sur le transmetteur de pression. Grâce à son utilisation facile et pratique, il permet la surveillance instantanée des données sur le terrain.",
        specs:[["Taille de raccordement","G1/4\" – G1/2\""],["Plage de mesure","De 0…0,2 bar à 0…600 bar"],["Précision","±0,5% FS"],["Plage de température","−25…+85 °C"],["Signal de sortie","4…20 mA, 0…10 VDC, commutable mA ou V"],["Commutation","2 × transistor PNP (opt. sortie contact)"]],
        uses:"Tous les liquides et gaz.",
        sectors:"Machines-outils, toutes les machines à commande hydraulique, équipements CVC (chauffage, climatisation, ventilation), unités frigorifiques, machines de traitement d'eau.",
        notes:["Option de mesure absolue ou relative.","Peut être programmé depuis un téléphone mobile via NFC.","Options de sortie courant et tension dans un seul appareil."]},
 
-      {code:"NT-TG / NT-KP", img:"assets/products/NT-PSW.webp", name:"Pressostats", glyph:"pswitch",
+      {code:"NT-TG / NT-KP", img:"assets/products/NT-PSW.png", name:"Pressostats", glyph:"pswitch",
        desc:"Équipement de mesure de pression produit pour la commutation, la sécurité et l'alarme à un ou plusieurs points de consigne basés sur les données de pression détectées.",
        specs:[["Taille de raccordement","G1/4\", G1/8\""],["Plage de mesure","−200 mbar…−800 mbar et 0,1…600 bar ; −0,2…7,5 / 2…14 bar"],["Précision","<5%"],["Plage de température","−30…+100 °C (opt. 250 °C) ; −40…+60 °C"],["Signal de sortie","NO / NC / inverseur (NO&NC)"]],
        uses:"Liquides sans particules, air, vapeur et gaz non agressifs.",
@@ -505,7 +505,7 @@ window.NF_CAT = {
     /* ===================== CONTRÔLE DE PROCESSUS ===================== */
     {id:"kontrol", kicker:"06", title:"Indicateurs et régulateurs de processus", sub:"Surveillance, contrôle et transmission de signaux", glyph:"panel",
      products:[
-      {code:"NT-TCS / NT-FBT", img:"assets/products/NT-TCS.webp", name:"Indicateurs de debit et totalisateurs", glyph:"panel",
+      {code:"NT-TCS / NT-FBT", img:"assets/products/NT-TCS.png", name:"Indicateurs de debit et totalisateurs", glyph:"panel",
        desc:"Instruments de controle concus pour surveiller, reguler et transmettre les mesures effectuees dans les processus industriels. Ils sont developpes pour surveiller le debit instantane et le volume totalise, et pour les controler et les transmettre via differentes options de sortie.",
        specs:[["Code produit","NT-TCS / NT-FBT / NT-TCS37"],["Dimensions","72×72 mm / 96×96 mm / 36×72 mm"],["Affichage","2×6 chiffres (8 mm) / 6 chiffres (8 mm)"],["Commutation","2×8 A relais / 1×8 A relais"],["Sortie analogique","4–20 mA / 0–20 mA"],["Communication","RS485 Modbus ASCII/RTU"],["Tension d'alimentation","12 VDC – 24 VDC – 220 VAC"],["Frequence de comptage","10 kHz"]],
        uses:"Surveillance et controle en tableau du debit et des mesures de volume totalise.",
@@ -517,7 +517,7 @@ window.NF_CAT = {
        uses:"Surveillance en tableau des capteurs de temperature et analogiques.",
        sectors:"Fabrication de machines, agroalimentaire, chimie, centrales electriques."},
 
-      {code:"NT-EPD 11", img:"assets/products/NT-EPD11.webp", name:"Indicateurs universels compacts", glyph:"panel",
+      {code:"NT-EPD 11", img:"assets/products/NT-EPD11.png", name:"Indicateurs universels compacts", glyph:"panel",
        desc:"L'indicateur numerique NT-EPD 11 est utilise pour prendre le signal 4–20 mA des transmetteurs et le convertir et l'afficher dans l'unite d'ingenierie requise. Il est concu pour un montage et un demontage faciles sur les transmetteurs 2 fils avec un raccordement a fiche DIN 43650. Le produit offre une grande precision, une stabilite et une facilite d'utilisation. C'est une solution pratique pour ajouter un affichage de terrain et des seuils d'alarme aux transmetteurs de pression ou autres.",
        specs:[["Applications","Affichage de la valeur du courant 4–20 mA ou du pourcentage, 2 sorties d'alarme/commutation independantes"],["Signal d'entree","4–20 mA (2 fils)"],["Source d'alimentation","Alimente par boucle 2 fils 4–20 mA, chute de tension max. 8 VDC"],["Signal de sortie","Sortie signal 2 fils 4–20 mA"],["Commande de terrain","3 boutons, tous les parametres modifiables localement"],["Affichage","Double rangee 5 bits/8 bits, LCD retro-eclaire 7/16 segments, −19999~99999"],["Precision et CAN","0.1% FS ±1 bit / 24 bit"],["Nombre de commutateurs","2 voies PNP / NO"],["Fonction de commutation","Seuil haut, seuil bas, fonction fenetre, hysteresis"],["Unites d'ingenierie","kPa, MPa, Pa, bar, mbar, psi, mH₂O, Torr, atm, kg, N, °C, °F, K, %RH, PPM, pH, m, mm, m/s, Ω, mV, V"]],
        uses:"Ajout d'un affichage de terrain et d'alarmes aux transmetteurs.",
@@ -610,7 +610,7 @@ window.NF_CAT = {
     /* ===================== CONTRÔLE MÉCANIQUE ===================== */
     {id:"mekanik", kicker:"07", title:"Controle mecanique", sub:"Actionneurs, electrovannes et vannes", glyph:"valve",
      products:[
-      {code:"NT-VT / NT-ATG / NT-KE100", img:"assets/products/NT-ACT.webp", name:"Actionneurs", glyph:"actuator",
+      {code:"NT-VT / NT-ATG / NT-KE100", img:"assets/products/NT-ACT.png", name:"Actionneurs", glyph:"actuator",
        desc:"Elements d'entrainement permettant a un systeme ou un mecanisme d'effectuer son action d'ouverture et de fermeture. Differents types sont disponibles selon le domaine d'utilisation et l'application. Ils commandent generalement ce controle par des moyens hydrauliques, pneumatiques ou electriques.",
        variants:[
          ["Actionneur pneumatique (NT-VT)","Corps et piston en aluminium, arbre en acier allie, interface electrovanne Namur, pression d'alimentation 5–8 bar, raccordement vanne ISO 5211, angle de rotation 90° ±5°."],

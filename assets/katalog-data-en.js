@@ -232,7 +232,7 @@ window.NF_CAT = {
     /* ===================== LEVEL SENSORS ===================== */
     {id:"seviye", kicker:"03", title:"Level Sensors", sub:"Continuous and point level measurement on liquids and solids", glyph:"level",
      products:[
-      {code:"NT-ULS", img:"assets/products/NT-ULS.webp", name:"Ultrasonic Level Transmitters", glyph:"ultra",
+      {code:"NT-ULS", img:"assets/products/NT-ULS.png", name:"Ultrasonic Level Transmitters", glyph:"ultra",
        desc:"Ultrasonic level sensors are instruments designed for non-contact distance, level and volume measurement on solids and liquids. They consist of an ultrasonic sensor, a signal converter and a control unit. The sound wave that the easily mounted sensor sends into the tank strikes the material and is detected on its return, thereby determining the level. False readings are prevented by the filtering feature.",
        variants:[
          ["VUS QLU Series","4-digit LCD display, 0.2% accuracy, 24 VDC supply, 60 mA consumption. Compact and economical ultrasonic level sensor."],
@@ -243,7 +243,7 @@ window.NF_CAT = {
        sectors:"Sand, cement clinker, wastewater, clean water, dusty solid particles, food and feed, plastic granules.",
        notes:["The steps stated in the installation guide must be followed.","Probe selection must be made carefully according to the medium used."]},
 
-      {code:"NT-RLS", img:"assets/products/NT-RLS.webp", name:"Radar Level Transmitters", glyph:"radar",
+      {code:"NT-RLS", img:"assets/products/NT-RLS.png", name:"Radar Level Transmitters", glyph:"radar",
        vimgs:[["Radar","assets/products/NT-RLS-radar.webp"],["Guided Wave","assets/products/NT-RLS-H.png"]],
        desc:"Radar level sensors emit frequency sweeps that increase over time through pulse management; these signals, reflected back from the measured surface, are collected by the antenna and the level of liquids and solids is thereby determined. With their advanced technology and different application methods such as non-contact and guided wave, they simplify measurement in demanding processes. The measured value can be interpreted as distance, level, volume or mass.",
        variants:[
@@ -267,7 +267,7 @@ window.NF_CAT = {
        sectors:"Irrigation systems, watercourses, tanks, municipalities and public institutions.",
        notes:["The cable length must be stated when ordering.","A special vented cable is used for the measurement and must therefore be protected."]},
 
-      {code:"NT-CLS", img:"assets/products/NT-CLS.webp", name:"Capacitive Level Transmitters", glyph:"capacitive",
+      {code:"NT-CLS", img:"assets/products/NT-CLS.png", name:"Capacitive Level Transmitters", glyph:"capacitive",
        desc:"The capacitive level transmitter offers high-accuracy proportional measurement in the level management of solid and liquid materials, despite dust, foam, dirt or similar particles. The capacitive measuring principle is based on detecting the capacitance value between the electrode and the tank surface, which varies with the mass present. After installation, the sensor electrode is immersed into the material down to the required point.",
        variants:[
          ["VKS 5 Capacitive Level Transmitter","Level measurement in conductive liquids. 9–36 VDC supply, (−)1…(+)100 bar pressure, −40…+150 °C temperature range."],
@@ -299,7 +299,7 @@ window.NF_CAT = {
        uses:"Solid products in powder, granule and particle form, as well as liquids.",
        sectors:"Food, pharmaceutical and chemical industries, building and construction industry."},
 
-      {code:"NT-CSW", img:"assets/products/NT-CSW.webp", name:"Capacitive Level Switch", glyph:"capacitive",
+      {code:"NT-CSW", img:"assets/products/NT-CSW.png", name:"Capacitive Level Switch", glyph:"capacitive",
        desc:"Once the sensing element at the tip of the Magcap type level switch becomes surrounded by the raw material at the point of use, the RF power it emits decreases. When this decrease exceeds the configured sensitivity setting, an output signal is generated. Sensitivity can be adjusted on the device according to the dielectric constant and the properties of the material.",
        variants:[
          ["VKS 10 Capacitive Level Switch","24 VDC supply, max. 50 mW consumption, −40…+150 °C operating temperature. Compact construction, industrial level control."],
@@ -354,7 +354,7 @@ window.NF_CAT = {
        sectors:"Grain silos, cement plants, lime and gypsum plants, foundries.",
        notes:["The cable length can be specified according to the application point.","The cable can be used insulated or uninsulated."]},
 
-      {code:"NT-ELES", img:"assets/products/NT-ELES.webp", name:"Float Level Sensors", glyph:"floattx",
+      {code:"NT-ELES", img:"assets/products/NT-ELES.png", name:"Float Level Sensors", glyph:"floattx",
        desc:"NT-ELES float level sensors are instruments designed to determine liquid level by making use of the buoyancy principle: a magnetic, movable float travelling along a guide tube triggers, through its magnetic field, a reed contact placed inside the guide tube, thereby switching the circuit on or off. Depending on the intended use they are produced as continuous (online) level and point level versions; continuous level sensors are called level transmitters, while point level sensors are called level switches.",
        variants:[
          ["NT-ELES11 Series","Designed to determine the instantaneous (online) level of liquid media. It can produce analogue signal outputs and communication outputs for transmission or monitoring; with different mechanical connection designs and length options from 50 mm to 3000 mm it provides a wide field of use. Wave breaker, flanged and PP housing models are available."],
@@ -421,14 +421,14 @@ window.NF_CAT = {
        uses:"All liquid, gas and steam applications.",
        sectors:"Machinery industry, test and calibration systems, chemical industry, heavy industry, defence industry, petrochemical industry."},
 
-      {code:"NT-EPD", img:"assets/products/NT-EPD.webp", name:"Pressure Transmitters and Switches with Display", glyph:"gauge",
+      {code:"NT-EPD", img:"assets/products/NT-EPD.png", name:"Pressure Transmitters and Switches with Display", glyph:"gauge",
        desc:"Consists of a programming and display screen added compactly onto the pressure transmitter. Thanks to its easy and practical operation it allows instantaneous data monitoring in the field.",
        specs:[["Connection Size","G1/4\" – G1/2\""],["Measuring Range","From 0…0.2 bar up to 0…600 bar"],["Accuracy","±0.5% FS"],["Temperature Range","−25…+85 °C"],["Output Signal","4…20 mA, 0…10 VDC, switchable mA or V"],["Switching","2 × PNP transistor (opt. contact output)"]],
        uses:"All liquids and gases.",
        sectors:"Machine tools, all hydraulically operated machinery, HVAC equipment (heating, air conditioning, ventilation units), refrigeration units, water treatment machinery.",
        notes:["Absolute or relative measurement option.","Can be programmed from a mobile phone via NFC.","Current and voltage output options in a single device."]},
 
-      {code:"NT-TG / NT-KP", img:"assets/products/NT-PSW.webp", name:"Pressure Switches", glyph:"pswitch",
+      {code:"NT-TG / NT-KP", img:"assets/products/NT-PSW.png", name:"Pressure Switches", glyph:"pswitch",
        desc:"Pressure measuring equipment produced for switching, safety and alarm purposes at one or more set points based on the pressure data it senses.",
        specs:[["Connection Size","G1/4\", G1/8\""],["Measuring Range","−200 mbar…−800 mbar and 0.1…600 bar; −0.2…7.5 / 2…14 bar"],["Accuracy","<5%"],["Temperature Range","−30…+100 °C (opt. 250 °C); −40…+60 °C"],["Output Signal","NO / NC / changeover (NO&NC)"]],
        uses:"Particle-free liquids, air, steam and non-aggressive gases.",
@@ -506,7 +506,7 @@ window.NF_CAT = {
     /* ===================== PROCESS CONTROL ===================== */
     {id:"kontrol", kicker:"06", title:"Process Indicators and Controllers", sub:"Monitoring, control and signal transmission", glyph:"panel",
      products:[
-      {code:"NT-TCS / NT-FBT", img:"assets/products/NT-TCS.webp", name:"Flow Rate and Totaliser Indicators", glyph:"panel",
+      {code:"NT-TCS / NT-FBT", img:"assets/products/NT-TCS.png", name:"Flow Rate and Totaliser Indicators", glyph:"panel",
        desc:"Control instruments designed for monitoring, controlling and transmitting the measurements made in industrial processes. They are developed to monitor instantaneous and totalised flow quantity, and to control and transmit it through different output options.",
        specs:[["Product Code","NT-TCS / NT-FBT / NT-TCS37"],["Size","72×72 mm / 96×96 mm / 36×72 mm"],["Display","2×6 digits (8 mm) / 6 digits (8 mm)"],["Switching","2×8 A relay / 1×8 A relay"],["Analogue Output","4–20 mA / 0–20 mA"],["Communication","RS485 Modbus ASCII/RTU"],["Supply Voltage","12 VDC – 24 VDC – 220 VAC"],["Counting Rate","10 kHz"]],
        uses:"Panel monitoring and control of flow rate and totalised flow measurements.",
@@ -518,7 +518,7 @@ window.NF_CAT = {
        uses:"Panel monitoring of temperature and analogue sensors.",
        sectors:"Machinery manufacturing, food, chemicals, power plants."},
 
-      {code:"NT-EPD 11", img:"assets/products/NT-EPD11.webp", name:"Compact Universal Indicators", glyph:"panel",
+      {code:"NT-EPD 11", img:"assets/products/NT-EPD11.png", name:"Compact Universal Indicators", glyph:"panel",
        desc:"The NT-EPD 11 digital indicator is used to take the 4–20 mA signal from transmitters and convert and display it in the required engineering unit. It is designed for easy fitting and removal on 2-wire transmitters with a DIN 43650 plug connection. The product offers high accuracy, stability and ease of use. It is a convenient solution for adding a display and alarm set points to pressure or other transmitters.",
        specs:[["Applications","Display of 4–20 mA current value or percentage, 2 independent alarm/switch outputs"],["Input Signal","4–20 mA (2-wire)"],["Power Source","4–20 mA 2-wire loop powered, max. voltage drop 8 VDC"],["Output Signal","4–20 mA 2-wire signal output"],["Field Operation","3 buttons, all parameters can be changed locally"],["Display","Dual row 5-bit/8-bit, 7/16 segment backlit LCD, −19999~99999"],["Accuracy and ADC","0.1% FS ±1 bit / 24 bit"],["Number of Switches","2-way PNP / NO"],["Switch Function","High set, low set, window function, hysteresis"],["Engineering Units","kPa, MPa, Pa, bar, mbar, psi, mH₂O, Torr, atm, kg, N, °C, °F, K, %RH, PPM, pH, m, mm, m/s, Ω, mV, V"]],
        uses:"Adding a field display and alarm to transmitters.",
@@ -637,7 +637,7 @@ window.NF_CAT = {
     /* ===================== MECHANICAL CONTROL ===================== */
     {id:"mekanik", kicker:"07", title:"Mechanical Control", sub:"Actuators, solenoid valves and valves", glyph:"valve",
      products:[
-      {code:"NT-VT / NT-ATG / NT-KE100", img:"assets/products/NT-ACT.webp", name:"Actuators", glyph:"actuator",
+      {code:"NT-VT / NT-ATG / NT-KE100", img:"assets/products/NT-ACT.png", name:"Actuators", glyph:"actuator",
        desc:"Drive elements that enable a system or mechanism to perform its opening and closing action. Different types are available according to the field of use and application. They generally command this control by hydraulic, pneumatic or electrical means.",
        variants:[
          ["Pneumatic Actuator (NT-VT)","Aluminium body and piston, alloy steel shaft, Namur solenoid valve interface, 5–8 bar supply pressure, ISO 5211 valve connection, 90° ±5° rotation angle."],
