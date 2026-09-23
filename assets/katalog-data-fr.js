@@ -347,7 +347,7 @@ window.NF_CAT = {
        uses:"Une solution economique et fiable pour les applications de surpresseurs, le controle du niveau d'eau sur les chaudieres a vapeur et divers reservoirs de liquides conducteurs.",
        sectors:"Centrales electriques, automatisation du batiment, industrie chimique."},
 
-      {code:"NT-RCS", img:"assets/products/NT-RCS.webp", name:"Detecteur de niveau capacitif a cable", glyph:"rope",
+      {code:"NT-RCS", img:"assets/products/NT-RCS.png", name:"Detecteur de niveau capacitif a cable", glyph:"rope",
        desc:"Concu pour detecter le niveau instantane (ponctuel) des solides en poudre et en granules dans une zone de stockage. Son principe de fonctionnement repose sur le fait que les materiaux en contact avec la surface de la sonde creent un changement de capacite, et ces instruments utilisent ce changement pour determiner le niveau au moyen de composants electroniques.",
        specs:[["Sortie (contact)","1 × relais NC-NO (220 VAC/5 A – 14 VDC/20 A)"],["Materiau du cable et du poids","304 SS, opt. 316 SS"],["Longueur","1 metre … 20 metres"],["Materiau du boitier","Delrin"],["Alimentation","24 VDC"]],
        uses:"Solides granulaires, chaux, sable, poussiere de charbon, ciment, clinker et cereales telles que le ble et le mais.",

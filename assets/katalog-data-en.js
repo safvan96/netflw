@@ -347,7 +347,7 @@ window.NF_CAT = {
        uses:"An economical and reliable solution for booster set applications, water level control on steam boilers and various conductive liquid tanks.",
        sectors:"Power plants, building automation, chemical industry."},
 
-      {code:"NT-RCS", img:"assets/products/NT-RCS.webp", name:"Cable Type Capacitive Level Switch", glyph:"rope",
+      {code:"NT-RCS", img:"assets/products/NT-RCS.png", name:"Cable Type Capacitive Level Switch", glyph:"rope",
        desc:"Designed to detect the instantaneous (point) level of powdered and granular solids in a storage area. Its operating principle is that materials in contact with the probe surface create a change in capacitance, and these instruments use that change to determine the level by means of electronic components.",
        specs:[["Output (Contact)","1 × NC-NO relay (220 VAC/5 A – 14 VDC/20 A)"],["Cable & Weight Material","304 SS, opt. 316 SS"],["Length","1 metre … 20 metres"],["Housing Material","Delrin"],["Power Supply","24 VDC"]],
        uses:"Granular solids, lime, sand, coal dust, cement, clinker and grains such as wheat and maize.",

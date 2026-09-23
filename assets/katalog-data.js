@@ -292,7 +292,7 @@ window.NF_CAT = {
        uses:"Hidrofor uygulamaları, buhar kazanları su seviye kontrolü ve muhtelif iletken sıvı tankları için ekonomik ve güvenli bir çözümdür.",
        sectors:"Enerji tesisleri, bina otomasyonu, kimya sanayi."},
 
-      {code:"NT-RCS", img:"assets/products/NT-RCS.webp", name:"Halatlı Tip Kapasitif Seviye Şalteri", glyph:"rope",
+      {code:"NT-RCS", img:"assets/products/NT-RCS.png", name:"Halatlı Tip Kapasitif Seviye Şalteri", glyph:"rope",
        desc:"Toz ve tanecikli katı maddelerin depolama alanında anlık (nokta) seviyesini tespit etmek için tasarlanmıştır. Çalışma prensibi, prob yüzeyine temasta bulunan maddelerin kapasite değişimi oluşturması ve bu değişimin elektronik bileşenler ile seviye tespiti amacıyla kullanılmasını sağlayan enstrümanlardır.",
        specs:[["Çıkış (Kontak)","1 × NC-NO röle (220 VAC/5 A – 14 VDC/20 A)"],["Halat ve Ağırlık Materyali","304 SS, ops. 316 SS"],["Boy","1 metre … 20 metre"],["Buat Materyali","Delrin"],["Besleme","24 VDC"]],
        uses:"Tanecikli katı maddeler, kireç, kum, kömür tozu, çimento, klinker, buğday, mısır gibi tahıllar.",
