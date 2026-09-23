@@ -56,7 +56,7 @@ window.NF_CAT = {
        sectors:"Atık su tesisleri, gıda sanayi, tekstil sanayi, ağır sanayi, makine sanayi, kimya sanayi, petrokimya, kağıt sanayi, ilaç sanayi ve tarımsal sulama.",
        notes:["Test edilen sıvının elektriksel iletkenliğe sahip olması gerekir.","Akışın boru içerisinden tam dolu geçmesi gerekir.","Akışkan içerisindeki bileşenlerin homojen şekilde karışmış olması gerekir.","Sıvı manyetik indükleme yaparsa cihazın manyetik alanı değişeceğinden yeniden ayar gerekir.","Laminer akış için mekanik bağlantı kılavuzuna göre montaj edilmelidir."]},
 
-      {code:"NT-TRB", img:"assets/products/NT-TRB.webp", name:"Türbin Debimetre", glyph:"turbine",
+      {code:"NT-VTR", img:"assets/products/NT-VTR.webp", name:"Türbin Debimetre", glyph:"turbine",
        desc:"Akışkanın hızını tespit edebilmek için gövdenin içine serbestçe dönebilen türbin yerleştirilerek oluşturulmuştur. Türbinin dönme oranı akışkanın hızı ile doğru orantılıdır. Hız × kesit hesabı ve laminer akışın sağlanmasıyla ±%0,2 hassasiyet oranında debi ölçümü yapılabilir. Paslanmaz ve plastik gövdeli olmak üzere flanşlı, dişli, tri-clamp, daldırma ve sıkıştırma modelleri mevcuttur.",
        variants:[
          ["Gıda Tipi","Gıda uygulamaları için geliştirilmiş modellerdir; bakteri üremesini engelleyecek bağlantı tipiyle tri-clamp / kelepçe tip bağlantı ile mekanik montajı yapılır."],
@@ -96,7 +96,7 @@ window.NF_CAT = {
        sectors:"Arıtma tesisleri, petrokimya, hidroelektrik santralleri, gıda sanayi, kağıt sanayi, ilaç sanayi, otomotiv sanayi, belediye ve kamu kurumları.",
        notes:["Boruya hasar vermeden ölçüm sağlar.","3 boy sensörü ile geniş ölçüm aralığı sağlar.","Akışkanın viskozitesi sabit olmalı ve homojen, tam dolu borularda kullanılmalıdır.","Çelik, paslanmaz çelik, dökme demir, PVC, bakır, alüminyum gibi materyallerde ölçüm seçenekleri."]},
 
-      {code:"NT-OCF", img:"assets/products/NT-OCF.webp", name:"Açık Kanal Debimetre", glyph:"channel",
+      {code:"NT-VAK", img:"assets/products/NT-VAK.webp", name:"Açık Kanal Debimetre", glyph:"channel",
        desc:"Açık bir kanalda savak veya bent üzerine kurularak, forma girmiş akışkanın temassız (ultrasonik) yöntemle hızı ve derinliğini esas alarak debisini tespit eden debimetrelerdir. 1 mm değişim çözünürlüğü ile yüksek hassasiyet sağlar. Aşırı soğuk uygulamalar için elektrikli ısıtma özelliği bulunur. Parazit izolasyonu sayesinde parazitlerden etkilenmez; anlık ve toplam miktar izlenebilir.",
        specs:[["Ölçüm Aralığı","0 ~ 99999 l/s veya m³/sa"],["Seviye Çözünürlüğü","1 mm"],["Gösterge","14 haneli, iki satırlı arkadan aydınlatmalı LCD"],["Debi Ölçüm Birimi","m³/saat – lt/saniye"],["Çıkış","4–20 mA ve RS485 seri iletişim (Modbus-RTU)"],["Çıkış Alarmları","En fazla 6 adet programlanabilir röle; kümülatif akış için pulse çıkışı"],["Sıcaklık Dayanımı","−40…+70 °C"],["Koruma Sınıfı","IP67 (ana bilgisayar) / IP68 (prob)"],["Besleme","DC 24 V (±%5) 0,2 A / AC 220 V (±%20) 0,1 A"],["Kullanılan Savaklar","Açık savak ve kanallar, Parshall kanallar (ISO), dik açılı üçgen ve dikdörtgen savaklar"],["Prob Ölçüm Aralığı","0,00 ~ 4,00 m (seviye)"],["Prob Malzemesi","ABS / PVC / PTFE"]],
        uses:"Su arıtma, sulama, endüstriyel atık su ve diğer endüstriyel alanlar.",
@@ -110,14 +110,14 @@ window.NF_CAT = {
        sectors:"Kimya tesisleri, enerji tesisleri, ağır sanayi, makine sanayi, petrokimya sanayi, kağıt sanayi, gaz dolum tesisleri.",
        notes:["Yüksek sıcaklık ve basınç bilgilerine dikkat edilmelidir.","Skala aralığı tercih edilebilir.","Gıda uygulamaları için hijyenik kelepçe bağlantısı yapılabilir.","Korozif ve patlayıcı akışkanlara göre gövde ve koruma sınıfı seçilebilir."]},
 
-      {code:"NT-OGF", img:"assets/products/NT-OGF.webp", name:"Oval Dişli Debimetre", glyph:"ovalgear",
+      {code:"NT-VDD", img:"assets/products/NT-VDD.webp", name:"Oval Dişli Debimetre", glyph:"ovalgear",
        desc:"Senkronize iki oval dişlinin akış hızına bağlı devir yapmasıyla ölçüm yapan debimetrelerdir. Devir hızı akış hızını tayin eder ve kesit hesabıyla anlık ve toplam debi miktarını tespit eder. Yüksek sıcaklık ve viskoziteye sahip akışkanlarda kolay kurulum ve yüksek hassasiyet sağlar. Çok düşük akışlarda kullanılabilir, yüksek çözünürlüklü pulse üretir.",
        specs:[["Bağlantı","DN6 – DN100 mm arası"],["Hassasiyet","±%0,5 (ops.)"],["Maks. Basınç Dayanımı","100 bar"],["Ölçüm Aralığı","0,5 ml/dak – 240 lt/dak"],["Çıkış","Pulse, ops. 4–20 mA"],["Besleme","5 – 24 VDC"]],
        uses:"Endüstriyel yağlar, hidrolik yağlar, düşük veya yüksek viskoziteli kimyasallar, yüksek sıcaklık ve basınçlı sıvılar, sıvı gıda uygulamaları, rafine yağlar.",
        sectors:"Otomotiv endüstrisi, makine endüstrisi, petrokimya ve boya tesisleri, kimya tesisleri, yağ üretim tesisleri, içecek endüstrisi.",
        notes:["Akışkan viskozitesine göre ürün seçilmelidir.","Yüksek sıcaklık ve basınç bilgilerine dikkat edilmelidir.","Partikül içeren akışkanlar filtre edilmelidir.","Aşındırıcı akışkanlar için gövde seçenekleri mevcuttur."]},
 
-      {code:"NT-HGF", img:"assets/products/NT-HGF.webp", name:"Helisel Dişli Debimetre", glyph:"helical",
+      {code:"NT-VDD-O", img:"assets/products/NT-VDD-O.webp", name:"Helisel Dişli Debimetre", glyph:"helical",
        desc:"Helisel (sarmal) debimetreler, viskoz akışkanların debisini tespit etmek için; silindirik muhafaza içine iki adet sikloidal helisel milin yerleştirilmesi, bu millerin iç cidarda kapalı alan oluşturması ve akışkanın hareketinin sadece millerin dönmesine bağlanması ile tasarlanmış ölçüm yöntemidir. Bu yöntem sayesinde minimum sızıntı, kesintisiz akış ve minimum basınç kaybı ile çok yüksek hassasiyet elde edilir.",
        specs:[["Bağlantı","DN6 – DN100"],["Hassasiyet","±%0,1"],["Tekrarlanabilirlik","±%0,05"],["Maks. Basınç Dayanımı","400 bar"],["Ölçüm Aralığı","0,4 – 400 lt/dak"],["Çıkış","Pulse, ops. 4–20 mA"],["Besleme","5 – 24 VDC"]],
        uses:"Değişken viskoziteli akışkanlar, parafin ve yapışkan akışkanlar, gıda uygulamaları, kimyasal akışkanlar, gres vb. yağlar.",
@@ -138,7 +138,7 @@ window.NF_CAT = {
        sectors:"Kimya tesisleri, petrokimya ve akaryakıt endüstrisi, enerji tesisleri, kağıt sanayi, tekstil sanayi, soğutma endüstrisi, makine endüstrisi, ilaç sanayi.",
        notes:["Kütlesel akış, yoğunluk ve sıcaklık ölçümünü bir arada sağlar.","Yatay ve dikey montaj kolaylığı sağlar.","Giriş ve çıkışlar için düz boru mesafesi gerektirmez.","Akışkanın fiziksel özelliklerinden bağımsız ölçüm sağlar."]},
 
-      {code:"NT-CTG", img:"assets/products/NT-CTG.webp", name:"Kompakt Termal Gaz Debimetre", glyph:"thermal",
+      {code:"NT-S415", img:"assets/products/NT-S415.webp", name:"Kompakt Termal Gaz Debimetre", glyph:"thermal",
        desc:"Ekonomik termal dağılım temelinde tasarlanmış ve gaz akışını ölçmek için sabit diferansiyel sıcaklık yöntemini benimsemiştir. Küçük boyut, kolay kurulum, yüksek güvenilirlik ve yüksek doğruluk gibi avantajları vardır.",
        specs:[["Bağlantı Ölçüleri","DN8 – DN300"],["Hassasiyet","±%1,5 okuma değeri + %0,3 tam ölçek"],["Ölçülebilen Gazlar","N₂, Ar, O₂, CO₂ vb. proses gazları"],["Çalışma Sıcaklığı","−30…+230 °C / bağıl nem <%90"],["Maks. Basınç","5,0 MPa"],["Çıkış","4–20 mA ve Pulse çıkışı, Modbus, M-Bus haberleşme"],["Alarm Çıkışı","1–2 hat röle, normalde açık, 10 A / 220 VAC veya 5 A / 30 VDC"],["Koruma Sınıfı","IP65"]],
        uses:"Proses gazları, doğalgaz hatları, basınçlı hava sistemleri.",
@@ -149,7 +149,7 @@ window.NF_CAT = {
     /* ===================== AKIŞ SENSÖRLERİ ===================== */
     {id:"akis", kicker:"02", title:"Akış Sensörleri", sub:"Akış varlığının izlenmesi, şalterleme ve gözle kontrol", glyph:"switchflow",
      products:[
-      {code:"NT-FSW", img:"assets/products/NT-FSW.webp", name:"Akış Şalterleri", glyph:"switchflow",
+      {code:"NT-VAS", img:"assets/products/NT-VAS.webp", name:"Akış Şalterleri", glyph:"switchflow",
        desc:"Akış şalteri borulardaki akışın hissedilmesi için kullanılmaktadır. Boru içinde sıvıların hareketini algılayarak akışkan olup olmadığının bilgisini verir. Birçok makine imalatçısı tarafından akış kontrolünde ve ısıtma-soğutma sistemlerinde güvenilir tercihlerdir.",
        variants:[
          ["Pedallı Akış Şalterleri (VAS-10/20)","Dilli tip akış şalterleri ve sensörler hatta dikey olarak bağlanır. T gövdeli veya doğrudan dilli modelleriyle kullanımı pratik ve kolaydır; doğrudan röle çıkışlı olması birçok tahrik elemanına doğrudan bağlantı kolaylığı sağlar. VAS-10 ekonomik seri ve VAS-20 endüstriyel seri mevcuttur."],
@@ -163,7 +163,7 @@ window.NF_CAT = {
        uses:"Şofben, kombi, ısıtıcı gibi cihazlar, soğutma su hatları, enerji tesisleri ve madenler. Patlayıcı ve zorlu prosesler için özel modeller mevcuttur.",
        sectors:"Makine imalatı, ısıtma-soğutma sistemleri, enerji tesisleri, madencilik."},
 
-      {code:"NT-FSG", img:"assets/products/NT-FSG.webp", name:"Akış Göstergeleri", glyph:"sight",
+      {code:"NT-VAG", img:"assets/products/NT-VAG.webp", name:"Akış Göstergeleri", glyph:"sight",
        desc:"Akış göstergesi, kapalı boru devrelerindeki akışı değişik yönlerden izlemek amacıyla kullanılan bir elemandır. Akış göstergeleri buhar kapanlarından önce ve sonra bağlanarak buhar kaçağının izlenmesinde; gıda, ilaç vb. sanayilerinde akışkanın gözle kontrolünün sağlanmasında kullanılır. Akış göstergelerinde kullanılan camlar özeldir; temperlenmiş sodalime cam olarak da bilinir.",
        variants:[
          ["VAG-12 Yatay Akış Göstergesi","3/8\" bağlantı, 32 mm iç boru çapı, paslanmaz çelik gövde. Yatay borularda cam pencere üzerinden akışın gözle izlenmesi."],
@@ -177,7 +177,7 @@ window.NF_CAT = {
     /* ===================== SEVİYE SENSÖRLERİ ===================== */
     {id:"seviye", kicker:"03", title:"Seviye Sensörleri", sub:"Sıvı ve katı malzemelerde sürekli ve noktasal seviye ölçümü", glyph:"level",
      products:[
-      {code:"NT-ULS", img:"assets/products/NT-ULS.png", name:"Ultrasonik Seviye Transmitterleri", glyph:"ultra",
+      {code:"NT-VUS", img:"assets/products/NT-VUS.png", name:"Ultrasonik Seviye Transmitterleri", glyph:"ultra",
        desc:"Ultrasonik seviye sensörleri; katı ve sıvılarda temassız mesafe, seviye ve hacim ölçümü için tasarlanmış enstrümanlardır. Ultrasonik sensör, sinyal çevirici ve kontrol birimi bileşenlerinden oluşur. Kolayca montajı yapılan sensörün tank içerisine gönderdiği ses dalgası malzemeye çarpar ve geri algılanır; böylece seviye tespiti yapılmış olur. Filtreleme özelliği ile yanlış ölçümler engellenir.",
        variants:[
          ["VUS QLU Serisi","4 haneli LCD gösterge, %0,2 hassasiyet, 24 VDC besleme, 60 mA tüketim. Kompakt ve ekonomik ultrasonik seviye sensörü."],
@@ -188,8 +188,8 @@ window.NF_CAT = {
        sectors:"Kum, çimento-klinker, atık su, temiz su, tozlu katı partiküller, gıda ve yem, plastik granüller.",
        notes:["Montaj kılavuzunda belirtilen adımlar uygulanmalıdır.","Kullanılan akışkana göre prob seçimine dikkat edilmelidir."]},
 
-      {code:"NT-RLS", img:"assets/products/NT-RLS.png", name:"Radar Seviye Transmitterleri", glyph:"radar",
-       vimgs:[["Radar","assets/products/NT-RLS-radar.webp"],["Kılavuzlu","assets/products/NT-RLS-H.png"]],
+      {code:"NT-VRS", img:"assets/products/NT-VRS.png", name:"Radar Seviye Transmitterleri", glyph:"radar",
+       vimgs:[["Radar","assets/products/NT-VRS-radar.webp"],["Kılavuzlu","assets/products/NT-VRS-H.png"]],
        desc:"Radar seviye sensörleri darbe yönetimi ile zamanla artan frekans taramaları gönderir; ölçüm yüzeyinden yansıyarak geri dönen bu sinyaller anten tarafından toplanır ve böylece sıvı ve katılarda seviye tespiti yapılır. Yüksek teknolojisi ve temassız – kılavuzlu gibi farklı uygulama metotları ile zorlu proseslerde ölçüm kolaylığı sağlar. Ölçüm değerini mesafe, seviye, hacim ve kütle gibi farklı değerlerde yorumlar.",
        variants:[
          ["VRS FMCW Radar","77–81 GHz frekans bandı, temassız ölçüm. Sıvı ve katı malzemelerde yüksek hassasiyetli seviye tespiti."],
@@ -201,7 +201,7 @@ window.NF_CAT = {
        uses:"Kum, çimento-klinker, atık su, temiz su, tozlu katı partiküller, yüksek sıcaklık ve viskoz sıvılar; süt ve süt ürünleri, meşrubat, yağ, benzin, mazot, dolomit, kalsit, kireç, un ve yem, plastik granüller.",
        sectors:"Seramik sanayi, çimento fabrikaları, arıtma tesisleri, gıda endüstrisi, petrokimya endüstrisi, plastik işleme ve hammadde tesisleri, kum ve taş ocakları, kireç ve alçı tesisleri."},
 
-      {code:"NT-HLS", img:"assets/products/NT-HLS.webp", name:"Hidrostatik Seviye Transmitterleri", glyph:"hydro",
+      {code:"NT-VHL", img:"assets/products/NT-VHL.webp", name:"Hidrostatik Seviye Transmitterleri", glyph:"hydro",
        desc:"Hidrostatik seviye transmitteri özel olarak daldırma tip olarak dizayn edilmiştir. Sıvı seviyesi yükseldikçe dip kısma yapmış olduğu basınç lineer olarak artmaktadır. Bu prensibe dayalı olarak sıvıya daldırılan ürün, sıvı seviyesinin yükselmesine bağlı olarak seviyeyi hassas bir şekilde ölçer.",
        variants:[
          ["VHL PL110","100 mbar – 25 bar ölçüm aralığı, 4–20 mA veya 0–10 VDC çıkış. Genel amaçlı daldırma seviye transmitteri."],
@@ -212,7 +212,7 @@ window.NF_CAT = {
        sectors:"Sulama sistemleri, akarsular, tanklar, belediye ve kamu kurumları.",
        notes:["Kablo boyu sipariş sırasında belirtilmelidir.","Ölçümde hava kanallı özel kablo kullanıldığı için muhafaza edilmelidir."]},
 
-      {code:"NT-CLS", img:"assets/products/NT-CLS.png", name:"Kapasitif Seviye Transmitterleri", glyph:"capacitive",
+      {code:"NT-VKS", img:"assets/products/NT-VKS.png", name:"Kapasitif Seviye Transmitterleri", glyph:"capacitive",
        desc:"Kapasitif seviye transmitteri, katı ve sıvı malzemelerin seviye yönetiminde; toz, köpük, kir veya benzer partiküllere rağmen yüksek hassasiyette oransal ölçüm imkânı sunar. Kapasitif ölçüm prensibi, elektrot ve tank yüzeyi arasında kütleye bağlı değişen kapasite değerinin algılanmasına dayanır. Sensör elektrodu, kurulum sonrasında istenen noktaya kadar malzeme içerisine daldırılır.",
        variants:[
          ["VKS 5 Kapasitif Seviye Transmitteri","İletken sıvılarda seviye ölçümü. 9–36 VDC besleme, (−)1…(+)100 bar basınç, −40…+150 °C sıcaklık aralığı."],
@@ -223,7 +223,7 @@ window.NF_CAT = {
        sectors:"Yapı endüstrisi, gıda endüstrisi, inşaat endüstrisi.",
        notes:["Kullanıldığı yerdeki tozdan ve topraktan etkilenmez.","Ürün, malzeme girişinden uzak tutulmalıdır.","Ürüne zarar verebilecek durumlarda ölçüm yapılacak yere siperlik takılması önerilir."]},
 
-      {code:"NT-MLS", img:"assets/products/NT-MLS.webp", name:"Motorlu Seviye Sensörleri", glyph:"motor",
+      {code:"NT-VMS", img:"assets/products/NT-VMS.webp", name:"Motorlu Seviye Sensörleri", glyph:"motor",
        desc:"Bu tip seviye şalterleri silo ve konteyner içinde bulunan iri taneli malzemenin seviye kontrolü için tasarlanmış enstrümanlardır. Çalışma prensibi oldukça basittir: tank duvarına montajı yapılan seviye şalterinin paletli probu düşük devirde dönmeye başlar; prob seviyesine yükselen iri tanecikli malzemeler palet üzerine karşı kuvvet uygulayarak dönmesini engeller, böylece motor durur ve kontak vererek kontrol amaçlı kullanılabilir.",
        variants:[
          ["VMS Serisi Pedallı Motorlu","Standart bayraklı (pedallı) motorlu seviye şalteri. 250 g/lt minimum algılama yoğunluğu. Silo ve konteyner uygulamaları."],
@@ -233,7 +233,7 @@ window.NF_CAT = {
        uses:"İnşaat, yapı, gıda ve plastik endüstrisinde bulk katı malzeme seviye kontrolü.",
        sectors:"İnşaat sektörü (alçı, kireç, çimento, taş kırma tesisleri), gıda (yem, tohum, un, tuz, şeker, çay, bakliyat), plastik sanayi."},
 
-      {code:"NT-VLS", img:"assets/products/NT-VLS.webp", name:"Titreşimli Seviye Sensörleri", glyph:"vibrating",
+      {code:"NT-VLV-VBR", img:"assets/products/NT-VLV-VBR.webp", name:"Titreşimli Seviye Sensörleri", glyph:"vibrating",
        desc:"Titreşimli seviye sensörleri; sıvı ve katı malzemelerde noktasal seviye tespiti için tasarlanmıştır. Prob üzerindeki titreşimin malzeme teması ile sönümlenmesi esasına dayanır. Oynar parça sayısının azlığı sayesinde bakım gereksinimi düşüktür ve yüksek titreşimli ortamlarda güvenle çalışır.",
        variants:[
          ["VLV Çatal Tip","Paslanmaz çelik çatal prob, R1\" ve R1/2\" bağlantı. Sıvı ve katı malzemelerde güvenilir seviye tespiti."],
@@ -244,7 +244,7 @@ window.NF_CAT = {
        uses:"Toz, granül ve partikül hâlindeki katı ürünler ile sıvılar.",
        sectors:"Gıda, ilaç ve kimya sanayi, yapı ve inşaat endüstrisi."},
 
-      {code:"NT-CSW", img:"assets/products/NT-CSW.png", name:"Kapasitif Seviye Şalteri", glyph:"capacitive",
+      {code:"NT-VKS-S", img:"assets/products/NT-VKS-S.png", name:"Kapasitif Seviye Şalteri", glyph:"capacitive",
        desc:"Magcap tip seviye şalterinin uç kısmındaki algılama sensörünün etrafı kullanılan yerdeki hammadde ile kaplandıktan sonra yaydığı RF gücünde azalma oluşur. Bu azalma, yapılan hassasiyet ayarından fazla olduğunda çıkış sinyali üretir. Malzemenin dielektrik katsayısına ve özelliğine bağlı olarak cihaz üstünden hassasiyet ayarı yapılabilir.",
        variants:[
          ["VKS 10 Kapasitif Seviye Şalteri","24 VDC besleme, maks. 50 mW tüketim, −40…+150 °C çalışma sıcaklığı. Kompakt yapı, endüstriyel seviye kontrolü."],
@@ -255,14 +255,14 @@ window.NF_CAT = {
        sectors:"Yapı endüstrisi, gıda endüstrisi, inşaat endüstrisi, kimya sanayi.",
        notes:["Kullanıldığı yerdeki tozdan ve topraktan etkilenmez.","Uygulama noktasına göre ürünün zarar görebileceği durumlarda siperlik kullanılması gerekebilir."]},
 
-      {code:"NT-SSW", img:"assets/products/NT-SSW.webp", name:"Yandan Montajlı Seviye Şalteri", glyph:"sideswitch",
+      {code:"NT-ELES-S", img:"assets/products/NT-ELES-S.webp", name:"Yandan Montajlı Seviye Şalteri", glyph:"sideswitch",
        desc:"F1 tip manyetik seviye şalterleri tüm tankların sıvı seviye ölçümleri için kullanılır. Harici besleme kaynağı olmadan çalışma özelliği, yandan montaj imkânı, geniş basınç ve sıcaklık aralığı ile komple paslanmaz temas sayesinde geniş kullanım alanına sahiptir.",
        specs:[["Basınç Dayanımı","16 bar"],["Sıcaklık Dayanımı","Maks. 150 °C"],["Bağlantı Tipi","Kare flanş"],["Flanş Özelliği","AISI 316"],["Buat","Alüminyum"],["Regülasyon","50 – 100 – 200 mm"],["Yoğunluk","> 0,7 kg/lt"],["Switch Kapasitesi","250 VAC, 15 A, NO+NC"]],
        uses:"Pis ve temiz su tankları, asit ve kostik tanklar, yakıt ve yağ tankları, tüm basınçlı ve basınçsız kaplar.",
        sectors:"Gemi sanayi, yakıt ve yağ tesisleri, kimya sanayi.",
        notes:["Harici beslemeye gerek duymaz.","Yüksek vibrasyonda çalışabilir."]},
 
-      {code:"NT-DSW", img:"assets/products/NT-DSW.webp", name:"Diyaframlı Seviye Şalteri", glyph:"diaphragm",
+      {code:"NT-VDZ", img:"assets/products/NT-VDZ.webp", name:"Diyaframlı Seviye Şalteri", glyph:"diaphragm",
        desc:"Diyaframlı katı seviye şalteri, depodaki dökme malzemenin seviyesinin ölçülmesinde en ekonomik yöntemdir. Açık ve basınçsız tanklarda kullanılabilir. Tozlu, pudralı, tanecikli, granüllü dökme malzemelerin silodaki dolu ve boş durumları kontrol edilebilir. Membran, kontrolü yapılan malzemeye mutlaka temas etmelidir. Siloya dökülen malzeme yığıldıkça membran kapanır; oluşan baskıyla malzeme diyaframı geri iter ve mekanizma kontağı iter. Malzeme azaldıkça kontak eski konuma döner.",
        specs:[["Gövde Malzemesi","Nitril, NBR, FPM, paslanmaz çelik"],["Bağlantı","Yuvarlak flanş"],["Çıkış","1 × NA/NK mikro şalter"],["Maksimum Sıcaklık","200 °C"]],
        uses:"Dökme katı malzemelerin silo dolu/boş kontrolü.",
@@ -274,8 +274,8 @@ window.NF_CAT = {
        uses:"Sunucu odaları, bodrum katları, pompa istasyonları, kritik ekipman mahalleri.",
        sectors:"Bina otomasyonu, veri merkezleri, endüstriyel tesisler."},
 
-      {code:"NT-MLI", img:"assets/products/NT-MLI.webp", name:"Manyetik Seviye Göstergeleri", glyph:"bypass",
-       vimgs:[["Ex-Proof Tip","assets/products/NT-MLI-EX.webp"],["Kazan Tipi","assets/products/NT-MLI-BR.webp"]],
+      {code:"NT-MBP", img:"assets/products/NT-MBP.webp", name:"Manyetik Seviye Göstergeleri", glyph:"bypass",
+       vimgs:[["Ex-Proof Tip","assets/products/NT-MBP-EX.webp"],["Kazan Tipi","assets/products/NT-MBP-BR.webp"]],
        desc:"MLG tip manyetik seviye gösterge cihazı, sürekli olarak sıvı seviyesinin ölçümü, izlenmesi ve görüntülenmesi için kullanılır. Tanktaki seviye değişimi, birleşik kaplar prensibine göre bypass tüpü içindeki sıvının seviyesini de aynı oranda değiştirir. Bu sayede seviye göstergesi içinde bulunan mıknatıslı şamandıra hareket ederek bypass tüpünün dış yüzeyindeki manyetik flapları etkiler ve kendi ekseni etrafında 180° dönmesini sağlar. Sıvı seviyesi artarken beyaz flaplar kırmızıya, azalırken kırmızı flaplar beyaza döner.",
        variants:[
          ["VSG Standart","Genel amaçlı manyetik bypass seviye göstergesi. Sürekli sıvı seviye izleme ve görüntüleme."],
@@ -286,13 +286,13 @@ window.NF_CAT = {
        uses:"Su tankları, kondens tankları, degazörler, yakıt tankları, buhar kazanları, yeraltı tankları, agresif ve toksik sıvılar, sıvılaştırılmış gazlar, tüm basınçlı ve basınçsız kaplar.",
        sectors:"Gemi inşa sanayi, kimya sanayi, rafineriler, enerji tesisleri."},
 
-      {code:"NT-CDS", img:"assets/products/NT-CDS.webp", name:"İletken Tip Seviye Şalterleri", glyph:"conductive",
+      {code:"NT-ILS", img:"assets/products/NT-ILS.webp", name:"İletken Tip Seviye Şalterleri", glyph:"conductive",
        desc:"İletken tip seviye şalteri tank ve kazanların sıvı seviye kontrolünde kullanılmaktadır. Oynar parçası olmadığından kritik ortamlarda, katı partiküllü, düşük yoğunluklu ve yüksek viskoziteli iletken sıvılarda kullanılabilir.",
        specs:[["Elektrot Malzemesi","304 paslanmaz çelik, ops. 316 paslanmaz çelik"],["Bağlantı ve Muhafaza Malzemesi","Derlin"],["Çıkış","1 × NA/NK mikro şalter"],["Maksimum Sıcaklık ve Basınç","60 °C … 6 bar"],["Elektrot Sayısı","Maks. 3"]],
        uses:"Hidrofor uygulamaları, buhar kazanları su seviye kontrolü ve muhtelif iletken sıvı tankları için ekonomik ve güvenli bir çözümdür.",
        sectors:"Enerji tesisleri, bina otomasyonu, kimya sanayi."},
 
-      {code:"NT-RCS", img:"assets/products/NT-RCS.png", name:"Halatlı Tip Kapasitif Seviye Şalteri", glyph:"rope",
+      {code:"NT-VKS-H", img:"assets/products/NT-VKS-H.png", name:"Halatlı Tip Kapasitif Seviye Şalteri", glyph:"rope",
        desc:"Toz ve tanecikli katı maddelerin depolama alanında anlık (nokta) seviyesini tespit etmek için tasarlanmıştır. Çalışma prensibi, prob yüzeyine temasta bulunan maddelerin kapasite değişimi oluşturması ve bu değişimin elektronik bileşenler ile seviye tespiti amacıyla kullanılmasını sağlayan enstrümanlardır.",
        specs:[["Çıkış (Kontak)","1 × NC-NO röle (220 VAC/5 A – 14 VDC/20 A)"],["Halat ve Ağırlık Materyali","304 SS, ops. 316 SS"],["Boy","1 metre … 20 metre"],["Buat Materyali","Delrin"],["Besleme","24 VDC"]],
        uses:"Tanecikli katı maddeler, kireç, kum, kömür tozu, çimento, klinker, buğday, mısır gibi tahıllar.",
@@ -315,8 +315,8 @@ window.NF_CAT = {
        sectors:"Arıtma tesisleri, makine imalatçıları, yat ve gemi sektörü, kimya sektörü, tekstil sektörü, otel ve havuzlar, petrol ve akaryakıt sektörü, gıda sektörü.",
        notes:["Ekonomik çözümdür.","Uygulamaya özel imalat yapılabilmektedir.","Kurulumu ve montajı kolaydır.","Yapışkan ve yoğunluğu yüksek sıvılarda önerilmez."]},
 
-      {code:"NT-MNS", img:"assets/products/NT-LSW-M.png", name:"Mini Seviye Şalterleri", glyph:"floattx",
-       vimgs:[["Plastik Mini","assets/products/NT-MLP.webp"],["Paslanmaz Mini","assets/products/NT-LSW-M.png"]],
+      {code:"NT-VML", img:"assets/products/NT-VML.png", name:"Mini Seviye Şalterleri", glyph:"floattx",
+       vimgs:[["Plastik Mini","assets/products/NT-MLP.webp"],["Paslanmaz Mini","assets/products/NT-VML.png"]],
        desc:"Mini seviye şalterleri; makine, tank ve kazan gibi endüstriyel uygulamalarda kompakt boyutlarıyla sıvı seviye kontrolü için tasarlanmıştır. Paslanmaz çelik ve plastik (PP, PVDF) gövde seçenekleri ile geniş kullanım alanına sahiptir. Manyetik şamandıra prensibine göre çalışır; sıvı seviyesi belirlenen noktaya ulaştığında reed kontak tetiklenerek sinyal üretir.",
        variants:[
          ["VML-V Paslanmaz Yandan Montaj","AISI 304 paslanmaz çelik gövde, R1/2\" ve M10 bağlantı, 1 A maks. kontak akımı. Makine ve tankların yandan seviye kontrolü için idealdir."],
@@ -335,9 +335,9 @@ window.NF_CAT = {
     /* ===================== BASINÇ SENSÖRLERİ ===================== */
     {id:"basinc", kicker:"04", title:"Basınç Sensörleri", sub:"Basınç transmitterleri, şalterler ve manometreler", glyph:"pressure",
      products:[
-      {code:"NT-BT", img:"assets/products/NT-BTT-S.webp", name:"Standart Seri (OEM) Basınç Transmitterleri", glyph:"pressure",
+      {code:"NT-VBT", img:"assets/products/NT-VBT-S.webp", name:"Standart Seri (OEM) Basınç Transmitterleri", glyph:"pressure",
        desc:"Sıvı ve gazların birim alana uyguladığı kuvvetin büyüklüğüne basınç denir. Algıladığı basınç değerini belirli bir elektronik sinyale dönüştüren ekipmanları basınç transmitteri olarak adlandırabiliriz.",
-       variants:[["NT-BT Serisi","G1/4\" bağlantı, 0…2,5 bar'dan 0…600 bar'a kadar ölçüm aralığı."],["NT-FPT Serisi","G1/4\" – G1/2\" bağlantı; 0…100 mbar ile 0…600 bar, vakum seçenekleri (0…−1 bar)."]],
+       variants:[["NT-VBT Serisi","G1/4\" bağlantı, 0…2,5 bar'dan 0…600 bar'a kadar ölçüm aralığı."],["NT-FPT Serisi","G1/4\" – G1/2\" bağlantı; 0…100 mbar ile 0…600 bar, vakum seçenekleri (0…−1 bar)."]],
        specs:[["Bağlantı Ölçüsü","G1/4\" – G1/2\""],["Ölçüm Aralığı","0…2,5 bar'dan 0…600 bar'a kadar; 0…100 mbar seçenekleri"],["Hassasiyet","±%0,5 FS / ±%0,3 FS"],["Sıcaklık Aralığı","−40…+125 °C"],["Çıkış Sinyali","4…20 mA, 0…5 VDC, 1…6 VDC, 0…10 VDC, 0,5…4,5 VDC ratiometrik"]],
        uses:"Yapışkan olmayan ve partikül içermeyen sıvılar, agresif olmayan gazlar.",
        sectors:"Atık su tesisleri, gıda sanayi, tekstil sanayi, ağır sanayi, makine sanayi, kimya sanayi, petrokimya, kağıt sanayi, ilaç sanayi, hidroelektrik santralleri."},
@@ -366,14 +366,14 @@ window.NF_CAT = {
        uses:"Tüm sıvı, gaz ve buhar uygulamaları.",
        sectors:"Makine endüstrisi, test ve kalibrasyon sistemleri, kimya sanayi, ağır sanayi, savunma sanayi, petrokimya endüstrisi."},
 
-      {code:"NT-EPD", img:"assets/products/NT-EPD.png", name:"Göstergeli Basınç Transmitterleri ve Şalterleri", glyph:"gauge",
+      {code:"NT-VBT-G", img:"assets/products/NT-VBT-G.png", name:"Göstergeli Basınç Transmitterleri ve Şalterleri", glyph:"gauge",
        desc:"Basınç transmitterine kompakt şekilde eklenmiş programlama ve gösterge ekranından oluşmaktadır. Kolay ve pratik kullanımı sayesinde sahada anlık veri izlemeye olanak sağlar.",
        specs:[["Bağlantı Ölçüsü","G1/4\" – G1/2\""],["Ölçüm Aralığı","0…0,2 bar'dan 0…600 bar'a kadar"],["Hassasiyet","±%0,5 FS"],["Sıcaklık Aralığı","−25…+85 °C"],["Çıkış Sinyali","4…20 mA, 0…10 VDC, değiştirilebilir mA veya V"],["Anahtarlama","2 adet PNP transistör (ops. kontak çıkış)"]],
        uses:"Tüm sıvı ve gazlar.",
        sectors:"İmalat tezgahları, hidrolik çalışan tüm makineler, HVAC makineleri (ısıtma, klima, havalandırma üniteleri), soğutma üniteleri, su arıtma makineleri.",
        notes:["Absolute veya relative ölçüm seçeneği.","NFC ile cep telefonundan programlayabilme.","Tek cihazda akım ve voltaj çıkış seçeneği."]},
 
-      {code:"NT-TG / NT-KP", img:"assets/products/NT-PSW.png", name:"Basınç Şalterleri", glyph:"pswitch",
+      {code:"NT-TG / NT-KP", img:"assets/products/NT-VPO.png", name:"Basınç Şalterleri", glyph:"pswitch",
        desc:"Algıladığı basınç verisini set edilen nokta veya noktalarda anahtarlama, emniyet ve alarm amaçlı üretilmiş basınç ölçme ekipmanlarıdır.",
        specs:[["Bağlantı Ölçüsü","G1/4\", G1/8\""],["Ölçüm Aralığı","−200 mbar…−800 mbar ve 0,1…600 bar'a kadar; −0,2…7,5 / 2…14 bar"],["Hassasiyet","<%5"],["Sıcaklık Aralığı","−30…+100 °C (ops. 250 °C); −40…+60 °C"],["Çıkış Sinyali","NO / NC / değişken (NO&NC)"]],
        uses:"Partikül içermeyen sıvılar, hava, buhar ve agresif olmayan gazlar.",
@@ -393,13 +393,13 @@ window.NF_CAT = {
        uses:"Sıvı, buhar ve gazlar.",
        sectors:"Gemi endüstrisi, temiz su taşıma sistemleri, atık su sistemleri, kimya ve petrokimya endüstrisi, enerji santralleri, gıda ve meşrubat endüstrisi, süt makineleri, ilaç sanayi, makine endüstrisi."},
 
-      {code:"NT-DPS-A", img:"assets/products/NT-DPS-A.webp", name:"Hava Fark Basınç Şalteri", glyph:"diffpressure",
+      {code:"NT-VDP-A", img:"assets/products/NT-VDP-A.webp", name:"Hava Fark Basınç Şalteri", glyph:"diffpressure",
        desc:"Klima ve havalandırma sistemlerinde filtre tıkanma tespiti için fark basınç şalteri. Filtre üzerindeki basınç düşüşü ayarlanan set değerini aştığında SPDT röle çıkışı alarm veya kontrol işlemi başlatır.",
        specs:[["Ölçüm Aralığı","20 – 300 Pa (ayarlanabilir)"],["Kontak","SPDT (değiştirmeli)"],["Koruma Sınıfı","IP54"],["Bağlantı","6 mm hortum nipeli"],["Çalışma Sıcaklığı","−10…+85 °C"],["Set Değeri","Skaladan ayarlanabilir"]],
        uses:"Hava filtresi tıkanma tespiti, temiz oda izleme, havalandırma ve fan kontrolü.",
        sectors:"HVAC, temiz odalar, bina otomasyonu, üretim tesisleri."},
 
-      {code:"NT-DPS-L", img:"assets/products/NT-DPS-L.webp", name:"Sıvı Fark Basınç Şalteri", glyph:"diffpressure",
+      {code:"NT-VDP-L", img:"assets/products/NT-VDP-L.webp", name:"Sıvı Fark Basınç Şalteri", glyph:"diffpressure",
        desc:"Sıvı filtre durumunu izlemek ve basınç farkı set değerini aştığında alarm tetiklemek için kompakt fark basınç şalteri. Su, yağ ve kimyasal filtrasyon sistemlerine uygundur.",
        specs:[["Ölçüm Aralığı","0,2 – 4 bar (ayarlanabilir)"],["Kontak","SPDT (değiştirmeli)"],["Koruma Sınıfı","IP65"],["Bağlantı","G 1/4\" veya 1/4\" NPT"],["Çalışma Sıcaklığı","−20…+85 °C"],["Maks. Çalışma Basıncı","40 bar"]],
        uses:"Sıvı filtre izleme, soğutma devresi koruması, endüstriyel proses kontrolü.",
@@ -409,7 +409,7 @@ window.NF_CAT = {
     /* ===================== SICAKLIK ===================== */
     {id:"sicaklik", kicker:"05", title:"Sıcaklık Sensörleri", sub:"Termokupllar, termo rezistanslar ve sıcaklık-nem transmitterleri", glyph:"temp",
      products:[
-      {code:"NT-TC", img:"assets/products/NT-TC.webp", name:"Termokupllar", glyph:"thermocouple",
+      {code:"NT-VTC", img:"assets/products/NT-VTC.webp", name:"Termokupllar", glyph:"thermocouple",
        desc:"İki farklı metalin birleşme noktasında oluşan sıcaklık farkının küçük gerilim üretmesi (Seebeck etkisi) prensibine dayanan sıcaklık sensörleridir. Basit yapısı, geniş sıcaklık aralığı ve hızlı tepki süresiyle endüstriyel sıcaklık ölçümünde en yaygın kullanılan çözümdür. Tüm modellerde proseslere uygun özgün imalat (projeye uygun çap, boy ve tip) sağlanmaktadır.",
        variants:[
          ["VTC-J — J Tipi Termokupl","Demir-konstantan yapısıyla genel endüstriyel sıcaklık ölçümlerinde tercih edilen, hızlı tepki süresi ve uygun maliyet avantajı sunan termokupllardır. 0 … 750 °C aralığında çalışır. Plastik ve kauçuk işleme, ısıtma sistemleri, laboratuvar cihazları, fırın ve ocak kontrolü uygulamalarında kullanılır."],
@@ -422,7 +422,7 @@ window.NF_CAT = {
        sectors:"Metal işleme, çimento tesisleri, cam ve seramik endüstrisi, gıda endüstrisi, ilaç endüstrisi, kimya ve petrokimya endüstrisi, enerji santralleri, makine imalatı, otomasyon sistemleri.",
        notes:["Ölçüm sıcaklık aralığı, ortamın kimyasal bileşimi, tepki süresi ve montaj şekline göre doğru tip seçilmelidir.","Koruyucu kılıf çapının en az 8-10 katı kadar dalma boyu önerilir.","İsteğe bağlı özel üretimler yapılabilmektedir."]},
 
-      {code:"NT-RTD", img:"assets/products/NT-RTD.webp", name:"Termo Rezistanslar (PT100 / PT1000)", glyph:"rtd",
+      {code:"NT-VPT", img:"assets/products/NT-VPT.webp", name:"Termo Rezistanslar (PT100 / PT1000)", glyph:"rtd",
        desc:"Platin dirençli sıcaklık sensörleri olup sıcaklık değişimine bağlı direnç değişimi ile hassas ölçüm yapar. PT100 ve PT1000 modelleri endüstriyel proseslerde, enerji sistemlerinde ve tesis otomasyonlarında yaygın olarak kullanılır. Yüksek doğruluk, kararlı performans ve uzun ömür sunar.",
        variants:[
          ["VPT-100K — Kafalı Tip PT100","Ölçüm ucu metal kılıfla donatılmış, bağlantı kafası sayesinde sahada kolay kablolama imkânı sunan dirençli sıcaklık sensörüdür. Zorlu çevre koşullarına karşı dayanıklıdır. 316 paslanmaz çelik boru ve bağlantı materyali, Class B (ops. Class A) hassasiyet, 1 veya 2 elemanlı, 4–20 mA opsiyonel çıkış."],
@@ -435,7 +435,7 @@ window.NF_CAT = {
        sectors:"Kimya ve petrokimya, gıda ve ilaç, enerji, HVAC, plastik enjeksiyon, ekstrüzyon, lastik ve kauçuk işleme, makine imalatı, otomasyon.",
        notes:["PT100 kısa kablo mesafelerinde, PT1000 uzun kablo mesafelerinde tercih edilir.","Kafalı tip proses uygulamalarında, bayonet tip makine ve yüzey ölçümlerinde idealdir.","İsteğe bağlı özel üretimler yapılabilmektedir."]},
 
-      {code:"NT-HT", img:"assets/products/NT-HT.webp", name:"Sıcaklık ve Nem Transmitterleri", glyph:"humidity",
+      {code:"NT-VHT", img:"assets/products/NT-VHT.webp", name:"Sıcaklık ve Nem Transmitterleri", glyph:"humidity",
        desc:"VTH serisi sıcaklık ve nem transmitterleri, yerli üretim hassas ölçüm cihazlarıdır. Yenilenmiş sensör ve entegre teknoloji sayesinde neredeyse tüm şartlar altında kullanılabilir. Amerikan menşei sensör direkt olarak sıvı ile temas etse bile, üzerindeki sıvı buharlaştığında ölçüm almaya devam edebilecek yapıdadır.",
        variants:[
          ["VTH Plastik Problu","Duvar montajlı veya uzatılabilir kablo ile farklı uygulamalarda rahatlıkla kullanılır. Göstergeli modelinde 14 mm yüksekliğinde, 15 metreden görülebilir ekranı ile üzerinden izleme yapılabilir. Röle ve analog sinyal çıkışlarının yanında RS485 Modbus iletişim modülü ilave edilebilir. PVC sensör gövdesi."],
@@ -463,17 +463,17 @@ window.NF_CAT = {
        uses:"Sıcaklık ve analog sensörlerin panel üzerinden izlenmesi.",
        sectors:"Makine imalatı, gıda, kimya, enerji tesisleri."},
 
-      {code:"NT-EPD 11", img:"assets/products/NT-EPD11.png", name:"Kompakt Üniversal Göstergeler", glyph:"panel",
-       desc:"NT-EPD 11 dijital gösterge, transmitterlerden 4–20 mA sinyalini alarak istenen ölçüm birimine çevirmek ve görüntülemek için kullanılır. DIN 43650 soket bağlantılı 2 kablolu transmitterlere kolayca takma/çıkarma için tasarlanmıştır. Ürün yüksek doğruluk, kararlılık ve kolay kullanım özelliklerine sahiptir. Basınç veya diğer transmitterlere gösterge ve alarm set noktaları eklemek için uygun bir çözümdür.",
+      {code:"NT-VBT-G 11", img:"assets/products/NT-VBT-G11.png", name:"Kompakt Üniversal Göstergeler", glyph:"panel",
+       desc:"NT-VBT-G 11 dijital gösterge, transmitterlerden 4–20 mA sinyalini alarak istenen ölçüm birimine çevirmek ve görüntülemek için kullanılır. DIN 43650 soket bağlantılı 2 kablolu transmitterlere kolayca takma/çıkarma için tasarlanmıştır. Ürün yüksek doğruluk, kararlılık ve kolay kullanım özelliklerine sahiptir. Basınç veya diğer transmitterlere gösterge ve alarm set noktaları eklemek için uygun bir çözümdür.",
        specs:[["Uygulamalar","4–20 mA akım değeri veya yüzde görüntüleme, 2 adet bağımsız alarm/switch çıkışı"],["Giriş Sinyali","4–20 mA (2 kablolu)"],["Güç Kaynağı","4–20 mA 2 kablolu hat beslemesi, maks. basınç düşümü 8 VDC"],["Çıkış Sinyali","4–20 mA 2 kablolu sinyal çıkışı"],["Saha Çalışması","3 buton, bütün parametreler yerinde değiştirilebilir"],["Gösterge","Çift sıralı 5 bit/8 bit, 7/16 segment arkadan aydınlatmalı LCD, −19999~99999"],["Doğruluk ve ADC","%0,1 FS ±1 bit / 24 bit"],["Switch Adedi","2 yönlü PNP / NA"],["Switch Fonksiyonu","Yüksek ayar, düşük ayar, pencere fonksiyonu, histerezis"],["Ölçüm Birimleri","kPa, MPa, Pa, bar, mbar, psi, mH₂O, Torr, atm, kg, N, °C, °F, K, %RH, PPM, pH, m, mm, m/s, Ω, mV, V"]],
        uses:"Transmitterlere saha göstergesi ve alarm eklenmesi.",
        sectors:"Tüm endüstriyel proses uygulamaları."},
 
-      {code:"NT-UPC / NT-TC / NT-PRFC", img:"assets/products/NT-UPC.webp", name:"Kontrol Cihazları", glyph:"controller",
+      {code:"NT-UPC / NT-VTC / NT-PRFC", img:"assets/products/NT-UPC.webp", name:"Kontrol Cihazları", glyph:"controller",
        desc:"Sıcaklık ve analog çıkışlı sensörlerle ölçüm yapılan uygulamalarda proses değerlerinin gözlemlenmesi ve kontrolü için kullanılır. Kontrol çıkışı için On-Off, oransal (P), oransal + integral (PI), oransal + integral + türev (PID) çalışma şekilleri mevcuttur. Modbus haberleşme protokolü ile diğer sistemlerle entegre çalışabilir.",
        variants:[
          ["Üniversal Girişli Kontrol Cihazları","NT-UPC 4 / 7 / 49. 48×48, 72×72, 48×96 mm. Üniversal proses girişi 4…20 mA, 0…20 mA, 0…60 mV, 0…10 V, termokupl (J,K,R,S,T), PT100 (hat kompanzasyonlu). 2 röle çıkışı 8 A@250 VAC, analog çıkış, RS485 Modbus."],
-         ["Sıcaklık Kontrol Cihazları","NT-TCS 377-X / NT-TC 4 / NT-TC 38. Tüm termokupl tipleri, PT100, PTC ve NTC girişi. ON/OFF veya zaman oransal (P) çalışma, ısıtma/soğutma fonksiyonu, alarm çıkışı ve gecikme zamanı tanımlanabilir."],
+         ["Sıcaklık Kontrol Cihazları","NT-TCS 377-X / NT-VTC 4 / NT-VTC 38. Tüm termokupl tipleri, PT100, PTC ve NTC girişi. ON/OFF veya zaman oransal (P) çalışma, ısıtma/soğutma fonksiyonu, alarm çıkışı ve gecikme zamanı tanımlanabilir."],
          ["Adım Kontrol Cihazları","NT-PRFC7. 72×72 mm. Adım/profil kontrol cihazı; endüstride sıcaklık veya herhangi bir proses değerinin ölçülmesi ve kontrol edilmesi için tasarlanmıştır. 20 adıma kadar profil."]
        ],
        specs:[["Doğruluk","%0,3 – %0,5"],["Kontrol Çıkışı","Röle çıkışı (8 A@250 VAC)"],["Analog Çıkış","4…20 mA, 0…20 mA"],["Haberleşme","RS485 Modbus RTU/ASCII"],["Çözünürlük","1 °C / 0,1 °C (PT100, 0…100 °C aralığı için)"],["Besleme Gerilimi","220 VAC, 24 VDC, 12 VDC (siparişte belirtilmelidir)"]],
@@ -531,7 +531,7 @@ window.NF_CAT = {
        uses:"Mobil makine eğim izleme, güneş takip konumlama, platform tesviyesi, yapısal izleme.",
        sectors:"İnşaat, yenilenebilir enerji, denizcilik, madencilik, endüstriyel otomasyon."},
 
-      {code:"NT-AGS", img:"assets/products/NT-RCS-3100-2100.png", name:"Açı Sensörleri", glyph:"angle",
+      {code:"NT-RCS", img:"assets/products/NT-RCS-3100-2100.png", name:"Açı Sensörleri", glyph:"angle",
        desc:"Temassız manyetik prensiple çalışan rotary açı sensörleri; endüstriyel uygulamalarda dönüş açısını hassas şekilde ölçmek için tasarlanmıştır. Mekanik aşınma olmadan uzun ömürlü, güvenilir konum ve açı verisi sağlar. Kaplinli, milsiz ve entegre milli modelleri ile farklı montaj ihtiyaçlarına uyum sağlar.",
        variants:[
          ["RCS 3100 Serisi","Temassız manyetik prensip, kaplin bağlantılı. Endüstriyel konumlama ve servo sistemlerde kullanılır."],

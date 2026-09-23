@@ -88,7 +88,7 @@ title:"Why Every Plant Should Replace Glass Level Gauges with Magnetic Indicator
 excerpt:"Glass tubes break, leak, and fog up. Magnetic bypass level indicators don't. Here's what you need to know before your next shutdown.",
 category:"Level Measurement",
 date:"2026-09-10",
-image:"assets/products/NT-MLI.png",
+image:"assets/products/NT-MBP.png",
 content:`<h2>Glass Gauges Have Had Their Day</h2>
 <p>Sight glass level gauges have been standard equipment for over a century. They work... until they don't. A thermal shock cracks the glass. A gasket starts weeping. The liquid column discolours and you can't read it from three metres away. Every time you replace one, you need a process shutdown.</p>
 
@@ -575,7 +575,7 @@ title:"Замена стеклянных уровнемеров на магни�
 excerpt:"Стеклянные указатели уровня лопаются, текут и мутнеют. Магнитный байпасный уровнемер решает все три проблемы.",
 category:"Уровнемеры",
 date:"2026-09-08",
-image:"assets/products/NT-MLI.png",
+image:"assets/products/NT-MBP.png",
 content:`<h2>Проблема со стеклом</h2>
 <p>На любой нефтебазе или НПЗ, от <strong>Актау</strong> до <strong>Баку</strong> и от <strong>Атырау</strong> до <strong>Тбилиси</strong>, стеклянные указатели уровня стоят на сотнях ёмкостей. И регулярно создают проблемы:</p>
 <ul>
@@ -750,7 +750,7 @@ title:"Manyetik Bypass Seviye Göstergesi: Cam Seviye Göstergelerine Son",
 excerpt:"Cam tüpler kırılır, sızar ve buğulanır. Manyetik bypass gösterge bunların hiçbirini yapmaz. İşte bilmeniz gerekenler.",
 category:"Seviye Ölçüm",
 date:"2026-09-08",
-image:"assets/products/NT-MLI.png",
+image:"assets/products/NT-MBP.png",
 content:`<h2>Cam Göstergelerin Çağı Kapandı</h2>
 <p>Yüz yılı aşkın süredir kullanılan cam seviye göstergeleri, işlevlerini yerine getirir, ta ki getirmeyene kadar. Termal şok camı çatlatır. Contalar sızmaya başlar. Sıvı sütunu renk değiştirir ve üç metre öteden okunamaz hale gelir. Her değişimde proses durdurulur.</p>
 

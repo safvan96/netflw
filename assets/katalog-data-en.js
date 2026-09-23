@@ -111,7 +111,7 @@ window.NF_CAT = {
        sectors:"Wastewater plants, food industry, textile industry, heavy industry, machinery industry, chemical industry, petrochemicals, paper industry, pharmaceutical industry and agricultural irrigation.",
        notes:["The liquid being measured must be electrically conductive.","The pipe must be completely full while the flow passes through it.","The components within the medium must be homogeneously mixed.","If the liquid itself induces a magnetic effect, the magnetic field of the device changes and recalibration is required.","It must be installed according to the mechanical connection guide to ensure laminar flow."]},
 
-      {code:"NT-TRB", img:"assets/products/NT-TRB.webp", name:"Turbine Flow Meter", glyph:"turbine",
+      {code:"NT-VTR", img:"assets/products/NT-VTR.webp", name:"Turbine Flow Meter", glyph:"turbine",
        desc:"A turbine that can rotate freely is placed inside the body in order to detect the velocity of the medium. The rotational rate of the turbine is directly proportional to the velocity of the medium. By calculating velocity × cross-section and ensuring laminar flow, flow measurement with ±0.2% accuracy is possible. Stainless steel and plastic bodied versions are available with flanged, threaded, tri-clamp, insertion and wafer connections.",
        variants:[
          ["Hygienic Type","Models developed for food applications; mechanical installation is made with a tri-clamp or clamp type connection that prevents bacterial growth."],
@@ -151,7 +151,7 @@ window.NF_CAT = {
        sectors:"Treatment plants, petrochemicals, hydroelectric power plants, food industry, paper industry, pharmaceutical industry, automotive industry, municipalities and public institutions.",
        notes:["Provides measurement without damaging the pipe.","Three transducer sizes provide a wide measuring range.","The viscosity of the medium must be constant and it must be used on homogeneous, completely full pipes.","Measurement options for materials such as steel, stainless steel, cast iron, PVC, copper and aluminium."]},
 
-      {code:"NT-OCF", img:"assets/products/NT-OCF.webp", name:"Open Channel Flow Meter", glyph:"channel",
+      {code:"NT-VAK", img:"assets/products/NT-VAK.webp", name:"Open Channel Flow Meter", glyph:"channel",
        desc:"These flow meters are installed over a weir or dam in an open channel and determine flow by taking the velocity and depth of the shaped flow stream using a non-contact (ultrasonic) method. They provide high accuracy with 1 mm resolution of change. An electric heating feature is available for extremely cold applications. Thanks to interference isolation they are unaffected by electrical noise; instantaneous and totalised quantities can be monitored.",
        specs:[["Measuring Range","0 ~ 99999 L/s or m³/h"],["Level Resolution","1 mm"],["Indicator","14-digit, two-line backlit LCD"],["Flow Units","m³/h – L/s"],["Output","4–20 mA and RS485 serial communication (Modbus RTU)"],["Output Alarms","Up to 6 programmable relays; pulse output for cumulative flow"],["Temperature Rating","−40…+70 °C"],["Ingress Protection","IP67 (main unit) / IP68 (probe)"],["Power Supply","DC 24 V (±5%) 0.2 A / AC 220 V (±20%) 0.1 A"],["Supported Weirs","Open weirs and channels, Parshall flumes (ISO), right-angle triangular and rectangular weirs"],["Probe Measuring Range","0.00 ~ 4.00 m (level)"],["Probe Material","ABS / PVC / PTFE"]],
        uses:"Water treatment, irrigation, industrial wastewater and other industrial areas.",
@@ -165,14 +165,14 @@ window.NF_CAT = {
        sectors:"Chemical plants, power plants, heavy industry, machinery industry, petrochemical industry, paper industry, gas filling plants.",
        notes:["High temperature and pressure data must be observed.","The scale range can be specified.","A hygienic clamp connection can be provided for food applications.","Body and ingress protection class can be selected according to corrosive and explosive media."]},
 
-      {code:"NT-OGF", img:"assets/products/NT-OGF.webp", name:"Oval Gear Flow Meter", glyph:"ovalgear",
+      {code:"NT-VDD", img:"assets/products/NT-VDD.webp", name:"Oval Gear Flow Meter", glyph:"ovalgear",
        desc:"These flow meters measure by means of two synchronised oval gears that rotate in proportion to the flow velocity. The rotational speed determines the flow velocity and, with the cross-section calculation, the instantaneous and totalised flow quantity is obtained. They provide easy installation and high accuracy on media with high temperature and viscosity. They can be used at very low flow rates and produce a high-resolution pulse.",
        specs:[["Connection","DN6 – DN100 mm"],["Accuracy","±0.5% (opt.)"],["Max. Pressure Rating","100 bar"],["Measuring Range","0.5 mL/min – 240 L/min"],["Output","Pulse, opt. 4–20 mA"],["Power Supply","5 – 24 VDC"]],
        uses:"Industrial oils, hydraulic oils, chemicals of low or high viscosity, high temperature and high pressure liquids, liquid food applications and refined oils.",
        sectors:"Automotive industry, machinery industry, petrochemical and paint plants, chemical plants, oil production plants, beverage industry.",
        notes:["The product must be selected according to the viscosity of the medium.","High temperature and pressure data must be observed.","Media containing particles must be filtered.","Body options are available for abrasive media."]},
 
-      {code:"NT-HGF", img:"assets/products/NT-HGF.webp", name:"Helical Gear Flow Meter", glyph:"helical",
+      {code:"NT-VDD-O", img:"assets/products/NT-VDD-O.webp", name:"Helical Gear Flow Meter", glyph:"helical",
        desc:"Helical flow meters are a measuring method designed to determine the flow of viscous media by placing two cycloidal helical rotors inside a cylindrical housing, so that these rotors form a closed volume against the inner wall and the movement of the medium depends solely on their rotation. This method achieves very high accuracy with minimum leakage, uninterrupted flow and minimum pressure loss.",
        specs:[["Connection","DN6 – DN100"],["Accuracy","±0.1%"],["Repeatability","±0.05%"],["Max. Pressure Rating","400 bar"],["Measuring Range","0.4 – 400 L/min"],["Output","Pulse, opt. 4–20 mA"],["Power Supply","5 – 24 VDC"]],
        uses:"Media of varying viscosity, paraffin and adhesive media, food applications, chemical media, grease and similar oils.",
@@ -193,7 +193,7 @@ window.NF_CAT = {
        sectors:"Chemical plants, petrochemical and fuel industry, power plants, paper industry, textile industry, refrigeration industry, machinery industry, pharmaceutical industry.",
        notes:["Provides mass flow, density and temperature measurement together.","Allows easy horizontal and vertical installation.","Requires no straight pipe run at the inlet and outlet.","Provides measurement independent of the physical properties of the medium."]},
 
-      {code:"NT-CTG", img:"assets/products/NT-CTG.webp", name:"Compact Thermal Gas Flow Meter", glyph:"thermal",
+      {code:"NT-S415", img:"assets/products/NT-S415.webp", name:"Compact Thermal Gas Flow Meter", glyph:"thermal",
        desc:"Designed on the basis of economical thermal dispersion, it adopts the constant differential temperature method to measure gas flow. It offers advantages such as small size, easy installation, high reliability and high accuracy.",
        specs:[["Connection Sizes","DN8 – DN300"],["Accuracy","±1.5% of reading + 0.3% of full scale"],["Measurable Gases","N₂, Ar, O₂, CO₂ and similar process gases"],["Operating Temperature","−30…+230 °C / relative humidity <90%"],["Maximum Pressure","5.0 MPa"],["Output","4–20 mA and pulse output, Modbus, M-Bus communication"],["Alarm Output","1–2 relay channels, normally open, 10 A / 220 VAC or 5 A / 30 VDC"],["Ingress Protection","IP65"]],
        uses:"Process gases, natural gas lines and compressed air systems.",
@@ -204,7 +204,7 @@ window.NF_CAT = {
     /* ===================== FLOW SENSORS ===================== */
     {id:"akis", kicker:"02", title:"Flow Sensors", sub:"Monitoring the presence of flow, switching and visual checking", glyph:"switchflow",
      products:[
-      {code:"NT-FSW", img:"assets/products/NT-FSW.webp", name:"Flow Switches", glyph:"switchflow",
+      {code:"NT-VAS", img:"assets/products/NT-VAS.webp", name:"Flow Switches", glyph:"switchflow",
        desc:"A flow switch is used to sense the flow inside pipework. By detecting the movement of liquids within the pipe it indicates whether or not there is flow. They are a reliable choice for many machine builders in flow control and in heating and cooling systems.",
        variants:[
          ["Paddle Flow Switches (VAS-10/20)","Paddle type flow switches and sensors are installed vertically in the line. With their T-body or direct paddle models they are practical and easy to use; having a direct relay output makes it easy to connect them straight to many drive elements. VAS-10 economy series and VAS-20 industrial series are available."],
@@ -218,7 +218,7 @@ window.NF_CAT = {
        uses:"Appliances such as water heaters, combi boilers and heaters, cooling water lines, power plants and mines. Special models are available for explosive and demanding processes.",
        sectors:"Machinery manufacturing, heating and cooling systems, power plants, mining."},
 
-      {code:"NT-FSG", img:"assets/products/NT-FSG.webp", name:"Sight Flow Indicators", glyph:"sight",
+      {code:"NT-VAG", img:"assets/products/NT-VAG.webp", name:"Sight Flow Indicators", glyph:"sight",
        desc:"A sight flow indicator is an element used to observe the flow in closed pipe circuits from various directions. Sight flow indicators are installed before and after steam traps to monitor steam leakage, and are used in industries such as food and pharmaceuticals to provide visual verification of the medium. The glasses used in sight flow indicators are special; they are also known as tempered soda-lime glass.",
        variants:[
          ["VAG-12 Horizontal Sight Flow Indicator","3/8\" connection, 32 mm internal pipe diameter, stainless steel body. Visual flow monitoring through glass window on horizontal pipes."],
@@ -232,7 +232,7 @@ window.NF_CAT = {
     /* ===================== LEVEL SENSORS ===================== */
     {id:"seviye", kicker:"03", title:"Level Sensors", sub:"Continuous and point level measurement on liquids and solids", glyph:"level",
      products:[
-      {code:"NT-ULS", img:"assets/products/NT-ULS.png", name:"Ultrasonic Level Transmitters", glyph:"ultra",
+      {code:"NT-VUS", img:"assets/products/NT-VUS.png", name:"Ultrasonic Level Transmitters", glyph:"ultra",
        desc:"Ultrasonic level sensors are instruments designed for non-contact distance, level and volume measurement on solids and liquids. They consist of an ultrasonic sensor, a signal converter and a control unit. The sound wave that the easily mounted sensor sends into the tank strikes the material and is detected on its return, thereby determining the level. False readings are prevented by the filtering feature.",
        variants:[
          ["VUS QLU Series","4-digit LCD display, 0.2% accuracy, 24 VDC supply, 60 mA consumption. Compact and economical ultrasonic level sensor."],
@@ -243,8 +243,8 @@ window.NF_CAT = {
        sectors:"Sand, cement clinker, wastewater, clean water, dusty solid particles, food and feed, plastic granules.",
        notes:["The steps stated in the installation guide must be followed.","Probe selection must be made carefully according to the medium used."]},
 
-      {code:"NT-RLS", img:"assets/products/NT-RLS.png", name:"Radar Level Transmitters", glyph:"radar",
-       vimgs:[["Radar","assets/products/NT-RLS-radar.webp"],["Guided Wave","assets/products/NT-RLS-H.png"]],
+      {code:"NT-VRS", img:"assets/products/NT-VRS.png", name:"Radar Level Transmitters", glyph:"radar",
+       vimgs:[["Radar","assets/products/NT-VRS-radar.webp"],["Guided Wave","assets/products/NT-VRS-H.png"]],
        desc:"Radar level sensors emit frequency sweeps that increase over time through pulse management; these signals, reflected back from the measured surface, are collected by the antenna and the level of liquids and solids is thereby determined. With their advanced technology and different application methods such as non-contact and guided wave, they simplify measurement in demanding processes. The measured value can be interpreted as distance, level, volume or mass.",
        variants:[
          ["VRS FMCW Radar","77–81 GHz frequency band, non-contact measurement. High-accuracy level detection in liquids and solids."],
@@ -256,7 +256,7 @@ window.NF_CAT = {
        uses:"Sand, cement clinker, wastewater, clean water, dusty solid particles, high-temperature and viscous liquids; milk and dairy products, soft drinks, oil, petrol, diesel, dolomite, calcite, lime, flour and feed, plastic granules.",
        sectors:"Ceramics industry, cement plants, treatment plants, food industry, petrochemical industry, plastics processing and raw material plants, sand and stone quarries, lime and gypsum plants."},
 
-      {code:"NT-HLS", img:"assets/products/NT-HLS.webp", name:"Hydrostatic Level Transmitters", glyph:"hydro",
+      {code:"NT-VHL", img:"assets/products/NT-VHL.webp", name:"Hydrostatic Level Transmitters", glyph:"hydro",
        desc:"The hydrostatic level transmitter is specially designed as a submersible type. As the liquid level rises, the pressure it exerts on the bottom increases linearly. Based on this principle, the unit submerged in the liquid measures the level precisely in proportion to the rise of the liquid level.",
        variants:[
          ["VHL PL110","100 mbar – 25 bar measuring range, 4–20 mA or 0–10 VDC output. General purpose submersible level transmitter."],
@@ -267,7 +267,7 @@ window.NF_CAT = {
        sectors:"Irrigation systems, watercourses, tanks, municipalities and public institutions.",
        notes:["The cable length must be stated when ordering.","A special vented cable is used for the measurement and must therefore be protected."]},
 
-      {code:"NT-CLS", img:"assets/products/NT-CLS.png", name:"Capacitive Level Transmitters", glyph:"capacitive",
+      {code:"NT-VKS", img:"assets/products/NT-VKS.png", name:"Capacitive Level Transmitters", glyph:"capacitive",
        desc:"The capacitive level transmitter offers high-accuracy proportional measurement in the level management of solid and liquid materials, despite dust, foam, dirt or similar particles. The capacitive measuring principle is based on detecting the capacitance value between the electrode and the tank surface, which varies with the mass present. After installation, the sensor electrode is immersed into the material down to the required point.",
        variants:[
          ["VKS 5 Capacitive Level Transmitter","Level measurement in conductive liquids. 9–36 VDC supply, (−)1…(+)100 bar pressure, −40…+150 °C temperature range."],
@@ -278,7 +278,7 @@ window.NF_CAT = {
        sectors:"Building industry, food industry, construction industry.",
        notes:["Unaffected by dust and soil at the point of use.","The unit must be kept away from the material inlet.","Where conditions could damage the unit, fitting a baffle at the measuring point is recommended."]},
 
-      {code:"NT-MLS", img:"assets/products/NT-MLS.webp", name:"Rotary Paddle Level Switches", glyph:"motor",
+      {code:"NT-VMS", img:"assets/products/NT-VMS.webp", name:"Rotary Paddle Level Switches", glyph:"motor",
        desc:"This type of level switch is an instrument designed for level control of coarse-grained material inside silos and containers. The operating principle is very simple: the paddle probe of the level switch mounted on the tank wall starts to rotate at low speed; when coarse-grained material rises to the probe level it applies a counter-force to the paddle and prevents it from turning, so the motor stops and provides a contact that can be used for control purposes.",
        variants:[
          ["VMS Series Paddle Rotary","Standard paddle (flag) rotary level switch. 250 g/L minimum detection density. Silo and container applications."],
@@ -288,7 +288,7 @@ window.NF_CAT = {
        uses:"Bulk solid level control in the construction, building, food and plastics industries.",
        sectors:"Construction sector (gypsum, lime, cement, stone crushing plants), food (feed, seed, flour, salt, sugar, tea, pulses), plastics industry."},
 
-      {code:"NT-VLS", img:"assets/products/NT-VLS.webp", name:"Vibrating Fork Level Switches", glyph:"vibrating",
+      {code:"NT-VLV-VBR", img:"assets/products/NT-VLV-VBR.webp", name:"Vibrating Fork Level Switches", glyph:"vibrating",
        desc:"Vibrating level sensors are designed for point level detection on liquid and solid materials. They work on the principle that the vibration on the fork is damped when it comes into contact with material. Thanks to the small number of moving parts, maintenance requirements are low and they operate reliably in environments with high vibration.",
        variants:[
          ["VLV Fork Type","Stainless steel fork probe, R1\" and R1/2\" connection. Reliable level detection in liquids and solids."],
@@ -299,7 +299,7 @@ window.NF_CAT = {
        uses:"Solid products in powder, granule and particle form, as well as liquids.",
        sectors:"Food, pharmaceutical and chemical industries, building and construction industry."},
 
-      {code:"NT-CSW", img:"assets/products/NT-CSW.png", name:"Capacitive Level Switch", glyph:"capacitive",
+      {code:"NT-VKS-S", img:"assets/products/NT-VKS-S.png", name:"Capacitive Level Switch", glyph:"capacitive",
        desc:"Once the sensing element at the tip of the Magcap type level switch becomes surrounded by the raw material at the point of use, the RF power it emits decreases. When this decrease exceeds the configured sensitivity setting, an output signal is generated. Sensitivity can be adjusted on the device according to the dielectric constant and the properties of the material.",
        variants:[
          ["VKS 10 Capacitive Level Switch","24 VDC supply, max. 50 mW consumption, −40…+150 °C operating temperature. Compact construction, industrial level control."],
@@ -310,14 +310,14 @@ window.NF_CAT = {
        sectors:"Building industry, food industry, construction industry.",
        notes:["Unaffected by dust and soil at the point of use.","Depending on the application point, a baffle may be required where the unit could be damaged."]},
 
-      {code:"NT-SSW", img:"assets/products/NT-SSW.webp", name:"Side-Mounted Level Switch", glyph:"sideswitch",
+      {code:"NT-ELES-S", img:"assets/products/NT-ELES-S.webp", name:"Side-Mounted Level Switch", glyph:"sideswitch",
        desc:"F1 type magnetic level switches are used for liquid level measurement in all types of tank. They have a wide field of use thanks to their ability to operate without an external power supply, side-mounting capability, wide pressure and temperature range and fully stainless steel wetted parts.",
        specs:[["Pressure Rating","16 bar"],["Temperature Rating","Max. 150 °C"],["Connection Type","Square flange"],["Flange Material","AISI 316"],["Housing","Aluminium"],["Adjustment","50 – 100 – 200 mm"],["Density","> 0.7 kg/L"],["Switch Capacity","250 VAC, 15 A, NO+NC"]],
        uses:"Waste and clean water tanks, acid and caustic tanks, fuel and oil tanks, all pressurised and unpressurised vessels.",
        sectors:"Shipbuilding industry, fuel and oil plants, chemical industry.",
        notes:["Requires no external power supply.","Can operate under high vibration."]},
 
-      {code:"NT-DSW", img:"assets/products/NT-DSW.webp", name:"Diaphragm Level Switch", glyph:"diaphragm",
+      {code:"NT-VDZ", img:"assets/products/NT-VDZ.webp", name:"Diaphragm Level Switch", glyph:"diaphragm",
        desc:"The diaphragm solid level switch is the most economical method of measuring the level of bulk material in a store. It can be used in open and unpressurised tanks. The full and empty status of dusty, powdered, granular and pelletised bulk materials in the silo can be monitored. The membrane must always be in contact with the material being monitored. As material poured into the silo builds up, the membrane closes; the resulting pressure pushes the diaphragm back and the mechanism actuates the contact. As the material decreases, the contact returns to its original position.",
        specs:[["Body Material","Nitrile, NBR, FPM, stainless steel"],["Connection","Round flange"],["Output","1 × NO/NC micro switch"],["Maximum Temperature","200 °C"]],
        uses:"Full/empty control of bulk solid materials in silos.",
@@ -329,8 +329,8 @@ window.NF_CAT = {
        uses:"Server rooms, basements, pump stations and critical equipment areas.",
        sectors:"Building automation, data centres, industrial facilities."},
 
-      {code:"NT-MLI", img:"assets/products/NT-MLI.webp", name:"Magnetic Level Indicators", glyph:"bypass",
-       vimgs:[["Ex-Proof Type","assets/products/NT-MLI-EX.webp"],["Boiler Type","assets/products/NT-MLI-BR.webp"]],
+      {code:"NT-MBP", img:"assets/products/NT-MBP.webp", name:"Magnetic Level Indicators", glyph:"bypass",
+       vimgs:[["Ex-Proof Type","assets/products/NT-MBP-EX.webp"],["Boiler Type","assets/products/NT-MBP-BR.webp"]],
        desc:"The MLG type magnetic level indicator is used for the continuous measurement, monitoring and display of liquid level. A change of level in the tank also changes the level of the liquid inside the bypass chamber by the same amount, according to the principle of communicating vessels. The magnetic float inside the indicator therefore moves and acts on the magnetic flaps on the outer surface of the bypass chamber, causing them to rotate 180° about their own axis. As the liquid level rises the white flaps turn red, and as it falls the red flaps turn white.",
        variants:[
          ["VSG Standard","General purpose magnetic bypass level indicator. Continuous liquid level monitoring and display."],
@@ -341,13 +341,13 @@ window.NF_CAT = {
        uses:"Water tanks, condensate tanks, deaerators, fuel tanks, steam boilers, underground tanks, aggressive and toxic liquids, liquefied gases, all pressurised and unpressurised vessels.",
        sectors:"Shipbuilding industry, chemical industry, refineries, power plants."},
 
-      {code:"NT-CDS", img:"assets/products/NT-CDS.webp", name:"Conductive Level Switches", glyph:"conductive",
+      {code:"NT-ILS", img:"assets/products/NT-ILS.webp", name:"Conductive Level Switches", glyph:"conductive",
        desc:"Conductive level switches are used for liquid level control in tanks and boilers. As they have no moving parts they can be used in critical environments and with conductive liquids containing solid particles, of low density and of high viscosity.",
        specs:[["Electrode Material","304 stainless steel, opt. 316 stainless steel"],["Connection & Housing Material","Delrin"],["Output","1 × NO/NC micro switch"],["Maximum Temperature & Pressure","60 °C … 6 bar"],["Number of Electrodes","Max. 3"]],
        uses:"An economical and reliable solution for booster set applications, water level control on steam boilers and various conductive liquid tanks.",
        sectors:"Power plants, building automation, chemical industry."},
 
-      {code:"NT-RCS", img:"assets/products/NT-RCS.png", name:"Cable Type Capacitive Level Switch", glyph:"rope",
+      {code:"NT-VKS-H", img:"assets/products/NT-VKS-H.png", name:"Cable Type Capacitive Level Switch", glyph:"rope",
        desc:"Designed to detect the instantaneous (point) level of powdered and granular solids in a storage area. Its operating principle is that materials in contact with the probe surface create a change in capacitance, and these instruments use that change to determine the level by means of electronic components.",
        specs:[["Output (Contact)","1 × NC-NO relay (220 VAC/5 A – 14 VDC/20 A)"],["Cable & Weight Material","304 SS, opt. 316 SS"],["Length","1 metre … 20 metres"],["Housing Material","Delrin"],["Power Supply","24 VDC"]],
        uses:"Granular solids, lime, sand, coal dust, cement, clinker and grains such as wheat and maize.",
@@ -370,8 +370,8 @@ window.NF_CAT = {
        sectors:"Treatment plants, machine builders, yacht and shipbuilding sector, chemical sector, textile sector, hotels and swimming pools, oil and fuel sector, food sector.",
        notes:["An economical solution.","Application-specific manufacturing is possible.","Easy to install and mount.","Not recommended for adhesive and high-density liquids."]},
 
-      {code:"NT-MNS", img:"assets/products/NT-LSW-M.png", name:"Mini Level Switches", glyph:"floattx",
-       vimgs:[["Plastic Mini","assets/products/NT-MLP.webp"],["Stainless Mini","assets/products/NT-LSW-M.png"]],
+      {code:"NT-VML", img:"assets/products/NT-VML.png", name:"Mini Level Switches", glyph:"floattx",
+       vimgs:[["Plastic Mini","assets/products/NT-MLP.webp"],["Stainless Mini","assets/products/NT-VML.png"]],
        desc:"Mini level switches are designed for liquid level control in industrial applications such as machines, tanks and boilers, offering compact dimensions. Available in stainless steel and plastic (PP, PVDF) body options for a wide range of applications. They operate on the magnetic float principle; when the liquid level reaches the set point, the reed contact is triggered to produce a signal.",
        variants:[
          ["VML-V Stainless Side Mount","AISI 304 stainless steel body, R1/2\" and M10 connection, 1 A max. contact current. Ideal for side-mount level control on machines and tanks."],
@@ -390,9 +390,9 @@ window.NF_CAT = {
     /* ===================== PRESSURE SENSORS ===================== */
     {id:"basinc", kicker:"04", title:"Pressure Sensors", sub:"Pressure transmitters, switches and gauges", glyph:"pressure",
      products:[
-      {code:"NT-BT", img:"assets/products/NT-BTT-S.webp", name:"Standard Series (OEM) Pressure Transmitters", glyph:"pressure",
+      {code:"NT-VBT", img:"assets/products/NT-VBT-S.webp", name:"Standard Series (OEM) Pressure Transmitters", glyph:"pressure",
        desc:"Pressure is the magnitude of the force that liquids and gases exert per unit area. Equipment that converts the pressure value it senses into a defined electronic signal can be described as a pressure transmitter.",
-       variants:[["NT-BT Series","G1/4\" connection, measuring ranges from 0…2.5 bar up to 0…600 bar."],["NT-FPT Series","G1/4\" – G1/2\" connection; 0…100 mbar to 0…600 bar, with vacuum options (0…−1 bar)."]],
+       variants:[["NT-VBT Series","G1/4\" connection, measuring ranges from 0…2.5 bar up to 0…600 bar."],["NT-FPT Series","G1/4\" – G1/2\" connection; 0…100 mbar to 0…600 bar, with vacuum options (0…−1 bar)."]],
        specs:[["Connection Size","G1/4\" – G1/2\""],["Measuring Range","From 0…2.5 bar up to 0…600 bar; 0…100 mbar options"],["Accuracy","±0.5% FS / ±0.3% FS"],["Temperature Range","−40…+125 °C"],["Output Signal","4…20 mA, 0…5 VDC, 1…6 VDC, 0…10 VDC, 0.5…4.5 VDC ratiometric"]],
        uses:"Non-adhesive and particle-free liquids, non-aggressive gases.",
        sectors:"Wastewater plants, food industry, textile industry, heavy industry, machinery industry, chemical industry, petrochemicals, paper industry, pharmaceutical industry, hydroelectric power plants."},
@@ -421,14 +421,14 @@ window.NF_CAT = {
        uses:"All liquid, gas and steam applications.",
        sectors:"Machinery industry, test and calibration systems, chemical industry, heavy industry, defence industry, petrochemical industry."},
 
-      {code:"NT-EPD", img:"assets/products/NT-EPD.png", name:"Pressure Transmitters and Switches with Display", glyph:"gauge",
+      {code:"NT-VBT-G", img:"assets/products/NT-VBT-G.png", name:"Pressure Transmitters and Switches with Display", glyph:"gauge",
        desc:"Consists of a programming and display screen added compactly onto the pressure transmitter. Thanks to its easy and practical operation it allows instantaneous data monitoring in the field.",
        specs:[["Connection Size","G1/4\" – G1/2\""],["Measuring Range","From 0…0.2 bar up to 0…600 bar"],["Accuracy","±0.5% FS"],["Temperature Range","−25…+85 °C"],["Output Signal","4…20 mA, 0…10 VDC, switchable mA or V"],["Switching","2 × PNP transistor (opt. contact output)"]],
        uses:"All liquids and gases.",
        sectors:"Machine tools, all hydraulically operated machinery, HVAC equipment (heating, air conditioning, ventilation units), refrigeration units, water treatment machinery.",
        notes:["Absolute or relative measurement option.","Can be programmed from a mobile phone via NFC.","Current and voltage output options in a single device."]},
 
-      {code:"NT-TG / NT-KP", img:"assets/products/NT-PSW.png", name:"Pressure Switches", glyph:"pswitch",
+      {code:"NT-TG / NT-KP", img:"assets/products/NT-VPO.png", name:"Pressure Switches", glyph:"pswitch",
        desc:"Pressure measuring equipment produced for switching, safety and alarm purposes at one or more set points based on the pressure data it senses.",
        specs:[["Connection Size","G1/4\", G1/8\""],["Measuring Range","−200 mbar…−800 mbar and 0.1…600 bar; −0.2…7.5 / 2…14 bar"],["Accuracy","<5%"],["Temperature Range","−30…+100 °C (opt. 250 °C); −40…+60 °C"],["Output Signal","NO / NC / changeover (NO&NC)"]],
        uses:"Particle-free liquids, air, steam and non-aggressive gases.",
@@ -448,13 +448,13 @@ window.NF_CAT = {
        uses:"Liquids, steam and gases.",
        sectors:"Shipbuilding industry, clean water transport systems, wastewater systems, chemical and petrochemical industry, power plants, food and beverage industry, dairy machinery, pharmaceutical industry, machinery industry."},
 
-      {code:"NT-DPS-A", img:"assets/products/NT-DPS-A.webp", name:"Air Differential Pressure Switch", glyph:"diffpressure",
+      {code:"NT-VDP-A", img:"assets/products/NT-VDP-A.webp", name:"Air Differential Pressure Switch", glyph:"diffpressure",
        desc:"Differential pressure switch for detecting filter clogging in HVAC systems and air handling units. When the pressure drop across the filter exceeds the adjustable setpoint, the SPDT relay output triggers an alarm or control action.",
        specs:[["Measuring Range","20 – 300 Pa (adjustable)"],["Contact","SPDT (change-over)"],["Ingress Protection","IP54"],["Connection","6 mm hose barb"],["Operating Temperature","−10…+85 °C"],["Setpoint","Adjustable via scale"]],
        uses:"Air filter clogging detection, clean room monitoring, ventilation and fan control.",
        sectors:"HVAC, clean rooms, building automation, manufacturing facilities."},
 
-      {code:"NT-DPS-L", img:"assets/products/NT-DPS-L.webp", name:"Liquid Differential Pressure Switch", glyph:"diffpressure",
+      {code:"NT-VDP-L", img:"assets/products/NT-VDP-L.webp", name:"Liquid Differential Pressure Switch", glyph:"diffpressure",
        desc:"Compact differential pressure switch for monitoring liquid filter condition and triggering alarms when the pressure differential exceeds the setpoint. Suitable for water, oil and chemical filtration systems.",
        specs:[["Measuring Range","0.2 – 4 bar (adjustable)"],["Contact","SPDT (change-over)"],["Ingress Protection","IP65"],["Connection","G 1/4\" or 1/4\" NPT"],["Operating Temperature","−20…+85 °C"],["Max. Working Pressure","40 bar"]],
        uses:"Liquid filter monitoring, cooling circuit protection, industrial process control.",
@@ -464,7 +464,7 @@ window.NF_CAT = {
     /* ===================== TEMPERATURE SENSORS ===================== */
     {id:"sicaklik", kicker:"05", title:"Temperature Sensors", sub:"Thermocouples, resistance thermometers and temperature-humidity transmitters", glyph:"temp",
      products:[
-      {code:"NT-TC", img:"assets/products/NT-TC.webp", name:"Thermocouples", glyph:"thermocouple",
+      {code:"NT-VTC", img:"assets/products/NT-VTC.webp", name:"Thermocouples", glyph:"thermocouple",
        desc:"Temperature sensors based on the Seebeck effect — the temperature difference at the junction of two different metals produces a small voltage proportional to temperature. The most widely used solution in industrial temperature measurement thanks to its simple construction, wide temperature range and fast response time. Custom manufacturing (diameter, length and type to suit the project) is available for all models.",
        variants:[
          ["VTC-J — Type J Thermocouple","Iron-constantan thermocouples preferred for general industrial temperature measurement, offering fast response time and cost advantage. Operating range 0 … 750 °C. Used in plastics and rubber processing, heating systems, laboratory instruments, furnace and oven control."],
@@ -477,7 +477,7 @@ window.NF_CAT = {
        sectors:"Metal processing, cement plants, glass and ceramics industry, food industry, pharmaceutical industry, chemical and petrochemical industry, power plants, machinery manufacturing, automation systems.",
        notes:["The correct type must be selected according to the measurement temperature range, chemical composition of the environment, response time and mounting method.","An immersion length of at least 8-10 times the protective sheath diameter is recommended.","Custom manufacturing is available on request."]},
 
-      {code:"NT-RTD", img:"assets/products/NT-RTD.webp", name:"Resistance Thermometers (PT100 / PT1000)", glyph:"rtd",
+      {code:"NT-VPT", img:"assets/products/NT-VPT.webp", name:"Resistance Thermometers (PT100 / PT1000)", glyph:"rtd",
        desc:"Platinum resistance temperature sensors that measure via resistance change with temperature. PT100 and PT1000 models are widely used in industrial processes, energy systems and plant automation. They offer high accuracy, stable performance and long service life.",
        variants:[
          ["VPT-100K — Head Type PT100","Resistance temperature sensor with a metal-sheathed measurement tip and connection head for easy field wiring. Resistant to harsh environmental conditions. 316 stainless steel tube and connection material, Class B (opt. Class A) accuracy, 1 or 2 elements, 4–20 mA optional output."],
@@ -490,7 +490,7 @@ window.NF_CAT = {
        sectors:"Chemical and petrochemical, food and pharmaceutical, energy, HVAC, plastic injection, extrusion, rubber and tyre processing, machinery manufacturing, automation.",
        notes:["PT100 is preferred for short cable runs, PT1000 for long cable runs.","Head type is ideal for process applications; bayonet type for machine and surface measurement.","Custom manufacturing is available on request."]},
 
-      {code:"NT-HT", img:"assets/products/NT-HT.webp", name:"Temperature and Humidity Transmitters", glyph:"humidity",
+      {code:"NT-VHT", img:"assets/products/NT-VHT.webp", name:"Temperature and Humidity Transmitters", glyph:"humidity",
        desc:"VTH series temperature and humidity transmitters are locally manufactured precision instruments. Thanks to the redesigned sensor and integrated technology they can be used under almost all conditions. The American-origin sensor is designed to continue measuring even after liquid in contact with it has evaporated.",
        variants:[
          ["VTH Plastic Probe","Easily used in different applications with wall mounting or extendable cable. The display model features a 14 mm high screen readable from 15 metres. In addition to relay and analogue signal outputs, an RS485 Modbus communication module can be added. PVC sensor body."],
@@ -518,17 +518,17 @@ window.NF_CAT = {
        uses:"Panel monitoring of temperature and analogue sensors.",
        sectors:"Machinery manufacturing, food, chemicals, power plants."},
 
-      {code:"NT-EPD 11", img:"assets/products/NT-EPD11.png", name:"Compact Universal Indicators", glyph:"panel",
-       desc:"The NT-EPD 11 digital indicator is used to take the 4–20 mA signal from transmitters and convert and display it in the required engineering unit. It is designed for easy fitting and removal on 2-wire transmitters with a DIN 43650 plug connection. The product offers high accuracy, stability and ease of use. It is a convenient solution for adding a display and alarm set points to pressure or other transmitters.",
+      {code:"NT-VBT-G 11", img:"assets/products/NT-VBT-G11.png", name:"Compact Universal Indicators", glyph:"panel",
+       desc:"The NT-VBT-G 11 digital indicator is used to take the 4–20 mA signal from transmitters and convert and display it in the required engineering unit. It is designed for easy fitting and removal on 2-wire transmitters with a DIN 43650 plug connection. The product offers high accuracy, stability and ease of use. It is a convenient solution for adding a display and alarm set points to pressure or other transmitters.",
        specs:[["Applications","Display of 4–20 mA current value or percentage, 2 independent alarm/switch outputs"],["Input Signal","4–20 mA (2-wire)"],["Power Source","4–20 mA 2-wire loop powered, max. voltage drop 8 VDC"],["Output Signal","4–20 mA 2-wire signal output"],["Field Operation","3 buttons, all parameters can be changed locally"],["Display","Dual row 5-bit/8-bit, 7/16 segment backlit LCD, −19999~99999"],["Accuracy and ADC","0.1% FS ±1 bit / 24 bit"],["Number of Switches","2-way PNP / NO"],["Switch Function","High set, low set, window function, hysteresis"],["Engineering Units","kPa, MPa, Pa, bar, mbar, psi, mH₂O, Torr, atm, kg, N, °C, °F, K, %RH, PPM, pH, m, mm, m/s, Ω, mV, V"]],
        uses:"Adding a field display and alarm to transmitters.",
        sectors:"All industrial process applications."},
 
-      {code:"NT-UPC / NT-TC / NT-PRFC", img:"assets/products/NT-UPC.webp", name:"Controllers", glyph:"controller",
+      {code:"NT-UPC / NT-VTC / NT-PRFC", img:"assets/products/NT-UPC.webp", name:"Controllers", glyph:"controller",
        desc:"Used for observing and controlling process values in applications measured with temperature sensors and sensors with analogue outputs. On-Off, proportional (P), proportional + integral (PI) and proportional + integral + derivative (PID) operating modes are available for the control output. They can operate integrated with other systems via the Modbus communication protocol.",
        variants:[
          ["Universal Input Controllers","NT-UPC 4 / 7 / 49. 48×48, 72×72, 48×96 mm. Universal process input 4…20 mA, 0…20 mA, 0…60 mV, 0…10 V, thermocouple (J,K,R,S,T), PT100 (with lead compensation). 2 relay outputs 8 A@250 VAC, analogue output, RS485 Modbus."],
-         ["Temperature Controllers","NT-TCS 377-X / NT-TC 4 / NT-TC 38. All thermocouple types, PT100, PTC and NTC input. ON/OFF or time proportional (P) operation, heating/cooling function, alarm output and delay time can be configured."],
+         ["Temperature Controllers","NT-TCS 377-X / NT-VTC 4 / NT-VTC 38. All thermocouple types, PT100, PTC and NTC input. ON/OFF or time proportional (P) operation, heating/cooling function, alarm output and delay time can be configured."],
          ["Ramp/Soak Controllers","NT-PRFC7. 72×72 mm. A ramp/profile controller designed for measuring and controlling temperature or any process value in industry. Profiles of up to 20 steps."]
        ],
        specs:[["Accuracy","0.3% – 0.5%"],["Control Output","Relay output (8 A@250 VAC)"],["Analogue Output","4…20 mA, 0…20 mA"],["Communication","RS485 Modbus RTU/ASCII"],["Resolution","1 °C / 0.1 °C (PT100, for the 0…100 °C range)"],["Supply Voltage","220 VAC, 24 VDC, 12 VDC (to be stated when ordering)"]],
@@ -603,7 +603,7 @@ window.NF_CAT = {
        uses:"Mobile machinery tilt monitoring, solar tracker positioning, platform levelling, structural monitoring.",
        sectors:"Construction, renewable energy, marine, mining, industrial automation."},
 
-      {code:"NT-AGS", img:"assets/products/NT-RCS-3100-2100.png", name:"Angle Sensors", glyph:"angle",
+      {code:"NT-RCS", img:"assets/products/NT-RCS-3100-2100.png", name:"Angle Sensors", glyph:"angle",
        desc:"Contactless magnetic rotary angle sensors designed for precise measurement of rotational angle in industrial applications. They provide long-lasting, reliable position and angle data without mechanical wear. Available with coupling, shaftless and integrated shaft models to suit different mounting requirements.",
        variants:[
          ["RCS 3100 Series","Contactless magnetic principle, coupling connection. Used in industrial positioning and servo systems."],

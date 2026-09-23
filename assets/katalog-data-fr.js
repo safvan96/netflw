@@ -111,7 +111,7 @@ window.NF_CAT = {
        sectors:"Stations d'épuration, industrie alimentaire, industrie textile, industrie lourde, industrie mécanique, industrie chimique, pétrochimie, industrie papetière, industrie pharmaceutique et irrigation agricole.",
        notes:["Le liquide mesuré doit être électriquement conducteur.","La conduite doit être complètement pleine pendant le passage du débit.","Les composants du fluide doivent être mélangés de manière homogène.","Si le liquide lui-même induit un effet magnétique, le champ magnétique de l'appareil change et un réétalonnage est nécessaire.","Il doit être installé selon le guide de raccordement mécanique pour assurer un écoulement laminaire."]},
 
-      {code:"NT-TRB", img:"assets/products/NT-TRB.webp", name:"Débitmètre à turbine", glyph:"turbine",
+      {code:"NT-VTR", img:"assets/products/NT-VTR.webp", name:"Débitmètre à turbine", glyph:"turbine",
        desc:"Une turbine pouvant tourner librement est placée à l'intérieur du corps afin de détecter la vitesse du fluide. La vitesse de rotation de la turbine est directement proportionnelle à la vitesse du fluide. En calculant vitesse × section et en assurant un écoulement laminaire, une mesure de débit avec une précision de ±0,2% est possible. Des versions en acier inoxydable et en plastique sont disponibles avec des raccordements à bride, filetés, tri-clamp, à insertion et wafer.",
        variants:[
          ["Type hygiénique","Modèles développés pour les applications alimentaires ; l'installation mécanique se fait avec un raccordement tri-clamp ou à bride empêchant la croissance bactérienne."],
@@ -151,7 +151,7 @@ window.NF_CAT = {
        sectors:"Stations de traitement, pétrochimie, centrales hydroélectriques, industrie alimentaire, industrie papetière, industrie pharmaceutique, industrie automobile, municipalités et institutions publiques.",
        notes:["Fournit une mesure sans endommager la conduite.","Trois tailles de transducteurs offrent une large plage de mesure.","La viscosité du fluide doit être constante et il doit être utilisé sur des conduites homogènes et complètement pleines.","Options de mesure pour les matériaux tels que l'acier, l'acier inoxydable, la fonte, le PVC, le cuivre et l'aluminium."]},
 
-      {code:"NT-OCF", img:"assets/products/NT-OCF.webp", name:"Débitmètre à canal ouvert", glyph:"channel",
+      {code:"NT-VAK", img:"assets/products/NT-VAK.webp", name:"Débitmètre à canal ouvert", glyph:"channel",
        desc:"Ces débitmètres sont installés au-dessus d'un déversoir ou d'un barrage dans un canal ouvert et déterminent le débit en mesurant la vitesse et la profondeur du flux par une méthode sans contact (ultrasons). Ils offrent une haute précision avec une résolution de changement de 1 mm. Un système de chauffage électrique est disponible pour les applications à très basse température. Grâce à l'isolation contre les interférences, ils ne sont pas affectés par le bruit électrique ; les quantités instantanées et totalisées peuvent être surveillées.",
        specs:[["Plage de mesure","0 ~ 99999 L/s ou m³/h"],["Résolution de niveau","1 mm"],["Indicateur","LCD rétroéclairé 14 chiffres, deux lignes"],["Unités de débit","m³/h – L/s"],["Sortie","4–20 mA et communication série RS485 (Modbus RTU)"],["Alarmes de sortie","Jusqu'à 6 relais programmables ; sortie impulsion pour débit cumulé"],["Tenue en température","−40…+70 °C"],["Indice de protection","IP67 (unité principale) / IP68 (sonde)"],["Alimentation","DC 24 V (±5%) 0,2 A / AC 220 V (±20%) 0,1 A"],["Déversoirs compatibles","Déversoirs et canaux ouverts, canaux Parshall (ISO), déversoirs triangulaires à angle droit et rectangulaires"],["Plage de mesure de la sonde","0,00 ~ 4,00 m (niveau)"],["Matériau de la sonde","ABS / PVC / PTFE"]],
        uses:"Traitement de l'eau, irrigation, eaux usées industrielles et autres domaines industriels.",
@@ -165,14 +165,14 @@ window.NF_CAT = {
        sectors:"Usines chimiques, centrales électriques, industrie lourde, industrie mécanique, industrie pétrochimique, industrie papetière, usines de remplissage de gaz.",
        notes:["Les données de haute température et pression doivent être respectées.","La plage d'échelle peut être spécifiée.","Un raccordement hygiénique clamp peut être fourni pour les applications alimentaires.","Le corps et la classe de protection peuvent être sélectionnés selon les fluides corrosifs et explosifs."]},
 
-      {code:"NT-OGF", img:"assets/products/NT-OGF.webp", name:"Débitmètre à engrenages ovales", glyph:"ovalgear",
+      {code:"NT-VDD", img:"assets/products/NT-VDD.webp", name:"Débitmètre à engrenages ovales", glyph:"ovalgear",
        desc:"Ces débitmètres mesurent au moyen de deux engrenages ovales synchronisés qui tournent proportionnellement à la vitesse d'écoulement. La vitesse de rotation détermine la vitesse d'écoulement et, avec le calcul de la section, le débit instantané et totalisé est obtenu. Ils offrent une installation facile et une haute précision sur les fluides à haute température et viscosité. Ils peuvent être utilisés à de très faibles débits et produisent une impulsion à haute résolution.",
        specs:[["Raccordement","DN6 – DN100 mm"],["Précision","±0,5% (opt.)"],["Pression max.","100 bar"],["Plage de mesure","0,5 mL/min – 240 L/min"],["Sortie","Impulsion, opt. 4–20 mA"],["Alimentation","5 – 24 VDC"]],
        uses:"Huiles industrielles, huiles hydrauliques, produits chimiques de faible ou haute viscosité, liquides à haute température et haute pression, applications alimentaires liquides et huiles raffinées.",
        sectors:"Industrie automobile, industrie mécanique, usines pétrochimiques et de peinture, usines chimiques, usines de production d'huile, industrie des boissons.",
        notes:["Le produit doit être sélectionné en fonction de la viscosité du fluide.","Les données de haute température et pression doivent être respectées.","Les fluides contenant des particules doivent être filtrés.","Des options de corps sont disponibles pour les fluides abrasifs."]},
 
-      {code:"NT-HGF", img:"assets/products/NT-HGF.webp", name:"Débitmètre à engrenages hélicoïdaux", glyph:"helical",
+      {code:"NT-VDD-O", img:"assets/products/NT-VDD-O.webp", name:"Débitmètre à engrenages hélicoïdaux", glyph:"helical",
        desc:"Les débitmètres hélicoïdaux sont une méthode de mesure conçue pour déterminer le débit de fluides visqueux en plaçant deux rotors hélicoïdaux cycloïdaux à l'intérieur d'un boîtier cylindrique, de sorte que ces rotors forment un volume fermé contre la paroi intérieure et le mouvement du fluide dépend uniquement de leur rotation. Cette méthode atteint une très haute précision avec un minimum de fuite, un écoulement ininterrompu et une perte de charge minimale.",
        specs:[["Raccordement","DN6 – DN100"],["Précision","±0,1%"],["Répétabilité","±0,05%"],["Pression max.","400 bar"],["Plage de mesure","0,4 – 400 L/min"],["Sortie","Impulsion, opt. 4–20 mA"],["Alimentation","5 – 24 VDC"]],
        uses:"Fluides de viscosité variable, paraffine et fluides adhésifs, applications alimentaires, fluides chimiques, graisse et huiles similaires.",
@@ -193,7 +193,7 @@ window.NF_CAT = {
        sectors:"Usines chimiques, industrie pétrochimique et des carburants, centrales électriques, industrie papetière, industrie textile, industrie frigorifique, industrie mécanique, industrie pharmaceutique.",
        notes:["Fournit la mesure de débit massique, de densité et de température simultanément.","Permet une installation horizontale et verticale facile.","Ne nécessite aucune longueur droite à l'entrée et à la sortie.","Fournit une mesure indépendante des propriétés physiques du fluide."]},
 
-      {code:"NT-CTG", img:"assets/products/NT-CTG.webp", name:"Débitmètre thermique compact pour gaz", glyph:"thermal",
+      {code:"NT-S415", img:"assets/products/NT-S415.webp", name:"Débitmètre thermique compact pour gaz", glyph:"thermal",
        desc:"Conçu sur la base d'une dispersion thermique économique, il adopte la méthode de différence de température constante pour mesurer le débit de gaz. Il offre des avantages tels que petite taille, installation facile, haute fiabilité et haute précision.",
        specs:[["Tailles de raccordement","DN8 – DN300"],["Précision","±1,5% de la lecture + 0,3% de la pleine échelle"],["Gaz mesurables","N₂, Ar, O₂, CO₂ et gaz de processus similaires"],["Température de fonctionnement","−30…+230 °C / humidité relative <90%"],["Pression maximale","5,0 MPa"],["Sortie","4–20 mA et sortie impulsion, Modbus, communication M-Bus"],["Sortie alarme","1–2 voies relais, normalement ouvert, 10 A / 220 VAC ou 5 A / 30 VDC"],["Indice de protection","IP65"]],
        uses:"Gaz de processus, lignes de gaz naturel et systèmes d'air comprimé.",
@@ -204,7 +204,7 @@ window.NF_CAT = {
     /* ===================== CAPTEURS DE DEBIT ===================== */
     {id:"akis", kicker:"02", title:"Capteurs de debit", sub:"Surveillance de la presence de debit, commutation et controle visuel", glyph:"switchflow",
      products:[
-      {code:"NT-FSW", img:"assets/products/NT-FSW.webp", name:"Interrupteurs de debit", glyph:"switchflow",
+      {code:"NT-VAS", img:"assets/products/NT-VAS.webp", name:"Interrupteurs de debit", glyph:"switchflow",
        desc:"Un interrupteur de debit est utilise pour detecter le debit a l'interieur des conduites. En detectant le mouvement des liquides dans la conduite, il indique s'il y a ou non un ecoulement. Ils constituent un choix fiable pour de nombreux constructeurs de machines dans le controle de debit et les systemes de chauffage-refroidissement.",
        variants:[
          ["Interrupteurs de débit à palette (VAS-10/20)","Les interrupteurs et capteurs de débit à palette sont installés verticalement dans la conduite. Avec leurs modèles à corps en T ou à palette directe, ils sont pratiques et faciles à utiliser ; la sortie relais directe facilite la connexion à de nombreux éléments d'entraînement. VAS-10 série économique et VAS-20 série industrielle."],
@@ -218,7 +218,7 @@ window.NF_CAT = {
        uses:"Chauffe-eau, chaudieres, lignes d'eau de refroidissement, centrales electriques et mines. Modeles speciaux disponibles pour les processus explosifs et exigeants.",
        sectors:"Construction de machines, systemes de chauffage et refroidissement, centrales electriques, mines."},
 
-      {code:"NT-FSG", img:"assets/products/NT-FSG.webp", name:"Indicateurs de debit visuels", glyph:"sight",
+      {code:"NT-VAG", img:"assets/products/NT-VAG.webp", name:"Indicateurs de debit visuels", glyph:"sight",
        desc:"Un indicateur de debit visuel est un element utilise pour observer le debit dans les circuits de conduites fermees sous differents angles. Les indicateurs sont installes avant et apres les purgeurs de vapeur pour surveiller les fuites, et utilises dans les industries alimentaires et pharmaceutiques pour la verification visuelle du fluide. Les verres utilises sont speciaux ; ils sont egalement connus sous le nom de verre trempe sodo-calcique.",
        variants:[
          ["VAG-12 Indicateur de débit horizontal","Raccordement 3/8\", diamètre intérieur de tube 32 mm, corps en acier inoxydable. Observation visuelle du débit à travers un hublot en verre sur les conduites horizontales."],
@@ -232,7 +232,7 @@ window.NF_CAT = {
     /* ===================== CAPTEURS DE NIVEAU ===================== */
     {id:"seviye", kicker:"03", title:"Capteurs de niveau", sub:"Mesure de niveau continue et ponctuelle sur les liquides et les solides", glyph:"level",
      products:[
-      {code:"NT-ULS", img:"assets/products/NT-ULS.png", name:"Transmetteurs de niveau a ultrasons", glyph:"ultra",
+      {code:"NT-VUS", img:"assets/products/NT-VUS.png", name:"Transmetteurs de niveau a ultrasons", glyph:"ultra",
        desc:"Les capteurs de niveau a ultrasons sont des instruments concus pour la mesure sans contact de la distance, du niveau et du volume sur les solides et les liquides. Ils se composent d'un capteur a ultrasons, d'un convertisseur de signal et d'une unite de commande. L'onde sonore que le capteur, facile a installer, envoie dans la cuve frappe le materiau et est detectee a son retour, determinant ainsi le niveau. Les fausses lectures sont evitees grace a la fonction de filtrage.",
        variants:[
          ["Série VUS QLU","Affichage LCD 4 chiffres, précision 0,2%, alimentation 24 VDC, consommation 60 mA. Capteur de niveau ultrasonique compact et économique."],
@@ -243,8 +243,8 @@ window.NF_CAT = {
        sectors:"Sable, clinker de ciment, eaux usees, eau propre, particules solides poussiereuses, alimentation et fourrage, granules plastiques.",
        notes:["Les etapes indiquees dans le guide d'installation doivent etre respectees.","Le choix de la sonde doit etre effectue avec soin en fonction du milieu utilise."]},
 
-      {code:"NT-RLS", img:"assets/products/NT-RLS.png", name:"Transmetteurs de niveau radar", glyph:"radar",
-       vimgs:[["Radar","assets/products/NT-RLS-radar.webp"],["Onde guidée","assets/products/NT-RLS-H.png"]],
+      {code:"NT-VRS", img:"assets/products/NT-VRS.png", name:"Transmetteurs de niveau radar", glyph:"radar",
+       vimgs:[["Radar","assets/products/NT-VRS-radar.webp"],["Onde guidée","assets/products/NT-VRS-H.png"]],
        desc:"Les capteurs de niveau radar emettent des balayages de frequence croissants dans le temps par gestion d'impulsions ; ces signaux, reflechis par la surface mesuree, sont captes par l'antenne et le niveau des liquides et des solides est ainsi determine. Grace a leur technologie avancee et a differentes methodes d'application telles que le sans contact et l'onde guidee, ils simplifient la mesure dans les processus exigeants. La valeur mesuree peut etre interpretee comme distance, niveau, volume ou masse.",
        variants:[
          ["Radar VRS FMCW","Bande de fréquence 77–81 GHz, mesure sans contact. Détection de niveau haute précision sur les liquides et les solides."],
@@ -256,7 +256,7 @@ window.NF_CAT = {
        uses:"Sable, clinker de ciment, eaux usees, eau propre, particules solides poussiereuses, liquides a haute temperature et visqueux ; lait et produits laitiers, boissons gazeuses, huile, essence, diesel, dolomite, calcite, chaux, farine et fourrage, granules plastiques.",
        sectors:"Industrie ceramique, cimenteries, stations d'epuration, industrie agroalimentaire, industrie petrochimique, usines de transformation des plastiques et de matieres premieres, carrieres de sable et de pierre, usines de chaux et de platre."},
 
-      {code:"NT-HLS", img:"assets/products/NT-HLS.webp", name:"Transmetteurs de niveau hydrostatiques", glyph:"hydro",
+      {code:"NT-VHL", img:"assets/products/NT-VHL.webp", name:"Transmetteurs de niveau hydrostatiques", glyph:"hydro",
        desc:"Le transmetteur de niveau hydrostatique est specialement concu en version submersible. A mesure que le niveau du liquide monte, la pression qu'il exerce sur le fond augmente lineairement. Sur la base de ce principe, l'appareil immerge dans le liquide mesure le niveau avec precision, proportionnellement a la montee du niveau du liquide.",
        variants:[
          ["VHL PL110","Plage de mesure 100 mbar – 25 bar, sortie 4–20 mA ou 0–10 VDC. Transmetteur de niveau submersible à usage général."],
@@ -267,7 +267,7 @@ window.NF_CAT = {
        sectors:"Systemes d'irrigation, cours d'eau, cuves, municipalites et institutions publiques.",
        notes:["La longueur du cable doit etre indiquee lors de la commande.","Un cable ventile special est utilise pour la mesure et doit donc etre protege."]},
 
-      {code:"NT-CLS", img:"assets/products/NT-CLS.png", name:"Transmetteurs de niveau capacitifs", glyph:"capacitive",
+      {code:"NT-VKS", img:"assets/products/NT-VKS.png", name:"Transmetteurs de niveau capacitifs", glyph:"capacitive",
        desc:"Le transmetteur de niveau capacitif offre une mesure proportionnelle de haute precision dans la gestion du niveau des materiaux solides et liquides, malgre la poussiere, la mousse, la salete ou des particules similaires. Le principe de mesure capacitif repose sur la detection de la valeur de capacite entre l'electrode et la surface de la cuve, qui varie en fonction de la masse presente. Apres l'installation, l'electrode du capteur est immergee dans le materiau jusqu'au point requis.",
        variants:[
          ["Transmetteur de niveau capacitif VKS 5","Mesure de niveau sur les liquides conducteurs. Alimentation 9–36 VDC, pression (−)1…(+)100 bar, plage de température −40…+150 °C."],
@@ -278,7 +278,7 @@ window.NF_CAT = {
        sectors:"Industrie du batiment, industrie agroalimentaire, industrie de la construction.",
        notes:["Non affecte par la poussiere et le sol au point d'utilisation.","L'appareil doit etre eloigne de l'entree du materiau.","Lorsque les conditions pourraient endommager l'appareil, il est recommande d'installer un deflecteur au point de mesure."]},
 
-      {code:"NT-MLS", img:"assets/products/NT-MLS.webp", name:"Detecteurs de niveau rotatifs a palettes", glyph:"motor",
+      {code:"NT-VMS", img:"assets/products/NT-VMS.webp", name:"Detecteurs de niveau rotatifs a palettes", glyph:"motor",
        desc:"Ce type de detecteur de niveau est un instrument concu pour le controle de niveau des materiaux a gros grains dans les silos et les conteneurs. Le principe de fonctionnement est tres simple : la sonde a palette du detecteur de niveau montee sur la paroi de la cuve commence a tourner a faible vitesse ; lorsque le materiau a gros grains atteint le niveau de la sonde, il exerce une contre-force sur la palette et l'empeche de tourner, de sorte que le moteur s'arrete et fournit un contact utilisable a des fins de controle.",
        variants:[
          ["Série VMS à palette motorisée","Détecteur de niveau motorisé à palette (drapeau) standard. Densité minimale de détection 250 g/L. Applications de silo et de conteneur."],
@@ -288,7 +288,7 @@ window.NF_CAT = {
        uses:"Controle du niveau des solides en vrac dans les industries de la construction, du batiment, de l'agroalimentaire et des plastiques.",
        sectors:"Secteur de la construction (platre, chaux, ciment, concasseurs de pierre), agroalimentaire (fourrage, graines, farine, sel, sucre, the, legumineuses), industrie des plastiques."},
 
-      {code:"NT-VLS", img:"assets/products/NT-VLS.webp", name:"Detecteurs de niveau a fourche vibrante", glyph:"vibrating",
+      {code:"NT-VLV-VBR", img:"assets/products/NT-VLV-VBR.webp", name:"Detecteurs de niveau a fourche vibrante", glyph:"vibrating",
        desc:"Les capteurs de niveau vibrants sont concus pour la detection ponctuelle de niveau sur les materiaux liquides et solides. Ils fonctionnent sur le principe que la vibration de la fourche est amortie lorsqu'elle entre en contact avec le materiau. Grace au faible nombre de pieces mobiles, les besoins de maintenance sont reduits et ils fonctionnent de maniere fiable dans les environnements a fortes vibrations.",
        variants:[
          ["VLV type fourche","Fourche en acier inoxydable, raccordement R1\" et R1/2\". Détection de niveau fiable sur les liquides et les solides."],
@@ -299,7 +299,7 @@ window.NF_CAT = {
        uses:"Produits solides sous forme de poudre, de granules et de particules, ainsi que les liquides.",
        sectors:"Industries agroalimentaire, pharmaceutique et chimique, industrie du batiment et de la construction."},
 
-      {code:"NT-CSW", img:"assets/products/NT-CSW.png", name:"Detecteur de niveau capacitif", glyph:"capacitive",
+      {code:"NT-VKS-S", img:"assets/products/NT-VKS-S.png", name:"Detecteur de niveau capacitif", glyph:"capacitive",
        desc:"Lorsque l'element de detection a l'extremite du detecteur de niveau de type Magcap est entoure par la matiere premiere au point d'utilisation, la puissance RF qu'il emet diminue. Lorsque cette diminution depasse le reglage de sensibilite configure, un signal de sortie est genere. La sensibilite peut etre ajustee sur l'appareil en fonction de la constante dielectrique et des proprietes du materiau.",
        variants:[
          ["Détecteur de niveau capacitif VKS 10","Alimentation 24 VDC, consommation max. 50 mW, température de fonctionnement −40…+150 °C. Construction compacte, contrôle de niveau industriel."],
@@ -310,14 +310,14 @@ window.NF_CAT = {
        sectors:"Industrie du batiment, industrie agroalimentaire, industrie de la construction.",
        notes:["Non affecte par la poussiere et le sol au point d'utilisation.","Selon le point d'application, un deflecteur peut etre necessaire la ou l'appareil pourrait etre endommage."]},
 
-      {code:"NT-SSW", img:"assets/products/NT-SSW.webp", name:"Detecteur de niveau a montage lateral", glyph:"sideswitch",
+      {code:"NT-ELES-S", img:"assets/products/NT-ELES-S.webp", name:"Detecteur de niveau a montage lateral", glyph:"sideswitch",
        desc:"Les detecteurs de niveau magnetiques de type F1 sont utilises pour la mesure du niveau de liquide dans tous les types de cuve. Ils offrent un large champ d'utilisation grace a leur capacite de fonctionnement sans alimentation externe, leur possibilite de montage lateral, leur large plage de pression et de temperature et leurs parties en contact entierement en acier inoxydable.",
        specs:[["Pression nominale","16 bar"],["Tenue en temperature","Max. 150 °C"],["Type de raccordement","Bride carree"],["Materiau de bride","AISI 316"],["Boitier","Aluminium"],["Reglage","50 – 100 – 200 mm"],["Densite","> 0,7 kg/L"],["Capacite de commutation","250 VAC, 15 A, NO+NC"]],
        uses:"Reservoirs d'eaux usees et d'eau propre, cuves d'acide et de soude caustique, reservoirs de carburant et d'huile, tous les recipients sous pression et sans pression.",
        sectors:"Industrie navale, installations de carburant et d'huile, industrie chimique.",
        notes:["Ne necessite aucune alimentation externe.","Peut fonctionner sous fortes vibrations."]},
 
-      {code:"NT-DSW", img:"assets/products/NT-DSW.webp", name:"Detecteur de niveau a membrane", glyph:"diaphragm",
+      {code:"NT-VDZ", img:"assets/products/NT-VDZ.webp", name:"Detecteur de niveau a membrane", glyph:"diaphragm",
        desc:"Le detecteur de niveau a membrane pour solides est la methode la plus economique pour mesurer le niveau de materiaux en vrac dans un stockage. Il peut etre utilise dans les cuves ouvertes et non pressurisees. L'etat plein et vide des materiaux en vrac poudreux, en poudre, granulaires et en pastilles dans le silo peut etre surveille. La membrane doit toujours etre en contact avec le materiau surveille. A mesure que le materiau verse dans le silo s'accumule, la membrane se ferme ; la pression resultante repousse le diaphragme et le mecanisme actionne le contact. Lorsque le materiau diminue, le contact revient a sa position initiale.",
        specs:[["Materiau du corps","Nitrile, NBR, FPM, acier inoxydable"],["Raccordement","Bride ronde"],["Sortie","1 × micro-interrupteur NO/NC"],["Temperature maximale","200 °C"]],
        uses:"Controle plein/vide des materiaux solides en vrac dans les silos.",
@@ -329,8 +329,8 @@ window.NF_CAT = {
        uses:"Salles de serveurs, sous-sols, stations de pompage et zones d'equipements critiques.",
        sectors:"Automatisation du batiment, centres de donnees, installations industrielles."},
 
-      {code:"NT-MLI", img:"assets/products/NT-MLI.webp", name:"Indicateurs de niveau magnetiques", glyph:"bypass",
-       vimgs:[["Type antideflagrant","assets/products/NT-MLI-EX.webp"],["Type chaudiere","assets/products/NT-MLI-BR.webp"]],
+      {code:"NT-MBP", img:"assets/products/NT-MBP.webp", name:"Indicateurs de niveau magnetiques", glyph:"bypass",
+       vimgs:[["Type antideflagrant","assets/products/NT-MBP-EX.webp"],["Type chaudiere","assets/products/NT-MBP-BR.webp"]],
        desc:"L'indicateur de niveau magnetique de type MLG est utilise pour la mesure continue, la surveillance et l'affichage du niveau de liquide. Un changement de niveau dans la cuve modifie egalement le niveau du liquide a l'interieur de la chambre de derivation de la meme quantite, selon le principe des vases communicants. Le flotteur magnetique a l'interieur de l'indicateur se deplace donc et agit sur les volets magnetiques situes sur la surface exterieure de la chambre de derivation, les faisant pivoter de 180° autour de leur propre axe. Lorsque le niveau du liquide monte, les volets blancs deviennent rouges, et lorsqu'il descend, les volets rouges redeviennent blancs.",
        variants:[
          ["VSG Standard","Indicateur de niveau magnétique bypass à usage général. Surveillance et affichage continus du niveau de liquide."],
@@ -341,13 +341,13 @@ window.NF_CAT = {
        uses:"Reservoirs d'eau, reservoirs de condensat, degazeurs, reservoirs de carburant, chaudieres a vapeur, reservoirs souterrains, liquides agressifs et toxiques, gaz liquefies, tous les recipients sous pression et sans pression.",
        sectors:"Industrie navale, industrie chimique, raffineries, centrales electriques."},
 
-      {code:"NT-CDS", img:"assets/products/NT-CDS.webp", name:"Detecteurs de niveau conductifs", glyph:"conductive",
+      {code:"NT-ILS", img:"assets/products/NT-ILS.webp", name:"Detecteurs de niveau conductifs", glyph:"conductive",
        desc:"Les detecteurs de niveau conductifs sont utilises pour le controle du niveau de liquide dans les cuves et les chaudieres. Comme ils n'ont pas de pieces mobiles, ils peuvent etre utilises dans des environnements critiques et avec des liquides conducteurs contenant des particules solides, de faible densite et de haute viscosite.",
        specs:[["Materiau des electrodes","Acier inoxydable 304, opt. acier inoxydable 316"],["Materiau de raccordement et du boitier","Delrin"],["Sortie","1 × micro-interrupteur NO/NC"],["Temperature et pression maximales","60 °C … 6 bar"],["Nombre d'electrodes","Max. 3"]],
        uses:"Une solution economique et fiable pour les applications de surpresseurs, le controle du niveau d'eau sur les chaudieres a vapeur et divers reservoirs de liquides conducteurs.",
        sectors:"Centrales electriques, automatisation du batiment, industrie chimique."},
 
-      {code:"NT-RCS", img:"assets/products/NT-RCS.png", name:"Detecteur de niveau capacitif a cable", glyph:"rope",
+      {code:"NT-VKS-H", img:"assets/products/NT-VKS-H.png", name:"Detecteur de niveau capacitif a cable", glyph:"rope",
        desc:"Concu pour detecter le niveau instantane (ponctuel) des solides en poudre et en granules dans une zone de stockage. Son principe de fonctionnement repose sur le fait que les materiaux en contact avec la surface de la sonde creent un changement de capacite, et ces instruments utilisent ce changement pour determiner le niveau au moyen de composants electroniques.",
        specs:[["Sortie (contact)","1 × relais NC-NO (220 VAC/5 A – 14 VDC/20 A)"],["Materiau du cable et du poids","304 SS, opt. 316 SS"],["Longueur","1 metre … 20 metres"],["Materiau du boitier","Delrin"],["Alimentation","24 VDC"]],
        uses:"Solides granulaires, chaux, sable, poussiere de charbon, ciment, clinker et cereales telles que le ble et le mais.",
@@ -370,8 +370,8 @@ window.NF_CAT = {
        sectors:"Stations de traitement, constructeurs de machines, secteur naval et de la construction de yachts, secteur chimique, secteur textile, hôtels et piscines, secteur pétrolier et des carburants, secteur alimentaire.",
        notes:["Une solution économique.","La fabrication spécifique à l'application est possible.","Facile à installer et à monter.","Non recommandé pour les liquides adhésifs et à haute densité."]},
 
-      {code:"NT-MNS", img:"assets/products/NT-LSW-M.png", name:"Interrupteurs de niveau miniatures", glyph:"floattx",
-       vimgs:[["Mini plastique","assets/products/NT-MLP.webp"],["Mini inox","assets/products/NT-LSW-M.png"]],
+      {code:"NT-VML", img:"assets/products/NT-VML.png", name:"Interrupteurs de niveau miniatures", glyph:"floattx",
+       vimgs:[["Mini plastique","assets/products/NT-MLP.webp"],["Mini inox","assets/products/NT-VML.png"]],
        desc:"Les interrupteurs de niveau miniatures sont conçus pour le contrôle de niveau de liquide dans les applications industrielles telles que les machines, les cuves et les chaudières grâce à leur format compact. Avec des options de corps en acier inoxydable et en plastique (PP, PVDF), ils offrent un large champ d'utilisation. Ils fonctionnent selon le principe du flotteur magnétique ; lorsque le niveau de liquide atteint le point défini, le contact reed est déclenché et un signal est généré.",
        variants:[
          ["VML-V Montage latéral inox","Corps en acier inoxydable AISI 304, raccordement R1/2\" et M10, courant de contact max. 1 A. Idéal pour le contrôle de niveau latéral sur les machines et les cuves."],
@@ -390,9 +390,9 @@ window.NF_CAT = {
     /* ===================== CAPTEURS DE PRESSION ===================== */
     {id:"basinc", kicker:"04", title:"Capteurs de pression", sub:"Transmetteurs de pression, pressostats et manomètres", glyph:"pressure",
      products:[
-      {code:"NT-BT", img:"assets/products/NT-BTT-S.webp", name:"Transmetteurs de pression série standard (OEM)", glyph:"pressure",
+      {code:"NT-VBT", img:"assets/products/NT-VBT-S.webp", name:"Transmetteurs de pression série standard (OEM)", glyph:"pressure",
        desc:"La pression est la grandeur de la force que les liquides et les gaz exercent par unité de surface. Un équipement qui convertit la valeur de pression qu'il détecte en un signal électronique défini peut être décrit comme un transmetteur de pression.",
-       variants:[["Série NT-BT","Raccordement G1/4\", plages de mesure de 0…2,5 bar à 0…600 bar."],["Série NT-FPT","Raccordement G1/4\" – G1/2\" ; 0…100 mbar à 0…600 bar, avec options vide (0…−1 bar)."]],
+       variants:[["Série NT-VBT","Raccordement G1/4\", plages de mesure de 0…2,5 bar à 0…600 bar."],["Série NT-FPT","Raccordement G1/4\" – G1/2\" ; 0…100 mbar à 0…600 bar, avec options vide (0…−1 bar)."]],
        specs:[["Taille de raccordement","G1/4\" – G1/2\""],["Plage de mesure","De 0…2,5 bar à 0…600 bar ; options 0…100 mbar"],["Précision","±0,5% FS / ±0,3% FS"],["Plage de température","−40…+125 °C"],["Signal de sortie","4…20 mA, 0…5 VDC, 1…6 VDC, 0…10 VDC, 0,5…4,5 VDC ratiométrique"]],
        uses:"Liquides non adhésifs et sans particules, gaz non agressifs.",
        sectors:"Stations d'épuration, industrie alimentaire, industrie textile, industrie lourde, industrie mécanique, industrie chimique, pétrochimie, industrie papetière, industrie pharmaceutique, centrales hydroélectriques."},
@@ -421,14 +421,14 @@ window.NF_CAT = {
        uses:"Toutes les applications liquides, gazeuses et vapeur.",
        sectors:"Industrie mécanique, systèmes d'essai et d'étalonnage, industrie chimique, industrie lourde, industrie de la défense, industrie pétrochimique."},
 
-      {code:"NT-EPD", img:"assets/products/NT-EPD.png", name:"Transmetteurs et pressostats avec afficheur", glyph:"gauge",
+      {code:"NT-VBT-G", img:"assets/products/NT-VBT-G.png", name:"Transmetteurs et pressostats avec afficheur", glyph:"gauge",
        desc:"Se compose d'un écran de programmation et d'affichage ajouté de manière compacte sur le transmetteur de pression. Grâce à son utilisation facile et pratique, il permet la surveillance instantanée des données sur le terrain.",
        specs:[["Taille de raccordement","G1/4\" – G1/2\""],["Plage de mesure","De 0…0,2 bar à 0…600 bar"],["Précision","±0,5% FS"],["Plage de température","−25…+85 °C"],["Signal de sortie","4…20 mA, 0…10 VDC, commutable mA ou V"],["Commutation","2 × transistor PNP (opt. sortie contact)"]],
        uses:"Tous les liquides et gaz.",
        sectors:"Machines-outils, toutes les machines à commande hydraulique, équipements CVC (chauffage, climatisation, ventilation), unités frigorifiques, machines de traitement d'eau.",
        notes:["Option de mesure absolue ou relative.","Peut être programmé depuis un téléphone mobile via NFC.","Options de sortie courant et tension dans un seul appareil."]},
 
-      {code:"NT-TG / NT-KP", img:"assets/products/NT-PSW.png", name:"Pressostats", glyph:"pswitch",
+      {code:"NT-TG / NT-KP", img:"assets/products/NT-VPO.png", name:"Pressostats", glyph:"pswitch",
        desc:"Équipement de mesure de pression produit pour la commutation, la sécurité et l'alarme à un ou plusieurs points de consigne basés sur les données de pression détectées.",
        specs:[["Taille de raccordement","G1/4\", G1/8\""],["Plage de mesure","−200 mbar…−800 mbar et 0,1…600 bar ; −0,2…7,5 / 2…14 bar"],["Précision","<5%"],["Plage de température","−30…+100 °C (opt. 250 °C) ; −40…+60 °C"],["Signal de sortie","NO / NC / inverseur (NO&NC)"]],
        uses:"Liquides sans particules, air, vapeur et gaz non agressifs.",
@@ -448,12 +448,12 @@ window.NF_CAT = {
        uses:"Liquides, vapeur et gaz.",
        sectors:"Industrie navale, systèmes de transport d'eau propre, systèmes d'eaux usées, industrie chimique et pétrochimique, centrales électriques, industrie alimentaire et des boissons, machines laitières, industrie pharmaceutique, industrie mécanique."},
 
-      {code:"NT-DPS-A", img:"assets/products/NT-DPS-A.webp", name:"Pressostat différentiel air", glyph:"diffpressure",
+      {code:"NT-VDP-A", img:"assets/products/NT-VDP-A.webp", name:"Pressostat différentiel air", glyph:"diffpressure",
        desc:"Pressostat différentiel pour la détection de colmatage des filtres dans les systèmes CVC et les centrales de traitement d'air.",
        specs:[["Plage","20 – 300 Pa"],["Contact","SPDT"],["Protection","IP54"],["Raccordement","embout 6 mm"],["Température","−10…+85 °C"],["Point de consigne","Réglable"]],
        uses:"Détection de colmatage de filtres à air, surveillance de salles blanches.",
        sectors:"CVC, salles blanches, automatisation du bâtiment."},
-      {code:"NT-DPS-L", img:"assets/products/NT-DPS-L.webp", name:"Pressostat différentiel liquide", glyph:"diffpressure",
+      {code:"NT-VDP-L", img:"assets/products/NT-VDP-L.webp", name:"Pressostat différentiel liquide", glyph:"diffpressure",
        desc:"Pressostat différentiel compact pour la surveillance des filtres à liquide.",
        specs:[["Plage","0,2 – 4 bar"],["Contact","SPDT"],["Protection","IP65"],["Raccordement","G 1/4\""],["Température","−20…+85 °C"],["Pression max","40 bar"]],
        uses:"Surveillance de filtres à liquide, protection de circuits de refroidissement.",
@@ -463,7 +463,7 @@ window.NF_CAT = {
     /* ===================== CAPTEURS DE TEMPÉRATURE ===================== */
     {id:"sicaklik", kicker:"05", title:"Capteurs de température", sub:"Thermocouples, thermomètres à résistance et transmetteurs de température-humidité", glyph:"temp",
      products:[
-      {code:"NT-TC", img:"assets/products/NT-TC.webp", name:"Thermocouples", glyph:"thermocouple",
+      {code:"NT-VTC", img:"assets/products/NT-VTC.webp", name:"Thermocouples", glyph:"thermocouple",
        desc:"Les thermocouples sont des capteurs de temperature qui fonctionnent selon le principe de l'effet Seebeck. Ils sont utilises dans divers processus industriels de −200 °C a 2320 °C. Ils sont produits dans differentes configurations selon les conditions du processus.",
        variants:[
          ["VTC-J (Type J)","Thermocouple Fe-CuNi, plage −40…+750 °C. Utilise pour les mesures de temperature generales dans l'industrie, les fours et les etuves."],
@@ -476,7 +476,7 @@ window.NF_CAT = {
        sectors:"Industrie mecanique, cimenteries, industrie du verre et de la ceramique, industrie alimentaire, industrie pharmaceutique, industrie chimique et petrochimique, industrie lourde et defense, bancs d'essai, CVC, industrie agricole.",
        notes:["Le type correct doit etre selectionne en fonction de la temperature.","Fabrication sur mesure disponible sur demande."]},
 
-      {code:"NT-RTD", img:"assets/products/NT-RTD.webp", name:"Thermometres a resistance (PT100 / PT1000)", glyph:"rtd",
+      {code:"NT-VPT", img:"assets/products/NT-VPT.webp", name:"Thermometres a resistance (PT100 / PT1000)", glyph:"rtd",
        desc:"Les thermo-elements a resistance de platine sont des capteurs de temperature capables de mesurer la temperature entre −200 °C et +450 °C avec une grande precision. Ils peuvent etre designes comme PT100, PT1000 et similaires.",
        variants:[
          ["VPT-100K (PT100 a tete)","Gaine de protection SS316 – SS310, diametres 4–6 mm, construction element Classe A / Classe B, sortie signal 4–20 mA ou 0–10 V."],
@@ -489,8 +489,8 @@ window.NF_CAT = {
        sectors:"Industrie mecanique, cimenteries, industrie du verre et de la ceramique, industrie alimentaire, industrie pharmaceutique, industrie chimique et petrochimique, industrie lourde et defense, bancs d'essai, CVC, industrie agricole.",
        notes:["Le type correct doit etre selectionne en fonction de la temperature.","Fabrication sur mesure disponible sur demande."]},
 
-      {code:"NT-HT", img:"assets/products/NT-HT.webp", name:"Transmetteurs de temperature et d'humidite", glyph:"humidity",
-       desc:"Les transmetteurs de temperature et d'humidite de la serie NT-HT sont des appareils de mesure precis qui mesurent avec un capteur capacitif. Grace au capteur reconcu et a la technologie integree, ils peuvent etre utilises dans presque toutes les conditions.",
+      {code:"NT-VHT", img:"assets/products/NT-VHT.webp", name:"Transmetteurs de temperature et d'humidite", glyph:"humidity",
+       desc:"Les transmetteurs de temperature et d'humidite de la serie NT-VHT sont des appareils de mesure precis qui mesurent avec un capteur capacitif. Grace au capteur reconcu et a la technologie integree, ils peuvent etre utilises dans presque toutes les conditions.",
        variants:[
          ["VTH Sonde plastique","Montage mural standard ou avec cable extensible. Le modele avec ecran permet une surveillance locale pratique ; des versions economiques sans ecran sont egalement disponibles. Sorties relais et analogiques, module de communication RS485 Modbus en option."],
          ["VTH Sonde inox","Transmetteur en ligne developpe pour les gaines d'air ou les applications d'immersion. Options avec et sans ecran, sondes en acier inoxydable, laiton et plastique, et filtres pour environnements sous pression."],
@@ -517,17 +517,17 @@ window.NF_CAT = {
        uses:"Surveillance en tableau des capteurs de temperature et analogiques.",
        sectors:"Fabrication de machines, agroalimentaire, chimie, centrales electriques."},
 
-      {code:"NT-EPD 11", img:"assets/products/NT-EPD11.png", name:"Indicateurs universels compacts", glyph:"panel",
-       desc:"L'indicateur numerique NT-EPD 11 est utilise pour prendre le signal 4–20 mA des transmetteurs et le convertir et l'afficher dans l'unite d'ingenierie requise. Il est concu pour un montage et un demontage faciles sur les transmetteurs 2 fils avec un raccordement a fiche DIN 43650. Le produit offre une grande precision, une stabilite et une facilite d'utilisation. C'est une solution pratique pour ajouter un affichage de terrain et des seuils d'alarme aux transmetteurs de pression ou autres.",
+      {code:"NT-VBT-G 11", img:"assets/products/NT-VBT-G11.png", name:"Indicateurs universels compacts", glyph:"panel",
+       desc:"L'indicateur numerique NT-VBT-G 11 est utilise pour prendre le signal 4–20 mA des transmetteurs et le convertir et l'afficher dans l'unite d'ingenierie requise. Il est concu pour un montage et un demontage faciles sur les transmetteurs 2 fils avec un raccordement a fiche DIN 43650. Le produit offre une grande precision, une stabilite et une facilite d'utilisation. C'est une solution pratique pour ajouter un affichage de terrain et des seuils d'alarme aux transmetteurs de pression ou autres.",
        specs:[["Applications","Affichage de la valeur du courant 4–20 mA ou du pourcentage, 2 sorties d'alarme/commutation independantes"],["Signal d'entree","4–20 mA (2 fils)"],["Source d'alimentation","Alimente par boucle 2 fils 4–20 mA, chute de tension max. 8 VDC"],["Signal de sortie","Sortie signal 2 fils 4–20 mA"],["Commande de terrain","3 boutons, tous les parametres modifiables localement"],["Affichage","Double rangee 5 bits/8 bits, LCD retro-eclaire 7/16 segments, −19999~99999"],["Precision et CAN","0.1% FS ±1 bit / 24 bit"],["Nombre de commutateurs","2 voies PNP / NO"],["Fonction de commutation","Seuil haut, seuil bas, fonction fenetre, hysteresis"],["Unites d'ingenierie","kPa, MPa, Pa, bar, mbar, psi, mH₂O, Torr, atm, kg, N, °C, °F, K, %RH, PPM, pH, m, mm, m/s, Ω, mV, V"]],
        uses:"Ajout d'un affichage de terrain et d'alarmes aux transmetteurs.",
        sectors:"Toutes les applications de processus industriels."},
 
-      {code:"NT-UPC / NT-TC / NT-PRFC", img:"assets/products/NT-UPC.webp", name:"Regulateurs", glyph:"controller",
+      {code:"NT-UPC / NT-VTC / NT-PRFC", img:"assets/products/NT-UPC.webp", name:"Regulateurs", glyph:"controller",
        desc:"Utilises pour observer et controler les valeurs de processus dans les applications mesurees avec des capteurs de temperature et des capteurs a sorties analogiques. Les modes de fonctionnement Tout-ou-Rien, proportionnel (P), proportionnel + integral (PI) et proportionnel + integral + derive (PID) sont disponibles pour la sortie de regulation. Ils peuvent fonctionner en integration avec d'autres systemes via le protocole de communication Modbus.",
        variants:[
          ["Regulateurs a entree universelle","NT-UPC 4 / 7 / 49. 48×48, 72×72, 48×96 mm. Entree de processus universelle 4…20 mA, 0…20 mA, 0…60 mV, 0…10 V, thermocouple (J,K,R,S,T), PT100 (avec compensation de fils). 2 sorties relais 8 A@250 VAC, sortie analogique, RS485 Modbus."],
-         ["Regulateurs de temperature","NT-TCS 377-X / NT-TC 4 / NT-TC 38. Tous types de thermocouples, entree PT100, PTC et NTC. Fonctionnement ON/OFF ou proportionnel dans le temps (P), fonction chauffage/refroidissement, sortie d'alarme et temporisation configurables."],
+         ["Regulateurs de temperature","NT-TCS 377-X / NT-VTC 4 / NT-VTC 38. Tous types de thermocouples, entree PT100, PTC et NTC. Fonctionnement ON/OFF ou proportionnel dans le temps (P), fonction chauffage/refroidissement, sortie d'alarme et temporisation configurables."],
          ["Regulateurs de rampe/palier","NT-PRFC7. 72×72 mm. Regulateur de rampe/profil concu pour mesurer et controler la temperature ou toute valeur de processus dans l'industrie. Profils jusqu'a 20 etapes."]
        ],
        specs:[["Precision","0.3% – 0.5%"],["Sortie de regulation","Sortie relais (8 A@250 VAC)"],["Sortie analogique","4…20 mA, 0…20 mA"],["Communication","RS485 Modbus RTU/ASCII"],["Resolution","1 °C / 0.1 °C (PT100, pour la plage 0…100 °C)"],["Tension d'alimentation","220 VAC, 24 VDC, 12 VDC (a preciser lors de la commande)"]],
@@ -582,7 +582,7 @@ window.NF_CAT = {
        uses:"Surveillance d'inclinaison d'engins mobiles, positionnement de suiveurs solaires, nivellement de plateformes, surveillance structurelle.",
        sectors:"Construction, énergies renouvelables, maritime, mines, automatisation industrielle."},
 
-      {code:"NT-AGS", img:"assets/products/NT-RCS-3100-2100.png", name:"Capteurs d'angle", glyph:"angle",
+      {code:"NT-RCS", img:"assets/products/NT-RCS-3100-2100.png", name:"Capteurs d'angle", glyph:"angle",
        desc:"Capteurs d'angle rotatifs fonctionnant selon le principe magnétique sans contact ; conçus pour mesurer avec précision l'angle de rotation dans les applications industrielles. Ils fournissent des données de position et d'angle fiables et durables sans usure mécanique. Avec des modèles à accouplement, sans arbre et à arbre intégré, ils s'adaptent à différents besoins de montage.",
        variants:[
          ["Série RCS 3100","Principe magnétique sans contact, raccordement par accouplement. Utilisé dans le positionnement industriel et les systèmes servo."],

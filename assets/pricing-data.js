@@ -82,7 +82,7 @@ const NF_PRICING = {
     },
 
     /* ─── TÜRBİN DEBİMETRE (VTD) ─── */
-    'NT-TRB': {
+    'NT-VTR': {
       byDN: {
         'DN15':[120],'DN20':[122],'DN25':[124],'DN32':[132],
         'DN40':[168],'DN50':[180],'DN65':[360],'DN80':[392],
@@ -127,7 +127,7 @@ const NF_PRICING = {
     },
 
     /* ─── AÇIK KANAL ULTRASONİK (OCF) ─── */
-    'NT-OCF': { base: 640, listRatio: 2.0, options: {} },
+    'NT-VAK': { base: 640, listRatio: 2.0, options: {} },
 
     /* ─── METAL TÜPLÜ DEBİMETRE (VFF) — [304SS, 316SS] ─── */
     'NT-MTF': {
@@ -155,7 +155,7 @@ const NF_PRICING = {
     },
 
     /* ─── OVAL DİŞLİ DEBİMETRE (VDD) ─── */
-    'NT-OGF': {
+    'NT-VDD': {
       byDN: {
         'DN15':[315],'DN20':[315],'DN25':[399],'DN32':[735],
         'DN40':[399],'DN50':[462],'DN80':[840]
@@ -165,7 +165,7 @@ const NF_PRICING = {
     },
 
     /* ─── HELİSEL DİŞLİ DEBİMETRE ─── */
-    'NT-HGF': { ref: 'NT-OGF' },
+    'NT-VDD-O': { ref: 'NT-VDD' },
 
     /* ─── CORİOLİS DEBİMETRE ─── */
     'NT-CMF': {
@@ -189,20 +189,20 @@ const NF_PRICING = {
     },
 
     /* ─── CLAMP-ON GAZ ULTRASONİK ─── */
-    'NT-CTG': { ref: 'NT-ULF' },
+    'NT-S415': { ref: 'NT-ULF' },
 
     /* ─── RADAR SEVİYE SENSÖRÜ (VRS) ─── */
-    'NT-RLS': { base: 144, listRatio: 3.0, options: {} },
+    'NT-VRS': { base: 144, listRatio: 3.0, options: {} },
     'NT-RLS-H': { base: 176, listRatio: 3.0, options: {} },
 
     /* ─── ULTRASONİK SEVİYE ─── */
-    'NT-ULS': { base: 120, listRatio: 2.5, options: {} },
+    'NT-VUS': { base: 120, listRatio: 2.5, options: {} },
 
     /* ─── HİDROSTATİK SEVİYE ─── */
-    'NT-HLS': { base: 85, listRatio: 2.5, options: {} },
+    'NT-VHL': { base: 85, listRatio: 2.5, options: {} },
 
     /* ─── KAPASİTİF SEVİYE ─── */
-    'NT-CLS': { base: 95, listRatio: 2.5, options: {} },
+    'NT-VKS': { base: 95, listRatio: 2.5, options: {} },
 
     /* ─── MANYETİK SEVİYE GÖSTERGESİ (VSG) ─── */
     'NT-MLP': {
@@ -218,7 +218,7 @@ const NF_PRICING = {
     },
 
     /* ─── MANYETOSTRİKTİF SEVİYE İNDİKATÖRÜ ─── */
-    'NT-MLI': { ref: 'NT-MLP' },
+    'NT-MBP': { ref: 'NT-MLP' },
     'NT-MLI-EX': { ref: 'NT-MLP' },
     'NT-MLI-BR': { ref: 'NT-MLP' },
 
@@ -227,7 +227,7 @@ const NF_PRICING = {
     'NT-LSW-F': { ref: 'NT-FLT' },
 
     /* ─── YANDAN MONTAJ SEVİYE ─── */
-    'NT-MLS': {
+    'NT-VMS': {
       variants: {
         'Plastik 24VDC 100mm':63, 'Plastik 220VAC 100mm':59,
         'Plastik 24VDC 200mm':67, 'Plastik 220VAC 200mm':63,
@@ -246,8 +246,8 @@ const NF_PRICING = {
     'NT-LSW-P': { base: 59, listRatio: 2.5, options: {} },
 
     /* ─── TİTREŞİMLİ ÇATAL (VLV) ─── */
-    'NT-VLS': { base: 84, listRatio: 2.5, options: {} },
-    'NT-LSW-V': { ref: 'NT-VLS' },
+    'NT-VLV-VBR': { base: 84, listRatio: 2.5, options: {} },
+    'NT-LSW-V': { ref: 'NT-VLV-VBR' },
 
     /* ─── DİYAFRAM SEVİYE ŞALTERİ ─── */
     'NT-LSW-D': { base: 95, listRatio: 2.5, options: {} },
@@ -275,20 +275,20 @@ const NF_PRICING = {
     'NT-DPT': { base: 350, listRatio: 2.0, options: {} },
 
     /* ─── FARK BASINÇ ŞALTERİ ─── */
-    'NT-DPS-A': { base: 38, listRatio: 2.5, options: {} },
-    'NT-DPS-L': { base: 45, listRatio: 2.5, options: {} },
+    'NT-VDP-A': { base: 38, listRatio: 2.5, options: {} },
+    'NT-VDP-L': { base: 45, listRatio: 2.5, options: {} },
 
     /* ─── BASINÇ ŞALTERİ ─── */
-    'NT-PSW': { base: 32, listRatio: 2.5, options: {} },
+    'NT-VPO': { base: 32, listRatio: 2.5, options: {} },
 
     /* ─── MANOMETRE ─── */
     'NT-MNM': { base: 28, listRatio: 2.5, options: {} },
 
     /* ─── TERMOKUPL ─── */
-    'NT-TC': { base: 25, listRatio: 2.5, options: {} },
+    'NT-VTC': { base: 25, listRatio: 2.5, options: {} },
 
     /* ─── PT100 / RTD ─── */
-    'NT-RTD': {
+    'NT-VPT': {
       variants: {
         'L:50mm':23, 'L:100mm':24, 'L:150mm':25, 'L:200mm':27,
         'L:250mm':29, 'L:300mm':31, 'L:350mm':32, 'L:400mm':33,
@@ -299,7 +299,7 @@ const NF_PRICING = {
     },
 
     /* ─── SICAKLIK/NEM TRANSMİTTERİ ─── */
-    'NT-HT': { base: 65, listRatio: 2.0, options: {} },
+    'NT-VHT': { base: 65, listRatio: 2.0, options: {} },
 
     /* ─── CO2/SICAKLIK/NEM TRANSMİTTERİ ─── */
     'NT-CO2': { base: 85, listRatio: 2.0, options: {} },
@@ -311,8 +311,8 @@ const NF_PRICING = {
     'NT-TCS': { base: 55, listRatio: 2.0, options: {} },
 
     /* ─── PROSES İNDİKATÖRÜ ─── */
-    'NT-EPD': { base: 85, listRatio: 2.0, options: {} },
-    'NT-EPD11': { base: 65, listRatio: 2.0, options: {} },
+    'NT-VBT-G': { base: 85, listRatio: 2.0, options: {} },
+    'NT-VBT-G11': { base: 65, listRatio: 2.0, options: {} },
 
     /* ─── PID KONTROLÖR ─── */
     'NT-UPI': { base: 95, listRatio: 2.0, options: {} },
@@ -344,7 +344,7 @@ const NF_PRICING = {
     'NT-ECE': { base: 150, listRatio: 2.0, options: {} },
 
     /* ─── AKIŞ ŞALTERİ (VAS) ─── */
-    'NT-FSW': {
+    'NT-VAS': {
       variants: {
         'VAS-10 Ekonomik 1/2"':17, 'VAS-10 Ekonomik 1"':17,
         'VAS-10 Plastik Dilli 3/4"':18,
@@ -358,7 +358,7 @@ const NF_PRICING = {
     },
 
     /* ─── AKIŞ GÖSTERGESİ (VAG) ─── */
-    'NT-FSG': {
+    'NT-VAG': {
       byDN: {'DN15':[52],'DN20':[56],'DN25':[72],'DN32':[52],'DN40':[64],'DN50':[72]},
       listRatio: 2.3,
       options: { temp: {'200°C':20,'300°C':20} }
@@ -374,7 +374,7 @@ const NF_PRICING = {
     'NT-STC': { base: 85, listRatio: 2.0, options: {} },
 
     /* ─── AÇI SENSÖRÜ ─── */
-    'NT-RCS 3100/2100': { base: 120, listRatio: 2.0, options: {} },
+    'NT-VKS-H 3100/2100': { base: 120, listRatio: 2.0, options: {} },
 
     /* ─── EĞİM SENSÖRÜ ─── */
     'NT-INS': { base: 95, listRatio: 2.0, options: {} },
@@ -402,7 +402,7 @@ const NF_PRICING = {
     'NT-TAO': { base: 95, listRatio: 2.0, options: {} },
 
     /* ─── MİNİ SEVİYE ŞALTERİ (VML) ─── */
-    'NT-MNS': {
+    'NT-VML': {
       variants: {
         'Paslanmaz 304 (Yandan)':13, 'Paslanmaz 316 (Yandan)':22,
         'Paslanmaz Soketli 304':18, 'Paslanmaz Soketli 316':30,
@@ -428,25 +428,25 @@ const NF_PRICING = {
     /* ─── KATALOG KOD EŞLEMELERİ (alternatif kodlar) ─── */
     'NT-DK800': { ref: 'NT-VA' },
     'NT-TUF-2000': { ref: 'NT-ULF' },
-    'NT-CSW': { base: 72, listRatio: 2.5, options: {} },
-    'NT-SSW': { base: 13, listRatio: 2.5, options: {} },
-    'NT-DSW': { ref: 'NT-LSW-D' },
-    'NT-CDS': { base: 28, listRatio: 2.5, options: {} },
-    'NT-RCS': { ref: 'NT-RCS 3100/2100' },
+    'NT-VKS-S': { base: 72, listRatio: 2.5, options: {} },
+    'NT-ELES-S': { base: 13, listRatio: 2.5, options: {} },
+    'NT-VDZ': { ref: 'NT-LSW-D' },
+    'NT-ILS': { base: 28, listRatio: 2.5, options: {} },
+    'NT-VKS-H': { ref: 'NT-VKS-H 3100/2100' },
     'NT-ELES': { ref: 'NT-FLT' },
-    'NT-BT': { ref: 'NT-BCT' },
+    'NT-VBT': { ref: 'NT-BCT' },
     'NT-EPI': { ref: 'NT-BCT' },
     'NT-NAT': { ref: 'NT-BCT' },
     'NT-DMP': { ref: 'NT-DPT' },
     'NT-BFT': { ref: 'NT-DPT' },
-    'NT-TG': { ref: 'NT-PSW' },
-    'NT-KP': { ref: 'NT-PSW' },
+    'NT-TG': { ref: 'NT-VPO' },
+    'NT-KP': { ref: 'NT-VPO' },
     'NT-A300': { ref: 'NT-MNM' },
     'NT-S100': { ref: 'NT-MNM' },
     'NT-C600': { ref: 'NT-MNM' },
     'NT-FBT': { ref: 'NT-TCS' },
-    'NT-DI': { ref: 'NT-EPD' },
-    'NT-EPD 11': { ref: 'NT-EPD11' },
+    'NT-DI': { ref: 'NT-VBT-G' },
+    'NT-VBT-G 11': { ref: 'NT-VBT-G11' },
     'NT-UPC': { base: 95, listRatio: 2.0, options: {} },
     'NT-PRFC': { ref: 'NT-STC' },
     'NT-UT': { ref: 'NT-CTRL' },
@@ -458,6 +458,6 @@ const NF_PRICING = {
     'NT-1901': { ref: 'NT-SOL' },
     'NT-7901': { ref: 'NT-SOL' },
     'NT-PV250': { ref: 'NT-VLV' },
-    'NT-AGS': { ref: 'NT-RCS 3100/2100' }
+    'NT-RCS': { ref: 'NT-VKS-H 3100/2100' }
   }
 };
