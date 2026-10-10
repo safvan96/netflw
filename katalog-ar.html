@@ -33,18 +33,18 @@
 <style>
 doc-page:not(:defined){visibility:hidden}
 :root{
-  --navy:#1A0A0A;--navy-2:#1E0E0E;--navy-3:#2A1414;--navy-line:#3F2222;
-  --blue:#B71C1C;--blue-6:#C62828;--blue-7:#B71C1C;--blue-3:#EF9A9A;--blue-4:#E53935;
+  --navy:#0A1628;--navy-2:#0E1D33;--navy-3:#13243F;--navy-line:#22374f;
+  --blue:#1E88E5;--blue-6:#1976D2;--blue-7:#1565C0;--blue-3:#7CC0FF;--blue-4:#42A5F5;
   --gold:#F9A825;--green:#0a7a3f;
-  --ink:#1A0A0A;--ink-2:#5C3A3A;--ink-3:#8B6B6B;
-  --line:#F1E2E2;--line-2:#EAD3D3;--bg-alt:#FBF4F4;
+  --ink:#0A1628;--ink-2:#41566B;--ink-3:#6B7E92;
+  --line:#E2E9F1;--line-2:#D3DEEA;--bg-alt:#F4F7FB;
   --f-head:"IBM Plex Sans Arabic","Plus Jakarta Sans",sans-serif;--f-body:"IBM Plex Sans Arabic","Inter",sans-serif;--f-mono:"JetBrains Mono",monospace;
 }
 *{box-sizing:border-box}
 .page{font-family:var(--f-body);color:var(--ink);background:#fff;position:relative;overflow:hidden}
 h1,h2,h3,h4,h5{font-family:var(--f-head);font-weight:700;margin:0;letter-spacing:-.02em;line-height:1.1}
 p{margin:0}
-.blueprint{background-image:linear-gradient(rgba(239,154,154,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(239,154,154,.07) 1px,transparent 1px);background-size:34px 34px}
+.blueprint{background-image:linear-gradient(rgba(124,192,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(124,192,255,.07) 1px,transparent 1px);background-size:34px 34px}
 
 /* ---------- shared page chrome ---------- */
 .pad{padding:13mm 13mm 16mm;display:flex;flex-direction:column}
@@ -65,7 +65,7 @@ p{margin:0}
 .cover{background:var(--navy);color:#fff}
 .cover .bp{position:absolute;inset:0;opacity:.85}
 .cover .glow{position:absolute;width:150mm;height:150mm;border-radius:50%;
-  background:radial-gradient(circle,rgba(183,28,28,.34),transparent 62%);top:-45mm;right:-45mm}
+  background:radial-gradient(circle,rgba(30,136,229,.34),transparent 62%);top:-45mm;right:-45mm}
 .cov-in{position:relative;height:100%;padding:20mm 16mm 16mm;display:flex;flex-direction:column}
 .cov-logo{display:flex;align-items:center;gap:4mm}
 .cov-logo .nf-full{height:26mm;width:auto;display:block;filter:brightness(0) invert(1)}
@@ -144,9 +144,9 @@ p{margin:0}
 .div-page{background:var(--navy);color:#fff}
 .div-page .bp{position:absolute;inset:0;opacity:.8}
 .div-page .glow{position:absolute;width:130mm;height:130mm;border-radius:50%;
-  background:radial-gradient(circle,rgba(183,28,28,.3),transparent 62%);bottom:-40mm;left:-40mm}
+  background:radial-gradient(circle,rgba(30,136,229,.3),transparent 62%);bottom:-40mm;left:-40mm}
 .div-in{position:relative;height:100%;padding:16mm 16mm;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
-.div-kick{font-family:var(--f-mono);font-size:40pt;font-weight:600;color:rgba(239,154,154,.22);line-height:1;letter-spacing:-.04em}
+.div-kick{font-family:var(--f-mono);font-size:40pt;font-weight:600;color:rgba(124,192,255,.22);line-height:1;letter-spacing:-.04em}
 .div-in h2{font-size:26pt;margin-top:3mm;letter-spacing:-.035em;color:#fff}
 .div-in p{margin-top:4mm;font-size:9.5pt;color:#aebfd0;max-width:105mm;line-height:1.55}
 .div-list{margin-top:6mm;display:grid;grid-template-columns:1fr 1fr;gap:1.8mm 7mm;max-width:135mm}
@@ -155,7 +155,7 @@ p{margin:0}
 .div-list a i{font-style:normal;font-family:var(--f-mono);font-size:6.4pt;color:var(--blue-3);flex:none}
 .div-hint{margin-top:5mm;font-family:var(--f-mono);font-size:6pt;letter-spacing:.1em;text-transform:uppercase;color:#7f93a8;display:flex;align-items:center;gap:2mm}
 .div-hint::before{content:"";width:8mm;height:1px;background:var(--blue-3)}
-.div-art{position:absolute;right:12mm;bottom:14mm;width:46mm;height:46mm;color:rgba(239,154,154,.3)}
+.div-art{position:absolute;right:12mm;bottom:14mm;width:46mm;height:46mm;color:rgba(124,192,255,.3)}
 .div-art svg{width:100%;height:100%}
 
 /* ---------- product page ---------- */
@@ -168,7 +168,7 @@ p{margin:0}
   padding:1.4mm 2.6mm;border-radius:20mm;border:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap}
 .pb.turkey{background:rgba(249,168,37,.12);border-color:rgba(249,168,37,.4);color:#8a5e00}
 .pb.cert{background:rgba(0,200,83,.09);border-color:rgba(0,200,83,.32);color:var(--green)}
-.pb.blue{background:rgba(183,28,28,.09);border-color:rgba(183,28,28,.3);color:var(--blue-7)}
+.pb.blue{background:rgba(30,136,229,.09);border-color:rgba(30,136,229,.3);color:var(--blue-7)}
 .pr-fig{width:58mm;height:46mm;flex:none;border-radius:2.5mm;background:var(--navy);position:relative;overflow:hidden;display:grid;place-items:center}
 .pr-fig .bp{position:absolute;inset:0;opacity:.6}
 .pr-fig .gl{position:relative;width:70%;height:70%;color:var(--blue-3)}
@@ -227,7 +227,7 @@ p{margin:0}
 .back{background:var(--navy);color:#fff}
 .back .bp{position:absolute;inset:0;opacity:.8}
 .back .glow{position:absolute;width:140mm;height:140mm;border-radius:50%;
-  background:radial-gradient(circle,rgba(183,28,28,.3),transparent 62%);top:-40mm;left:-40mm}
+  background:radial-gradient(circle,rgba(30,136,229,.3),transparent 62%);top:-40mm;left:-40mm}
 .back-in{position:relative;height:100%;padding:20mm 16mm 16mm;display:flex;flex-direction:column}
 .back-in h2{font-size:26pt;letter-spacing:-.03em;color:#fff;margin-top:8mm}
 .back-in .sub{margin-top:5mm;font-size:10pt;color:#aebfd0;max-width:100mm;line-height:1.6}
@@ -313,9 +313,9 @@ h1,h2,h3,h4,h5,p{letter-spacing:0}
 .nf-lang a.on{background:var(--blue);color:#fff}
 @media print{.nf-lang{display:none!important}.nf-dl{display:none!important}}
 .nf-dl{position:fixed;top:14px;right:220px;z-index:9999;display:flex;align-items:center;gap:6px;padding:6px 14px;
-  background:rgba(183,28,28,.9);border:none;border-radius:99mm;backdrop-filter:blur(8px);cursor:pointer;
+  background:rgba(30,136,229,.9);border:none;border-radius:99mm;backdrop-filter:blur(8px);cursor:pointer;
   font-family:var(--f-mono);font-size:11px;font-weight:600;letter-spacing:.06em;color:#fff;text-decoration:none;line-height:1;transition:.15s}
-.nf-dl:hover{background:rgba(183,28,28,1)}
+.nf-dl:hover{background:rgba(30,136,229,1)}
 .nf-dl svg{width:14px;height:14px}
 /* short continuation pages: centre the tail so the slack reads as margin */
 .pr-body{align-items:start}
