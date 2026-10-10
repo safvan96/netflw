@@ -73,7 +73,7 @@ function generateCatalogHTML(lang) {
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&${isAR ? 'family=Cairo:wght@400;600;700&' : ''}display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  :root{--navy:#0a1628;--teal:#0e8c8c;--f:${isAR?"'Cairo'":"'Inter'"},-apple-system,sans-serif;--fm:'JetBrains Mono',monospace}
+  :root{--navy:#1A0A0A;--teal:#B71C1C;--f:${isAR?"'Cairo'":"'Inter'"},-apple-system,sans-serif;--fm:'JetBrains Mono',monospace}
   @page{size:A4;margin:0}
   html,body{width:210mm;font-family:var(--f);color:var(--navy);font-size:9pt;line-height:1.5}
   .page-break{page-break-before:always}
