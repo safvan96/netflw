@@ -196,7 +196,7 @@
         // cycle: 3s animation → 5s photo → repeat
         function showPhoto(){ stage.dataset.photo='1'; }
         
-        setTimeout(showPhoto,1500);
+        setTimeout(showPhoto,1000);
       });
       ph.addEventListener('error',()=>{ ph.remove(); });
       ph.src='assets/products/'+slug+'.png';
@@ -213,14 +213,10 @@
     if(NFQuote.has(p.code)){ addBtn.dataset.added='1'; addBtn.textContent = NFQuote.t('added'); addBtn.style.borderColor='var(--green)'; addBtn.style.color='var(--green)'; }
   }
 
-  // mobile: animation → photo cycle for related cards
-  if(!window.matchMedia('(hover:hover)').matches){
-    [...document.querySelectorAll('.prod-card')].forEach(function(card,i){
-      if(!card.querySelector('.prod-hover-photo')) return;
-      setTimeout(function flip(){
-        card.classList.add('photo-on');
-        setTimeout(function(){card.classList.remove('photo-on');setTimeout(flip,2000);},2000);
-      },2000+i*400);
-    });
-  }
+  // auto-show product photos on related cards after 1s
+  [...document.querySelectorAll('.prod-card')].forEach(function(card,i){
+    var img=card.querySelector('.prod-hover-photo');
+    if(!img) return;
+    setTimeout(function(){ img.classList.add('visible'); },1000+i*100);
+  });
 })();

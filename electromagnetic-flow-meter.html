@@ -808,30 +808,19 @@
 (function(){var h=document.getElementById('hdr');if(!h)return;var b=h.querySelector('.hamburger'),n=h.querySelector('.nav-links');if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.style.overflow='';});});})();
 </script>
 <script>
-// Animation ↔ Photo cycle: 3s anim → 5s photo → repeat
+// Show product photo after 1s (permanent)
 (function(){
   const stage = document.querySelector('.ex-stage');
   if(!stage) return;
-  function showPhoto(){
-    stage.setAttribute('data-photo','1');
-    setTimeout(showAnim, 5000);
-  }
-  function showAnim(){
-    stage.removeAttribute('data-photo');
-    setTimeout(showPhoto, 3000);
-  }
-  setTimeout(showPhoto, 1500);
+  setTimeout(function(){ stage.setAttribute('data-photo','1'); }, 1000);
 })();
 
-// Mobile: animation → photo cycle for related cards
+// Auto-show product photos on related cards after 1s
 (function(){
-  if(window.matchMedia('(hover:hover)').matches) return;
   [...document.querySelectorAll('.prod-card')].forEach(function(card,i){
-    if(!card.querySelector('.prod-hover-photo')) return;
-    setTimeout(function flip(){
-      card.classList.add('photo-on');
-      setTimeout(function(){card.classList.remove('photo-on');setTimeout(flip,2000);},2000);
-    },2000+i*400);
+    var img=card.querySelector('.prod-hover-photo');
+    if(!img) return;
+    setTimeout(function(){ img.classList.add('visible'); },1000+i*100);
   });
 })();
 </script>
