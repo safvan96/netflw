@@ -1,4 +1,6 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     { "source": "/catalog", "destination": "/katalog-en.html", "statusCode": 301 },
     { "source": "/catalog.html", "destination": "/katalog-en.html", "statusCode": 301 },

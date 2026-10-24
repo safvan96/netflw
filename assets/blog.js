@@ -15,7 +15,8 @@ window.renderBlogCarousel = function(target){
   // Duplicate posts for seamless infinite scroll
   var items = posts.concat(posts).concat(posts);
   items.forEach(function(p){
-    h += '<a href="'+blogPage+'#'+p.slug+'" class="blog-ticker-card">';
+    var blogSuffix = lang==='en' ? '' : '-'+lang;
+    h += '<a href="blog-'+p.slug+blogSuffix+'.html" class="blog-ticker-card">';
     h += '<div class="blog-ticker-img">';
     if(p.image){
       h += '<img src="'+esc(p.image)+'" alt="'+esc(p.title)+'" loading="lazy">';
@@ -121,9 +122,10 @@ function esc(s){
       h += '</div>';
       h += '<div class="blog-card-body">';
       h += '<span class="blog-tag">'+esc(p.category)+'</span>';
-      h += '<h3><a href="#'+p.slug+'" style="color:inherit;text-decoration:none">'+esc(p.title)+'</a></h3>';
+      var bSuffix = lang==='en' ? '' : '-'+lang;
+      h += '<h3><a href="blog-'+p.slug+bSuffix+'.html" style="color:inherit;text-decoration:none">'+esc(p.title)+'</a></h3>';
       h += '<p>'+esc(p.excerpt)+'</p>';
-      h += '<a href="#'+p.slug+'" class="blog-card-link">'+(UI.readMore[lang]||UI.readMore.en)+'</a>';
+      h += '<a href="blog-'+p.slug+bSuffix+'.html" class="blog-card-link">'+(UI.readMore[lang]||UI.readMore.en)+'</a>';
       h += '</div>';
       h += '</article>';
     });
@@ -171,8 +173,13 @@ function esc(s){
 
   function route(){
     var hash = location.hash.replace('#','');
-    if(hash) renderDetail(hash);
-    else renderList();
+    // SEO redirect: if hash slug present, redirect to static blog page
+    if(hash){
+      var suffix = lang==='en' ? '' : '-'+lang;
+      location.replace('blog-'+hash+suffix+'.html');
+      return;
+    }
+    renderList();
   }
 
   function formatDate(ds){

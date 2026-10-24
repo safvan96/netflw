@@ -10,7 +10,8 @@ const LANG_META = {
   en:{name:'English', dir:'ltr', locale:'en'},
   tr:{name:'Türkçe', dir:'ltr', locale:'tr'},
   ar:{name:'العربية', dir:'rtl', locale:'ar'},
-  ru:{name:'Русский', dir:'ltr', locale:'ru'}
+  ru:{name:'Русский', dir:'ltr', locale:'ru'},
+  es:{name:'Español', dir:'ltr', locale:'es'}
 };
 
 /* ---------- UI strings per language ---------- */
@@ -42,7 +43,14 @@ const T = {
       subtotal:'Промежуточный итог', discount:'Скидка', transport:'Транспорт / выезд на объект', vat:'НДС', grand:'Итого',
       terms:'Условия', authSign:'Подпись уполномоченного', custAcc:'Согласие заказчика',
       tagline:'Промышленные измерительные приборы · Сделано в Турции', noItems:'Товары ещё не добавлены.',
-      legal:'Net Flow · netflw.com · +90 541 373 79 53 · info@netflw.com · аккредитация TÜRKAK (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · VFA Elektronik, Конья · Турция'}
+      legal:'Net Flow · netflw.com · +90 541 373 79 53 · info@netflw.com · аккредитация TÜRKAK (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · VFA Elektronik, Конья · Турция'},
+  es:{quotation:'COTIZACIÓN', quoteNo:'N.º de Cotización', date:'Fecha', valid:'Válido hasta', by:'Preparado por',
+      supplier:'Proveedor', customer:'Cliente', project:'Proyecto', attn:'Atención', reqBy:'Solicitado por',
+      thNo:'#', thDesc:'Descripción', thQty:'Cant.', thUnit:'Precio Unitario', thTotal:'Total',
+      subtotal:'Subtotal', discount:'Descuento', transport:'Transporte y visita de campo', vat:'IVA', grand:'Total General',
+      terms:'Términos y Condiciones', authSign:'Firma Autorizada', custAcc:'Aceptación del Cliente',
+      tagline:'Instrumentación Industrial · Fabricado en Turquía', noItems:'No se han agregado productos.',
+      legal:'Net Flow · netflw.com · +90 541 373 79 53 · info@netflw.com · Acreditación TÜRKAK (AB-0354-K) · ISO/IEC 17025 · ISO 9001 · VFA Elektronik, Konya · Turquía'}
 };
 
 /* ---------- default terms per language ---------- */
@@ -50,7 +58,8 @@ const TERMS = {
   en:'1. VALIDITY: This quotation is valid for 15 (fifteen) days from the date of issue. After this period, prices and delivery times are subject to reconfirmation.\n\n2. PRICES: All prices are quoted EXW Konya, Turkey (Incoterms® 2020) unless otherwise stated. Prices do not include shipping, insurance, customs duties, or local taxes.\n\n3. PAYMENT: 100% advance payment by T/T (bank transfer) before production commences. Production will not begin until payment is confirmed.\n\n4. DELIVERY: Estimated delivery time is 3–5 weeks from the date of payment confirmation. Delivery times are approximate and may vary depending on order volume and stock availability.\n\n5. SHIPPING: Products are packed in reinforced cardboard boxes suitable for international shipping. Freight, insurance, and customs clearance costs are the responsibility of the buyer unless agreed otherwise.\n\n6. WARRANTY: All products carry a 24-month warranty against manufacturing defects from the date of shipment. The warranty does not cover damage caused by improper installation, misuse, or unauthorized modification.\n\n7. CALIBRATION & CERTIFICATES: Electromagnetic flow meters DN15–DN200 are delivered with a TÜRKAK-accredited calibration certificate (ISO/IEC 17025, Accreditation No: AB-0354-K). Sizes above DN200 and all other instruments are supplied with a CE declaration of conformity and factory calibration certificate.\n\n8. TECHNICAL SUPPORT: Free technical support is provided via phone, email, and WhatsApp during and after installation.\n\n9. RETURNS: Products manufactured to custom specifications (special DN sizes, materials, or configurations) are non-returnable. Standard products may be returned within 14 days in original, unused condition.\n\n10. JURISDICTION: Any disputes arising from this quotation or resulting orders shall be resolved under the laws of the Republic of Turkey, with Konya courts having exclusive jurisdiction.',
   tr:'1. GEÇERLİLİK: Bu teklif, düzenlenme tarihinden itibaren 15 (on beş) gün geçerlidir. Bu sürenin dolmasından sonra fiyatlar ve teslimat süreleri yeniden teyit edilmelidir.\n\n2. FİYATLAR: Tüm fiyatlar aksi belirtilmedikçe EXW Konya, Türkiye (Incoterms® 2020) olarak verilmiştir. Fiyatlara nakliye, sigorta, gümrük vergisi ve yerel vergiler dahil değildir.\n\n3. ÖDEME: Üretime başlanmadan önce %100 peşin ödeme, T/T (banka havalesi) ile yapılmalıdır. Ödeme teyit edilmeden üretime başlanmaz.\n\n4. TESLİMAT: Tahmini teslimat süresi, ödeme teyidinden itibaren 3–5 haftadır. Teslimat süreleri sipariş hacmine ve stok durumuna göre değişiklik gösterebilir.\n\n5. SEVKİYAT: Ürünler uluslararası sevkiyata uygun güçlendirilmiş karton kutularda paketlenir. Nakliye, sigorta ve gümrükleme masrafları aksi kararlaştırılmadıkça alıcıya aittir.\n\n6. GARANTİ: Tüm ürünler sevk tarihinden itibaren 24 ay üretim hatalarına karşı garantilidir. Garanti; hatalı kurulum, yanlış kullanım veya yetkisiz müdahale sonucu oluşan hasarları kapsamaz.\n\n7. KALİBRASYON VE SERTİFİKALAR: DN15–DN200 arası elektromanyetik debimetreler TÜRKAK akreditasyonlu kalibrasyon sertifikası (ISO/IEC 17025, Akreditasyon No: AB-0354-K) ile teslim edilir. DN200 üzeri çaplar ve diğer tüm cihazlar CE uygunluk beyanı ve fabrika kalibrasyon sertifikası ile gönderilir.\n\n8. TEKNİK DESTEK: Kurulum süresince ve sonrasında telefon, e-posta ve WhatsApp üzerinden ücretsiz teknik destek sağlanır.\n\n9. İADE: Özel sipariş ürünler (özel DN çapları, malzemeler veya konfigürasyonlar) iade edilemez. Standart ürünler orijinal ve kullanılmamış durumda 14 gün içinde iade edilebilir.\n\n10. YETKİ: Bu tekliften veya sonucunda oluşan siparişlerden doğacak anlaşmazlıklar Türkiye Cumhuriyeti kanunlarına göre çözülür; Konya mahkemeleri münhasır yetkiye sahiptir.',
   ar:'1. الصلاحية: هذا العرض ساري المفعول لمدة 15 (خمسة عشر) يومًا من تاريخ الإصدار. بعد انتهاء هذه الفترة، تخضع الأسعار ومواعيد التسليم لإعادة التأكيد.\n\n2. الأسعار: جميع الأسعار مقدمة على أساس تسليم المصنع EXW قونية، تركيا (إنكوترمز 2020) ما لم يُذكر خلاف ذلك. لا تشمل الأسعار الشحن والتأمين والرسوم الجمركية والضرائب المحلية.\n\n3. الدفع: 100% دفعة مقدمة بالتحويل البنكي T/T قبل بدء الإنتاج. لن يبدأ الإنتاج حتى يتم تأكيد الدفع.\n\n4. التسليم: مدة التسليم المقدرة 3–5 أسابيع من تاريخ تأكيد الدفع. قد تتغير مواعيد التسليم حسب حجم الطلب وتوفر المخزون.\n\n5. الشحن: تُعبأ المنتجات في صناديق كرتون مقوّاة مناسبة للشحن الدولي. تكاليف الشحن والتأمين والتخليص الجمركي على حساب المشتري ما لم يُتفق على خلاف ذلك.\n\n6. الضمان: جميع المنتجات مضمونة لمدة 24 شهرًا ضد عيوب التصنيع من تاريخ الشحن. لا يشمل الضمان الأضرار الناتجة عن التركيب الخاطئ أو سوء الاستخدام أو التعديل غير المصرح به.\n\n7. المعايرة والشهادات: تُسلَّم مقاييس التدفق الكهرومغناطيسية بأقطار DN15–DN200 بشهادة معايرة معتمدة من TÜRKAK ‏(ISO/IEC 17025، رقم الاعتماد: AB-0354-K). الأقطار الأكبر من DN200 وجميع الأجهزة الأخرى تُسلَّم بإعلان مطابقة CE وشهادة معايرة المصنع.\n\n8. الدعم الفني: يتم تقديم دعم فني مجاني عبر الهاتف والبريد الإلكتروني وواتساب أثناء التركيب وبعده.\n\n9. الإرجاع: المنتجات المصنعة بمواصفات خاصة (أقطار DN خاصة أو مواد أو تكوينات) غير قابلة للإرجاع. يمكن إرجاع المنتجات القياسية خلال 14 يومًا بحالتها الأصلية غير المستخدمة.\n\n10. الاختصاص القضائي: تُحل أي نزاعات ناشئة عن هذا العرض أو الطلبات الناتجة عنه وفقًا لقوانين جمهورية تركيا، وتكون محاكم قونية هي المختصة حصريًا.',
-  ru:'1. СРОК ДЕЙСТВИЯ: Данное предложение действительно в течение 15 (пятнадцати) дней с даты выдачи. По истечении этого срока цены и сроки поставки подлежат повторному подтверждению.\n\n2. ЦЕНЫ: Все цены указаны на условиях EXW Конья, Турция (Incoterms® 2020), если не указано иное. Цены не включают доставку, страховку, таможенные пошлины и местные налоги.\n\n3. ОПЛАТА: 100% предоплата банковским переводом T/T до начала производства. Производство не начнётся до подтверждения оплаты.\n\n4. ПОСТАВКА: Ориентировочный срок поставки — 3–5 недель с даты подтверждения оплаты. Сроки поставки могут варьироваться в зависимости от объёма заказа и наличия на складе.\n\n5. ОТГРУЗКА: Продукция упакована в усиленные картонные коробки, пригодные для международной доставки. Расходы на доставку, страховку и таможенное оформление несёт покупатель, если не согласовано иное.\n\n6. ГАРАНТИЯ: На все изделия предоставляется гарантия 24 месяца от производственных дефектов с даты отгрузки. Гарантия не распространяется на повреждения, вызванные неправильной установкой, неправильной эксплуатацией или несанкционированной модификацией.\n\n7. КАЛИБРОВКА И СЕРТИФИКАТЫ: Электромагнитные расходомеры DN15–DN200 поставляются с калибровочным сертификатом, аккредитованным TÜRKAK (ISO/IEC 17025, номер аккредитации: AB-0354-K). Размеры свыше DN200 и все остальные приборы поставляются с декларацией соответствия CE и заводским калибровочным сертификатом.\n\n8. ТЕХНИЧЕСКАЯ ПОДДЕРЖКА: Бесплатная техническая поддержка предоставляется по телефону, электронной почте и WhatsApp во время и после установки.\n\n9. ВОЗВРАТ: Продукция, изготовленная по специальным спецификациям (нестандартные DN, материалы или конфигурации), возврату не подлежит. Стандартная продукция может быть возвращена в течение 14 дней в оригинальном неиспользованном состоянии.\n\n10. ЮРИСДИКЦИЯ: Любые споры, возникающие из данного предложения или вытекающих заказов, разрешаются в соответствии с законами Турецкой Республики, с исключительной юрисдикцией судов Коньи.'
+  ru:'1. СРОК ДЕЙСТВИЯ: Данное предложение действительно в течение 15 (пятнадцати) дней с даты выдачи. По истечении этого срока цены и сроки поставки подлежат повторному подтверждению.\n\n2. ЦЕНЫ: Все цены указаны на условиях EXW Конья, Турция (Incoterms® 2020), если не указано иное. Цены не включают доставку, страховку, таможенные пошлины и местные налоги.\n\n3. ОПЛАТА: 100% предоплата банковским переводом T/T до начала производства. Производство не начнётся до подтверждения оплаты.\n\n4. ПОСТАВКА: Ориентировочный срок поставки — 3–5 недель с даты подтверждения оплаты. Сроки поставки могут варьироваться в зависимости от объёма заказа и наличия на складе.\n\n5. ОТГРУЗКА: Продукция упакована в усиленные картонные коробки, пригодные для международной доставки. Расходы на доставку, страховку и таможенное оформление несёт покупатель, если не согласовано иное.\n\n6. ГАРАНТИЯ: На все изделия предоставляется гарантия 24 месяца от производственных дефектов с даты отгрузки. Гарантия не распространяется на повреждения, вызванные неправильной установкой, неправильной эксплуатацией или несанкционированной модификацией.\n\n7. КАЛИБРОВКА И СЕРТИФИКАТЫ: Электромагнитные расходомеры DN15–DN200 поставляются с калибровочным сертификатом, аккредитованным TÜRKAK (ISO/IEC 17025, номер аккредитации: AB-0354-K). Размеры свыше DN200 и все остальные приборы поставляются с декларацией соответствия CE и заводским калибровочным сертификатом.\n\n8. ТЕХНИЧЕСКАЯ ПОДДЕРЖКА: Бесплатная техническая поддержка предоставляется по телефону, электронной почте и WhatsApp во время и после установки.\n\n9. ВОЗВРАТ: Продукция, изготовленная по специальным спецификациям (нестандартные DN, материалы или конфигурации), возврату не подлежит. Стандартная продукция может быть возвращена в течение 14 дней в оригинальном неиспользованном состоянии.\n\n10. ЮРИСДИКЦИЯ: Любые споры, возникающие из данного предложения или вытекающих заказов, разрешаются в соответствии с законами Турецкой Республики, с исключительной юрисдикцией судов Коньи.',
+  es:'1. VALIDEZ: Esta cotización es válida por 15 (quince) días a partir de la fecha de emisión. Después de este período, los precios y plazos de entrega están sujetos a reconfirmación.\n\n2. PRECIOS: Todos los precios se cotizan EXW Konya, Turquía (Incoterms® 2020) salvo indicación contraria. Los precios no incluyen envío, seguro, aranceles aduaneros ni impuestos locales.\n\n3. PAGO: 100% de pago anticipado por T/T (transferencia bancaria) antes del inicio de la producción. La producción no comenzará hasta que se confirme el pago.\n\n4. ENTREGA: El tiempo estimado de entrega es de 3 a 5 semanas a partir de la fecha de confirmación del pago. Los plazos de entrega son aproximados y pueden variar según el volumen del pedido y la disponibilidad de inventario.\n\n5. ENVÍO: Los productos se embalan en cajas de cartón reforzado aptas para envío internacional. Los costos de flete, seguro y despacho aduanero son responsabilidad del comprador salvo acuerdo contrario.\n\n6. GARANTÍA: Todos los productos tienen una garantía de 24 meses contra defectos de fabricación a partir de la fecha de envío. La garantía no cubre daños causados por instalación incorrecta, mal uso o modificación no autorizada.\n\n7. CALIBRACIÓN Y CERTIFICADOS: Los caudalímetros electromagnéticos DN15–DN200 se entregan con certificado de calibración acreditado por TÜRKAK (ISO/IEC 17025, N.º de Acreditación: AB-0354-K). Los tamaños superiores a DN200 y todos los demás instrumentos se suministran con declaración de conformidad CE y certificado de calibración de fábrica.\n\n8. SOPORTE TÉCNICO: Se proporciona soporte técnico gratuito por teléfono, correo electrónico y WhatsApp durante y después de la instalación.\n\n9. DEVOLUCIONES: Los productos fabricados según especificaciones personalizadas (tamaños DN especiales, materiales o configuraciones) no son retornables. Los productos estándar pueden devolverse dentro de los 14 días en condición original sin uso.\n\n10. JURISDICCIÓN: Cualquier disputa derivada de esta cotización o pedidos resultantes se resolverá bajo las leyes de la República de Turquía, con jurisdicción exclusiva de los tribunales de Konya.'
 };
 
 /* ---------- config field definitions ---------- */
@@ -193,6 +202,18 @@ function calcPrice(code, cfg){
   if(opts.temp && cfg.temp){
     var tVal = opts.temp[cfg.temp];
     if(tVal) total += tVal;
+  }
+  // ex-proof
+  if(opts.exproof && cfg.exproof){
+    var exDef = opts.exproof[cfg.exproof];
+    if(exDef && exDef.pct) total += listPrice * exDef.pct / 100;
+    else if(exDef) total += exDef;
+  }
+  // accuracy
+  if(opts.accuracy && cfg.accuracy){
+    var acDef = opts.accuracy[cfg.accuracy];
+    if(acDef && acDef.pct) total += listPrice * acDef.pct / 100;
+    else if(acDef) total += acDef;
   }
 
   return Math.round(total * 100) / 100;
@@ -483,12 +504,13 @@ const BYCODE = {}; PRODUCTS.forEach(p=>BYCODE[p.code]=p);
 
 /* ---------- currency ---------- */
 const CUR = {USD:{sym:'$',pre:true}, EUR:{sym:'€',pre:true}, TRY:{sym:'₺',pre:true}};
-const YERLI = {en:'Made in Türkiye',tr:'Yerli Malı',ar:'صنع في تركيا',ru:'Сделано в Турции'};
+const YERLI = {en:'Made in Türkiye',tr:'Yerli Malı',ar:'صنع في تركيا',ru:'Сделано в Турции',es:'Fabricado en Turquía'};
 const CERT = {
   en:{turkak:'TÜRKAK Calibration · ISO/IEC 17025 (AB-0354-K)',ce:'CE · Factory Calibration Certificate'},
   tr:{turkak:'TÜRKAK Kalibrasyon · ISO/IEC 17025 (AB-0354-K)',ce:'CE · Fabrika Kalibrasyon Sertifikası'},
   ar:{turkak:'معايرة TÜRKAK · ISO/IEC 17025 (AB-0354-K)',ce:'CE · شهادة معايرة المصنع'},
-  ru:{turkak:'Калибровка TÜRKAK · ISO/IEC 17025 (AB-0354-K)',ce:'CE · Заводской калибровочный сертификат'}
+  ru:{turkak:'Калибровка TÜRKAK · ISO/IEC 17025 (AB-0354-K)',ce:'CE · Заводской калибровочный сертификат'},
+  es:{turkak:'Calibración TÜRKAK · ISO/IEC 17025 (AB-0354-K)',ce:'CE · Certificado de Calibración de Fábrica'}
 };
 function isTurkak(code,dn){
   if(code!=='NT-VMF'&&code!=='NT-VMF-W') return false;
@@ -504,7 +526,8 @@ const AUI = {
   en:{empty:'No products added yet. Pick instruments from the left to start your quotation.',hintAdd:'Click products on the left to add',items:function(n){return n+' item(s)';},qty:'Qty',unit:function(c){return 'Unit Price ('+c+')';}},
   tr:{empty:'Henüz ürün eklenmedi. Teklifinize başlamak için soldan cihaz seçin.',hintAdd:'Eklemek için soldaki ürünlere tıklayın',items:function(n){return n+' kalem';},qty:'Adet',unit:function(c){return 'Birim Fiyat ('+c+')';}},
   ar:{empty:'لم تتم إضافة منتجات بعد. اختر الأجهزة من اليسار لبدء عرضك.',hintAdd:'انقر على المنتجات يسارًا للإضافة',items:function(n){return n+' بند';},qty:'الكمية',unit:function(c){return 'سعر الوحدة ('+c+')';}},
-  ru:{empty:'Товары ещё не добавлены. Выберите приборы слева, чтобы начать.',hintAdd:'Нажмите товары слева, чтобы добавить',items:function(n){return n+' поз.';},qty:'Кол-во',unit:function(c){return 'Цена за ед. ('+c+')';}}
+  ru:{empty:'Товары ещё не добавлены. Выберите приборы слева, чтобы начать.',hintAdd:'Нажмите товары слева, чтобы добавить',items:function(n){return n+' поз.';},qty:'Кол-во',unit:function(c){return 'Цена за ед. ('+c+')';}},
+  es:{empty:'No se han agregado productos. Seleccione instrumentos de la izquierda para comenzar.',hintAdd:'Haga clic en productos a la izquierda para agregar',items:function(n){return n+' artículo(s)';},qty:'Cant.',unit:function(c){return 'Precio Unitario ('+c+')';}}
 };
 function aui(){ return AUI[uiLang()]||AUI.en; }
 
@@ -650,7 +673,7 @@ function renderPalette(){
         <img src="assets/products/${slug(p.code)}.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:3px;background:#fff;border-radius:8px" onerror="this.remove()">
         ${ICONS[p.cat]}
       </span>
-      <span class="pmeta"><b>${esc(p.name[L])}</b><span>${esc(p.code)}</span></span>
+      <span class="pmeta"><b>${esc(p.name[L]||p.name.en)}</b><span>${esc(p.code)}</span></span>
       <span class="padd">+</span>
     </div>`).join('');
   $('#palCount').textContent=list.length;
@@ -662,8 +685,19 @@ function renderPalette(){
 function addItem(code){
   const p=BYCODE[code]; if(!p) return;
   const cfg={}; p.cfg.forEach(f=>cfg[f]=FIELDS[f].opts[0]);
+  // Pick first valid DN from pricing data (default DN3 doesn't exist in most products)
+  if(cfg.dn && typeof NF_PRICING!=='undefined'){
+    let pr=NF_PRICING.products[code];
+    if(pr&&pr.ref) pr=NF_PRICING.products[pr.ref];
+    if(pr&&pr.byDN&&!pr.byDN[cfg.dn]){
+      const valid=Object.keys(pr.byDN);
+      for(let i=0;i<FIELDS.dn.opts.length;i++){
+        if(valid.includes(FIELDS.dn.opts[i])){cfg.dn=FIELDS.dn.opts[i];break;}
+      }
+    }
+  }
   const autoPrice = calcPrice(code, cfg);
-  S.items.push({uid:uid(), code, cfg, qty:1, unit:autoPrice||0, priceMode:autoPrice?'auto':'manual'});
+  S.items.push({uid:uid(), code, cfg, qty:1, unit:autoPrice||0, priceMode:'auto'});
   save(); renderItems(); renderTotals();
 }
 function renderItems(){
@@ -680,7 +714,7 @@ function renderItems(){
   box.innerHTML = S.items.map((it,i)=>{
     const p=BYCODE[it.code];
     const cfgHtml=p.cfg.map(f=>`
-      <div class="cfg-pick"><label>${esc(FIELDS[f].label[L])}</label>
+      <div class="cfg-pick"><label>${esc(FIELDS[f].label[L]||FIELDS[f].label.en)}</label>
         <select data-uid="${it.uid}" data-field="${f}">
           ${FIELDS[f].opts.map(o=>`<option${o===it.cfg[f]?' selected':''}>${esc(o)}</option>`).join('')}
         </select></div>`).join('');
@@ -690,8 +724,8 @@ function renderItems(){
         <div class="litem-main" style="display:flex;gap:12px;align-items:flex-start">
           <img src="assets/products/${slug(it.code)}.png" alt="" style="width:56px;height:56px;object-fit:contain;border:1px solid var(--line);border-radius:8px;background:#fff;flex:none" onerror="this.remove()">
           <div style="flex:1;min-width:0">
-          <h4>${esc(p.name[L])} <span class="lcode">${esc(p.code)}</span></h4>
-          <div class="litem-desc">${esc(p.desc[L])}</div>
+          <h4>${esc(p.name[L]||p.name.en)} <span class="lcode">${esc(p.code)}</span></h4>
+          <div class="litem-desc">${esc(p.desc[L]||p.desc.en)}</div>
           ${(()=>{const dn=it.cfg.dn;const w=dn&&getWeight(it.code,dn);return w?`<span class="ship-badge">${w.kg} kg · ${calcDesi(w.box)} desi · ${w.box.join('×')} cm</span>`:''})()}
           <div class="cfg-row" style="margin-top:10px">${cfgHtml}</div>
           </div>
@@ -789,8 +823,8 @@ function buildDoc(){
 
   const rows = S.items.length ? S.items.map((it,i)=>{
     const p=BYCODE[it.code];
-    const nm = esc(p.name[L]);
-    const ds = esc(p.desc[L]);
+    const nm = esc(p.name[L]||p.name.en);
+    const ds = esc(p.desc[L]||p.desc.en);
     const nmRef = review? `<div class="ti-spec" style="font-style:italic;opacity:.7">EN: ${esc(p.name.en)}</div>`:'';
     const dsRef = review? `<div class="ti-spec" style="font-style:italic;opacity:.7">EN: ${esc(p.desc.en)}</div>`:'';
     return `<tr>

@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Net Flow × CCT — Presentation</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0d0d18;color:#e8eaf0;overflow:hidden;height:100vh;width:100vw}
+.slide{position:absolute;top:0;left:0;width:100%;height:100%;display:none;flex-direction:column;justify-content:center;align-items:center;padding:50px 70px;background:#0d0d18}
+.slide.active{display:flex}
+:root{--blue:#2563EB;--cyan:#06B6D4;--green:#10B981;--orange:#F59E0B;--gray:#64748B;--light:#CBD5E1}
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--cyan));transition:width .4s;z-index:100}
+.nav{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:14px;z-index:100;background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.1);border-radius:50px;padding:8px 20px}
+.nav button{background:none;border:none;color:#94A3B8;cursor:pointer;font-size:18px;padding:4px 8px;border-radius:8px;transition:.2s}
+.nav button:hover{color:#fff;background:rgba(255,255,255,.1)}
+.nav button:disabled{opacity:.3;cursor:not-allowed}
+.counter{color:#64748B;font-size:13px;font-weight:500;min-width:50px;text-align:center}
+/* Language switcher */
+.lang-bar{position:fixed;top:16px;right:20px;display:flex;gap:6px;z-index:200}
+.lang-btn{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#94A3B8;cursor:pointer;font-size:12px;font-weight:700;padding:5px 10px;border-radius:8px;letter-spacing:.5px;transition:.2s}
+.lang-btn:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.lang-btn.active{background:rgba(37,99,235,.3);border-color:var(--blue);color:#fff}
+/* Logo bar */
+.logo-bar{position:fixed;top:14px;left:20px;display:flex;align-items:center;gap:10px;z-index:200}
+.logo-icon{width:32px;height:32px}
+.logo-text{height:22px;fill:#144876;filter:brightness(0) invert(1) opacity(.9)}
+/* Common */
+.label{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);margin-bottom:14px}
+.divider{width:50px;height:3px;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:2px;margin:16px 0}
+.tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;margin:3px}
+.tag-b{background:rgba(37,99,235,.2);color:#3B82F6;border:1px solid rgba(37,99,235,.3)}
+.tag-g{background:rgba(16,185,129,.2);color:var(--green);border:1px solid rgba(16,185,129,.3)}
+.tag-c{background:rgba(6,182,212,.2);color:var(--cyan);border:1px solid rgba(6,182,212,.3)}
+.tag-o{background:rgba(245,158,11,.2);color:var(--orange);border:1px solid rgba(245,158,11,.3)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:36px;width:100%}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;width:100%}
+.card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:22px}
+.card-b{background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.2)}
+.card-g{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2)}
+.card-o{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2)}
+.card-r{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.2)}
+.icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px}
+.icon-b{background:rgba(37,99,235,.2)}
+.icon-g{background:rgba(16,185,129,.2)}
+.icon-o{background:rgba(245,158,11,.2)}
+.icon-r{background:rgba(239,68,68,.2)}
+.icon-c{background:rgba(6,182,212,.2)}
+.check{width:26px;height:26px;background:rgba(16,185,129,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green);font-size:13px;flex-shrink:0;margin-top:2px}
+.spec{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:13px}
+.spec:last-child{border:none}
+.spec-k{color:var(--gray)}
+.spec-v{color:#fff;font-weight:600}
+.sf{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.sf:last-child{border:none}
+h2{font-size:34px;font-weight:800;color:#fff;line-height:1.2}
+h3{font-size:20px;font-weight:700;color:#fff}
+p{color:#94A3B8;line-height:1.6}
+.inner{width:100%;max-width:1160px}
+.slide.active .inner{animation:fadeUp .35s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* Slide 1 */
+#s1{background:radial-gradient(ellipse at 30% 50%,rgba(37,99,235,.15) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(6,182,212,.1) 0%,transparent 60%),#0d0d18;text-align:center}
+.logo-row{display:flex;align-items:center;gap:20px;justify-content:center;margin-bottom:40px}
+.logo-nf{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;font-size:20px;font-weight:800;padding:10px 22px;border-radius:10px;letter-spacing:1px;display:flex;align-items:center;gap:10px}
+.logo-nf svg{height:18px;fill:#fff}
+.x{color:var(--gray);font-size:24px;font-weight:300}
+.logo-cct{font-size:20px;font-weight:700;color:var(--light);border:2px solid rgba(255,255,255,.15);padding:10px 22px;border-radius:10px}
+#s1 h1{font-size:46px;font-weight:800;line-height:1.1;background:linear-gradient(135deg,#fff 0%,#94A3B8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;max-width:780px}
+#s1 .sub{font-size:18px;color:var(--gray);margin-top:14px}
+#s1 .badges{display:flex;gap:10px;margin-top:32px;justify-content:center;flex-wrap:wrap}
+/* Slide 2 */
+.stat-box{text-align:center;padding:16px}
+.stat-num{font-size:36px;font-weight:800;background:linear-gradient(135deg,#3B82F6,var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-lbl{font-size:11px;color:var(--gray);font-weight:500;margin-top:3px;text-transform:uppercase;letter-spacing:1px}
+.line-row{display:flex;align-items:flex-start;gap:12px;padding:12px 18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;margin-bottom:8px}
+.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.proj-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:7px;font-size:12px;color:var(--light);margin:3px}
+/* Slide 3 */
+#s3{background:radial-gradient(ellipse at 50% 0%,rgba(239,68,68,.1) 0%,transparent 50%),#0d0d18}
+.impact-num{font-size:32px;font-weight:800;color:#EF4444}
+/* Slide 7 ROI */
+#s7{background:radial-gradient(ellipse at 30% 70%,rgba(16,185,129,.1) 0%,transparent 50%),#0d0d18}
+.roi-card{background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.2);border-radius:14px;padding:24px;text-align:center}
+.roi-num{font-size:40px;font-weight:800;background:linear-gradient(135deg,var(--green),#34D399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* Slide 9 steps */
+.step{display:flex;align-items:flex-start;gap:18px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.step:last-child{border:none}
+.step-n{width:36px;height:36px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#fff;flex-shrink:0}
+/* Slide 10 */
+#s10{background:radial-gradient(ellipse at 50% 50%,rgba(37,99,235,.2) 0%,transparent 60%),#0d0d18;text-align:center}
+.contact-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:32px 56px;display:inline-block;margin:20px auto}
+.ci{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:15px;color:var(--light)}
+.ci span:first-child{color:var(--gray);width:22px;text-align:center}
+/* Compare table */
+.ct{width:100%;border-collapse:collapse}
+.ct th{padding:11px 18px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:700;border-bottom:2px solid rgba(255,255,255,.1)}
+.ct td{padding:12px 18px;font-size:13px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:middle}
+.ct tr:last-child td{border:none}
+.good{color:var(--green);font-weight:600}
+.bad{color:#64748B}
+.warn{color:var(--orange)}
+.feat{color:var(--light)}
+/* RTL support */
+[dir="rtl"] .nav{flex-direction:row-reverse}
+[dir="rtl"] .logo-bar{left:auto;right:20px}
+[dir="rtl"] .lang-bar{right:auto;left:20px}
+[dir="rtl"] .grid2,[dir="rtl"] .grid3{direction:rtl}
+[dir="rtl"] .spec{flex-direction:row-reverse}
+[dir="rtl"] h2,[dir="rtl"] h3,[dir="rtl"] p,[dir="rtl"] .label{text-align:right}
+[dir="rtl"] .line-row,[dir="rtl"] .sf,[dir="rtl"] .step,.ci{direction:inherit}
+[dir="rtl"] .ct th,[dir="rtl"] .ct td{text-align:right}
+</style>
+</head>
+<body>
+
+<!-- Logo bar -->
+<div class="logo-bar">
+  <svg class="logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="40" height="40" rx="8" fill="#0A1628"/>
+    <text x="20" y="18" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="system-ui" font-weight="800" font-size="15.5" letter-spacing="-1.1">NF</text>
+    <path d="M9 28.5q3.6-4.2 7.2 0t7.2 0t7.2 0" fill="none" stroke="#1E88E5" stroke-width="2.4" stroke-linecap="round"/>
+  </svg>
+  <span style="color:#fff;font-size:14px;font-weight:800;letter-spacing:.5px">NET FLOW</span>
+</div>
+
+<!-- Language switcher -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('EN')">EN</button>
+  <button class="lang-btn" onclick="setLang('RU')">RU</button>
+  <button class="lang-btn" onclick="setLang('FR')">FR</button>
+  <button class="lang-btn" onclick="setLang('AR')">AR</button>
+  <button class="lang-btn" onclick="setLang('TR')">TR</button>
+</div>
+
+<div class="progress-bar" id="pb"></div>
+
+<!-- ===== SLIDES ===== -->
+
+<!-- S1: Cover -->
+<div class="slide active" id="s1">
+  <div class="logo-row">
+    <div class="logo-nf">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="rgba(255,255,255,0.15)"/><text x="20" y="18" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="system-ui" font-weight="800" font-size="15.5" letter-spacing="-1.1">NF</text><path d="M9 28.5q3.6-4.2 7.2 0t7.2 0t7.2 0" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+      NET FLOW
+    </div>
+    <div class="x">×</div>
+    <div class="logo-cct">CCT Chemicals Coating</div>
+  </div>
+  <h1 data-i18n="s1_title"></h1>
+  <p class="sub" data-i18n="s1_sub"></p>
+  <div class="badges">
+    <span class="tag tag-b">Rustavi, Georgia</span>
+    <span class="tag tag-c" data-i18n="tag_lines"></span>
+    <span class="tag tag-g" data-i18n="tag_portfolio"></span>
+    <span class="tag tag-o" data-i18n="tag_tech"></span>
+  </div>
+</div>
+
+<!-- S2: About CCT -->
+<div class="slide" id="s2">
+  <div class="inner">
+    <div class="label" data-i18n="s2_label"></div>
+    <h2 data-i18n="s2_title"></h2>
+    <div class="divider"></div>
+    <div class="grid2" style="margin-top:28px">
+      <div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:20px">
+          <div class="card"><div class="stat-box"><div class="stat-num">2012</div><div class="stat-lbl" data-i18n="stat_founded"></div></div></div>
+          <div class="card"><div class="stat-box"><div class="stat-num">1000+</div><div class="stat-lbl" data-i18n="stat_skus"></div></div></div>
+          <div class="card"><div class="stat-box"><div class="stat-num">3</div><div class="stat-lbl" data-i18n="stat_lines"></div></div></div>
+        </div>
+        <div class="line-row"><div class="dot" style="background:#3B82F6"></div><div><div style="font-size:13px;font-weight:700;color:#fff" data-i18n="line1_t"></div><div style="font-size:11px;color:var(--gray);margin-top:2px" data-i18n="line1_d"></div></div></div>
+        <div class="line-row"><div class="dot" style="background:#F59E0B"></div><div><div style="font-size:13px;font-weight:700;color:#fff" data-i18n="line2_t"></div><div style="font-size:11px;color:var(--orange);margin-top:2px" data-i18n="line2_d"></div></div></div>
+        <div class="line-row"><div class="dot" style="background:#10B981"></div><div><div style="font-size:13px;font-weight:700;color:#fff" data-i18n="line3_t"></div><div style="font-size:11px;color:var(--gray);margin-top:2px" data-i18n="line3_d"></div></div></div>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:14px">
+          <div style="font-size:11px;color:var(--cyan);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px" data-i18n="notable_proj"></div>
+          <div class="proj-pill">🏨 Marriott Tbilisi</div>
+          <div class="proj-pill">🏙️ Tbilisi Hills</div>
+          <div class="proj-pill">🏗️ East Point</div>
+          <div class="proj-pill">🏨 Ambassadori Kachreti</div>
+          <div class="proj-pill">🌉 Ganmukhuri Bridge</div>
+        </div>
+        <div class="card">
+          <div style="font-size:11px;color:var(--cyan);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px" data-i18n="mkt_pos_label"></div>
+          <p style="font-size:13px" data-i18n="mkt_pos_text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S3: Problem -->
+<div class="slide" id="s3">
+  <div class="inner">
+    <div class="label" data-i18n="s3_label"></div>
+    <h2 data-i18n="s3_title"></h2>
+    <div class="divider"></div>
+    <div class="grid3" style="margin-top:24px">
+      <div class="card-r card">
+        <div class="icon icon-r">💸</div>
+        <div class="impact-num" data-i18n="p1_num"></div>
+        <div style="font-size:11px;color:var(--gray);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin:6px 0" data-i18n="p1_lbl"></div>
+        <p style="font-size:12px" data-i18n="p1_desc"></p>
+      </div>
+      <div class="card-r card">
+        <div class="icon icon-r">⚠️</div>
+        <div class="impact-num" data-i18n="p2_num"></div>
+        <div style="font-size:11px;color:var(--gray);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin:6px 0" data-i18n="p2_lbl"></div>
+        <p style="font-size:12px" data-i18n="p2_desc"></p>
+      </div>
+      <div class="card-r card">
+        <div class="icon icon-r">🔧</div>
+        <div class="impact-num" data-i18n="p3_num"></div>
+        <div style="font-size:11px;color:var(--gray);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin:6px 0" data-i18n="p3_lbl"></div>
+        <p style="font-size:12px" data-i18n="p3_desc"></p>
+      </div>
+    </div>
+    <div class="card" style="background:rgba(239,68,68,.05);border-color:rgba(239,68,68,.15);margin-top:20px;text-align:center">
+      <p style="font-size:13px" data-i18n="risk_text"></p>
+    </div>
+  </div>
+</div>
+
+<!-- S4: Solution -->
+<div class="slide" id="s4">
+  <div class="inner">
+    <div class="label" data-i18n="s4_label"></div>
+    <h2 data-i18n="s4_title"></h2>
+    <div class="divider"></div>
+    <div class="grid2" style="margin-top:24px">
+      <div>
+        <div class="sf"><div class="check">✓</div><div><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="f1_t"></div><p style="font-size:12px" data-i18n="f1_d"></p></div></div>
+        <div class="sf"><div class="check">✓</div><div><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="f2_t"></div><p style="font-size:12px" data-i18n="f2_d"></p></div></div>
+        <div class="sf"><div class="check">✓</div><div><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="f3_t"></div><p style="font-size:12px" data-i18n="f3_d"></p></div></div>
+        <div class="sf"><div class="check">✓</div><div><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="f4_t"></div><p style="font-size:12px" data-i18n="f4_d"></p></div></div>
+        <div class="sf"><div class="check">✓</div><div><div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="f5_t"></div><p style="font-size:12px" data-i18n="f5_d"></p></div></div>
+      </div>
+      <div>
+        <div class="card card-b">
+          <div style="font-size:11px;color:var(--cyan);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px" data-i18n="how_works"></div>
+          <div style="text-align:center;padding:16px;background:rgba(0,0,0,.3);border-radius:10px;margin-bottom:12px">
+            <div style="font-size:40px;margin-bottom:10px">🔵</div>
+            <div style="font-size:12px;color:var(--light);line-height:1.8">
+              <strong style="color:var(--cyan)" data-i18n="faraday"></strong><br>
+              <span data-i18n="faraday_desc"></span><br>
+              <span style="color:var(--green);font-weight:700" data-i18n="faraday_result"></span>
+            </div>
+          </div>
+          <p style="font-size:11px;color:var(--gray);text-align:center" data-i18n="cond_note"></p>
+        </div>
+        <div class="card card-g" style="margin-top:12px">
+          <div style="font-size:12px;color:var(--green);font-weight:700;margin-bottom:6px" data-i18n="for_cct_t"></div>
+          <p style="font-size:12px" data-i18n="for_cct_d"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S5: Products -->
+<div class="slide" id="s5">
+  <div class="inner">
+    <div class="label" data-i18n="s5_label"></div>
+    <h2 data-i18n="s5_title"></h2>
+    <div class="divider"></div>
+    <div class="grid3" style="margin-top:22px">
+      <div class="card" style="border-top:3px solid var(--blue)">
+        <div class="icon icon-b">🔵</div>
+        <h3 style="font-size:14px;margin-bottom:6px" data-i18n="p1_title"></h3>
+        <p style="font-size:11px;margin-bottom:14px" data-i18n="p1_desc2"></p>
+        <div class="spec"><span class="spec-k" data-i18n="sp_diam"></span><span class="spec-v">DN15–DN2000</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_acc"></span><span class="spec-v">±0.5%</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_lin"></span><span class="spec-v">PTFE / Rubber</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_prot"></span><span class="spec-v">IP67/IP68</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_out"></span><span class="spec-v">4-20mA, Pulse, RS485</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_fl"></span><span class="spec-v">PN10-PN40 / ANSI</span></div>
+      </div>
+      <div class="card" style="border-top:3px solid var(--orange)">
+        <div class="icon icon-o">📡</div>
+        <h3 style="font-size:14px;margin-bottom:6px" data-i18n="p2_title"></h3>
+        <p style="font-size:11px;margin-bottom:14px" data-i18n="p2_desc2"></p>
+        <div class="spec"><span class="spec-k" data-i18n="sp_meth"></span><span class="spec-v" data-i18n="sp_clamp"></span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_acc"></span><span class="spec-v">±1.0%</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_inst"></span><span class="spec-v" data-i18n="sp_nopipe"></span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_prot"></span><span class="spec-v">IP67</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_out"></span><span class="spec-v">4-20mA, RS485</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_best"></span><span class="spec-v" data-i18n="sp_thin"></span></div>
+      </div>
+      <div class="card" style="border-top:3px solid var(--green)">
+        <div class="icon icon-g">📊</div>
+        <h3 style="font-size:14px;margin-bottom:6px" data-i18n="p3_title"></h3>
+        <p style="font-size:11px;margin-bottom:14px" data-i18n="p3_desc2"></p>
+        <div class="spec"><span class="spec-k" data-i18n="sp_type"></span><span class="spec-v" data-i18n="sp_radar"></span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_acc"></span><span class="spec-v">±2mm</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_range"></span><span class="spec-v">0.3–30m</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_prot"></span><span class="spec-v">IP67</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_out"></span><span class="spec-v">4-20mA, HART, RS485</span></div>
+        <div class="spec"><span class="spec-k" data-i18n="sp_media"></span><span class="spec-v" data-i18n="sp_liq"></span></div>
+      </div>
+    </div>
+    <div class="card" style="background:rgba(37,99,235,.05);border-color:rgba(37,99,235,.15);margin-top:18px;text-align:center">
+      <p style="font-size:13px" data-i18n="cert_note"></p>
+    </div>
+  </div>
+</div>
+
+<!-- S6: Compare -->
+<div class="slide" id="s6">
+  <div class="inner">
+    <div class="label" data-i18n="s6_label"></div>
+    <h2 data-i18n="s6_title"></h2>
+    <div class="divider"></div>
+    <div style="margin-top:20px">
+      <table class="ct">
+        <thead>
+          <tr>
+            <th style="color:var(--gray);width:25%" data-i18n="col_feat"></th>
+            <th style="color:var(--cyan)">🔵 Net Flow</th>
+            <th style="color:var(--gray)" data-i18n="col_mech"></th>
+            <th style="color:var(--gray)" data-i18n="col_west"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="feat" data-i18n="row_acc"></td><td class="good">±0.5%</td><td class="bad">±2–5%</td><td class="good">±0.3–0.5%</td></tr>
+          <tr><td class="feat" data-i18n="row_mov"></td><td class="good" data-i18n="val_none"></td><td class="bad" data-i18n="val_yes"></td><td class="good" data-i18n="val_none"></td></tr>
+          <tr><td class="feat" data-i18n="row_chem"></td><td class="good">PTFE, Hard Rubber, Neoprene</td><td class="bad" data-i18n="val_lim"></td><td class="good" data-i18n="val_full"></td></tr>
+          <tr><td class="feat" data-i18n="row_del"></td><td class="good" data-i18n="val_fast"></td><td class="warn" data-i18n="val_loc"></td><td class="bad" data-i18n="val_long"></td></tr>
+          <tr><td class="feat" data-i18n="row_sup"></td><td class="good" data-i18n="val_supp_nf"></td><td class="bad" data-i18n="val_lim2"></td><td class="warn" data-i18n="val_dist"></td></tr>
+          <tr><td class="feat" data-i18n="row_price"></td><td class="good" data-i18n="val_comp"></td><td class="warn" data-i18n="val_tco"></td><td class="bad" data-i18n="val_prem"></td></tr>
+          <tr><td class="feat" data-i18n="row_plc"></td><td class="good">4-20mA, Pulse, RS485/Modbus</td><td class="bad" data-i18n="val_pulse"></td><td class="good" data-i18n="val_fullp"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="background:rgba(6,182,212,.05);border-color:rgba(6,182,212,.15);margin-top:18px;text-align:center">
+      <p style="font-size:13px" data-i18n="bottom_line"></p>
+    </div>
+  </div>
+</div>
+
+<!-- S7: ROI -->
+<div class="slide" id="s7">
+  <div class="inner">
+    <div class="label" data-i18n="s7_label"></div>
+    <h2 data-i18n="s7_title"></h2>
+    <div class="divider"></div>
+    <div class="grid2" style="margin-top:24px">
+      <div>
+        <div class="roi-card" style="margin-bottom:14px">
+          <div class="roi-num" data-i18n="roi1_num"></div>
+          <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:6px" data-i18n="roi1_lbl"></div>
+          <p style="font-size:12px;margin-top:6px" data-i18n="roi1_desc"></p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-num" data-i18n="roi2_num"></div>
+          <div style="font-size:12px;color:var(--green);font-weight:600;margin-top:6px" data-i18n="roi2_lbl"></div>
+          <p style="font-size:12px;margin-top:6px" data-i18n="roi2_desc"></p>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:12px"><div class="icon icon-g">✅</div><h3 style="font-size:14px;margin-bottom:6px" data-i18n="v1_t"></h3><p style="font-size:12px" data-i18n="v1_d"></p></div>
+        <div class="card" style="margin-bottom:12px"><div class="icon icon-c">📈</div><h3 style="font-size:14px;margin-bottom:6px" data-i18n="v2_t"></h3><p style="font-size:12px" data-i18n="v2_d"></p></div>
+        <div class="card"><div class="icon icon-o">🌍</div><h3 style="font-size:14px;margin-bottom:6px" data-i18n="v3_t"></h3><p style="font-size:12px" data-i18n="v3_d"></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S8: Technical note -->
+<div class="slide" id="s8">
+  <div class="inner">
+    <div class="label" data-i18n="s8_label"></div>
+    <h2 data-i18n="s8_title"></h2>
+    <div class="divider"></div>
+    <div style="margin-top:24px">
+      <div class="card card-o">
+        <div style="display:flex;align-items:flex-start;gap:14px">
+          <div style="font-size:32px;flex-shrink:0">⚠️</div>
+          <div>
+            <h3 style="font-size:18px;margin-bottom:10px" data-i18n="note_t"></h3>
+            <p style="font-size:13px;line-height:1.7" data-i18n="note_d"></p>
+          </div>
+        </div>
+      </div>
+      <div class="grid2" style="margin-top:18px">
+        <div class="card card-b">
+          <div class="icon icon-b">🔵</div>
+          <h3 style="font-size:14px;margin-bottom:6px" data-i18n="compat1_t"></h3>
+          <p style="font-size:12px" data-i18n="compat1_d"></p>
+        </div>
+        <div class="card card-o">
+          <div class="icon icon-o">📡</div>
+          <h3 style="font-size:14px;margin-bottom:6px" data-i18n="compat2_t"></h3>
+          <p style="font-size:12px" data-i18n="compat2_d"></p>
+        </div>
+      </div>
+      <div class="card" style="background:rgba(16,185,129,.05);border-color:rgba(16,185,129,.15);margin-top:14px;text-align:center">
+        <p style="font-size:13px" data-i18n="honest"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S9: Next steps -->
+<div class="slide" id="s9">
+  <div class="inner">
+    <div class="label" data-i18n="s9_label"></div>
+    <h2 data-i18n="s9_title"></h2>
+    <div class="divider"></div>
+    <div style="max-width:680px;margin:24px auto 0">
+      <div class="step"><div class="step-n">1</div><div><div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="st1_t"></div><p style="font-size:12px" data-i18n="st1_d"></p></div></div>
+      <div class="step"><div class="step-n">2</div><div><div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="st2_t"></div><p style="font-size:12px" data-i18n="st2_d"></p></div></div>
+      <div class="step"><div class="step-n">3</div><div><div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="st3_t"></div><p style="font-size:12px" data-i18n="st3_d"></p></div></div>
+      <div class="step"><div class="step-n">4</div><div><div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:3px" data-i18n="st4_t"></div><p style="font-size:12px" data-i18n="st4_d"></p></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- S10: Contact -->
+<div class="slide" id="s10">
+  <div style="text-align:center;max-width:560px">
+    <div class="label" data-i18n="s10_label"></div>
+    <div style="font-size:46px;font-weight:900;background:linear-gradient(135deg,#fff,#94A3B8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px">Net Flow</div>
+    <p style="font-size:15px;color:var(--gray);margin-bottom:32px" data-i18n="s10_tag"></p>
+    <div class="contact-card">
+      <div class="ci"><span>🌐</span><span><strong style="color:#fff">netflw.com</strong></span></div>
+      <div class="ci"><span>📧</span><span>info@netflw.com</span></div>
+      <div class="ci"><span>📬</span><span>infonetflw@gmail.com</span></div>
+    </div>
+    <div style="display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap">
+      <span class="tag tag-b" data-i18n="ct1"></span>
+      <span class="tag tag-g" data-i18n="ct2"></span>
+      <span class="tag tag-c" data-i18n="ct3"></span>
+    </div>
+    <div class="card" style="background:rgba(37,99,235,.08);border-color:rgba(37,99,235,.2);margin-top:20px">
+      <p style="font-size:13px;font-style:italic" data-i18n="quote"></p>
+      <p style="font-size:11px;color:var(--cyan);margin-top:6px;font-weight:700" data-i18n="quote_a"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Nav -->
+<div class="nav">
+  <button id="pb2" onclick="go(-1)" disabled>←</button>
+  <div class="counter" id="cnt">1 / 10</div>
+  <button id="nb" onclick="go(1)">→</button>
+</div>
+
+<script>
+const T = {
+EN:{
+s1_title:"Precision Flow Measurement for Paint Manufacturing",
+s1_sub:"Electromagnetic Flow Meters · Level Indicators · Industrial Automation",
+tag_lines:"3 Production Lines",tag_portfolio:"1,000+ Product Portfolio",tag_tech:"Italian Technology Standards",
+s2_label:"Understanding Your Business",s2_title:"We've done our homework on CCT",
+stat_founded:"Founded",stat_skus:"Product SKUs",stat_lines:"Production Lines",
+line1_t:"Line 1 — Emulsion Paints",line1_d:"Water-based, high conductivity — ideal for electromagnetic measurement",
+line2_t:"Line 2 — Thinners / Solvents",line2_d:"Low conductivity — special measurement consideration required",
+line3_t:"Line 3 — Resins",line3_d:"Viscous liquids — lining material selection is critical",
+notable_proj:"Notable Projects",mkt_pos_label:"Market Position",
+mkt_pos_text:"Official distributor of Italian brands across <strong style='color:#fff'>Caucasus & Central Asia</strong>. Built on Italian technology standards — precision and quality are core to your brand promise.",
+s3_label:"The Challenge",s3_title:"What happens when flow measurement is imprecise?",
+p1_num:"3–5%",p1_lbl:"Raw Material Waste",p1_desc:"Inaccurate dosing on 1,000+ formulations means overpoured pigments, binders, and additives — wasted on every batch.",
+p2_num:"Rework",p2_lbl:"Batch Inconsistency",p2_desc:"Colour, viscosity, and coverage variations between batches damage quality reputation — critical for premium project specs.",
+p3_num:"Downtime",p3_lbl:"Mechanical Meter Failures",p3_desc:"Traditional mechanical meters clog with pigments, erode in solvents, and require constant maintenance.",
+risk_text:"<strong style='color:#EF4444'>The real risk:</strong> When Marriott Tbilisi specifies your paint — inconsistent quality is not an option. Your Italian technology promise demands Italian precision in measurement.",
+s4_label:"Our Solution",s4_title:"Electromagnetic Flow Measurement — Zero Compromises",
+f1_t:"No Moving Parts",f1_d:"Zero mechanical wear. No clogging from pigments. No corrosion from solvents.",
+f2_t:"±0.5% Accuracy",f2_d:"Sub-half-percent accuracy across full flow range — critical for consistent formulation dosing.",
+f3_t:"Chemical-Resistant Linings",f3_d:"PTFE for solvents/acids. Hard rubber for abrasive slurries. Neoprene for general purpose.",
+f4_t:"Full PLC/SCADA Integration",f4_d:"4-20mA, pulse, RS485/Modbus outputs. Direct integration for automated dosing control.",
+f5_t:"IP67 Protection",f5_d:"Full dust and immersion protection. Safe in wash-down and humid production environments.",
+how_works:"How Electromagnetic Meters Work",faraday:"Faraday's Law",
+faraday_desc:"Magnetic field applied across pipe · Conductive liquid generates voltage proportional to velocity",
+faraday_result:"→ No obstruction. No pressure drop. No wear.",
+cond_note:"Works with any conductive liquid (conductivity >5 µS/cm)",
+for_cct_t:"For CCT's Paint Lines",for_cct_d:"Water-based emulsion paints and resins are excellent candidates. Conductivity is well within range for accurate electromagnetic measurement.",
+s5_label:"Product Range",s5_title:"The Right Meter for Every Line",
+p1_title:"Electromagnetic Flow Meter",p1_desc2:"For water-based paints, emulsions, resins — any conductive liquid",
+p2_title:"Ultrasonic Flow Meter",p2_desc2:"For thinners and solvents with low conductivity (<5 µS/cm)",
+p3_title:"Level Indicators",p3_desc2:"For tank inventory management across all product types",
+sp_diam:"Pipe diameter",sp_acc:"Accuracy",sp_lin:"Lining",sp_prot:"Protection",sp_out:"Output",sp_fl:"Flange",
+sp_meth:"Method",sp_inst:"Installation",sp_best:"Best for",sp_type:"Type",sp_range:"Range",sp_media:"Media",
+sp_clamp:"Clamp-on / Inline",sp_nopipe:"No pipe cutting",sp_thin:"Thinners, solvents",
+sp_radar:"Radar / Ultrasonic",sp_liq:"Liquids, pastes, slurries",
+cert_note:"All products: <strong style='color:#fff'>CE certified</strong>, full documentation, <strong style='color:#fff'>technical support from Turkey</strong>. Visit: <strong style='color:#06B6D4'>netflw.com</strong>",
+s6_label:"Competitive Advantage",s6_title:"Why Net Flow over alternatives?",
+col_feat:"Feature",col_mech:"Mechanical Meters",col_west:"Western Brands (Endress, ABB)",
+row_acc:"Accuracy",row_mov:"Moving Parts / Maintenance",row_chem:"Chemical Resistance",
+row_del:"Delivery / Lead Time",row_sup:"Technical Support",row_price:"Price Point",row_plc:"PLC Integration",
+val_none:"None — maintenance-free",val_yes:"Yes — frequent cleaning",
+val_lim:"Limited — material wear",val_full:"Full range",
+val_fast:"Fast — Turkey proximity",val_loc:"Available locally",val_long:"Long — EU import",
+val_supp_nf:"Direct, regional, English/Russian",val_lim2:"Limited",val_dist:"Distributor-dependent",
+val_comp:"Competitive — direct manufacturer",val_tco:"Low upfront, high TCO",val_prem:"Premium pricing",
+val_pulse:"Pulse only (basic)",val_fullp:"Full protocol support",
+bottom_line:"<strong style='color:#06B6D4'>Bottom line:</strong> Net Flow delivers Western-grade accuracy at a fraction of the cost, with regional logistics advantage. <span style='color:#CBD5E1'>Best total cost of ownership for a Caucasus manufacturer.</span>",
+s7_label:"Business Value",s7_title:"The ROI for CCT",
+roi1_num:"3–5%",roi1_lbl:"Raw Material Savings",roi1_desc:"Precise dosing eliminates overpouring. Small savings per batch compound significantly across 1,000+ formulations annually.",
+roi2_num:"Zero",roi2_lbl:"Maintenance Downtime",roi2_desc:"No moving parts = no scheduled shutdowns. No unplanned failures. Maximum production uptime.",
+v1_t:"Consistent Quality = Protected Reputation",v1_d:"Your premium clients demand repeatable, spec-compliant paint. Precise flow ensures every batch matches exactly.",
+v2_t:"Automation Readiness",v2_d:"4-20mA and RS485 outputs enable automated dosing — reducing operator intervention and enabling digital transformation.",
+v3_t:"Supply Chain Advantage",v3_d:"Net Flow ships from Turkey — significantly shorter lead times vs. European alternatives. Fast delivery, minimal disruption.",
+s8_label:"Technical Transparency",s8_title:"An honest note about your thinner line",
+note_t:"Solvents & Thinners Require Special Consideration",
+note_d:"Electromagnetic meters require the liquid to be <strong style='color:#fff'>electrically conductive (min. ~5 µS/cm)</strong>. Most solvents and thinners have very low conductivity — a standard EM meter may not work for your thinner line.",
+compat1_t:"Lines 1 & 3 — Confirmed Compatible",compat1_d:"Emulsion paints and resin systems typically exceed 5 µS/cm. <strong style='color:#fff'>Electromagnetic meters are ideal</strong> for these applications.",
+compat2_t:"Line 2 (Thinners) — Ultrasonic Recommended",compat2_d:"For thinners/solvents we recommend an <strong style='color:#fff'>ultrasonic clamp-on meter</strong> — no pipe cutting, no chemical contact, works regardless of conductivity.",
+honest:"<strong style='color:#10B981'>Why we're telling you this:</strong> We sent you a technical questionnaire to confirm conductivity and pipe specs. Our goal: recommend the <em>right</em> product, not just sell. This is how we build partnerships.",
+s9_label:"Moving Forward",s9_title:"Next Steps to Get You Measuring Right",
+st1_t:"Return the Technical Questionnaire",st1_d:"Questionnaire sent covers: pipe diameter, flow rate, pressure, temperature, conductivity, flange standard — for each of your 3 lines. Takes ~15 minutes.",
+st2_t:"Receive Custom Product Specification",st2_d:"We prepare a precise technical proposal: correct meter sizes, lining materials, electrode materials, signal outputs — matched to each line.",
+st3_t:"Quotation with Full Technical Documentation",st3_d:"Formal quotation with datasheet, dimensional drawing, installation manual, and CE certificate. No surprises.",
+st4_t:"Pilot Unit — Prove Before You Scale",st4_d:"Start with a pilot on Line 1 (emulsion paints). Verify accuracy and integration before committing to all three lines.",
+s10_label:"Let's Talk",s10_tag:"Electromagnetic Flow Meters & Level Indicators",
+ct1:"CE Certified",ct2:"Ships from Turkey",ct3:"EN · RU · TR Support",
+quote:"\"We don't just sell meters — we solve measurement problems. Send us your specs and we'll tell you exactly what you need.\"",
+quote_a:"— Net Flow Technical Team"
+},
+
+RU:{
+s1_title:"Точное измерение расхода для производства красок",
+s1_sub:"Электромагнитные расходомеры · Уровнемеры · Промышленная автоматизация",
+tag_lines:"3 производственные линии",tag_portfolio:"Портфель 1000+ продуктов",tag_tech:"Итальянские технологии",
+s2_label:"Изучение вашего бизнеса",s2_title:"Мы изучили CCT Chemicals Coating",
+stat_founded:"Основана",stat_skus:"Артикулов продукции",stat_lines:"Производственных линий",
+line1_t:"Линия 1 — Эмульсионные краски",line1_d:"Водная основа, высокая проводимость — идеально для электромагнитного измерения",
+line2_t:"Линия 2 — Растворители / Тинеры",line2_d:"Низкая проводимость — требуется специальное решение",
+line3_t:"Линия 3 — Смолы",line3_d:"Вязкие жидкости — критичен выбор материала футеровки",
+notable_proj:"Реализованные проекты",mkt_pos_label:"Рыночная позиция",
+mkt_pos_text:"Официальный дистрибьютор итальянских брендов на <strong style='color:#fff'>Кавказе и в Средней Азии</strong>. Итальянские технологии — точность и качество в основе вашего бренда.",
+s3_label:"Проблема",s3_title:"Что происходит при неточном измерении расхода?",
+p1_num:"3–5%",p1_lbl:"Перерасход сырья",p1_desc:"Неточная дозировка 1000+ рецептур означает перелив пигментов и добавок — потери на каждой партии.",
+p2_num:"Переработка",p2_lbl:"Несоответствие партий",p2_desc:"Различия в цвете, вязкости и покрытии между партиями — критично для премиальных проектов.",
+p3_num:"Простой",p3_lbl:"Отказы механических счётчиков",p3_desc:"Механические расходомеры засоряются пигментами, разрушаются в растворителях, требуют постоянного обслуживания.",
+risk_text:"<strong style='color:#EF4444'>Реальный риск:</strong> Когда Marriott Tbilisi использует вашу краску — непоследовательное качество недопустимо. Итальянские технологии требуют итальянской точности.",
+s4_label:"Наше решение",s4_title:"Электромагнитное измерение расхода — без компромиссов",
+f1_t:"Нет подвижных частей",f1_d:"Нулевой механический износ. Не засоряется пигментами. Не коррозирует в растворителях.",
+f2_t:"Точность ±0,5%",f2_d:"Высокая точность во всём диапазоне расходов — критично для стабильного дозирования рецептур.",
+f3_t:"Химически стойкая футеровка",f3_d:"ПТФЭ для растворителей и кислот. Твёрдая резина для абразивных суспензий. Неопрен для общего применения.",
+f4_t:"Полная интеграция с АСУ",f4_d:"Выходы 4-20мА, импульс, RS485/Modbus. Прямая интеграция с ПЛК/SCADA для автоматизации дозирования.",
+f5_t:"Защита IP67",f5_d:"Полная защита от пыли и влаги. Безопасен при мойке и во влажных производственных помещениях.",
+how_works:"Принцип работы электромагнитного расходомера",faraday:"Закон Фарадея",
+faraday_desc:"Магнитное поле создаётся поперёк трубы · Проводящая жидкость генерирует напряжение, пропорциональное скорости",
+faraday_result:"→ Нет препятствий. Нет потери давления. Нет износа.",
+cond_note:"Работает с любой проводящей жидкостью (проводимость >5 мкСм/см)",
+for_cct_t:"Для линий CCT",for_cct_d:"Эмульсионные краски и смолы на водной основе — отличные кандидаты. Проводимость в пределах нормы для точного измерения.",
+s5_label:"Ассортимент продукции",s5_title:"Правильный расходомер для каждой линии",
+p1_title:"Электромагнитный расходомер",p1_desc2:"Для красок на водной основе, эмульсий, смол",
+p2_title:"Ультразвуковой расходомер",p2_desc2:"Для растворителей с низкой проводимостью (<5 мкСм/см)",
+p3_title:"Уровнемеры",p3_desc2:"Для контроля запасов в резервуарах",
+sp_diam:"Диаметр трубы",sp_acc:"Точность",sp_lin:"Футеровка",sp_prot:"Защита",sp_out:"Выход",sp_fl:"Фланец",
+sp_meth:"Метод",sp_inst:"Монтаж",sp_best:"Применение",sp_type:"Тип",sp_range:"Диапазон",sp_media:"Среда",
+sp_clamp:"Накладной / Врезной",sp_nopipe:"Без врезки в трубу",sp_thin:"Растворители, тинеры",
+sp_radar:"Радар / Ультразвук",sp_liq:"Жидкости, пасты, суспензии",
+cert_note:"Все приборы: <strong style='color:#fff'>сертификат CE</strong>, полная документация, <strong style='color:#fff'>техподдержка из Турции</strong>. Сайт: <strong style='color:#06B6D4'>netflw.com</strong>",
+s6_label:"Конкурентное преимущество",s6_title:"Почему Net Flow, а не альтернативы?",
+col_feat:"Характеристика",col_mech:"Механические счётчики",col_west:"Западные бренды (Endress, ABB)",
+row_acc:"Точность",row_mov:"Подвижные части / Обслуживание",row_chem:"Химическая стойкость",
+row_del:"Поставка / Сроки",row_sup:"Техническая поддержка",row_price:"Стоимость",row_plc:"Интеграция с ПЛК",
+val_none:"Нет — без обслуживания",val_yes:"Да — частая чистка",
+val_lim:"Ограниченная — материальный износ",val_full:"Полный ассортимент",
+val_fast:"Быстро — близость Турции",val_loc:"Местная доступность",val_long:"Долгие сроки — импорт из ЕС",
+val_supp_nf:"Прямая, региональная, рус/англ",val_lim2:"Ограниченная",val_dist:"Через дистрибьютора",
+val_comp:"Конкурентная — прямой производитель",val_tco:"Низкая цена, высокие затраты",val_prem:"Премиум цены",
+val_pulse:"Только импульс (базовый)",val_fullp:"Полная поддержка протоколов",
+bottom_line:"<strong style='color:#06B6D4'>Итог:</strong> Net Flow обеспечивает точность западного уровня по доступной цене с логистическим преимуществом близкого расположения. <span style='color:#CBD5E1'>Лучшая совокупная стоимость владения для производителей Кавказа.</span>",
+s7_label:"Ценность для бизнеса",s7_title:"ROI для CCT",
+roi1_num:"3–5%",roi1_lbl:"Экономия сырья",roi1_desc:"Точное дозирование устраняет перелив. Небольшая экономия на каждой партии складывается в значительную годовую сумму.",
+roi2_num:"Ноль",roi2_lbl:"Простои на обслуживание",roi2_desc:"Нет подвижных частей = нет плановых остановов. Нет внеплановых отказов. Максимальное время работы.",
+v1_t:"Стабильное качество = защита репутации",v1_d:"Ваши премиальные клиенты требуют повторяемого качества. Точное измерение гарантирует соответствие каждой партии.",
+v2_t:"Готовность к автоматизации",v2_d:"Выходы 4-20мА и RS485 позволяют автоматизировать дозирование и снизить участие операторов.",
+v3_t:"Преимущество цепочки поставок",v3_d:"Net Flow поставляет из Турции — значительно короче сроки, чем у европейских аналогов.",
+s8_label:"Техническая прозрачность",s8_title:"Честное замечание о линии растворителей",
+note_t:"Растворители требуют особого подхода",
+note_d:"Электромагнитные расходомеры работают по закону Фарадея и требуют <strong style='color:#fff'>электрической проводимости жидкости (мин. ~5 мкСм/см)</strong>. Большинство растворителей имеют очень низкую проводимость.",
+compat1_t:"Линии 1 и 3 — совместимы",compat1_d:"Эмульсионные краски и смолы обычно превышают 5 мкСм/см. <strong style='color:#fff'>Электромагнитные расходомеры идеальны</strong> для этих применений.",
+compat2_t:"Линия 2 (растворители) — рекомендован ультразвук",compat2_d:"Для линии растворителей рекомендуем <strong style='color:#fff'>накладной ультразвуковой расходомер</strong> — без врезки, без контакта с химией.",
+honest:"<strong style='color:#10B981'>Почему мы говорим вам это:</strong> Мы отправили технический опросник для уточнения данных. Наша цель — рекомендовать <em>правильный</em> прибор, а не просто продать. Так строится долгосрочное партнёрство.",
+s9_label:"Следующие шаги",s9_title:"Шаги к точному измерению",
+st1_t:"Заполните технический опросник",st1_d:"Опросник охватывает: диаметр трубы, расход, давление, температуру, проводимость, стандарт фланца для каждой из 3 линий. ~15 минут.",
+st2_t:"Получите специализированное техническое предложение",st2_d:"На основе ваших данных подготовим точное предложение: типоразмеры, материалы футеровки и электродов, сигналы выхода.",
+st3_t:"Коммерческое предложение с полной документацией",st3_d:"Официальное КП с техническими данными, чертежами, руководством по монтажу и сертификатом CE.",
+st4_t:"Пилотная установка — проверьте перед масштабированием",st4_d:"Рекомендуем начать с Линии 1 (эмульсионные краски). Проверьте точность и интеграцию перед закупкой на все три линии.",
+s10_label:"Свяжитесь с нами",s10_tag:"Электромагнитные расходомеры и уровнемеры",
+ct1:"Сертификат CE",ct2:"Поставка из Турции",ct3:"Поддержка: рус / англ / тур",
+quote:"«Мы не просто продаём расходомеры — мы решаем задачи измерения. Пришлите технические данные, и мы точно скажем, что вам нужно.»",
+quote_a:"— Техническая команда Net Flow"
+},
+
+FR:{
+s1_title:"Mesure de débit de précision pour la fabrication de peintures",
+s1_sub:"Débitmètres électromagnétiques · Indicateurs de niveau · Automatisation industrielle",
+tag_lines:"3 lignes de production",tag_portfolio:"Portefeuille 1 000+ produits",tag_tech:"Technologies italiennes",
+s2_label:"Comprendre votre activité",s2_title:"Nous avons étudié CCT Chemicals Coating",
+stat_founded:"Fondée en",stat_skus:"Références produits",stat_lines:"Lignes de production",
+line1_t:"Ligne 1 — Peintures en émulsion",line1_d:"Base aqueuse, haute conductivité — idéale pour la mesure électromagnétique",
+line2_t:"Ligne 2 — Diluants / Solvants",line2_d:"Faible conductivité — solution de mesure spéciale requise",
+line3_t:"Ligne 3 — Résines",line3_d:"Liquides visqueux — choix du revêtement critique",
+notable_proj:"Projets notables",mkt_pos_label:"Position sur le marché",
+mkt_pos_text:"Distributeur officiel de marques italiennes en <strong style='color:#fff'>Caucase et Asie centrale</strong>. Technologies italiennes — précision et qualité au cœur de votre promesse de marque.",
+s3_label:"Le défi",s3_title:"Que se passe-t-il avec une mesure de débit imprécise?",
+p1_num:"3–5%",p1_lbl:"Gaspillage de matières premières",p1_desc:"Un dosage inexact sur 1 000+ formulations signifie des débordements de pigments et additifs — gaspillés à chaque lot.",
+p2_num:"Retravail",p2_lbl:"Incohérence des lots",p2_desc:"Les variations de couleur, viscosité et couverture entre les lots nuisent à la réputation qualité.",
+p3_num:"Arrêt",p3_lbl:"Pannes des compteurs mécaniques",p3_desc:"Les compteurs mécaniques se bouchent avec les pigments, se corrodent dans les solvants, nécessitent un entretien constant.",
+risk_text:"<strong style='color:#EF4444'>Le vrai risque:</strong> Quand le Marriott Tbilisi spécifie votre peinture — la qualité inconsistante n'est pas une option. Votre promesse technologique italienne exige une précision italienne.",
+s4_label:"Notre solution",s4_title:"Mesure électromagnétique — zéro compromis",
+f1_t:"Aucune pièce mobile",f1_d:"Zéro usure mécanique. Pas de colmatage par les pigments. Pas de corrosion par les solvants.",
+f2_t:"Précision ±0,5%",f2_d:"Précision inférieure à 0,5% sur toute la plage de débit — critique pour un dosage cohérent.",
+f3_t:"Revêtements résistants aux produits chimiques",f3_d:"PTFE pour solvants et acides. Caoutchouc dur pour suspensions abrasives. Néoprène usage général.",
+f4_t:"Intégration complète API/SCADA",f4_d:"Sorties 4-20mA, impulsion, RS485/Modbus. Intégration directe pour le dosage automatisé.",
+f5_t:"Protection IP67",f5_d:"Protection totale contre la poussière et l'immersion. Sûr dans les environnements humides.",
+how_works:"Fonctionnement du débitmètre électromagnétique",faraday:"Loi de Faraday",
+faraday_desc:"Champ magnétique appliqué en travers du tuyau · Le liquide conducteur génère une tension proportionnelle à la vitesse",
+faraday_result:"→ Aucun obstacle. Aucune perte de charge. Aucune usure.",
+cond_note:"Fonctionne avec tout liquide conducteur (conductivité >5 µS/cm)",
+for_cct_t:"Pour les lignes de CCT",for_cct_d:"Les peintures en émulsion et les systèmes de résines sont d'excellents candidats. La conductivité est bien dans la plage requise.",
+s5_label:"Gamme de produits",s5_title:"Le bon débitmètre pour chaque ligne",
+p1_title:"Débitmètre électromagnétique",p1_desc2:"Pour peintures à l'eau, émulsions, résines — tout liquide conducteur",
+p2_title:"Débitmètre ultrasonique",p2_desc2:"Pour diluants et solvants à faible conductivité (<5 µS/cm)",
+p3_title:"Indicateurs de niveau",p3_desc2:"Pour la gestion des stocks en cuve",
+sp_diam:"Diamètre du tuyau",sp_acc:"Précision",sp_lin:"Revêtement",sp_prot:"Protection",sp_out:"Sortie",sp_fl:"Bride",
+sp_meth:"Méthode",sp_inst:"Installation",sp_best:"Application",sp_type:"Type",sp_range:"Plage",sp_media:"Fluide",
+sp_clamp:"Fixation externe / En ligne",sp_nopipe:"Sans perçage du tuyau",sp_thin:"Diluants, solvants",
+sp_radar:"Radar / Ultrason",sp_liq:"Liquides, pâtes, suspensions",
+cert_note:"Tous les produits: <strong style='color:#fff'>certification CE</strong>, documentation complète, <strong style='color:#fff'>support technique de Turquie</strong>. Site: <strong style='color:#06B6D4'>netflw.com</strong>",
+s6_label:"Avantage concurrentiel",s6_title:"Pourquoi Net Flow plutôt que les alternatives?",
+col_feat:"Caractéristique",col_mech:"Compteurs mécaniques",col_west:"Marques occidentales (Endress, ABB)",
+row_acc:"Précision",row_mov:"Pièces mobiles / Entretien",row_chem:"Résistance chimique",
+row_del:"Livraison / Délais",row_sup:"Support technique",row_price:"Prix",row_plc:"Intégration automate",
+val_none:"Aucune — sans entretien",val_yes:"Oui — nettoyage fréquent",
+val_lim:"Limitée — usure des matériaux",val_full:"Gamme complète",
+val_fast:"Rapide — proximité Turquie",val_loc:"Disponible localement",val_long:"Longs délais — import UE",
+val_supp_nf:"Direct, régional, FR/EN/RU",val_lim2:"Limité",val_dist:"Via distributeur",
+val_comp:"Compétitif — fabricant direct",val_tco:"Faible prix, TCO élevé",val_prem:"Prix premium",
+val_pulse:"Impulsion seulement",val_fullp:"Protocoles complets",
+bottom_line:"<strong style='color:#06B6D4'>En résumé:</strong> Net Flow offre une précision de niveau occidental à une fraction du coût, avec l'avantage logistique de la proximité régionale.",
+s7_label:"Valeur commerciale",s7_title:"Le ROI pour CCT",
+roi1_num:"3–5%",roi1_lbl:"Économies de matières premières",roi1_desc:"Un dosage précis élimine les débordements. De petites économies par lot s'accumulent sur 1 000+ formulations annuelles.",
+roi2_num:"Zéro",roi2_lbl:"Arrêt pour maintenance",roi2_desc:"Aucune pièce mobile = aucun arrêt planifié. Aucune panne imprévue. Disponibilité maximale.",
+v1_t:"Qualité constante = réputation protégée",v1_d:"Vos clients premium exigent une peinture reproductible. La mesure précise garantit que chaque lot correspond exactement.",
+v2_t:"Prêt pour l'automatisation",v2_d:"Les sorties 4-20mA et RS485 permettent un dosage automatisé — réduisant l'intervention des opérateurs.",
+v3_t:"Avantage supply chain",v3_d:"Net Flow livre depuis la Turquie — délais nettement plus courts que les alternatives européennes.",
+s8_label:"Transparence technique",s8_title:"Une note honnête sur votre ligne de diluants",
+note_t:"Les solvants nécessitent une attention particulière",
+note_d:"Les débitmètres électromagnétiques nécessitent que le liquide soit <strong style='color:#fff'>électriquement conducteur (min. ~5 µS/cm)</strong>. La plupart des solvants ont une très faible conductivité.",
+compat1_t:"Lignes 1 & 3 — Compatibles",compat1_d:"Peintures en émulsion et résines dépassent généralement 5 µS/cm. <strong style='color:#fff'>Les débitmètres EM sont idéaux</strong> pour ces applications.",
+compat2_t:"Ligne 2 (Diluants) — Ultrason recommandé",compat2_d:"Pour les diluants/solvants, nous recommandons un <strong style='color:#fff'>débitmètre ultrasonique à fixation externe</strong> — sans perçage, sans contact chimique.",
+honest:"<strong style='color:#10B981'>Pourquoi vous dire cela:</strong> Nous vous avons envoyé un questionnaire technique pour confirmer les valeurs de conductivité. Notre objectif: recommander le <em>bon</em> produit, pas seulement vendre.",
+s9_label:"Prochaines étapes",s9_title:"Étapes vers une mesure précise",
+st1_t:"Retournez le questionnaire technique",st1_d:"Le questionnaire couvre: diamètre, débit, pression, température, conductivité, standard de bride — pour chacune de vos 3 lignes. ~15 minutes.",
+st2_t:"Recevez une spécification produit personnalisée",st2_d:"Nous préparons une proposition technique précise: tailles, matériaux de revêtement, matériaux d'électrodes, sorties — adaptée à chaque ligne.",
+st3_t:"Devis avec documentation technique complète",st3_d:"Devis formel avec fiche technique, plan dimensionnel, manuel d'installation et certificat CE.",
+st4_t:"Unité pilote — prouvez avant de déployer",st4_d:"Commencez par un pilote sur la Ligne 1 (peintures en émulsion). Vérifiez la précision avant de vous engager sur les trois lignes.",
+s10_label:"Contactez-nous",s10_tag:"Débitmètres électromagnétiques & Indicateurs de niveau",
+ct1:"Certifié CE",ct2:"Livraison depuis la Turquie",ct3:"Support FR · EN · RU",
+quote:"\"Nous ne vendons pas seulement des débitmètres — nous résolvons des problèmes de mesure. Envoyez-nous vos specs et nous vous dirons exactement ce dont vous avez besoin.\"",
+quote_a:"— Équipe technique Net Flow"
+},
+
+AR:{
+s1_title:"قياس التدفق الدقيق لتصنيع الدهانات",
+s1_sub:"عدادات التدفق الكهرومغناطيسية · مؤشرات المستوى · الأتمتة الصناعية",
+tag_lines:"3 خطوط إنتاج",tag_portfolio:"أكثر من 1000 منتج",tag_tech:"تقنيات إيطالية",
+s2_label:"فهم أعمالكم",s2_title:"لقد أجرينا بحثنا حول CCT Chemicals Coating",
+stat_founded:"سنة التأسيس",stat_skus:"منتجات",stat_lines:"خطوط إنتاج",
+line1_t:"الخط 1 — دهانات مستحلب",line1_d:"أساس مائي، موصلية عالية — مثالي للقياس الكهرومغناطيسي",
+line2_t:"الخط 2 — مخففات / مذيبات",line2_d:"موصلية منخفضة — يتطلب حلاً خاصاً للقياس",
+line3_t:"الخط 3 — راتنجات",line3_d:"سوائل لزجة — اختيار مادة البطانة أمر بالغ الأهمية",
+notable_proj:"مشاريع بارزة",mkt_pos_label:"الموقع في السوق",
+mkt_pos_text:"موزع رسمي للعلامات الإيطالية في <strong style='color:#fff'>القوقاز وآسيا الوسطى</strong>. مبنية على معايير التكنولوجيا الإيطالية — الدقة والجودة في صميم وعدكم للعملاء.",
+s3_label:"التحدي",s3_title:"ماذا يحدث عندما يكون قياس التدفق غير دقيق؟",
+p1_num:"3–5%",p1_lbl:"هدر المواد الخام",p1_desc:"الجرعات غير الدقيقة في أكثر من 1000 تركيبة تعني صب زائد للمواد — مهدرة في كل دفعة.",
+p2_num:"إعادة عمل",p2_lbl:"عدم اتساق الدفعات",p2_desc:"اختلافات اللون والكثافة والتغطية بين الدفعات تضر بسمعة الجودة.",
+p3_num:"توقف",p3_lbl:"أعطال العدادات الميكانيكية",p3_desc:"العدادات الميكانيكية التقليدية تنسد بالأصباغ وتتآكل في المذيبات وتتطلب صيانة مستمرة.",
+risk_text:"<strong style='color:#EF4444'>الخطر الحقيقي:</strong> عندما يحدد فندق ماريوت تبليسي دهانكم — الجودة غير المتسقة ليست خياراً. وعدكم بالتكنولوجيا الإيطالية يستوجب الدقة الإيطالية في القياس.",
+s4_label:"حلّنا",s4_title:"قياس التدفق الكهرومغناطيسي — بلا تنازلات",
+f1_t:"لا أجزاء متحركة",f1_d:"صفر تآكل ميكانيكي. لا انسداد من الأصباغ. لا تآكل من المذيبات.",
+f2_t:"دقة ±0.5%",f2_d:"دقة قياس عالية عبر نطاق التدفق الكامل — حيوية لجرعات التركيبة المتسقة.",
+f3_t:"بطانات مقاومة للمواد الكيميائية",f3_d:"PTFE للمذيبات والأحماض. مطاط صلب للملاط الكاشط. نيوبرين للاستخدام العام.",
+f4_t:"تكامل كامل مع أنظمة التحكم",f4_d:"مخرجات 4-20mA، نبضة، RS485/Modbus. تكامل مباشر للجرعات الآلية.",
+f5_t:"حماية IP67",f5_d:"حماية كاملة من الغبار والغمر. آمن في بيئات الغسيل والإنتاج الرطبة.",
+how_works:"كيف تعمل عدادات التدفق الكهرومغناطيسية",faraday:"قانون فاراداي",
+faraday_desc:"مجال مغناطيسي يُطبَّق عبر الأنبوب · السائل الموصّل يُولّد جهداً يتناسب مع السرعة",
+faraday_result:"→ لا عوائق. لا انخفاض في الضغط. لا تآكل.",
+cond_note:"يعمل مع أي سائل موصّل (موصلية >5 µS/cm)",
+for_cct_t:"لخطوط CCT",for_cct_d:"دهانات المستحلب على أساس مائي والراتنجات مرشحة ممتازة. مستوى الموصلية ضمن النطاق المطلوب.",
+s5_label:"نطاق المنتجات",s5_title:"العداد المناسب لكل خط",
+p1_title:"عداد التدفق الكهرومغناطيسي",p1_desc2:"للدهانات المائية والمستحلبات والراتنجات",
+p2_title:"عداد التدفق بالموجات فوق الصوتية",p2_desc2:"للمخففات والمذيبات ذات الموصلية المنخفضة",
+p3_title:"مؤشرات المستوى",p3_desc2:"لإدارة مخزون الخزانات",
+sp_diam:"قطر الأنبوب",sp_acc:"الدقة",sp_lin:"البطانة",sp_prot:"الحماية",sp_out:"المخرجات",sp_fl:"الشفة",
+sp_meth:"الطريقة",sp_inst:"التركيب",sp_best:"الأفضل لـ",sp_type:"النوع",sp_range:"النطاق",sp_media:"الوسط",
+sp_clamp:"مشبكي / مدمج",sp_nopipe:"بدون ثقب الأنبوب",sp_thin:"المخففات والمذيبات",
+sp_radar:"رادار / فوق صوتي",sp_liq:"سوائل وعجائن وملاط",
+cert_note:"جميع المنتجات: <strong style='color:#fff'>شهادة CE</strong>، توثيق كامل، <strong style='color:#fff'>دعم فني من تركيا</strong>. الموقع: <strong style='color:#06B6D4'>netflw.com</strong>",
+s6_label:"الميزة التنافسية",s6_title:"لماذا Net Flow بدلاً من البدائل؟",
+col_feat:"الميزة",col_mech:"العدادات الميكانيكية",col_west:"العلامات الغربية (Endress, ABB)",
+row_acc:"الدقة",row_mov:"الأجزاء المتحركة / الصيانة",row_chem:"مقاومة المواد الكيميائية",
+row_del:"التسليم / المهل",row_sup:"الدعم الفني",row_price:"السعر",row_plc:"تكامل PLC",
+val_none:"لا شيء — خالٍ من الصيانة",val_yes:"نعم — تنظيف متكرر",
+val_lim:"محدودة — تآكل المواد",val_full:"نطاق كامل",
+val_fast:"سريع — قرب تركيا",val_loc:"متوفر محلياً",val_long:"مهل طويلة — استيراد أوروبي",
+val_supp_nf:"مباشر، إقليمي، عربي/إنجليزي",val_lim2:"محدود",val_dist:"عبر الموزع",
+val_comp:"تنافسي — مباشر من المصنّع",val_tco:"سعر منخفض، تكلفة إجمالية عالية",val_prem:"أسعار مميزة",
+val_pulse:"نبضة فقط (أساسي)",val_fullp:"دعم بروتوكول كامل",
+bottom_line:"<strong style='color:#06B6D4'>الخلاصة:</strong> تقدم Net Flow دقة على مستوى غربي بجزء من التكلفة، مع ميزة لوجستية القرب الإقليمي.",
+s7_label:"القيمة التجارية",s7_title:"العائد على الاستثمار لـ CCT",
+roi1_num:"3–5%",roi1_lbl:"توفير في المواد الخام",roi1_desc:"الجرعات الدقيقة تقضي على الصب الزائد. التوفيرات الصغيرة لكل دفعة تتراكم بشكل كبير على مدار العام.",
+roi2_num:"صفر",roi2_lbl:"توقف للصيانة",roi2_desc:"لا أجزاء متحركة = لا إيقاف مجدول. لا أعطال غير متوقعة. أقصى وقت تشغيل للإنتاج.",
+v1_t:"جودة متسقة = سمعة محمية",v1_d:"عملاؤكم المميزون يطالبون بدهانات متكررة ومطابقة للمواصفات. القياس الدقيق يضمن مطابقة كل دفعة.",
+v2_t:"الاستعداد للأتمتة",v2_d:"مخرجات 4-20mA وRS485 تتيح التحكم الآلي في الجرعات — تقليل تدخل المشغلين.",
+v3_t:"ميزة سلسلة التوريد",v3_d:"تشحن Net Flow من تركيا — مهل توصيل أقصر بكثير من البدائل الأوروبية.",
+s8_label:"الشفافية التقنية",s8_title:"ملاحظة صادقة حول خط المخففات",
+note_t:"المذيبات والمخففات تتطلب اعتباراً خاصاً",
+note_d:"تعمل عدادات التدفق الكهرومغناطيسية وفق قانون فاراداي وتتطلب أن يكون السائل <strong style='color:#fff'>موصلاً كهربائياً (الحد الأدنى ~5 µS/cm)</strong>. معظم المذيبات لها موصلية منخفضة جداً.",
+compat1_t:"الخطان 1 و3 — متوافقان",compat1_d:"دهانات المستحلب والراتنجات عادةً تتجاوز 5 µS/cm. <strong style='color:#fff'>العدادات الكهرومغناطيسية مثالية</strong> لهذه التطبيقات.",
+compat2_t:"الخط 2 (المخففات) — يُوصى بالموجات فوق الصوتية",compat2_d:"للمذيبات نوصي بـ <strong style='color:#fff'>عداد فوق صوتي مشبكي</strong> — بدون ثقب في الأنبوب، بدون تلامس مع المواد الكيميائية.",
+honest:"<strong style='color:#10B981'>لماذا نخبركم بهذا:</strong> أرسلنا لكم استبياناً تقنياً لتأكيد قيم الموصلية. هدفنا توصية المنتج <em>الصحيح</em>، ليس مجرد البيع.",
+s9_label:"الخطوات التالية",s9_title:"خطوات نحو القياس الصحيح",
+st1_t:"أعيدوا الاستبيان التقني",st1_d:"يغطي الاستبيان: قطر الأنبوب، معدل التدفق، الضغط، درجة الحرارة، الموصلية، معيار الشفة لكل خط. ~15 دقيقة.",
+st2_t:"احصلوا على مواصفة منتج مخصصة",st2_d:"نحضر اقتراحاً تقنياً دقيقاً: أحجام العدادات، مواد البطانة والأقطاب، إشارات الإخراج لكل خط.",
+st3_t:"عرض سعر مع توثيق تقني كامل",st3_d:"عرض سعر رسمي مع بطاقة البيانات والرسومات وكتيب التركيب وشهادة CE.",
+st4_t:"وحدة تجريبية — تحقق قبل التوسع",st4_d:"نوصي بالبدء بتركيب تجريبي على الخط 1 (دهانات المستحلب). تحقق من الدقة والتكامل قبل الالتزام بالخطوط الثلاثة.",
+s10_label:"تواصلوا معنا",s10_tag:"عدادات التدفق الكهرومغناطيسية ومؤشرات المستوى",
+ct1:"شهادة CE",ct2:"الشحن من تركيا",ct3:"دعم: عربي · إنجليزي · تركي",
+quote:"«نحن لا نبيع عدادات فحسب — نحل مشاكل القياس. أرسلوا لنا مواصفاتكم وسنخبركم بالضبط بما تحتاجون.»",
+quote_a:"— الفريق التقني لـ Net Flow"
+},
+
+TR:{
+s1_title:"Boya Üretimi için Hassas Akış Ölçümü",
+s1_sub:"Elektromanyetik Debimetreler · Seviye Göstergeleri · Endüstriyel Otomasyon",
+tag_lines:"3 Üretim Hattı",tag_portfolio:"1.000+ Ürün Portföyü",tag_tech:"İtalyan Teknoloji Standartları",
+s2_label:"İşinizi Anlıyoruz",s2_title:"CCT Chemicals Coating'i araştırdık",
+stat_founded:"Kuruluş",stat_skus:"Ürün SKU",stat_lines:"Üretim Hattı",
+line1_t:"Hat 1 — Emülsiyon Boyalar",line1_d:"Su bazlı, yüksek iletkenlik — elektromanyetik ölçüm için ideal",
+line2_t:"Hat 2 — Tinerler / Çözücüler",line2_d:"Düşük iletkenlik — özel ölçüm çözümü gerekli",
+line3_t:"Hat 3 — Reçineler",line3_d:"Viskoz sıvılar — astar malzeme seçimi kritik",
+notable_proj:"Öne Çıkan Projeler",mkt_pos_label:"Pazar Konumu",
+mkt_pos_text:"<strong style='color:#fff'>Kafkasya ve Orta Asya'da</strong> İtalyan markalarının resmi distribütörü. İtalyan teknoloji standartları üzerine kurulmuş — hassasiyet ve kalite marka vaadinin özü.",
+s3_label:"Sorun",s3_title:"Akış ölçümü hassas olmadığında ne olur?",
+p1_num:"%3–5",p1_lbl:"Hammadde İsrafı",p1_desc:"1.000+ formülasyonda yanlış dozaj, her partide pigment ve katkı maddelerinin fazla kullanımı anlamına gelir.",
+p2_num:"Yeniden İşleme",p2_lbl:"Parti Tutarsızlığı",p2_desc:"Partiler arası renk, viskozite ve örtücülük farklılıkları kalite itibarını zedeler.",
+p3_num:"Duruş",p3_lbl:"Mekanik Sayaç Arızaları",p3_desc:"Geleneksel mekanik sayaçlar pigmentlerle tıkanır, çözücülerde aşınır, sürekli bakım gerektirir.",
+risk_text:"<strong style='color:#EF4444'>Gerçek risk:</strong> Marriott Tbilisi boyayı sizden talep ettiğinde — tutarsız kalite kabul edilemez. İtalyan teknoloji vaadini sürdürmek ölçümde de İtalyan hassasiyeti gerektirir.",
+s4_label:"Çözümümüz",s4_title:"Elektromanyetik Akış Ölçümü — Sıfır Uzlaşma",
+f1_t:"Hareketli Parça Yok",f1_d:"Sıfır mekanik aşınma. Pigmentlerle tıkanma yok. Çözücülerde korozyon yok.",
+f2_t:"±%0,5 Hassasiyet",f2_d:"Tüm akış aralığında yüksek hassasiyet — tutarlı formülasyon dozajı için kritik.",
+f3_t:"Kimyasala Dayanıklı Astar",f3_d:"Çözücü ve asitler için PTFE. Aşındırıcı süspansiyonlar için sert kauçuk. Genel kullanım için neopren.",
+f4_t:"Tam PLC/SCADA Entegrasyonu",f4_d:"4-20mA, nabız, RS485/Modbus çıkışları. Otomatik dozaj kontrolü için doğrudan entegrasyon.",
+f5_t:"IP67 Koruma",f5_d:"Tam toz ve su geçirmezlik. Yıkama ortamlarında ve nemli üretim alanlarında güvenli.",
+how_works:"Elektromanyetik Sayaç Nasıl Çalışır?",faraday:"Faraday Yasası",
+faraday_desc:"Boru boyunca manyetik alan oluşturulur · İletken sıvı, hıza orantılı gerilim üretir",
+faraday_result:"→ Engel yok. Basınç kaybı yok. Aşınma yok.",
+cond_note:"İletken her sıvıda çalışır (iletkenlik >5 µS/cm)",
+for_cct_t:"CCT Hatları için",for_cct_d:"Su bazlı emülsiyon boyalar ve reçine sistemleri mükemmel adaylardır. İletkenlik değerleri hassas elektromanyetik ölçüm için uygundur.",
+s5_label:"Ürün Yelpazesi",s5_title:"Her Hat için Doğru Cihaz",
+p1_title:"Elektromanyetik Debimetre",p1_desc2:"Su bazlı boyalar, emülsiyonlar, reçineler — iletken her sıvı için",
+p2_title:"Ultrasonik Debimetre",p2_desc2:"Düşük iletkenlikli (<5 µS/cm) tiner ve çözücüler için",
+p3_title:"Seviye Göstergeleri",p3_desc2:"Tüm ürün tiplerinde tank envanteri yönetimi için",
+sp_diam:"Boru çapı",sp_acc:"Hassasiyet",sp_lin:"Astar",sp_prot:"Koruma",sp_out:"Çıkış",sp_fl:"Flanş",
+sp_meth:"Yöntem",sp_inst:"Montaj",sp_best:"En uygun",sp_type:"Tip",sp_range:"Aralık",sp_media:"Ortam",
+sp_clamp:"Kelepçeli / Flanşlı",sp_nopipe:"Boru kesmeden montaj",sp_thin:"Tinerler, çözücüler",
+sp_radar:"Radar / Ultrasonik",sp_liq:"Sıvılar, pastalar, süspansiyonlar",
+cert_note:"Tüm ürünler: <strong style='color:#fff'>CE belgeli</strong>, tam dokümantasyon, <strong style='color:#fff'>Türkiye'den teknik destek</strong>. Web: <strong style='color:#06B6D4'>netflw.com</strong>",
+s6_label:"Rekabet Avantajı",s6_title:"Neden Net Flow, alternatifleri değil?",
+col_feat:"Özellik",col_mech:"Mekanik Sayaçlar",col_west:"Batı Markaları (Endress, ABB)",
+row_acc:"Hassasiyet",row_mov:"Hareketli Parça / Bakım",row_chem:"Kimyasal Direnç",
+row_del:"Teslimat / Süre",row_sup:"Teknik Destek",row_price:"Fiyat",row_plc:"PLC Entegrasyonu",
+val_none:"Yok — bakımsız",val_yes:"Evet — sık temizlik",
+val_lim:"Sınırlı — malzeme aşınması",val_full:"Tam yelpazeye karşı",
+val_fast:"Hızlı — Türkiye yakınlığı",val_loc:"Yerel stok mevcut",val_long:"Uzun — AB ithalatı",
+val_supp_nf:"Doğrudan, bölgesel, TR/EN/RU",val_lim2:"Sınırlı",val_dist:"Distribütör üzerinden",
+val_comp:"Rekabetçi — üreticiden direkt",val_tco:"Düşük başlangıç, yüksek TCO",val_prem:"Prim fiyatlandırma",
+val_pulse:"Sadece nabız (temel)",val_fullp:"Tam protokol desteği",
+bottom_line:"<strong style='color:#06B6D4'>Sonuç:</strong> Net Flow, batı seviyesinde hassasiyeti çok daha düşük maliyetle, bölgesel yakınlık avantajıyla sunar. <span style='color:#CBD5E1'>Kafkas üreticileri için en iyi toplam sahip olma maliyeti.</span>",
+s7_label:"İş Değeri",s7_title:"CCT için Yatırım Getirisi",
+roi1_num:"%3–5",roi1_lbl:"Hammadde Tasarrufu",roi1_desc:"Hassas dozaj fazla kullanımı ortadan kaldırır. 1.000+ formülasyonda parti başına küçük tasarruflar yıllık büyük birikim yaratır.",
+roi2_num:"Sıfır",roi2_lbl:"Bakım Duruşu",roi2_desc:"Hareketli parça yok = planlı bakım duruşu yok. Beklenmedik arıza yok. Maksimum üretim sürekliği.",
+v1_t:"Tutarlı Kalite = Korunan İtibar",v1_d:"Premium müşterileriniz tekrarlanabilir, spesifikasyona uygun boya ister. Hassas ölçüm her partinin tam uyumunu garanti eder.",
+v2_t:"Otomasyon Hazırlığı",v2_d:"4-20mA ve RS485 çıkışları otomatik dozaj kontrolüne olanak tanır — operatör müdahalesini azaltır.",
+v3_t:"Tedarik Zinciri Avantajı",v3_d:"Net Flow Türkiye'den sevk eder — Avrupa alternatiflerine kıyasla çok daha kısa teslimat süreleri.",
+s8_label:"Teknik Şeffaflık",s8_title:"Tiner hattı hakkında dürüst bir not",
+note_t:"Çözücüler ve Tinerler Özel Değerlendirme Gerektirir",
+note_d:"Elektromanyetik debimetreler, sıvının <strong style='color:#fff'>elektriksel iletken olmasını (min. ~5 µS/cm)</strong> gerektirir. Çoğu çözücü ve tinerin iletkenliği çok düşüktür.",
+compat1_t:"Hat 1 ve 3 — Uyumlu",compat1_d:"Emülsiyon boyalar ve reçine sistemleri genellikle 5 µS/cm'yi aşar. <strong style='color:#fff'>Elektromanyetik debimetreler idealdir</strong>.",
+compat2_t:"Hat 2 (Tinerler) — Ultrasonik Önerilir",compat2_d:"Tiner/çözücü hattı için <strong style='color:#fff'>kelepçeli ultrasonik debimetre</strong> öneriyoruz — boru kesmeden montaj, kimyasal temas yok.",
+honest:"<strong style='color:#10B981'>Neden bunu söylüyoruz:</strong> İletkenlik değerlerini teyit etmek için teknik anket gönderdik. Amacımız <em>doğru</em> ürünü önermek, sadece satmak değil. Böyle ortaklıklar kuruyoruz.",
+s9_label:"İleri Adımlar",s9_title:"Doğru Ölçüme Giden Adımlar",
+st1_t:"Teknik Anketi Doldurun",st1_d:"Anket: boru çapı, debi, basınç, sıcaklık, iletkenlik, flanş standardını 3 hattınız için soruyor. ~15 dakika.",
+st2_t:"Özel Ürün Spesifikasyonu Alın",st2_d:"Verilerinize göre hassas teknik teklif: doğru cihaz boyutları, astar/elektrot malzemeleri, çıkış sinyalleri.",
+st3_t:"Tam Dokümanlı Teklif",st3_d:"Teknik veri sayfası, ölçü çizimi, montaj kılavuzu ve CE sertifikası ile resmi teklif. Sürpriz yok.",
+st4_t:"Pilot Cihaz — Ölçeklemeden Önce Kanıtlayın",st4_d:"Hat 1'den (emülsiyon boyalar) pilot ile başlamayı öneriyoruz. Üç hata bağlanmadan önce doğrulama yapın.",
+s10_label:"İletişime Geçin",s10_tag:"Elektromanyetik Debimetreler ve Seviye Göstergeleri",
+ct1:"CE Belgeli",ct2:"Türkiye'den Sevkiyat",ct3:"TR · EN · RU Destek",
+quote:"\"Sadece debimetre satmıyoruz — ölçüm sorunlarını çözüyoruz. Teknik detaylarınızı gönderin, tam olarak ne gerektiğini söyleyelim.\"",
+quote_a:"— Net Flow Teknik Ekibi"
+}
+};
+
+let cur=0,lang='EN';
+const slides=document.querySelectorAll('.slide');
+const total=slides.length;
+
+function setLang(l){
+  lang=l;
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.textContent===l));
+  const isAR=l==='AR';
+  document.documentElement.setAttribute('lang',l.toLowerCase());
+  document.documentElement.setAttribute('dir',isAR?'rtl':'ltr');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(T[l]&&T[l][k]!==undefined) el.innerHTML=T[l][k];
+  });
+}
+
+function go(d){
+  slides[cur].classList.remove('active');
+  cur=Math.max(0,Math.min(total-1,cur+d));
+  slides[cur].classList.add('active');
+  document.getElementById('cnt').textContent=(cur+1)+' / '+total;
+  document.getElementById('pb2').disabled=cur===0;
+  document.getElementById('nb').disabled=cur===total-1;
+  document.getElementById('pb').style.width=((cur+1)/total*100)+'%';
+}
+
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();go(1);}
+  if(e.key==='ArrowLeft'){e.preventDefault();go(-1);}
+});
+
+// Init
+setLang('EN');
+document.getElementById('pb').style.width=(1/total*100)+'%';
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Loading Omnicane Quote...</title></head>
+<body>
+<p>Loading quote into Net Flow system...</p>
+<script>
+const state = {
+  lang: "en",
+  currency: "USD",
+  review: false,
+  meta: {
+    no: "NF-QT2026-0012",
+    date: "2026-09-24",
+    valid: "2026-10-24",
+    by: "Safvan Ucucu"
+  },
+  cust: {
+    company: "Omnicane Milling Operations Ltd",
+    contact: "Mr. Yasser Joomun / Ms. Gaelle Victor",
+    reqBy: "",
+    custSign: "",
+    country: "Mauritius",
+    email: "yjoomun@omnicane.com",
+    project: "Centrifugal Separator & Massecuite Line"
+  },
+  discount: 0,
+  vat: 0,
+  travel: 2300,
+  terms: {},
+  items: [
+    {
+      uid: "omni1",
+      code: "NT-VMF",
+      qty: "1",
+      unit: 700,
+      priceMode: "custom",
+      cfg: {
+        dn: "DN15",
+        liner: "PTFE",
+        electrode: "SS 316L",
+        output: "4\u201320mA + HART",
+        conn: "DIN Flange",
+        ip: "IP68"
+      }
+    },
+    {
+      uid: "omni2",
+      code: "NT-CMF",
+      qty: "1",
+      unit: 18000,
+      priceMode: "custom",
+      cfg: {
+        dn: "DN200",
+        output: "4\u201320mA + HART",
+        conn: "DIN Flange",
+        ip: "IP67"
+      }
+    }
+  ]
+};
+
+localStorage.setItem('pm_quote_draft_v1', JSON.stringify(state));
+
+var list = [];
+try { list = JSON.parse(localStorage.getItem('pm_quote_list_v2') || '[]'); } catch(e) {}
+var entry = {
+  code: state.meta.no,
+  date: state.meta.date,
+  customer: state.cust.company,
+  country: state.cust.country,
+  currency: state.currency,
+  grand: 21000,
+  items: 2,
+  savedAt: new Date().toISOString(),
+  data: JSON.stringify(state)
+};
+var idx = list.findIndex(function(x){ return x.code === entry.code; });
+if (idx >= 0) list[idx] = entry; else list.unshift(entry);
+localStorage.setItem('pm_quote_list_v2', JSON.stringify(list));
+
+window.location.href = '/quote-builder.html';
+</script>
+</body>
+</html>

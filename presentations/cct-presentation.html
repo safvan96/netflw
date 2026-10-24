@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Net Flow × CCT — Electromagnetic Flow Measurement Solutions</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #0a0a0f;
+    color: #e8eaf0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* Slide Container */
+  .slides-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 80px;
+    background: #0d0d18;
+  }
+
+  .slide.active { display: flex; }
+
+  /* Accent colors */
+  :root {
+    --blue: #2563EB;
+    --blue-light: #3B82F6;
+    --cyan: #06B6D4;
+    --green: #10B981;
+    --orange: #F59E0B;
+    --red: #EF4444;
+    --gray: #64748B;
+    --light: #CBD5E1;
+  }
+
+  /* Navigation */
+  .nav {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 100;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    padding: 10px 24px;
+  }
+
+  .nav button {
+    background: none;
+    border: none;
+    color: #94A3B8;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+
+  .nav button:hover { color: white; background: rgba(255,255,255,0.1); }
+  .nav button:disabled { opacity: 0.3; cursor: not-allowed; }
+
+  .slide-counter {
+    color: #64748B;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 60px;
+    text-align: center;
+  }
+
+  .progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--cyan));
+    transition: width 0.4s ease;
+    z-index: 100;
+  }
+
+  /* Common Elements */
+  .label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 16px;
+  }
+
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--cyan));
+    border-radius: 2px;
+    margin: 20px 0;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 4px;
+  }
+
+  .tag-blue { background: rgba(37,99,235,0.2); color: var(--blue-light); border: 1px solid rgba(37,99,235,0.3); }
+  .tag-green { background: rgba(16,185,129,0.2); color: var(--green); border: 1px solid rgba(16,185,129,0.3); }
+  .tag-cyan { background: rgba(6,182,212,0.2); color: var(--cyan); border: 1px solid rgba(6,182,212,0.3); }
+  .tag-orange { background: rgba(245,158,11,0.2); color: var(--orange); border: 1px solid rgba(245,158,11,0.3); }
+
+  /* Grid */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; width: 100%; }
+
+  /* Cards */
+  .card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 28px;
+  }
+
+  .card-accent {
+    background: rgba(37,99,235,0.08);
+    border: 1px solid rgba(37,99,235,0.2);
+  }
+
+  .card-green {
+    background: rgba(16,185,129,0.08);
+    border: 1px solid rgba(16,185,129,0.2);
+  }
+
+  .card-warn {
+    background: rgba(245,158,11,0.08);
+    border: 1px solid rgba(245,158,11,0.2);
+  }
+
+  /* Icons */
+  .icon-circle {
+    width: 52px; height: 52px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .icon-blue { background: rgba(37,99,235,0.2); }
+  .icon-green { background: rgba(16,185,129,0.2); }
+  .icon-orange { background: rgba(245,158,11,0.2); }
+  .icon-red { background: rgba(239,68,68,0.2); }
+  .icon-cyan { background: rgba(6,182,212,0.2); }
+
+  /* ============ SLIDE STYLES ============ */
+
+  /* SLIDE 1 - Cover */
+  #slide-1 {
+    background: radial-gradient(ellipse at 30% 50%, rgba(37,99,235,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 50%, rgba(6,182,212,0.1) 0%, transparent 60%),
+                #0d0d18;
+    text-align: center;
+  }
+
+  #slide-1 .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  #slide-1 .logo-nf {
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+    padding: 12px 24px;
+    border-radius: 12px;
+    letter-spacing: 1px;
+  }
+
+  #slide-1 .x-mark {
+    color: var(--gray);
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  #slide-1 .logo-cct {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--light);
+    border: 2px solid rgba(255,255,255,0.15);
+    padding: 12px 24px;
+    border-radius: 12px;
+  }
+
+  #slide-1 h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #fff 0%, #94A3B8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    max-width: 800px;
+  }
+
+  #slide-1 .subtitle {
+    font-size: 20px;
+    color: var(--gray);
+    margin-top: 16px;
+    font-weight: 400;
+  }
+
+  #slide-1 .badge-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  /* SLIDE 2 - About CCT */
+  #slide-2 h2 { font-size: 40px; font-weight: 800; color: white; }
+  #slide-2 .company-hero {
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .stat-box {
+    text-align: center;
+    padding: 20px;
+  }
+  .stat-box .number {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--blue-light), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .stat-box .stat-label {
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 500;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .project-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    font-size: 13px;
+    color: var(--light);
+    margin: 4px;
+  }
+
+  /* SLIDE 3 - Problem */
+  #slide-3 { background: radial-gradient(ellipse at 50% 0%, rgba(239,68,68,0.1) 0%, transparent 50%), #0d0d18; }
+
+  .problem-card {
+    background: rgba(239,68,68,0.06);
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .impact-number {
+    font-size: 36px;
+    font-weight: 800;
+    color: #EF4444;
+  }
+
+  /* SLIDE 4 - Solution */
+  #slide-4 { background: radial-gradient(ellipse at 50% 100%, rgba(16,185,129,0.12) 0%, transparent 50%), #0d0d18; }
+
+  .solution-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .solution-feature:last-child { border-bottom: none; }
+
+  .check-icon {
+    width: 28px; height: 28px;
+    background: rgba(16,185,129,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--green);
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* SLIDE 5 - Products */
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 14px;
+  }
+  .spec-row .spec-key { color: var(--gray); }
+  .spec-row .spec-val { color: white; font-weight: 600; }
+
+  .product-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px;
+    transition: border-color 0.3s;
+  }
+  .product-card:hover { border-color: rgba(37,99,235,0.4); }
+  .product-card h4 { font-size: 16px; font-weight: 700; color: white; margin-bottom: 8px; }
+  .product-card p { font-size: 13px; color: var(--gray); line-height: 1.6; }
+
+  /* SLIDE 6 - Why Net Flow */
+  .compare-table { width: 100%; border-collapse: collapse; }
+  .compare-table th {
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+  }
+  .compare-table td {
+    padding: 14px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    vertical-align: middle;
+  }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table .good { color: var(--green); font-weight: 600; }
+  .compare-table .bad { color: #64748B; }
+  .compare-table .warn { color: var(--orange); }
+  .compare-table .feature-col { color: var(--light); }
+
+  /* SLIDE 7 - ROI */
+  #slide-7 { background: radial-gradient(ellipse at 30% 70%, rgba(16,185,129,0.1) 0%, transparent 50%), #0d0d18; }
+
+  .roi-card {
+    background: rgba(16,185,129,0.06);
+    border: 1px solid rgba(16,185,129,0.2);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+  }
+
+  .roi-number {
+    font-size: 44px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--green), #34D399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* SLIDE 8 - Special Note */
+  .note-card {
+    background: rgba(245,158,11,0.06);
+    border: 1px solid rgba(245,158,11,0.25);
+    border-radius: 16px;
+    padding: 28px;
+  }
+
+  /* SLIDE 9 - Next Steps */
+  .step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .step-item:last-child { border-bottom: none; }
+
+  .step-num {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .step-content h4 { font-size: 16px; font-weight: 700; color: white; margin-bottom: 4px; }
+  .step-content p { font-size: 13px; color: var(--gray); line-height: 1.5; }
+
+  /* SLIDE 10 - Contact */
+  #slide-10 {
+    background: radial-gradient(ellipse at 50% 50%, rgba(37,99,235,0.2) 0%, transparent 60%),
+                #0d0d18;
+    text-align: center;
+  }
+
+  .contact-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 40px 60px;
+    display: inline-block;
+    margin: 24px auto;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light);
+  }
+
+  .contact-item span:first-child { color: var(--gray); width: 24px; text-align: center; }
+
+  /* Typography */
+  h2 { font-size: 38px; font-weight: 800; color: white; line-height: 1.2; }
+  h3 { font-size: 22px; font-weight: 700; color: white; }
+  p { color: #94A3B8; line-height: 1.6; }
+
+  /* Keyboard hint */
+  .key-hint {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    font-size: 11px;
+    color: var(--gray);
+    z-index: 100;
+  }
+  .key-hint kbd {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: inherit;
+    font-size: 11px;
+  }
+
+  /* Fullscreen slide content wrapper */
+  .slide-inner {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .text-center { text-align: center; }
+  .mt-8 { margin-top: 8px; }
+  .mt-16 { margin-top: 16px; }
+  .mt-24 { margin-top: 24px; }
+  .mt-32 { margin-top: 32px; }
+  .mb-8 { margin-bottom: 8px; }
+  .mb-16 { margin-bottom: 16px; }
+  .mb-24 { margin-bottom: 24px; }
+
+  /* Animation */
+  .slide.active .slide-inner { animation: slideIn 0.4s ease; }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Production line badges */
+  .line-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+
+  .line-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<div class="key-hint"><kbd>←</kbd> <kbd>→</kbd> to navigate</div>
+
+<div class="slides-container" id="container">
+
+  <!-- SLIDE 1: Cover -->
+  <div class="slide active" id="slide-1">
+    <div class="logo-row">
+      <div class="logo-nf">NET FLOW</div>
+      <div class="x-mark">×</div>
+      <div class="logo-cct">CCT Chemicals Coating</div>
+    </div>
+    <h1>Precision Flow Measurement for Paint Manufacturing</h1>
+    <p class="subtitle">Electromagnetic Flow Meters · Level Indicators · Industrial Automation</p>
+    <div class="badge-row">
+      <span class="tag tag-blue">Rustavi, Georgia</span>
+      <span class="tag tag-cyan">3 Production Lines</span>
+      <span class="tag tag-green">1,000+ Product Portfolio</span>
+      <span class="tag tag-orange">Italian Technology Standards</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: About CCT -->
+  <div class="slide" id="slide-2">
+    <div class="slide-inner">
+      <div class="label">Understanding Your Business</div>
+      <h2>We've done our homework on CCT</h2>
+      <div class="divider"></div>
+
+      <div class="grid-2 mt-32">
+        <div>
+          <!-- Stats row -->
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:24px;">
+            <div class="card text-center">
+              <div class="stat-box">
+                <div class="number">2012</div>
+                <div class="stat-label">Founded</div>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="stat-box">
+                <div class="number">1000+</div>
+                <div class="stat-label">Product SKUs</div>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="stat-box">
+                <div class="number">3</div>
+                <div class="stat-label">Production Lines</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Production lines -->
+          <div class="line-badge">
+            <div class="line-dot" style="background:#3B82F6;"></div>
+            <div>
+              <div style="font-size:14px;font-weight:700;color:white;">Line 1 — Emulsion Paints</div>
+              <div style="font-size:12px;color:var(--gray);margin-top:2px;">Water-based, high conductivity — ideal for electromagnetic measurement</div>
+            </div>
+          </div>
+          <div class="line-badge">
+            <div class="line-dot" style="background:#F59E0B;"></div>
+            <div>
+              <div style="font-size:14px;font-weight:700;color:white;">Line 2 — Thinners / Solvents</div>
+              <div style="font-size:12px;color:var(--orange);margin-top:2px;">Low conductivity — special measurement consideration required</div>
+            </div>
+          </div>
+          <div class="line-badge">
+            <div class="line-dot" style="background:#10B981;"></div>
+            <div>
+              <div style="font-size:14px;font-weight:700;color:white;">Line 3 — Resins</div>
+              <div style="font-size:12px;color:var(--gray);margin-top:2px;">Viscous liquids — lining material selection is critical</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom:16px;">
+            <div style="font-size:12px;color:var(--cyan);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Notable Projects</div>
+            <div class="project-pill">🏨 Marriott Tbilisi</div>
+            <div class="project-pill">🏙️ Tbilisi Hills</div>
+            <div class="project-pill">🏗️ East Point</div>
+            <div class="project-pill">🏨 Ambassadori Kachreti</div>
+            <div class="project-pill">🌉 Ganmukhuri Bridge</div>
+          </div>
+
+          <div class="card">
+            <div style="font-size:12px;color:var(--cyan);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Market Position</div>
+            <p style="font-size:13px;line-height:1.7;">Official distributor of Italian brands across <strong style="color:white;">Caucasus & Central Asia</strong>. Built on Italian technology standards — precision and quality are core to your brand promise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: The Problem -->
+  <div class="slide" id="slide-3">
+    <div class="slide-inner">
+      <div class="label">The Challenge</div>
+      <h2>What happens when flow measurement is imprecise?</h2>
+      <div class="divider"></div>
+
+      <div class="grid-3 mt-32">
+        <div class="problem-card">
+          <div class="icon-circle icon-red" style="font-size:28px;">💸</div>
+          <div class="impact-number">3–5%</div>
+          <div style="font-size:12px;color:var(--gray);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin:8px 0;">Raw Material Waste</div>
+          <p style="font-size:13px;">Inaccurate dosing on 1,000+ formulations means overpoured pigments, binders, and additives — wasted on every batch.</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="icon-circle icon-red" style="font-size:28px;">⚠️</div>
+          <div class="impact-number">Rework</div>
+          <div style="font-size:12px;color:var(--gray);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin:8px 0;">Batch Inconsistency</div>
+          <p style="font-size:13px;">Colour, viscosity, and coverage variations between batches damage quality reputation — especially critical for premium project specifications.</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="icon-circle icon-red" style="font-size:28px;">🔧</div>
+          <div class="impact-number">Downtime</div>
+          <div style="font-size:12px;color:var(--gray);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin:8px 0;">Mechanical Meter Failures</div>
+          <p style="font-size:13px;">Traditional mechanical meters have moving parts that clog with pigments, erode in solvents, and require constant maintenance.</p>
+        </div>
+      </div>
+
+      <div class="card mt-24" style="background:rgba(239,68,68,0.05); border-color:rgba(239,68,68,0.15);">
+        <p style="font-size:14px; text-align:center;">
+          <strong style="color:#EF4444;">The real risk:</strong> When Marriott Tbilisi or Tbilisi Hills specifies your paint — inconsistent quality is not an option. <span style="color:var(--light);">Your Italian technology promise demands Italian precision in measurement too.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4: The Solution -->
+  <div class="slide" id="slide-4">
+    <div class="slide-inner">
+      <div class="label">Our Solution</div>
+      <h2>Electromagnetic Flow Measurement — Zero Compromises</h2>
+      <div class="divider"></div>
+
+      <div class="grid-2 mt-32">
+        <div>
+          <div class="solution-feature">
+            <div class="check-icon">✓</div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:white;margin-bottom:4px;">No Moving Parts</div>
+              <p style="font-size:13px;">Zero mechanical wear. No clogging from pigments. No corrosion from solvents. The sensor has nothing to break.</p>
+            </div>
+          </div>
+          <div class="solution-feature">
+            <div class="check-icon">✓</div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:white;margin-bottom:4px;">±0.5% Accuracy</div>
+              <p style="font-size:13px;">Sub-half-percent measurement accuracy across your full flow range — critical for consistent formulation dosing.</p>
+            </div>
+          </div>
+          <div class="solution-feature">
+            <div class="check-icon">✓</div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:white;margin-bottom:4px;">Chemical-Resistant Linings</div>
+              <p style="font-size:13px;">PTFE lining for solvents and acids. Hard rubber for abrasive slurries. Neoprene for general purpose. Perfect for paint chemicals.</p>
+            </div>
+          </div>
+          <div class="solution-feature">
+            <div class="check-icon">✓</div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:white;margin-bottom:4px;">Full Integration</div>
+              <p style="font-size:13px;">4-20mA, pulse, RS485 / Modbus outputs. Direct PLC/SCADA integration for automated dosing control.</p>
+            </div>
+          </div>
+          <div class="solution-feature">
+            <div class="check-icon">✓</div>
+            <div>
+              <div style="font-size:15px;font-weight:700;color:white;margin-bottom:4px;">IP67 Protection</div>
+              <p style="font-size:13px;">Full dust and immersion protection. Safe in wash-down environments and humid production floors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card card-accent">
+            <div style="font-size:12px;color:var(--cyan);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;">How Electromagnetic Meters Work</div>
+            <div style="text-align:center; padding:20px; background:rgba(0,0,0,0.3); border-radius:12px; margin-bottom:16px;">
+              <div style="font-size:48px; margin-bottom:12px;">🔵</div>
+              <div style="font-size:13px; color:var(--light); line-height:1.8;">
+                <strong style="color:var(--cyan);">Faraday's Law</strong><br>
+                Magnetic field applied across pipe<br>
+                Conductive liquid moving through field<br>
+                generates a voltage proportional to velocity<br>
+                <span style="color:var(--green); font-weight:700;">→ No obstruction. No pressure drop. No wear.</span>
+              </div>
+            </div>
+            <p style="font-size:12px; color:var(--gray); text-align:center;">Works with any conductive liquid (conductivity &gt;5 µS/cm)</p>
+          </div>
+
+          <div class="card card-green mt-16">
+            <div style="font-size:13px; color:var(--green); font-weight:700; margin-bottom:8px;">For CCT's Paint Lines</div>
+            <p style="font-size:13px;">Water-based emulsion paints and resin systems are excellent candidates. Conductivity levels are well within range for accurate electromagnetic measurement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: Products -->
+  <div class="slide" id="slide-5">
+    <div class="slide-inner">
+      <div class="label">Product Range</div>
+      <h2>The Right Meter for Every Line</h2>
+      <div class="divider"></div>
+
+      <div class="grid-3 mt-32">
+        <div class="product-card" style="border-top: 3px solid var(--blue);">
+          <div class="icon-circle icon-blue" style="font-size:24px;">🔵</div>
+          <h4>Electromagnetic Flow Meter</h4>
+          <p style="font-size:12px; margin-bottom:16px;">For water-based paints, emulsions, resins — any conductive liquid</p>
+          <div class="spec-row"><span class="spec-key">Pipe diameter</span><span class="spec-val">DN15 – DN2000</span></div>
+          <div class="spec-row"><span class="spec-key">Accuracy</span><span class="spec-val">±0.5%</span></div>
+          <div class="spec-row"><span class="spec-key">Lining</span><span class="spec-val">PTFE / Rubber / Neoprene</span></div>
+          <div class="spec-row"><span class="spec-key">Protection</span><span class="spec-val">IP67 / IP68</span></div>
+          <div class="spec-row"><span class="spec-key">Output</span><span class="spec-val">4-20mA, Pulse, RS485</span></div>
+          <div class="spec-row" style="border:none;"><span class="spec-key">Flange</span><span class="spec-val">PN10-PN40 / ANSI</span></div>
+        </div>
+
+        <div class="product-card" style="border-top: 3px solid var(--orange);">
+          <div class="icon-circle icon-orange" style="font-size:24px;">📡</div>
+          <h4>Ultrasonic Flow Meter</h4>
+          <p style="font-size:12px; margin-bottom:16px;">For thinners and solvents with low conductivity (&lt;5 µS/cm)</p>
+          <div class="spec-row"><span class="spec-key">Method</span><span class="spec-val">Clamp-on / Inline</span></div>
+          <div class="spec-row"><span class="spec-key">Accuracy</span><span class="spec-val">±1.0%</span></div>
+          <div class="spec-row"><span class="spec-key">Installation</span><span class="spec-val">No pipe cutting (clamp-on)</span></div>
+          <div class="spec-row"><span class="spec-key">Protection</span><span class="spec-val">IP67</span></div>
+          <div class="spec-row"><span class="spec-key">Output</span><span class="spec-val">4-20mA, RS485</span></div>
+          <div class="spec-row" style="border:none;"><span class="spec-key">Best for</span><span class="spec-val">Thinners, solvents</span></div>
+        </div>
+
+        <div class="product-card" style="border-top: 3px solid var(--green);">
+          <div class="icon-circle icon-green" style="font-size:24px;">📊</div>
+          <h4>Level Indicators</h4>
+          <p style="font-size:12px; margin-bottom:16px;">For tank inventory management across all product types</p>
+          <div class="spec-row"><span class="spec-key">Type</span><span class="spec-val">Radar / Ultrasonic</span></div>
+          <div class="spec-row"><span class="spec-key">Accuracy</span><span class="spec-val">±2mm</span></div>
+          <div class="spec-row"><span class="spec-key">Range</span><span class="spec-val">0.3m – 30m</span></div>
+          <div class="spec-row"><span class="spec-key">Protection</span><span class="spec-val">IP67</span></div>
+          <div class="spec-row"><span class="spec-key">Output</span><span class="spec-val">4-20mA, HART, RS485</span></div>
+          <div class="spec-row" style="border:none;"><span class="spec-key">Media</span><span class="spec-val">Liquids, pastes, slurries</span></div>
+        </div>
+      </div>
+
+      <div class="card mt-24 text-center" style="background:rgba(37,99,235,0.05); border-color:rgba(37,99,235,0.15);">
+        <p style="font-size:14px;">All products come with <strong style="color:white;">CE certification</strong>, full documentation, and <strong style="color:white;">technical support from Turkey</strong>. Visit: <strong style="color:var(--cyan);">netflw.com</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: Why Net Flow -->
+  <div class="slide" id="slide-6">
+    <div class="slide-inner">
+      <div class="label">Competitive Advantage</div>
+      <h2>Why Net Flow over alternatives?</h2>
+      <div class="divider"></div>
+
+      <div class="mt-24">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th style="color:var(--gray); width:28%;">Feature</th>
+              <th style="color:var(--cyan);">🔵 Net Flow</th>
+              <th style="color:var(--gray);">Mechanical Meters</th>
+              <th style="color:var(--gray);">Western Brands (Endress, ABB)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-col">Accuracy</td>
+              <td class="good">±0.5%</td>
+              <td class="bad">±2–5%</td>
+              <td class="good">±0.3–0.5%</td>
+            </tr>
+            <tr>
+              <td class="feature-col">Moving Parts / Maintenance</td>
+              <td class="good">None — maintenance-free</td>
+              <td class="bad">Yes — frequent cleaning</td>
+              <td class="good">None</td>
+            </tr>
+            <tr>
+              <td class="feature-col">Chemical Resistance</td>
+              <td class="good">PTFE, hard rubber, neoprene</td>
+              <td class="bad">Limited — material wear</td>
+              <td class="good">Full range</td>
+            </tr>
+            <tr>
+              <td class="feature-col">Installation / Delivery</td>
+              <td class="good">Fast — Turkey proximity</td>
+              <td class="warn">Available locally</td>
+              <td class="bad">Long lead times, EU import</td>
+            </tr>
+            <tr>
+              <td class="feature-col">Technical Support</td>
+              <td class="good">Direct, regional, English/Russian</td>
+              <td class="bad">Limited</td>
+              <td class="warn">Distributor-dependent</td>
+            </tr>
+            <tr>
+              <td class="feature-col">Price Point</td>
+              <td class="good">Competitive — direct from manufacturer</td>
+              <td class="warn">Low upfront, high TCO</td>
+              <td class="bad">Premium pricing</td>
+            </tr>
+            <tr>
+              <td class="feature-col">PLC/SCADA Integration</td>
+              <td class="good">4-20mA, Pulse, RS485/Modbus</td>
+              <td class="bad">Pulse only (basic)</td>
+              <td class="good">Full protocol support</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card mt-24" style="background:rgba(6,182,212,0.05); border-color:rgba(6,182,212,0.15); text-align:center;">
+        <p style="font-size:14px;"><strong style="color:var(--cyan);">Bottom line:</strong> Net Flow delivers Western-grade accuracy at a fraction of the cost, with the logistics advantage of regional proximity. <span style="color:var(--light);">Best total cost of ownership for a Caucasus manufacturer.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: ROI -->
+  <div class="slide" id="slide-7">
+    <div class="slide-inner">
+      <div class="label">Business Value</div>
+      <h2>The ROI for CCT</h2>
+      <div class="divider"></div>
+
+      <div class="grid-2 mt-32">
+        <div>
+          <div class="roi-card mb-16">
+            <div class="roi-number">3–5%</div>
+            <div style="font-size:13px;color:var(--green);font-weight:600;margin-top:8px;">Raw Material Savings</div>
+            <p style="font-size:12px;margin-top:8px;">Precise dosing eliminates overpouring. On 1,000+ formulations, small savings per batch compound significantly across annual production volume.</p>
+          </div>
+
+          <div class="roi-card">
+            <div class="roi-number">Zero</div>
+            <div style="font-size:13px;color:var(--green);font-weight:600;margin-top:8px;">Maintenance Downtime</div>
+            <p style="font-size:12px;margin-top:8px;">No moving parts = no scheduled maintenance shutdowns. No unplanned failures from clogging or wear. Maximum production uptime.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="card" style="margin-bottom:16px;">
+            <div class="icon-circle icon-green" style="font-size:22px;">✅</div>
+            <h4 style="font-size:15px;">Consistent Quality = Protected Reputation</h4>
+            <p style="font-size:13px; margin-top:8px;">Marriott, Tbilisi Hills — your premium clients demand repeatable, spec-compliant paint. Precise flow measurement ensures every batch matches the approved formulation exactly.</p>
+          </div>
+
+          <div class="card" style="margin-bottom:16px;">
+            <div class="icon-circle icon-cyan" style="font-size:22px;">📈</div>
+            <h4 style="font-size:15px;">Automation Readiness</h4>
+            <p style="font-size:13px; margin-top:8px;">4-20mA and RS485 outputs enable automated dosing control — reducing operator intervention, improving batch-to-batch consistency, and enabling future digital transformation.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon-circle icon-orange" style="font-size:22px;">🌍</div>
+            <h4 style="font-size:15px;">Supply Chain Advantage</h4>
+            <p style="font-size:13px; margin-top:8px;">Net Flow ships from Turkey — significantly shorter lead times vs. European alternatives. Fast delivery = minimal production planning disruption.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 8: Special Note / Thinner Line -->
+  <div class="slide" id="slide-8">
+    <div class="slide-inner">
+      <div class="label">Technical Transparency</div>
+      <h2>An honest note about your thinner line</h2>
+      <div class="divider"></div>
+
+      <div class="mt-32">
+        <div class="note-card">
+          <div style="display:flex; align-items:flex-start; gap:16px;">
+            <div style="font-size:36px; flex-shrink:0;">⚠️</div>
+            <div>
+              <h3 style="font-size:20px; margin-bottom:12px;">Solvents & Thinners Require Special Consideration</h3>
+              <p style="font-size:14px; line-height:1.8;">Electromagnetic flow meters work on Faraday's Law — they require the liquid to be <strong style="color:white;">electrically conductive (minimum ~5 µS/cm)</strong>. Most solvents and thinners have very low conductivity, which means a standard electromagnetic meter may not work for your thinner production line.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2 mt-24">
+          <div class="card card-accent">
+            <div class="icon-circle icon-blue" style="font-size:24px;">🔵</div>
+            <h4 style="font-size:15px; margin-bottom:8px;">Lines 1 & 3 — Confirmed Compatible</h4>
+            <p style="font-size:13px;">Emulsion paints (water-based) and resin systems typically have conductivity well above 5 µS/cm. <strong style="color:white;">Electromagnetic meters are ideal</strong> for these applications.</p>
+          </div>
+
+          <div class="card card-warn">
+            <div class="icon-circle icon-orange" style="font-size:24px;">📡</div>
+            <h4 style="font-size:15px; margin-bottom:8px;">Line 2 (Thinners) — Ultrasonic Recommended</h4>
+            <p style="font-size:13px;">For your thinner/solvent line, we recommend an <strong style="color:white;">ultrasonic clamp-on meter</strong> — no pipe cutting, no chemical contact, works with any liquid regardless of conductivity.</p>
+          </div>
+        </div>
+
+        <div class="card mt-16 text-center" style="background:rgba(16,185,129,0.05); border-color:rgba(16,185,129,0.15);">
+          <p style="font-size:14px;"><strong style="color:var(--green);">Why we're telling you this:</strong> We sent you a technical questionnaire to confirm exact conductivity values and pipe specifications. Our goal is to recommend the <em>right</em> product — not just sell you something. This is how we build long-term partnerships.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 9: Next Steps -->
+  <div class="slide" id="slide-9">
+    <div class="slide-inner">
+      <div class="label">Moving Forward</div>
+      <h2>Next Steps to Get You Measuring Right</h2>
+      <div class="divider"></div>
+
+      <div class="mt-32" style="max-width:700px; margin:32px auto 0;">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Return the Technical Questionnaire</h4>
+            <p>We've sent you a detailed questionnaire covering pipe diameters, flow rates, pressure, temperature, conductivity, and flange standards for each of your 3 production lines. This takes us ~15 minutes of your engineering team's time.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Receive Custom Product Specification</h4>
+            <p>Based on your data, we prepare a precise technical proposal: correct meter sizes, lining materials, electrode materials, and signal outputs — matched to each production line.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Quotation with Full Technical Documentation</h4>
+            <p>You receive a formal quotation with datasheet, dimensional drawing, installation manual, and CE certificate. No surprises — everything specified before you decide.</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Pilot Unit — Prove Before You Scale</h4>
+            <p>We recommend starting with a pilot installation on Line 1 (emulsion paints). Verify accuracy, integration, and ease of installation before committing to all three lines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 10: Contact -->
+  <div class="slide" id="slide-10">
+    <div style="text-align:center; max-width:600px;">
+      <div style="font-size:12px;color:var(--cyan);font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:24px;">Let's Talk</div>
+      <div style="font-size:52px;font-weight:900;background:linear-gradient(135deg,#fff,#94A3B8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px;">Net Flow</div>
+      <p style="font-size:16px;color:var(--gray);margin-bottom:40px;">Electromagnetic Flow Meters & Level Indicators</p>
+
+      <div class="contact-card">
+        <div class="contact-item">
+          <span>🌐</span>
+          <span><strong style="color:white;">netflw.com</strong></span>
+        </div>
+        <div class="contact-item">
+          <span>📧</span>
+          <span>info@netflw.com</span>
+        </div>
+        <div class="contact-item">
+          <span>📬</span>
+          <span>infonetflw@gmail.com</span>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:12px; justify-content:center; margin-top:24px;">
+        <span class="tag tag-blue">CE Certified Products</span>
+        <span class="tag tag-green">Ships from Turkey</span>
+        <span class="tag tag-cyan">English · Russian · Turkish Support</span>
+      </div>
+
+      <div class="card mt-24" style="background:rgba(37,99,235,0.08); border-color:rgba(37,99,235,0.2);">
+        <p style="font-size:14px; font-style:italic;">"We don't just sell meters — we solve measurement problems. Send us your specs and we'll tell you exactly what you need — or if you don't need us at all."</p>
+        <p style="font-size:12px; color:var(--cyan); margin-top:8px; font-weight:700;">— Net Flow Technical Team</p>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end slides container -->
+
+<!-- Navigation -->
+<div class="nav">
+  <button id="prevBtn" onclick="navigate(-1)" disabled>←</button>
+  <div class="slide-counter" id="counter">1 / 10</div>
+  <button id="nextBtn" onclick="navigate(1)">→</button>
+</div>
+
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
+  const total = slides.length;
+
+  function navigate(dir) {
+    slides[current].classList.remove('active');
+    current = Math.max(0, Math.min(total - 1, current + dir));
+    slides[current].classList.add('active');
+    document.getElementById('counter').textContent = `${current + 1} / ${total}`;
+    document.getElementById('prevBtn').disabled = current === 0;
+    document.getElementById('nextBtn').disabled = current === total - 1;
+    document.getElementById('progressBar').style.width = `${((current + 1) / total) * 100}%`;
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); navigate(1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); navigate(-1); }
+  });
+
+  // Initialize progress
+  document.getElementById('progressBar').style.width = `${(1 / total) * 100}%`;
+</script>
+
+</body>
+</html>

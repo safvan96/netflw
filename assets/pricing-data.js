@@ -1,11 +1,11 @@
 /* ═══════════════════════════════════════════════════════════
    NF_PRICING — 2026 Bayi Fiyat Tablosu (EUR)
    Kaynak: 2026 Fiyatlar.xlsx
-   Son güncelleme: 2026-09-19
+   Son güncelleme: 2026-10-07
    ═══════════════════════════════════════════════════════════ */
 
 const NF_PRICING = {
-  version: '2026-v2',
+  version: '2026-v3',
   currency: 'EUR',
 
   products: {
@@ -28,7 +28,9 @@ const NF_PRICING = {
         output: {'4–20mA + HART':148},
         ip: {'IP68':{pct:20}},
         pn: {'PN25':{pct:15},'PN40':{pct:25},'PN63':{pct:40}},
-        supply: {'Battery 3.6V Li':450}
+        supply: {'Battery 3.6V Li':450},
+        exproof: {'Ex-proof':{pct:30}},
+        accuracy: {'0.2%':{pct:35}}
       }
     },
 
@@ -40,7 +42,7 @@ const NF_PRICING = {
     'NT-VMF-BT': { ref: 'NT-VMF' },
 
     /* ─── EM Gıda/Kelepçe Tip (VMF-C) — [PTFE, PFA] ─── */
-    'NT-VMF-S': {
+    'NT-VMF-C': {
       byDN: {
         'DN25':[800,865],'DN32':[810,870],'DN40':[820,880],'DN50':[840,900],
         'DN65':[940,990],'DN80':[945,1010],'DN100':[1095,1160],
@@ -52,8 +54,26 @@ const NF_PRICING = {
       }
     },
 
-    /* ─── EM Wafer Tip ─── */
-    'NT-VMF-W': { ref: 'NT-VMF' },
+    /* ─── EM Wafer/Gıda Tip (VMF-C fiyatları) ─── */
+    'NT-VMF-W': { ref: 'NT-VMF-C' },
+
+    /* ─── EM Bulamaç/Slurry (VMF-E + %40) ─── */
+    'NT-VMF-S': {
+      byDN: {
+        'DN10':[1015,null],'DN15':[546,null],'DN20':[546,null],'DN25':[546,null],
+        'DN32':[560,null],'DN40':[574,null],'DN50':[588,null],
+        'DN65':[630,686],'DN80':[686,714],'DN100':[700,756],
+        'DN125':[756,910],'DN150':[868,952],'DN200':[980,1078],
+        'DN250':[1246,1470],'DN300':[1610,1890],'DN350':[1792,2408],
+        'DN400':[2072,2464],'DN450':[2380,2870],'DN500':[2590,3080],
+        'DN600':[2772,3920],'DN700':[3710,4760],
+        'DN800':[4480,5740],'DN900':[5460,7140],'DN1000':[6650,9520]
+      },
+      listRatio: 2.0,
+      options: {
+        electrode: {'Titanium':90,'Tantalum':350,'Hastelloy C':120,'Hastelloy B':225}
+      }
+    },
 
     /* ─── EM Daldırma Tip ─── */
     'NT-VMF-I': { base: 900, listRatio: 2.0,
@@ -63,14 +83,41 @@ const NF_PRICING = {
       }
     },
 
-    /* ─── EM Kısmen Dolu ─── */
-    'NT-VMF-P': { ref: 'NT-VMF' },
+    /* ─── EM Kısmen Dolu (VMF-E + %50) ─── */
+    'NT-VMF-P': {
+      byDN: {
+        'DN10':[1088,null],'DN15':[585,null],'DN20':[585,null],'DN25':[585,null],
+        'DN32':[600,null],'DN40':[615,null],'DN50':[630,null],
+        'DN65':[675,735],'DN80':[735,765],'DN100':[750,810],
+        'DN125':[810,975],'DN150':[930,1020],'DN200':[1050,1155],
+        'DN250':[1335,1575],'DN300':[1725,2025],'DN350':[1920,2580],
+        'DN400':[2220,2640],'DN450':[2550,3075],'DN500':[2775,3300],
+        'DN600':[2970,4200],'DN700':[3975,5100],
+        'DN800':[4800,6150],'DN900':[5850,7650],'DN1000':[7125,10200]
+      },
+      listRatio: 2.0,
+      options: {
+        electrode: {'Titanium':90,'Tantalum':350,'Hastelloy C':120,'Hastelloy B':225}
+      }
+    },
 
-    /* ─── EM 0D (düz boru gerektirmeyen) ─── */
-    'NT-VMF-0D': { ref: 'NT-VMF' },
-
-    /* ─── EM Bulamaç (Slurry) ─── */
-    'NT-VMF-SL': { ref: 'NT-VMF' },
+    /* ─── EM 0D — düz boru gerektirmeyen (VMF-E + %30) ─── */
+    'NT-VMF-0D': {
+      byDN: {
+        'DN10':[943,null],'DN15':[507,null],'DN20':[507,null],'DN25':[507,null],
+        'DN32':[520,null],'DN40':[533,null],'DN50':[546,null],
+        'DN65':[585,637],'DN80':[637,663],'DN100':[650,702],
+        'DN125':[702,845],'DN150':[806,884],'DN200':[910,1001],
+        'DN250':[1157,1365],'DN300':[1495,1755],'DN350':[1664,2236],
+        'DN400':[1924,2288],'DN450':[2210,2665],'DN500':[2405,2860],
+        'DN600':[2574,3640],'DN700':[3445,4420],
+        'DN800':[4160,5330],'DN900':[5070,6630],'DN1000':[6175,8840]
+      },
+      listRatio: 2.0,
+      options: {
+        electrode: {'Titanium':90,'Tantalum':350,'Hastelloy C':120,'Hastelloy B':225}
+      }
+    },
 
     /* ─── EM Mini (VMF-M) ─── */
     'NT-VMF-M': {
@@ -84,6 +131,7 @@ const NF_PRICING = {
     /* ─── TÜRBİN DEBİMETRE (VTD) ─── */
     'NT-VTR': {
       byDN: {
+        'DN4':[144],'DN6':[144],'DN10':[140],
         'DN15':[120],'DN20':[122],'DN25':[124],'DN32':[132],
         'DN40':[168],'DN50':[180],'DN65':[360],'DN80':[392],
         'DN100':[480],'DN125':[904],'DN150':[980]
@@ -132,10 +180,10 @@ const NF_PRICING = {
     /* ─── METAL TÜPLÜ DEBİMETRE (VFF) — [304SS, 316SS] ─── */
     'NT-MTF': {
       byDN: {
-        'DN15':[340,530],'DN20':[370,610],'DN25':[390,640],
-        'DN32':[450,720],'DN40':[500,730],'DN50':[610,920],
-        'DN65':[1010,1490],'DN80':[1110,1640],'DN100':[1400,2340],
-        'DN150':[2200,3050]
+        'DN15':[340,530],'DN20':[370,610],'DN25':[400,680],
+        'DN32':[450,730],'DN40':[500,820],'DN50':[540,880],
+        'DN65':[575,940],'DN80':[700,1140],'DN100':[920,1450],
+        'DN125':[1250,1800],'DN150':[1500,null]
       },
       listRatio: 2.0,
       options: {
@@ -188,8 +236,17 @@ const NF_PRICING = {
       options: {}
     },
 
+    /* ─── SUTO S418 PRO (Termal Kütle — Pro Seri) ─── */
+    'NT-S418': {
+      byDN: {
+        'DN8':[840],'DN15':[860],'DN20':[865],'DN25':[880],'DN32':[950]
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
     /* ─── CLAMP-ON GAZ ULTRASONİK ─── */
-    'NT-S415': { ref: 'NT-ULF' },
+    'NT-S415': { ref: 'NT-TMF' },
 
     /* ─── RADAR SEVİYE SENSÖRÜ (VRS) ─── */
     'NT-VRS': { base: 144, listRatio: 3.0, options: {} },
@@ -246,7 +303,16 @@ const NF_PRICING = {
     'NT-LSW-P': { base: 59, listRatio: 2.5, options: {} },
 
     /* ─── TİTREŞİMLİ ÇATAL (VLV) ─── */
-    'NT-VLV-VBR': { base: 84, listRatio: 2.5, options: {} },
+    'NT-VLV-VBR': {
+      variants: {
+        'M Serisi (Standart)':84,
+        'B Serisi':144,
+        'B Serisi 220°C':160,
+        'P Serisi':168
+      },
+      listRatio: 2.5,
+      options: {}
+    },
     'NT-LSW-V': { ref: 'NT-VLV-VBR' },
 
     /* ─── DİYAFRAM SEVİYE ŞALTERİ ─── */

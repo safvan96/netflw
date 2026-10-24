@@ -74,7 +74,9 @@
       return `<span class="${cls}" data-i18n="${t}">${T(t)}</span>`;
     }).join('');
     const specs=p.s.map(x=>`<div class="ps"><b>${x[0]}</b><span data-i18n="${x[1]}">${T(x[1])}</span></div>`).join('');
-    const href=p.link?p.link:('product.html?p='+encodeURIComponent(p.code));
+    const pFull=window.PM_BYCODE&&window.PM_BYCODE[p.code];
+    const slug=pFull&&pFull.slug;
+    const href=slug?(slug+'.html'):(p.link?p.link:('product.html?p='+encodeURIComponent(p.code)));
     const media = `<div class="glyph glyph-anim">${G[p.g]}</div>`;
     const photo = p.img ? `<img class="prod-hover-photo" src="${p.img}" alt="${T(p.n)}" loading="lazy">` : '';
     const inBasket = window.NFQuote && window.NFQuote.has(p.code);

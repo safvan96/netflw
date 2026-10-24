@@ -22,6 +22,8 @@
 
   function qp(){ const m=location.search.match(/[?&]p=([^&]+)/); return m?decodeURIComponent(m[1].replace(/\+/g,' ')):''; }
   let code=qp(); let p=BY[code];
+  // SEO redirect: if product has a slug, redirect to its clean URL
+  if(p && p.slug){ location.replace(p.slug+'.html'); return; }
   // flagship has its own page
   if(p && p.link==='electromagnetic-flow-meter.html'){ location.replace('electromagnetic-flow-meter.html'); return; }
   if(!p){ p=P.find(x=>x.link!=='electromagnetic-flow-meter.html')||P[1]; }
@@ -43,7 +45,7 @@
 
   // related = same category, different code
   const related = P.filter(x=>x.c===p.c && x.code!==p.code).slice(0,3);
-  function relHref(x){ return x.link==='electromagnetic-flow-meter.html' ? x.link : 'product.html?p='+encodeURIComponent(x.code); }
+  function relHref(x){ return x.slug ? x.slug+'.html' : (x.link ? x.link : 'product.html?p='+encodeURIComponent(x.code)); }
 
   const specStrip = p.s.map(x=>`<div class="ss"><b>${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join('');
   const feats = p.s.map((x,i)=>`<div class="feat${i===0?' on':''}" data-i="${i}"><b>${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join('');
