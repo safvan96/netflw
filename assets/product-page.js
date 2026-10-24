@@ -194,8 +194,8 @@
       const slug = p.code.replace(/[^A-Za-z0-9]+/g,'-');
       ph.addEventListener('load',()=>{
         // cycle: 3s animation → 5s photo → repeat
-        function showPhoto(){ stage.dataset.photo='1'; setTimeout(hidePhoto,5000); }
-        function hidePhoto(){ delete stage.dataset.photo; setTimeout(showPhoto,3000); }
+        function showPhoto(){ stage.dataset.photo='1'; }
+        
         setTimeout(showPhoto,1500);
       });
       ph.addEventListener('error',()=>{ ph.remove(); });
