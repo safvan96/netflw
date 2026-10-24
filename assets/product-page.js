@@ -192,14 +192,11 @@
     const has = (window.PM_PHOTOS||[]).indexOf(p.code)>-1;
     if(ph && has){
       const slug = p.code.replace(/[^A-Za-z0-9]+/g,'-');
-      ph.addEventListener('load',()=>{
-        // cycle: 3s animation → 5s photo → repeat
-        function showPhoto(){ stage.dataset.photo='1'; }
-        
-        setTimeout(showPhoto,1000);
-      });
+      function showPhoto(){ setTimeout(()=>{ stage.dataset.photo='1'; },1000); }
       ph.addEventListener('error',()=>{ ph.remove(); });
       ph.src='assets/products/'+slug+'.png';
+      if(ph.complete && ph.naturalWidth>0){ showPhoto(); }
+      else { ph.addEventListener('load', showPhoto); }
     } else if(ph){ ph.remove(); }
   }
 

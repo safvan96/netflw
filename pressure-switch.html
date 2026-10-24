@@ -266,7 +266,7 @@
     var fes=[].slice.call(document.querySelectorAll('#featGrid .feat'));
     if(stage&&fes.length){var i=0;function cyc(){fes.forEach(function(f,n){f.classList.toggle('on',n===i)});stage.dataset.z=String(i%4);if(gart){gart.classList.add('glow');setTimeout(function(){gart.classList.remove('glow')},650)}i=(i+1)%fes.length;}cyc();setInterval(cyc,2600);fes.forEach(function(f,n){f.addEventListener('mouseenter',function(){i=n;fes.forEach(function(x,m){x.classList.toggle('on',m===n)});stage.dataset.z=String(n%4);});});}
     // photo cycle
-    var ph=stage&&stage.querySelector('.gphoto');if(ph){ph.addEventListener('load',function(){setTimeout(function(){stage.dataset.photo='1'},1000)});ph.addEventListener('error',function(){ph.remove()});}
+    var ph=stage&&stage.querySelector('.gphoto');if(ph){function showPh(){setTimeout(function(){stage.dataset.photo='1'},1000)}if(ph.complete&&ph.naturalWidth>0){showPh()}else{ph.addEventListener('load',showPh)}ph.addEventListener('error',function(){ph.remove()});}
   }
   // quote basket
   var addBtn=document.getElementById('pdAddToBasket');

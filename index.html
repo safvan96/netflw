@@ -833,13 +833,10 @@ const PM_TWEAKS = /*EDITMODE-BEGIN*/{
 <script src="assets/quote-basket.js"></script>
 <script>
 (function(){
-  if(window.matchMedia('(hover:hover)').matches) return;
   [...document.querySelectorAll('.prod-card')].forEach(function(card,i){
-    if(!card.querySelector('.prod-hover-photo')) return;
-    setTimeout(function flip(){
-      card.classList.add('photo-on');
-      setTimeout(function(){card.classList.remove('photo-on');setTimeout(flip,2000);},2000);
-    },2000+i*400);
+    var img=card.querySelector('.prod-hover-photo');
+    if(!img) return;
+    setTimeout(function(){ img.classList.add('visible'); },1000+i*100);
   });
 })();
 </script>
