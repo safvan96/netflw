@@ -397,6 +397,7 @@ window.PM_DICT = {
 "Switch":{tr:"Switch",ar:"مفتاح",ru:"Реле",fr:"Contacteur"},
 "Quotation Details":{tr:"Teklif Bilgileri",ar:"تفاصيل العرض",ru:"Данные предложения",fr:"Détails du devis"},
 "Auto-filled · editable":{tr:"Otomatik dolu · düzenlenebilir",ar:"معبّأ تلقائيًا · قابل للتعديل",ru:"Заполнено автоматически · можно изменить",fr:"Rempli automatiquement · modifiable"},
+"Editable fields":{tr:"Düzenlenebilir alanlar",ar:"حقول قابلة للتعديل",ru:"Редактируемые поля",es:"Campos editables",fr:"Champs modifiables"},
 "Quote No.":{tr:"Teklif No.",ar:"رقم العرض",ru:"№ предложения",fr:"N° de devis"},
 "Date":{tr:"Tarih",ar:"التاريخ",ru:"Дата",fr:"Date"},
 "Valid Until":{tr:"Son Geçerlilik",ar:"صالح حتى",ru:"Действительно до",fr:"Valable jusqu'au"},

@@ -982,30 +982,33 @@ function buildDoc(){
    RENDER META FORM (JS-generated for bulletproof rendering)
    ============================================================ */
 var META_FIELDS = [
-  {id:'qNo',   label:'Quote No.',          type:'text',  ph:'', wide:false},
-  {id:'qDate', label:'Date',               type:'date',  ph:'', wide:false},
-  {id:'qValid',label:'Valid Until',         type:'date',  ph:'', wide:false},
-  {id:'qBy',   label:'Prepared By',        type:'text',  ph:'Sales Engineer', wide:false},
-  {id:'cCompany',label:'Customer / Company',type:'text',  ph:'e.g. Baghdad Water Authority', wide:true},
-  {id:'cContact',label:'Contact Person',    type:'text',  ph:'Full name', wide:false},
-  {id:'cCountry',label:'Country',           type:'text',  ph:'e.g. Iraq', wide:false},
-  {id:'cAddress',label:'Address',           type:'text',  ph:'Full postal address', wide:true},
-  {id:'cReqBy', label:'Requested By',       type:'text',  ph:'Who requested this quote', wide:false},
-  {id:'cCustSign',label:'Customer Signatory',type:'text', ph:'Name for signature line', wide:false},
-  {id:'cEmail', label:'Email',              type:'email', ph:'buyer@company.com', wide:false},
-  {id:'cPhone', label:'Phone',             type:'tel',   ph:'+964 770 123 4567', wide:false},
-  {id:'cProject',label:'Project / Reference',type:'text', ph:'e.g. WTP-2026 intake metering', wide:true}
+  {id:'qNo',   label:{en:'Quote No.',tr:'Teklif No.',ar:'رقم العرض',ru:'№ предложения',es:'N° de cotización'}, type:'text',  ph:{}, wide:false},
+  {id:'qDate', label:{en:'Date',tr:'Tarih',ar:'التاريخ',ru:'Дата',es:'Fecha'}, type:'date',  ph:{}, wide:false},
+  {id:'qValid',label:{en:'Valid Until',tr:'Son Geçerlilik',ar:'صالح حتى',ru:'Действительно до',es:'Válido hasta'}, type:'date',  ph:{}, wide:false},
+  {id:'qBy',   label:{en:'Prepared By',tr:'Hazırlayan',ar:'أعدّه',ru:'Подготовил',es:'Preparado por'}, type:'text',  ph:{en:'Sales Engineer',tr:'Satış Mühendisi',ar:'مهندس مبيعات',ru:'Инженер по продажам',es:'Ingeniero de ventas'}, wide:false},
+  {id:'cCompany',label:{en:'Customer / Company',tr:'Müşteri / Firma',ar:'العميل / الشركة',ru:'Заказчик / Компания',es:'Cliente / Empresa'}, type:'text',  ph:{en:'e.g. Baghdad Water Authority',tr:'örn. Bağdat Su İdaresi',ar:'مثلاً هيئة ماء بغداد',ru:'напр. Водоканал',es:'ej. Autoridad del Agua'}, wide:true},
+  {id:'cContact',label:{en:'Contact Person',tr:'İlgili Kişi',ar:'الشخص المسؤول',ru:'Контактное лицо',es:'Persona de contacto'}, type:'text',  ph:{en:'Full name',tr:'Ad Soyad',ar:'الاسم الكامل',ru:'ФИО',es:'Nombre completo'}, wide:false},
+  {id:'cCountry',label:{en:'Country',tr:'Ülke',ar:'الدولة',ru:'Страна',es:'País'}, type:'text',  ph:{en:'e.g. Iraq',tr:'örn. Irak',ar:'مثلاً العراق',ru:'напр. Ирак',es:'ej. Irak'}, wide:false},
+  {id:'cAddress',label:{en:'Address',tr:'Adres',ar:'العنوان',ru:'Адрес',es:'Dirección'}, type:'text',  ph:{en:'Full postal address',tr:'Tam posta adresi',ar:'العنوان البريدي الكامل',ru:'Полный почтовый адрес',es:'Dirección postal completa'}, wide:true},
+  {id:'cReqBy', label:{en:'Requested By',tr:'Talep Eden',ar:'طلبه',ru:'Запросил',es:'Solicitado por'}, type:'text',  ph:{en:'Who requested this quote',tr:'Teklifi kim talep etti',ar:'من طلب هذا العرض',ru:'Кто запросил',es:'Quién solicitó'}, wide:false},
+  {id:'cCustSign',label:{en:'Customer Signatory',tr:'İmzalayan',ar:'الموقّع',ru:'Подписант',es:'Firmante'}, type:'text', ph:{en:'Name for signature line',tr:'İmza satırı için isim',ar:'الاسم لسطر التوقيع',ru:'Имя для подписи',es:'Nombre para firma'}, wide:false},
+  {id:'cEmail', label:{en:'Email',tr:'E-posta',ar:'البريد الإلكتروني',ru:'Эл. почта',es:'Correo'}, type:'email', ph:{en:'buyer@company.com'}, wide:false},
+  {id:'cPhone', label:{en:'Phone',tr:'Telefon',ar:'الهاتف',ru:'Телефон',es:'Teléfono'}, type:'tel',   ph:{en:'+964 770 123 4567'}, wide:false},
+  {id:'cProject',label:{en:'Project / Reference',tr:'Proje / Referans',ar:'المشروع / المرجع',ru:'Проект / Ссылка',es:'Proyecto / Referencia'}, type:'text', ph:{en:'e.g. WTP-2026 intake metering',tr:'örn. WTP-2026 giriş sayımı',ar:'مثلاً WTP-2026',ru:'напр. WTP-2026',es:'ej. WTP-2026'}, wide:true}
 ];
 
 function renderMetaForm(){
   var box = $('#metaFormBox');
   if(!box) return;
+  var lang = S.lang || 'en';
   var h = '<div style="padding:18px 20px"><div style="display:flex;flex-wrap:wrap;gap:12px;background:#f0f4f8;border-radius:12px;padding:16px;border:1px dashed #c5cdd6">';
   META_FIELDS.forEach(function(f){
     var w = f.wide ? 'calc(50% - 6px)' : 'calc(25% - 9px)';
+    var lbl = f.label[lang] || f.label.en;
+    var placeholder = f.ph[lang] || f.ph.en || '';
     h += '<div style="flex:0 0 '+w+';min-width:180px">';
-    h += '<div style="font-family:var(--f-mono),monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#6B7E92;margin-bottom:5px">'+f.label+'</div>';
-    h += '<input id="'+f.id+'" type="'+f.type+'" placeholder="'+f.ph+'" style="display:block;width:100%;height:40px;padding:9px 11px;border:1.5px solid #c5cdd6;border-radius:8px;background:#f8fafc;color:#0A1628;font-family:var(--f-body),sans-serif;font-size:14px;box-sizing:border-box;outline:none">';
+    h += '<div style="font-family:var(--f-mono),monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#6B7E92;margin-bottom:5px">'+lbl+'</div>';
+    h += '<input id="'+f.id+'" type="'+f.type+'" placeholder="'+placeholder+'" style="display:block;width:100%;height:40px;padding:9px 11px;border:1.5px solid #c5cdd6;border-radius:8px;background:#f8fafc;color:#0A1628;font-family:var(--f-body),sans-serif;font-size:14px;box-sizing:border-box;outline:none">';
     h += '</div>';
   });
   h += '</div></div>';
@@ -1089,7 +1092,7 @@ function bind(){
     if(window.PMI18n) PMI18n.apply();
     $('#langSel').value=l; $('#pvLang').value=l;
     $('#qTerms').value=(S.terms[l]!=null?S.terms[l]:TERMS[l]);
-    renderPalette(); renderItems(); renderTotals();
+    renderPalette(); renderItems(); renderTotals(); loadForm();
     save(); if($('#previewOv').classList.contains('open')) buildDoc(); }
   $('#langSel').addEventListener('change',e=>setLang(e.target.value));
   $('#pvLang').addEventListener('change',e=>setLang(e.target.value));
