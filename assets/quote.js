@@ -586,7 +586,7 @@ function defaultState(){
   const today=new Date(); const valid=new Date(Date.now()+30*86400000);
   return {lang:'en', currency:'USD', review:false,
     meta:{no:genNo(), date:iso(today), valid:iso(valid), by:''},
-    cust:{company:'',contact:'',reqBy:'',custSign:'',country:'',address:'',email:'',project:''},
+    cust:{company:'',contact:'',reqBy:'',custSign:'',country:'',address:'',email:'',phone:'',project:''},
     markup:0, discount:0, vat:0, travel:0, terms:{}, items:[]};
 }
 let S;
@@ -596,6 +596,7 @@ if(!S.terms) S.terms={};
 if(!S.cust.reqBy) S.cust.reqBy='';
 if(!S.cust.custSign) S.cust.custSign='';
 if(!S.cust.address) S.cust.address='';
+if(!S.cust.phone) S.cust.phone='';
 if(S.markup==null) S.markup=0;
 // migrate: add priceMode to old items
 if(S.items) S.items.forEach(function(it){ if(!it.priceMode) it.priceMode = (parseFloat(it.unit)||0)===0 ? 'manual' : 'custom'; });
@@ -926,6 +927,7 @@ function buildDoc(){
         ${S.cust.address?esc(S.cust.address)+'<br>':''}
         ${S.cust.country?esc(S.cust.country)+'<br>':''}
         ${S.cust.email?esc(S.cust.email)+'<br>':''}
+        ${S.cust.phone?esc(S.cust.phone)+'<br>':''}
         ${S.cust.project?esc(t.project)+': '+esc(S.cust.project):''}</p>
       </div>
     </div>
@@ -983,7 +985,7 @@ function loadForm(){
   $('#qNo').value=S.meta.no; $('#qDate').value=S.meta.date; $('#qValid').value=S.meta.valid; $('#qBy').value=S.meta.by;
   $('#cCompany').value=S.cust.company; $('#cContact').value=S.cust.contact; $('#cReqBy').value=S.cust.reqBy||'';
   $('#cCustSign').value=S.cust.custSign||''; $('#cCountry').value=S.cust.country;
-  $('#cAddress').value=S.cust.address||''; $('#cEmail').value=S.cust.email; $('#cProject').value=S.cust.project;
+  $('#cAddress').value=S.cust.address||''; $('#cEmail').value=S.cust.email; $('#cPhone').value=S.cust.phone||''; $('#cProject').value=S.cust.project;
   $('#tMarkup').value=S.markup||0; $('#tDisc').value=S.discount; $('#tTravel').value=S.travel||0; $('#tVat').value=S.vat;
   $('#curSel').value=S.currency; $('#langSel').value=S.lang;
   $('#qTerms').value = (S.terms[S.lang]!=null? S.terms[S.lang] : TERMS[S.lang]);
@@ -1029,7 +1031,7 @@ function bind(){
   // meta + customer
   const map={qNo:['meta','no'],qDate:['meta','date'],qValid:['meta','valid'],qBy:['meta','by'],
     cCompany:['cust','company'],cContact:['cust','contact'],cReqBy:['cust','reqBy'],cCustSign:['cust','custSign'],
-    cCountry:['cust','country'],cAddress:['cust','address'],cEmail:['cust','email'],cProject:['cust','project']};
+    cCountry:['cust','country'],cAddress:['cust','address'],cEmail:['cust','email'],cPhone:['cust','phone'],cProject:['cust','project']};
   Object.keys(map).forEach(id=>{ $('#'+id).addEventListener('input',e=>{const[a,b]=map[id];S[a][b]=e.target.value;
     if(id==='cCompany') updateQBar();
     if(id==='qNo'){$('#qbarCode').textContent=e.target.value||'—';}
@@ -1097,7 +1099,7 @@ function bind(){
   document.addEventListener('click',e=>{ if(!e.target.closest('#archivePanel')&&!e.target.closest('#btnArchive')) $('#archivePanel').style.display='none'; });
   $('#archiveList').addEventListener('click',e=>{
     // load quote
-    const ld=e.target.closest('[data-load]'); if(ld){ const list=getList(); const entry=list.find(x=>x.code===ld.dataset.load); if(!entry)return; try{ S=JSON.parse(entry.data); if(!S.terms)S.terms={}; if(!S.cust.reqBy)S.cust.reqBy=''; if(!S.cust.custSign)S.cust.custSign=''; if(!S.cust.address)S.cust.address=''; if(S.markup==null)S.markup=0; save(); loadForm(); renderPalette(); renderItems(); renderTotals(); $('#archivePanel').style.display='none'; }catch(ex){} return; }
+    const ld=e.target.closest('[data-load]'); if(ld){ const list=getList(); const entry=list.find(x=>x.code===ld.dataset.load); if(!entry)return; try{ S=JSON.parse(entry.data); if(!S.terms)S.terms={}; if(!S.cust.reqBy)S.cust.reqBy=''; if(!S.cust.custSign)S.cust.custSign=''; if(!S.cust.address)S.cust.address=''; if(!S.cust.phone)S.cust.phone=''; if(S.markup==null)S.markup=0; save(); loadForm(); renderPalette(); renderItems(); renderTotals(); $('#archivePanel').style.display='none'; }catch(ex){} return; }
     // export single quote as JSON
     const ex=e.target.closest('[data-export]'); if(ex){ const list=getList(); const entry=list.find(x=>x.code===ex.dataset.export); if(!entry)return; try{ const d=JSON.parse(entry.data); const blob=new Blob([JSON.stringify(d,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=(entry.code||'quote')+'.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); }catch(ex2){} return; }
     // delete quote
