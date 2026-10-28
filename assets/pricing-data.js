@@ -5,7 +5,7 @@
    ═══════════════════════════════════════════════════════════ */
 
 const NF_PRICING = {
-  version: '2026-v4',
+  version: '2026-v5',
   currency: 'USD',
 
   products: {
@@ -160,7 +160,23 @@ const NF_PRICING = {
     'NT-TUF-H': { ref: 'NT-ULF' },
     'NT-TUF-S': { ref: 'NT-ULF' },
 
-    /* ─── VORTEKS DEBİMETRE (VRF) ─── */
+    /* ─── ULTRASONİK YAZICILI / RAY TİP ─── */
+    'NT-TUF-P': { base: 600, listRatio: 2.5, options: {} },
+    'NT-TUF-R': { base: 160, listRatio: 2.5, options: {} },
+
+    /* ─── HAT TİPİ ULTRASONİK DEBİMETRE (VUF-2000F) ─── */
+    'NT-ULF-F': {
+      byDN: {
+        'DN15':[480],'DN20':[500],'DN25':[520],'DN32':[540],
+        'DN40':[420],'DN50':[440],'DN65':[452],'DN80':[460],
+        'DN100':[480],'DN125':[528],'DN150':[592],'DN200':[720],
+        'DN250':[880],'DN300':[1040]
+      },
+      listRatio: 2.5,
+      options: {}
+    },
+
+    /* ─── VORTEKS DEBİMETRE — SIKIŞTIRMA TİP (VRF-V) ─── */
     'NT-VTX': {
       byDN: {
         'DN15':[540],'DN20':[540],'DN25':[540],'DN32':[540],
@@ -175,8 +191,35 @@ const NF_PRICING = {
       }
     },
 
+    /* ─── VORTEKS DEBİMETRE — FLANŞLI TİP (VRF-F) ─── */
+    'NT-VTX-F': {
+      byDN: {
+        'DN15':[630],'DN20':[630],'DN25':[630],'DN32':[640],
+        'DN40':[640],'DN50':[640],'DN65':[675],'DN80':[700],
+        'DN100':[830],'DN125':[940],'DN150':[1050],'DN200':[1400],
+        'DN250':[1850],'DN300':[2600]
+      },
+      listRatio: 2.0,
+      options: {
+        pn: {'PN40':{pct:10}},
+        temp: {'350°C':200}
+      }
+    },
+
+    /* ─── VORTEKS DEBİMETRE — DALDIRMA TİP (VRF-I) ─── */
+    'NT-VTX-I': {
+      variants: {
+        '100-400mm':800, '450-800mm':800, '900-1200mm':800
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
     /* ─── AÇIK KANAL ULTRASONİK (OCF) ─── */
     'NT-VAK': { base: 640, listRatio: 2.0, options: {} },
+
+    /* ─── AÇIK KANAL RADAR DEBİMETRE (VAF-R) ─── */
+    'NT-VAF-R': { base: 2720, listRatio: 2.0, options: {} },
 
     /* ─── METAL TÜPLÜ DEBİMETRE (VFF) — [304SS, 316SS] ─── */
     'NT-MTF': {
@@ -246,6 +289,24 @@ const NF_PRICING = {
 
     /* ─── CLAMP-ON GAZ ULTRASONİK ─── */
     'NT-S415': { ref: 'NT-TMF' },
+
+    /* ─── SUTO S401 DALDIRMA TİP TERMAL KÜTLE DEBİMETRE ─── */
+    'NT-S401': {
+      variants: {
+        '160mm':1565, '220mm':1570, '300mm':1650, '400mm':1650
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
+    /* ─── SUTO S421 HAT TİPİ TERMAL KÜTLE DEBİMETRE (Dişli) ─── */
+    'NT-S421': {
+      byDN: {
+        'DN8':[795],'DN15':[815],'DN20':[825],'DN25':[835],'DN32':[900]
+      },
+      listRatio: 2.0,
+      options: {}
+    },
 
     /* ─── RADAR SEVİYE SENSÖRÜ (VRS) ─── */
     'NT-VRS': { base: 144, listRatio: 3.0, options: {} },
@@ -330,6 +391,27 @@ const NF_PRICING = {
       listRatio: 2.0,
       options: {}
     },
+    /* ─── BASINÇ TRANSMİTTERİ 1/2" (ECT G1/2") ─── */
+    'NT-BCT-2': {
+      variants: {
+        '0-1 bar':45, '0-4 bar':45, '0-10 bar':45, '0-16 bar':45,
+        '0-25 bar':45, '0-40 bar':45, '0-60 bar':45, '0-100 bar':45,
+        '0-160 bar':45, '0-250 bar':45, '0-400 bar':45
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+    /* ─── BASINÇ TRANSMİTTERİ mbar (ECT Mbar) ─── */
+    'NT-BCT-M': {
+      variants: {
+        '0-0.1 mbar':48, '0-0.16 mbar':48, '0-0.2 mbar':48,
+        '0-0.25 mbar':48, '0-0.4 mbar':48, '0-0.6 mbar':48
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+    /* ─── VAKUM BASINÇ TRANSMİTTERİ ─── */
+    'NT-BCT-V': { base: 49, listRatio: 2.0, options: {} },
     'NT-BCT-D': { base: 45, listRatio: 2.0, options: {} },
     'NT-BCT-E': { base: 75, listRatio: 2.5, options: {} },
     'NT-EXNT': { base: 75, listRatio: 2.5, options: {} },
@@ -485,6 +567,90 @@ const NF_PRICING = {
     'NT-ANZ': {
       variants: {
         '2091PRO (pH/ORP/Sıcaklık)':310, '2090PRO (İletkenlik/TDS/Tuzluluk)':325
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
+    /* ─── ŞAMANDIRALI PLASTİK DEBİMETRE (LZS) ─── */
+    'NT-LZS': {
+      variants: {
+        'DN15 (5-500 Lt/h)':6.25, 'DN25 (100-3000 Lt/h)':8.75,
+        'DN32 (0.4-10 m3/h)':15, 'DN50 (0.4-16 m3/h)':18.5,
+        'DN65 (5-60 m3/h)':35, 'DN100 (18-120 m3/h)':145,
+        'DN125 (25-180 m3/h)':155
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
+    /* ─── AYAR VANALI AKRİLİK DEBİMETRE (LZM) ─── */
+    'NT-LZM': {
+      variants: {
+        '4T serisi':12.5, '6T serisi':13, '15T serisi':15,
+        '20T serisi':16, '25T serisi':20
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
+    /* ─── ELES57 ŞAMANDIRALI SEVİYE ŞALTERİ (14mm Boru) ─── */
+    'NT-ELES57P': {
+      byLength: {
+        100:54, 150:55, 200:56, 300:58, 400:60, 500:63, 600:65,
+        700:67, 800:70, 1000:75, 1200:84, 1500:93, 1800:102,
+        2000:112, 2200:125, 2500:132, 2800:145, 3000:152,
+        3500:164, 4000:178
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+    'NT-ELES57S': {
+      byLength: {
+        100:66, 150:68, 200:70, 300:72, 400:76, 500:78, 600:80,
+        700:84, 800:86, 1000:92, 1200:100, 1500:112, 1800:124,
+        2000:134, 2200:146, 2500:158, 2800:170, 3000:180,
+        3500:196, 4000:212
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
+    /* ─── ELES11 ŞAMANDIRALI SEVİYE TRANSMİTTERİ ─── */
+    'NT-ELES11P': {
+      byLength: {
+        100:95, 150:100, 200:104, 300:113, 400:125, 500:136,
+        600:148, 700:159, 800:172, 1000:189, 1200:211, 1500:243,
+        1800:278, 2000:305, 2200:320, 2500:350, 2800:377,
+        3000:401, 3500:437, 4000:487
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+    'NT-ELES11S': {
+      byLength: {
+        100:130, 150:135, 200:145, 300:165, 400:190, 500:215,
+        600:235, 700:265, 800:285, 1000:315, 1200:365, 1500:430,
+        1800:500, 2000:550, 2200:575, 2500:625, 2800:700,
+        3000:750, 3500:825, 4000:900
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+
+    /* ─── ELES5 ŞAMANDIRALI SEVİYE ŞALTERİ (8mm Boru) ─── */
+    'NT-ELES5-M1': {
+      byLength: {
+        100:20, 150:21, 200:22, 300:23, 400:24, 500:25,
+        600:26, 700:28, 800:30, 900:33, 1000:36, 1200:40
+      },
+      listRatio: 2.0,
+      options: {}
+    },
+    'NT-ELES5-M2': {
+      byLength: {
+        50:9, 100:10.5, 150:11.5, 200:15, 250:16, 300:17,
+        350:19, 400:20, 450:21, 500:22, 550:23, 600:24, 700:25
       },
       listRatio: 2.0,
       options: {}

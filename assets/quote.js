@@ -75,7 +75,8 @@ const FIELDS = {
   supply:{label:{en:'Supply',tr:'Besleme',ar:'التغذية',ru:'Питание'}, opts:['AC 85–250V','DC 20–36V','Battery 3.6V Li']},
   mat:{label:{en:'Material',tr:'Malzeme',ar:'المادة',ru:'Материал'}, opts:['SS 304','SS 316L','PP','PVC']},
   range:{label:{en:'Range',tr:'Aralık',ar:'النطاق',ru:'Диапазон'}, opts:['0–360°','0–10 bar','0–100 bar','0–600 bar','−50…+150°C']},
-  outSw:{label:{en:'Output',tr:'Çıkış',ar:'الخرج',ru:'Выход'}, opts:['NO/NC Relay','PNP','NPN','4–20mA']}
+  outSw:{label:{en:'Output',tr:'Çıkış',ar:'الخرج',ru:'Выход'}, opts:['NO/NC Relay','PNP','NPN','4–20mA']},
+  bypassLen:{label:{en:'Measuring Length (mm)',tr:'Ölçüm Boyu (mm)',ar:'طول القياس (مم)',ru:'Длина измерения (мм)'}, opts:['300','400','500','600','700','800','900','1000','1100','1200','1300','1400','1500','1600','1700','1800','1900','2000','2200','2400','2600','2800','3000','3500','4000']}
 };
 
 /* ---------- EM flow meter weight & box dimensions ---------- */
@@ -136,8 +137,8 @@ function calcPrice(code, cfg){
     base = arr[idx] || arr[0] || 0;
   }
   // length-based
-  else if(pr.byLength && cfg.range){
-    var len = parseInt(cfg.range);
+  else if(pr.byLength && (cfg.range || cfg.bypassLen)){
+    var len = parseInt(cfg.bypassLen || cfg.range);
     if(pr.byLength[len]) base = pr.byLength[len];
     else{
       // nearest
@@ -259,13 +260,13 @@ const PRODUCTS = [
   {code:'NT-VMF-S',cat:'flow',cfg:['dn','liner','electrode','output','conn','ip'],
     name:N('Slurry Flow Meter','Çamur (Slurry) Debimetre','مقياس تدفق للوحل (Slurry)','Расходомер для шламов (Slurry)'),
     desc:N('Heavy-duty electromagnetic flow meter with abrasion-resistant liner for slurries.','Çamur uygulamaları için aşınmaya dayanıklı astarlı ağır hizmet tipi elektromanyetik debimetre.','مقياس تدفق كهرومغناطيسي شاق التحمل ببطانة مقاومة للتآكل للوحل.','Высокопрочный электромагнитный расходомер с износостойкой футеровкой для шламов.')},
-  {code:'NT-MBP',cat:'level',cfg:['temp','pn','conn','ip'],
+  {code:'NT-MBP',cat:'level',cfg:['bypassLen','temp','pn','conn','ip'],
     name:N('Magnetic Bypass Level Indicator','Manyetik Baypas Seviye Göstergesi','مؤشر مستوى مغناطيسي جانبي','Магнитный байпасный уровнемер'),
     desc:N('Magnetic bypass level indicator with sealed flag display, no power required.','Sızdırmaz bayrak göstergeli manyetik baypas seviye göstergesi, enerji gerektirmez.','مؤشر مستوى مغناطيسي جانبي بعرض راية محكم, بلا حاجة للطاقة.','Магнитный байпасный уровнемер с герметичным флажковым индикатором, без питания.')},
-  {code:'NT-MLI-EX',cat:'level',cfg:['temp','pn','conn','ip'],
+  {code:'NT-MLI-EX',cat:'level',cfg:['bypassLen','temp','pn','conn','ip'],
     name:N('Ex-Proof Bypass Indicator','Ex-Proof Baypas Seviye Göstergesi','مؤشر مستوى جانبي مضاد للانفجار','Взрывозащищённый байпасный уровнемер'),
     desc:N('Explosion-proof magnetic bypass level indicator for hazardous areas.','Tehlikeli bölgeler için Ex-proof manyetik baypas seviye göstergesi.','مؤشر مستوى مغناطيسي جانبي مضاد للانفجار للمناطق الخطرة.','Взрывозащищённый магнитный байпасный уровнемер для опасных зон.')},
-  {code:'NT-MLI-BR',cat:'level',cfg:['temp','pn','conn'],
+  {code:'NT-MLI-BR',cat:'level',cfg:['bypassLen','temp','pn','conn'],
     name:N('Boiler-Type Bypass Indicator','Kazan Tipi Baypas Göstergesi','مؤشر جانبي لنوع الغلايات','Котловой байпасный уровнемер'),
     desc:N('Boiler-type magnetic bypass indicator rated for high-pressure steam drums.','Yüksek basınçlı buhar kazanları için kazan tipi manyetik baypas göstergesi.','مؤشر مغناطيسي جانبي لنوع الغلايات مصمم لأسطوانات البخار عالية الضغط.','Котловой магнитный байпасный уровнемер для барабанов пара высокого давления.')},
   {code:'NT-FLT',cat:'level',cfg:['range','output','mat','ip'],
@@ -274,7 +275,7 @@ const PRODUCTS = [
   {code:'NT-VMS',cat:'level',cfg:['supply','outSw','ip'],
     name:N('Motorized Level Sensor','Motorlu Seviye Sensörü','حساس مستوى محرّكي','Моторизованный датчик уровня'),
     desc:N('Motorized rotary-paddle level sensor for bulk-solids detection in silos.','Silolarda katı malzeme tespiti için motorlu döner paletli seviye sensörü.','حساس مستوى بمجداف دوّار محرّكي لكشف المواد الصلبة في الصوامع.','Моторизованный лопастной датчик уровня для контроля сыпучих в силосах.')},
-  {code:'NT-MLP',cat:'switch',cfg:['outSw','mat','ip'],
+  {code:'NT-MLP',cat:'switch',cfg:['bypassLen','outSw','mat','ip'],
     name:N('Side-Mount Level Switch','Yandan Montajlı Seviye Şalteri','مفتاح مستوى للتركيب الجانبي','Датчик-реле уровня с боковым монтажом'),
     desc:N('Lever-arm float switch mounted on the side wall of a tank for high/low level alarms and pump control.','Tank yan cidarına monte edilen kollu şamandıralı seviye şalteri, yüksek/düşük alarm ve pompa kontrolü.','مفتاح عوّامة بذراع مثبّت على الجدار الجانبي للخزان لإنذارات الارتفاع/الانخفاض والتحكم بالمضخة.','Рычажный поплавковый датчик на боковой стенке резервуара для сигнализации уровня и управления насосом.')},
   {code:'NT-LSW-M',cat:'switch',cfg:['outSw','mat','ip'],
@@ -312,11 +313,20 @@ const PRODUCTS = [
     name:N('Variable Area Flow Meter (Rotameter)','Değişken Alanlı Debimetre (Rotametre)','مقياس تدفق بمساحة متغيرة (روتاميتر)','Ротаметр'),
     desc:N('Glass or metal tube rotameter for liquid and gas flow measurement.','Sıvı ve gaz akış ölçümü için cam veya metal tüp rotametre.','روتاميتر بأنبوب زجاجي أو معدني لقياس تدفق السوائل والغازات.','Ротаметр со стеклянной или металлической трубкой для жидкостей и газов.')},
   {code:'NT-VTX',cat:'flow',cfg:['dn','output','conn','ip','temp'],
-    name:N('Vortex Flow Meter','Vorteks Debimetre','مقياس تدفق دوامي','Вихревой расходомер'),
-    desc:N('Vortex flow meter for liquid, gas and steam measurement.','Sıvı, gaz ve buhar ölçümü için vorteks debimetre.','مقياس تدفق دوامي للسوائل والغازات والبخار.','Вихревой расходомер для жидкостей, газов и пара.')},
+    name:N('Vortex Flow Meter (Wafer)','Vorteks Debimetre (Sıkıştırma Tip)','مقياس تدفق دوامي (ويفر)','Вихревой расходомер (вафельный)'),
+    desc:N('Wafer-type vortex flow meter for liquid, gas and steam measurement.','Sıvı, gaz ve buhar ölçümü için sıkıştırma tip vorteks debimetre.','مقياس تدفق دوامي من نوع الويفر للسوائل والغازات والبخار.','Вафельный вихревой расходомер для жидкостей, газов и пара.')},
+  {code:'NT-VTX-F',cat:'flow',cfg:['dn','output','conn','ip','temp'],
+    name:N('Vortex Flow Meter (Flanged)','Vorteks Debimetre (Flanşlı)','مقياس تدفق دوامي (حافة)','Вихревой расходомер (фланцевый)'),
+    desc:N('Flanged vortex flow meter for liquid, gas and steam, higher pressure rating.','Yüksek basınç dayanımlı flanşlı vorteks debimetre.','مقياس تدفق دوامي بحافة للسوائل والغازات والبخار.','Фланцевый вихревой расходомер для жидкостей, газов и пара.')},
+  {code:'NT-VTX-I',cat:'flow',cfg:['range','output','ip','temp'],
+    name:N('Vortex Flow Meter (Insertion)','Vorteks Debimetre (Daldırma Tip)','مقياس تدفق دوامي إدخالي','Вихревой расходомер (врезной)'),
+    desc:N('Insertion-type vortex flow meter for large pipes without full-bore installation.','Tam çap montajı gerektirmeyen büyük borular için daldırma tip vorteks debimetre.','مقياس تدفق دوامي إدخالي للأنابيب الكبيرة.','Врезной вихревой расходомер для больших трубопроводов.')},
   {code:'NT-VAK',cat:'flow',cfg:['output','ip','supply'],
-    name:N('Open Channel Flow Meter','Açık Kanal Debimetre','مقياس تدفق القنوات المفتوحة','Расходомер открытого канала'),
+    name:N('Open Channel Flow Meter (Ultrasonic)','Açık Kanal Debimetre (Ultrasonik)','مقياس تدفق القنوات المفتوحة (بالموجات)','Расходомер открытого канала (УЗ)'),
     desc:N('Non-contact ultrasonic open channel flow meter with weir support.','Savak destekli temassız ultrasonik açık kanal debimetre.','مقياس تدفق بالموجات فوق الصوتية للقنوات المفتوحة مع دعم السد.','Бесконтактный ультразвуковой расходомер открытого канала.')},
+  {code:'NT-VAF-R',cat:'flow',cfg:['output','ip','supply'],
+    name:N('Open Channel Flow Meter (Radar)','Açık Kanal Debimetre (Radar)','مقياس تدفق القنوات المفتوحة (رادار)','Расходомер открытого канала (радар)'),
+    desc:N('Radar open channel flow meter for rivers, irrigation canals and wastewater.','Nehir, sulama kanalı ve atıksu için radar açık kanal debimetre.','مقياس تدفق رادار للقنوات المفتوحة للأنهار والري.','Радарный расходомер открытого канала для рек и каналов.')},
   {code:'NT-MTF',cat:'flow',cfg:['dn','output','conn','temp'],
     name:N('Metal Tube Rotameter','Metal Tüp Rotametre','روتاميتر بأنبوب معدني','Ротаметр с металлической трубкой'),
     desc:N('Metal tube rotameter with magnetic float for liquid and gas measurement.','Sıvı ve gaz ölçümü için manyetik şamandıralı metal tüp rotametre.','روتاميتر بأنبوب معدني مع عوامة مغناطيسية للسوائل والغازات.','Ротаметр с металлической трубкой и магнитным поплавком.')},
@@ -335,6 +345,18 @@ const PRODUCTS = [
   {code:'NT-S415',cat:'flow',cfg:['dn','output','ip'],
     name:N('Compact Thermal Gas Flow Meter','Kompakt Termal Gaz Debimetre','مقياس تدفق غاز حراري مدمج','Компактный термический газовый расходомер'),
     desc:N('Compact thermal gas flow meter for process gases, compressed air and natural gas.','Proses gazları, basınçlı hava ve doğal gaz için kompakt termal gaz debimetre.','مقياس تدفق غاز حراري مدمج لغازات العمليات والهواء المضغوط.','Компактный термический расходомер для процессных газов и сжатого воздуха.')},
+  {code:'NT-S401',cat:'flow',cfg:['range','output','ip'],
+    name:N('Insertion Thermal Mass Flow Meter','Daldırma Tip Termal Kütle Debimetre','مقياس تدفق كتلي حراري إدخالي','Погружной термический массовый расходомер'),
+    desc:N('Insertion-type thermal mass gas flow meter for large ducts and pipes.','Büyük kanallar ve borular için daldırma tip termal kütle gaz debimetre.','مقياس تدفق كتلي حراري إدخالي للقنوات والأنابيب الكبيرة.','Погружной термический массовый расходомер для больших каналов.')},
+  {code:'NT-S421',cat:'flow',cfg:['dn','output','ip'],
+    name:N('Inline Thermal Mass Flow Meter','Hat Tipi Termal Kütle Debimetre','مقياس تدفق كتلي حراري خطي','Проточный термический массовый расходомер'),
+    desc:N('Inline thermal mass gas flow meter with integrated display.','Entegre göstergeli hat tipi termal kütle gaz debimetre.','مقياس تدفق كتلي حراري خطي مع شاشة مدمجة.','Проточный термический массовый расходомер с дисплеем.')},
+  {code:'NT-LZS',cat:'flow',cfg:['dn','mat'],
+    name:N('Plastic Rotameter','Plastik Rotametre','روتاميتر بلاستيكي','Пластиковый ротаметр'),
+    desc:N('Economical plastic body rotameter for water and mild chemicals.','Su ve hafif kimyasallar için ekonomik plastik gövdeli rotametre.','روتاميتر بلاستيكي اقتصادي للمياه والمواد الكيميائية الخفيفة.','Экономичный пластиковый ротаметр для воды и мягких химикатов.')},
+  {code:'NT-LZM',cat:'flow',cfg:['range','mat'],
+    name:N('Acrylic Panel Rotameter','Akrilik Panel Rotametre','روتاميتر لوحة أكريليك','Акриловый панельный ротаметр'),
+    desc:N('Acrylic rotameter with valve for low flow rate measurement.','Düşük debili ölçümler için vanali akrilik rotametre.','روتاميتر أكريليك بصمام لقياس التدفق المنخفض.','Акриловый ротаметр с клапаном для малых расходов.')},
   {code:'NT-VAS',cat:'switch',cfg:['dn','outSw','ip','temp'],
     name:N('Flow Switch','Akış Şalteri','مفتاح تدفق','Датчик-реле потока'),
     desc:N('Paddle or thermal flow switch for flow detection and pump protection.','Akış tespiti ve pompa koruması için paletli veya termal akış şalteri.','مفتاح تدفق بمجداف أو حراري لكشف التدفق وحماية المضخة.','Лопастной или термический датчик-реле потока для защиты насосов.')},
@@ -357,7 +379,28 @@ const PRODUCTS = [
   {code:'NT-WLD',cat:'switch',cfg:['supply','outSw'],
     name:N('Water Leak Detector','Su Kaçak Dedektörü','كاشف تسرب المياه','Детектор утечки воды'),
     desc:N('Water leak detector with siren alarm and relay output for flood protection.','Sel koruması için siren alarm ve röle çıkışlı su kaçak dedektörü.','كاشف تسرب المياه مع إنذار صوتي وخرج ريليه.','Детектор утечки воды с сиреной и релейным выходом.')},
+  {code:'NT-ELES57P',cat:'level',cfg:['bypassLen','outSw','ip'],
+    name:N('Float Level Switch (Plastic 14mm)','Şamandıralı Seviye Şalteri (Plastik 14mm)','مفتاح مستوى بعوامة (بلاستيك 14 مم)','Поплавковый датчик уровня (пластик 14 мм)'),
+    desc:N('Plastic body float level switch with 14mm rod for tanks and reservoirs.','Tank ve rezervuarlar için 14mm çubuklu plastik gövdeli şamandıralı seviye şalteri.','مفتاح مستوى بعوامة بجسم بلاستيكي وقضيب 14 مم.','Поплавковый датчик уровня с пластиковым корпусом и штоком 14 мм.')},
+  {code:'NT-ELES57S',cat:'level',cfg:['bypassLen','outSw','ip'],
+    name:N('Float Level Switch (SS 14mm)','Şamandıralı Seviye Şalteri (Paslanmaz 14mm)','مفتاح مستوى بعوامة (ستانلس 14 مم)','Поплавковый датчик уровня (нерж. 14 мм)'),
+    desc:N('Stainless steel float level switch with 14mm rod, 30 bar pressure.','30 bar basınç dayanımlı paslanmaz çelik 14mm çubuklu şamandıralı seviye şalteri.','مفتاح مستوى بعوامة من الفولاذ المقاوم للصدأ 14 مم، 30 بار.','Поплавковый датчик уровня из нержавеющей стали, 14 мм, 30 бар.')},
+  {code:'NT-ELES11P',cat:'level',cfg:['bypassLen','output','ip'],
+    name:N('Float Level Transmitter (Plastic 14mm)','Şamandıralı Seviye Transmitteri (Plastik 14mm)','ناقل مستوى بعوامة (بلاستيك 14 مم)','Поплавковый уровнемер (пластик 14 мм)'),
+    desc:N('Continuous float level transmitter with resistive output, plastic body.','Rezistif çıkışlı sürekli şamandıralı seviye transmitteri, plastik gövde.','ناقل مستوى مستمر بعوامة مع خرج مقاومي، جسم بلاستيكي.','Непрерывный поплавковый уровнемер с резистивным выходом, пластик.')},
+  {code:'NT-ELES11S',cat:'level',cfg:['bypassLen','output','ip'],
+    name:N('Float Level Transmitter (SS 14mm)','Şamandıralı Seviye Transmitteri (Paslanmaz 14mm)','ناقل مستوى بعوامة (ستانلس 14 مم)','Поплавковый уровнемер (нерж. 14 мм)'),
+    desc:N('Stainless steel continuous float level transmitter, 30 bar, 150°C.','30 bar, 150°C dayanımlı paslanmaz çelik sürekli şamandıralı seviye transmitteri.','ناقل مستوى مستمر بعوامة من الفولاذ المقاوم للصدأ، 30 بار، 150 درجة.','Поплавковый уровнемер из нержавеющей стали, 30 бар, 150°C.')},
+  {code:'NT-ELES5-M1',cat:'level',cfg:['bypassLen','outSw'],
+    name:N('Float Level Switch (SS 8mm)','Şamandıralı Seviye Şalteri (Paslanmaz 8mm)','مفتاح مستوى بعوامة (ستانلس 8 مم)','Поплавковый датчик уровня (нерж. 8 мм)'),
+    desc:N('Compact 8mm stainless steel float level switch, M10 connection.','Kompakt 8mm paslanmaz çelik şamandıralı seviye şalteri, M10 bağlantı.','مفتاح مستوى بعوامة مدمج 8 مم من الفولاذ المقاوم للصدأ.','Компактный поплавковый датчик уровня 8 мм, нерж. сталь, M10.')},
   /* --- Pressure --- */
+  {code:'NT-BCT-2',cat:'process',cfg:['range','output','conn','ip'],
+    name:N('Pressure Transmitter G1/2"','Basınç Transmitteri G1/2"','ناقل ضغط G1/2"','Преобразователь давления G1/2"'),
+    desc:N('Pressure transmitter with G1/2" process connection.','G1/2" proses bağlantılı basınç transmitteri.','ناقل ضغط بوصلة G1/2".','Преобразователь давления с подключением G1/2".')},
+  {code:'NT-BCT-M',cat:'process',cfg:['range','output','conn','ip'],
+    name:N('Pressure Transmitter (mbar)','Basınç Transmitteri (mbar)','ناقل ضغط (mbar)','Преобразователь давления (мбар)'),
+    desc:N('Low-range mbar pressure transmitter for ventilation and clean rooms.','Havalandırma ve temiz odalar için düşük aralıklı mbar basınç transmitteri.','ناقل ضغط مبار منخفض النطاق للتهوية والغرف النظيفة.','Преобразователь давления мбар для вентиляции и чистых помещений.')},
   {code:'NT-DPT',cat:'process',cfg:['range','output','conn','ip'],
     name:N('Differential Pressure Transmitter','Fark Basınç Transmitteri','مرسل ضغط تفاضلي','Дифференциальный преобразователь давления'),
     desc:N('Differential pressure transmitter for filter monitoring, level and flow measurement.','Filtre izleme, seviye ve akış ölçümü için fark basınç transmitteri.','مرسل ضغط تفاضلي لمراقبة الفلاتر وقياس المستوى والتدفق.','Дифференциальный преобразователь давления для мониторинга фильтров.')},
