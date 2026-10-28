@@ -1125,4 +1125,15 @@ renderPalette();
 renderItems();
 renderTotals();
 
+// restore meta card open/close state (default: open)
+(function(){
+  var metaOpen = localStorage.getItem('nf_meta_open');
+  var body = $('#metaBody');
+  var arrow = document.querySelector('#metaCard .toggle-arrow');
+  if(metaOpen === '0' && body && arrow){
+    body.style.display = 'none';
+    arrow.textContent = '▶';
+  }
+})();
+
 })();
