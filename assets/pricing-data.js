@@ -1,12 +1,12 @@
 /* ═══════════════════════════════════════════════════════════
-   NF_PRICING — 2026 Bayi Fiyat Tablosu (EUR)
+   NF_PRICING — 2026 Bayi Fiyat Tablosu (USD)
    Kaynak: 2026 Fiyatlar.xlsx
-   Son güncelleme: 2026-10-07
+   Son güncelleme: 2026-10-28
    ═══════════════════════════════════════════════════════════ */
 
 const NF_PRICING = {
-  version: '2026-v3',
-  currency: 'EUR',
+  version: '2026-v4',
+  currency: 'USD',
 
   products: {
 
@@ -20,7 +20,8 @@ const NF_PRICING = {
         'DN250':[890,1050],'DN300':[1150,1350],'DN350':[1280,1720],
         'DN400':[1480,1760],'DN450':[1700,2050],'DN500':[1850,2200],
         'DN600':[1980,2800],'DN700':[2650,3400],
-        'DN800':[3200,4100],'DN900':[3900,5100],'DN1000':[4750,6800]
+        'DN800':[3200,4100],'DN900':[3900,5100],'DN1000':[4750,6800],
+        'DN1200':[6050,8500],'DN1400':[13430,18000]
       },
       listRatio: 2.0,
       options: {
@@ -151,7 +152,7 @@ const NF_PRICING = {
         'DN100':[480],'DN125':[528],'DN150':[592],'DN200':[720],
         'DN250':[880],'DN300':[1040]
       },
-      listRatio: 2.0,
+      listRatio: 2.5,
       options: {}
     },
 
@@ -208,7 +209,7 @@ const NF_PRICING = {
         'DN15':[315],'DN20':[315],'DN25':[399],'DN32':[735],
         'DN40':[399],'DN50':[462],'DN80':[840]
       },
-      listRatio: 1.7,
+      listRatio: 2.4,
       options: {}
     },
 
@@ -228,9 +229,7 @@ const NF_PRICING = {
     /* ─── TERMAL KÜTLE DEBİMETRE (SUTO S415) ─── */
     'NT-TMF': {
       byDN: {
-        'DN8':[390],'DN15':[415],'DN20':[425],'DN25':[435],'DN32':[575],
-        'DN40':[860],'DN50':[870],'DN65':[880],'DN80':[900],
-        'DN100':[950]
+        'DN8':[390],'DN15':[415],'DN20':[425],'DN25':[435],'DN32':[575]
       },
       listRatio: 2.0,
       options: {}
@@ -264,11 +263,11 @@ const NF_PRICING = {
     /* ─── MANYETİK SEVİYE GÖSTERGESİ (VSG) ─── */
     'NT-MLP': {
       byLength: {
-        300:6593, 400:6954, 500:7296, 600:7714, 700:8005, 800:8322,
-        900:8652, 1000:8968, 1100:9310, 1200:9652, 1300:9994, 1400:10335,
-        1500:10678, 1600:11019, 1700:11361, 1800:11702, 1900:12121,
-        2000:12540, 2200:13382, 2400:14024, 2500:14326, 2600:14628,
-        2800:15604, 3000:16264, 3500:17850, 4000:19646
+        300:6593, 400:6954, 500:7296, 600:7714, 700:8056, 800:8322,
+        900:8664, 1000:8968, 1100:9310, 1200:9652, 1300:9994, 1400:10336,
+        1500:10678, 1600:11020, 1700:11362, 1800:11704, 1900:12046,
+        2000:12540, 2200:13148, 2400:13908, 2500:14326, 2600:14744,
+        2800:15428, 3000:16264, 3500:18164, 4000:19646
       },
       listRatio: 2.6,
       options: {}
@@ -326,12 +325,12 @@ const NF_PRICING = {
       variants: {
         '0-1 bar':38, '0-4 bar':38, '0-10 bar':38, '0-16 bar':38,
         '0-25 bar':38, '0-40 bar':38, '0-60 bar':38, '0-100 bar':38,
-        '0-160 bar':38, '0-250 bar':38, '0-400 bar':45, '0-600 bar':45
+        '0-160 bar':38, '0-250 bar':38, '0-400 bar':38
       },
-      listRatio: 2.6,
+      listRatio: 2.0,
       options: {}
     },
-    'NT-BCT-D': { base: 48, listRatio: 2.5, options: {} },
+    'NT-BCT-D': { base: 45, listRatio: 2.0, options: {} },
     'NT-BCT-E': { base: 75, listRatio: 2.5, options: {} },
     'NT-EXNT': { base: 75, listRatio: 2.5, options: {} },
     'NT-DMPX': { base: 350, listRatio: 2.0, options: {} },
@@ -416,7 +415,7 @@ const NF_PRICING = {
         'VAS-10 Plastik Dilli 3/4"':18,
         'VAS-20 Paslanmaz Dilli 1/2"':38, 'VAS-20 Paslanmaz Dilli 1"':38,
         'VAS-20 Plastik Dilli 1/2"':31, 'VAS-20 Plastik Dilli 1"':31,
-        'VAS-30 Pirinç 1/2"':38, 'VAS-30 Pirinç 1"':38,
+        'VAS-30 Pirinç 1/2"':36, 'VAS-30 Pirinç 1"':36,
         'VAS-FS10 Termal':84
       },
       listRatio: 2.5,
@@ -492,7 +491,7 @@ const NF_PRICING = {
     },
 
     /* ─── KATALOG KOD EŞLEMELERİ (alternatif kodlar) ─── */
-    'NT-DK800': { ref: 'NT-VA' },
+    'NT-DK800': { base: 26, listRatio: 2.5, options: {} },
     'NT-TUF-2000': { ref: 'NT-ULF' },
     'NT-VKS-S': { base: 72, listRatio: 2.5, options: {} },
     'NT-ELES-S': { base: 13, listRatio: 2.5, options: {} },

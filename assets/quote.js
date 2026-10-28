@@ -64,7 +64,7 @@ const TERMS = {
 
 /* ---------- config field definitions ---------- */
 const FIELDS = {
-  dn:{label:{en:'Diameter',tr:'Çap',ar:'القطر',ru:'Диаметр'}, opts:['DN3','DN6','DN8','DN10','DN15','DN20','DN25','DN32','DN40','DN50','DN65','DN80','DN100','DN125','DN150','DN200','DN250','DN300','DN350','DN400','DN450','DN500','DN600','DN700','DN800','DN900','DN1000']},
+  dn:{label:{en:'Diameter',tr:'Çap',ar:'القطر',ru:'Диаметр'}, opts:['DN3','DN6','DN8','DN10','DN15','DN20','DN25','DN32','DN40','DN50','DN65','DN80','DN100','DN125','DN150','DN200','DN250','DN300','DN350','DN400','DN450','DN500','DN600','DN700','DN800','DN900','DN1000','DN1200','DN1400']},
   liner:{label:{en:'Liner',tr:'Astar',ar:'البطانة',ru:'Футеровка'}, opts:['PTFE','Hard Rubber','Neoprene','F46 (FEP)','PFA','Polyurethane']},
   electrode:{label:{en:'Electrode',tr:'Elektrot',ar:'القطب',ru:'Электрод'}, opts:['SS 316L','Hastelloy B','Hastelloy C','Titanium','Tantalum','Platinum']},
   output:{label:{en:'Output',tr:'Çıkış',ar:'الخرج',ru:'Выход'}, opts:['4–20mA','4–20mA + HART','RS485 Modbus','Pulse / Frequency','Profibus DP']},
@@ -541,7 +541,7 @@ function fmtDate(s){ if(!s) return '—'; const [y,m,d]=s.split('-'); return d+'
 
 function defaultState(){
   const today=new Date(); const valid=new Date(Date.now()+30*86400000);
-  return {lang:'en', currency:'EUR', review:false,
+  return {lang:'en', currency:'USD', review:false,
     meta:{no:genNo(), date:iso(today), valid:iso(valid), by:''},
     cust:{company:'',contact:'',reqBy:'',custSign:'',country:'',address:'',email:'',project:''},
     markup:0, discount:0, vat:0, travel:0, terms:{}, items:[]};
@@ -728,7 +728,7 @@ function renderItems(){
         <div class="litem-main" style="display:flex;gap:12px;align-items:flex-start">
           <img src="assets/products/${slug(it.code)}.png" alt="" style="width:56px;height:56px;object-fit:contain;border:1px solid var(--line);border-radius:8px;background:#fff;flex:none" onerror="this.remove()">
           <div style="flex:1;min-width:0">
-          <h4>${esc(p.name[L]||p.name.en)} <span class="lcode">${esc(p.code)}</span></h4>
+          <h4>${esc(p.name[L]||p.name.en)}${it.cfg.ip==='IP68'?' <span style="font-size:11px;background:#e3f2fd;color:#1565c0;padding:2px 8px;border-radius:4px;font-weight:600">Remote</span>':''} <span class="lcode">${esc(p.code)}</span></h4>
           <div class="litem-desc">${esc(p.desc[L]||p.desc.en)}</div>
           ${(()=>{const dn=it.cfg.dn;const w=dn&&getWeight(it.code,dn);return w?`<span class="ship-badge">${w.kg} kg · ${calcDesi(w.box)} desi · ${w.box.join('×')} cm</span>`:''})()}
           <div class="cfg-row" style="margin-top:10px">${cfgHtml}</div>
@@ -839,7 +839,7 @@ function buildDoc(){
         <div style="display:flex;gap:10px;align-items:flex-start">
         <img src="assets/products/${slug(p.code)}.png" alt="" style="width:54px;height:54px;object-fit:contain;border:1px solid #e5eaf0;border-radius:6px;flex:none" onerror="this.remove()">
         <div style="flex:1;min-width:0">
-        <div class="ti-name">${nm} <span class="ti-code">${esc(p.code)}</span></div>
+        <div class="ti-name">${nm}${it.cfg.ip==='IP68'?' (Remote)':''} <span class="ti-code">${esc(p.code)}</span></div>
         ${nmRef}
         <div class="ti-spec">${esc(specOf(it))}</div>
         <div class="ti-cert">\u2713 ${isTurkak(it.code,it.cfg.dn) ? esc(CERT[L].turkak) : esc(CERT[L].ce)}</div>
