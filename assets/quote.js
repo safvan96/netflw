@@ -979,9 +979,44 @@ function buildDoc(){
 }
 
 /* ============================================================
+   RENDER META FORM (JS-generated for bulletproof rendering)
+   ============================================================ */
+var META_FIELDS = [
+  {id:'qNo',   label:'Quote No.',          type:'text',  ph:'', wide:false},
+  {id:'qDate', label:'Date',               type:'date',  ph:'', wide:false},
+  {id:'qValid',label:'Valid Until',         type:'date',  ph:'', wide:false},
+  {id:'qBy',   label:'Prepared By',        type:'text',  ph:'Sales Engineer', wide:false},
+  {id:'cCompany',label:'Customer / Company',type:'text',  ph:'e.g. Baghdad Water Authority', wide:true},
+  {id:'cContact',label:'Contact Person',    type:'text',  ph:'Full name', wide:false},
+  {id:'cCountry',label:'Country',           type:'text',  ph:'e.g. Iraq', wide:false},
+  {id:'cAddress',label:'Address',           type:'text',  ph:'Full postal address', wide:true},
+  {id:'cReqBy', label:'Requested By',       type:'text',  ph:'Who requested this quote', wide:false},
+  {id:'cCustSign',label:'Customer Signatory',type:'text', ph:'Name for signature line', wide:false},
+  {id:'cEmail', label:'Email',              type:'email', ph:'buyer@company.com', wide:false},
+  {id:'cPhone', label:'Phone',             type:'tel',   ph:'+964 770 123 4567', wide:false},
+  {id:'cProject',label:'Project / Reference',type:'text', ph:'e.g. WTP-2026 intake metering', wide:true}
+];
+
+function renderMetaForm(){
+  var box = $('#metaFormBox');
+  if(!box) return;
+  var h = '<div style="padding:18px 20px"><div style="display:flex;flex-wrap:wrap;gap:12px;background:#f0f4f8;border-radius:12px;padding:16px;border:1px dashed #c5cdd6">';
+  META_FIELDS.forEach(function(f){
+    var w = f.wide ? 'calc(50% - 6px)' : 'calc(25% - 9px)';
+    h += '<div style="flex:0 0 '+w+';min-width:180px">';
+    h += '<div style="font-family:var(--f-mono),monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#6B7E92;margin-bottom:5px">'+f.label+'</div>';
+    h += '<input id="'+f.id+'" type="'+f.type+'" placeholder="'+f.ph+'" style="display:block;width:100%;height:40px;padding:9px 11px;border:1.5px solid #c5cdd6;border-radius:8px;background:#f8fafc;color:#0A1628;font-family:var(--f-body),sans-serif;font-size:14px;box-sizing:border-box;outline:none">';
+    h += '</div>';
+  });
+  h += '</div></div>';
+  box.innerHTML = h;
+}
+
+/* ============================================================
    BIND
    ============================================================ */
 function loadForm(){
+  renderMetaForm();
   $('#qNo').value=S.meta.no; $('#qDate').value=S.meta.date; $('#qValid').value=S.meta.valid; $('#qBy').value=S.meta.by;
   $('#cCompany').value=S.cust.company; $('#cContact').value=S.cust.contact; $('#cReqBy').value=S.cust.reqBy||'';
   $('#cCustSign').value=S.cust.custSign||''; $('#cCountry').value=S.cust.country;
@@ -1028,15 +1063,17 @@ function bind(){
     const b=$('#btnCopyCode'); b.title='Copied!'; setTimeout(()=>b.title='Kodu kopyala',1500);
   });
 
-  // meta + customer
-  const map={qNo:['meta','no'],qDate:['meta','date'],qValid:['meta','valid'],qBy:['meta','by'],
+  // meta + customer (event delegation since fields are JS-rendered)
+  var metaMap={qNo:['meta','no'],qDate:['meta','date'],qValid:['meta','valid'],qBy:['meta','by'],
     cCompany:['cust','company'],cContact:['cust','contact'],cReqBy:['cust','reqBy'],cCustSign:['cust','custSign'],
     cCountry:['cust','country'],cAddress:['cust','address'],cEmail:['cust','email'],cPhone:['cust','phone'],cProject:['cust','project']};
-  Object.keys(map).forEach(id=>{ $('#'+id).addEventListener('input',e=>{const[a,b]=map[id];S[a][b]=e.target.value;
-    if(id==='cCompany') updateQBar();
-    if(id==='qNo'){$('#qbarCode').textContent=e.target.value||'—';}
+  $('#metaFormBox').addEventListener('input',function(e){
+    var el=e.target; if(!el.id || !metaMap[el.id]) return;
+    var ref=metaMap[el.id]; S[ref[0]][ref[1]]=el.value;
+    if(el.id==='cCompany') updateQBar();
+    if(el.id==='qNo') $('#qbarCode').textContent=el.value||'\u2014';
     save();
-  }); });
+  });
 
   // markup / discount / vat
   $('#tMarkup').addEventListener('input',e=>{S.markup=e.target.value;renderItems();renderTotals();save();});
@@ -1124,16 +1161,5 @@ updateQBar();
 renderPalette();
 renderItems();
 renderTotals();
-
-// restore meta card open/close state (default: open)
-(function(){
-  var metaOpen = localStorage.getItem('nf_meta_open');
-  var body = $('#metaBody');
-  var arrow = document.querySelector('#metaCard .toggle-arrow');
-  if(metaOpen === '0' && body && arrow){
-    body.style.display = 'none';
-    arrow.textContent = '▶';
-  }
-})();
 
 })();
