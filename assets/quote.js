@@ -543,8 +543,8 @@ function defaultState(){
   const today=new Date(); const valid=new Date(Date.now()+30*86400000);
   return {lang:'en', currency:'EUR', review:false,
     meta:{no:genNo(), date:iso(today), valid:iso(valid), by:''},
-    cust:{company:'',contact:'',reqBy:'',custSign:'',country:'',email:'',project:''},
-    discount:0, vat:0, travel:0, terms:{}, items:[]};
+    cust:{company:'',contact:'',reqBy:'',custSign:'',country:'',address:'',email:'',project:''},
+    markup:0, discount:0, vat:0, travel:0, terms:{}, items:[]};
 }
 let S;
 try{ S = JSON.parse(localStorage.getItem(DRAFT_KEY)); }catch(e){ S=null; }
@@ -552,6 +552,8 @@ if(!S || !S.meta) S = defaultState();
 if(!S.terms) S.terms={};
 if(!S.cust.reqBy) S.cust.reqBy='';
 if(!S.cust.custSign) S.cust.custSign='';
+if(!S.cust.address) S.cust.address='';
+if(S.markup==null) S.markup=0;
 // migrate: add priceMode to old items
 if(S.items) S.items.forEach(function(it){ if(!it.priceMode) it.priceMode = (parseFloat(it.unit)||0)===0 ? 'manual' : 'custom'; });
 function updateQBar(){
@@ -655,7 +657,9 @@ function money(n){ const c=CUR[S.currency]; const v=(n||0).toLocaleString('en-US
 function uid(){ return 'i'+Math.random().toString(36).slice(2,9); }
 function esc(s){ return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function specOf(it){ const p=BYCODE[it.code]; return p.cfg.map(f=>it.cfg[f]).filter(Boolean).join(' · '); }
-function lineTotal(it){ return (parseFloat(it.qty)||0)*(parseFloat(it.unit)||0); }
+function markupMul(){ return 1+(parseFloat(S.markup)||0)/100; }
+function displayUnit(it){ return Math.round((parseFloat(it.unit)||0)*markupMul()*100)/100; }
+function lineTotal(it){ return (parseFloat(it.qty)||0)*displayUnit(it); }
 function subtotal(){ return S.items.reduce((a,it)=>a+lineTotal(it),0); }
 function totals(){ const sub=subtotal(); const disc=sub*(parseFloat(S.discount)||0)/100; const net=sub-disc; const travel=parseFloat(S.travel)||0; const vat=net*(parseFloat(S.vat)||0)/100; return {sub,disc,net,travel,vat,grand:net+travel+vat}; }
 
@@ -736,7 +740,7 @@ function renderItems(){
       </div>
       <div class="litem-money">
         <div class="money-field qty"><label>${esc(aui().qty)}</label><input type="number" min="1" step="1" value="${it.qty}" data-qty="${it.uid}"></div>
-        <div class="money-field"><label>${esc(aui().unit(S.currency))}</label><div style="position:relative;display:flex;align-items:center;gap:4px"><input class="price-input" type="number" min="0" step="0.01" value="${it.unit}" data-unit="${it.uid}" placeholder="0.00">${it.priceMode==='auto'?'<span class="price-mode-badge auto">auto</span>':it.priceMode==='custom'?`<span class="price-mode-badge custom">custom</span><button class="price-reset" data-reset="${it.uid}" title="Reset to auto price">↻</button>`:''}</div></div>
+        <div class="money-field"><label>${esc(aui().unit(S.currency))}</label><div style="position:relative;display:flex;align-items:center;gap:4px"><input class="price-input" type="number" min="0" step="0.01" value="${it.unit}" data-unit="${it.uid}" placeholder="0.00">${it.priceMode==='auto'?'<span class="price-mode-badge auto">auto</span>':it.priceMode==='custom'?`<span class="price-mode-badge custom">custom</span><button class="price-reset" data-reset="${it.uid}" title="Reset to auto price">↻</button>`:''}</div>${(parseFloat(S.markup)||0)>0?`<div style="font-family:var(--f-mono);font-size:10.5px;color:#b8860b;margin-top:3px">+${S.markup}% → ${money(displayUnit(it))} ${S.currency}</div>`:''}</div>
         <div class="litem-total" data-total="${it.uid}">${money(lineTotal(it))}</div>
       </div>
     </div>`;
@@ -748,6 +752,8 @@ function renderItems(){
    ============================================================ */
 function renderTotals(){
   const t=totals();
+  const mu=parseFloat(S.markup)||0;
+  $('#tMarkupVal').textContent=mu>0?'+'+mu+'% applied (hidden from customer)':'hidden from customer';
   $('#tSub').textContent=money(t.sub);
   $('#tDiscVal').textContent='− '+money(t.disc);
   $('#tVatVal').textContent='+ '+money(t.vat);
@@ -842,7 +848,7 @@ function buildDoc(){
         </div></div>
       </td>
       <td class="num">${esc(it.qty)}</td>
-      <td class="num">${money(parseFloat(it.unit)||0)}</td>
+      <td class="num">${money(displayUnit(it))}</td>
       <td class="num">${money(lineTotal(it))}</td>
     </tr>`;
   }).join('') : `<tr><td colspan="5" style="text-align:center;color:var(--ink-3);padding:30px">${esc(t.noItems)}</td></tr>`;
@@ -874,6 +880,7 @@ function buildDoc(){
         <h5>${esc(t.customer)}</h5>
         <p><b>${esc(S.cust.company||', ')}</b><br>
         ${S.cust.contact?esc(t.attn)+': '+esc(S.cust.contact)+'<br>':''}
+        ${S.cust.address?esc(S.cust.address)+'<br>':''}
         ${S.cust.country?esc(S.cust.country)+'<br>':''}
         ${S.cust.email?esc(S.cust.email)+'<br>':''}
         ${S.cust.project?esc(t.project)+': '+esc(S.cust.project):''}</p>
@@ -933,8 +940,8 @@ function loadForm(){
   $('#qNo').value=S.meta.no; $('#qDate').value=S.meta.date; $('#qValid').value=S.meta.valid; $('#qBy').value=S.meta.by;
   $('#cCompany').value=S.cust.company; $('#cContact').value=S.cust.contact; $('#cReqBy').value=S.cust.reqBy||'';
   $('#cCustSign').value=S.cust.custSign||''; $('#cCountry').value=S.cust.country;
-  $('#cEmail').value=S.cust.email; $('#cProject').value=S.cust.project;
-  $('#tDisc').value=S.discount; $('#tTravel').value=S.travel||0; $('#tVat').value=S.vat;
+  $('#cAddress').value=S.cust.address||''; $('#cEmail').value=S.cust.email; $('#cProject').value=S.cust.project;
+  $('#tMarkup').value=S.markup||0; $('#tDisc').value=S.discount; $('#tTravel').value=S.travel||0; $('#tVat').value=S.vat;
   $('#curSel').value=S.currency; $('#langSel').value=S.lang;
   $('#qTerms').value = (S.terms[S.lang]!=null? S.terms[S.lang] : TERMS[S.lang]);
   $('#pvLang').value=S.lang; $('#pvReview').checked=!!S.review;
@@ -979,14 +986,15 @@ function bind(){
   // meta + customer
   const map={qNo:['meta','no'],qDate:['meta','date'],qValid:['meta','valid'],qBy:['meta','by'],
     cCompany:['cust','company'],cContact:['cust','contact'],cReqBy:['cust','reqBy'],cCustSign:['cust','custSign'],
-    cCountry:['cust','country'],cEmail:['cust','email'],cProject:['cust','project']};
+    cCountry:['cust','country'],cAddress:['cust','address'],cEmail:['cust','email'],cProject:['cust','project']};
   Object.keys(map).forEach(id=>{ $('#'+id).addEventListener('input',e=>{const[a,b]=map[id];S[a][b]=e.target.value;
     if(id==='cCompany') updateQBar();
     if(id==='qNo'){$('#qbarCode').textContent=e.target.value||'—';}
     save();
   }); });
 
-  // discount / vat
+  // markup / discount / vat
+  $('#tMarkup').addEventListener('input',e=>{S.markup=e.target.value;renderItems();renderTotals();save();});
   $('#tDisc').addEventListener('input',e=>{S.discount=e.target.value;renderTotals();save();});
   $('#tTravel').addEventListener('input',e=>{S.travel=e.target.value;renderTotals();save();});
   $('#tVat').addEventListener('input',e=>{S.vat=e.target.value;renderTotals();save();});
@@ -1046,7 +1054,7 @@ function bind(){
   document.addEventListener('click',e=>{ if(!e.target.closest('#archivePanel')&&!e.target.closest('#btnArchive')) $('#archivePanel').style.display='none'; });
   $('#archiveList').addEventListener('click',e=>{
     // load quote
-    const ld=e.target.closest('[data-load]'); if(ld){ const list=getList(); const entry=list.find(x=>x.code===ld.dataset.load); if(!entry)return; try{ S=JSON.parse(entry.data); if(!S.terms)S.terms={}; if(!S.cust.reqBy)S.cust.reqBy=''; if(!S.cust.custSign)S.cust.custSign=''; save(); loadForm(); renderPalette(); renderItems(); renderTotals(); $('#archivePanel').style.display='none'; }catch(ex){} return; }
+    const ld=e.target.closest('[data-load]'); if(ld){ const list=getList(); const entry=list.find(x=>x.code===ld.dataset.load); if(!entry)return; try{ S=JSON.parse(entry.data); if(!S.terms)S.terms={}; if(!S.cust.reqBy)S.cust.reqBy=''; if(!S.cust.custSign)S.cust.custSign=''; if(!S.cust.address)S.cust.address=''; if(S.markup==null)S.markup=0; save(); loadForm(); renderPalette(); renderItems(); renderTotals(); $('#archivePanel').style.display='none'; }catch(ex){} return; }
     // export single quote as JSON
     const ex=e.target.closest('[data-export]'); if(ex){ const list=getList(); const entry=list.find(x=>x.code===ex.dataset.export); if(!entry)return; try{ const d=JSON.parse(entry.data); const blob=new Blob([JSON.stringify(d,null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=(entry.code||'quote')+'.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); }catch(ex2){} return; }
     // delete quote

@@ -317,6 +317,7 @@
           <div class="ad-field col2"><label>Customer / Company</label><input id="cCompany" placeholder="e.g. Baghdad Water Authority"></div>
           <div class="ad-field"><label>Contact Person</label><input id="cContact" placeholder="Full name"></div>
           <div class="ad-field"><label>Country</label><input id="cCountry" placeholder="e.g. Iraq"></div>
+          <div class="ad-field col2"><label>Address</label><input id="cAddress" placeholder="Full postal address"></div>
           <div class="ad-field"><label>Requested By (Talep Eden)</label><input id="cReqBy" placeholder="Who requested this quote"></div>
           <div class="ad-field"><label>Customer Signatory (İmzalayan)</label><input id="cCustSign" placeholder="Name for signature line"></div>
           <div class="ad-field col2"><label>Email</label><input id="cEmail" type="email" placeholder="buyer@company.com"></div>
@@ -340,6 +341,7 @@
             <div class="ad-field"><label>Terms &amp; Conditions (pre-written, edit freely)</label><textarea id="qTerms" rows="12"></textarea></div>
           </div>
           <div class="tbox">
+            <div class="trow" style="background:rgba(255,193,7,.08);border-radius:6px;padding:6px 8px;margin:-4px -8px 4px"><span class="tlabel" style="color:#b8860b">Markup <input id="tMarkup" type="number" min="0" max="500" value="0" style="width:60px;text-align:right;font-family:var(--f-mono);font-size:13px;padding:5px 8px;border:1.5px solid #e6c97a;border-radius:6px">%</span><span class="tval" style="color:#b8860b;font-size:11px" id="tMarkupVal">hidden from customer</span></div>
             <div class="trow"><span class="tlabel">Subtotal</span><span class="tval" id="tSub">, </span></div>
             <div class="trow"><span class="tlabel">Discount <input id="tDisc" type="number" min="0" max="100" value="0">%</span><span class="tval" id="tDiscVal">, </span></div>
             <div class="trow"><span class="tlabel">Transport &amp; Field Visit</span><span class="tval"><input id="tTravel" type="number" min="0" step="0.01" value="0" style="width:80px;text-align:right;font-family:var(--f-mono);font-size:13px;padding:5px 8px;border:1.5px solid var(--line-2);border-radius:6px"></span></div>
